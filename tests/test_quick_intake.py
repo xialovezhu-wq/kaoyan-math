@@ -2454,6 +2454,54 @@ class QuickIntakeTests(unittest.TestCase):
             quick_intake.cmd_record(argparse.Namespace(payload_file=str(path)))
         self.assertFalse(self.events_path.exists())
 
+    def test_65_v2_event_persists_only_hashed_capture_authorization(self) -> None:
+        receipt = self.invoke_record(
+            self.payload(
+                attempt_id="contract:persisted-capture-authorization",
+                score_event_id=None,
+            )
+        )
+        event = next(
+            row
+            for row in self.ledger_events()
+            if row.get("event_id") == receipt["event_id"]
+        )
+        authorization = event["capture_authorization"]
+        self.assertEqual(
+            authorization["schema_version"],
+            quick_intake.CAPTURE_AUTHORIZATION_SCHEMA,
+        )
+        self.assertEqual(authorization["source"], "current_user_message")
+        self.assertRegex(
+            authorization["normalized_message_sha256"], r"^[0-9a-f]{64}$"
+        )
+        self.assertNotIn("current_user_message", authorization)
+
+    def test_66_verify_rejects_v2_capture_without_source_bundle(self) -> None:
+        self.invoke_record(
+            self.payload(
+                attempt_id="contract:verify-missing-source-bundle",
+                score_event_id=None,
+            )
+        )
+        events = self.ledger_events()
+        capture = next(row for row in events if row.get("event_type") == "capture")
+        capture["source_bundle"] = None
+        capture["content_hash"] = quick_intake.sha256_value(
+            {key: value for key, value in capture.items() if key != "content_hash"}
+        )
+        self.events_path.write_text(
+            "".join(
+                json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n"
+                for row in events
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(
+            quick_intake.QuickIntakeError, "v2 Capture 缺少 source_bundle"
+        ):
+            quick_intake.cmd_verify(argparse.Namespace(date=None))
+
 
 if __name__ == "__main__":
     unittest.main()

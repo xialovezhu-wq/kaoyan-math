@@ -1524,6 +1524,9 @@ def cmd_record(args: argparse.Namespace) -> None:
         }
         if payload["schema_version"] == CAPTURE_SCHEMA_V2:
             event_body["capture_schema_version"] = CAPTURE_SCHEMA_V2
+            event_body["capture_authorization"] = payload[
+                "capture_authorization"
+            ]
             event_body["episode_evidence"] = payload["episode_evidence"]
         event = with_content_hash(event_body)
         append_jsonl(EVENTS_PATH, event)
@@ -1745,6 +1748,7 @@ def pending_item(
         "source_hash_before": target.get("source_hash_before"),
         "identity_state": target.get("identity_state"),
         "source_bundle": source_bundle,
+        "capture_authorization": capture.get("capture_authorization"),
         "episode_evidence": capture.get("episode_evidence"),
         "episode_evidence_hash": (
             sha256_value(capture["episode_evidence"])
@@ -3578,6 +3582,10 @@ def cmd_verify(args: argparse.Namespace) -> None:
         target = effective_target(capture, amendments)
         source_bundle = effective_source_bundle(capture, amendments)
         if source_bundle is None:
+            if capture.get("capture_schema_version") == CAPTURE_SCHEMA_V2:
+                raise QuickIntakeError(
+                    f"v2 Capture 缺少 source_bundle：{capture_id}"
+                )
             continue
         document, _, children = validate_source_bundle_manifest(
             source_bundle["manifest_path"],
