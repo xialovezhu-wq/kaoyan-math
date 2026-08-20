@@ -1,6 +1,6 @@
 ---
 name: kaoyan-math-wrong-intake
-description: "Fast, source-backed capture for exactly one math question during active study. Use when the user says 入库, 更新这道题, 记录复发, 标记已掌握, or asks to save the current GS/LA/PR/new-source math mistake. Every fresh capture, including recurrence on an existing formal card, first stages a real question image and exactly one UTF-8 solution_text file as an immutable hashed source bundle, then appends one release-neutral v2 pending-nightly evidence event. Do not use a formal-card answer or a solution image as solution_text. Do not rewrite the formal card, rebuild wrongnet, update rollback, inspect relations, or touch Wiki in the daytime path. Use the synchronous closeout-v2 escape route only when the user explicitly requests 立即完整正式入库 or 现在重建并回滚. Route 夜间集中优化 to kaoyan-math-nightly-qa. Never ingest model-authored questions."
+description: "Fast, source-backed capture for exactly one math question during active study. Use only when the current user message contains the exact contiguous phrase 快速入库 after stable Unicode NFKC normalization. Split, punctuated, inferred, score-, warmup-, recurrence-, correctness-, or model-derived intent never authorizes Capture. Every authorized fresh capture first stages a real question image and exactly one UTF-8 solution_text file, then appends one release-neutral v2 pending-nightly evidence event. Do not use a formal-card answer or a solution image as solution_text. Do not rewrite formal data in the daytime path. An immediate full closeout still requires the same exact Capture phrase plus explicit synchronous-closeout wording. Route 夜间集中优化 to kaoyan-math-nightly-qa. Never ingest model-authored questions."
 ---
 
 # Kaoyan Math Wrong Intake
@@ -18,10 +18,10 @@ The two-stage design preserves quality by separating roles:
 
 Choose exactly one route:
 
-1. `fast_capture` is the default for explicit 入库、更新、记录复发、掌握候选 during active study.
+1. `fast_capture` is available only when the current user message contains the contiguous phrase `快速入库` after NFKC normalization. Do not join across spaces, punctuation, line breaks, or separate messages.
 2. `nightly_batch` applies to 夜间质检、睡前集中优化、优化今天所有入库题; route to `kaoyan-math-nightly-qa`.
-3. `immediate_full_closeout` applies only when the user explicitly requests synchronous formal-card rewrite, rebuild, and rollback now. It still uses capture, freeze-v1, and closeout-v2; read `references/immediate-full-closeout.md` only for that route.
-4. A result report without an explicit save/update request records only the canonical warmup score when applicable; it does not authorize a capture or formal write.
+3. `immediate_full_closeout` applies only when the same current message contains `快速入库` and separately requests synchronous formal-card rewrite, rebuild, and rollback now. It still uses capture, freeze-v1, and closeout-v2; read `references/immediate-full-closeout.md` only for that route.
+4. 做对、做错、评分、warmup、旧题复发、晨间复盘、相似语义、模型判断，以及仅有“入库/更新/记录/标记掌握”的消息，均不得授权 Capture。无授权时 Capture、consumer handoff、Terra/Luna/MCP/Sol 和 formal write 全部为 0。
 
 `标记已掌握` in fast mode creates a `mastery_candidate`. It does not directly rewrite the formal mastery fact.
 
@@ -146,6 +146,9 @@ Use this exact top-level shape:
   "score_event_id": "SCORE-... OR null",
   "requested_action": "record_recurrence",
   "thread_ref": null,
+  "capture_authorization": {
+    "current_user_message": "CURRENT USER MESSAGE CONTAINING 快速入库"
+  },
   "source_bundle": {
     "manifest_path": "数学一回滚复习系统/快速入库来源/YYYY-MM-DD/BUNDLE_ID/manifest.json",
     "manifest_hash": "64-CHAR LOWERCASE SHA-256"
@@ -177,6 +180,8 @@ Use this exact top-level shape:
 `source_bundle` is mandatory for every fresh capture. Its manifest must contain at least one real `question` image and exactly one path-backed `solution_text` artifact. For `new_source`, set `target.source_hash_before` to the same manifest hash and keep `target.source_locator` exactly equal to the stage payload's locator. For a formal card, the target hash remains the verified current formal-card hash; `source_bundle` supplies capture evidence and does not replace formal identity.
 
 Every fresh capture uses `math-fast-intake-capture-v2`. `episode_evidence.solution_text` and `episode_evidence.user_answer_text` must both be non-empty. Compare the episode solution and staged solution artifact through the same normalization rule: LF line endings, leading and trailing whitespace removed, and exactly one final newline. A mismatch fails before ledger append; do not rewrite the original Capture text to make it match. Keep only the relevant current-question teaching turns, each with `speaker`, `kind`, `text`, and `origin`. Allowed speakers are `user` and `assistant`; allowed kinds are `reasoning`, `hint`, `correction`, `explanation`, `restatement`, and `answer`. Historical v1 events remain read-only compatible and must not be rewritten, converted, migrated, or rerun.
+
+`capture_authorization.current_user_message` is writer input only. The writer applies NFKC, verifies the contiguous phrase, and persists only the normalized-message SHA-256, trigger phrase, and source role. It never persists this raw authorization field. Missing or split wording fails before the ledger append.
 
 Recursively reject release, activation, Dispatcher authority, MCP authority, consumption state, and handoff state anywhere in the payload. Also reject local absolute paths in persisted Capture fields or model-readable text. Do not add producer-generated substitutes for missing question, solution, user answer, correction, or provenance evidence.
 

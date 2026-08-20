@@ -12,6 +12,7 @@ import shutil
 import sys
 import tempfile
 import time
+import unicodedata
 from contextlib import contextmanager
 from datetime import date, datetime
 from pathlib import Path
@@ -59,6 +60,8 @@ PRODUCER_BINDING_DESCRIPTOR_ENV = "KAOYAN_MATH_PRODUCER_BINDING_DESCRIPTOR"
 
 CAPTURE_SCHEMA = "math-fast-intake-capture-v1"
 CAPTURE_SCHEMA_V2 = "math-fast-intake-capture-v2"
+CAPTURE_AUTHORIZATION_SCHEMA = "math-capture-authorization-v1"
+CAPTURE_TRIGGER_PHRASE = "快速入库"
 AMENDMENT_SCHEMA = "math-fast-intake-amendment-v1"
 SOURCE_STAGE_SCHEMA = "math-fast-intake-source-stage-v1"
 SOURCE_BUNDLE_SCHEMA = "math-fast-intake-source-bundle-v1"
@@ -1153,7 +1156,7 @@ def normalize_capture(value: dict[str, Any]) -> dict[str, Any]:
         "evidence",
     }
     missing = sorted(required - set(value))
-    unexpected = sorted(set(value) - required)
+    unexpected = sorted(set(value) - required - {"capture_authorization"})
     if missing:
         raise QuickIntakeError(f"捕获输入缺少字段：{', '.join(missing)}")
     if unexpected:
@@ -1201,6 +1204,9 @@ def normalize_capture(value: dict[str, Any]) -> dict[str, Any]:
     evidence = normalize_evidence(value.get("evidence"))
     if score_ref is not None and evidence["mastery_score"] != score_ref["score"]:
         raise QuickIntakeError("evidence.mastery_score 与评分事件分数不一致")
+    authorization = normalize_capture_authorization(
+        value.get("capture_authorization")
+    )
     normalized = {
         "schema_version": schema_version,
         "attempt_id": attempt_id,
@@ -1209,12 +1215,36 @@ def normalize_capture(value: dict[str, Any]) -> dict[str, Any]:
         "score_ref": score_ref,
         "requested_action": action,
         "thread_ref": thread_ref,
+        "capture_authorization": authorization,
         "source_bundle": source_bundle,
         "evidence": evidence,
     }
     normalized["episode_evidence"] = episode_evidence
     reject_local_absolute_paths(normalized, "capture")
     return normalized
+
+
+def normalize_capture_authorization(value: Any) -> dict[str, str]:
+    if not isinstance(value, dict) or set(value) != {"current_user_message"}:
+        raise QuickIntakeError(
+            "fresh Capture 需要当前用户消息中的连续短语“快速入库”授权"
+        )
+    message = value.get("current_user_message")
+    if not isinstance(message, str) or not message or len(message) > 32768:
+        raise QuickIntakeError("capture authorization 当前用户消息无效")
+    normalized_message = unicodedata.normalize("NFKC", message)
+    if CAPTURE_TRIGGER_PHRASE not in normalized_message:
+        raise QuickIntakeError(
+            "当前用户消息没有连续短语“快速入库”，Capture 未获授权"
+        )
+    return {
+        "schema_version": CAPTURE_AUTHORIZATION_SCHEMA,
+        "source": "current_user_message",
+        "trigger_phrase": CAPTURE_TRIGGER_PHRASE,
+        "normalized_message_sha256": hashlib.sha256(
+            normalized_message.encode("utf-8")
+        ).hexdigest(),
+    }
 
 
 def with_content_hash(event: dict[str, Any]) -> dict[str, Any]:

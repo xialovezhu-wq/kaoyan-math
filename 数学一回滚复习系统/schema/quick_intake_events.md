@@ -53,6 +53,10 @@
 
 所有 fresh Capture 都必须在 capture 前固化 source bundle v1。正式卡复发也不能省略 bundle，且不使用正式卡答案作为解答文本 fallback。来源可以是本轮临时文件，或显式提供的真实仓库内证据：
 
+## Capture 授权门禁
+
+新写入还必须绑定当前用户消息。writer 对该消息做稳定的 Unicode NFKC 规范化，只在结果中包含连续短语 `快速入库` 时授权 Capture。空格、标点或换行拆开的“快速 入库”“快速，入库”不匹配；做对、做错、评分、warmup、旧题复发、晨间复盘、相似语义和模型判断均不能替代该短语。writer 只持久化规范化消息的 SHA-256、匹配短语和 `current_user_message` 来源角色，不保存授权字段中的原始消息。未授权时 ledger、consumer handoff 和正式写入均为 0。
+
 - `new_source` 的题图或解析图。
 - 已有正式卡本轮新提供、且尚未存在于仓库的附件。
 - 唯一副本仍在 `/var`、`/private/tmp`、`/tmp`、剪贴板缓存或其他仓库外位置的来源。

@@ -185,6 +185,9 @@ class QuickIntakeTests(unittest.TestCase):
             "score_event_id": score_event_id,
             "requested_action": "record_recurrence",
             "thread_ref": "fixture-thread",
+            "capture_authorization": {
+                "current_user_message": "请把当前题快速入库",
+            },
             "source_bundle": None,
             "episode_evidence": {
                 "solution_text": "fixture verified solution text",
@@ -2400,6 +2403,56 @@ class QuickIntakeTests(unittest.TestCase):
             {"release_id", "activation_id", "dispatcher_authority", "mcp_authority"}
             & set(value)
         )
+
+    def test_62_capture_authorization_uses_nfkc_and_exact_contiguous_phrase(self) -> None:
+        authorization = quick_intake.normalize_capture_authorization(
+            {"current_user_message": "Ａ请快速入库Ｂ"}
+        )
+        self.assertEqual(
+            authorization["schema_version"],
+            quick_intake.CAPTURE_AUTHORIZATION_SCHEMA,
+        )
+        self.assertEqual(
+            authorization["trigger_phrase"], quick_intake.CAPTURE_TRIGGER_PHRASE
+        )
+        self.assertEqual(
+            authorization["normalized_message_sha256"],
+            hashlib.sha256("A请快速入库B".encode("utf-8")).hexdigest(),
+        )
+
+    def test_63_split_or_inferred_intent_never_authorizes_capture(self) -> None:
+        denied = (
+            "快速 入库",
+            "快速，入库",
+            "快速\n入库",
+            "这题做错了",
+            "warmup 记 2 分",
+            "旧题又复发了",
+            "把它入库",
+            "模型判断应该保存",
+        )
+        for message in denied:
+            with self.subTest(message=message), self.assertRaisesRegex(
+                quick_intake.QuickIntakeError, "Capture 未获授权"
+            ):
+                quick_intake.normalize_capture_authorization(
+                    {"current_user_message": message}
+                )
+
+    def test_64_missing_authorization_leaves_capture_ledger_empty(self) -> None:
+        payload = self.prepare_record_payload(
+            self.payload(
+                attempt_id="contract:missing-current-message-authorization",
+                score_event_id=None,
+            )
+        )
+        payload.pop("capture_authorization")
+        path = self.write_json("missing-authorization.json", payload)
+        with self.assertRaisesRegex(
+            quick_intake.QuickIntakeError, "连续短语“快速入库”授权"
+        ):
+            quick_intake.cmd_record(argparse.Namespace(payload_file=str(path)))
+        self.assertFalse(self.events_path.exists())
 
 
 if __name__ == "__main__":
