@@ -20,7 +20,9 @@ from typing import Any
 try:
     from producer_binding_attestation import (
         ProducerBindingError,
+        build_descriptor,
         publish_attestation,
+        write_descriptor,
     )
 except ModuleNotFoundError:
     _producer_binding_spec = importlib.util.spec_from_file_location(
@@ -34,7 +36,9 @@ except ModuleNotFoundError:
     )
     _producer_binding_spec.loader.exec_module(_producer_binding_module)
     ProducerBindingError = _producer_binding_module.ProducerBindingError
+    build_descriptor = _producer_binding_module.build_descriptor
     publish_attestation = _producer_binding_module.publish_attestation
+    write_descriptor = _producer_binding_module.write_descriptor
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -51,6 +55,7 @@ WRONGNET_SNAPSHOT_PATH = REPO_ROOT / "错题知识网络" / "生成" / "wrong_qu
 WIKI_ROOT = REPO_ROOT / "错题知识网络" / "wiki"
 WRONGNET_TOOL_PATH = REPO_ROOT / "错题知识网络" / "scripts" / "wrongnet.py"
 PRODUCER_BINDING_DESCRIPTOR_PATH = ROOT / "schema" / "producer-binding-v1.json"
+PRODUCER_BINDING_DESCRIPTOR_ENV = "KAOYAN_MATH_PRODUCER_BINDING_DESCRIPTOR"
 
 CAPTURE_SCHEMA = "math-fast-intake-capture-v1"
 CAPTURE_SCHEMA_V2 = "math-fast-intake-capture-v2"
@@ -1373,9 +1378,17 @@ def replay(events: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 def _producer_binding_attestation(event: dict[str, Any]) -> dict[str, Any]:
+    configured = os.environ.get(PRODUCER_BINDING_DESCRIPTOR_ENV)
+    descriptor_path = (
+        Path(configured).expanduser()
+        if configured is not None
+        else PRODUCER_BINDING_DESCRIPTOR_PATH
+    )
+    if configured is not None and not descriptor_path.is_absolute():
+        raise QuickIntakeError("Producer binding descriptor 环境绑定必须是绝对路径")
     try:
         return publish_attestation(
-            descriptor_path=PRODUCER_BINDING_DESCRIPTOR_PATH,
+            descriptor_path=descriptor_path,
             repo_root=REPO_ROOT,
             subject="math",
             capture_id=str(event["event_id"]),

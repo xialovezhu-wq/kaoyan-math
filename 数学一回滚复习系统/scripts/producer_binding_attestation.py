@@ -122,6 +122,79 @@ def load_descriptor(path: Path, *, subject: str) -> dict[str, Any]:
     return descriptor
 
 
+def _bound_file(path: Path) -> dict[str, str]:
+    candidate = path.expanduser().resolve(strict=True)
+    if candidate.is_symlink() or not candidate.is_file():
+        raise ProducerBindingError("producer binding source file invalid")
+    return {"path": str(candidate), "sha256": sha256_file(candidate)}
+
+
+def build_descriptor(
+    *,
+    subject: str,
+    attestation_required_after: str,
+    authoritative_skill: Path,
+    installed_skill: Path,
+    producer_files: list[Path],
+    capture_contract_files: list[Path],
+    attestation_relative_root: str,
+) -> dict[str, Any]:
+    """Build one resolved descriptor without embedding machine paths in source.
+
+    Deployment and tests call this function with explicit paths and persist the
+    result outside the version-controlled source tree.  The checked-in example
+    documents placeholders only.
+    """
+
+    if subject != "math" or not producer_files or not capture_contract_files:
+        raise ProducerBindingError("producer binding descriptor inputs invalid")
+    _timestamp(attestation_required_after)
+    authoritative = _bound_file(authoritative_skill)
+    installed = _bound_file(installed_skill)
+    if (
+        authoritative["sha256"] != installed["sha256"]
+        or Path(authoritative["path"]).read_bytes()
+        != Path(installed["path"]).read_bytes()
+    ):
+        raise ProducerBindingError("foreground Skill authoritative/installed parity mismatch")
+    relative_root = Path(attestation_relative_root)
+    if relative_root.is_absolute() or ".." in relative_root.parts:
+        raise ProducerBindingError("producer binding sidecar root invalid")
+    producer_rows = [_bound_file(path) for path in producer_files]
+    contract_rows = [_bound_file(path) for path in capture_contract_files]
+    core = {
+        "schema_version": "producer_binding_descriptor_v1",
+        "subject": subject,
+        "attestation_required_after": attestation_required_after,
+        "foreground_skill": {
+            "authoritative_path": authoritative["path"],
+            "authoritative_sha256": authoritative["sha256"],
+            "installed_path": installed["path"],
+            "installed_sha256": installed["sha256"],
+        },
+        "producer": {
+            "source_files": producer_rows,
+            "source_closure_sha256": sha256_value(producer_rows),
+        },
+        "capture_contract": {"files": contract_rows},
+        "attestation_relative_root": relative_root.as_posix(),
+        "formal_write_count": 0,
+    }
+    _assert_release_neutral(core)
+    return {**core, "descriptor_content_sha256": sha256_value(core)}
+
+
+def write_descriptor(path: Path, descriptor: Mapping[str, Any]) -> None:
+    """Persist a resolved descriptor atomically and reject conflicting bytes."""
+
+    load_subject = str(descriptor.get("subject") or "")
+    load_descriptor_payload = dict(descriptor)
+    if load_subject != "math":
+        raise ProducerBindingError("producer binding descriptor subject invalid")
+    _assert_release_neutral(load_descriptor_payload)
+    _atomic_no_clobber(path.expanduser().resolve(), load_descriptor_payload)
+
+
 def _atomic_no_clobber(path: Path, value: Mapping[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = canonical_bytes(value)

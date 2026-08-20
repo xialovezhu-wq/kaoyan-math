@@ -47,6 +47,42 @@ class QuickIntakeTests(unittest.TestCase):
         self.units_path.write_text("[]\n", encoding="utf-8")
         (self.generated / "marker.json").write_text('{"stable": true}\n', encoding="utf-8")
 
+        authoritative_skill = (
+            ROOT
+            / "codex-skill-sources"
+            / "kaoyan-math-wrong-intake"
+            / "SKILL.md"
+        )
+        installed_skill = self.base / "installed-skill" / "SKILL.md"
+        installed_skill.parent.mkdir(parents=True)
+        installed_skill.write_bytes(authoritative_skill.read_bytes())
+        descriptor_path = self.base / "bindings" / "producer-binding-v1.json"
+        descriptor = quick_intake.build_descriptor(
+            subject="math",
+            attestation_required_after="2026-01-01T00:00:00+00:00",
+            authoritative_skill=authoritative_skill,
+            installed_skill=installed_skill,
+            producer_files=[
+                SCRIPT_PATH,
+                SCRIPT_PATH.with_name("producer_binding_attestation.py"),
+            ],
+            capture_contract_files=[
+                ROOT / "数学一回滚复习系统" / "schema" / "quick_intake_events.md",
+                ROOT
+                / "数学一回滚复习系统"
+                / "schema"
+                / "producer-binding-v1.example.json",
+            ],
+            attestation_relative_root=(
+                "数学一回滚复习系统/快速入库绑定证明"
+            ),
+        )
+        descriptor_path.parent.mkdir(parents=True)
+        descriptor_path.write_text(
+            json.dumps(descriptor, ensure_ascii=False, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+
         patcher = mock.patch.multiple(
             quick_intake,
             ROOT=self.rollback,
@@ -61,6 +97,8 @@ class QuickIntakeTests(unittest.TestCase):
             CARDS_DIR=self.cards,
             WRONGNET_SNAPSHOT_PATH=self.generated / "wrong_questions.json",
             WIKI_ROOT=self.wiki,
+            WRONGNET_TOOL_PATH=ROOT / "tests" / "fixtures" / "synthetic_wrongnet.py",
+            PRODUCER_BINDING_DESCRIPTOR_PATH=descriptor_path,
         )
         patcher.start()
         self.addCleanup(patcher.stop)

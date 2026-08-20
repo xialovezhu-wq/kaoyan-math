@@ -1,0 +1,22 @@
+{
+  "schema_version": "producer_binding_descriptor_v1.example",
+  "subject": "math",
+  "attestation_required_after": "${ATTESTATION_REQUIRED_AFTER}",
+  "foreground_skill": {
+    "authoritative_path": "${AUTHORITATIVE_SKILL_PATH}",
+    "installed_path": "${INSTALLED_SKILL_PATH}"
+  },
+  "producer": {
+    "source_files": [
+      "${QUICK_INTAKE_PATH}",
+      "${PRODUCER_ATTESTATION_PATH}"
+    ]
+  },
+  "capture_contract": {
+    "files": [
+      "${QUICK_INTAKE_CONTRACT_PATH}"
+    ]
+  },
+  "attestation_relative_root": "数学一回滚复习系统/快速入库绑定证明",
+  "formal_write_count": 0
+}
