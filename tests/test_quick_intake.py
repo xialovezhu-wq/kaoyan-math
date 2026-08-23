@@ -6,11 +6,15 @@ import hashlib
 import importlib.util
 import io
 import json
+import struct
 import tempfile
 import threading
 import unittest
+import zlib
 from pathlib import Path
 from unittest import mock
+
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,6 +23,23 @@ SPEC = importlib.util.spec_from_file_location("quick_intake_test", SCRIPT_PATH)
 assert SPEC and SPEC.loader
 quick_intake = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(quick_intake)
+
+
+def deterministic_minimal_png_bytes() -> bytes:
+    def chunk(kind: bytes, data: bytes) -> bytes:
+        crc = zlib.crc32(kind + data) & 0xFFFFFFFF
+        return struct.pack(">I", len(data)) + kind + data + struct.pack(">I", crc)
+
+    ihdr = struct.pack(">IIBBBBB", 1, 1, 8, 6, 0, 0, 0)
+    scanline = b"\x00\x00\x00\x00\xff"
+    return b"".join(
+        (
+            b"\x89PNG\r\n\x1a\n",
+            chunk(b"IHDR", ihdr),
+            chunk(b"IDAT", zlib.compress(scanline, level=9)),
+            chunk(b"IEND", b""),
+        )
+    )
 
 
 class QuickIntakeTests(unittest.TestCase):
@@ -237,7 +258,7 @@ class QuickIntakeTests(unittest.TestCase):
             attempt_id = str(payload.get("attempt_id") or "missing-attempt")
             digest = hashlib.sha256(attempt_id.encode("utf-8")).hexdigest()[:12]
             question = self.base / f"contract-question-{digest}.png"
-            question.write_bytes(b"\x89PNG\r\n\x1a\nquestion-" + digest.encode("ascii"))
+            question.write_bytes(deterministic_minimal_png_bytes())
             target = payload.get("target") or {}
             locator = (
                 target.get("source_locator")
@@ -256,6 +277,70 @@ class QuickIntakeTests(unittest.TestCase):
                 "manifest_hash": staged["manifest_hash"],
             }
         return payload
+
+    def test_prepare_record_payload_stages_fully_decodable_png(self) -> None:
+        prepared = self.prepare_record_payload(
+            self.payload(
+                attempt_id="contract:fully-decodable-question-image",
+                score_event_id=None,
+            )
+        )
+        manifest = json.loads(
+            (self.base / prepared["source_bundle"]["manifest_path"]).read_text(
+                encoding="utf-8"
+            )
+        )
+        question = next(
+            row for row in manifest["artifacts"] if row["role"] == "question"
+        )
+        question_path = self.base / question["path"]
+
+        with Image.open(question_path) as image:
+            image.verify()
+        with Image.open(question_path) as image:
+            image.load()
+            self.assertEqual(image.format, "PNG")
+            self.assertEqual(image.size, (1, 1))
+
+    def test_minimal_png_fixture_rejects_incomplete_or_corrupt_containers(
+        self,
+    ) -> None:
+        def reopen(data: bytes) -> None:
+            with Image.open(io.BytesIO(data)) as image:
+                image.verify()
+            with Image.open(io.BytesIO(data)) as image:
+                image.load()
+
+        valid = deterministic_minimal_png_bytes()
+        chunk_types: list[bytes] = []
+        offset = 8
+        idat_crc_offset = -1
+        while offset < len(valid):
+            length = struct.unpack(">I", valid[offset : offset + 4])[0]
+            kind = valid[offset + 4 : offset + 8]
+            data_end = offset + 8 + length
+            expected_crc = struct.unpack(">I", valid[data_end : data_end + 4])[0]
+            actual_crc = zlib.crc32(kind + valid[offset + 8 : data_end]) & 0xFFFFFFFF
+            self.assertEqual(expected_crc, actual_crc)
+            chunk_types.append(kind)
+            if kind == b"IDAT":
+                idat_crc_offset = data_end
+            offset = data_end + 4
+
+        self.assertEqual(chunk_types, [b"IHDR", b"IDAT", b"IEND"])
+        self.assertEqual(offset, len(valid))
+        reopen(valid)
+
+        corrupt_crc = bytearray(valid)
+        corrupt_crc[idat_crc_offset] ^= 0x01
+        invalid = {
+            "header-only": b"\x89PNG\r\n\x1a\nquestion-fixture",
+            "truncated": valid[:-8],
+            "crc-corrupt": bytes(corrupt_crc),
+        }
+        for name, data in invalid.items():
+            with self.subTest(name=name), self.assertRaises((OSError, SyntaxError)):
+                reopen(data)
 
     def invoke_record(
         self,
@@ -2260,16 +2345,43 @@ class QuickIntakeTests(unittest.TestCase):
             self.invoke_record(payload, bind_contract_artifacts=False)
 
         question = self.base / "hash-bound-question.png"
-        question.write_bytes(b"\x89PNG\r\n\x1a\nhash-bound")
+        question.write_bytes(deterministic_minimal_png_bytes())
         staged = self.stage_source("contract:hash-bound", [("question", question)])
         question_row = next(row for row in staged["artifacts"] if row["role"] == "question")
-        (self.base / question_row["path"]).write_bytes(b"\x89PNG\r\n\x1a\ndrift")
+        (self.base / question_row["path"]).write_bytes(
+            deterministic_minimal_png_bytes() + b"drift"
+        )
         payload = self.payload(attempt_id="contract:hash-bound", score_event_id=None)
         payload["source_bundle"] = {
             "manifest_path": staged["manifest_path"],
             "manifest_hash": staged["manifest_hash"],
         }
         with self.assertRaisesRegex(quick_intake.QuickIntakeError, "哈希与清单不一致"):
+            self.invoke_record(payload, bind_contract_artifacts=False)
+        self.assertFalse(self.events_path.exists())
+
+    def test_57b_question_manifest_mime_mismatch_fails_closed(self) -> None:
+        payload = self.prepare_record_payload(
+            self.payload(attempt_id="contract:mime-mismatch", score_event_id=None)
+        )
+        manifest_path = self.base / payload["source_bundle"]["manifest_path"]
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        question = next(
+            row for row in manifest["artifacts"] if row["role"] == "question"
+        )
+        question["media_type"] = "image/jpeg"
+        manifest_path.write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        payload["source_bundle"]["manifest_hash"] = hashlib.sha256(
+            manifest_path.read_bytes()
+        ).hexdigest()
+
+        with self.assertRaisesRegex(
+            quick_intake.QuickIntakeError,
+            "media_type 与文件不一致",
+        ):
             self.invoke_record(payload, bind_contract_artifacts=False)
         self.assertFalse(self.events_path.exists())
 
