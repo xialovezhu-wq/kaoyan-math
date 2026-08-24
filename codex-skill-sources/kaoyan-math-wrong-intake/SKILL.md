@@ -1,6 +1,6 @@
 ---
 name: kaoyan-math-wrong-intake
-description: "Fast, source-backed capture for exactly one math question during active study. Use only when the current user message contains the exact contiguous phrase 快速入库 after stable Unicode NFKC normalization. Split, punctuated, inferred, score-, warmup-, recurrence-, correctness-, or model-derived intent never authorizes Capture. Every authorized fresh capture first stages a real question image and exactly one UTF-8 solution_text file, then appends one release-neutral v2 pending-nightly evidence event. Do not use a formal-card answer or a solution image as solution_text. Do not rewrite formal data in the daytime path. An immediate full closeout still requires the same exact Capture phrase plus explicit synchronous-closeout wording. Route 夜间集中优化 to kaoyan-math-nightly-qa. Never ingest model-authored questions."
+description: "Fast, source-backed capture for exactly one math question during active study. Use when the user says 入库, 更新这道题, 记录复发, 标记已掌握, or asks to save the current GS/LA/PR/new-source math mistake. Every fresh capture, including recurrence on an existing formal card, first stages a real question image and exactly one UTF-8 solution_text file as an immutable hashed source bundle, then appends one release-neutral v2 pending-nightly evidence event. Do not use a formal-card answer or a solution image as solution_text. Do not rewrite the formal card, rebuild wrongnet, update rollback, inspect relations, or touch Wiki in the daytime path. Use the synchronous closeout-v2 escape route only when the user explicitly requests 立即完整正式入库 or 现在重建并回滚. Route 夜间集中优化 to kaoyan-math-nightly-qa. Never ingest model-authored questions."
 ---
 
 # Kaoyan Math Wrong Intake
@@ -18,10 +18,10 @@ The two-stage design preserves quality by separating roles:
 
 Choose exactly one route:
 
-1. `fast_capture` is available only when the current user message contains the contiguous phrase `快速入库` after NFKC normalization. Do not join across spaces, punctuation, line breaks, or separate messages.
+1. `fast_capture` is the default for explicit 入库、更新、记录复发、掌握候选 during active study.
 2. `nightly_batch` applies to 夜间质检、睡前集中优化、优化今天所有入库题; route to `kaoyan-math-nightly-qa`.
-3. `immediate_full_closeout` applies only when the same current message contains `快速入库` and separately requests synchronous formal-card rewrite, rebuild, and rollback now. It still uses capture, freeze-v1, and closeout-v2; read `references/immediate-full-closeout.md` only for that route.
-4. 做对、做错、评分、warmup、旧题复发、晨间复盘、相似语义、模型判断，以及仅有“入库/更新/记录/标记掌握”的消息，均不得授权 Capture。无授权时 Capture、consumer handoff、Terra/Luna/MCP/Sol 和 formal write 全部为 0。
+3. `immediate_full_closeout` applies only when the user explicitly requests synchronous formal-card rewrite, rebuild, and rollback now. It still starts with the ordinary `stage-source` → `record` Capture v2 route, then freezes that recorded event with freeze-v1 before closeout-v2; read `references/immediate-full-closeout.md` only for that route. Freeze-v1 is a post-Capture snapshot schema, never a fresh Capture alternative.
+4. A result report without an explicit save/update request records only the canonical warmup score when applicable; it does not authorize a capture or formal write.
 
 `标记已掌握` in fast mode creates a `mastery_candidate`. It does not directly rewrite the formal mastery fact.
 
@@ -146,9 +146,6 @@ Use this exact top-level shape:
   "score_event_id": "SCORE-... OR null",
   "requested_action": "record_recurrence",
   "thread_ref": null,
-  "capture_authorization": {
-    "current_user_message": "CURRENT USER MESSAGE CONTAINING 快速入库"
-  },
   "source_bundle": {
     "manifest_path": "数学一回滚复习系统/快速入库来源/YYYY-MM-DD/BUNDLE_ID/manifest.json",
     "manifest_hash": "64-CHAR LOWERCASE SHA-256"
@@ -181,15 +178,13 @@ Use this exact top-level shape:
 
 Every fresh capture uses `math-fast-intake-capture-v2`. `episode_evidence.solution_text` and `episode_evidence.user_answer_text` must both be non-empty. Compare the episode solution and staged solution artifact through the same normalization rule: LF line endings, leading and trailing whitespace removed, and exactly one final newline. A mismatch fails before ledger append; do not rewrite the original Capture text to make it match. Keep only the relevant current-question teaching turns, each with `speaker`, `kind`, `text`, and `origin`. Allowed speakers are `user` and `assistant`; allowed kinds are `reasoning`, `hint`, `correction`, `explanation`, `restatement`, and `answer`. Historical v1 events remain read-only compatible and must not be rewritten, converted, migrated, or rerun.
 
-`capture_authorization.current_user_message` is writer input only. The writer applies NFKC, verifies the contiguous phrase, and persists only the normalized-message SHA-256, trigger phrase, and source role. It never persists this raw authorization field. Missing or split wording fails before the ledger append.
-
 Recursively reject release, activation, Dispatcher authority, MCP authority, consumption state, and handoff state anywhere in the payload. Also reject local absolute paths in persisted Capture fields or model-readable text. Do not add producer-generated substitutes for missing question, solution, user answer, correction, or provenance evidence.
 
 Allowed requested actions are `record_wrong`, `record_recurrence`, `update_representation`, and `mastery_candidate`. Allowed results are `wrong`, `unstable`, `correct`, and `unresolved`. Break kinds are `knowledge`, `concept`, `condition`, `method_trigger`, `method`, `calculation`, `expression`, `identity`, or `unknown`.
 
 For warmup, set `attempt_id` exactly to the score event's attempt ID. The writer authenticates the actual delivered card, date, score, queue identity, match mode, anchor, and source version from `复习记录.jsonl`; do not copy its large evidence snapshot.
 
-The writer already locks, appends, hashes, rereads, and verifies. Declare success only when the writer's real receipt has `status: recorded`, or `status: noop` from the identical-evidence idempotent route, together with `state: pending_nightly`, `payload_file_consumed: true`, and integer `formal_write_count: 0`. A newly recorded post-attestation Capture must also return `producer_binding_status: attested` plus a non-null content-addressed `producer_binding_attestation_sha256`; `historical_pre_attestation` is valid only for immutable events before the declared high watermark and must never be backfilled. The attestation remains release-neutral and contains no release, activation, Dispatcher authority, or MCP authority. A missing, boolean, string, null, or nonzero `formal_write_count` is not success. The foreground Skill stops after that release-neutral receipt; it does not wait for Luna and does not call a model, Provider, MCP, Sol, or formal writer. Do not add manual jq probes, Git status, file-hash snapshots, or a second verification sequence in the live study path.
+The writer already locks, appends, hashes, rereads, and verifies. Declare success only when the writer's real receipt has `subject: math`, `capture_id` equal to `event_id`, `capture_content_sha256` equal to `content_hash`, `status: recorded` or `status: noop` from the identical-evidence idempotent route, `state: pending_nightly`, `payload_file_consumed: true`, a non-null content-addressed `producer_binding_attestation_sha256`, and integer `formal_write_count: 0`. A newly recorded post-attestation Capture must also return `producer_binding_status: attested`; `historical_pre_attestation` is valid only for immutable events before the declared high watermark and must never be backfilled. The attestation remains release-neutral and contains no release, activation, Dispatcher authority, or MCP authority. A missing, boolean, string, null, or nonzero `formal_write_count` is not success. The foreground Skill stops after that release-neutral receipt; it does not wait for Luna and does not call a model, Provider, MCP, Sol, or formal writer. Do not add manual jq probes, Git status, file-hash snapshots, or a second verification sequence in the live study path.
 
 Outside the latency-sensitive live path, `quick_intake.py verify --date YYYY-MM-DD` verifies both ledger replay and every staged manifest child for that date.
 

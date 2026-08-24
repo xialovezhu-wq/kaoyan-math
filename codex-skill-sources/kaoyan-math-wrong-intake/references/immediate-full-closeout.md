@@ -15,9 +15,9 @@ Read `数学一回滚复习系统/schema/quick_intake_events.md` before creating
 ## Phase 1: Capture And Freeze
 
 1. When this was a scoreable warmup item, persist the canonical score first and retain its stable score event ID.
-2. Use the main skill's exact `math-fast-intake-capture-v1` contract and deterministic `quick_intake.py record` writer to append one capture for the current episode. Do not return after `pending_nightly`; continue only because the user explicitly authorized synchronous closeout.
+2. Reuse the main skill's exact `stage-source` → `record` route with `math-fast-intake-capture-v2` to append one source-backed Capture for the current episode. Do not return after `pending_nightly`; continue only because the user explicitly authorized synchronous closeout. Historical Capture v1 events remain read-only and must never be used as a fresh route.
 3. Resolve the formal identity without scanning unrelated history. For a real new source, persist the verified source artifact inside the repository, verify its hash, check duplicates, and allocate an ID only after re-reading the current subject maximum.
-4. Before any formal or derived write, create a `math-fast-intake-freeze-v1` payload containing exactly that capture and one target resolution. Set `scope: explicit_subset`; use `existing_formal`, `new_source_created`, or `new_source_merged` according to verified identity.
+4. Before any formal or derived write, create a `math-fast-intake-freeze-v1` payload containing exactly that already-recorded Capture v2 event and one target resolution. Freeze-v1 snapshots the Capture for closeout; it is not a fresh Capture schema. Set `scope: explicit_subset`; use `existing_formal`, `new_source_created`, or `new_source_merged` according to verified identity.
 5. Run:
 
 ```bash
