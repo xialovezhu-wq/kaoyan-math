@@ -1,0 +1,2 @@
+{"offset":0,"data":"先对 x、y 使用极坐标，θ 积分消去 1/(2π)，得到 I(u)=∫_0^u dz∫_1^2 sin(zr)dr。交换矩形区域内的积分次序后，I(u)=∫_1^2 (1-cos(ur))/r dr=ln2-J(u)，其中 J(u)=∫_u^{2u} cos t/t dt。对 J(u) 分部积分可得 |J(u)|≤2/u，所以 J(u)→0，原极限为 ln2。\n"}
+{"eof":true,"sha256":"a2f777837e92b5ea08461f655c9fdddd7184fd2ec60993e27ad7a888f63ba6fa","bytes":299,"records":1}

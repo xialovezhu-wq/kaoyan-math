@@ -1,0 +1,2 @@
+{"offset":0,"data":"{\"package_id\":\"MATHPKG-05849008e831a44d094a7b30\",\"schema_version\":\"math-conversation-v1\",\"subject\":\"math\",\"turns\":[{\"role\":\"user\",\"sequence\":1,\"text\":\"[http://127.0.0.1:8765/open/GS-731](http://127.0.0.1:8765/open/GS-731) 这道题我独立做对了，快速记录一下\\n\"},{\"role\":\"assistant\",\"sequence\":2,\"text\":\"我会按当前队列的精确身份先记录 GS-731 的无提示独立正确结果，再保存这一题的完整当前会话包。由于它是 `fine_knowledge` 代理题，做对只记录 GS-731 本题的独立正确并关闭对应检查，不把原锚点自动判为稳定掌握。\"}]}\n"}
+{"eof":true,"sha256":"ff52b11bb75cf80d0f0ae647c7280dd114af11654c6c6cc5cae2e41ef793b805","bytes":604,"records":1}

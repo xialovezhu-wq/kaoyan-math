@@ -1,0 +1,2 @@
+{"offset":0,"data":"区域关于 x=0、y=0 对称，因此 ∭x dV=∭y dV=0，只剩 ∭z dV。球面坐标取 0≤r≤a、0≤φ≤π/4、0≤θ≤2π，且 z=r cosφ，dV=r^2 sinφ drdφdθ。积分得到 I=πa^4/8。由 I=π/8 得 a^4=1，结合 a>0，故 a=1。\n"}
+{"eof":true,"sha256":"f03311890ff2a9fec0482a7384d84b813808a929907b5c9f3a63bd3b427520d8","bytes":247,"records":1}

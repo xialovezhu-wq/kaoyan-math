@@ -1,0 +1,2 @@
+{"offset":0,"data":"{\"package_id\":\"MATHPKG-60537c61479a40f91ae86e0e\",\"schema_version\":\"math-conversation-v1\",\"subject\":\"math\",\"turns\":[{\"role\":\"user\",\"sequence\":1,\"text\":\"[http://127.0.0.1:8765/open/GS-727](http://127.0.0.1:8765/open/GS-727) 这道题我自己也做对了，快速标记一下\"},{\"role\":\"assistant\",\"sequence\":2,\"text\":\"已把 GS-727 加入本轮。两题会串行处理：先完成已评分的 GS-705 会话包与 Capture，再对 GS-727 绑定独立正确评分并快速记录，避免两个写入事务交叉。\"}]}\n"}
+{"eof":true,"sha256":"bb320dcdadb2841850539da661d50522f8c1e9c761b4e9235651021f7a09221c","bytes":516,"records":1}

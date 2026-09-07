@@ -4,7 +4,7 @@
   "repository": "xialovezhu-wq/kaoyan-math",
   "branch": "main",
   "local_version": "f147d47365b8f0cf6b9e3a5e75638ae222e06940b7989882ee4b0635ae94fa62",
-  "event_id": "R11-baseline-20260907",
+  "event_id": "R11-web-read-repair-20260907-math-01",
   "history_index": "错题知识网络/生成/wrong_questions.json",
   "entrypoints": {
     "formal_cards": "错题知识网络/错题卡/",
@@ -4445,6 +4445,12 @@
       "数学一回滚复习系统/.正式层写入.lock",
       "数学一回滚复习系统/.延迟复习评分.lock"
     ]
+  },
+  "web_read": {
+    "schema": "study-web-read-v1",
+    "entrypoint": "WEB_READ_START.json",
+    "status": "NOT_YET_VERIFIED",
+    "fetch_max_lines": 8
   },
   "file_inventory": [
     {

@@ -1,0 +1,2 @@
+{"offset":0,"data":"答案为 D：\n\n$$\nM^*=\n\\begin{pmatrix}\n|B|A^*&-A^*B^*\\\\\nO&|A|B^*\n\\end{pmatrix}.\n$$\n\n令\n\n$$\nM^*=\n\\begin{pmatrix}\nX&Y\\\\\nZ&W\n\\end{pmatrix}.\n$$\n\n由伴随矩阵定义，\n\n$$\nMM^*=|M|E_{2n}=|A||B|E_{2n}.\n$$\n\n分块相乘得\n\n$$\n\\begin{cases}\nAX+Z=|A||B|E,\\\\\nAY+W=O,\\\\\nBZ=O,\\\\\nBW=|A||B|E.\n\\end{cases}\n$$\n\n因为 \\(A,B\\) 可逆，所以\n\n$$\nZ=O,\\quad X=|B|A^*,\\quad W=|A|B^*,\\quad Y=-A^*B^*.\n$$\n"}
+{"eof":true,"sha256":"cc0f26742a17d36fb1edcb50c96fda106481b2a52262fe1823e177b265ae6de9","bytes":390,"records":1}

@@ -1,0 +1,3 @@
+{"offset":0,"data":"---\ntype: tutor_safe_intake_batch\nbatch_id: \"MATH-BATCH-20260714-SYNC-84890\"\ndate: \"2026-07-14\"\nstatus: source_only\n---\n\n# MATH-BATCH-20260714-SYNC-84890 Tutor 安全输入\n\n> 仅含知识点、错点、方法断点、触发词和第一动作。不含完整题干、题图、长解析、答案或掌握度反写。\n\n## GS-694\n\n- knowledge: 多元函数积分学、曲线积分、向量代数与空间解析几何\n- wrong_point: 轮换对称化简已经得到平方和曲线积分的 2/3 后，没有沿曲线约束继续把被积函数化为 1，而把被积函数等于 1 误解成积分结果等于 1；因此没有把常数 1 的第一型曲线积分识别为曲线长度，也没有把 L 识别成单位球面与过球心平面的半径 1 大圆。\n- method_trigger: 两个曲面共同确定空间闭曲线，轮换对称化简后被积函数出现球面方程的平方和。\n- expected_first_action: 先写 L=球面与平面的交线，再依次标出球心和球半径，并把原点代入平面方程检查该平面"}
+{"offset":1022,"data":"是否经过球心。\n- high_level_error: 概念混淆、空间几何图像断点、动作链断裂\n"}
+{"eof":true,"sha256":"67ea05cda9d4dddce4d938e3987748f5a325e0faf504d5ab5fb1136bdd4ff760","bytes":1122,"records":2}

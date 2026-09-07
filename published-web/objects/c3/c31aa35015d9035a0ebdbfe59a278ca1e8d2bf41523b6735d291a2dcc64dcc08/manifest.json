@@ -1,0 +1,56 @@
+{
+  "schema": "study-web-source-v1",
+  "sha256": "c31aa35015d9035a0ebdbfe59a278ca1e8d2bf41523b6735d291a2dcc64dcc08",
+  "bytes": 877397,
+  "encoding": "base64",
+  "payload_bytes_max": 1024,
+  "data_records": 857,
+  "parts": [
+    {
+      "path": "published-web/objects/c3/c31aa35015d9035a0ebdbfe59a278ca1e8d2bf41523b6735d291a2dcc64dcc08/part-00001.jsonl",
+      "sha256": "df392ea9dedc7521442ba6150d7110f406e296c61599478e37147c988f4de6e8",
+      "bytes": 260941,
+      "lines": 187,
+      "first_record": 1,
+      "source_byte_start": 0,
+      "source_byte_end_exclusive": 191488
+    },
+    {
+      "path": "published-web/objects/c3/c31aa35015d9035a0ebdbfe59a278ca1e8d2bf41523b6735d291a2dcc64dcc08/part-00002.jsonl",
+      "sha256": "5b13375e5620b65ada07bc92c79c74ad04c44dec5df2ad78d4de614b64fe6e40",
+      "bytes": 261052,
+      "lines": 187,
+      "first_record": 188,
+      "source_byte_start": 191488,
+      "source_byte_end_exclusive": 382976
+    },
+    {
+      "path": "published-web/objects/c3/c31aa35015d9035a0ebdbfe59a278ca1e8d2bf41523b6735d291a2dcc64dcc08/part-00003.jsonl",
+      "sha256": "839e9fbce706dff4e1dedc89eda89a363d171fc5b6526d748ffcd202257e4942",
+      "bytes": 261052,
+      "lines": 187,
+      "first_record": 375,
+      "source_byte_start": 382976,
+      "source_byte_end_exclusive": 574464
+    },
+    {
+      "path": "published-web/objects/c3/c31aa35015d9035a0ebdbfe59a278ca1e8d2bf41523b6735d291a2dcc64dcc08/part-00004.jsonl",
+      "sha256": "f18bf064ad0807861e4d6ed319121fed474ed5b3af66b03d5bbbc20d56513617",
+      "bytes": 261052,
+      "lines": 187,
+      "first_record": 562,
+      "source_byte_start": 574464,
+      "source_byte_end_exclusive": 765952
+    },
+    {
+      "path": "published-web/objects/c3/c31aa35015d9035a0ebdbfe59a278ca1e8d2bf41523b6735d291a2dcc64dcc08/part-00005.jsonl",
+      "sha256": "2a8134fa9307f9c4d1fe7fc4157b8240e2177adcb372e0b10c589a095eacdd5c",
+      "bytes": 152054,
+      "lines": 110,
+      "first_record": 749,
+      "source_byte_start": 765952,
+      "source_byte_end_exclusive": 877397
+    }
+  ],
+  "source_eof_required": true
+}

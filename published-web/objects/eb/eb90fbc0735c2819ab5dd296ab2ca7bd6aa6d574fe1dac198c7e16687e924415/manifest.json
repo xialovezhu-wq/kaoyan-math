@@ -1,0 +1,20 @@
+{
+  "schema": "study-web-source-v1",
+  "sha256": "eb90fbc0735c2819ab5dd296ab2ca7bd6aa6d574fe1dac198c7e16687e924415",
+  "bytes": 11192,
+  "encoding": "utf8",
+  "payload_bytes_max": 1024,
+  "data_records": 11,
+  "parts": [
+    {
+      "path": "published-web/objects/eb/eb90fbc0735c2819ab5dd296ab2ca7bd6aa6d574fe1dac198c7e16687e924415/part-00001.jsonl",
+      "sha256": "c65101213001196fda90329c2bdd0f126efac407965daa1acdf43dd0b0343e8b",
+      "bytes": 12380,
+      "lines": 12,
+      "first_record": 1,
+      "source_byte_start": 0,
+      "source_byte_end_exclusive": 11192
+    }
+  ],
+  "source_eof_required": true
+}
