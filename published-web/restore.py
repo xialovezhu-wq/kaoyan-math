@@ -104,6 +104,15 @@ def build_web_read(checkout: Path, manifest: dict[str, Any], extra_binary_paths:
             if key in row:
                 item[key] = row[key]
         wanted = suffix in TEXT or suffix in IMAGES or row.get("kind") == "original_page_pdf" or relative in extra
+        detected_text = False
+        if not wanted and suffix != ".pdf" and row.get("storage") != "git-lfs":
+            # Extensionless metadata and subject-native script formats remain
+            # readable without maintaining a second whitelist of text formats.
+            try:
+                checked_path(checkout, relative).read_bytes().decode("utf-8")
+                detected_text = wanted = True
+            except UnicodeDecodeError:
+                pass
         if not wanted or row.get("storage") == "git-lfs":
             item.update(status="NATIVE_ORIGINAL_ONLY", reason="LFS_ORIGINAL_USE_EXACT_PAGES" if row.get("storage") == "git-lfs" else "OTHER_BINARY_USE_EXACT_PAGES_OR_EXPLICIT_PROJECTION")
             sources.append(item)
@@ -115,7 +124,7 @@ def build_web_read(checkout: Path, manifest: dict[str, Any], extra_binary_paths:
             raise WebReadError("SOURCE_BYTES_MISMATCH: " + relative)
         if source_sha not in objects:
             mode = "base64"
-            if suffix in TEXT:
+            if suffix in TEXT or detected_text:
                 try:
                     raw.decode("utf-8")
                     mode = "utf8"

@@ -5162,3 +5162,27 @@
 - closeout: `MFI-CLOSE-d0e77e78158c9264cb1c2351`，内容哈希 `186e7389dd42a3e5832ef4c6680678e7fea89e9bf5febe3feba85b37e50b272b`；Capture 结果为 `mastery_confirmed`。
 - archive: 原始包已归档到 `T9-Data/03_数学/资料库/原始会话资料/2026-08-31/MATHPKG-eb446e66495bcc1d120617a1`，回执 `MATH-ARCHIVE-231f71008fc2f1f21f1bdebe`；重复归档验证返回 verified noop。
 - boundary: 正式 `related` 未改；常规错题查找、复盘与推荐永久跳过 GS-645，仅在用户点名或专题抽查时查看。
+
+
+## 2026-09-08 ingest advice.zip 精确日期批次
+
+- 本批正式目标：GS-629；GS-771；GS-772；GS-773；LA-120。
+- 保存原始ZIP、角色分明的原始对话及题图；逐题正式判断不直接采纳网页建议。
+- source summary、知识点/方法/错因/动作簇、来源索引及覆盖矩阵均按最终正式投影更新。索引型覆盖不冒称新增深度编译。
+- 正式关系保持SHADOW；不写新related边。
+
+
+## 2026-09-08 ingest advice.zip 精确日期批次
+
+- 本批正式目标：GS-774；GS-775；GS-776；GS-777；GS-778；GS-779；GS-780；GS-781；GS-782；GS-783；GS-784；GS-785；GS-786；GS-787；GS-788。
+- 保存原始ZIP、角色分明的原始对话及题图；逐题正式判断不直接采纳网页建议。
+- source summary、知识点/方法/错因/动作簇、来源索引及覆盖矩阵均按最终正式投影更新。索引型覆盖不冒称新增深度编译。
+- 正式关系保持SHADOW；不写新related边。
+
+
+## 2026-09-08 ingest advice.zip 精确日期批次
+
+- 本批正式目标：GS-789；GS-790；GS-791；GS-792；GS-793；GS-794；GS-795；GS-796。
+- 保存原始ZIP、角色分明的原始对话及题图；逐题正式判断不直接采纳网页建议。
+- source summary、知识点/方法/错因/动作簇、来源索引及覆盖矩阵均按最终正式投影更新。索引型覆盖不冒称新增深度编译。
+- 正式关系保持SHADOW；不写新related边。

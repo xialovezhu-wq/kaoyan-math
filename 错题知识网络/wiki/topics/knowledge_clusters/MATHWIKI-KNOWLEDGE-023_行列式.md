@@ -9,7 +9,7 @@ wiki_refs:
 - SRC-WRONGCARDS-INDEX
 - MATHWIKI-COVERAGE-001
 status: active
-last_updated: "2026-08-13"
+last_updated: "2026-09-08"
 ---
 # 行列式
 
@@ -77,3 +77,4 @@ last_updated: "2026-08-13"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-001_错题卡全量覆盖索引]]
+| LA-120 | [[SRC-WQ-LA-120]] | 线性代数 | 向量组 | 把三个向量共面与向量成比例联系起来，未从共面触发线性相关及三阶行列式为零。 | 三维向量共面判据；行列式为零求参数；B2-TRIGGER | 待复做 | `错题知识网络/错题卡/LA-120_三维向量共面与行列式.md` |

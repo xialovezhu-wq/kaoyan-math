@@ -9,7 +9,7 @@ wiki_refs:
 - SRC-WRONGCARDS-INDEX
 - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: "2026-08-01"
+last_updated: "2026-09-08"
 ---
 # 导数定义
 
@@ -107,3 +107,5 @@ last_updated: "2026-08-01"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]
+| GS-775 | [[SRC-WQ-GS-775]] | 高等数学 | 向量代数与空间解析几何 | 概念混淆 | 模长差有理化；模平方转点积；非零分母极限运算；A-CONCEPT | 待复做 | `错题知识网络/错题卡/GS-775_57761向量模长差极限.md` |
+| GS-789 | [[SRC-WQ-GS-789]] | 高等数学 | 多元函数微分学 | 条件与边界检查遗漏 | 特殊点代入后用导数定义；可微余项检验；B5-CHECK | 待复做 | `错题知识网络/错题卡/GS-789_19334特殊点复合函数求导.md` |

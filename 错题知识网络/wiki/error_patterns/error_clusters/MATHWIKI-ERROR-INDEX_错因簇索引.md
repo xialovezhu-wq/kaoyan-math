@@ -41,8 +41,8 @@ last_updated: "2026-08-13"
 | [[MATHWIKI-ERROR-CLUSTER-621_功的主体与符号混淆]] | 功的主体与符号混淆 | 1 | 高等数学 | GS-743 |
 | [[MATHWIKI-ERROR-CLUSTER-622_三角函数与反三角函数混淆]] | 三角函数与反三角函数混淆 | 1 | 高等数学 | GS-743 |
 | [[MATHWIKI-ERROR-CLUSTER-623_倒代换方法未触发]] | 倒代换方法未触发 | 1 | 高等数学 | GS-743 |
-| [[MATHWIKI-ERROR-CLUSTER-004_动作链断裂]] | 动作链断裂 | 137 | 线性代数；高等数学 | GS-052；GS-058；GS-063；GS-064；GS-067；GS-076；GS-078；GS-080；GS-081；GS-083；GS-091；GS-095；… |
-| [[MATHWIKI-ERROR-CLUSTER-007_方法论调取失败]] | 方法论调取失败 | 85 | 线性代数；高等数学 | GS-032；GS-095；GS-114；GS-126；GS-134；GS-135；GS-141；GS-231；GS-289；GS-301；GS-302；GS-305；… |
+| [[MATHWIKI-ERROR-CLUSTER-004_动作链断裂]] | 动作链断裂 | 138 | 高等数学 | GS-784 |
+| [[MATHWIKI-ERROR-CLUSTER-007_方法论调取失败]] | 方法论调取失败 | 85 | 高等数学 | GS-629 |
 | [[MATHWIKI-ERROR-CLUSTER-009_个人错因未记录（旧卡缺作答过程-仅可确认复做入口）]] | 个人错因未记录（旧卡缺作答过程；仅可确认复做入口） | 62 | 线性代数；高等数学 | GS-325；LA-002；LA-009；LA-010；LA-011；LA-012；LA-017；LA-021；LA-027；LA-029；LA-030；LA-031；… |
 | [[MATHWIKI-ERROR-CLUSTER-010_条件检查遗漏]] | 条件检查遗漏 | 57 | 高等数学 | GS-021；GS-080；GS-081；GS-084；GS-109；GS-124；GS-131；GS-150；GS-156；GS-288；GS-289；GS-290；… |
 | [[MATHWIKI-ERROR-CLUSTER-013_方法调取失败]] | 方法调取失败 | 32 | 高等数学 | GS-109；GS-183；GS-294；GS-327；GS-328；GS-330；GS-332；GS-333；GS-334；GS-335；GS-337；GS-339；… |
@@ -50,7 +50,7 @@ last_updated: "2026-08-13"
 | [[MATHWIKI-ERROR-CLUSTER-041_三角有理式入口识别不足]] | 三角有理式入口识别不足 | 5 | 高等数学 | GS-621；GS-622；GS-623；GS-624；GS-625 |
 | [[MATHWIKI-ERROR-CLUSTER-049_凑d-tanx-断点]] | 凑d(tanx)断点 | 3 | 高等数学 | GS-621；GS-632；GS-625 |
 | [[MATHWIKI-ERROR-CLUSTER-073_反正切型识别断点]] | 反正切型识别断点 | 2 | 高等数学 | GS-266；GS-625 |
-| [[MATHWIKI-ERROR-CLUSTER-080_方法入口未触发]] | 方法入口未触发 | 4 | 线性代数；高等数学 | GS-616；GS-617；LA-023；GS-735 |
+| [[MATHWIKI-ERROR-CLUSTER-080_方法入口未触发]] | 方法入口未触发 | 6 | 高等数学 | GS-791 |
 | [[MATHWIKI-ERROR-CLUSTER-154_参数分类讨论断点]] | 参数分类讨论断点 | 1 | 高等数学 | GS-625 |
 | [[MATHWIKI-ERROR-CLUSTER-156_参数条件误读]] | 参数条件误读 | 1 | 高等数学 | GS-625 |
 | [[MATHWIKI-ERROR-CLUSTER-160_参数退化断点]] | 参数退化断点 | 1 | 高等数学 | GS-625 |
@@ -93,7 +93,7 @@ last_updated: "2026-08-13"
 | [[MATHWIKI-ERROR-CLUSTER-603_高斯公式内侧负号遗漏]] | 高斯公式内侧负号遗漏 | 1 | 高等数学 | GS-737 |
 | [[MATHWIKI-ERROR-CLUSTER-604_伴随矩阵性质调取失败]] | 伴随矩阵性质调取失败 | 1 | 线性代数 | LA-049 |
 | [[MATHWIKI-ERROR-CLUSTER-605_秩分类排除不熟]] | 秩分类排除不熟 | 1 | 线性代数 | LA-049 |
-| [[MATHWIKI-ERROR-CLUSTER-006_概念混淆]] | 概念混淆 | 104 | 高等数学 | GS-012；GS-015；GS-021；GS-033；GS-035；GS-040；GS-041；GS-049；GS-050；GS-051；GS-073；GS-082；… |
+| [[MATHWIKI-ERROR-CLUSTER-006_概念混淆]] | 概念混淆 | 115 | 高等数学 | GS-796 |
 | [[MATHWIKI-ERROR-CLUSTER-008_触发信息遗漏]] | 触发信息遗漏 | 64 | 高等数学 | GS-032；GS-052；GS-060；GS-063；GS-067；GS-076；GS-095；GS-115；GS-306；GS-307；GS-310；GS-313；… |
 | [[MATHWIKI-ERROR-CLUSTER-028_运算路径不稳]] | 运算路径不稳 | 13 | 高等数学 | GS-288；GS-304；GS-329；GS-392；GS-627；GS-655；GS-663；GS-667；GS-668；GS-681；GS-682；GS-685；… |
 | [[MATHWIKI-ERROR-CLUSTER-038_空间几何图像断点]] | 空间几何图像断点 | 8 | 高等数学 | GS-628；GS-645；GS-667；GS-668；GS-669；GS-670；GS-726；GS-694 |
@@ -213,7 +213,7 @@ last_updated: "2026-08-13"
 | [[MATHWIKI-ERROR-CLUSTER-068_分母导数识别断点]] | 分母导数识别断点 | 2 | 高等数学 | GS-266；GS-623 |
 | [[MATHWIKI-ERROR-CLUSTER-069_分部积分降幂意识不足]] | 分部积分降幂意识不足 | 2 | 高等数学 | GS-630；GS-686 |
 | [[MATHWIKI-ERROR-CLUSTER-071_去括号错误]] | 去括号错误 | 2 | 高等数学 | GS-288；GS-601 |
-| [[MATHWIKI-ERROR-CLUSTER-072_叉乘用途触发不足]] | 叉乘用途触发不足 | 2 | 高等数学 | GS-627；GS-629 |
+| [[MATHWIKI-ERROR-CLUSTER-072_叉乘用途触发不足]] | 叉乘用途触发不足 | 2 | 高等数学 | GS-629 |
 | [[MATHWIKI-ERROR-CLUSTER-074_可微定义遗忘]] | 可微定义遗忘 | 2 | 高等数学 | GS-350；GS-626 |
 | [[MATHWIKI-ERROR-CLUSTER-075_图像形态触发不足]] | 图像形态触发不足 | 2 | 高等数学 | GS-231；GS-664 |
 | [[MATHWIKI-ERROR-CLUSTER-076_定义入口待确认]] | 定义入口待确认 | 2 | 高等数学 | GS-360；GS-373 |
@@ -647,3 +647,11 @@ last_updated: "2026-08-13"
 | [[MATHWIKI-ERROR-CLUSTER-572_换元触发失败]] | 换元触发失败 | 1 | 高等数学 | GS-734 |
 | [[MATHWIKI-ERROR-CLUSTER-573_链式因子遗漏]] | 链式因子遗漏 | 1 | 高等数学 | GS-734 |
 | [[MATHWIKI-ERROR-CLUSTER-574_抄写错误]] | 抄写错误 | 1 | 高等数学 | GS-734 |
+| [[MATHWIKI-ERROR-CLUSTER-624_把未知向量c误当作常数-把向量叉乘误读为]] | 把未知向量c误当作常数，把向量叉乘误读为数乘；因两已知向量不成比例而认为题目无解。 | 1 | 高等数学 | GS-771 |
+| [[MATHWIKI-ERROR-CLUSTER-625_把数量投影记号当成目标方向向量的模长-不]] | 把数量投影记号当成目标方向向量的模长；不清楚共同垂直条件如何确定未知向量方向，并误猜两已知向量必须平行。 | 1 | 高等数学 | GS-772 |
+| [[MATHWIKI-ERROR-CLUSTER-626_未分清平面系数向量与直线方向向量-后续又]] | 未分清平面系数向量与直线方向向量；后续又把方向向量与法向量点积为零直接判为线面平行，漏掉直线在平面内。 | 1 | 高等数学 | GS-773 |
+| [[MATHWIKI-ERROR-CLUSTER-627_把三个向量共面与向量成比例联系起来-未从]] | 把三个向量共面与向量成比例联系起来，未从共面触发线性相关及三阶行列式为零。 | 1 | 线性代数 | LA-120 |
+| [[MATHWIKI-ERROR-CLUSTER-628_条件与边界检查遗漏]] | 条件与边界检查遗漏 | 3 | 高等数学 | GS-793 |
+| [[MATHWIKI-ERROR-CLUSTER-629_目标对象识别错误]] | 目标对象识别错误 | 2 | 高等数学 | GS-782 |
+| [[MATHWIKI-ERROR-CLUSTER-630_公式或定义遗忘]] | 公式或定义遗忘 | 3 | 高等数学 | GS-792 |
+| [[MATHWIKI-ERROR-CLUSTER-631_未记录个人错因]] | 未记录个人错因 | 1 | 高等数学 | GS-794 |

@@ -9,7 +9,7 @@ wiki_refs:
 - SRC-WRONGCARDS-INDEX
 - MATHWIKI-COVERAGE-001
 status: active
-last_updated: '2026-07-17'
+last_updated: "2026-09-08"
 ---
 # 空间平面方程
 
@@ -40,3 +40,5 @@ last_updated: '2026-07-17'
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-001_错题卡全量覆盖索引]]
+| GS-780 | [[SRC-WQ-GS-780]] | 高等数学 | 向量代数与空间解析几何 | 概念混淆 | 三点确定平面；面内独立向量叉乘；A-CONCEPT | 待复做 | `错题知识网络/错题卡/GS-780_58094三点平面与位置向量.md` |
+| GS-786 | [[SRC-WQ-GS-786]] | 高等数学 | 向量代数与空间解析几何 | 公式或定义遗忘 | 法向量叉乘；点法式平面；A-KG | 待复做 | `错题知识网络/错题卡/GS-786_57921法向量接平面点法式.md` |

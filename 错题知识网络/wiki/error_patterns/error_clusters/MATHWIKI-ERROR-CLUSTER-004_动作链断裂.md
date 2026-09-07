@@ -9,7 +9,7 @@ wiki_refs:
 - SRC-WRONGCARDS-INDEX
 - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: "2026-08-01"
+last_updated: "2026-09-08"
 ---
 # 动作链断裂
 
@@ -176,3 +176,4 @@ last_updated: "2026-08-01"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]
+| GS-784 | [[SRC-WQ-GS-784]] | 高等数学 | 向量代数与空间解析几何 | 动作链断裂 | 两线上设交点；连接向量平行已知方向；B4-CHAIN | 待复做 | `错题知识网络/错题卡/GS-784_58047公垂线交点参数.md` |

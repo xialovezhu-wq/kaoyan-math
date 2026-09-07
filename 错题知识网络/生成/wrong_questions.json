@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-08",
   "cards": [
     {
       "id": "GS-001",
@@ -60488,15 +60488,17 @@
         "id": "GS-629",
         "title": "76651 两直线夹角方向向量",
         "subject": "高等数学",
-        "source": "ID:76651 / 用户截图与 Codex 更新指令 / 2026-06-25",
+        "source": "ID:76651 / 用户截图与 Codex 更新指令 / 2026-06-25；同题新来源ID:57848 / advice原始包input-08 / 记录日期2026-09-04",
         "import_batch": "MANUAL-2026-06-25",
         "fast_intake_refs": [
           "capture-v1:MFI-CAP-3726049e45dd64b120d09f2d:ae8e7e31e94753c2a2c8f520f91ede628b1ae78e771a590aef0e1507d7169f94:update_representation",
           "capture-v1:MFI-CAP-08960033ad3bbd321f4f17f1:45a05db00a42951ae9e82b64c467c900029b4e68aa125119067d46b255124c64:record_recurrence",
-          "capture-v1:MFI-CAP-80e5d16f926182f876d98ce4:146ecd03d013957651e4d55c2a6945a087e7f479de2b2d4c7d3f522b84d772c8:mastery_candidate"
+          "capture-v1:MFI-CAP-80e5d16f926182f876d98ce4:146ecd03d013957651e4d55c2a6945a087e7f479de2b2d4c7d3f522b84d772c8:mastery_candidate",
+          "capture-v1:MFI-CAP-3154d4825b1287fc4fc9b61a:98b6f5d505b07fac1607207ed2f2218125a48974567d10814bbf76961450cf1c:record_wrong"
         ],
         "fast_intake_source_refs": [
-          "source-v1:2af946c2807adff2ff291870e63e8543d8e1b1cb83e8b32dfafd0c2a6271fe26"
+          "source-v1:2af946c2807adff2ff291870e63e8543d8e1b1cb83e8b32dfafd0c2a6271fe26",
+          "source-v1:deb52f9f2ecdbc5e084fb20c085e74d1e25bb8c4cd30fca24acd3d43e5f3bef0"
         ],
         "lecture_refs": [
           "错题知识网络/可视化错题详情/高等数学/GS-629_76651.md",
@@ -60510,26 +60512,44 @@
           "方法卡 H17-006 空间曲线切线与法平面",
           "待匹配：两空间直线夹角",
           "数学一回滚复习系统/快速入库来源/2026-08-04/5882931f87bd5d894a595042/manifest.json",
-          "错题知识网络/assets/visual_wrong_questions/GS-629/question_02.png"
+          "错题知识网络/assets/visual_wrong_questions/GS-629/question_02.png",
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-50ca9fa4cb11603c30e9e856/manifest.json",
+          "错题知识网络/assets/visual_wrong_questions/GS-629/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-629/question_03.png",
+          "错题知识网络/可视化错题详情/高等数学/GS-629_76651.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-629/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-629/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-629/solution_02.png",
+          "错题知识网络/知识树/高等数学18讲第17讲_多元函数积分学预备知识.md",
+          "B17-001 空间向量与方向余弦",
+          "B17-002 空间直线与平面模板",
+          "B17-003 空间曲线与空间曲面表达",
+          "方法卡 H17-006 空间曲线切线与法平面",
+          "待匹配：两空间直线夹角",
+          "数学一回滚复习系统/快速入库来源/2026-08-04/5882931f87bd5d894a595042/manifest.json",
+          "错题知识网络/assets/visual_wrong_questions/GS-629/question_02.png",
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-50ca9fa4cb11603c30e9e856/manifest.json"
         ],
         "chapter": "向量代数与空间解析几何",
         "question_type": "两空间直线夹角：对称式直线 + 两平面交线型直线",
         "date": "2026-06-25",
-        "status": "已掌握",
+        "status": "待复做",
         "difficulty": 3,
         "priority": "A",
-        "mistake_count": 3,
+        "mistake_count": 4,
         "wrong_history": [
           "2026-06-25 第1次错：看到 \\(l_2\\) 由两个平面方程联立给出时，没有把它识别为两平面交线型直线；误把两个方程合成一个平面方程，并把该平面法向量当成直线方向向量。",
           "2026-07-18 第2次错（复发）：学习前闭卷复做时能直接提取 \\(l_1\\) 的方向向量 \\(s_1=(1,-2,1)\\)，但完全不能识别 \\(l_2\\) 的两个方程表示两平面交线，也不知道交线方向向量与两个平面法向量的关系；经分层提示后能写出两个法向量、叉乘得 \\(s_2=(-1,-1,2)\\) 并列出夹角公式，但由 \\(\\cos\\varphi=\\frac12\\) 反求角度时一度把余弦单调递减的方向用反，误选 \\(A\\)，最终自行纠正为 \\(C\\)。",
-          "2026-07-26 第3次错（复发）：能正确写出两直线夹角公式并提取 \\(l_1\\) 的方向向量，也能正确作线性组合得到另一个平面方程；但仍未识别 \\(l_2\\) 是两平面交线，因而没有触发“两个平面法向量叉乘得到交线方向向量”。提示该入口后自行完成叉乘和夹角计算。"
+          "2026-07-26 第3次错（复发）：能正确写出两直线夹角公式并提取 \\(l_1\\) 的方向向量，也能正确作线性组合得到另一个平面方程；但仍未识别 \\(l_2\\) 是两平面交线，因而没有触发“两个平面法向量叉乘得到交线方向向量”。提示该入口后自行完成叉乘和夹角计算。",
+          "2026-09-04 第4次错（公式遗忘）：方向向量与叉乘均正确；夹角公式遗忘，经局部提示恢复。日期沿用原始文档记录，精确学习时间未认证。"
         ],
         "mastery_history": [
           "2026-06-25 AI评分 3/5：依据当前卡已记录的作答表现，知道两直线夹角要用方向向量，但对“两平面交线型直线的方向向量 = 两平面法向量叉乘”的触发仍需回滚。",
           "2026-07-18 AI评分 2/5：能独立提取 \\(l_1\\) 的方向向量，并在分层提示后完成法向量、叉乘、点积和模长计算；但复做时无法独立识别 \\(l_2\\) 为两平面交线，主要方法需明显提示才能落地，最后又把余弦单调递减的反推方向用反，尚未形成稳定的独立动作链。",
           "2026-07-18 睡前独立诊断 AI评分 3/5：已能无提示识别两平面交线、叉乘求方向向量，并完成点积、模长和 \\(\\frac\\pi3\\) 的判断；但把叉乘口述成“点乘（外积）”，点乘输出标量、叉乘输出向量的角色仍未稳定分开。",
           "2026-07-26 AI评分 3/5：夹角公式和第一条直线方向向量独立正确，但两平面交线的识别与法向量叉乘入口仍需提示；提示后自行得到正确方向向量和最终角度，按同方法断点复发处理。",
-          "2026-08-04 AI评分 5/5：当前已独立求得 \\(\\cos\\theta=1/2\\)，正确调用 \\(\\theta=\\pi/3\\) 并确认选 (C)；用户明确说明原题已非常熟悉并要求以后不再投递。原题正式标记为已掌握，但“特殊角余弦值提取不熟”作为跨题迁移断点继续保留。"
+          "2026-08-04 AI评分 5/5：当前已独立求得 \\(\\cos\\theta=1/2\\)，正确调用 \\(\\theta=\\pi/3\\) 并确认选 (C)；用户明确说明原题已非常熟悉并要求以后不再投递。原题正式标记为已掌握，但“特殊角余弦值提取不熟”作为跨题迁移断点继续保留。",
+          "2026-09-04 AI评分 4/5：方向向量提取和叉乘独立正确；夹角公式需局部提示。用户已说明负号是口误，不能记作计算错误。本题仍沿用用户此前原题退出常规投递要求，不将本轮提示后理解称为独立完成。"
         ],
         "keywords": [
           "日期已归档",
@@ -60554,11 +60574,13 @@
           "特殊角余弦值",
           "点乘叉乘术语",
           "标量与向量输出",
-          "已掌握",
           "原题退出常规投递",
-          "特殊角余弦迁移断点"
+          "特殊角余弦迁移断点",
+          "ID57848",
+          "跨来源同题",
+          "夹角公式遗忘"
         ],
-        "wrong_point": "原题已于 2026-08-04 独立做对并标记为已掌握，不再进入原题错题队列。历史上在得到 \\(\\cos\\theta=1/2\\) 后曾不能稳定调用 \\(\\theta=\\pi/3\\)；该特殊角余弦值断点继续保留，只用于寻找同类新题或旧错题，不再投递本题。",
+        "wrong_point": "最新资料中能独立求两条直线的方向向量，仅忘记两直线夹角公式，经局部提示恢复；叉乘负号已经用户明确纠正为口误。历史交线识别错误在本轮没有复现。原题常规投递退出偏好保留。",
         "knowledge": [
           "向量代数与空间解析几何",
           "空间直线与平面",
@@ -60600,18 +60622,18 @@
           "GS-627"
         ],
         "review": {
-          "next": "已掌握",
-          "interval_days": 0,
+          "next": "2026-09-08",
+          "interval_days": 1,
           "count": 0
         },
         "method_gap": {
           "enabled": true,
           "evidence_origin": "user_confirmed",
           "knowledge_gap_or_method_gap": "A层知识断点（跨题迁移保留）",
-          "method_trigger": "任意夹角题已经得到 \\(\\cos\\theta=1/2\\)，需要由余弦值反求特殊角。",
-          "expected_method": "直接调用 \\(\\cos(\\pi/3)=1/2\\)，并用 \\([0,\\pi]\\) 上余弦单调递减核对角度方向。",
-          "expected_first_action": "看到 \\(\\cos\\theta=1/2\\) 时先写 \\(\\theta=\\pi/3\\)，再检查目标角范围。",
-          "missed_action": "历史作答中对特殊角余弦值对应关系提取不稳，曾在 \\(\\pi/6\\) 与 \\(\\pi/3\\) 之间误判；今天已在原题中独立纠正，但尚未用同类新题验证迁移。",
+          "method_trigger": "已求出两条直线的方向向量，目标求两直线夹角。",
+          "expected_method": "由方向向量的点积和模长建立两直线夹角关系并检查角范围。",
+          "expected_first_action": "先写两直线夹角的点积公式并检查分子绝对值。",
+          "missed_action": "当前口述已完成方向向量，但忘记由方向向量求夹角的公式。",
           "action_gap_type": "A-KG",
           "opd_tag": [
             "O目标",
@@ -60619,20 +60641,20 @@
             "D细节"
           ],
           "related_method_card_id": "待匹配",
-          "next_reminder": "看到 \\(\\cos\\theta=1/2\\)，先调用 \\(\\theta=\\pi/3\\)，再用余弦单调递减核对。",
+          "next_reminder": "方向向量已得时，先调用夹角公式，再核对两直线取较小的非钝角。",
           "repeat_count": 1,
-          "repeat_count_source": "2026-07-18 的历史作答首次确认特殊角余弦值提取错误；2026-08-04 原题已独立正确，但迁移尚待同类题验证。",
+          "repeat_count_source": "2026-09-04 本批原始对话；不认定与历史交线识别断点相同。",
           "review_priority": 3,
           "confidence": "high",
           "need_user_confirmation": false
         },
-        "last_updated": "2026-08-04",
+        "last_updated": "2026-09-07",
         "rollback": {
-          "event_id": "GS-629-20260726-3",
-          "event_date": "2026-07-26",
+          "event_id": "GS-629-20260904-4",
+          "event_date": "2026-09-04",
           "event_type": "recurrence",
           "same_method_gap": false,
-          "method_gap_evidence": "2026-07-26 再次卡在 l2 的交线方向向量，但回滚层保存的前次方法断点指纹与当前卡不一致；只确认同题复发，不声明精确同方法断点复发。"
+          "method_gap_evidence": "当前夹角公式遗忘不同于历史交线方向识别断点，不声称同方法复发。"
         }
       },
       "topic_chains": []
@@ -77229,6 +77251,2395 @@
       "topic_chains": []
     },
     {
+      "id": "GS-771",
+      "path": "错题卡/GS-771_57697叉乘约束与模长最值.md",
+      "meta": {
+        "id": "GS-771",
+        "title": "57697叉乘约束与模长最值",
+        "subject": "高等数学",
+        "source": "input-05-57697 / 用户提供advice.zip原始资料 / 来源题号57697",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-03eeb366ef68cf108dc59556:2242d4878796184bc7cd53b8c67ae080124ef872d96186127b2f628c3b8cf60c:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:2fcdc8b06d840c9c634b734a80cf7be16f0cb84acf5a95737c989997e7164971"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-5fb93c192834baa0751f3382/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-771_57697叉乘约束与模长最值.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-771/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-771/question_01.png",
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-5fb93c192834baa0751f3382/manifest.json"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57697叉乘约束与模长最值",
+        "date": "2026-09-07",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-04 第1次错（本次收录的概念或方法卡点）：把未知向量c误当作常数，把向量叉乘误读为数乘；因两已知向量不成比例而认为题目无解。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-04 AI评分 1/5：原始作答明确混淆向量与标量及叉乘；提示后仅自报后续计算没问题，没有提交分量计算或最终结果。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "把未知向量c误当作常数，把向量叉乘误读为数乘；因两已知向量不成比例而认为题目无解。",
+        "knowledge": [
+          "向量代数与空间解析几何",
+          "叉乘",
+          "向量模长"
+        ],
+        "error_causes": [
+          "把未知向量c误当作常数，把向量叉乘误读为数乘；因两已知向量不成比例而认为题目无解。"
+        ],
+        "methods": [
+          "向量分量比较",
+          "平方和最小值"
+        ],
+        "traps": [
+          "模长是标量，向量本身不是常数",
+          "叉乘输出向量，不要求两个已知向量共线"
+        ],
+        "answer": "\\(r_{\\min}=1\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-08",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "已知向量\\(a=(-1,3,0),b=(3,1,0)\\)，在\\(a=b\\times c\\)约束下求未知向量\\(c\\)的模长最小值。",
+          "expected_method": "向量分量比较",
+          "expected_first_action": "先分清向量、模长与运算符，再设未知向量的三个分量并比较分量。",
+          "missed_action": "把未知向量c误当作常数，把向量叉乘误读为数乘；因两已知向量不成比例而认为题目无解。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先分清向量、模长与运算符，再设未知向量的三个分量并比较分量。",
+          "repeat_count": 1,
+          "repeat_count_source": "本批原始对话仅一段学习事件；未推测更早次数。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-07"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-772",
+      "path": "错题卡/GS-772_57858共同垂直与数量投影.md",
+      "meta": {
+        "id": "GS-772",
+        "title": "57858共同垂直与数量投影",
+        "subject": "高等数学",
+        "source": "input-05-57858 / 用户提供advice.zip原始资料 / 来源题号57858",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-1d0e9b92945ef946498832bc:29beb6f1b7912bd19f4fa728244820e673eee846508fa518932736b11c55984c:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:ad1f7346898775ea0d9fbd04168d86437bbdb95b3dd112416d4bb5df20d99441"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-ffca7ddee6fdf5cff4d4b5ae/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-772_57858共同垂直与数量投影.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-772/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-772/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-772/question_01.png",
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-ffca7ddee6fdf5cff4d4b5ae/manifest.json"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57858共同垂直与数量投影",
+        "date": "2026-09-07",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-04 第1次错（本次收录的概念或方法卡点）：把数量投影记号当成目标方向向量的模长；不清楚共同垂直条件如何确定未知向量方向，并误猜两已知向量必须平行。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-04 AI评分 2/5：投影记号、余弦意义与共同垂直方向均需讲解；最终能复述叉乘定方向、投影定倍数，未独立完成整题。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "把数量投影记号当成目标方向向量的模长；不清楚共同垂直条件如何确定未知向量方向，并误猜两已知向量必须平行。",
+        "knowledge": [
+          "向量代数与空间解析几何",
+          "叉乘",
+          "向量投影"
+        ],
+        "error_causes": [
+          "把数量投影记号当成目标方向向量的模长；不清楚共同垂直条件如何确定未知向量方向，并误猜两已知向量必须平行。"
+        ],
+        "methods": [
+          "共同垂直方向",
+          "数量投影定比例系数"
+        ],
+        "traps": [
+          "共同垂直不推出两个被垂直向量平行",
+          "叉乘只确定方向，还要乘比例系数",
+          "数量投影有正负；目标向量必须非零"
+        ],
+        "answer": "\\(r=(14,10,2)\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-08",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "\\(a=(2,-3,1),b=(1,-2,3),c=(2,1,2)\\)。求满足\\(r\\perp a,r\\perp b\\)且\\(\\operatorname{Prj}_c r=14\\)的向量\\(r\\)。",
+          "expected_method": "共同垂直方向",
+          "expected_first_action": "共同垂直先确定方向，保留比例系数；再把数量投影翻译为点积除以目标方向的模长。",
+          "missed_action": "把数量投影记号当成目标方向向量的模长；不清楚共同垂直条件如何确定未知向量方向，并误猜两已知向量必须平行。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "共同垂直先确定方向，保留比例系数；再把数量投影翻译为点积除以目标方向的模长。",
+          "repeat_count": 1,
+          "repeat_count_source": "本批原始对话仅一段学习事件；未推测更早次数。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-07"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-773",
+      "path": "错题卡/GS-773_57911直线平面位置关系.md",
+      "meta": {
+        "id": "GS-773",
+        "title": "57911直线平面位置关系",
+        "subject": "高等数学",
+        "source": "input-05-57911 / 用户提供advice.zip原始资料 / 来源题号57911",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-f8c2e45046b5755f7822de0b:313176fc35f0dde849575f737edce9cce4b92946911f243199fb17604bd51982:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:a18070d8edb9a3205329c0233c103d3f10ea6ad89b8cc8786f63c123220914e3"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-5783765bd58f10fd3f97049e/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-773_57911直线平面位置关系.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-773/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-773/question_01.png",
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-5783765bd58f10fd3f97049e/manifest.json"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57911直线平面位置关系",
+        "date": "2026-09-07",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-04 第1次错（本次收录的概念或方法卡点）：未分清平面系数向量与直线方向向量；后续又把方向向量与法向量点积为零直接判为线面平行，漏掉直线在平面内。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-04 AI评分 2/5：初始知道交线方向可由叉乘得到；澄清法向量后复述垂直关系正确，但点积为零的平行与包含区分仍答错。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "未分清平面系数向量与直线方向向量；后续又把方向向量与法向量点积为零直接判为线面平行，漏掉直线在平面内。",
+        "knowledge": [
+          "向量代数与空间解析几何",
+          "空间直线与平面",
+          "法向量",
+          "方向向量",
+          "叉乘"
+        ],
+        "error_causes": [
+          "未分清平面系数向量与直线方向向量；后续又把方向向量与法向量点积为零直接判为线面平行，漏掉直线在平面内。"
+        ],
+        "methods": [
+          "法向量叉乘",
+          "线面位置关系判定"
+        ],
+        "traps": [
+          "平面系数给法向量",
+          "方向向量垂直法向量时仍需代点区分平行与包含"
+        ],
+        "answer": "\\(L\\perp\\pi\\)，选C。",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-08",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "直线\\(L\\)由\\(x+3y+2z+2=0\\)、\\(2x-y-10z-1=0\\)相交给出，判断它与平面\\(\\pi:4x-2y+z-2=0\\)的位置关系。",
+          "expected_method": "法向量叉乘",
+          "expected_first_action": "先写清直线方向与平面法向量的角色；点积为零时补做代点判断。",
+          "missed_action": "未分清平面系数向量与直线方向向量；后续又把方向向量与法向量点积为零直接判为线面平行，漏掉直线在平面内。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先写清直线方向与平面法向量的角色；点积为零时补做代点判断。",
+          "repeat_count": 1,
+          "repeat_count_source": "本批原始对话仅一段学习事件；未推测更早次数。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-07"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-774",
+      "path": "错题卡/GS-774_57680平行切平面距离条件.md",
+      "meta": {
+        "id": "GS-774",
+        "title": "57680平行切平面距离条件",
+        "subject": "高等数学",
+        "source": "题库ID:57680 / advice.zip原始资料 input-02 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-4b5c2cc102095f98666d1979:80e34a774e0fffe4f393d637f9e5a93af19310e555d0bf9d1a29fe79a614cad8:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:c0934128e93cb85d932f7f947c79915d369c3638e8021816296f3fdc45acbf48"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-59d2bfae10803a9cf72337b2/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-774_57680平行切平面距离条件.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-774/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-774/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-774/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57680平行切平面距离条件",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：已确定法向量，但未把球面相切转成球心到平面的距离等于半径。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：法向量独立正确；完整讲解后能复述平面族、距离等式和两个解。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "已确定法向量，但未把球面相切转成球心到平面的距离等于半径。",
+        "knowledge": [
+          "空间直线与平面",
+          "法向量",
+          "点到平面距离",
+          "球面"
+        ],
+        "error_causes": [
+          "方法入口未触发"
+        ],
+        "methods": [
+          "待定常数平面族",
+          "相切转距离"
+        ],
+        "traps": [
+          "平行固定法向方向，仍需确定常数项",
+          "球两侧均有切平面"
+        ],
+        "answer": "\\(x+y+z\\pm2\\sqrt3=0\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57680平行切平面距离条件的题面条件",
+          "expected_method": "待定常数平面族",
+          "expected_first_action": "先由平行设只含常数项的平面，再用球心到平面距离等于半径。",
+          "missed_action": "已确定法向量，但未把球面相切转成球心到平面的距离等于半径。",
+          "action_gap_type": "B2-TRIGGER",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先由平行设只含常数项的平面，再用球心到平面距离等于半径。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-775",
+      "path": "错题卡/GS-775_57761向量模长差极限.md",
+      "meta": {
+        "id": "GS-775",
+        "title": "57761向量模长差极限",
+        "subject": "高等数学",
+        "source": "题库ID:57761 / advice.zip原始资料 input-02 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-75b869732e473043159670be:e2192ccef7ff2c636a862cdd106499d5003a7f9a0bd4f14424f51f5ae6007ddb:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:e85752955ca6511c63e95f83b26aed385460d2dc44df3fcc94cfe61aa13e0332"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-70ba4f3afa32abe9d161f245/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-775_57761向量模长差极限.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-775/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-775/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-775/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57761向量模长差极限",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：先把特殊角的正弦值记成余弦值而作无效替换；随后混淆点积自乘与叉积自乘，并不能解释约去零因子后为何可直接取极限。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 2/5：能识别导数定义与未定式形式，但模长运算、点叉积和极限合法性需多轮讲解；最后只完成简单极限的局部迁移。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "先把特殊角的正弦值记成余弦值而作无效替换；随后混淆点积自乘与叉积自乘，并不能解释约去零因子后为何可直接取极限。",
+        "knowledge": [
+          "极限",
+          "导数定义",
+          "有理化",
+          "向量模长",
+          "点积",
+          "叉乘",
+          "等价无穷小"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "模长差有理化",
+          "模平方转点积",
+          "非零分母极限运算"
+        ],
+        "traps": [
+          "模长导数不等于向量导数的模",
+          "自点积为模平方，自叉积为零",
+          "先约去零因子再检查分母极限"
+        ],
+        "answer": "\\(1\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57761向量模长差极限的题面条件",
+          "expected_method": "模长差有理化",
+          "expected_first_action": "模长差先有理化，模平方转点积；约去公共因子后重新判断极限类型。",
+          "missed_action": "先把特殊角的正弦值记成余弦值而作无效替换；随后混淆点积自乘与叉积自乘，并不能解释约去零因子后为何可直接取极限。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "模长差先有理化，模平方转点积；约去公共因子后重新判断极限类型。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-776",
+      "path": "错题卡/GS-776_57872过交线平面的距离.md",
+      "meta": {
+        "id": "GS-776",
+        "title": "57872过交线平面的距离",
+        "subject": "高等数学",
+        "source": "题库ID:57872 / advice.zip原始资料 input-02 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-5d2585b8cc39ce0c8499d1d4:9dfaba2f3aa61934d198f158dcbe8118b6b97f1e72aa0fb9c224d630a02ae14d:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:ece8cc9819344fb7ddd9bcab280f69fe23a56f94d3b17023a305c1ddefac74b5"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-019add2970e5a89f4e631747/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-776_57872过交线平面的距离.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-776/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-776/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57872过交线平面的距离",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：把“平面过直线”理解成与直线只交于一点；没有由整条直线包含于平面建立平面束。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：距离公式、两个法向量和交线方向均已独立写对；包含关系和平面束经提示后接受，后续计算仅自报没有问题。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "把“平面过直线”理解成与直线只交于一点；没有由整条直线包含于平面建立平面束。",
+        "knowledge": [
+          "空间直线与平面",
+          "两平面交线",
+          "平面束方程",
+          "点到平面距离"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "平面束方程",
+          "距离约束求参数"
+        ],
+        "traps": [
+          "过直线表示整条包含",
+          "一参数平面束需另验被遗漏的基准平面"
+        ],
+        "answer": "\\(x+2y+2z-10=0\\)或\\(4y+3z-16=0\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57872过交线平面的距离的题面条件",
+          "expected_method": "平面束方程",
+          "expected_first_action": "先把“过直线”翻译成包含，再列平面束及距离等式，并另验遗漏平面。",
+          "missed_action": "把“平面过直线”理解成与直线只交于一点；没有由整条直线包含于平面建立平面束。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先把“过直线”翻译成包含，再列平面束及距离等式，并另验遗漏平面。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-777",
+      "path": "错题卡/GS-777_57934平面束参数与漏解.md",
+      "meta": {
+        "id": "GS-777",
+        "title": "57934平面束参数与漏解",
+        "subject": "高等数学",
+        "source": "题库ID:57934 / advice.zip原始资料 input-02 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-fe3b3cf7bc8e3070ce1a857f:5767b6f20f80e0753c1154aafc3a9e5d540defa8a42728833300f0426ef2add9:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:28a42c6ae6568f684632072cd5633810f9829ab97ed56745171c8aee0395e0e0"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-c480014716a582c473e7d1d6/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-777_57934平面束参数与漏解.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-777/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-777/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-777/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-777/user_work_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57934平面束参数与漏解",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：先把两平面夹角放到直线与平面之间；改用平面束后又未检查一参数表示遗漏的基准平面。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：已独立求交线方向和线上一点；自主采用反序平面束并算出对应参数，主要缺口是角度对象、绝对值及遗漏平面的检验。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "先把两平面夹角放到直线与平面之间；改用平面束后又未检查一参数表示遗漏的基准平面。",
+        "knowledge": [
+          "空间直线与平面",
+          "平面束方程",
+          "平面夹角",
+          "参数分类讨论"
+        ],
+        "error_causes": [
+          "条件与边界检查遗漏"
+        ],
+        "methods": [
+          "一参数平面束",
+          "法向量夹角",
+          "遗漏基准平面检验"
+        ],
+        "traps": [
+          "参数不同不等于平面不同",
+          "夹角公式取绝对值",
+          "求有限参数后另验遗漏平面"
+        ],
+        "answer": "\\(x-z+4=0\\)或\\(x+20y+7z-12=0\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57934平面束参数与漏解的题面条件",
+          "expected_method": "一参数平面束",
+          "expected_first_action": "先标明夹角对应的两个对象；列平面束后在旁注明最后另验哪个基准平面。",
+          "missed_action": "先把两平面夹角放到直线与平面之间；改用平面束后又未检查一参数表示遗漏的基准平面。",
+          "action_gap_type": "B5-CHECK",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先标明夹角对应的两个对象；列平面束后在旁注明最后另验哪个基准平面。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-778",
+      "path": "错题卡/GS-778_57744叉积模与面积.md",
+      "meta": {
+        "id": "GS-778",
+        "title": "57744叉积模与面积",
+        "subject": "高等数学",
+        "source": "题库ID:57744 / advice.zip原始资料 input-03 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-cacb68092eaba9b32cbf31cc:aa469b3d793eb337d060e4e16f23f1e8e21e680d0694c12771e829c1ddb98058:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:e30c864d6a665497f0319bc6f631affa6a961ccf034e3d8c897ccf9c1e1b188c"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-2ec78183bedf3dbfc94e1603/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-778_57744叉积模与面积.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-778/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-778/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-778/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57744叉积模与面积",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：忘记邻边向量求面积的公式；提示后仍把叉积模中的正弦混成余弦，且不清楚反交换律和模长提系数规则。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 2/5：能够在讲解后展开叉积并去掉自身叉积项；反交换律、正弦与系数取绝对值均需解释，没有独立重做。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "忘记邻边向量求面积的公式；提示后仍把叉积模中的正弦混成余弦，且不清楚反交换律和模长提系数规则。",
+        "knowledge": [
+          "叉乘",
+          "点积",
+          "平行四边形面积",
+          "向量模长"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "叉积双线性展开",
+          "叉积模求面积"
+        ],
+        "traps": [
+          "新邻边夹角不同于原向量夹角",
+          "先合并向量再取模",
+          "交换叉积顺序整体变号"
+        ],
+        "answer": "\\(5/2\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57744叉积模与面积的题面条件",
+          "expected_method": "叉积双线性展开",
+          "expected_first_action": "以向量为邻边求面积先写叉积的模，展开合并之后再取模。",
+          "missed_action": "忘记邻边向量求面积的公式；提示后仍把叉积模中的正弦混成余弦，且不清楚反交换律和模长提系数规则。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "以向量为邻边求面积先写叉积的模，展开合并之后再取模。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-779",
+      "path": "错题卡/GS-779_58066水平面上的直线投影.md",
+      "meta": {
+        "id": "GS-779",
+        "title": "58066水平面上的直线投影",
+        "subject": "高等数学",
+        "source": "题库ID:58066 / advice.zip原始资料 input-03 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-278b88d09a9bb2b7af4efe26:9770cd78c1a2bc9a68cc1282d3a69452bb8b30648ebe1f5941bc7b5a9a04fec1:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:e9714318d2fbb1388cef3b6da0f4fa940288a673048f56b2dcb6db163c7f212f"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-4d93caf0f186bfa13895dbc9/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-779_58066水平面上的直线投影.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-779/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-779/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "58066水平面上的直线投影",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：叉乘第一个分量算错；目标又被误读为方向向量投影长度，未转成整条直线投影后的点集方程。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：两个法向量与叉乘入口正确；叉乘局部计算和投影对象需纠正，随后能复述点方向投影与消元法。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "叉乘第一个分量算错；目标又被误读为方向向量投影长度，未转成整条直线投影后的点集方程。",
+        "knowledge": [
+          "空间直线投影",
+          "坐标面投影",
+          "两平面交线",
+          "叉乘"
+        ],
+        "error_causes": [
+          "目标对象识别错误"
+        ],
+        "methods": [
+          "消元求水平投影",
+          "点与方向投影"
+        ],
+        "traps": [
+          "消去z不是把z等于零代入原两式",
+          "点的高度与方向分量不同"
+        ],
+        "answer": "\\(7x-y=11,z=0\\)；\\(7x-y=11,z=1\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "58066水平面上的直线投影的题面条件",
+          "expected_method": "消元求水平投影",
+          "expected_first_action": "先确认求的是投影点集；水平投影保留横向坐标，消去原高度后补投影平面。",
+          "missed_action": "叉乘第一个分量算错；目标又被误读为方向向量投影长度，未转成整条直线投影后的点集方程。",
+          "action_gap_type": "B1-GOAL",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先确认求的是投影点集；水平投影保留横向坐标，消去原高度后补投影平面。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-780",
+      "path": "错题卡/GS-780_58094三点平面与位置向量.md",
+      "meta": {
+        "id": "GS-780",
+        "title": "58094三点平面与位置向量",
+        "subject": "高等数学",
+        "source": "题库ID:58094 / advice.zip原始资料 input-03 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-a284312db63a88a285c4c237:4369177b0685daf573c986d3167b16cc676c0ffb267b01e992d774940e0e2c58:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:8cb27b898c34394757aac6991c99bafd74c4c8163ec0106fd86067e95773ebcd"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-4fc9cbd546cbbb580cfdf8be/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-780_58094三点平面与位置向量.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-780/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-780/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-780/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "58094三点平面与位置向量",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：初始待定系数法有效；在理解替代解法时，把位置向量成比例与原点共线的关系混淆，又把单参数直线当成整个平面。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：原来的设平面代三点方案正确；后续需讲清位置向量、单参数直线与双参数平面，最后能解释不能叉乘共线向量。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "初始待定系数法有效；在理解替代解法时，把位置向量成比例与原点共线的关系混淆，又把单参数直线当成整个平面。",
+        "knowledge": [
+          "空间平面方程",
+          "向量线性表示",
+          "法向量",
+          "叉乘"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "三点确定平面",
+          "面内独立向量叉乘"
+        ],
+        "traps": [
+          "两个不同点的位置向量成比例才可由其连线推出过原点",
+          "零向量不能作法向量"
+        ],
+        "answer": "\\(x-3y-2z=0\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "58094三点平面与位置向量的题面条件",
+          "expected_method": "三点确定平面",
+          "expected_first_action": "先辨别位置向量与自由方向；叉乘前检查两个面内向量不平行。",
+          "missed_action": "初始待定系数法有效；在理解替代解法时，把位置向量成比例与原点共线的关系混淆，又把单参数直线当成整个平面。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先辨别位置向量与自由方向；叉乘前检查两个面内向量不平行。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-781",
+      "path": "错题卡/GS-781_58118椭圆旋转不变量.md",
+      "meta": {
+        "id": "GS-781",
+        "title": "58118椭圆旋转不变量",
+        "subject": "高等数学",
+        "source": "题库ID:58118 / advice.zip原始资料 input-03 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-79016ebe22111f0c8889d83d:377e0d927aeeebf2e01b462a3f9413aaa6d1dcf8de24a40e8f6137a97800c2d1:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:ad596ab87df391ad7f4580091e81c8221f64e64281e283e23d0380b4fd6a3251"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-175d30a5d5d55c342051a566/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-781_58118椭圆旋转不变量.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-781/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-781/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "58118椭圆旋转不变量",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：未分清母线点、旋转后点、圆心与截面；把横向坐标直接当距离，最后复述仍把高度当到轴距离并把母线条件套给曲面。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 2/5：能识别原曲线为椭圆并给出截距；旋转不变量及新旧坐标角色需反复解释，最后错误复述后未见进一步回应。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "未分清母线点、旋转后点、圆心与截面；把横向坐标直接当距离，最后复述仍把高度当到轴距离并把母线条件套给曲面。",
+        "knowledge": [
+          "旋转曲面",
+          "二次曲面",
+          "点到坐标轴距离"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "轴向坐标与到轴距离不变量"
+        ],
+        "traps": [
+          "距离非负不能直接等于有符号坐标",
+          "母线平面条件不约束所有旋转后点"
+        ],
+        "answer": "\\(x^2+y^2+2z^2=4\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "58118椭圆旋转不变量的题面条件",
+          "expected_method": "轴向坐标与到轴距离不变量",
+          "expected_first_action": "先画母线点绕轴形成的一个圆，分别写高度与半径不变量，再消去旧坐标。",
+          "missed_action": "未分清母线点、旋转后点、圆心与截面；把横向坐标直接当距离，最后复述仍把高度当到轴距离并把母线条件套给曲面。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先画母线点绕轴形成的一个圆，分别写高度与半径不变量，再消去旧坐标。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-782",
+      "path": "错题卡/GS-782_57981投影直线与辅助平面.md",
+      "meta": {
+        "id": "GS-782",
+        "title": "57981投影直线与辅助平面",
+        "subject": "高等数学",
+        "source": "题库ID:57981 / advice.zip原始资料 input-04 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-335862410da602ac683607cd:c5313e5183eed6dea00d4c23bba69d9dbf29a2d3cfbe8ea16b4b72c612c866af:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:ac4d1d300b3b2846fbeb48b94257c37cb649eada38374d0b731781c95fdd9b8f"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-62587d01b5099ff426e1418b/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-782_57981投影直线与辅助平面.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-782/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-782/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-782/explanation_03.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-782/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57981投影直线与辅助平面",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：把求投影直线误看成投影长度，又把直线方向当法向量并漏读中间负号；无法想象含斜线且垂直于目标平面的辅助平面。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 2/5：能读出投影平面法向量；原直线方向、目标对象及辅助平面均需纠正和图示，最后只确认理解。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "把求投影直线误看成投影长度，又把直线方向当法向量并漏读中间负号；无法想象含斜线且垂直于目标平面的辅助平面。",
+        "knowledge": [
+          "空间直线投影",
+          "辅助平面",
+          "法向量",
+          "方向向量"
+        ],
+        "error_causes": [
+          "目标对象识别错误"
+        ],
+        "methods": [
+          "辅助平面法",
+          "叉乘求辅助法向量"
+        ],
+        "traps": [
+          "原直线可斜交投影平面",
+          "投影为直线要求原方向不平行法向",
+          "非标准分子先转参数式"
+        ],
+        "answer": "\\(9x+5y-11z-3=0,\\ 2x+3y+3z-8=0\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57981投影直线与辅助平面的题面条件",
+          "expected_method": "辅助平面法",
+          "expected_first_action": "先将对称式转参数式读方向，再构造包含原方向和投影法向方向的辅助平面。",
+          "missed_action": "把求投影直线误看成投影长度，又把直线方向当法向量并漏读中间负号；无法想象含斜线且垂直于目标平面的辅助平面。",
+          "action_gap_type": "B1-GOAL",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先将对称式转参数式读方向，再构造包含原方向和投影法向方向的辅助平面。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-783",
+      "path": "错题卡/GS-783_58016线面平行与直线方程.md",
+      "meta": {
+        "id": "GS-783",
+        "title": "58016线面平行与直线方程",
+        "subject": "高等数学",
+        "source": "题库ID:58016 / advice.zip原始资料 input-04 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-69cc9af4d608c645b19147bd:74889f8d7e31fde1dc1824ee86e87df1a625823deb8272050825fd1282bc38fa:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:6cd6ebedd151f46e7565c939884c26daf5b7a6bec798d539475f209c1113a77f"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-b6098633bd7ac6db212beb47/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-783_58016线面平行与直线方程.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-783/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-783/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-783/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "58016线面平行与直线方程",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：把线面平行误写成直线方向与平面法向平行；用户后续还确认曾混用平面点法式和直线点向式，两处均需保留。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：首个垂直点积条件正确；第二个关系需纠正，随后能自行定位公式对象混淆并列两条正确点积条件，未提交最后计算。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "把线面平行误写成直线方向与平面法向平行；用户后续还确认曾混用平面点法式和直线点向式，两处均需保留。",
+        "knowledge": [
+          "空间直线与平面",
+          "点向式",
+          "法向量",
+          "叉乘"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "共同垂直确定方向",
+          "点向式直线"
+        ],
+        "traps": [
+          "线面平行对应方向与法向垂直",
+          "零向量不可作方向",
+          "本题垂直指方向正交"
+        ],
+        "answer": "\\((x+1)=(y-2)/(-2)=(z-3)\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "58016线面平行与直线方程的题面条件",
+          "expected_method": "共同垂直确定方向",
+          "expected_first_action": "求直线先锁定点加方向，再把每条几何条件翻译成正确向量关系。",
+          "missed_action": "把线面平行误写成直线方向与平面法向平行；用户后续还确认曾混用平面点法式和直线点向式，两处均需保留。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "求直线先锁定点加方向，再把每条几何条件翻译成正确向量关系。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-784",
+      "path": "错题卡/GS-784_58047公垂线交点参数.md",
+      "meta": {
+        "id": "GS-784",
+        "title": "58047公垂线交点参数",
+        "subject": "高等数学",
+        "source": "题库ID:58047 / advice.zip原始资料 input-04 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-121a544099a2e9443e0ecf87:597770f574d8c96db9f780fd086107d286adcd5b769c59ab52565aca931a82f7:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:c0beab7665af1f96dd13df3d8cea09aca39f0b05bbefcdf51f4a69804c703c43"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-9513da3ff07708bac42fa43c/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-784_58047公垂线交点参数.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-784/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-784/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-784/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "58047公垂线交点参数",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：已经求出公垂线方向，却把方向分量分别乘坐标表达式而没有构造两交点之差；随后不理解参数确定即可定位具体点。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：公垂线方向及两条参数式结构正确；相交条件到两交点连线的连接需提示，坐标结果由助手给出。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "已经求出公垂线方向，却把方向分量分别乘坐标表达式而没有构造两交点之差；随后不理解参数确定即可定位具体点。",
+        "knowledge": [
+          "空间直线与平面",
+          "公垂线",
+          "直线参数方程",
+          "叉乘"
+        ],
+        "error_causes": [
+          "动作链断裂"
+        ],
+        "methods": [
+          "两线上设交点",
+          "连接向量平行已知方向"
+        ],
+        "traps": [
+          "两条线用独立参数",
+          "方向不是逐分量乘坐标的指令",
+          "解参数后要代回取点"
+        ],
+        "answer": "\\(x/(-4)=(y-1)/(-1)=(z-1)/3\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "58047公垂线交点参数的题面条件",
+          "expected_method": "两线上设交点",
+          "expected_first_action": "分别设两个交点，用连接向量与公垂线方向共线列方程；求参数后直接代回点。",
+          "missed_action": "已经求出公垂线方向，却把方向分量分别乘坐标表达式而没有构造两交点之差；随后不理解参数确定即可定位具体点。",
+          "action_gap_type": "B4-CHAIN",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "分别设两个交点，用连接向量与公垂线方向共线列方程；求参数后直接代回点。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-785",
+      "path": "错题卡/GS-785_58078零方向分量公垂线.md",
+      "meta": {
+        "id": "GS-785",
+        "title": "58078零方向分量公垂线",
+        "subject": "高等数学",
+        "source": "题库ID:58078 / advice.zip原始资料 input-04 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-b3743660b10aaf18efe6f0fc:a9ce89376133a6bef659046e09f58c57df78ed7fa57bb74801dab7b5aa3a12ac:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:c4ef9cefc36ecdb78b8ba2d2e37d2b36a58c0486b27c6890ee8e8e3a35f28f51"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-1161fd10b29b762808aaf81a/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-785_58078零方向分量公垂线.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-785/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-785/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "58078零方向分量公垂线",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：公垂线方向正确，但将零方向分量写成变化坐标并漏掉固定坐标；修正后又解错参数、漏写点向式的坐标平移。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：方向与交点共线主线独立成立；最先错误在参数坐标，后续代数及平移仍需修正，最后一致性验算由助手完成。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "公垂线方向正确，但将零方向分量写成变化坐标并漏掉固定坐标；修正后又解错参数、漏写点向式的坐标平移。",
+        "knowledge": [
+          "公垂线",
+          "直线参数方程",
+          "方向向量",
+          "叉乘"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "零分量改参数式",
+          "交点连线共线",
+          "同点同向验等价"
+        ],
+        "traps": [
+          "零方向分量表示坐标固定",
+          "过点公式要减去该点坐标",
+          "不同方程可表示同一直线"
+        ],
+        "answer": "\\((x-7/3)=(y+1/3)/(-2)=(z-1)/(-1)\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "58078零方向分量公垂线的题面条件",
+          "expected_method": "零分量改参数式",
+          "expected_first_action": "零方向分量先写固定坐标，再设独立参数；求出点后检查每个平移项。",
+          "missed_action": "公垂线方向正确，但将零方向分量写成变化坐标并漏掉固定坐标；修正后又解错参数、漏写点向式的坐标平移。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "零方向分量先写固定坐标，再设独立参数；求出点后检查每个平移项。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-786",
+      "path": "错题卡/GS-786_57921法向量接平面点法式.md",
+      "meta": {
+        "id": "GS-786",
+        "title": "57921法向量接平面点法式",
+        "subject": "高等数学",
+        "source": "题库ID:57921 / advice.zip原始资料 input-06 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-4cee4ffe68365e93346566a5:0df1d543ade7b69ccdcb214ffaa477b8486c956276e73d0882891614ab981dc8:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:d86c5b6158012301c5c1c6f30ac9690982cb7d1b860f853f16d4abcbf6def9bd"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-4253b1fcd1bda17b8f627b92/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-786_57921法向量接平面点法式.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-786/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-786/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-786/explanation_03.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-786/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57921法向量接平面点法式",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：自报已求出法向量，但不知道怎样由法向量和平面上一点写平面方程。 用户在当前任务确认学习日期。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：用户描述的方向到法向量的逻辑成立；未展示具体叉乘结果，只能保留自报，点法式需完整补充。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "自报已求出法向量，但不知道怎样由法向量和平面上一点写平面方程。",
+        "knowledge": [
+          "空间平面方程",
+          "平面点法式",
+          "法向量",
+          "两平面交线"
+        ],
+        "error_causes": [
+          "公式或定义遗忘"
+        ],
+        "methods": [
+          "法向量叉乘",
+          "点法式平面"
+        ],
+        "traps": [
+          "点法式描述平面而非空间直线",
+          "法向量必须非零",
+          "负坐标代入注意双负号"
+        ],
+        "answer": "\\(16x-14y-11z-65=0\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57921法向量接平面点法式的题面条件",
+          "expected_method": "法向量叉乘",
+          "expected_first_action": "点加法向量时，先构造平面内位移向量并令其与法向量点积为零。",
+          "missed_action": "自报已求出法向量，但不知道怎样由法向量和平面上一点写平面方程。",
+          "action_gap_type": "A-KG",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "点加法向量时，先构造平面内位移向量并令其与法向量点积为零。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-787",
+      "path": "错题卡/GS-787_57969点面距离公式遗忘.md",
+      "meta": {
+        "id": "GS-787",
+        "title": "57969点面距离公式遗忘",
+        "subject": "高等数学",
+        "source": "题库ID:57969 / advice.zip原始资料 input-06 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-6b6a52e3a4a1638d8e206258:16cad08857994c0b68c579affc5ad606bdc206231be8c801bf0ff58dc7cdf0ef:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:b5a281dd8930dccc2f53f5b5f4cb77d94ebd1e6ede9ff5a0514371b4fc839e8d"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-fcbc40674353854ea3c3c5e9/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-787_57969点面距离公式遗忘.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-787/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-787/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57969点面距离公式遗忘",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：明确表示忘记点面距离公式，并连带询问点点、二维点线与空间点线距离的区别。 用户在当前任务确认学习日期。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 1/5：只有公式遗忘的真实陈述；没有用户代入计算或讲解后复述。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "明确表示忘记点面距离公式，并连带询问点点、二维点线与空间点线距离的区别。",
+        "knowledge": [
+          "点到平面距离",
+          "空间距离",
+          "法向量"
+        ],
+        "error_causes": [
+          "公式或定义遗忘"
+        ],
+        "methods": [
+          "点代平面左端除法向量模"
+        ],
+        "traps": [
+          "分子取绝对值",
+          "空间直线不能套二维单方程公式"
+        ],
+        "answer": "\\(1/\\sqrt{30}=\\sqrt{30}/30\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57969点面距离公式遗忘的题面条件",
+          "expected_method": "点代平面左端除法向量模",
+          "expected_first_action": "先判对象是点面距离，再把点代入平面左端取绝对值并除法向量模。",
+          "missed_action": "明确表示忘记点面距离公式，并连带询问点点、二维点线与空间点线距离的区别。",
+          "action_gap_type": "A-KG",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先判对象是点面距离，再把点代入平面左端取绝对值并除法向量模。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-788",
+      "path": "错题卡/GS-788_58004空间点线距离最小值.md",
+      "meta": {
+        "id": "GS-788",
+        "title": "58004空间点线距离最小值",
+        "subject": "高等数学",
+        "source": "题库ID:58004 / advice.zip原始资料 input-06 / 2026-09-05",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-7c047f4096ab9e2f3dff4701:984bae7cd3e4a706758c54050c44d01b6af321c6286571cdabfff55042618f98:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:83aa4f8dbcd6b09cc2ae0ce32380d826ba62d2e7e6a5aa0669bd4f8ea259848c"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-05/MATHPKG-ebd779a8046098191d84b46d/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-788_58004空间点线距离最小值.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-788/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-788/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-788/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "58004空间点线距离最小值",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-05 第1次错（本次收录的概念或方法卡点）：将空间直线方向当法向量并试套二维点线公式；已有正确参数式却未认出它就是直线方程，后续又混淆最小值位置与数值及非首一配方。 用户在当前任务确认学习日期。"
+        ],
+        "mastery_history": [
+          "2026-09-05 AI评分 3/5：参数式独立正确，随后主动提出动点距离最小值法；非负性、平方与原距离的对应、配方需讲解，最后无独立重做。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "将空间直线方向当法向量并试套二维点线公式；已有正确参数式却未认出它就是直线方程，后续又混淆最小值位置与数值及非首一配方。",
+        "knowledge": [
+          "点到空间直线距离",
+          "直线参数方程",
+          "二次函数最值",
+          "配方法"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "参数化动点",
+          "距离平方最小值",
+          "非首一二次式配方"
+        ],
+        "traps": [
+          "最小值位置相同不代表数值相等",
+          "最后开方",
+          "距离允许为零"
+        ],
+        "answer": "\\(\\sqrt{31/11}=\\sqrt{341}/11\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "58004空间点线距离最小值的题面条件",
+          "expected_method": "参数化动点",
+          "expected_first_action": "已有参数式就直接写动点到定点的距离平方，求最小值后开方。",
+          "missed_action": "将空间直线方向当法向量并试套二维点线公式；已有正确参数式却未认出它就是直线方程，后续又混淆最小值位置与数值及非首一配方。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "已有参数式就直接写动点到定点的距离平方，求最小值后开方。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-789",
+      "path": "错题卡/GS-789_19334特殊点复合函数求导.md",
+      "meta": {
+        "id": "GS-789",
+        "title": "19334特殊点复合函数求导",
+        "subject": "高等数学",
+        "source": "题库ID:19334 / advice.zip原始资料 input-01 / 2026-09-06",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-7c0b92fd6dc985626a3e040e:631e298ed56fb6429bae580c7d104e6c7d500804bf6696386b39ae0cd7374ccd:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:ddd9361eaa40c41dd5df8beb16b98a44301c8def29412afaea2eb62d9fc64aed"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-06/MATHPKG-3021ba255dcaf8f6bc65f9bf/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-789_19334特殊点复合函数求导.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-789/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-789/question_01.png"
+        ],
+        "chapter": "多元函数微分学",
+        "question_type": "19334特殊点复合函数求导",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-06 第1次错（本次收录的概念或方法卡点）：能说出链式法则，但未检查外层函数在对应特殊点的可微性；被提醒后仍不知道怎样用可微定义判定。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-06 AI评分 2/5：链式法则结构可自行口述；适用条件、可微余项检验及改走一元导数定义均由助手讲解。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "能说出链式法则，但未检查外层函数在对应特殊点的可微性；被提醒后仍不知道怎样用可微定义判定。",
+        "knowledge": [
+          "多元函数偏导",
+          "可微定义",
+          "链式法则",
+          "导数定义",
+          "等价无穷小"
+        ],
+        "error_causes": [
+          "条件与边界检查遗漏"
+        ],
+        "methods": [
+          "特殊点代入后用导数定义",
+          "可微余项检验"
+        ],
+        "traps": [
+          "偏导存在不足以直接套多元链式法则",
+          "根号提取要用绝对值",
+          "少数路径趋零不能证明可微"
+        ],
+        "answer": "\\(z\\prime(0)=\\sqrt2\\)，选D。",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "19334特殊点复合函数求导的题面条件",
+          "expected_method": "特殊点代入后用导数定义",
+          "expected_first_action": "先看内层是否把参数送到外层特殊点；条件不明时先代成一元函数再写差商。",
+          "missed_action": "能说出链式法则，但未检查外层函数在对应特殊点的可微性；被提醒后仍不知道怎样用可微定义判定。",
+          "action_gap_type": "B5-CHECK",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先看内层是否把参数送到外层特殊点；条件不明时先代成一元函数再写差商。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-790",
+      "path": "错题卡/GS-790_57687偏导定义与连续性.md",
+      "meta": {
+        "id": "GS-790",
+        "title": "57687偏导定义与连续性",
+        "subject": "高等数学",
+        "source": "题库ID:57687 / advice.zip原始资料 input-01 / 2026-09-06",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-9624b8d0257c4451695f9bb9:d4e3bd5477f6be2539618460e5bf94da57cab63a41839146fe79874379f67c87:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:69523f03ebd8d82bb85aeb5b912032efee3d4b80af75ce99cbca3f1f7d4b9e66"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-06/MATHPKG-fdf29d38934caa5efb80c477/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-790_57687偏导定义与连续性.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-790/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-790/question_01.png"
+        ],
+        "chapter": "多元函数微分学",
+        "question_type": "57687偏导定义与连续性",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-06 第1次错（本次收录的概念或方法卡点）：把导数存在误当成定义结果与普通求导公式相比较；直接求偏导时误读幂次和反三角导数符号，后续又把差商极限混成原函数连续性。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-06 AI评分 2/5：收到完整定义法后能复述两个偏导的结论，但理由仍混淆差商与函数值极限，并把目标点的零比零误代为零。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "把导数存在误当成定义结果与普通求导公式相比较；直接求偏导时误读幂次和反三角导数符号，后续又把差商极限混成原函数连续性。",
+        "knowledge": [
+          "多元函数偏导",
+          "偏导定义",
+          "多元函数连续可微",
+          "等价无穷小",
+          "绝对值"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "固定另一个变量写差商",
+          "左右极限判定"
+        ],
+        "traps": [
+          "差商左右极限不同不代表原函数不连续",
+          "普通偏导公式在目标点分母为零不可直接代"
+        ],
+        "answer": "\\(f_x(0,0)\\)不存在，\\(f_y(0,0)=0\\)，选B。",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57687偏导定义与连续性的题面条件",
+          "expected_method": "固定另一个变量写差商",
+          "expected_first_action": "偏导存在性先固定另一变量写差商，并明确正在求差商极限还是函数值极限。",
+          "missed_action": "把导数存在误当成定义结果与普通求导公式相比较；直接求偏导时误读幂次和反三角导数符号，后续又把差商极限混成原函数连续性。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "偏导存在性先固定另一变量写差商，并明确正在求差商极限还是函数值极限。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08",
+        "inferred_knowledge_candidates": [
+          "导数定义"
+        ]
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-791",
+      "path": "错题卡/GS-791_57849偏导存在的推论.md",
+      "meta": {
+        "id": "GS-791",
+        "title": "57849偏导存在的推论",
+        "subject": "高等数学",
+        "source": "题库ID:57849 / advice.zip原始资料 input-01 / 2026-09-06",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-a1b6bae95f480caed54aa8f9:3973b101daaca0cc1e216544ab85c0b102d4c6acb2c1194ba210e94749d57c93:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:c778624ad36265633947ac895290e6d9823579f1c7420105b3e891e8d44b1d2f"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-06/MATHPKG-72e6d2ce9128d836fadc939e/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-791_57849偏导存在的推论.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-791/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-791/question_01.png"
+        ],
+        "chapter": "多元函数微分学",
+        "question_type": "57849偏导存在的推论",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-06 第1次错（本次收录的概念或方法卡点）：能写偏导定义，却未从坐标截线的一元可导性想到相应连续性；附加追问又把非零常数除趋零量误称为未定式。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-06 AI评分 3/5：偏导差商独立正确；提示后能迁移到另一坐标方向，并正确回答可微推出连续与偏导存在；最后额外极限概念仍需纠正。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "能写偏导定义，却未从坐标截线的一元可导性想到相应连续性；附加追问又把非零常数除趋零量误称为未定式。",
+        "knowledge": [
+          "偏导定义",
+          "多元函数连续可微",
+          "可微定义",
+          "一元函数可导与连续",
+          "极限类型"
+        ],
+        "error_causes": [
+          "方法入口未触发"
+        ],
+        "methods": [
+          "对应坐标截线可导推出连续",
+          "区分一维与二维极限"
+        ],
+        "traps": [
+          "不能把坐标方向结论推广到二维任意路径",
+          "恒零分子不等于仅趋零分子",
+          "非零常数除趋零量需查单侧符号"
+        ],
+        "answer": "选C：\\(\\lim_{x\\to x_0}f(x,y_0)=f(x_0,y_0)\\)。",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57849偏导存在的推论的题面条件",
+          "expected_method": "对应坐标截线可导推出连续",
+          "expected_first_action": "将偏导先看成固定另一变量的一元导数，再使用可导必连续；不要跨对象扩大结论。",
+          "missed_action": "能写偏导定义，却未从坐标截线的一元可导性想到相应连续性；附加追问又把非零常数除趋零量误称为未定式。",
+          "action_gap_type": "B2-TRIGGER",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "将偏导先看成固定另一变量的一元导数，再使用可导必连续；不要跨对象扩大结论。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08",
+        "inferred_knowledge_candidates": [
+          "导数定义"
+        ]
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-792",
+      "path": "错题卡/GS-792_57912隐函数局部存在判定.md",
+      "meta": {
+        "id": "GS-792",
+        "title": "57912隐函数局部存在判定",
+        "subject": "高等数学",
+        "source": "题库ID:57912 / advice.zip原始资料 input-01 / 2026-09-06",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-8f0939d9946cd80ed5ec54fc:7b89b53d6d8e43e2a7d5d303476eaee14cfc3f31e0e2ca43cd9423a4ae944a13:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:911f2a170b9e2d9841f5a2a02e025f32450e8dfe3772556a5c4208a230eab1dc"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-06/MATHPKG-2e3ecb007ba34a1ceee9a5c8/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-792_57912隐函数局部存在判定.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-792/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-792/question_01.png"
+        ],
+        "chapter": "多元函数微分学",
+        "question_type": "57912隐函数局部存在判定",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-06 第1次错（本次收录的概念或方法卡点）：不理解“方程确定隐函数”所指的局部解出某个变量，即使重复偏导非零规则仍未建立变量对应关系。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-06 AI评分 2/5：需要先用可显式解出的简单方程解释隐函数含义，再回到存在定理；最终仅复述非零偏导对应哪个因变量。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "不理解“方程确定隐函数”所指的局部解出某个变量，即使重复偏导非零规则仍未建立变量对应关系。",
+        "knowledge": [
+          "隐函数存在定理",
+          "多元函数偏导",
+          "充分条件与必要条件"
+        ],
+        "error_causes": [
+          "公式或定义遗忘"
+        ],
+        "methods": [
+          "检查点在方程上",
+          "对应偏导非零保证局部解出变量"
+        ],
+        "traps": [
+          "非零偏导是充分条件",
+          "局部唯一不等于全局唯一",
+          "需连续偏导等正则条件"
+        ],
+        "answer": "可局部确定\\(x=x(y,z)\\)和\\(y=y(x,z)\\)，选C。",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "57912隐函数局部存在判定的题面条件",
+          "expected_method": "检查点在方程上",
+          "expected_first_action": "先把隐函数解释成局部唯一解出某变量，再核对点、正则条件和该变量对应偏导。",
+          "missed_action": "不理解“方程确定隐函数”所指的局部解出某个变量，即使重复偏导非零规则仍未建立变量对应关系。",
+          "action_gap_type": "A-KG",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先把隐函数解释成局部唯一解出某变量，再核对点、正则条件和该变量对应偏导。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-793",
+      "path": "错题卡/GS-793_81450根式偏导与约分.md",
+      "meta": {
+        "id": "GS-793",
+        "title": "81450根式偏导与约分",
+        "subject": "高等数学",
+        "source": "题库ID:81450 / advice.zip原始资料 input-01 / 2026-09-06",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-10795a38e73a7fdd6ffa5178:f793457b659649e6659d903ad7c67bcc1d805e75c0076cc2b4301ff87d7f1581:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:7a95d603d749af67ee02cb36359e71adcd355eb5080cb1a9929b51752b8729a5"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-06/MATHPKG-65e1717224589c6a39fca4b5/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-793_81450根式偏导与约分.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-793/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-793/question_01.png"
+        ],
+        "chapter": "多元函数微分学",
+        "question_type": "81450根式偏导与约分",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "B",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-06 第1次错（本次收录的概念或方法卡点）：用户已选对且链式求导正确；局部误判在未识别根式约分等价形式，认为解析分子出现根号是求导错误。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-06 AI评分 4/5：明确自报选项正确，且展示的链式求导结构正确；根式化简需说明，未见说明后独立复述。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "用户已选对且链式求导正确；局部误判在未识别根式约分等价形式，认为解析分子出现根号是求导错误。",
+        "knowledge": [
+          "多元函数偏导",
+          "链式法则",
+          "根式化简",
+          "绝对值",
+          "偏导定义"
+        ],
+        "error_causes": [
+          "条件与边界检查遗漏"
+        ],
+        "methods": [
+          "先固定变量再求导",
+          "根式约分检验等价"
+        ],
+        "traps": [
+          "约去根式需非零",
+          "y为零时另看恒零截线",
+          "根式符号与x的符号分开"
+        ],
+        "answer": "选D：当\\(y\\ne0\\)时\\(f_x(0,y)\\)不存在。",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "81450根式偏导与约分的题面条件",
+          "expected_method": "先固定变量再求导",
+          "expected_first_action": "链式求导后先检验两种根式写法是否等价；约分前单独处理零因子。",
+          "missed_action": "用户已选对且链式求导正确；局部误判在未识别根式约分等价形式，认为解析分子出现根号是求导错误。",
+          "action_gap_type": "B5-CHECK",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "链式求导后先检验两种根式写法是否等价；约分前单独处理零因子。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08",
+        "inferred_knowledge_candidates": [
+          "导数定义"
+        ]
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-794",
+      "path": "错题卡/GS-794_57681距离定义与轨迹曲面.md",
+      "meta": {
+        "id": "GS-794",
+        "title": "57681距离定义与轨迹曲面",
+        "subject": "高等数学",
+        "source": "题库ID:57681 / advice.zip原始资料 input-07 / 2026-09-06",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-b21475b1044afc69dc5fe25a:452acc43a06ab5a5d4f2218b2a9bd70a6135eedbb9da7827292ecf829be013cb:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:f69689038bbcd54bc09b6d5f353f8151af83ff464f37c6d47b3149a5f09b1727"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-06/MATHPKG-b088d59fe1bdf8a90cc46438/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-794_57681距离定义与轨迹曲面.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-794/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-794/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "57681距离定义与轨迹曲面",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "B",
+        "mistake_count": 0,
+        "wrong_history": [
+          "2026-09-06 学习讨论，未登记作答失败；第一问已在同条消息主动说明。"
+        ],
+        "mastery_history": [
+          "2026-09-06 局部AI评分4/5：已展示的距离最小化机制正确；四小问整题待评分，第二、三问只有自报。"
+        ],
+        "keywords": [
+          "学习记录",
+          "无新增作答错误",
+          "局部独立正确"
+        ],
+        "wrong_point": "个人作答错误未记录",
+        "knowledge": [
+          "空间距离",
+          "点到平面距离",
+          "点到坐标轴距离",
+          "二次曲面"
+        ],
+        "error_causes": [
+          "未记录个人错因"
+        ],
+        "methods": [
+          "目标集合上最小化距离",
+          "按距离条件列轨迹"
+        ],
+        "traps": [
+          "点到面应在面上自由坐标取最小",
+          "距离开平方带绝对值",
+          "未展示的小问不判已掌握"
+        ],
+        "answer": "I：\\(x^2+y^2+8z=16\\)；II：\\((x+2/3)^2+(y+1)^2+(z+4/3)^2=116/9\\)；III：\\(10z=x^2+25\\)；IV：\\(y^2+z^2=4x^2\\)。",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "待用户复做证据",
+          "interval_days": 0,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": false,
+          "evidence_origin": "model_inferred_from_solution",
+          "knowledge_gap_or_method_gap": "只保留题目方法入口，不作为个人错误证据。",
+          "method_trigger": "57681距离定义与轨迹曲面的题面条件",
+          "expected_method": "目标集合上最小化距离",
+          "expected_first_action": "目标平面哪些坐标可以自由选择，就在距离平方中对它们取最小，再用剩余距离条件列式。",
+          "missed_action": "",
+          "action_gap_type": "",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "目标平面哪些坐标可以自由选择，就在距离平方中对它们取最小，再用剩余距离条件列式。",
+          "repeat_count": 0,
+          "repeat_count_source": "没有确认新的错误事件。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-795",
+      "path": "错题卡/GS-795_58104旋转半径对应点.md",
+      "meta": {
+        "id": "GS-795",
+        "title": "58104旋转半径对应点",
+        "subject": "高等数学",
+        "source": "题库ID:58104 / advice.zip原始资料 input-07 / 2026-09-06",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-8b294c234eaaae8910985b56:7e503e9dda4502ba2e9b47c52ca8c1326a8e18745c83cab5cfbda86d768230d1:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:5bcf1cf3f3bb1f7c57d221d548cd23da9eb2b3b2c16c02b2052faae9acc6ccd4"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-06/MATHPKG-b631ed80faaa2e163e93ca3f/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-795_58104旋转半径对应点.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-795/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-795/explanation_02.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-795/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "58104旋转半径对应点",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-06 第1次错（本次收录的概念或方法卡点）：把固定母线点旋转前后半径不变误当成整条母线所有点半径都等于一个常数，因而把自由参数固定成单个值。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-06 AI评分 3/5：点、方向及参数式独立正确；澄清不变量对应哪一对点后，用户自行完成参数消元并得到一致表达式。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "把固定母线点旋转前后半径不变误当成整条母线所有点半径都等于一个常数，因而把自由参数固定成单个值。",
+        "knowledge": [
+          "旋转曲面",
+          "直线参数方程",
+          "点到坐标轴距离",
+          "参数消元"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "对应点旋转不变量",
+          "高度消参数"
+        ],
+        "traps": [
+          "固定点的半径不变不代表不同母线点半径相同",
+          "把参数定死可能只描述一个纬圆"
+        ],
+        "answer": "\\(x^2+y^2=1+(z-1)^2/4\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "58104旋转半径对应点的题面条件",
+          "expected_method": "对应点旋转不变量",
+          "expected_first_action": "同时写母线参数点与旋转后点，令同一对点的高度、到轴距离对应相等。",
+          "missed_action": "把固定母线点旋转前后半径不变误当成整条母线所有点半径都等于一个常数，因而把自由参数固定成单个值。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "同时写母线参数点与旋转后点，令同一对点的高度、到轴距离对应相等。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 4,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
+      "id": "GS-796",
+      "path": "错题卡/GS-796_58128平移旋转轴与距离.md",
+      "meta": {
+        "id": "GS-796",
+        "title": "58128平移旋转轴与距离",
+        "subject": "高等数学",
+        "source": "题库ID:58128 / advice.zip原始资料 input-07 / 2026-09-06",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-fe520f55165be06126a1a72f:0436c253c1c3c2b41c855285c1391fbd1a5a6b40f0c5b7248e26b9cfe4568d03:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:88a8d9c1b8d47d91c57ee8ba5b60961b7d8b616ffaf5a10833c8e53d2df18d2a"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-06/MATHPKG-39e0c1b5ac6c3ae053b24efc/manifest.json",
+          "错题知识网络/可视化错题详情/高等数学/GS-796_58128平移旋转轴与距离.md",
+          "错题知识网络/assets/visual_wrong_questions/GS-796/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/GS-796/question_01.png"
+        ],
+        "chapter": "向量代数与空间解析几何",
+        "question_type": "58128平移旋转轴与距离",
+        "date": "2026-09-08",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-06 第1次错（本次收录的概念或方法卡点）：能描述轴竖直，却仍把未给z值看成信息缺失；不清楚平移轴上的自由坐标及点到该轴距离为何只保留横向坐标差。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-06 AI评分 2/5：母线点和方向独立识别，常规旋转方法可口述；平移轴、轴向自由性和距离最小化需多轮解释，最终只复述距离机制。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "能描述轴竖直，却仍把未给z值看成信息缺失；不清楚平移轴上的自由坐标及点到该轴距离为何只保留横向坐标差。",
+        "knowledge": [
+          "旋转曲面",
+          "空间直线与平面",
+          "点到空间直线距离",
+          "参数消元"
+        ],
+        "error_causes": [
+          "概念混淆"
+        ],
+        "methods": [
+          "平移坐标轴",
+          "对应点高度与半径不变量"
+        ],
+        "traps": [
+          "没约束的坐标可自由取",
+          "只能对目标线上真正自由的坐标最小化",
+          "图上视觉角度不能替代方程"
+        ],
+        "answer": "\\((x-2)^2+(y-3)^2=(3z+2)^2+(4z+3)^2\\)",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-09",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "58128平移旋转轴与距离的题面条件",
+          "expected_method": "平移坐标轴",
+          "expected_first_action": "先把轴写成参数点以看清哪个坐标自由，再写同一高度和到轴距离不变量。",
+          "missed_action": "能描述轴竖直，却仍把未给z值看成信息缺失；不清楚平移轴上的自由坐标及点到该轴距离为何只保留横向坐标差。",
+          "action_gap_type": "A-CONCEPT",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "待匹配",
+          "next_reminder": "先把轴写成参数点以看清哪个坐标自由，再写同一高度和到轴距离不变量。",
+          "repeat_count": 1,
+          "repeat_count_source": "本包保存的一次学习过程；未从同题多轮追问重复计错。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-08"
+      },
+      "topic_chains": []
+    },
+    {
       "id": "LA-001",
       "path": "错题卡/LA-001_线代1000题A组1.7.md",
       "meta": {
@@ -89162,6 +91573,96 @@
       "topic_chains": []
     },
     {
+      "id": "LA-120",
+      "path": "错题卡/LA-120_三维向量共面与行列式.md",
+      "meta": {
+        "id": "LA-120",
+        "title": "三维向量共面与行列式",
+        "subject": "线性代数",
+        "source": "input-08-Q1 / 用户提供advice.zip原始资料 / 来源题号Q1",
+        "import_batch": "MANUAL-ADVICE-20260907",
+        "fast_intake_refs": [
+          "capture-v1:MFI-CAP-9b302e99e936748fc909f183:99735ae3078fd44d75d3baaf2671493a7e294b3c96173dfe2f5334d2cb4d0f8e:record_wrong"
+        ],
+        "fast_intake_source_refs": [
+          "source-v1:f38cc875bf6cfadd19e6b5391afc9f9bfec26563137d4523329453de42b0bc22"
+        ],
+        "lecture_refs": [
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-4102963e8fec74364b738efe/manifest.json",
+          "错题知识网络/可视化错题详情/线性代数/LA-120_三维向量共面与行列式.md",
+          "错题知识网络/assets/visual_wrong_questions/LA-120/explanation_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-120/question_01.png",
+          "数学一回滚复习系统/快速入库来源/2026-09-04/MATHPKG-4102963e8fec74364b738efe/manifest.json"
+        ],
+        "chapter": "向量组",
+        "question_type": "三维向量共面与行列式",
+        "date": "2026-09-07",
+        "status": "待复做",
+        "difficulty": 3,
+        "priority": "A",
+        "mistake_count": 1,
+        "wrong_history": [
+          "2026-09-04 第1次错（本次收录的概念或方法卡点）：把三个向量共面与向量成比例联系起来，未从共面触发线性相关及三阶行列式为零。 日期沿用原始资料记录字段；精确学习时间未认证。"
+        ],
+        "mastery_history": [
+          "2026-09-04 AI评分 2/5：最初明确无从下手；完整讲解后能复述共面、线性相关、行列式为零的主链，没有无提示计算证据。"
+        ],
+        "keywords": [
+          "来源日期已保留",
+          "提示后理解"
+        ],
+        "wrong_point": "把三个向量共面与向量成比例联系起来，未从共面触发线性相关及三阶行列式为零。",
+        "knowledge": [
+          "向量组线性相关",
+          "行列式",
+          "向量线性表示"
+        ],
+        "error_causes": [
+          "把三个向量共面与向量成比例联系起来，未从共面触发线性相关及三阶行列式为零。"
+        ],
+        "methods": [
+          "三维向量共面判据",
+          "行列式为零求参数"
+        ],
+        "traps": [
+          "成比例对应共线，不等同于共面",
+          "三阶行列式判据用于三个三维向量"
+        ],
+        "answer": "\\(k=-2\\)，选D。",
+        "related": [
+          "暂无强边"
+        ],
+        "review": {
+          "next": "2026-09-08",
+          "interval_days": 1,
+          "count": 0
+        },
+        "method_gap": {
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "向量\\(a=(1,2,1),b=(-1,0,2),c=(0,k,-3)\\)共面，求参数\\(k\\)。原图未显示题库ID，保留来源局部编号Q1。",
+          "expected_method": "三维向量共面判据",
+          "expected_first_action": "看到三个三维向量共面，先写线性相关，再令三阶行列式为零。",
+          "missed_action": "把三个向量共面与向量成比例联系起来，未从共面触发线性相关及三阶行列式为零。",
+          "action_gap_type": "B2-TRIGGER",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "L06-002",
+          "next_reminder": "看到三个三维向量共面，先写线性相关，再令三阶行列式为零。",
+          "repeat_count": 1,
+          "repeat_count_source": "本批原始对话仅一段学习事件；未推测更早次数。",
+          "review_priority": 5,
+          "confidence": "high",
+          "need_user_confirmation": false
+        },
+        "last_updated": "2026-09-07"
+      },
+      "topic_chains": []
+    },
+    {
       "id": "PR-001",
       "path": "错题卡/PR-001_强化例题8.2.md",
       "meta": {
@@ -91814,23 +94315,6 @@
       "b": "GS-351",
       "score": 0.6176,
       "raw_score": 0.4576,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：可微定义, 多元函数偏导, 多元函数连续可微",
-        "共同粗知识点：多元函数微分学, 极限与连续",
-        "共同方法：偏导定义, 可微定义, 有界性放缩, 特殊路径",
-        "共同方法卡：H13-005",
-        "同科目：高等数学",
-        "同章节：多元函数微分学",
-        "题干/解法文本相似"
-      ]
-    },
-    {
-      "a": "GS-350",
-      "b": "GS-358",
-      "score": 0.6174,
-      "raw_score": 0.4574,
       "level": "强关联",
       "source": "knowledge_supported",
       "reasons": [
@@ -96708,25 +99192,6 @@
       ]
     },
     {
-      "a": "GS-359",
-      "b": "GS-371",
-      "score": 0.5128,
-      "raw_score": 0.3528,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：多元函数偏导, 多元函数连续可微",
-        "共同粗知识点：多元函数微分学, 极限与连续",
-        "共同粗错因：方法入口未沉淀",
-        "共同方法：偏导定义",
-        "共同粗陷阱：适用条件",
-        "共同方法卡：H13-005",
-        "同科目：高等数学",
-        "同章节：多元函数微分学",
-        "题干/解法文本相似"
-      ]
-    },
-    {
       "a": "GS-187",
       "b": "GS-188",
       "score": 0.5126,
@@ -96786,6 +99251,23 @@
       "b": "GS-373",
       "score": 0.5121,
       "raw_score": 0.3521,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：可微定义, 多元函数偏导",
+        "共同粗知识点：极限与连续",
+        "共同方法：偏导定义, 可微定义, 特殊路径",
+        "共同方法卡：H13-005",
+        "同科目：高等数学",
+        "同章节：多元函数微分学",
+        "题干/解法文本相似"
+      ]
+    },
+    {
+      "a": "GS-358",
+      "b": "GS-360",
+      "score": 0.512,
+      "raw_score": 0.352,
       "level": "强关联",
       "source": "knowledge_supported",
       "reasons": [
@@ -98595,20 +101077,6 @@
       ]
     },
     {
-      "a": "GS-405",
-      "b": "GS-413",
-      "score": 0.48,
-      "raw_score": 0.2026,
-      "level": "强关联",
-      "source": "type_template",
-      "reasons": [
-        "共同细知识点：二重积分",
-        "共同题型：二重积分计算",
-        "同科目：高等数学",
-        "同章节：二重积分"
-      ]
-    },
-    {
       "a": "GS-456",
       "b": "GS-458",
       "score": 0.48,
@@ -99532,6 +102000,21 @@
         "共同方法：球面坐标",
         "同科目：高等数学",
         "同章节：多元函数积分学"
+      ]
+    },
+    {
+      "a": "GS-629",
+      "b": "GS-773",
+      "score": 0.4638,
+      "raw_score": 0.3038,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：叉乘, 向量代数与空间解析几何, 方向向量, 法向量, 空间直线与平面",
+        "共同方法：法向量叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何",
+        "题干/解法文本相似"
       ]
     },
     {
@@ -102510,6 +104993,22 @@
         "共同粗方法：分类讨论",
         "共同粗陷阱：适用条件",
         "共同动作断点：B4-CHAIN",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-097",
+      "b": "GS-574",
+      "score": 0.46,
+      "raw_score": 0.1659,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：导数定义",
+        "共同粗知识点：一元函数微分学应用",
+        "共同方法：左右导数",
+        "共同粗陷阱：适用条件",
+        "共同方法卡：H03-005",
         "同科目：高等数学"
       ]
     },
@@ -111314,6 +113813,21 @@
     },
     {
       "a": "GS-354",
+      "b": "GS-359",
+      "score": 0.46,
+      "raw_score": 0.1773,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "共同方法：偏导定义",
+        "共同方法卡：H13-005",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-354",
       "b": "GS-360",
       "score": 0.46,
       "raw_score": 0.1902,
@@ -111353,22 +113867,6 @@
       "reasons": [
         "共同细知识点：多元函数偏导, 多元函数极限",
         "共同方法：偏导定义",
-        "同科目：高等数学",
-        "同章节：多元函数微分学",
-        "题干/解法文本相似"
-      ]
-    },
-    {
-      "a": "GS-354",
-      "b": "GS-373",
-      "score": 0.46,
-      "raw_score": 0.1702,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：多元函数偏导",
-        "共同方法：偏导定义",
-        "共同方法卡：H13-005",
         "同科目：高等数学",
         "同章节：多元函数微分学",
         "题干/解法文本相似"
@@ -111566,20 +114064,6 @@
         "同科目：高等数学",
         "同章节：多元函数微分学",
         "题干/解法文本相似"
-      ]
-    },
-    {
-      "a": "GS-360",
-      "b": "GS-626",
-      "score": 0.46,
-      "raw_score": 0.1497,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：可微定义, 多元函数偏导",
-        "共同方法：可微定义",
-        "同科目：高等数学",
-        "同章节：多元函数微分学"
       ]
     },
     {
@@ -111816,6 +114300,22 @@
         "共同方法：链式求导",
         "共同粗陷阱：适用条件",
         "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-372",
+      "b": "GS-373",
+      "score": 0.46,
+      "raw_score": 0.1504,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "共同粗知识点：极限与连续",
+        "共同方法：偏导定义",
+        "同科目：高等数学",
+        "同章节：多元函数微分学",
+        "题干/解法文本相似"
       ]
     },
     {
@@ -118237,86 +120737,6 @@
       ]
     },
     {
-      "a": "GS-627",
-      "b": "GS-628",
-      "score": 0.46,
-      "raw_score": 0.2229,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：向量代数与空间解析几何, 法向量, 空间直线与平面",
-        "共同粗错因：方法论调取失败",
-        "共同粗方法：条件转化",
-        "共同方法卡：H00-007",
-        "同科目：高等数学",
-        "同章节：向量代数与空间解析几何",
-        "题干/解法文本相似"
-      ]
-    },
-    {
-      "a": "GS-627",
-      "b": "GS-646",
-      "score": 0.46,
-      "raw_score": 0.1813,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：向量代数与空间解析几何, 方向向量, 空间直线与平面",
-        "共同粗错因：方法论调取失败",
-        "共同方法：方向向量提取, 直线方程模板",
-        "共同陷阱：直线方向向量提取",
-        "同科目：高等数学",
-        "同章节：向量代数与空间解析几何",
-        "题干/解法文本相似"
-      ]
-    },
-    {
-      "a": "GS-627",
-      "b": "GS-647",
-      "score": 0.46,
-      "raw_score": 0.1526,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：向量代数与空间解析几何, 法向量, 空间直线与平面",
-        "共同错因：空间几何对象识别断点",
-        "共同粗错因：方法论调取失败",
-        "同科目：高等数学",
-        "同章节：向量代数与空间解析几何"
-      ]
-    },
-    {
-      "a": "GS-627",
-      "b": "GS-651",
-      "score": 0.46,
-      "raw_score": 0.1454,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：向量代数与空间解析几何, 法向量",
-        "共同错因：空间几何对象识别断点",
-        "共同粗错因：方法论调取失败",
-        "共同方法：法向量构造",
-        "共同粗方法：条件转化",
-        "同科目：高等数学",
-        "同章节：向量代数与空间解析几何"
-      ]
-    },
-    {
-      "a": "GS-627",
-      "b": "GS-699",
-      "score": 0.46,
-      "raw_score": 0.0602,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：法向量",
-        "共同错因：空间几何对象识别断点",
-        "共同粗错因：方法论调取失败",
-        "同科目：高等数学"
-      ]
-    },
-    {
       "a": "GS-628",
       "b": "GS-694",
       "score": 0.46,
@@ -118327,6 +120747,66 @@
         "共同细知识点：向量代数与空间解析几何",
         "共同错因：空间几何图像断点",
         "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-628",
+      "b": "GS-776",
+      "score": 0.46,
+      "raw_score": 0.1999,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：两平面交线, 平面束方程, 空间直线与平面",
+        "共同方法：平面束方程",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-628",
+      "b": "GS-782",
+      "score": 0.46,
+      "raw_score": 0.2037,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：法向量, 空间直线投影, 辅助平面",
+        "共同方法：辅助平面法",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何",
+        "题干/解法文本相似"
+      ]
+    },
+    {
+      "a": "GS-629",
+      "b": "GS-646",
+      "score": 0.46,
+      "raw_score": 0.1795,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：向量代数与空间解析几何, 方向向量, 空间直线与平面",
+        "共同粗错因：方法论调取失败",
+        "共同方法：方向向量提取",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何",
+        "题干/解法文本相似"
+      ]
+    },
+    {
+      "a": "GS-629",
+      "b": "GS-786",
+      "score": 0.46,
+      "raw_score": 0.1609,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：两平面交线, 法向量",
+        "共同方法：法向量叉乘",
+        "共同动作断点：A-KG",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
       ]
     },
     {
@@ -119099,15 +121579,16 @@
     },
     {
       "a": "GS-667",
-      "b": "GS-726",
+      "b": "GS-668",
       "score": 0.46,
-      "raw_score": 0.1043,
+      "raw_score": 0.2136,
       "level": "强关联",
       "source": "knowledge_supported",
       "reasons": [
-        "共同细知识点：多元函数积分学",
+        "共同细知识点：三重积分, 多元函数积分学",
         "共同错因：空间几何图像断点",
-        "共同粗错因：动作链断裂",
+        "共同粗错因：动作链断裂, 方法论调取失败, 概念混淆, 运算路径不稳",
+        "共同方法：三重积分换序",
         "同科目：高等数学",
         "同章节：多元函数积分学"
       ]
@@ -119185,20 +121666,6 @@
         "共同细知识点：多元函数积分学",
         "共同错因：空间几何图像断点",
         "共同粗错因：动作链断裂",
-        "同科目：高等数学",
-        "同章节：多元函数积分学"
-      ]
-    },
-    {
-      "a": "GS-668",
-      "b": "GS-745",
-      "score": 0.46,
-      "raw_score": 0.1698,
-      "level": "强关联",
-      "source": "knowledge_supported",
-      "reasons": [
-        "共同细知识点：三重积分, 多元函数积分学",
-        "共同方法：三重积分换序",
         "同科目：高等数学",
         "同章节：多元函数积分学"
       ]
@@ -120688,6 +123155,65 @@
         "共同细知识点：泰勒公式",
         "共同方法：积分三角不等式",
         "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-773",
+      "b": "GS-786",
+      "score": 0.46,
+      "raw_score": 0.1386,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：法向量",
+        "共同方法：法向量叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-779",
+      "b": "GS-782",
+      "score": 0.46,
+      "raw_score": 0.216,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：空间直线投影",
+        "共同错因：目标对象识别错误",
+        "共同动作断点：B1-GOAL",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-786",
+      "b": "GS-787",
+      "score": 0.46,
+      "raw_score": 0.2212,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：法向量",
+        "共同错因：公式或定义遗忘",
+        "共同动作断点：A-KG",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-789",
+      "b": "GS-793",
+      "score": 0.46,
+      "raw_score": 0.2462,
+      "level": "强关联",
+      "source": "knowledge_supported",
+      "reasons": [
+        "共同细知识点：多元函数偏导, 链式法则",
+        "共同错因：条件与边界检查遗漏",
+        "共同动作断点：B5-CHECK",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
       ]
     },
     {
@@ -125063,6 +127589,21 @@
       ]
     },
     {
+      "a": "GS-371",
+      "b": "GS-790",
+      "score": 0.34,
+      "raw_score": 0.1797,
+      "level": "中关联",
+      "source": "knowledge_text",
+      "reasons": [
+        "共同细知识点：多元函数偏导, 多元函数连续可微",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：多元函数微分学",
+        "题干/解法文本相似"
+      ]
+    },
+    {
       "a": "GS-377",
       "b": "LA-004",
       "score": 0.34,
@@ -125252,6 +127793,32 @@
       ]
     },
     {
+      "a": "GS-626",
+      "b": "GS-732",
+      "score": 0.34,
+      "raw_score": 0.0834,
+      "level": "中关联",
+      "source": "method_card_only",
+      "reasons": [
+        "共同方法卡：H17-005",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-646",
+      "b": "GS-773",
+      "score": 0.34,
+      "raw_score": 0.1916,
+      "level": "中关联",
+      "source": "knowledge_text",
+      "reasons": [
+        "共同细知识点：向量代数与空间解析几何, 方向向量, 空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何",
+        "题干/解法文本相似"
+      ]
+    },
+    {
       "a": "GS-653",
       "b": "GS-656",
       "score": 0.34,
@@ -125347,6 +127914,20 @@
       "reasons": [
         "共同方法卡：H12-005",
         "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-776",
+      "b": "GS-777",
+      "score": 0.34,
+      "raw_score": 0.1612,
+      "level": "中关联",
+      "source": "knowledge_text",
+      "reasons": [
+        "共同细知识点：平面束方程, 空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何",
+        "题干/解法文本相似"
       ]
     },
     {
@@ -126044,21 +128625,6 @@
       ]
     },
     {
-      "a": "GS-670",
-      "b": "GS-690",
-      "score": 0.3188,
-      "raw_score": 0.3188,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：三重积分, 二次曲面, 多元函数积分学",
-        "共同粗错因：动作链断裂, 方法论调取失败",
-        "共同动作断点：B3-METHOD",
-        "同科目：高等数学",
-        "同章节：多元函数积分学"
-      ]
-    },
-    {
       "a": "GS-006",
       "b": "GS-021",
       "score": 0.3,
@@ -126413,14 +128979,13 @@
     },
     {
       "a": "GS-046",
-      "b": "GS-724",
+      "b": "GS-788",
       "score": 0.3,
-      "raw_score": 0.0874,
+      "raw_score": 0.067,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
-        "共同细知识点：夹逼准则",
-        "共同粗方法：夹逼准则",
+        "共同细知识点：配方法",
         "同科目：高等数学"
       ]
     },
@@ -126915,21 +129480,6 @@
       ]
     },
     {
-      "a": "GS-097",
-      "b": "GS-111",
-      "score": 0.3,
-      "raw_score": 0.1479,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：高阶导数",
-        "共同粗知识点：一元函数微分学应用",
-        "共同动作断点：B4-CHAIN",
-        "同科目：高等数学",
-        "同章节：一元函数微分学应用"
-      ]
-    },
-    {
       "a": "GS-098",
       "b": "GS-101",
       "score": 0.3,
@@ -127319,6 +129869,18 @@
       ]
     },
     {
+      "a": "GS-111",
+      "b": "GS-792",
+      "score": 0.3,
+      "raw_score": 0.0877,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "同科目：高等数学"
+      ]
+    },
+    {
       "a": "GS-114",
       "b": "GS-154",
       "score": 0.3,
@@ -127427,6 +129989,18 @@
       "source": "knowledge_only",
       "reasons": [
         "共同细知识点：定义域",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-126",
+      "b": "GS-775",
+      "score": 0.3,
+      "raw_score": 0.0566,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：有理化",
         "同科目：高等数学"
       ]
     },
@@ -128897,16 +131471,16 @@
       ]
     },
     {
-      "a": "GS-352",
-      "b": "GS-372",
+      "a": "GS-350",
+      "b": "GS-791",
       "score": 0.3,
-      "raw_score": 0.1411,
+      "raw_score": 0.1402,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
-        "共同细知识点：多元函数极限",
-        "共同粗知识点：多元函数微分学, 极限与连续",
-        "同科目：高等数学"
+        "共同细知识点：可微定义, 多元函数连续可微",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
       ]
     },
     {
@@ -128952,6 +131526,33 @@
         "共同粗知识点：多元函数微分学, 极限与连续",
         "共同粗错因：动作链断裂",
         "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-362",
+      "b": "GS-790",
+      "score": 0.3,
+      "raw_score": 0.1319,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数连续可微",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-362",
+      "b": "GS-791",
+      "score": 0.3,
+      "raw_score": 0.1103,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数连续可微",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
       ]
     },
     {
@@ -129007,6 +131608,60 @@
       ]
     },
     {
+      "a": "GS-369",
+      "b": "GS-790",
+      "score": 0.3,
+      "raw_score": 0.1319,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数连续可微",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-369",
+      "b": "GS-791",
+      "score": 0.3,
+      "raw_score": 0.1103,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数连续可微",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-375",
+      "b": "GS-790",
+      "score": 0.3,
+      "raw_score": 0.1319,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数连续可微",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-375",
+      "b": "GS-791",
+      "score": 0.3,
+      "raw_score": 0.1103,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数连续可微",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
       "a": "GS-376",
       "b": "GS-379",
       "score": 0.3,
@@ -129018,6 +131673,30 @@
         "共同粗知识点：多元函数微分学",
         "同科目：高等数学",
         "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-379",
+      "b": "GS-647",
+      "score": 0.3,
+      "raw_score": 0.0675,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-379",
+      "b": "GS-651",
+      "score": 0.3,
+      "raw_score": 0.0752,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "同科目：高等数学"
       ]
     },
     {
@@ -129072,34 +131751,6 @@
       "reasons": [
         "共同细知识点：多元函数偏导",
         "同科目：高等数学"
-      ]
-    },
-    {
-      "a": "GS-379",
-      "b": "GS-657",
-      "score": 0.3,
-      "raw_score": 0.1546,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：多元函数偏导",
-        "共同粗知识点：多元函数微分学",
-        "同科目：高等数学",
-        "同章节：多元函数微分学"
-      ]
-    },
-    {
-      "a": "GS-379",
-      "b": "GS-658",
-      "score": 0.3,
-      "raw_score": 0.1387,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：多元函数偏导",
-        "共同粗知识点：多元函数微分学",
-        "同科目：高等数学",
-        "同章节：多元函数微分学"
       ]
     },
     {
@@ -129198,7 +131849,7 @@
     },
     {
       "a": "GS-397",
-      "b": "GS-408",
+      "b": "GS-405",
       "score": 0.3,
       "raw_score": 0.106,
       "level": "中关联",
@@ -129212,13 +131863,28 @@
     },
     {
       "a": "GS-397",
-      "b": "GS-411",
+      "b": "GS-408",
       "score": 0.3,
-      "raw_score": 0.1133,
+      "raw_score": 0.106,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
         "共同细知识点：二重积分",
+        "共同动作断点：B2-TRIGGER",
+        "同科目：高等数学",
+        "同章节：二重积分"
+      ]
+    },
+    {
+      "a": "GS-398",
+      "b": "GS-411",
+      "score": 0.3,
+      "raw_score": 0.1509,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：二重积分",
+        "共同动作断点：B3-METHOD",
         "同科目：高等数学",
         "同章节：二重积分"
       ]
@@ -129261,18 +131927,6 @@
       ]
     },
     {
-      "a": "GS-398",
-      "b": "GS-683",
-      "score": 0.3,
-      "raw_score": 0.0861,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：变上限积分",
-        "同科目：高等数学"
-      ]
-    },
-    {
       "a": "GS-399",
       "b": "GS-414",
       "score": 0.3,
@@ -129296,6 +131950,17 @@
         "共同细知识点：二重积分",
         "共同动作断点：B3-METHOD",
         "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-413",
+      "b": "LA-120",
+      "score": 0.3,
+      "raw_score": 0.0657,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：行列式"
       ]
     },
     {
@@ -129438,19 +132103,6 @@
     },
     {
       "a": "GS-427",
-      "b": "GS-574",
-      "score": 0.3,
-      "raw_score": 0.1385,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：导数定义",
-        "共同粗知识点：一元函数微分学应用",
-        "同科目：高等数学"
-      ]
-    },
-    {
-      "a": "GS-427",
       "b": "GS-679",
       "score": 0.3,
       "raw_score": 0.0902,
@@ -129467,6 +132119,18 @@
       "b": "GS-685",
       "score": 0.3,
       "raw_score": 0.0635,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：导数定义",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-427",
+      "b": "GS-716",
+      "score": 0.3,
+      "raw_score": 0.1056,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
@@ -129525,6 +132189,18 @@
       ]
     },
     {
+      "a": "GS-428",
+      "b": "GS-775",
+      "score": 0.3,
+      "raw_score": 0.0679,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：导数定义",
+        "同科目：高等数学"
+      ]
+    },
+    {
       "a": "GS-429",
       "b": "GS-685",
       "score": 0.3,
@@ -129541,6 +132217,30 @@
       "b": "GS-716",
       "score": 0.3,
       "raw_score": 0.1055,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：导数定义",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-429",
+      "b": "GS-775",
+      "score": 0.3,
+      "raw_score": 0.068,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：导数定义",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-429",
+      "b": "GS-789",
+      "score": 0.3,
+      "raw_score": 0.0883,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
@@ -129946,39 +132646,119 @@
     },
     {
       "a": "GS-627",
-      "b": "GS-655",
+      "b": "GS-771",
       "score": 0.3,
-      "raw_score": 0.0597,
+      "raw_score": 0.1191,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
-        "共同细知识点：叉乘",
-        "共同粗错因：运算路径不稳",
-        "同科目：高等数学"
-      ]
-    },
-    {
-      "a": "GS-627",
-      "b": "GS-727",
-      "score": 0.3,
-      "raw_score": 0.0737,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：向量代数与空间解析几何",
+        "共同细知识点：叉乘, 向量代数与空间解析几何",
         "同科目：高等数学",
         "同章节：向量代数与空间解析几何"
       ]
     },
     {
       "a": "GS-627",
-      "b": "GS-732",
+      "b": "GS-772",
       "score": 0.3,
-      "raw_score": 0.0737,
+      "raw_score": 0.1188,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
-        "共同细知识点：向量代数与空间解析几何",
+        "共同细知识点：叉乘, 向量代数与空间解析几何",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-627",
+      "b": "GS-774",
+      "score": 0.3,
+      "raw_score": 0.1138,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量, 空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-627",
+      "b": "GS-778",
+      "score": 0.3,
+      "raw_score": 0.074,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-627",
+      "b": "GS-780",
+      "score": 0.3,
+      "raw_score": 0.1577,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 法向量, 空间平面方程",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-627",
+      "b": "GS-784",
+      "score": 0.3,
+      "raw_score": 0.1297,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 空间直线与平面",
+        "共同动作断点：B4-CHAIN",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-627",
+      "b": "GS-785",
+      "score": 0.3,
+      "raw_score": 0.109,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 方向向量",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-627",
+      "b": "GS-796",
+      "score": 0.3,
+      "raw_score": 0.0733,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-628",
+      "b": "GS-629",
+      "score": 0.3,
+      "raw_score": 0.1978,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：两平面交线, 向量代数与空间解析几何, 法向量, 空间直线与平面",
+        "共同粗错因：方法论调取失败",
         "同科目：高等数学",
         "同章节：向量代数与空间解析几何"
       ]
@@ -130027,52 +132807,64 @@
     },
     {
       "a": "GS-628",
-      "b": "GS-732",
+      "b": "GS-783",
       "score": 0.3,
-      "raw_score": 0.0736,
+      "raw_score": 0.1181,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
-        "共同细知识点：向量代数与空间解析几何",
+        "共同细知识点：法向量, 空间直线与平面",
         "同科目：高等数学",
         "同章节：向量代数与空间解析几何"
       ]
     },
     {
-      "a": "GS-628",
-      "b": "GS-748",
+      "a": "GS-629",
+      "b": "GS-655",
       "score": 0.3,
-      "raw_score": 0.0939,
+      "raw_score": 0.0544,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
-        "共同细知识点：向量代数与空间解析几何, 空间直线与平面",
-        "同科目：高等数学",
-        "同章节：向量代数与空间解析几何"
-      ]
-    },
-    {
-      "a": "GS-628",
-      "b": "GS-766",
-      "score": 0.3,
-      "raw_score": 0.0447,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：向量代数与空间解析几何",
+        "共同细知识点：叉乘",
         "同科目：高等数学"
       ]
     },
     {
-      "a": "GS-646",
+      "a": "GS-629",
+      "b": "GS-699",
+      "score": 0.3,
+      "raw_score": 0.0514,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量",
+        "共同粗错因：方法论调取失败",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-629",
       "b": "GS-727",
       "score": 0.3,
-      "raw_score": 0.087,
+      "raw_score": 0.0767,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
         "共同细知识点：向量代数与空间解析几何",
-        "共同粗错因：概念边界混淆",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-629",
+      "b": "GS-732",
+      "score": 0.3,
+      "raw_score": 0.0753,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：向量代数与空间解析几何",
         "同科目：高等数学",
         "同章节：向量代数与空间解析几何"
       ]
@@ -130106,6 +132898,19 @@
       ]
     },
     {
+      "a": "GS-654",
+      "b": "GS-789",
+      "score": 0.3,
+      "raw_score": 0.0881,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
       "a": "GS-655",
       "b": "GS-657",
       "score": 0.3,
@@ -130130,6 +132935,32 @@
       ]
     },
     {
+      "a": "GS-657",
+      "b": "GS-789",
+      "score": 0.3,
+      "raw_score": 0.0887,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-657",
+      "b": "GS-790",
+      "score": 0.3,
+      "raw_score": 0.089,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
       "a": "GS-658",
       "b": "GS-768",
       "score": 0.3,
@@ -130138,6 +132969,19 @@
       "source": "knowledge_only",
       "reasons": [
         "共同细知识点：泰勒公式",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-658",
+      "b": "GS-769",
+      "score": 0.3,
+      "raw_score": 0.0842,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：泰勒公式",
+        "共同动作断点：B3-METHOD",
         "同科目：高等数学"
       ]
     },
@@ -130183,17 +133027,40 @@
       ]
     },
     {
-      "a": "GS-670",
-      "b": "GS-691",
+      "a": "GS-664",
+      "b": "GS-683",
       "score": 0.3,
-      "raw_score": 0.2918,
+      "raw_score": 0.0904,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
-        "共同细知识点：三重积分, 二次曲面, 多元函数积分学",
-        "共同粗错因：动作链断裂",
+        "共同细知识点：变上限积分",
         "同科目：高等数学",
-        "同章节：多元函数积分学"
+        "同章节：一元函数微分学应用"
+      ]
+    },
+    {
+      "a": "GS-670",
+      "b": "GS-781",
+      "score": 0.3,
+      "raw_score": 0.0759,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：二次曲面",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-670",
+      "b": "GS-794",
+      "score": 0.3,
+      "raw_score": 0.0675,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：二次曲面",
+        "同科目：高等数学"
       ]
     },
     {
@@ -130251,6 +133118,21 @@
       ]
     },
     {
+      "a": "GS-690",
+      "b": "GS-698",
+      "score": 0.3,
+      "raw_score": 0.1084,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数积分学",
+        "共同粗错因：方法论调取失败",
+        "共同动作断点：B3-METHOD",
+        "同科目：高等数学",
+        "同章节：多元函数积分学"
+      ]
+    },
+    {
       "a": "GS-691",
       "b": "GS-692",
       "score": 0.3,
@@ -130280,16 +133162,15 @@
       ]
     },
     {
-      "a": "GS-692",
-      "b": "GS-698",
+      "a": "GS-691",
+      "b": "GS-695",
       "score": 0.3,
-      "raw_score": 0.1273,
+      "raw_score": 0.0981,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
         "共同细知识点：多元函数积分学",
-        "共同粗知识点：定积分",
-        "共同粗错因：概念混淆",
+        "共同粗错因：动作链断裂, 概念混淆",
         "同科目：高等数学",
         "同章节：多元函数积分学"
       ]
@@ -130313,6 +133194,19 @@
       "b": "GS-705",
       "score": 0.3,
       "raw_score": 0.1393,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数积分学, 曲线积分",
+        "同科目：高等数学",
+        "同章节：多元函数积分学"
+      ]
+    },
+    {
+      "a": "GS-692",
+      "b": "GS-706",
+      "score": 0.3,
+      "raw_score": 0.1544,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
@@ -130393,19 +133287,6 @@
       "b": "GS-706",
       "score": 0.3,
       "raw_score": 0.121,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：多元函数积分学, 曲线积分",
-        "同科目：高等数学",
-        "同章节：多元函数积分学"
-      ]
-    },
-    {
-      "a": "GS-695",
-      "b": "GS-707",
-      "score": 0.3,
-      "raw_score": 0.1125,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
@@ -130506,14 +133387,15 @@
       ]
     },
     {
-      "a": "GS-706",
-      "b": "GS-719",
+      "a": "GS-707",
+      "b": "GS-718",
       "score": 0.3,
-      "raw_score": 0.1644,
+      "raw_score": 0.1572,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
         "共同细知识点：多元函数积分学, 曲线积分, 第二型曲线积分",
+        "共同粗错因：方法调取失败",
         "同科目：高等数学",
         "同章节：多元函数积分学"
       ]
@@ -130749,6 +133631,30 @@
       ]
     },
     {
+      "a": "GS-716",
+      "b": "GS-775",
+      "score": 0.3,
+      "raw_score": 0.0938,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：导数定义, 极限",
+        "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-716",
+      "b": "GS-789",
+      "score": 0.3,
+      "raw_score": 0.0641,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：导数定义",
+        "同科目：高等数学"
+      ]
+    },
+    {
       "a": "GS-717",
       "b": "GS-724",
       "score": 0.3,
@@ -130778,19 +133684,6 @@
       "b": "GS-737",
       "score": 0.3,
       "raw_score": 0.0728,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：多元函数积分学",
-        "同科目：高等数学",
-        "同章节：多元函数积分学"
-      ]
-    },
-    {
-      "a": "GS-718",
-      "b": "GS-744",
-      "score": 0.3,
-      "raw_score": 0.0897,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
@@ -130839,6 +133732,34 @@
       ]
     },
     {
+      "a": "GS-719",
+      "b": "GS-745",
+      "score": 0.3,
+      "raw_score": 0.0841,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数积分学",
+        "同科目：高等数学",
+        "同章节：多元函数积分学"
+      ]
+    },
+    {
+      "a": "GS-721",
+      "b": "GS-724",
+      "score": 0.3,
+      "raw_score": 0.1619,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：夹逼准则",
+        "共同粗知识点：定积分, 数列极限",
+        "共同粗方法：夹逼准则",
+        "同科目：高等数学",
+        "同章节：定积分"
+      ]
+    },
+    {
       "a": "GS-721",
       "b": "GS-768",
       "score": 0.3,
@@ -130861,22 +133782,6 @@
         "共同细知识点：定积分不等式",
         "共同动作断点：B2-TRIGGER",
         "同科目：高等数学"
-      ]
-    },
-    {
-      "a": "GS-721",
-      "b": "PR-001",
-      "score": 0.3,
-      "raw_score": 0.1652,
-      "level": "中关联",
-      "source": "knowledge_only",
-      "reasons": [
-        "共同细知识点：夹逼准则",
-        "共同粗知识点：定积分",
-        "共同粗方法：夹逼准则",
-        "共同动作断点：B2-TRIGGER",
-        "同科目：高等数学",
-        "同章节：定积分"
       ]
     },
     {
@@ -130904,6 +133809,18 @@
       ]
     },
     {
+      "a": "GS-726",
+      "b": "GS-795",
+      "score": 0.3,
+      "raw_score": 0.0589,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：旋转曲面",
+        "同科目：高等数学"
+      ]
+    },
+    {
       "a": "GS-727",
       "b": "GS-748",
       "score": 0.3,
@@ -130926,6 +133843,20 @@
       "reasons": [
         "共同细知识点：向量代数与空间解析几何",
         "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-727",
+      "b": "GS-771",
+      "score": 0.3,
+      "raw_score": 0.1118,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：向量代数与空间解析几何",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
       ]
     },
     {
@@ -130991,6 +133922,34 @@
       "reasons": [
         "共同细知识点：向量代数与空间解析几何",
         "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-732",
+      "b": "GS-771",
+      "score": 0.3,
+      "raw_score": 0.112,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：向量代数与空间解析几何",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-732",
+      "b": "GS-772",
+      "score": 0.3,
+      "raw_score": 0.1111,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：向量代数与空间解析几何",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
       ]
     },
     {
@@ -131244,6 +134203,19 @@
       ]
     },
     {
+      "a": "GS-744",
+      "b": "GS-749",
+      "score": 0.3,
+      "raw_score": 0.1112,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数积分学",
+        "同科目：高等数学",
+        "同章节：多元函数积分学"
+      ]
+    },
+    {
       "a": "GS-745",
       "b": "GS-746",
       "score": 0.3,
@@ -131271,15 +134243,14 @@
     },
     {
       "a": "GS-745",
-      "b": "GS-749",
+      "b": "GS-748",
       "score": 0.3,
-      "raw_score": 0.1017,
+      "raw_score": 0.0507,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
-        "共同细知识点：多元函数积分学",
-        "同科目：高等数学",
-        "同章节：多元函数积分学"
+        "共同细知识点：三重积分",
+        "同科目：高等数学"
       ]
     },
     {
@@ -131809,6 +134780,31 @@
       ]
     },
     {
+      "a": "GS-765",
+      "b": "GS-766",
+      "score": 0.3,
+      "raw_score": 0.0697,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数积分学",
+        "同科目：高等数学",
+        "同章节：多元函数积分学"
+      ]
+    },
+    {
+      "a": "GS-767",
+      "b": "GS-789",
+      "score": 0.3,
+      "raw_score": 0.0466,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：链式法则",
+        "同科目：高等数学"
+      ]
+    },
+    {
       "a": "GS-768",
       "b": "GS-769",
       "score": 0.3,
@@ -131830,6 +134826,805 @@
       "reasons": [
         "共同细知识点：定积分不等式, 泰勒公式",
         "同科目：高等数学"
+      ]
+    },
+    {
+      "a": "GS-771",
+      "b": "GS-772",
+      "score": 0.3,
+      "raw_score": 0.2296,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 向量代数与空间解析几何",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-771",
+      "b": "GS-773",
+      "score": 0.3,
+      "raw_score": 0.1759,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 向量代数与空间解析几何",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-771",
+      "b": "GS-775",
+      "score": 0.3,
+      "raw_score": 0.1468,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 向量模长",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-771",
+      "b": "GS-778",
+      "score": 0.3,
+      "raw_score": 0.1945,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 向量模长",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-771",
+      "b": "GS-779",
+      "score": 0.3,
+      "raw_score": 0.0977,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-772",
+      "b": "GS-773",
+      "score": 0.3,
+      "raw_score": 0.1756,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 向量代数与空间解析几何",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-772",
+      "b": "GS-775",
+      "score": 0.3,
+      "raw_score": 0.0999,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-772",
+      "b": "GS-778",
+      "score": 0.3,
+      "raw_score": 0.1183,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-772",
+      "b": "GS-779",
+      "score": 0.3,
+      "raw_score": 0.1001,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-772",
+      "b": "GS-780",
+      "score": 0.3,
+      "raw_score": 0.1197,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-773",
+      "b": "GS-774",
+      "score": 0.3,
+      "raw_score": 0.1402,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量, 空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-773",
+      "b": "GS-775",
+      "score": 0.3,
+      "raw_score": 0.0946,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-773",
+      "b": "GS-776",
+      "score": 0.3,
+      "raw_score": 0.1078,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：空间直线与平面",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-774",
+      "b": "GS-776",
+      "score": 0.3,
+      "raw_score": 0.1572,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：点到平面距离, 空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-774",
+      "b": "GS-777",
+      "score": 0.3,
+      "raw_score": 0.0941,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-774",
+      "b": "GS-780",
+      "score": 0.3,
+      "raw_score": 0.0923,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-774",
+      "b": "GS-782",
+      "score": 0.3,
+      "raw_score": 0.0934,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-774",
+      "b": "GS-783",
+      "score": 0.3,
+      "raw_score": 0.1535,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量, 空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-774",
+      "b": "GS-784",
+      "score": 0.3,
+      "raw_score": 0.0899,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-775",
+      "b": "GS-778",
+      "score": 0.3,
+      "raw_score": 0.207,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 向量模长, 点积",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-776",
+      "b": "GS-779",
+      "score": 0.3,
+      "raw_score": 0.0915,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：两平面交线",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-776",
+      "b": "GS-783",
+      "score": 0.3,
+      "raw_score": 0.1323,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：空间直线与平面",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-776",
+      "b": "GS-784",
+      "score": 0.3,
+      "raw_score": 0.0902,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-776",
+      "b": "GS-786",
+      "score": 0.3,
+      "raw_score": 0.0941,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：两平面交线",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-777",
+      "b": "GS-783",
+      "score": 0.3,
+      "raw_score": 0.0914,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-777",
+      "b": "GS-784",
+      "score": 0.3,
+      "raw_score": 0.0914,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-777",
+      "b": "GS-796",
+      "score": 0.3,
+      "raw_score": 0.0898,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：空间直线与平面",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-777",
+      "b": "LA-093",
+      "score": 0.3,
+      "raw_score": 0.0482,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：参数分类讨论"
+      ]
+    },
+    {
+      "a": "GS-778",
+      "b": "GS-779",
+      "score": 0.3,
+      "raw_score": 0.0883,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-778",
+      "b": "GS-780",
+      "score": 0.3,
+      "raw_score": 0.131,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-778",
+      "b": "GS-783",
+      "score": 0.3,
+      "raw_score": 0.129,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-778",
+      "b": "GS-784",
+      "score": 0.3,
+      "raw_score": 0.0883,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-779",
+      "b": "GS-780",
+      "score": 0.3,
+      "raw_score": 0.0908,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-779",
+      "b": "GS-783",
+      "score": 0.3,
+      "raw_score": 0.0916,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-779",
+      "b": "GS-784",
+      "score": 0.3,
+      "raw_score": 0.0915,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-780",
+      "b": "GS-782",
+      "score": 0.3,
+      "raw_score": 0.0926,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-780",
+      "b": "GS-783",
+      "score": 0.3,
+      "raw_score": 0.1934,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘, 法向量",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-780",
+      "b": "GS-784",
+      "score": 0.3,
+      "raw_score": 0.0905,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：叉乘",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-781",
+      "b": "GS-794",
+      "score": 0.3,
+      "raw_score": 0.1758,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：二次曲面, 点到坐标轴距离",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-781",
+      "b": "GS-795",
+      "score": 0.3,
+      "raw_score": 0.2171,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：旋转曲面, 点到坐标轴距离",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-781",
+      "b": "GS-796",
+      "score": 0.3,
+      "raw_score": 0.1424,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：旋转曲面",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-782",
+      "b": "GS-783",
+      "score": 0.3,
+      "raw_score": 0.0939,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-782",
+      "b": "GS-785",
+      "score": 0.3,
+      "raw_score": 0.09,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：方向向量",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-782",
+      "b": "GS-786",
+      "score": 0.3,
+      "raw_score": 0.0951,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-782",
+      "b": "GS-787",
+      "score": 0.3,
+      "raw_score": 0.0989,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：法向量",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-784",
+      "b": "GS-785",
+      "score": 0.3,
+      "raw_score": 0.2434,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：公垂线, 叉乘, 直线参数方程",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-785",
+      "b": "GS-788",
+      "score": 0.3,
+      "raw_score": 0.1307,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：直线参数方程",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-785",
+      "b": "GS-795",
+      "score": 0.3,
+      "raw_score": 0.13,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：直线参数方程",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-787",
+      "b": "GS-794",
+      "score": 0.3,
+      "raw_score": 0.175,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：点到平面距离, 空间距离",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-788",
+      "b": "GS-795",
+      "score": 0.3,
+      "raw_score": 0.1302,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：直线参数方程",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-788",
+      "b": "GS-796",
+      "score": 0.3,
+      "raw_score": 0.1319,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：点到空间直线距离",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-789",
+      "b": "GS-790",
+      "score": 0.3,
+      "raw_score": 0.1262,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数偏导, 等价无穷小",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-789",
+      "b": "GS-791",
+      "score": 0.3,
+      "raw_score": 0.0807,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：可微定义",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-790",
+      "b": "GS-791",
+      "score": 0.3,
+      "raw_score": 0.1286,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：偏导定义, 多元函数连续可微",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-790",
+      "b": "GS-792",
+      "score": 0.3,
+      "raw_score": 0.0923,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-791",
+      "b": "GS-793",
+      "score": 0.3,
+      "raw_score": 0.0799,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：偏导定义",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-792",
+      "b": "GS-793",
+      "score": 0.3,
+      "raw_score": 0.0906,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：多元函数偏导",
+        "同科目：高等数学",
+        "同章节：多元函数微分学"
+      ]
+    },
+    {
+      "a": "GS-794",
+      "b": "GS-795",
+      "score": 0.3,
+      "raw_score": 0.0899,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：点到坐标轴距离",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
+      ]
+    },
+    {
+      "a": "GS-795",
+      "b": "GS-796",
+      "score": 0.3,
+      "raw_score": 0.1946,
+      "level": "中关联",
+      "source": "knowledge_only",
+      "reasons": [
+        "共同细知识点：参数消元, 旋转曲面",
+        "共同粗错因：概念混淆",
+        "共同动作断点：A-CONCEPT",
+        "同科目：高等数学",
+        "同章节：向量代数与空间解析几何"
       ]
     },
     {
@@ -132899,13 +136694,14 @@
     },
     {
       "a": "LA-084",
-      "b": "LA-093",
+      "b": "LA-094",
       "score": 0.3,
-      "raw_score": 0.0681,
+      "raw_score": 0.0852,
       "level": "中关联",
       "source": "knowledge_only",
       "reasons": [
         "共同细知识点：矩阵秩",
+        "共同动作断点：B3-METHOD",
         "同科目：线性代数"
       ]
     },
@@ -133554,8 +137350,8 @@
     }
   ],
   "relation_summary": {
-    "strong": 2119,
-    "medium": 790,
+    "strong": 2121,
+    "medium": 886,
     "weak_audit": 21
   }
 }

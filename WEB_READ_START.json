@@ -4,21 +4,21 @@
   "repository": "xialovezhu-wq/kaoyan-math",
   "source_manifest": {
     "path": "PUBLISHED_LIBRARY.json",
-    "sha256": "09199ef7a0792ccd6266f9385f8beaee4326b4b94c8466082917fd57b5ab9fe9",
-    "bytes": 270808,
+    "sha256": "f472b619ad76a10f19b2b68aa1764e406030ff6404978be008957f7d87dda4ce",
+    "bytes": 324930,
     "kind": "publication_metadata",
     "storage": "git",
     "status": "AVAILABLE",
     "transport": {
-      "path": "published-web/objects/09/09199ef7a0792ccd6266f9385f8beaee4326b4b94c8466082917fd57b5ab9fe9/manifest.json",
-      "sha256": "ff736b71edbce27d5d13158a5f6acac0a7fb746bf7d711fcb974e1bba37aff63",
+      "path": "published-web/objects/f4/f472b619ad76a10f19b2b68aa1764e406030ff6404978be008957f7d87dda4ce/manifest.json",
+      "sha256": "8a16c9fdefb66cacf8383b974aa001545f90c3aad6210f4287e3f10cd72c9d91",
       "bytes": 986
     }
   },
   "catalog": {
     "path": "published-web/catalog.json",
-    "sha256": "45494f9b01464fcfe30b52321d88b297d494152b3dd9176f6fc1937cb15ba6ff",
-    "bytes": 8821
+    "sha256": "cac34bea935dd546b039d22595cec28c8cbc55c57530ff63a982bb6e99f604b6",
+    "bytes": 9473
   },
   "entrypoints": {
     "formal_cards": "错题知识网络/错题卡/",
@@ -29,16 +29,16 @@
   },
   "restore_script": {
     "path": "published-web/restore.py",
-    "sha256": "a25f10f8758d87b5a27884530ed48ae36f3426214f3d21538b3ac1e211fb40fb",
-    "bytes": 16476
+    "sha256": "42e6294579a36aba8a8d897f09eaf9ac7da609da576419e074f0fc3025584518",
+    "bytes": 16961
   },
   "counts": {
-    "source_paths": 10482,
-    "available_paths": 10470,
-    "unavailable_paths": 12,
-    "unique_objects": 9323,
-    "unique_original_bytes": 458707411,
-    "transport_bytes": 606156033
+    "source_paths": 11262,
+    "available_paths": 11251,
+    "unavailable_paths": 11,
+    "unique_objects": 9837,
+    "unique_original_bytes": 494324513,
+    "transport_bytes": 654556507
   },
   "max_fetch_lines": 8,
   "part_bytes_max": 262144,

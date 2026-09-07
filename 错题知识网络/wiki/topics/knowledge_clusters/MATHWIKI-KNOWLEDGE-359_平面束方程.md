@@ -9,7 +9,7 @@ wiki_refs:
   - "SRC-WRONGCARDS-INDEX"
   - "MATHWIKI-COVERAGE-001"
 status: active
-last_updated: "2026-07-28"
+last_updated: "2026-09-08"
 ---
 
 # 平面束方程
@@ -41,3 +41,5 @@ last_updated: "2026-07-28"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-001_错题卡全量覆盖索引]]
+| GS-776 | [[SRC-WQ-GS-776]] | 高等数学 | 向量代数与空间解析几何 | 概念混淆 | 平面束方程；距离约束求参数；A-CONCEPT | 待复做 | `错题知识网络/错题卡/GS-776_57872过交线平面的距离.md` |
+| GS-777 | [[SRC-WQ-GS-777]] | 高等数学 | 向量代数与空间解析几何 | 条件与边界检查遗漏 | 一参数平面束；法向量夹角；遗漏基准平面检验；B5-CHECK | 待复做 | `错题知识网络/错题卡/GS-777_57934平面束参数与漏解.md` |

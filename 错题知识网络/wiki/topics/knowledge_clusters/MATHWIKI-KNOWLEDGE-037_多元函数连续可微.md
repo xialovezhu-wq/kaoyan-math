@@ -9,7 +9,7 @@ wiki_refs:
   - "SRC-WRONGCARDS-INDEX"
   - "MATHWIKI-COVERAGE-001"
 status: active
-last_updated: 2026-07-15
+last_updated: "2026-09-08"
 ---
 
 # 多元函数连续可微
@@ -62,3 +62,5 @@ last_updated: 2026-07-15
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-001_错题卡全量覆盖索引]]
+| GS-790 | [[SRC-WQ-GS-790]] | 高等数学 | 多元函数微分学 | 概念混淆 | 固定另一个变量写差商；左右极限判定；A-CONCEPT | 待复做 | `错题知识网络/错题卡/GS-790_57687偏导定义与连续性.md` |
+| GS-791 | [[SRC-WQ-GS-791]] | 高等数学 | 多元函数微分学 | 方法入口未触发 | 对应坐标截线可导推出连续；区分一维与二维极限；B2-TRIGGER | 待复做 | `错题知识网络/错题卡/GS-791_57849偏导存在的推论.md` |

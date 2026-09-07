@@ -9,7 +9,7 @@ wiki_refs:
 - SRC-WRONGCARDS-INDEX
 - MATHWIKI-COVERAGE-001
 status: active
-last_updated: "2026-07-29"
+last_updated: "2026-09-08"
 ---
 # 二次曲面
 
@@ -44,3 +44,5 @@ last_updated: "2026-07-29"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-001_错题卡全量覆盖索引]]
+| GS-781 | [[SRC-WQ-GS-781]] | 高等数学 | 向量代数与空间解析几何 | 概念混淆 | 轴向坐标与到轴距离不变量；A-CONCEPT | 待复做 | `错题知识网络/错题卡/GS-781_58118椭圆旋转不变量.md` |
+| GS-794 | [[SRC-WQ-GS-794]] | 高等数学 | 向量代数与空间解析几何 | 未记录个人错因 | 目标集合上最小化距离；按距离条件列轨迹； | 待复做 | `错题知识网络/错题卡/GS-794_57681距离定义与轨迹曲面.md` |

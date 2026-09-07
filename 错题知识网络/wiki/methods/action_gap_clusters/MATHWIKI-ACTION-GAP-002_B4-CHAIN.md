@@ -9,7 +9,7 @@ wiki_refs:
 - SRC-WRONGCARDS-INDEX
 - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: "2026-08-31"
+last_updated: "2026-09-08"
 ---
 # B4-CHAIN
 
@@ -288,3 +288,4 @@ last_updated: "2026-08-31"
 
 - 新增 [[SRC-WQ-GS-768]]：严格凹函数正性直觉未闭合为罗尔点与泰勒积分证明链；正式 ID：GS-768。
 - 新增 [[SRC-WQ-GS-767]]：水平弦长、变上限体积、相关变化率与抽液做功共用同一液层微元链。；正式 ID：`GS-767`。
+| GS-784 | [[SRC-WQ-GS-784]] | 高等数学 | 向量代数与空间解析几何 | 动作链断裂 | 两线上设交点；连接向量平行已知方向；B4-CHAIN | 待复做 | `错题知识网络/错题卡/GS-784_58047公垂线交点参数.md` |

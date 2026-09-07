@@ -9,7 +9,7 @@ wiki_refs:
   - "SRC-WRONGCARDS-INDEX"
   - "MATHWIKI-COVERAGE-001"
 status: active
-last_updated: 2026-07-18
+last_updated: "2026-09-08"
 ---
 
 # 链式法则
@@ -47,3 +47,5 @@ last_updated: 2026-07-18
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-001_错题卡全量覆盖索引]]
+| GS-789 | [[SRC-WQ-GS-789]] | 高等数学 | 多元函数微分学 | 条件与边界检查遗漏 | 特殊点代入后用导数定义；可微余项检验；B5-CHECK | 待复做 | `错题知识网络/错题卡/GS-789_19334特殊点复合函数求导.md` |
+| GS-793 | [[SRC-WQ-GS-793]] | 高等数学 | 多元函数微分学 | 条件与边界检查遗漏 | 先固定变量再求导；根式约分检验等价；B5-CHECK | 待复做 | `错题知识网络/错题卡/GS-793_81450根式偏导与约分.md` |
