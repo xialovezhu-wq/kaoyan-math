@@ -1,10 +1,10 @@
 {
   "schema": "study-web-catalog-v1",
-  "count": 11262,
+  "count": 11341,
   "parts": [
     {
       "path": "published-web/catalog/part-00001.jsonl",
-      "sha256": "ae07240583c38c00f9d6e5d350e0aadc6e3986f6dfb99c5820941438820ec877",
+      "sha256": "ce9a3a3afcb02bb7aa8d60f7757e96514f1445caa4985bc1227534420ac99b8e",
       "bytes": 261983,
       "count": 466,
       "first_path": "PUBLISHED_LIBRARY.json",
@@ -20,170 +20,170 @@
     },
     {
       "path": "published-web/catalog/part-00003.jsonl",
-      "sha256": "e55d2cd34155813dd3ead9cef1ce4e9e841a430e8720cf88bf97ab6e832ab281",
-      "bytes": 261895,
-      "count": 475,
+      "sha256": "a89f14063eebeb49ee856a42b0ba57dfdeb52c9178778f12a15f4b5baea7d7f5",
+      "bytes": 262100,
+      "count": 471,
       "first_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-01/MATHPKG-ee2fd4ba3356969e79fe2b6f/receipt.json",
-      "last_path": "数学一回滚复习系统/快速入库来源/2026-07-30/fd2ef8f3786651fbed5b8b2d/legacy-archive-pointer.json"
+      "last_path": "数学一回滚复习系统/快速入库来源/2026-07-26/7ddf1c26e76df5abda6b82cb/legacy-archive-pointer.json"
     },
     {
       "path": "published-web/catalog/part-00004.jsonl",
-      "sha256": "0011e59786f9f3b6b3f41d57d18c091dc25854bf00663a3f786f2618c478aeb3",
-      "bytes": 261655,
+      "sha256": "4369930fc76c679aaf61412daf494f72ad4a2e7c33cfec6302722d90b96bb725",
+      "bytes": 261797,
       "count": 482,
-      "first_path": "数学一回滚复习系统/快速入库来源/2026-07-30/fd2ef8f3786651fbed5b8b2d/manifest.json",
-      "last_path": "数学一回滚复习系统/快速入库来源/2026-09-01/MATHPKG-ee2fd4ba3356969e79fe2b6f/receipt.json"
+      "first_path": "数学一回滚复习系统/快速入库来源/2026-07-26/7ddf1c26e76df5abda6b82cb/manifest.json",
+      "last_path": "数学一回滚复习系统/快速入库来源/2026-08-31/MATHPKG-61dd806c2cb9bfc9fad4a7ad/conversation.json"
     },
     {
       "path": "published-web/catalog/part-00005.jsonl",
-      "sha256": "a55b8f646586ede0f60c0abf72713770d4de7df2ac61024d9b1f3979f05eef10",
-      "bytes": 261889,
-      "count": 491,
-      "first_path": "数学一回滚复习系统/快速入库来源/2026-09-01/MATHPKG-ee2fd4ba3356969e79fe2b6f/source.json",
-      "last_path": "错题知识网络/assets/visual_wrong_questions/GS-068/question_01.png"
+      "sha256": "b28f23e824c8a57739110c621117e805b8967bec01d587ee0a0b45244d3ee82e",
+      "bytes": 261988,
+      "count": 485,
+      "first_path": "数学一回滚复习系统/快速入库来源/2026-08-31/MATHPKG-61dd806c2cb9bfc9fad4a7ad/manifest.json",
+      "last_path": "数学一回滚复习系统/生成/2026-09-02_学习前5题.internal.json"
     },
     {
       "path": "published-web/catalog/part-00006.jsonl",
-      "sha256": "8e87a67d44b6aabf8651f67e94c8674f7f4b1b484fb1fdd5fb56168ba1fcdaf1",
-      "bytes": 262085,
-      "count": 497,
-      "first_path": "错题知识网络/assets/visual_wrong_questions/GS-069/question_01.png",
-      "last_path": "错题知识网络/assets/visual_wrong_questions/GS-444/question_01.png"
+      "sha256": "7f85d4d0b489d92c449045dfe6e370dadcbc27c4bbbd876d83d8000bb93fca50",
+      "bytes": 262091,
+      "count": 499,
+      "first_path": "数学一回滚复习系统/生成/2026-09-02_学习前5题.md",
+      "last_path": "错题知识网络/assets/visual_wrong_questions/GS-391/solution_01.png"
     },
     {
       "path": "published-web/catalog/part-00007.jsonl",
-      "sha256": "672bf14278491647e45e1c2412b21cfd359ab2874a95c811022ff0279e1d415b",
-      "bytes": 262021,
-      "count": 500,
-      "first_path": "错题知识网络/assets/visual_wrong_questions/GS-445/question_01.png",
-      "last_path": "错题知识网络/assets/visual_wrong_questions/GS-742/question_01.png"
+      "sha256": "eeede29adee4b43765ca914ebdab342631747c4391805299f79acd287a9e84f8",
+      "bytes": 261724,
+      "count": 497,
+      "first_path": "错题知识网络/assets/visual_wrong_questions/GS-392/question_01.png",
+      "last_path": "错题知识网络/assets/visual_wrong_questions/GS-706/solution_01.png"
     },
     {
       "path": "published-web/catalog/part-00008.jsonl",
-      "sha256": "58c83b5167389696ec2255b0189c677c3bbb1a51ea38febbc787686f4b7a8059",
-      "bytes": 261896,
-      "count": 501,
-      "first_path": "错题知识网络/assets/visual_wrong_questions/GS-742/solution_01.png",
-      "last_path": "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-719/solution_01.png"
+      "sha256": "dd46a484a7c30c0a155f3d9e8e64e1dd3f00fd9ffb3870ede52ffd98baeb0a58",
+      "bytes": 262135,
+      "count": 505,
+      "first_path": "错题知识网络/assets/visual_wrong_questions/GS-707/question_01.png",
+      "last_path": "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-675/solution_01.png"
     },
     {
       "path": "published-web/catalog/part-00009.jsonl",
-      "sha256": "bed727de813031b8ef7f8bdd350cb57cb6752a7bee6c18fcec1eda8c3887f1a6",
-      "bytes": 261877,
-      "count": 484,
-      "first_path": "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-720/question_01.png",
-      "last_path": "错题知识网络/wiki/error_patterns/error_clusters/MATHWIKI-ERROR-CLUSTER-383_比较方向错误.md"
+      "sha256": "e5c01497da5e68d711147e7bb08178d93db63de5dacc610b493e2c9340c2c833",
+      "bytes": 262121,
+      "count": 489,
+      "first_path": "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-676/question_01.png",
+      "last_path": "错题知识网络/wiki/error_patterns/error_clusters/MATHWIKI-ERROR-CLUSTER-311_旧批量未记录个人原始错因-当前仅确认复做断点是容易先盯法线截距而没有先解.md"
     },
     {
       "path": "published-web/catalog/part-00010.jsonl",
-      "sha256": "0c52e522b4dc5ff31de39726bdc472f067fad68f6fe39333ae9d8f775cdb9f9a",
-      "bytes": 261930,
-      "count": 510,
-      "first_path": "错题知识网络/wiki/error_patterns/error_clusters/MATHWIKI-ERROR-CLUSTER-384_求和符号内n误提出.md",
-      "last_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-1022_指数函数求导.md"
+      "sha256": "38fc4d113db90d7a2f2876bbe112a98a24cec3f254476ee6869467473a645a64",
+      "bytes": 261805,
+      "count": 501,
+      "first_path": "错题知识网络/wiki/error_patterns/error_clusters/MATHWIKI-ERROR-CLUSTER-312_旧批量未记录个人原始错因-当前仅确认复做断点是对数极限转二阶小量后未同时.md",
+      "last_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-043_数学归纳法.md"
     },
     {
       "path": "published-web/catalog/part-00011.jsonl",
-      "sha256": "c766614d12094d6b55de8786855e9c6e349b05edc6a418f5756504c70e2b549b",
-      "bytes": 261795,
-      "count": 513,
-      "first_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-1023_指数函数积分.md",
-      "last_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-1489_轴截面求母线.md"
+      "sha256": "33d6c67ebe09a4e04631283c9b63d83f2d2cb3dc2e42a19a23db365f03f54b6d",
+      "bytes": 261979,
+      "count": 514,
+      "first_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-044_第二类换元.md",
+      "last_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-1416_静态几何关系建模.md"
     },
     {
       "path": "published-web/catalog/part-00012.jsonl",
-      "sha256": "cc7711424f4b1caa30117c9bd9c772ecb24a64667fda0613c8f9ff502abff494",
-      "bytes": 262046,
-      "count": 515,
-      "first_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-148_反三角函数求导.md",
-      "last_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-543_乘x配项.md"
+      "sha256": "25a7c9ec1df39f665728d1400a27f21efd28d88c799eb0e95cba79d1b62d596c",
+      "bytes": 261834,
+      "count": 514,
+      "first_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-1417_非齐次方程组有解唯一性判定.md",
+      "last_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-462_费马引理.md"
     },
     {
       "path": "published-web/catalog/part-00013.jsonl",
-      "sha256": "07769e85a4ffa1c5cdb33aefead5288f460c61ce0cd1bb084e93c3164eddcabb",
-      "bytes": 262012,
-      "count": 515,
-      "first_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-544_乘因式不改内部.md",
-      "last_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-027_全库逐题语义复核第10批正式收口.md"
+      "sha256": "b9522dbbaa17ec3b89f749b31758abec0c7df117d7f1fa2e4c12221462626e66",
+      "bytes": 261669,
+      "count": 514,
+      "first_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-463_逆矩阵定义.md",
+      "last_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-976_幂零矩阵秩约束.md"
     },
     {
       "path": "published-web/catalog/part-00014.jsonl",
-      "sha256": "06388fa9fdc31dc8ef1a6fa027e0b7cd4fbb105537ae84ab6b089fad2fd6457c",
-      "bytes": 262014,
-      "count": 537,
-      "first_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-028_全库逐题语义复核第11批20题.json",
-      "last_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-208.md"
+      "sha256": "25375972cb768af08aac6d3a02dbd37dbb350f53627c2ad77b7c44fec0df5f23",
+      "bytes": 261676,
+      "count": 530,
+      "first_path": "错题知识网络/wiki/methods/method_clusters/MATHWIKI-METHOD-CLUSTER-977_平均值公式.md",
+      "last_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-110.md"
     },
     {
       "path": "published-web/catalog/part-00015.jsonl",
-      "sha256": "a5bf4496e28c705f0c8fc1c63003610740e7e12e0f6c2ac6e42d5718029e2108",
+      "sha256": "3d1c4497ddddad1c62e8d208ca4dce91db02b102b58b70d1fc210d85c43a6f07",
       "bytes": 261960,
       "count": 555,
-      "first_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-209.md",
-      "last_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-770.md"
+      "first_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-111.md",
+      "last_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-672.md"
     },
     {
       "path": "published-web/catalog/part-00016.jsonl",
-      "sha256": "cd20b598de59a2f0a04c798a40139128c3c1c8c3bd57d73bfc5d9ff038408d6f",
-      "bytes": 261878,
-      "count": 528,
-      "first_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-771.md",
-      "last_path": "错题知识网络/wiki/topics/knowledge_clusters/MATHWIKI-KNOWLEDGE-332_坐标面投影.md"
+      "sha256": "635ff87d106b81ddf079466bb36f28e49a4b5b619e4d76c6db588eb7e8e13566",
+      "bytes": 262142,
+      "count": 535,
+      "first_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-673.md",
+      "last_path": "错题知识网络/wiki/topics/knowledge_clusters/MATHWIKI-KNOWLEDGE-241_参数退化讨论.md"
     },
     {
       "path": "published-web/catalog/part-00017.jsonl",
-      "sha256": "c4526806d45422fddaa5007dab966c778d6568c386f9dd2153af32f54d7a6fc3",
-      "bytes": 261882,
-      "count": 514,
-      "first_path": "错题知识网络/wiki/topics/knowledge_clusters/MATHWIKI-KNOWLEDGE-333_复合自变量差商.md",
-      "last_path": "错题知识网络/可视化错题详情/高等数学/GS-079_1000题A组11.5.md"
+      "sha256": "4c4547b89e33206d0a3676c7dfdf0a4e722eced01cb132b6fc197f81af8d2414",
+      "bytes": 261806,
+      "count": 516,
+      "first_path": "错题知识网络/wiki/topics/knowledge_clusters/MATHWIKI-KNOWLEDGE-242_反三角函数求导.md",
+      "last_path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-751_强化例题8.5（84080）.md"
     },
     {
       "path": "published-web/catalog/part-00018.jsonl",
-      "sha256": "6d44a421034fdf20a725a5ebf3aa3a09f6597762516842f4102b230473dcc3de",
-      "bytes": 261730,
-      "count": 506,
-      "first_path": "错题知识网络/可视化错题详情/高等数学/GS-079_缺图登记-1000题强化2.8-2-1034862026.5.11.md",
-      "last_path": "错题知识网络/可视化错题详情/高等数学/GS-588_138721.md"
+      "sha256": "84ce942a32a0fe039f74c59321a659c34d7c9fd014016d4746edae897c6a4460",
+      "bytes": 261716,
+      "count": 505,
+      "first_path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-752_强化例题8.7.md",
+      "last_path": "错题知识网络/可视化错题详情/高等数学/GS-498_57903-2026.5.25.md"
     },
     {
       "path": "published-web/catalog/part-00019.jsonl",
-      "sha256": "0a86e1d1b224aff7a78ae19f2983af70c0f0a0db53a23c3ff6b8381c4ead481c",
-      "bytes": 261904,
-      "count": 519,
-      "first_path": "错题知识网络/可视化错题详情/高等数学/GS-589_138734.md",
-      "last_path": "错题知识网络/教学投影/GS-264/learning-state.json"
+      "sha256": "0fbb52b36a29c49581098299b1fe5f5d5d3446d74858a29ff55bee8b0ce5b67a",
+      "bytes": 261755,
+      "count": 515,
+      "first_path": "错题知识网络/可视化错题详情/高等数学/GS-499_57905-2026.5.25.md",
+      "last_path": "错题知识网络/教学投影/GS-168/learning-state.json"
     },
     {
       "path": "published-web/catalog/part-00020.jsonl",
-      "sha256": "b238e424f79ded5c28ef8aa73976ea73ed1df32dee6810aecb70d7e5681d1ddf",
-      "bytes": 262093,
+      "sha256": "7910e743c5a5694902822a2a3c76d8dc3e68b047ff72631a439737153eb2ec19",
+      "bytes": 261753,
       "count": 532,
-      "first_path": "错题知识网络/教学投影/GS-265/learning-state.json",
-      "last_path": "错题知识网络/教学投影/GS-756/learning-state.json"
+      "first_path": "错题知识网络/教学投影/GS-169/learning-state.json",
+      "last_path": "错题知识网络/教学投影/GS-683/learning-state.json"
     },
     {
       "path": "published-web/catalog/part-00021.jsonl",
-      "sha256": "c526ab93d105b6896da4c77e5f0ca00de13de4663db2a8e709045403278a4817",
-      "bytes": 261849,
-      "count": 534,
-      "first_path": "错题知识网络/教学投影/GS-757/learning-state.json",
-      "last_path": "错题知识网络/错题卡/GS-290_强化例题9.20(90116).md"
+      "sha256": "43eedbae35c7a5ffb281342656d70b53fa607e7747a805953a38cfdc49081c89",
+      "bytes": 262110,
+      "count": 533,
+      "first_path": "错题知识网络/教学投影/GS-684/current.json",
+      "last_path": "错题知识网络/错题卡/GS-190_强化例题15.4.md"
     },
     {
       "path": "published-web/catalog/part-00022.jsonl",
-      "sha256": "9c2fcb1b3948672a09cad3784c31747bb96819cd6b66154d72e839deb2e1a52f",
-      "bytes": 261679,
-      "count": 527,
-      "first_path": "错题知识网络/错题卡/GS-291_强化例题9.21(19899).md",
-      "last_path": "错题知识网络/错题卡/LA-023_强化例题2.4.md"
+      "sha256": "bf335754183d276d10316d6cac31191178da3cd7194744a94a5a4f31a1c1b5be",
+      "bytes": 262060,
+      "count": 530,
+      "first_path": "错题知识网络/错题卡/GS-191_1000题B组5.22.md",
+      "last_path": "错题知识网络/错题卡/GS-727_165360锥面正向单位法向量.md"
     },
     {
       "path": "published-web/catalog/part-00023.jsonl",
-      "sha256": "93716a3e067c6e926f2b1c94ac4a0e0e8aa74f89c21c2ce6bb3888cc3ecbf1cd",
-      "bytes": 50802,
-      "count": 106,
-      "first_path": "错题知识网络/错题卡/LA-024_线代强化第九讲.md",
+      "sha256": "3bed98e1f51e52e54ffc5d21068bde522aaeb6186a0f467aaf9e5f0202c31fcb",
+      "bytes": 96731,
+      "count": 198,
+      "first_path": "错题知识网络/错题卡/GS-728_57885变限积分最值与比较放缩.md",
       "last_path": "高数讲义/《26张宇基础30讲（高等数学分册）》（拖移项目）.pdf"
     }
   ],

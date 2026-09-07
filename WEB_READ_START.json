@@ -4,21 +4,21 @@
   "repository": "xialovezhu-wq/kaoyan-math",
   "source_manifest": {
     "path": "PUBLISHED_LIBRARY.json",
-    "sha256": "f472b619ad76a10f19b2b68aa1764e406030ff6404978be008957f7d87dda4ce",
-    "bytes": 324930,
+    "sha256": "140394714d9893b4abdf6f54545e85b391805b2d8b66275e9cee6d78d95d24a1",
+    "bytes": 342816,
     "kind": "publication_metadata",
     "storage": "git",
     "status": "AVAILABLE",
     "transport": {
-      "path": "published-web/objects/f4/f472b619ad76a10f19b2b68aa1764e406030ff6404978be008957f7d87dda4ce/manifest.json",
-      "sha256": "8a16c9fdefb66cacf8383b974aa001545f90c3aad6210f4287e3f10cd72c9d91",
-      "bytes": 986
+      "path": "published-web/objects/14/140394714d9893b4abdf6f54545e85b391805b2d8b66275e9cee6d78d95d24a1/manifest.json",
+      "sha256": "2f4b0d0ecfc9f864fb794dfbcbf8cb321c512ade5914fe09f97b20c4ba5e9215",
+      "bytes": 988
     }
   },
   "catalog": {
     "path": "published-web/catalog.json",
-    "sha256": "cac34bea935dd546b039d22595cec28c8cbc55c57530ff63a982bb6e99f604b6",
-    "bytes": 9473
+    "sha256": "43a03e8f1ead17080a0b3fb395bff664dfbe7b8a426c81907dca41b50d31f78b",
+    "bytes": 9689
   },
   "entrypoints": {
     "formal_cards": "错题知识网络/错题卡/",
@@ -33,12 +33,12 @@
     "bytes": 16961
   },
   "counts": {
-    "source_paths": 11262,
-    "available_paths": 11251,
+    "source_paths": 11341,
+    "available_paths": 11330,
     "unavailable_paths": 11,
-    "unique_objects": 9837,
-    "unique_original_bytes": 494324513,
-    "transport_bytes": 654556507
+    "unique_objects": 9854,
+    "unique_original_bytes": 494420485,
+    "transport_bytes": 654719439
   },
   "max_fetch_lines": 8,
   "part_bytes_max": 262144,
