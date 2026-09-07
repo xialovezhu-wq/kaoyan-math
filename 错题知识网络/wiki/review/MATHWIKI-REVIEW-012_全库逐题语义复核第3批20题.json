@@ -1,0 +1,1356 @@
+{
+  "batch_number": 3,
+  "campaign_formal_card_count": 831,
+  "cards": [
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "x-y+z=0。",
+      "asked_output": "求空间平面方程。",
+      "card_id": "GS-627",
+      "card_sha256": "d857b858358f799f56ebfda6842f8cab2989547f0d12c21c6abb5d22686abb39",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先明确平面需要“已知点 + 法向量”；由过原点固定已知点，再从两条直线提取两个平面内方向。",
+      "knowledge_nodes": [
+        "空间平面方程",
+        "方向向量",
+        "法向量",
+        "点乘判垂直",
+        "叉乘",
+        "代数余子式符号"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "能提取方向向量，但平面内方向与法向量的角色、点乘与叉乘不稳；展开叉乘时又漏掉 j 项负号。"
+      },
+      "physical_asset_path_count": 3,
+      "pre_formal_closeout_card_sha256": "88f5486232794e46de43970624a55fd20d77a8e1b57b8f825e0049c489c2931c",
+      "quality_findings": [],
+      "question_summary": "求过原点且与两条给定空间直线均平行的平面方程。",
+      "relation_decisions": [
+        {
+          "decision": "strong_candidate",
+          "reason": "共享辨认向量角色并用叉乘构造公共垂直向量。",
+          "target_card_id": "GS-629"
+        },
+        {
+          "decision": "medium_navigation_remove",
+          "reason": "只共享平面与法向量粗概念。",
+          "target_card_id": "GS-628"
+        },
+        {
+          "decision": "reject_as_strong_remove",
+          "reason": "核心对象和动作链不同。",
+          "target_card_id": "GS-645"
+        },
+        {
+          "decision": "medium_navigation_remove",
+          "reason": "点法式相同但切向量来源不同。",
+          "target_card_id": "GS-647"
+        },
+        {
+          "decision": "medium_navigation_remove",
+          "reason": "只共享法向量与垂直关系。",
+          "target_card_id": "GS-651"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "6a6a56d0ebcc05d0a8ddc5050b5d408bffc4cee023d56e3083fe3e6cfe26793f"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "2a25d24de03b2b62e6d3fcf39ff4d5919e1706841861428a95987f9716fdd25b",
+        "b84aa4ce7ebdcd273e49d026e725bc501eb0f613b2b08c7b9956146ae46ec920",
+        "5fabac9c5bce57f00747c7a5045a48646ee636b17cdc7af9b2804fec52d49d52"
+      ],
+      "solution_outline": [
+        "从两条直线读出方向向量 (0,1,1) 与 (1,2,1)。",
+        "用叉乘构造同时垂直于两方向的平面法向量，再用过原点的点法式。",
+        "以两个点乘均为 0 回验法向量角色。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "π/3，选 C。",
+      "asked_output": "求夹角并选择选项。",
+      "card_id": "GS-629",
+      "card_sha256": "4343387a7f63faaf4b91268758ba8e64c76bf874ea14906bc426a7b669480a36",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先识别第二条直线是两平面交线，并写出两个平面法向量的叉乘。",
+      "knowledge_nodes": [
+        "两平面交线",
+        "平面法向量",
+        "直线方向向量",
+        "叉乘",
+        "点乘",
+        "空间直线夹角"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "正式首断点是未识别两平面交线；最新仍把叉乘口述成“点乘（外积）”，运算输出角色未稳定。"
+      },
+      "physical_asset_path_count": 3,
+      "pre_formal_closeout_card_sha256": "36261428d5b4c9948541fd7ff94507820a4f24460a512f34a4289811ba811dde",
+      "quality_findings": [],
+      "question_summary": "求对称式直线与两平面交线型直线的锐夹角。",
+      "relation_decisions": [
+        {
+          "decision": "strong_candidate",
+          "reason": "共享叉乘前的向量角色辨认。",
+          "target_card_id": "GS-627"
+        },
+        {
+          "decision": "reject_as_strong_remove",
+          "reason": "只共享方向向量粗标签。",
+          "target_card_id": "GS-645"
+        },
+        {
+          "decision": "medium_navigation_remove",
+          "reason": "参数求切向量与法向量叉乘不是同一首动作。",
+          "target_card_id": "GS-647"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "751a0d9697ca328c98da4fdd78f0af7eaf7934ac496e9004dcb0e7f3bdc90ec2"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "33ac2fc7f94747710a1752b454da5684f64b2afb955f337cc15e255c9bff8194",
+        "c6bd2684e712e182240d3c1572c2b1fe115eed33eed355d930b87ec47179a99f",
+        "112a7bed1548397e366bcecaac8682d82b28c47df44aa812524b927426071b8d"
+      ],
+      "solution_outline": [
+        "从对称式读出第一条方向向量。",
+        "将第二条识别为两平面交线，以两个法向量叉乘得到方向向量。",
+        "用方向向量点积公式并取锐角。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "x²+y²=2x，z=0。",
+      "asked_output": "求空间交线的平面投影曲线。",
+      "card_id": "GS-645",
+      "card_sha256": "4b9a4a933ff0da3e32c315671d4867523bf36d773df9c31513cb7eefeaeb31a7",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先由两点之差得到非零方向向量并写出生成直线，再分层区分直线、旋转曲面、交线和投影。",
+      "knowledge_nodes": [
+        "两点式直线",
+        "旋转不变量",
+        "旋转曲面",
+        "曲面交线",
+        "消元投影",
+        "空间对象维数"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "不能独立启动“直线→旋转曲面→交线→投影”链，并混淆自由变量与坐标面约束。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "e4d82027e4499753e30964dea2f09d2106beaf45611dea33ea44f31fe93b5b7a",
+      "quality_findings": [
+        {
+          "code": "source_solution_notation_warning",
+          "finding": "解析图把 x/0 当作直线对称式简写且误称投影直线；最终答案不受影响。",
+          "resolution_status": "documented",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "直线绕 z 轴生成上半旋转曲面，与另一曲面相交后求 xOy 面投影。",
+      "relation_decisions": [
+        {
+          "decision": "reject_as_strong_remove",
+          "reason": "只共享方向向量提取。",
+          "target_card_id": "GS-627"
+        },
+        {
+          "decision": "reject_as_strong_remove",
+          "reason": "只共享方向向量粗标签。",
+          "target_card_id": "GS-629"
+        },
+        {
+          "decision": "medium_navigation_remove",
+          "reason": "不共享旋转不变量与投影消元主链。",
+          "target_card_id": "GS-651"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "06cc19c98ef46519763652d12baecb0b86127a69934a95cf1494f0d02a6c93ec"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "4bf45b54e0d05d7956a56ffb9e5adfadb5674e998c5731e25a745f9d7de8c5b4",
+        "ec9d39afc8c8db05c9cf314d98b00053e59c8c4c3fe9be7066b3aaedb766837b"
+      ],
+      "solution_outline": [
+        "由两点之差写生成直线 x=0、y=-z。",
+        "用绕 z 轴时高度与到轴距离不变得到 z²=x²+y²、z≥0。",
+        "联立 z²=2x 消去 z，再补投影面 z=0。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "πR/4。",
+      "asked_output": "求曲面积分。",
+      "card_id": "GS-698",
+      "card_sha256": "dd4fd5e812fd111f403cfce931b8a0f326f65e5736ccb8ab1e67fd8974308f75",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先标明实际曲面、被积函数与计算投影，再检查哪两个坐标能唯一确定曲面点。",
+      "knowledge_nodes": [
+        "第一型曲面积分",
+        "一一对应投影",
+        "曲面面积元",
+        "第一卦限",
+        "反正弦型积分"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "未区分实际曲面与投影区域，也未触发一一对应判据；入口理清后仍忘记反正弦型标准原函数。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "b92f1a76126c2a0b54817c55e1e48083df001568db9d67fbf43d6e2f8384b338",
+      "quality_findings": [],
+      "question_summary": "在第一卦限柱面片上计算第一型曲面积分。",
+      "relation_decisions": [
+        {
+          "decision": "strong_candidate",
+          "reason": "共享实际曲面、投影区域和 dS 伸缩因子的角色区分。",
+          "target_card_id": "GS-700"
+        },
+        {
+          "decision": "medium_navigation_remove",
+          "reason": "只共享第一型曲面积分大类，首动作不同。",
+          "target_card_id": "GS-699"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "9c57ab5256a90917e0ccefaef5402ecdde12c27e299a86b80bcdd5763deb2c5c"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "d1145b8aaea2349c7cbfea63d7ec319f6c0c728a2c418641d048874812eaa4cd",
+        "e350e54cb48dc074740edbd7626c178d2b799e8e68c614001ef1e353f03e1536"
+      ],
+      "solution_outline": [
+        "选择与曲面点一一对应的 xOz 投影。",
+        "写图形曲面的面积伸缩因子。",
+        "把二重积分拆成 z 积分和反正弦型积分。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "3π/2。",
+      "asked_output": "求曲面积分。",
+      "card_id": "GS-699",
+      "card_sha256": "84de743ae4b144e18825184a7134b672c0d3328582ea1a05b2fd52a86b6a5f2e",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "看到“原点到变动切平面的距离”，先写梯度法向量、切平面和点面距离三行。",
+      "knowledge_nodes": [
+        "隐式曲面梯度",
+        "切平面点法式",
+        "点到平面距离",
+        "隐函数求导",
+        "第一型曲面积分"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "整条方法链无法启动；法向量、点法式、隐函数链式求导与投影边界均需补齐。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "ec4864a8a08f40033d3fee0e1dc02b3824f76f48551ac275b819a8936e14b88c",
+      "quality_findings": [],
+      "question_summary": "上半椭球面上，以原点到变动切平面的距离构造第一型曲面积分。",
+      "relation_decisions": [
+        {
+          "decision": "medium_navigation_remove",
+          "reason": "只共享曲面积分大类，真正首动作是先构造切平面距离。",
+          "target_card_id": "GS-698"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "23c0375df04df8fa8abe5d205350f0f0fe2f395c8c09187dfc541f8c9ce2912d"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "578b5c13113c6f77e49de2cf04448f0ac9ba13d579e01ab479d9dd2d8bfc671a",
+        "2de569c74c864ecf7727bc707ed30243bf6532cd068173e4733c8ed1eb186ac2"
+      ],
+      "solution_outline": [
+        "由隐式曲面梯度写变动切平面。",
+        "求原点到切平面的距离。",
+        "写上半椭球投影面积元，合并后化为圆盘极坐标积分。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "投影 x²+y²=2x、z=0；质量 64。",
+      "asked_output": "求投影曲线和薄片质量。",
+      "card_id": "GS-700",
+      "card_sha256": "33ec9301a893bd398c28f1aa71c66e9a2d9ab5a22b19138740748bdd118441ca",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先写 M=∬S μdS，同时区分实际曲面 S、投影区域 D、dS 与 dxdy。",
+      "knowledge_nodes": [
+        "曲面薄片质量",
+        "第一型曲面积分",
+        "曲面伸缩",
+        "偏心圆极坐标",
+        "Jacobian",
+        "对称性"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "未触发质量曲面积分，混淆实际曲面与投影；又把根式乘积错化并把固定圆半径当极坐标上界。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "33ec9301a893bd398c28f1aa71c66e9a2d9ab5a22b19138740748bdd118441ca",
+      "quality_findings": [],
+      "question_summary": "求锥面薄片交线投影及给定面密度下的质量。",
+      "relation_decisions": [
+        {
+          "decision": "strong_candidate",
+          "reason": "共享曲面与投影角色及面积伸缩因子。",
+          "target_card_id": "GS-698"
+        },
+        {
+          "decision": "strong_candidate",
+          "reason": "共享偏心圆固定半径误作极坐标变量上界的复发断点。",
+          "target_card_id": "GS-667"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "a9af544406d0849f6c5c7c2ae9c1d370785f257ccefb826029bbd7ac9e841f08"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "3e46a8217c5e85459aa074ae5c2adacf44ec0b8e67573d5f4812d84ac4bafc1e",
+        "aad9b5a5534fa782a6f1d2bab6d5a43ed901c3b0f3a0668039a8fdfcf9004d3d"
+      ],
+      "solution_outline": [
+        "把薄片质量写成第一型曲面积分。",
+        "在锥面上化简密度并计算 dS。",
+        "将偏心圆盘写成极坐标区域并积分。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "y=arcsin(1/x)+π/6，x<-1。",
+      "asked_output": "求满足初值的曲线方程。",
+      "card_id": "GS-701",
+      "card_sha256": "c2e699d219c4293b2f6f560fdf27f1690b1f7687ca8d0d623920d3d11cb5971d",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先把被积式准确读成 1 除以 x√(x²-1)，再由初值固定 x<-1 分支。",
+      "knowledge_nodes": [
+        "反三角积分",
+        "定义域连通分支",
+        "绝对值",
+        "反三角主值",
+        "初值定常数"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "先后暴露读式、基本导数、绝对值和主值问题；最新解释特殊角时仍出现循环论证。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "c2e699d219c4293b2f6f560fdf27f1690b1f7687ca8d0d623920d3d11cb5971d",
+      "quality_findings": [],
+      "question_summary": "由导数和初值求反三角函数形式的积分曲线。",
+      "relation_decisions": [],
+      "reviewed_detail_sha256": [
+        "02c54f7f5db592dc6cc016070fbc85145a94c84479328c84fcafb98be861c38b"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "832cb029341146eef699f676d752919deabd7ea99e8f06c13cd917b7703babc4",
+        "a1984ed5eb3dc0201b79093de743ac546617500718d0b87d6eaf544449fd7798"
+      ],
+      "solution_outline": [
+        "由初值先固定 x<-1 的连通分支。",
+        "核对 d/dx arcsin(1/x) 的绝对值与符号。",
+        "代入初值确定常数。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "π。",
+      "asked_output": "求极限。",
+      "card_id": "GS-702",
+      "card_sha256": "34b039cf7859ea9b062f73132d517f1ee9e96a3d67f5840559c1494548fa88ea",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先标出区间宽度和取样点，再由 nΔx 确定积分区间。",
+      "knowledge_nodes": [
+        "定积分定义",
+        "黎曼和",
+        "区间识别",
+        "第二类换元",
+        "反正切型积分"
+      ],
+      "later_batch_revalidation": {
+        "added_edges": [
+          "GS-397"
+        ],
+        "batch_number": 27,
+        "content_change_scope": "related_field_only",
+        "current_card_sha256": "34b039cf7859ea9b062f73132d517f1ee9e96a3d67f5840559c1494548fa88ea",
+        "current_related": [
+          "GS-172",
+          "GS-397"
+        ],
+        "date": "2026-07-23",
+        "historical_semantic_payload_preserved": true,
+        "note": "第27批新增 GS-397--GS-702 强边；两题共享从和式中恢复面积微元、采样点与积分区间的具体入口。",
+        "prior_card_sha256": "4e713d231c4ece204f3a6e970f4b9abe536cddd950320c05cce65fda18d414bf"
+      },
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "本题区间能识别，但一般化时漏左端点 a，并把区间宽度说成小块面积。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "35cebf7ecaabd631697a1a1b6baee2e0f2fe5d3c6fbff1420090b0b27f4ecc45",
+      "quality_findings": [
+        {
+          "code": "canonical_detail_link_repaired",
+          "finding": "详情页原指向不存在的候选卡，已改连实际强候选 GS-172。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "把含参数的求和极限识别为黎曼和并计算。",
+      "relation_decisions": [
+        {
+          "decision": "strong_candidate",
+          "reason": "共享从取样点、Δx 和左右端点恢复黎曼和区间。",
+          "target_card_id": "GS-172"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "d86d646ef034489c69e06b66ebebe3acc53b012832b24df3736f50ae9ffd1972"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "7d9f1ed29a2b88dae580909dfde5527ba2ec879ea1d111940d2a6e819bf502cc",
+        "cbc71fd5c3dd134aa1377fee9e41b3d57d273ec616883897c314394638ab6b57"
+      ],
+      "solution_outline": [
+        "识别 Δx=(t-1)/n 与右端点取样。",
+        "先得到区间 [0,t-1] 的定积分。",
+        "完成参数积分与外层极限。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "第 1 问 (1-√2)/6；第 2 问 (e⁻¹-1)/4。",
+      "asked_output": "求两个定积分结果。",
+      "batch36_lineage_revalidation": {
+        "added_edges": [],
+        "batch_number": 36,
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_card_sha256": "eb819fee557bd721fc499822534d732cfabe20f2913a5fb4d560d81552d60e00",
+        "current_related": [
+          "暂无强边"
+        ],
+        "date": "2026-07-24",
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-703 的关系导航哈希；第3批原逐题语义载荷保持不变。",
+        "prior_card_sha256": "16d2fba14970721f3c008d1abf1af623fd2928415c241994d5bd245ab41e7817",
+        "prior_lineage_fields_preserved": [],
+        "removed_edges": [
+          "GS-585--GS-703"
+        ]
+      },
+      "card_id": "GS-703",
+      "card_sha256": "eb819fee557bd721fc499822534d732cfabe20f2913a5fb4d560d81552d60e00",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先标明当前在求原函数；复合上限求导先写 h(g(x))，再乘 g'(x)。",
+      "knowledge_nodes": [
+        "分部积分",
+        "变上限积分",
+        "幂函数积分",
+        "复合函数求导"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "方法入口正确；执行时把积分规则写成求导规则，并在复合上限求导中少代一层平方。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "a246bc314ec05f2c6ae4fe9af6d46dd54ab0a67d6b6a4eb27380c302e14f69d5",
+      "quality_findings": [
+        {
+          "code": "canonical_detail_link_repaired",
+          "finding": "详情页原指向重复候选，已改连同一复合上限链的 GS-585。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "利用分部积分、幂函数原函数和复合上限求导完成两问。",
+      "relation_decisions": [
+        {
+          "decision": "strong_candidate",
+          "reason": "共享完整上限代入后再乘上限导数的核心动作。",
+          "target_card_id": "GS-585"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "d3cf804242989a0a1fd53ac1149ded23beece7f40951335ccfb6fdc40ec518ff"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "5e38bf26e3c387d876b902bc5ffbdbf8c99b871d5f2e0b9ea87230fe08056ba1",
+        "42d7689208c6a00f4881dfd7e9c45da0f5391cd8dfcc32a3891a6e56b28934c7"
+      ],
+      "solution_outline": [
+        "第一问分部积分后按幂函数积分规则计算。",
+        "第二问先把完整上限代入被积函数。",
+        "再乘复合上限的导数并代回。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "题源待澄清；若原变量限定在 (0,π/2)，则为 -2√(1-x)arcsin√x+2√x+C。",
+      "asked_output": "求不定积分。",
+      "card_id": "GS-704",
+      "card_sha256": "bf1e3d9715dc5ada756a841ff12531b0e33f2b5551f1c080c9b1774d58b62bc7",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "source_condition_incomplete"
+      },
+      "content_review_status": "verified",
+      "first_action": "先把函数关系原变量另记为 θ 并核实其定义域能否唯一反解，再进入目标积分。",
+      "knowledge_nodes": [
+        "复合函数反求",
+        "反函数支路与定义域",
+        "分部积分",
+        "反三角函数求导",
+        "链式法则"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "个人断点是读式错误、分部积分入口未触发、反三角导数遗忘和内层导数漏乘；来源缺域不属于个人错因。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "7c80c92c4ff8a4307c0f7c2e219dc45375b7457c04bbffb60b861e78b9366edd",
+      "quality_findings": [
+        {
+          "code": "missing_domain_for_function_relation",
+          "finding": "题面未给原变量域；若允许全部实数，同一 sin²θ 会对应不同右端值，函数关系不良定义。",
+          "resolution_status": "needs_source_clarification",
+          "severity": "high"
+        }
+      ],
+      "question_summary": "由函数关系反求复合函数后计算反正弦复合不定积分。",
+      "relation_decisions": [
+        {
+          "decision": "verified_strong_existing",
+          "reason": "在补足支路条件后共享复合函数反求与分部积分入口。",
+          "target_card_id": "GS-712"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "a6876c9935ed1160e0a9769b69503a2346d3af3e95d05299fdc844fd57f3dc86"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "a29180e4c8a6a07f719e5eb81bb39ac9000ae0c4f35a03e92a5ca9b56c8edf73",
+        "24ca1888ab7f3e36616a11a6ac34a8886ed447253a80e63bda606c0c336434cc"
+      ],
+      "solution_outline": [
+        "先核实函数关系中原变量的单射分支。",
+        "在支路成立时反解 f(x)。",
+        "把 dx/√(1-x) 凑成 -2d√(1-x)，再分部积分。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "π/8-(ln2)/4。",
+      "asked_output": "求 ∫₀¹f(x)dx。",
+      "card_id": "GS-713",
+      "card_sha256": "9972de9a88d9574e751f9d99ea8c39265c290309468138437c2159f78d8036c4",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先设计能由题设直接确定的分部积分边界项，而不是先求 f 的解析式。",
+      "knowledge_nodes": [
+        "定积分",
+        "目标导向分部积分",
+        "反三角导数",
+        "初值与边界项"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "先读错平方位置；方法首断点是默认先求 f，而未观察目标积分可直接分部积分。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "3aa384da7cd714d6c05672ed7749ecb0831005a2562ae4151e0eca5392e71834",
+      "quality_findings": [
+        {
+          "code": "formula_markup_corrected",
+          "finding": "正式卡中缺失反斜杠的积分命令已修正。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        },
+        {
+          "code": "visual_registry_backfill",
+          "finding": "正式详情和题解图原未进入四份视觉登记，现已补齐。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "仅给 f'(x) 与端点信息，直接计算目标定积分。",
+      "relation_decisions": [],
+      "reviewed_detail_sha256": [
+        "57a6a220d771e15bf95af5c49f5bdaf2aa58fc27de03e381b9e65ca352553e91"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "b10af88c2c41ed65ff90a74fd6ceb9bf731101d662d31c047a6ce1458c7072f3",
+        "cf3a2a63fc500526f9f5673dc2214df00315bd44ec7f47680bc30b8a07ff660a"
+      ],
+      "solution_outline": [
+        "把 dx 写成 d(x-1)。",
+        "直接对目标积分分部积分，使边界项由端点条件消失。",
+        "代入 f'(x) 后完成标准积分。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "-1/3。",
+      "asked_output": "求极限。",
+      "card_id": "GS-714",
+      "card_sha256": "55c30508e5e19d6d922173237df08ff504073c008414857e372c0adc46c51e19",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "看到 xu 与 xdu 成组出现，先令 t=xu 消去积分内部参数。",
+      "knowledge_nodes": [
+        "含参数积分",
+        "定积分换元",
+        "等价无穷小",
+        "洛必达法则",
+        "变上限积分"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "未识别成组换元信号，在参数未消去前直接洛必达，导致求导链错误。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "55c30508e5e19d6d922173237df08ff504073c008414857e372c0adc46c51e19",
+      "quality_findings": [
+        {
+          "code": "visual_registry_backfill",
+          "finding": "正式详情和题解图原未进入四份视觉登记，现已补齐。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "含参数积分极限，先换元消去积分内部参数。",
+      "relation_decisions": [],
+      "reviewed_detail_sha256": [
+        "75ec8e34f0b591871f453dd4eb7c3a6f7c6973c8a8496e3bf5ba6d63c4afa4fd"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "e0f8861b2f2d3f9894a875b76e0bba20215d3bbe42d57590855e69d63ca24043",
+        "4dc72523972c454206945ad0ecaedf69e8d6f6358e4562b10540754ad9f6f092"
+      ],
+      "solution_outline": [
+        "令 t=xu，把 xu 与 xdu 成组换元。",
+        "同步变换上下限，得到标准变上限积分。",
+        "再处理分母等价无穷小与极限。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "f(x)=(1+x)/(1-x)²，x≤0；x=-3 处局部极小值 -1/8。",
+      "asked_output": "求 f(x) 及其极值。",
+      "card_id": "GS-715",
+      "card_sha256": "c0049035e23912fd151b27b9bf657143267a75132465c258369aecff39cea12a",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "每次换元同时写新变量、上下限和微分，并在整行保持同一符号约定。",
+      "knowledge_nodes": [
+        "积分方程",
+        "微积分基本定理",
+        "变限积分求导",
+        "换元一致性",
+        "一元函数极值"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "误以为必须先有 f 可导；又混用 y=-x² 与 y=x² 两套换元，导致下限和函数自变量不同步。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "c0049035e23912fd151b27b9bf657143267a75132465c258369aecff39cea12a",
+      "quality_findings": [
+        {
+          "code": "visual_registry_backfill",
+          "finding": "正式详情和题解图原未进入四份视觉登记，现已补齐。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "由积分方程反求函数并求极值。",
+      "relation_decisions": [],
+      "reviewed_detail_sha256": [
+        "9fea58b324a3ca9f29d24d8e0a91d1f1dd332460cb9c0c37d432af766c91b12b"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "4ca9093dfb156eb259d49e44e72889d13c3ae5906e4272c1db3bc3cd3ca1544d",
+        "2fd200105a44988102081c5f964ce81bba30df5f11cfe6e4f4c3af6f1e2f83c9"
+      ],
+      "solution_outline": [
+        "令 u=t²-x² 并写清新上下限。",
+        "将 -x² 作为统一新变量，对变下限积分函数求导。",
+        "得到显式函数后按定义域判极值。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "f(x)=2x-xlnx；x=e 处极大值 e，无极小值。",
+      "asked_output": "求 f(x) 并讨论极值。",
+      "card_id": "GS-716",
+      "card_sha256": "6b1b42b6f2a2434d43d39a052f728d08d1469fcadfdf7a7c3ae09b5d840d5a86",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先确认共同极限点 x²，再在分子中加减 f(x²)。",
+      "knowledge_nodes": [
+        "导数定义",
+        "共同基点",
+        "增量补偿",
+        "不定积分",
+        "函数极值"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "看出导数目标但没有先确定共同基点和各自增量，无法构造标准差商。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "4c5240ccfaa40e7cb1ecd8b3dd1ec8dd66d72c6615958dc570a6809b22302ffa",
+      "quality_findings": [
+        {
+          "code": "visual_registry_backfill",
+          "finding": "正式详情和题解图原未进入四份视觉登记，现已补齐。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "把非标准函数值差极限拆成两个标准导数定义，再反求函数和极值。",
+      "relation_decisions": [
+        {
+          "decision": "strong_candidate",
+          "reason": "共享围绕共同基点加减函数值并拆标准差商。",
+          "target_card_id": "GS-458"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "d5bb61b3f745d12957b8a93ddd0a58b23252bdd5a6d990605ecc8485e658d6ad"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "00442ee0af9f3217ef743c47daabb4cf560aa64c82d9dc05d074ff529434ee8a",
+        "13ae6b776c2502c9de1865171eaa4f94361dfeec9e8cab93e67fd639486ff770"
+      ],
+      "solution_outline": [
+        "确认两个函数自变量共同趋于 x²。",
+        "在分子中加减 f(x²)，分别构造标准差商。",
+        "得到微分方程后积分，并讨论定义域内极值。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "1。",
+      "asked_output": "求极限。",
+      "card_id": "GS-717",
+      "card_sha256": "96276badb314543735e7938a0413ffb66bccbacde0f6a507bf803b3238c7f7ff",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "分段后逐项标明上下限；极限阶段先检查相减两项的一阶主项是否抵消。",
+      "knowledge_nodes": [
+        "绝对值分段积分",
+        "分部积分",
+        "边界代入",
+        "等价无穷小边界",
+        "高阶展开"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "分段入口正确；首个偏离是把 -cos2x 抄成 -cosx，随后又跨主项相消使用一阶等价。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "96276badb314543735e7938a0413ffb66bccbacde0f6a507bf803b3238c7f7ff",
+      "quality_findings": [
+        {
+          "code": "visual_registry_backfill",
+          "finding": "正式详情和题解图原未进入四份视觉登记，现已补齐。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "处理含绝对值积分并计算主项相消型极限。",
+      "relation_decisions": [],
+      "reviewed_detail_sha256": [
+        "0259f2e062b5cb0c2b78a05879385c1a5765ef1b9caa490ed9cf762cda7a3f4f"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "72ec065dfd17c2bb2069fc5c4c2f066c14c76df8523199884572a09f07d05a69",
+        "896843513525d9b12e65df07bdbc6a58c871e451f12d07ee74cb87f2c33476eb"
+      ],
+      "solution_outline": [
+        "在参数点处分段去绝对值。",
+        "逐项保留上下限并合并成精确三角式。",
+        "识别一阶主项相消，改用因式分解或高阶展开。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "a=-1。",
+      "asked_output": "求参数 a。",
+      "card_id": "GS-719",
+      "card_sha256": "6da344253b4877ae83ad4bd3a3157b2b8bede5b5b908191b7fad6346c0913e2b",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先标 P、Q 并写 Qx=Py。",
+      "knowledge_nodes": [
+        "第二型曲线积分",
+        "路径无关",
+        "单连通区域",
+        "偏导判据"
+      ],
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "知识学过但未由“路径无关 + 单连通”触发偏导相等，首断点在方法入口。"
+      },
+      "physical_asset_path_count": 2,
+      "pre_formal_closeout_card_sha256": "6da344253b4877ae83ad4bd3a3157b2b8bede5b5b908191b7fad6346c0913e2b",
+      "quality_findings": [
+        {
+          "code": "visual_registry_backfill",
+          "finding": "正式详情和题解图原未进入四份视觉登记，现已补齐。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "利用第二型曲线积分路径无关判据确定参数。",
+      "relation_decisions": [
+        {
+          "decision": "verified_strong_existing",
+          "reason": "共享路径无关偏导判据并由恒等式反求未知量。",
+          "target_card_id": "GS-718"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "69a9582097c4c4d977f8239c898bab4d8e2ba7d7277578091dc5616c4d9d5023"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "1f929cddd92fe74018ce8dacafd1d0272b8c43d78ed13f146d983f554771b4c4",
+        "aa3957b6bbdc2f4169e84723e7ad7c8f210bad7b9483ad78695fa5fcfe908096"
+      ],
+      "solution_outline": [
+        "标出 dx、dy 前的 P 与 Q。",
+        "利用单连通域与路径无关写 Qx=Py。",
+        "把偏导恒等式化为参数条件。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "对任意 x>0，|f(x)|≤1/x。",
+      "asked_output": "证明振荡积分估计。",
+      "card_id": "GS-249",
+      "card_sha256": "795894615b84d54fc7c9e33a3599f94e14f0bc501b70b030e2941801444e96a5",
+      "consistency": {
+        "formal_visual": "repaired_in_formal_closeout",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先利用 d cos(u²)=-2u sin(u²)du，把振荡因子送入微分。",
+      "knowledge_nodes": [
+        "振荡积分估计",
+        "分部积分",
+        "三角函数有界性",
+        "绝对值估计"
+      ],
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧批量没有用户本人作答过程；本轮只纠正客观题面、答案和方法入口。"
+      },
+      "physical_asset_path_count": 1,
+      "pre_formal_closeout_card_sha256": "c2b4d680ac8a13b9f64daee06d3df5c25961afe8c36ded0052802fa1cb789c9d",
+      "quality_findings": [
+        {
+          "code": "formal_content_identity_repaired",
+          "finding": "旧正式卡是另一道中值定理题，现已按实际题图重写。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        },
+        {
+          "code": "cross_id_duplicate_question_asset",
+          "finding": "同一题图还绑定 GS-044、GS-325、GS-343；稳定 ID 合并或删除继续留给用户裁决。",
+          "resolution_status": "needs_user_decision",
+          "severity": "high"
+        }
+      ],
+      "question_summary": "设 f(x)=∫ₓ^(x+1) sin(u²)du，证明对 x>0 有 |f(x)|≤1/x。",
+      "relation_decisions": [
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "旧错位内容产生的关系。",
+          "target_card_id": "GS-225"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "旧错位内容产生的关系。",
+          "target_card_id": "GS-041"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "旧错位内容产生的关系。",
+          "target_card_id": "GS-081"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "旧错位内容产生的关系。",
+          "target_card_id": "GS-226"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "旧错位内容产生的关系。",
+          "target_card_id": "GS-229"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "6a06124e85b232b78be1bdc67e931bda0f2c18df420e9b1a18d9ab61598a68bd",
+        "c3cab65b9f28d5225616fdb33209863badf09584dc2dff10682a2f94c155ffcf"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "b76ae45a4269f5421050a02688498f66e3d504167724369eb2808186bfa31c58"
+      ],
+      "solution_outline": [
+        "把 sin(u²)du 写成 -(1/(2u))d cos(u²)。",
+        "分部积分后估计边界项与剩余积分。",
+        "用 u≥x 合并得到 1/x 上界。"
+      ],
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-249_线代1000题A组1.4.md",
+        "错题知识网络/可视化错题详情/高等数学/GS-249_缺图登记-1000题A组11.10-2.md"
+      ],
+      "batch38_supplemental_detail_lineage_revalidation": {
+        "batch_number": 38,
+        "date": "2026-07-25",
+        "status": "reviewed_detail_hash_rebound",
+        "owning_selected_card_id": "LA-002",
+        "visual_id": "VIS-GS-249",
+        "detail_path": "错题知识网络/可视化错题详情/高等数学/GS-249_线代1000题A组1.4.md",
+        "prior_detail_sha256": "6194152a26658640ccfc4c639fd0d37373c69de180c214af157714486a8a65f9",
+        "current_detail_sha256": "6a06124e85b232b78be1bdc67e931bda0f2c18df420e9b1a18d9ab61598a68bd",
+        "unchanged_detail_paths": [
+          "错题知识网络/可视化错题详情/高等数学/GS-249_缺图登记-1000题A组11.10-2.md"
+        ],
+        "unchanged_detail_sha256": [
+          "c3cab65b9f28d5225616fdb33209863badf09584dc2dff10682a2f94c155ffcf"
+        ],
+        "prior_reviewed_detail_sha256": [
+          "6194152a26658640ccfc4c639fd0d37373c69de180c214af157714486a8a65f9",
+          "c3cab65b9f28d5225616fdb33209863badf09584dc2dff10682a2f94c155ffcf"
+        ],
+        "current_reviewed_detail_sha256": [
+          "6a06124e85b232b78be1bdc67e931bda0f2c18df420e9b1a18d9ab61598a68bd",
+          "c3cab65b9f28d5225616fdb33209863badf09584dc2dff10682a2f94c155ffcf"
+        ],
+        "source_write_manifest_path": ".codex_tmp/B38_write_manifest_final.json",
+        "source_write_manifest_sha256": "e25b42a7ee95838d5e09ea94713d5cadbfbd8391d90f6d0fffdd6cb03f6df164",
+        "source_write_kind": "selected_detail",
+        "historical_semantic_payload_preserved": true,
+        "personal_error_evidence_added": false,
+        "relation_decisions_changed": false,
+        "aggregate_edge_policy_changed": false,
+        "asset_bytes_changed": false,
+        "note": "第38批处理 LA-002 时更新了共享视觉详情；本回执只重绑 GS-249 的详情哈希，不改变原逐题语义判断。"
+      }
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "a=-1/2；可取 P=[[1,2,2√3/3],[0,1,4√3/3],[0,1,0]]。",
+      "asked_output": "求 a 与一个可逆矩阵 P。",
+      "card_id": "LA-039",
+      "card_sha256": "76475d90c964f47caa956a57459e19b6d0789f57f7b4264b45076fa062d44588",
+      "consistency": {
+        "formal_visual": "repaired_in_formal_closeout",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先写原、目标二次型矩阵，用合同不变量筛参数，再构造 P 并矩阵回验。",
+      "knowledge_nodes": [
+        "二次型矩阵",
+        "合同变换",
+        "秩与惯性指数",
+        "配方法",
+        "变换矩阵回验"
+      ],
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "没有用户本人作答过程；只维护客观方法入口，不认定个人错因。"
+      },
+      "physical_asset_path_count": 4,
+      "pre_formal_closeout_card_sha256": "d94c190a50012f94de75bb1c2fc09e8f7adf2e2865230a4681f66880edaebfcd",
+      "quality_findings": [
+        {
+          "code": "canonical_visual_identity_conflict",
+          "finding": "原正式卡误写成矩阵幂零链证明，现已按题图和解析图重写并独立验算。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "含参数二次型经可逆线性变换化为给定二次型，求参数并给出变换矩阵。",
+      "relation_decisions": [
+        {
+          "decision": "strong_candidate",
+          "reason": "共享二次型合同标准化与可逆变换矩阵构造。",
+          "target_card_id": "LA-041"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "旧错位正文产生的关系。",
+          "target_card_id": "LA-090"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "旧错位正文产生的关系。",
+          "target_card_id": "LA-094"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "旧错位正文产生的关系。",
+          "target_card_id": "LA-033"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "fb6ef4c4dd619f13345163cbcd5031ee571ea4b0979cd8462ae8010242ef772f",
+        "0c77fe3b111c0c798d61056d8de17270aedf8e430d179b2ca083b6a61016e7fd"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "0e586f6263d160b8eafd24f85dd6091afc16d1784036db6965ecc19fd85170d3",
+        "7da8213e5a66f1046a2caac863c9e32faaaea1d9056e8421a86f988dbf8f8161"
+      ],
+      "solution_outline": [
+        "由合同变换保持秩和惯性指数筛选参数。",
+        "对原二次型配方并选择新基。",
+        "回验 P 可逆且 PᵀAP 等于目标矩阵。"
+      ]
+    },
+    {
+      "aggregate_edge_policy": "allow",
+      "answer": "a=1。",
+      "asked_output": "求参数 a。",
+      "card_id": "LA-099",
+      "card_sha256": "b584590f4b56650d9dc56d2d3d691d94d63d91c16da470da33d77f28b852ab91",
+      "consistency": {
+        "formal_visual": "repaired_in_formal_closeout",
+        "question_solution": "consistent"
+      },
+      "content_review_status": "verified",
+      "first_action": "先把中文条件写成 span(α)⊊span(β)，再用秩与拼接秩检验候选。",
+      "knowledge_nodes": [
+        "向量组线性表示",
+        "张成空间",
+        "矩阵秩",
+        "子空间真包含"
+      ],
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "没有用户本人作答过程；不把解析中的候选筛选写成个人错误。"
+      },
+      "physical_asset_path_count": 4,
+      "pre_formal_closeout_card_sha256": "7a397df6d58d98d4bf922d802d6bf376ed35aa5fba47d826329a51e7155ab498",
+      "quality_findings": [
+        {
+          "code": "canonical_visual_identity_conflict",
+          "finding": "旧正式答案与视觉题意冲突，现已按题图重写并独立确认 a=1。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "给定两个向量组的单向线性表示关系，求使反向不能表示的参数。",
+      "relation_decisions": [
+        {
+          "decision": "verified_strong_existing",
+          "reason": "共享向量组等价与秩的双向表示判定。",
+          "target_card_id": "LA-075"
+        },
+        {
+          "decision": "verified_strong_existing",
+          "reason": "共享参数定秩后验证表示关系。",
+          "target_card_id": "LA-100"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "旧错位内容或仅粗主题重合。",
+          "target_card_id": "LA-090"
+        },
+        {
+          "decision": "reject_as_strong_remove",
+          "reason": "不共享真包含判定主链。",
+          "target_card_id": "LA-097"
+        },
+        {
+          "decision": "reject_as_strong_remove",
+          "reason": "不共享真包含判定主链。",
+          "target_card_id": "LA-093"
+        },
+        {
+          "decision": "reject_as_strong_remove",
+          "reason": "不共享真包含判定主链。",
+          "target_card_id": "LA-092"
+        },
+        {
+          "decision": "reject_as_strong_remove",
+          "reason": "不共享真包含判定主链。",
+          "target_card_id": "LA-098"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "bce0e1e87324548af6e45173c6d5e6b52adfd5bd1c4f18098f766b7dc815158a",
+        "b92bb6f4a6d569e83b8d89ba60551c8e47dc917bff5a8b1b5a05907a7d668f0b"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "ef96fdb6b041a2484a4ec3205a154d1621ca5f05404983aa943c94f6128525f9",
+        "3d861ad182cde5e96914f7dcc3d9591e146457636b1223bd46851edf44cb7181"
+      ],
+      "solution_outline": [
+        "把条件翻译为 span(α) 真包含于 span(β)。",
+        "由秩或拼接秩得到候选 a=1、a=-2。",
+        "逐个回代检验双向表示，排除 a=-2。"
+      ],
+      "later_batch_revalidation": {
+        "batch_number": 40,
+        "date": "2026-07-25",
+        "review_id": "MATHWIKI-REVIEW-086",
+        "kind": "relation_successor",
+        "prior_revalidation": null,
+        "prior_card_sha256": "b584590f4b56650d9dc56d2d3d691d94d63d91c16da470da33d77f28b852ab91",
+        "current_card_sha256": "b584590f4b56650d9dc56d2d3d691d94d63d91c16da470da33d77f28b852ab91",
+        "peer_card_id": "LA-075",
+        "current_peer_card_sha256": "268ab0e110fadb3c5c035942e932726fd22924273b3b89860210815805aafb98",
+        "current_aggregate_edge_policy": "block_until_relinked",
+        "removed_edge": [
+          "LA-075",
+          "LA-099"
+        ],
+        "current_related_by_card": {
+          "LA-099": [
+            "暂无强边"
+          ],
+          "LA-075": [
+            "暂无强边"
+          ]
+        },
+        "historical_relation_decisions_preserved": true
+      }
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "原条件不足，没有选项可无条件成立；若补 Aα≠0，则 D。",
+      "asked_output": "判断哪一项必然成立。",
+      "card_id": "LA-081",
+      "card_sha256": "87998c195fe29b4f85e37b62b96d33f41da8010bdbabec1be826a841a5d20e66",
+      "consistency": {
+        "formal_visual": "consistent",
+        "question_solution": "source_condition_incomplete"
+      },
+      "content_review_status": "verified",
+      "first_action": "先检查题面是否真的给出 Aα≠0；若没有，先用退化矩阵测试选项的普遍性。",
+      "knowledge_nodes": [
+        "反对称矩阵",
+        "分块矩阵",
+        "矩阵可逆性",
+        "线性方程组解性",
+        "反例检查"
+      ],
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "没有用户本人作答证据，且题源缺条件；不能把解析中的可逆性推导写成个人断点。"
+      },
+      "physical_asset_path_count": 12,
+      "pre_formal_closeout_card_sha256": "dce0bd5b9d1eec53680cdfc5bd17df6b6ac9753f2020a73aaeebf7cfdeac1539",
+      "quality_findings": [
+        {
+          "code": "source_condition_missing",
+          "finding": "题图缺 Aα≠0；取 A=0 即可否定 D 的无条件唯一性。",
+          "resolution_status": "needs_source_clarification",
+          "severity": "high"
+        },
+        {
+          "code": "malformed_source_frontmatter_repaired",
+          "finding": "MN4 来源详情的重复 YAML 头已合并为单一有效 frontmatter。",
+          "resolution_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+          "resolution_status": "resolved_formal_closeout",
+          "resolved_on": "2026-07-22",
+          "severity": "medium"
+        }
+      ],
+      "question_summary": "二阶反对称矩阵与分块方程组选项判断；原图仅给 α≠0。",
+      "relation_decisions": [
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "只共享矩阵解性粗标签。",
+          "target_card_id": "LA-078"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "只共享矩阵解性粗标签。",
+          "target_card_id": "LA-079"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "只共享分块矩阵粗标签。",
+          "target_card_id": "LA-086"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "不共享当前条件核查主链。",
+          "target_card_id": "LA-033"
+        },
+        {
+          "decision": "reject_stale_relation_remove",
+          "reason": "不共享当前条件核查主链。",
+          "target_card_id": "LA-064"
+        }
+      ],
+      "reviewed_detail_sha256": [
+        "a9aaeb4b16240953de897a4ff5b4f5a923f5ecc79f633710316a35ba3f8fffd0",
+        "103e00f56573d0ceda68031494660d7ac257a43cf7530d6febc0ebe7f3c045da",
+        "be0aff3b545789dd34273b4fe4b898097dbf4af3c85b3acf7c5d1d8e83033cd6"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "5e8dd64a32f8c227a3dee363d9ea61a770d6a575a5a2c8dd75683fd6f5fa7811",
+        "97950a527c00f4300492b8df97da136bf9976cda017b79a26a816c6ee0b27e04",
+        "3530c907ab6c4e6c8bd92269d49568ce5a59d3aeb019456d638f7ebb4ce75a91",
+        "9f4f243ad92c47410c21f5462a429a54514a0f44a70bd6bd8a9e2b08e8d62bae"
+      ],
+      "solution_outline": [
+        "由 Aᵀ=-A 写二阶反对称矩阵标准形。",
+        "检查 P=[α,Aα] 是否可逆。",
+        "用 A=0、α≠0 构造反例，证明原图条件不能保证唯一性。"
+      ]
+    }
+  ],
+  "frozen_source_state_sha256": "7eefbd3775d27b5fd719f1e9c87ed4a7d17960c716fb8d12d7ae3d841ebf207e",
+  "guardrails": {
+    "duplicate_physical_assets_reviewed_once_per_sha256": true,
+    "formal_card_write": true,
+    "formal_closeout_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B03",
+    "formal_related_write": true,
+    "formal_visual_write": true,
+    "mode": "FORMAL_CLOSEOUT",
+    "personal_error_requires_explicit_evidence": true,
+    "review_origin_mode": "SHADOW",
+    "stable_id_merge_or_delete": false
+  },
+  "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260722-B03",
+  "reviewed_on": "2026-07-22",
+  "schema_version": "math_target_semantic_review_batch_v1",
+  "scope": {
+    "canonical_detail_count": 20,
+    "card_count": 20,
+    "physical_asset_path_count": 55,
+    "physical_asset_role_path_counts": {
+      "question": 24,
+      "reference": 0,
+      "solution": 31
+    },
+    "reviewed_detail_file_count": 25,
+    "unique_visual_content_role_counts": {
+      "question": 20,
+      "reference": 0,
+      "solution": 23
+    },
+    "unique_visual_content_sha256_count": 43
+  },
+  "selection_groups": [
+    "historical_M192_next_batch",
+    "new_q_plus_s",
+    "identity_or_solution_risk_exception",
+    "visual_registry_backfill"
+  ],
+  "title": "全库逐题语义复核第3批20题",
+  "wiki_id": "MATHWIKI-REVIEW-012",
+  "batch40_lineage_revalidation": {
+    "batch_number": 40,
+    "date": "2026-07-25",
+    "review_id": "MATHWIKI-REVIEW-086",
+    "affected_card_ids": [
+      "LA-099",
+      "LA-075"
+    ],
+    "removed_edge": [
+      "LA-075",
+      "LA-099"
+    ],
+    "prior_source_review_sha256": "d55a9f6aa463c4d20a94650cc580f336936f4a07ea0c6a258a7dd9dd5f0eb490",
+    "reviewed_card_prior_sha256": "b584590f4b56650d9dc56d2d3d691d94d63d91c16da470da33d77f28b852ab91",
+    "reviewed_card_current_sha256": "b584590f4b56650d9dc56d2d3d691d94d63d91c16da470da33d77f28b852ab91",
+    "peer_card_current_sha256": "268ab0e110fadb3c5c035942e932726fd22924273b3b89860210815805aafb98",
+    "current_aggregate_edge_policy": "block_until_relinked",
+    "prior_lineage_fields_preserved": [],
+    "historical_review_payload_preserved": true,
+    "current_review_receipt_sha256_binding": "bound_by_MATHWIKI-REVIEW-013_全库逐题语义复核第3批正式收口_batch40_lineage_revalidation"
+  }
+}

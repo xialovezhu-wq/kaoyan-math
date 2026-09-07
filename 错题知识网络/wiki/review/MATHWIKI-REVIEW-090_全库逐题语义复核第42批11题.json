@@ -1,0 +1,2492 @@
+{
+  "asset_boundary": {
+    "assets_unchanged": true,
+    "campaign_union_derivation": {
+      "algorithm": "installed semantic-review unique SHA union through predecessor, then union the exact final B42 freeze assets by role",
+      "batch_physical_asset_path_count": 38,
+      "batch_unique_asset_count": 19,
+      "new_unique_asset_count": 19,
+      "new_unique_asset_role_counts": {
+        "question": 11,
+        "reference": 0,
+        "solution": 8
+      },
+      "overlap_with_prior_count": 0,
+      "post_batch_unique_asset_count": 1095,
+      "post_batch_unique_asset_union_sha256": "7d464fd53c16edaa9bd915fd872d00d4457a749659983fd24ed9ddfc91f8279a",
+      "predecessor_binding": {
+        "b41_closeout": {
+          "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-089_全库逐题语义复核第41批正式收口.json",
+          "sha256": "8adfba4c5a9c81f8dfa8702f57a7f6416e3fba2fab8ca69d8e3907aa3579970e"
+        },
+        "mode": "exact_B41_validation_closed_closeout"
+      },
+      "prior_review_binding_set_sha256": "55921f9a968954f87627e6f444a88d022119207e6ae6b0e937221a8f39db807e",
+      "prior_review_receipt_count": 41,
+      "prior_unique_asset_count": 1076
+    },
+    "physical_asset_paths": 38,
+    "physical_asset_role_path_counts": {
+      "question": 22,
+      "reference": 0,
+      "solution": 16
+    },
+    "unique_asset_sha256": 19
+  },
+  "batch_number": 42,
+  "campaign_progress": {
+    "batch_number": 42,
+    "batch_reviewed_cards": 11,
+    "cumulative_physical_asset_paths_reviewed": 1363,
+    "cumulative_reviewed_cards": 831,
+    "cumulative_unique_asset_count": 1095,
+    "cumulative_unique_asset_role_counts": {
+      "question": 757,
+      "reference": 4,
+      "solution": 334
+    },
+    "formal_card_count": 831,
+    "remaining_cards": 0
+  },
+  "cards": [
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "A。A 的 λ=1 代数重数为 2，但特征空间维数为 1，不能相似于对角矩阵。",
+      "asked_output": "判断下列矩阵中不能相似于对角矩阵的是哪一个。四个选项均为三阶矩阵，其中 A、B 都含重特征值，C 有三个不同特征值，D 为实对称矩阵。",
+      "asset_role_path_counts": {
+        "question": 2,
+        "solution": 2
+      },
+      "card_id": "LA-110",
+      "card_path": "错题知识网络/错题卡/LA-110_强化例题8.2-2.md",
+      "card_sha256": "32c90d1447325a94385721fccd279b88fb48de93641363f9fb0ed5ab8c011f57",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-110_强化例题8.2-2.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-747_强化例题8.2.md"
+      ],
+      "detail_sha256": [
+        "5ee0018e03024b95d30542885dfc9c007859d67ea5bb70c8748fd663ffafd597",
+        "23d2b5781aadb3037929181e9b73e8d75e9db8fdf3039ffa1331b46a47038b27"
+      ],
+      "first_action": "先找重特征值，再计算对应的几何重数 \\(n-r(\\lambda I-A)\\)。",
+      "knowledge_nodes": [
+        "相似矩阵",
+        "特征值与特征向量"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "L08-002",
+        "secondary": []
+      },
+      "personal_error": {
+        "candidate_present": true,
+        "diagnosis_status": "candidate_pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "method_gap_enabled": false,
+        "mistake_count": 1,
+        "need_user_confirmation": true,
+        "wrong_event_count": 1
+      },
+      "physical_asset_path_count": 4,
+      "quality_findings": [],
+      "question_summary": "判断下列矩阵中不能相似于对角矩阵的是哪一个。四个选项均为三阶矩阵，其中 A、B 都含重特征值，C 有三个不同特征值，D 为实对称矩阵。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111"
+          ],
+          "peer_card_id": "LA-111",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-112"
+          ],
+          "peer_card_id": "LA-112",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-115"
+          ],
+          "peer_card_id": "LA-115",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-116"
+          ],
+          "peer_card_id": "LA-116",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-117"
+          ],
+          "peer_card_id": "LA-117",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-747/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-747/solution_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-110/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-110/solution_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-747/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-110/question_01.png"
+        ],
+        "reference": [],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-747/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-110/solution_01.png"
+        ]
+      },
+      "reviewed_asset_sha256": [
+        "a5252c210414fffd34b906a27e62388605cc8b1f418ec899cdc76493b26c154c",
+        "985475f0c3fa5bfdf549777e318e7dafa6a97412a128ce959a53bf358e74f7d6",
+        "a5252c210414fffd34b906a27e62388605cc8b1f418ec899cdc76493b26c154c",
+        "985475f0c3fa5bfdf549777e318e7dafa6a97412a128ce959a53bf358e74f7d6"
+      ],
+      "reviewed_detail_sha256": [
+        "5ee0018e03024b95d30542885dfc9c007859d67ea5bb70c8748fd663ffafd597",
+        "23d2b5781aadb3037929181e9b73e8d75e9db8fdf3039ffa1331b46a47038b27"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "985475f0c3fa5bfdf549777e318e7dafa6a97412a128ce959a53bf358e74f7d6",
+        "a5252c210414fffd34b906a27e62388605cc8b1f418ec899cdc76493b26c154c"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "选 A。 对 A，有特征值 \\(1,1,2\\)。当 \\(\\lambda=1\\) 时， $$ A-I= \\begin{pmatrix} 0&1&0\\\\ 0&0&0\\\\ 0&0&1 \\end{pmatrix}, $$ 所以 $$ r(A-I)=2,\\qquad n-r(A-I)=1. $$ 而 \\(\\lambda=1\\) 的代数重数为 \\(2\\)，几何重数只有 \\(1\\)，因此 A 不能相似于对角矩阵。"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-110.md",
+      "source_summary_sha256": "5ef0194d28f7711b88edcf408cc8f19db0d45ad1b8e345673d9a936251629c95",
+      "unique_asset_sha256_count": 2
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "B",
+      "asked_output": "已知三阶矩阵 \\(A\\) 与 $$ \\Lambda= \\begin{pmatrix} 1&0&0\\\\ 0&-1&0\\\\ 0&0&0 \\end{pmatrix}, $$ 要求判断“\\(A\\) 的特征值为 \\(1,-1,0\\)”的充分必要条件是哪一种矩阵关系。",
+      "asset_role_path_counts": {
+        "question": 2,
+        "solution": 2
+      },
+      "card_id": "LA-111",
+      "card_path": "错题知识网络/错题卡/LA-111_2022年真题第8题.md",
+      "card_sha256": "9762c41683dc9fe787cc0ca0a6f2630e70b0f4d898c0d51b3209847a89205205",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-111_2022年真题第8题.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-749_2022年真题第8题.md"
+      ],
+      "detail_sha256": [
+        "df070654b0e4986f1ecda5c32347fcfc11ff9095b31d163ddc9be2034e39eb43",
+        "3e04ea8d1b1f20789e1b324d67af2c6df96721949102e23dbdb0ee5898aade8a"
+      ],
+      "first_action": "先写普通相似对角化形式 \\(A=P\\Lambda P^{-1}\\)，再检查互异特征值给出的可对角化条件。",
+      "knowledge_nodes": [
+        "相似矩阵",
+        "特征值与特征向量"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "L08-001",
+        "secondary": [
+          "L08-003"
+        ]
+      },
+      "personal_error": {
+        "candidate_present": true,
+        "diagnosis_status": "candidate_pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "method_gap_enabled": false,
+        "mistake_count": 1,
+        "need_user_confirmation": true,
+        "wrong_event_count": 1
+      },
+      "physical_asset_path_count": 4,
+      "quality_findings": [],
+      "question_summary": "已知三阶矩阵 \\(A\\) 与 $$ \\Lambda= \\begin{pmatrix} 1&0&0\\\\ 0&-1&0\\\\ 0&0&0 \\end{pmatrix}, $$ 要求判断“\\(A\\) 的特征值为 \\(1,-1,0\\)”的充分必要条件是哪一种矩阵关系。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111"
+          ],
+          "peer_card_id": "LA-110",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111"
+          ],
+          "peer_card_id": "LA-112",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111"
+          ],
+          "peer_card_id": "LA-114",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111",
+            "LA-116"
+          ],
+          "peer_card_id": "LA-116",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111",
+            "LA-117"
+          ],
+          "peer_card_id": "LA-117",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-749/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-749/solution_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-111/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-111/solution_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-749/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-111/question_01.png"
+        ],
+        "reference": [],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-749/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-111/solution_01.png"
+        ]
+      },
+      "reviewed_asset_sha256": [
+        "846900f05a6637007c1dd3641dfd4bf17e8781ebd04a74481a4d2e9c3832b510",
+        "a6338cd14c0ac05bf1923dc55d38b54610e25a7eaa470afb2e60358e6cf7f0f6",
+        "846900f05a6637007c1dd3641dfd4bf17e8781ebd04a74481a4d2e9c3832b510",
+        "a6338cd14c0ac05bf1923dc55d38b54610e25a7eaa470afb2e60358e6cf7f0f6"
+      ],
+      "reviewed_detail_sha256": [
+        "df070654b0e4986f1ecda5c32347fcfc11ff9095b31d163ddc9be2034e39eb43",
+        "3e04ea8d1b1f20789e1b324d67af2c6df96721949102e23dbdb0ee5898aade8a"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "846900f05a6637007c1dd3641dfd4bf17e8781ebd04a74481a4d2e9c3832b510",
+        "a6338cd14c0ac05bf1923dc55d38b54610e25a7eaa470afb2e60358e6cf7f0f6"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "\\(B\\)。存在可逆矩阵 \\(P\\)，使得 $$ A=P\\Lambda P^{-1}. $$"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-111.md",
+      "source_summary_sha256": "c60a58820b80ddacddafda563ebd3e6e217f7fae3770d9e073b7da6145edb2b2",
+      "unique_asset_sha256_count": 2
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "C",
+      "asked_output": "判断 3 阶实矩阵 \\(A\\) 中，“\\(A\\) 是实对称矩阵”是否是“\\(A\\) 有 3 个相互正交的特征向量”的充分必要条件。",
+      "asset_role_path_counts": {
+        "question": 2,
+        "solution": 2
+      },
+      "card_id": "LA-112",
+      "card_path": "错题知识网络/错题卡/LA-112_强化例题8.4-2.md",
+      "card_sha256": "c42bdbccd613783b95d59bee2e8259a23aba31c20d710fad495454fc3d6b8721",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-112_强化例题8.4-2.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-750_强化例题8.4.md"
+      ],
+      "detail_sha256": [
+        "dc45f7ae4a02deb80b23990eecb3551651792f9c855b602931912154156a2951",
+        "0d10d0e30320d6311b444ccfec12616f511c6c4a118f38d45e84157c182bc3ce"
+      ],
+      "first_action": "先把相互正交的特征向量单位化并组成正交矩阵 \\(Q\\)。",
+      "knowledge_nodes": [
+        "实对称矩阵",
+        "特征值与特征向量",
+        "相似矩阵"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "L08-005",
+        "secondary": [
+          "L08-001"
+        ]
+      },
+      "personal_error": {
+        "candidate_present": true,
+        "diagnosis_status": "candidate_pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "method_gap_enabled": false,
+        "mistake_count": 1,
+        "need_user_confirmation": true,
+        "wrong_event_count": 1
+      },
+      "physical_asset_path_count": 4,
+      "quality_findings": [],
+      "question_summary": "判断 3 阶实矩阵 \\(A\\) 中，“\\(A\\) 是实对称矩阵”是否是“\\(A\\) 有 3 个相互正交的特征向量”的充分必要条件。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-112"
+          ],
+          "peer_card_id": "LA-110",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111"
+          ],
+          "peer_card_id": "LA-111",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-113"
+          ],
+          "peer_card_id": "LA-113",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-750/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-750/solution_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-112/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-112/solution_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-750/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-112/question_01.png"
+        ],
+        "reference": [],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-750/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-112/solution_01.png"
+        ]
+      },
+      "reviewed_asset_sha256": [
+        "f7402632d2e349710026f3a7e372902d2c5ac332d53310853a206d9381e4ca3e",
+        "0011732cafa3a31405ae30ac9689185acaf18cbf1ddb90bc1b9c90073fd39f7a",
+        "f7402632d2e349710026f3a7e372902d2c5ac332d53310853a206d9381e4ca3e",
+        "0011732cafa3a31405ae30ac9689185acaf18cbf1ddb90bc1b9c90073fd39f7a"
+      ],
+      "reviewed_detail_sha256": [
+        "dc45f7ae4a02deb80b23990eecb3551651792f9c855b602931912154156a2951",
+        "0d10d0e30320d6311b444ccfec12616f511c6c4a118f38d45e84157c182bc3ce"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "0011732cafa3a31405ae30ac9689185acaf18cbf1ddb90bc1b9c90073fd39f7a",
+        "f7402632d2e349710026f3a7e372902d2c5ac332d53310853a206d9381e4ca3e"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "\\(C\\)，充分必要条件。"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-112.md",
+      "source_summary_sha256": "9c9106c5d73319ad8ad79a475c861dbe9fda91d009963e6a7435a458da902293",
+      "unique_asset_sha256_count": 2
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "",
+      "asked_output": "recover the missing answer-determining condition before solving",
+      "asset_role_path_counts": {
+        "question": 2
+      },
+      "card_id": "LA-113",
+      "card_path": "错题知识网络/错题卡/LA-113_强化例题8.5（84080）.md",
+      "card_sha256": "773ab7eb415ed1af02474834c45f2cc1242154efbb7f21152362f8640fb86ac1",
+      "content_review_status": "verified",
+      "content_state": "content_hold_missing_answer_determining_condition",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-113_强化例题8.5（84080）.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-751_强化例题8.5（84080）.md"
+      ],
+      "detail_sha256": [
+        "7fa4dc6899873440eb2a2064f97e83f70687c38303c5f5db73a65ca24502e209",
+        "f5da2642ce8430fe831c60a0519bbee0123bfd0ae51d0e5796b57cacce4f8822"
+      ],
+      "first_action": "先回源补齐题图中二重特征值等号后的确切数值。",
+      "knowledge_nodes": [
+        "相似矩阵",
+        "特征值与特征向量",
+        "实对称矩阵",
+        "矩阵运算"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [
+          "L07-009",
+          "L08-007"
+        ],
+        "primary": "null",
+        "secondary": []
+      },
+      "personal_error": {
+        "candidate_present": false,
+        "diagnosis_status": "not_applicable",
+        "evidence_origin": "content_hold_missing_answer_determining_condition",
+        "method_gap_enabled": false,
+        "mistake_count": 0,
+        "need_user_confirmation": false,
+        "wrong_event_count": 0
+      },
+      "physical_asset_path_count": 2,
+      "quality_findings": [
+        {
+          "code": "content_hold_missing_answer_determining_condition",
+          "evidence": "the image ends immediately after the repeated-eigenvalue equals sign",
+          "resolution_status": "bounded_hold",
+          "severity": "high"
+        }
+      ],
+      "question_summary": "题图只显示三阶实对称矩阵每行元素之和为 \\(3\\)，并在 $$ \\lambda_1=\\lambda_2= $$ 处结束。等号后没有可辨认数值，也没有独立解析图。因此，缺少决定答案的二重特征值，当前不能生成无条件答案。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_all_question_level_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-113"
+          ],
+          "peer_card_id": "LA-112",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-118"
+          ],
+          "peer_card_id": "LA-118",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-751/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-113/question_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-751/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-113/question_01.png"
+        ],
+        "reference": [],
+        "solution": []
+      },
+      "reviewed_asset_sha256": [
+        "7fe4ccea75197d31928d1ff4068bc9247768447af1f26a2f02076a891bdd6865",
+        "7fe4ccea75197d31928d1ff4068bc9247768447af1f26a2f02076a891bdd6865"
+      ],
+      "reviewed_detail_sha256": [
+        "7fa4dc6899873440eb2a2064f97e83f70687c38303c5f5db73a65ca24502e209",
+        "f5da2642ce8430fe831c60a0519bbee0123bfd0ae51d0e5796b57cacce4f8822"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "7fe4ccea75197d31928d1ff4068bc9247768447af1f26a2f02076a891bdd6865"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "\\(J\\)：三阶全一矩阵。 \\(P\\)：投影到 \\(\\operatorname{span}\\{(1,1,1)^{\\mathsf T}\\}\\) 的投影矩阵。 \\(c\\)：题图中缺失的二重特征值。 由行和为 \\(3\\) 可知 \\((1,1,1)^{\\mathsf T}\\) 对应特征值 \\(3\\)，且 $$ P=\\frac{1}{3}J. $$ 只有在补回二重特征值 \\(c\\) 后，才能条件化地写出 $$ A=c(I-P)+3P, $$ 以及 $$ A^n=c^n(I-P)+3^nP. $$"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-113.md",
+      "source_summary_sha256": "f81660af73fd3a520f4b0bedd14535e30cc72f00d79e40adc15d93be5f7d12d4",
+      "unique_asset_sha256_count": 1
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "C",
+      "asked_output": "已知 \\(A,B\\) 为可逆矩阵且 \\(A\\sim B\\)，判断关于 \\(A^{\\mathsf T}\\)、\\(A^2+A^{-1}\\)、\\(A+A^{\\mathsf T}\\)、\\(A^*-A^{-1}\\) 的相似结论中哪一项错误。",
+      "asset_role_path_counts": {
+        "question": 2,
+        "solution": 2
+      },
+      "card_id": "LA-114",
+      "card_path": "错题知识网络/错题卡/LA-114_强化例题8.7-2.md",
+      "card_sha256": "14e0080a4794eada678e43c69399ad8863037c95bab9c9e2c61c12b1e157fb66",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-114_强化例题8.7-2.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-752_强化例题8.7.md"
+      ],
+      "detail_sha256": [
+        "f62c73c22d88fd6e07d83ff2b59b5d8a929a25325cf51c2d9a6d36f255ad5675",
+        "e9cf8ea0a01676a9726359bee66018ed572918ed41a5845b16efc982ebdd7918"
+      ],
+      "first_action": "先固定同一个相似变换矩阵，再检查转置、逆、伴随和矩阵函数是否仍由该共轭变换传递。",
+      "knowledge_nodes": [
+        "相似矩阵",
+        "逆矩阵",
+        "伴随矩阵",
+        "矩阵运算"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "L08-009",
+        "secondary": []
+      },
+      "personal_error": {
+        "candidate_present": true,
+        "diagnosis_status": "candidate_pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "method_gap_enabled": false,
+        "mistake_count": 1,
+        "need_user_confirmation": true,
+        "wrong_event_count": 1
+      },
+      "physical_asset_path_count": 4,
+      "quality_findings": [],
+      "question_summary": "已知 \\(A,B\\) 为可逆矩阵且 \\(A\\sim B\\)，判断关于 \\(A^{\\mathsf T}\\)、\\(A^2+A^{-1}\\)、\\(A+A^{\\mathsf T}\\)、\\(A^*-A^{-1}\\) 的相似结论中哪一项错误。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111"
+          ],
+          "peer_card_id": "LA-111",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-114",
+            "LA-115"
+          ],
+          "peer_card_id": "LA-115",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-752/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-752/solution_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-114/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-114/solution_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-752/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-114/question_01.png"
+        ],
+        "reference": [],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-752/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-114/solution_01.png"
+        ]
+      },
+      "reviewed_asset_sha256": [
+        "2079c24236952efd06aa65170d428c23479e4cb9a2bc3fc6da0f4b77ee637682",
+        "478423fc686e3ad1206cb746e97e82b6a7cee6c19e145128f4689d271d69108e",
+        "2079c24236952efd06aa65170d428c23479e4cb9a2bc3fc6da0f4b77ee637682",
+        "478423fc686e3ad1206cb746e97e82b6a7cee6c19e145128f4689d271d69108e"
+      ],
+      "reviewed_detail_sha256": [
+        "f62c73c22d88fd6e07d83ff2b59b5d8a929a25325cf51c2d9a6d36f255ad5675",
+        "e9cf8ea0a01676a9726359bee66018ed572918ed41a5845b16efc982ebdd7918"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "2079c24236952efd06aa65170d428c23479e4cb9a2bc3fc6da0f4b77ee637682",
+        "478423fc686e3ad1206cb746e97e82b6a7cee6c19e145128f4689d271d69108e"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "\\(C\\)。"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-114.md",
+      "source_summary_sha256": "4a29a5148394511403ce9e16cd00fa27754eff8f55d09fed71feaa90effd67e4",
+      "unique_asset_sha256_count": 2
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "\\(a=4,\\ Q=\\begin{pmatrix}0&1&1\\\\-2&0&0\\\\-1&1&2\\end{pmatrix},\\ A^{99}=\\begin{pmatrix}3&2&-2\\\\0&-1&0\\\\4&2&-3\\end{pmatrix}\\).",
+      "asked_output": "已知 \\(A^*\\) 含参数 \\(a\\)，且 \\(A^*\\) 与矩阵 \\(B\\) 相似、\\(|A|>0\\)。求 \\(a\\)、可逆矩阵 \\(Q\\) 使 \\(Q^{-1}A^*Q=B\\)，并求 \\(A^{99}\\)。",
+      "asset_role_path_counts": {
+        "question": 2,
+        "solution": 2
+      },
+      "card_id": "LA-115",
+      "card_path": "错题知识网络/错题卡/LA-115_强化例题8.6-2.md",
+      "card_sha256": "f123af4c66ad9baa917363a1a7f41b71faf10520372977efdd72656dbbe8e57e",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-115_强化例题8.6-2.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-753_强化例题8.6.md"
+      ],
+      "detail_sha256": [
+        "d64edde837e3714d072b7a0b1451eb50a687f1b14ef5a6ebc46743a769ca2f2e",
+        "e358c64ac2ea0ec8b38453e3e776a65862f7b2b92cefac4caba5a1b12587e057"
+      ],
+      "first_action": "先比较 \\(A^*\\) 与 \\(B\\) 的特征多项式求参数，再构造换基矩阵。",
+      "knowledge_nodes": [
+        "相似矩阵",
+        "特征值与特征向量",
+        "伴随矩阵",
+        "逆矩阵",
+        "矩阵运算",
+        "行列式"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "L07-003",
+        "secondary": [
+          "L08-007"
+        ]
+      },
+      "personal_error": {
+        "candidate_present": true,
+        "diagnosis_status": "candidate_pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "method_gap_enabled": false,
+        "mistake_count": 1,
+        "need_user_confirmation": true,
+        "wrong_event_count": 1
+      },
+      "physical_asset_path_count": 4,
+      "quality_findings": [],
+      "question_summary": "已知 \\(A^*\\) 含参数 \\(a\\)，且 \\(A^*\\) 与矩阵 \\(B\\) 相似、\\(|A|>0\\)。求 \\(a\\)、可逆矩阵 \\(Q\\) 使 \\(Q^{-1}A^*Q=B\\)，并求 \\(A^{99}\\)。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-115"
+          ],
+          "peer_card_id": "LA-110",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-114",
+            "LA-115"
+          ],
+          "peer_card_id": "LA-114",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-118"
+          ],
+          "peer_card_id": "LA-118",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-119"
+          ],
+          "peer_card_id": "LA-119",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-753/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-753/solution_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-115/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-115/solution_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-753/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-115/question_01.png"
+        ],
+        "reference": [],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-753/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-115/solution_01.png"
+        ]
+      },
+      "reviewed_asset_sha256": [
+        "2a06d421acd15d88f45e0fdda5701f2e05be4da2eee6441ac2e12062af18955d",
+        "98be030e539f6adde0c429c631c10148eea6d48143cd32049b97f8da425dbfab",
+        "2a06d421acd15d88f45e0fdda5701f2e05be4da2eee6441ac2e12062af18955d",
+        "98be030e539f6adde0c429c631c10148eea6d48143cd32049b97f8da425dbfab"
+      ],
+      "reviewed_detail_sha256": [
+        "d64edde837e3714d072b7a0b1451eb50a687f1b14ef5a6ebc46743a769ca2f2e",
+        "e358c64ac2ea0ec8b38453e3e776a65862f7b2b92cefac4caba5a1b12587e057"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "2a06d421acd15d88f45e0fdda5701f2e05be4da2eee6441ac2e12062af18955d",
+        "98be030e539f6adde0c429c631c10148eea6d48143cd32049b97f8da425dbfab"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "$$ a=4,\\qquad Q= \\begin{pmatrix} 0&1&1\\\\ -2&0&0\\\\ -1&1&2 \\end{pmatrix}, $$ $$ A^{99}= \\begin{pmatrix} 3&2&-2\\\\ 0&-1&0\\\\ 4&2&-3 \\end{pmatrix}. $$"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-115.md",
+      "source_summary_sha256": "876e4666b24db9bd65c6b04ddd8313f577e22554fb6f2be387d3631eed9607f4",
+      "unique_asset_sha256_count": 2
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "P可逆；P^{-1}AP为坐标矩阵B；A可相似对角化",
+      "asked_output": "设 \\(A\\) 为二阶矩阵， $$ P=(\\alpha,A\\alpha), $$ 其中 \\(\\alpha\\ne0\\) 且 \\(\\alpha\\) 不是 \\(A\\) 的特征向量。先证明 \\(P\\) 可逆，再由 $$ A^2\\alpha+A\\alpha-6\\alpha=0 $$ 求 \\(P^{-1}AP\\)，并判断 \\(A\\) 是否相似于对角矩阵。",
+      "asset_role_path_counts": {
+        "question": 2,
+        "solution": 2
+      },
+      "card_id": "LA-116",
+      "card_path": "错题知识网络/错题卡/LA-116_2020年第23题.md",
+      "card_sha256": "b62b30f271393c8d2aef1dcb0b1250622288fdbb5ea588f0f6ac4177a999bae2",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-116_2020年第23题.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-754_2020年第23题.md"
+      ],
+      "detail_sha256": [
+        "795c90b31694ce0fba98fb7a7067096383294b9863f17d9758712ac278fba179",
+        "40ddcfec7e04aab0359a072e36e8bd6cf9cb7871f59a48acad6667a3ba6e5f65"
+      ],
+      "first_action": "先证明 \\(\\alpha,A\\alpha\\) 线性无关，确认 \\(P=(\\alpha,A\\alpha)\\) 可逆后再读 \\(AP=PB\\)。",
+      "knowledge_nodes": [
+        "相似矩阵",
+        "特征值与特征向量",
+        "矩阵运算",
+        "向量组线性无关"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "L07-008",
+        "secondary": [
+          "L08-001"
+        ]
+      },
+      "personal_error": {
+        "candidate_present": true,
+        "diagnosis_status": "candidate_pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "method_gap_enabled": false,
+        "mistake_count": 1,
+        "need_user_confirmation": true,
+        "wrong_event_count": 1
+      },
+      "physical_asset_path_count": 4,
+      "quality_findings": [],
+      "question_summary": "设 \\(A\\) 为二阶矩阵， $$ P=(\\alpha,A\\alpha), $$ 其中 \\(\\alpha\\ne0\\) 且 \\(\\alpha\\) 不是 \\(A\\) 的特征向量。先证明 \\(P\\) 可逆，再由 $$ A^2\\alpha+A\\alpha-6\\alpha=0 $$ 求 \\(P^{-1}AP\\)，并判断 \\(A\\) 是否相似于对角矩阵。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-116"
+          ],
+          "peer_card_id": "LA-110",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111",
+            "LA-116"
+          ],
+          "peer_card_id": "LA-111",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-754/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-754/solution_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-116/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-116/solution_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-754/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-116/question_01.png"
+        ],
+        "reference": [],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-754/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-116/solution_01.png"
+        ]
+      },
+      "reviewed_asset_sha256": [
+        "e02504a96a20ea0db836d0fda81ce1065b89e94ba8642d4ae450bff0582a8b84",
+        "939cd1029a03b13b4c8550c3685bb4e3a1ee35a16c73c97d6c8b88b5eb8050d5",
+        "e02504a96a20ea0db836d0fda81ce1065b89e94ba8642d4ae450bff0582a8b84",
+        "939cd1029a03b13b4c8550c3685bb4e3a1ee35a16c73c97d6c8b88b5eb8050d5"
+      ],
+      "reviewed_detail_sha256": [
+        "795c90b31694ce0fba98fb7a7067096383294b9863f17d9758712ac278fba179",
+        "40ddcfec7e04aab0359a072e36e8bd6cf9cb7871f59a48acad6667a3ba6e5f65"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "939cd1029a03b13b4c8550c3685bb4e3a1ee35a16c73c97d6c8b88b5eb8050d5",
+        "e02504a96a20ea0db836d0fda81ce1065b89e94ba8642d4ae450bff0582a8b84"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "\\(P\\) 可逆，且 $$ P^{-1}AP= \\begin{pmatrix} 0&6\\\\ 1&-1 \\end{pmatrix}. $$ 该矩阵有两个不同特征值 \\(2,-3\\)，所以 \\(A\\) 相似于对角矩阵。"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-116.md",
+      "source_summary_sha256": "509b41582faa5b17790964e3869643c474afecbf628bb41a3caa801d04207e62",
+      "unique_asset_sha256_count": 2
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "A",
+      "asked_output": "给定上三角矩阵 $$ A= \\begin{pmatrix} 1&1&0\\\\ 0&1&1\\\\ 0&0&1 \\end{pmatrix}, $$ 要求在四个同样对角线为 \\(1,1,1\\) 的上三角矩阵中判断哪一个与 \\(A\\) 相似。",
+      "asset_role_path_counts": {
+        "question": 2,
+        "solution": 2
+      },
+      "card_id": "LA-117",
+      "card_path": "错题知识网络/错题卡/LA-117_2018年第7题.md",
+      "card_sha256": "cc3b7cc9525e257681961fb0df77129c718eed9a710d3244c4703fb7ac187924",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-117_2018年第7题.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-755_2018年第7题.md"
+      ],
+      "detail_sha256": [
+        "0ef3d8e9c68a64eeb6dd688d3ce04f9e7ef3bfe5211476455c74e2efb9542c4d",
+        "ed90ba1eda269983f88cf177720d29f8b68a59484081996b6edf86866bd234a8"
+      ],
+      "first_action": "先取唯一特征值 \\(1\\)，逐项比较 \\(r(B_i-I)\\)；不要先假设候选矩阵可对角化。",
+      "knowledge_nodes": [
+        "相似矩阵",
+        "特征值与特征向量",
+        "矩阵秩"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "L08-002",
+        "secondary": [
+          "L08-006"
+        ]
+      },
+      "personal_error": {
+        "candidate_present": true,
+        "diagnosis_status": "candidate_pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "method_gap_enabled": false,
+        "mistake_count": 1,
+        "need_user_confirmation": true,
+        "wrong_event_count": 1
+      },
+      "physical_asset_path_count": 4,
+      "quality_findings": [],
+      "question_summary": "给定上三角矩阵 $$ A= \\begin{pmatrix} 1&1&0\\\\ 0&1&1\\\\ 0&0&1 \\end{pmatrix}, $$ 要求在四个同样对角线为 \\(1,1,1\\) 的上三角矩阵中判断哪一个与 \\(A\\) 相似。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-117"
+          ],
+          "peer_card_id": "LA-110",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-111",
+            "LA-117"
+          ],
+          "peer_card_id": "LA-111",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-755/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-755/solution_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-117/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-117/solution_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-755/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-117/question_01.png"
+        ],
+        "reference": [],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-755/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-117/solution_01.png"
+        ]
+      },
+      "reviewed_asset_sha256": [
+        "4d22a3de0194716d3f9be2ae3f003d8876756e4599e62b289128c49ee861727d",
+        "0772cc2050bd890d320025565c958114706d70d0eb6f3f96bb8b152defc2876c",
+        "4d22a3de0194716d3f9be2ae3f003d8876756e4599e62b289128c49ee861727d",
+        "0772cc2050bd890d320025565c958114706d70d0eb6f3f96bb8b152defc2876c"
+      ],
+      "reviewed_detail_sha256": [
+        "0ef3d8e9c68a64eeb6dd688d3ce04f9e7ef3bfe5211476455c74e2efb9542c4d",
+        "ed90ba1eda269983f88cf177720d29f8b68a59484081996b6edf86866bd234a8"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "0772cc2050bd890d320025565c958114706d70d0eb6f3f96bb8b152defc2876c",
+        "4d22a3de0194716d3f9be2ae3f003d8876756e4599e62b289128c49ee861727d"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "\\(A\\) 选项。"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-117.md",
+      "source_summary_sha256": "50f87b7cb16990eec1bb1d23782fb13fee0fb60b952c5e93535e666be13b79e3",
+      "unique_asset_sha256_count": 2
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "\\(A=\\begin{pmatrix}-2&0&2\\\\0&-2&-2\\\\-6&-3&3\\end{pmatrix}\\)；当 \\(n\\ge1\\)，\\(x_n=(-2)^n+8,\\ y_n=-2(-2)^n-8,\\ z_n=12\\)。",
+      "asked_output": "已知数列 \\(\\{x_n\\},\\{y_n\\},\\{z_n\\}\\) 满足 $$ x_0=-1,\\qquad y_0=0,\\qquad z_0=2, $$ 且 $$ \\begin{cases} x_n=-2x_{n-1}+2z_{n-1},\\\\ y_n=-2y_{n-1}-2z_{n-1},\\\\ z_n=-6x_{n-1}-3y_{n-1}+3z_{n-1}. \\end{cases} $$ 记 $$ \\alpha_n= \\begin{pmatrix} x_n\\\\y_n\\\\z_n \\end{pmatrix}. $$ 写出满足 \\(\\alpha_n=A\\alpha_{n-1}\\) 的矩阵 \\(A\\)，并求 \\(A^n\\) 及 \\(x_n,y_n,z_n\\)。",
+      "asset_role_path_counts": {
+        "question": 2
+      },
+      "card_id": "LA-118",
+      "card_path": "错题知识网络/错题卡/LA-118_强化例题8.8（102152）.md",
+      "card_sha256": "89932a93a9c8e31994bc5f2d73d765118a228a59bd998e5e80308514683169b3",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-118_强化例题8.8（102152）.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-756_强化例题8.8（102152）.md"
+      ],
+      "detail_sha256": [
+        "abc727327075fba897398102ca3e6cc5daae017f889bd650a6e284e1fa3f2a3e",
+        "bbefd344e0c44e46302cbee7a24a1200fac2e6892c4ea32fdb358744eb102035"
+      ],
+      "first_action": "先把三元递推写成 \\(\\alpha_n=A\\alpha_{n-1}\\)，再处理 \\(A^n\\)。",
+      "knowledge_nodes": [
+        "相似矩阵",
+        "特征值与特征向量",
+        "矩阵运算"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "L08-007",
+        "secondary": [
+          "L08-001"
+        ]
+      },
+      "personal_error": {
+        "candidate_present": true,
+        "diagnosis_status": "candidate_pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "method_gap_enabled": false,
+        "mistake_count": 1,
+        "need_user_confirmation": true,
+        "wrong_event_count": 1
+      },
+      "physical_asset_path_count": 2,
+      "quality_findings": [],
+      "question_summary": "已知数列 \\(\\{x_n\\},\\{y_n\\},\\{z_n\\}\\) 满足 $$ x_0=-1,\\qquad y_0=0,\\qquad z_0=2, $$ 且 $$ \\begin{cases} x_n=-2x_{n-1}+2z_{n-1},\\\\ y_n=-2y_{n-1}-2z_{n-1},\\\\ z_n=-6x_{n-1}-3y_{n-1}+3z_{n-1}. \\end{cases} $$ 记 $$ \\alpha_n= \\begin{pmatrix} x_n\\\\y_n\\\\z_n \\end{pmatrix}. $$ 写出满足 \\(\\alpha_n=A\\alpha_{n-1}\\) 的矩阵 \\(A\\)，并求 \\(A^n\\) 及 \\(x_n,y_n,z_n\\)。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-118"
+          ],
+          "peer_card_id": "LA-113",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        },
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-118"
+          ],
+          "peer_card_id": "LA-115",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-756/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-118/question_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-756/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-118/question_01.png"
+        ],
+        "reference": [],
+        "solution": []
+      },
+      "reviewed_asset_sha256": [
+        "8e2bc9270fd7063b6584a6f917c7973e906b7a598a97b0ed0ce80ce4a4300c0d",
+        "8e2bc9270fd7063b6584a6f917c7973e906b7a598a97b0ed0ce80ce4a4300c0d"
+      ],
+      "reviewed_detail_sha256": [
+        "abc727327075fba897398102ca3e6cc5daae017f889bd650a6e284e1fa3f2a3e",
+        "bbefd344e0c44e46302cbee7a24a1200fac2e6892c4ea32fdb358744eb102035"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "8e2bc9270fd7063b6584a6f917c7973e906b7a598a97b0ed0ce80ce4a4300c0d"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "由递推关系直接读出 $$ A= \\begin{pmatrix} -2&0&2\\\\ 0&-2&-2\\\\ -6&-3&3 \\end{pmatrix}. $$ 其特征值为 $$ -2,\\ 0,\\ 1. $$ 一组对应特征向量可取 $$ \\lambda=-2:\\begin{pmatrix}-1\\\\2\\\\0\\end{pmatrix}, \\qquad \\lambda=0:\\begin{pmatrix}1\\\\-1\\\\1\\end{pmatrix}, \\qquad \\lambda=1:\\begin{pmatrix}2\\\\-2\\\\3\\end{pmatrix}. $$ 令 $$ P= \\begin{pmatrix} -1&1&2\\\\ 2&-1&-2\\\\ 0&1&3 \\end{pmatrix}, \\qquad D=\\operatorname{diag}(-2,0,1), $$ 则 $$ A=PDP^{-1}. $$ 当 \\(n\\ge1\\) 时，\\(0^n=0\\)，所以 $$ A^n= \\begin{pmatrix} -(-2)^n-4&-(-2)^n-2&2\\\\ 2(-2)^n+4&2(-2)^n+2&-2\\\\ -6&-3&3 \\end{pmatrix}. $$ 又 $$ \\alpha_0= \\begin{pmatrix} -1\\\\0\\\\2 \\end{pmatrix}, \\qquad \\alpha_n=A^n\\alpha_0, $$ 故 $$ \\begin{cases} x_n=(-2)^n+8,\\\\ y_n=-2(-2)^n-8,\\\\ z_n=12, \\end{cases} \\qquad n=1,2,\\ldots $$"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-118.md",
+      "source_summary_sha256": "0c1499e04d9dfb8bfbeb487b1c4f3b3df5b049a55cc7621c82db212428f3c7d1",
+      "unique_asset_sha256_count": 1
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "\\((1,0,0)^{\\mathsf T}\\)",
+      "asked_output": "设 \\(A\\) 为 3 阶正交矩阵，且第一行第一列元素为 \\(1\\)。令 \\(\\beta=(1,0,0)^{\\mathsf T}\\)，求方程组 \\(AX=\\beta\\) 的解。",
+      "asset_role_path_counts": {
+        "question": 2,
+        "solution": 2
+      },
+      "card_id": "LA-119",
+      "card_path": "错题知识网络/错题卡/LA-119_强化例题8.9.md",
+      "card_sha256": "ff78cf080a6a0a7d6800c2167ce0fdffe4b73ce56cdfb11b4a40f1201eb06279",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/线性代数/LA-119_强化例题8.9.md",
+        "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-757_强化例题8.9.md"
+      ],
+      "detail_sha256": [
+        "3a002120bb2af008a707932f4558d5f1c3ac345c4099b2bea2d87e7131f39a01",
+        "94df47f74d3bc01c18da46f5712204b29c7290ece42f4426fb7ef3e44d3458b9"
+      ],
+      "first_action": "先用正交矩阵行列向量的单位长度，推出含 \\(1\\) 的同一行和同一列其余元素为 \\(0\\)。",
+      "knowledge_nodes": [
+        "正交矩阵",
+        "矩阵运算",
+        "逆矩阵"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "L08-008",
+        "secondary": []
+      },
+      "personal_error": {
+        "candidate_present": true,
+        "diagnosis_status": "candidate_pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "method_gap_enabled": false,
+        "mistake_count": 1,
+        "need_user_confirmation": true,
+        "wrong_event_count": 1
+      },
+      "physical_asset_path_count": 4,
+      "quality_findings": [],
+      "question_summary": "设 \\(A\\) 为 3 阶正交矩阵，且第一行第一列元素为 \\(1\\)。令 \\(\\beta=(1,0,0)^{\\mathsf T}\\)，求方程组 \\(AX=\\beta\\) 的解。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [
+        {
+          "decision": "remove_incident_strong_relation",
+          "declaration_owners_before": [
+            "LA-119"
+          ],
+          "peer_card_id": "LA-115",
+          "reason": "no independent question-method-personal-evidence basis survived the B42 target-level review"
+        }
+      ],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-757/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-757/solution_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-119/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/LA-119/solution_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-757/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-119/question_01.png"
+        ],
+        "reference": [],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-757/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/LA-119/solution_01.png"
+        ]
+      },
+      "reviewed_asset_sha256": [
+        "93fa9035b71fad3109a13b6533ead3f961a120c27ff7e179c6cd5059e94aa49d",
+        "197c2b5489393183fb0b1290a4819322a878cdd80042f85187d9b81707e6865c",
+        "93fa9035b71fad3109a13b6533ead3f961a120c27ff7e179c6cd5059e94aa49d",
+        "197c2b5489393183fb0b1290a4819322a878cdd80042f85187d9b81707e6865c"
+      ],
+      "reviewed_detail_sha256": [
+        "3a002120bb2af008a707932f4558d5f1c3ac345c4099b2bea2d87e7131f39a01",
+        "94df47f74d3bc01c18da46f5712204b29c7290ece42f4426fb7ef3e44d3458b9"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "197c2b5489393183fb0b1290a4819322a878cdd80042f85187d9b81707e6865c",
+        "93fa9035b71fad3109a13b6533ead3f961a120c27ff7e179c6cd5059e94aa49d"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "$$ X=(1,0,0)^{\\mathsf T}. $$"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-119.md",
+      "source_summary_sha256": "fb90953c8968d006cfab7df1b381a2ed2f0542c80ddd1e37fa95983c5a7a15ac",
+      "unique_asset_sha256_count": 2
+    },
+    {
+      "aggregate_edge_policy": "block_until_relinked",
+      "answer": "$$\n1-\\cos 1\n$$\n参数 \\(a\\) 不改变极限；先证明剩余乘法因子一致趋于 \\(1\\)，再保留标准黎曼和。",
+      "asked_output": "求含参数的和式极限，核心项形如 \\(\\sum_{i=1}^{n}\\frac{i}{ni+a}\\sin\\frac{i}{n}\\)，其中 \\(a\\in(0,1)\\)。",
+      "asset_role_path_counts": {
+        "question": 2
+      },
+      "card_id": "PR-001",
+      "card_path": "错题知识网络/错题卡/PR-001_强化例题8.2.md",
+      "card_sha256": "077110e0e82513b047277aa36f24576457525995aa7f147b5b3a2e13e0db91cb",
+      "content_review_status": "verified",
+      "content_state": "verified_after_objective_repairs",
+      "current_target_level_review_status": "batch_verified_current_assets",
+      "detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/MN4-GS-CH01-236_强化例题8.2.md",
+        "错题知识网络/可视化错题详情/高等数学/PR-001_强化例题8.2.md"
+      ],
+      "detail_sha256": [
+        "87a17a4982f733c3a68d0ba9d286d38a82feb62627a9cded748fcd4829fbc379",
+        "4289d089d448b33b2d00b2c2f98e525134c98365487a4c659a6d72cd0de078ad"
+      ],
+      "first_action": "拆出 \\(1/n\\) 后立刻估计 \\(0<a/(ni)\\le a/n\\to0\\)，把剩余因子识别为一致趋于 \\(1\\) 的扰动。",
+      "knowledge_nodes": [
+        "定积分",
+        "定积分定义",
+        "黎曼和",
+        "一致估计",
+        "夹逼准则"
+      ],
+      "method_route": {
+        "objective_only_on_hold": [],
+        "primary": "H08-001",
+        "secondary": [
+          "H08-004"
+        ]
+      },
+      "personal_error": {
+        "candidate_present": false,
+        "diagnosis_status": "user_confirmed",
+        "evidence_origin": "user_confirmed",
+        "method_gap_enabled": true,
+        "mistake_count": 2,
+        "need_user_confirmation": false,
+        "wrong_event_count": 2
+      },
+      "physical_asset_path_count": 2,
+      "quality_findings": [],
+      "question_summary": "求含参数的和式极限，核心项形如 \\(\\sum_{i=1}^{n}\\frac{i}{ni+a}\\sin\\frac{i}{n}\\)，其中 \\(a\\in(0,1)\\)。",
+      "relation_decision": {
+        "aggregate_edge_policy": "block_strong_edges",
+        "final_related": [],
+        "strong_edge_release_requires_user_evidence": true
+      },
+      "relation_decisions": [],
+      "reviewed_asset_paths": [
+        "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-236/question_01.png",
+        "错题知识网络/assets/visual_wrong_questions/PR-001/question_01.png"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-236/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/PR-001/question_01.png"
+        ],
+        "reference": [],
+        "solution": []
+      },
+      "reviewed_asset_sha256": [
+        "4f84f6c081d563b7fcacdcc6cc32d9282ff7a32097ae486f633efe17b3fd1066",
+        "4f84f6c081d563b7fcacdcc6cc32d9282ff7a32097ae486f633efe17b3fd1066"
+      ],
+      "reviewed_detail_sha256": [
+        "87a17a4982f733c3a68d0ba9d286d38a82feb62627a9cded748fcd4829fbc379",
+        "4289d089d448b33b2d00b2c2f98e525134c98365487a4c659a6d72cd0de078ad"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "4f84f6c081d563b7fcacdcc6cc32d9282ff7a32097ae486f633efe17b3fd1066"
+      ],
+      "snapshot_status": "current",
+      "solution_outline": [
+        "$$ 1-\\cos 1 $$ 参数 \\(a\\) 不改变极限。先用统一估计消去乘法扰动，再得到 $$ \\int_0^1\\sin x\\,dx=1-\\cos 1. $$"
+      ],
+      "source_summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-PR-001.md",
+      "source_summary_sha256": "1682ab807950ed2b62d9e9d4908ee3c20c907e1c621f4d55e62260c068758851",
+      "unique_asset_sha256_count": 1
+    }
+  ],
+  "completion": {
+    "campaign_complete": true,
+    "formal_cards": 831,
+    "remaining_cards": 0,
+    "reviewed_cards": 831
+  },
+  "core_payload_sha256": "3e4cfb4982b85f7a04f1a2e36741b0ad690f2e1c902b092f9d020d9549a53677",
+  "evidence_distribution": {
+    "content_hold_missing_answer_determining_condition": 1,
+    "pending_user_confirmation": 9,
+    "user_confirmed": 1
+  },
+  "guardrails": {
+    "detail_formal_projection_uses_exact_formal_card_sha": true,
+    "formal_write_authority": true,
+    "graph_build_runs_by_generator": 0,
+    "planned_postimage_preview_is_not_formal_receipt": false,
+    "rebuild_runs_by_generator": 0,
+    "source_accounting_derived_from_final_unique_paths": true,
+    "source_formal_projection_uses_b34_projection_sha": true,
+    "tests_run_by_generator": false
+  },
+  "historical_receipt_writes": [],
+  "input_bindings": {
+    "b41_closeout": {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-089_全库逐题语义复核第41批正式收口.json",
+      "sha256": "8adfba4c5a9c81f8dfa8702f57a7f6416e3fba2fab8ca69d8e3907aa3579970e"
+    },
+    "fresh_freeze": {
+      "path": ".codex_tmp/B42_fresh_freeze_final.json",
+      "sha256": "721d75ec0397d8476bb332d0fbfa574135b391c989d03fce94ef32068354e129"
+    },
+    "postapply_write_manifest": {
+      "path": ".codex_tmp/B42_write_manifest_final.json",
+      "sha256": "9bb4cf35496efe43d332a57ce2e121aaf6978f43b3ae112ea0355aa9af0826aa"
+    },
+    "prewrite_plan": {
+      "path": ".codex_tmp/B42_prewrite_design.json",
+      "sha256": "a49b716a019f438d737a779bd11d9042dac878d947f116b105b5fdcdea1238b0"
+    }
+  },
+  "relation_audit": {
+    "aggregate_edge_policy": "block_until_user_confirmed_relink",
+    "combined_owner_declaration_count": 0,
+    "combined_strong_logical_edge_count": 0,
+    "external_owner_ids": [],
+    "preimage_logical_edge_count": 14,
+    "preimage_owner_declaration_count": 54,
+    "scan_policy": "formal_and_source_frontmatter_plus_body_fail_closed"
+  },
+  "review_id": "MATHWIKI-REVIEW-090",
+  "reviewed_on": "2026-07-25",
+  "schema_version": "math_target_semantic_review_v1",
+  "scope": {
+    "README_projection_count": 1,
+    "asset_files_written": 0,
+    "card_count": 11,
+    "dynamic_external_owner_count": 0,
+    "physical_asset_path_count": 38,
+    "reviewed_detail_file_count": 22,
+    "source_summary_count": 11,
+    "unique_visual_content_sha256_count": 19
+  },
+  "semantic_validation": {
+    "LA113_conditional_only_recovery_route": true,
+    "LA113_hold_event_zero": true,
+    "LA117_method_supersession_correction_verified": true,
+    "PR001_cross_subject_relink_hold_preserved": true,
+    "PR001_immutable_mastery_history_events": 2,
+    "PR001_immutable_wrong_history_events": 2,
+    "PR001_user_confirmed_event_two": true,
+    "PR001_valid_historical_squeeze_solution_preserved": true,
+    "README_checked": true,
+    "canonical_detail_rebuilds": 22,
+    "canonical_source_rebuilds": 11,
+    "detail_exact_formal_sha_checked_paths": 22,
+    "detail_exact_formal_sha_contract": "SHA-256 of exact whole formal-card Markdown postimage bytes",
+    "detail_full_role_asset_refs": 76,
+    "detail_own_asset_embeds": 38,
+    "incident_owner_declarations": 0,
+    "incident_strong_edges": 0,
+    "pending_event_one": 9,
+    "projection_checked_paths": 33,
+    "selected_event_distribution": {
+      "0": 1,
+      "1": 9,
+      "2": 1
+    },
+    "source_full_role_asset_refs": 38,
+    "source_projection_checked_paths": 11,
+    "source_projection_contract": "b34_prewrite_common.projection_sha",
+    "status": "passed_postapply"
+  },
+  "source_write_accounting": {
+    "final_unique_target_paths": 45,
+    "formal_target_writes_before_review_receipt": 45,
+    "semantic_review_receipt_files_written": 1,
+    "total_source_writes_including_review_receipt": 46
+  },
+  "source_writes": [
+    {
+      "card_id": "LA-110",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-110_强化例题8.2-2.md",
+      "planned_post_sha256": "32c90d1447325a94385721fccd279b88fb48de93641363f9fb0ed5ab8c011f57",
+      "post_sha256": "32c90d1447325a94385721fccd279b88fb48de93641363f9fb0ed5ab8c011f57",
+      "postimage": {
+        "bytes": 6128,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "32c90d1447325a94385721fccd279b88fb48de93641363f9fb0ed5ab8c011f57"
+      },
+      "pre_sha256": "9b3172de61f3eccc00c410df30b07a4a3ba5daded29ed07a917a5130d7fee891"
+    },
+    {
+      "card_id": "LA-111",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-111_2022年真题第8题.md",
+      "planned_post_sha256": "9762c41683dc9fe787cc0ca0a6f2630e70b0f4d898c0d51b3209847a89205205",
+      "post_sha256": "9762c41683dc9fe787cc0ca0a6f2630e70b0f4d898c0d51b3209847a89205205",
+      "postimage": {
+        "bytes": 6432,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "9762c41683dc9fe787cc0ca0a6f2630e70b0f4d898c0d51b3209847a89205205"
+      },
+      "pre_sha256": "37bc387c8a4a4a2bb3b459a39538152861ee5cf80d8d4fbfd911901f4398379d"
+    },
+    {
+      "card_id": "LA-112",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-112_强化例题8.4-2.md",
+      "planned_post_sha256": "c42bdbccd613783b95d59bee2e8259a23aba31c20d710fad495454fc3d6b8721",
+      "post_sha256": "c42bdbccd613783b95d59bee2e8259a23aba31c20d710fad495454fc3d6b8721",
+      "postimage": {
+        "bytes": 5496,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "c42bdbccd613783b95d59bee2e8259a23aba31c20d710fad495454fc3d6b8721"
+      },
+      "pre_sha256": "15f6200c2dc18c8b5839d7171de9d2208d125fc658e2136cfa9258447ddde6fd"
+    },
+    {
+      "card_id": "LA-113",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review",
+        "status",
+        "mistake_count",
+        "wrong_history",
+        "mastery_history",
+        "provenance_history",
+        "answer",
+        "review",
+        "content_hold",
+        "body"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-113_强化例题8.5（84080）.md",
+      "planned_post_sha256": "773ab7eb415ed1af02474834c45f2cc1242154efbb7f21152362f8640fb86ac1",
+      "post_sha256": "773ab7eb415ed1af02474834c45f2cc1242154efbb7f21152362f8640fb86ac1",
+      "postimage": {
+        "bytes": 4749,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "773ab7eb415ed1af02474834c45f2cc1242154efbb7f21152362f8640fb86ac1"
+      },
+      "pre_sha256": "288cb03851cdf320500ec2bdbb67fd326537eb67409e9b8f2cd23c271c110711"
+    },
+    {
+      "card_id": "LA-114",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-114_强化例题8.7-2.md",
+      "planned_post_sha256": "14e0080a4794eada678e43c69399ad8863037c95bab9c9e2c61c12b1e157fb66",
+      "post_sha256": "14e0080a4794eada678e43c69399ad8863037c95bab9c9e2c61c12b1e157fb66",
+      "postimage": {
+        "bytes": 5611,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "14e0080a4794eada678e43c69399ad8863037c95bab9c9e2c61c12b1e157fb66"
+      },
+      "pre_sha256": "a2d97d42bb8574b067a4bd6cdface235cdae90c4814028308d09008f458dfc6d"
+    },
+    {
+      "card_id": "LA-115",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-115_强化例题8.6-2.md",
+      "planned_post_sha256": "f123af4c66ad9baa917363a1a7f41b71faf10520372977efdd72656dbbe8e57e",
+      "post_sha256": "f123af4c66ad9baa917363a1a7f41b71faf10520372977efdd72656dbbe8e57e",
+      "postimage": {
+        "bytes": 6371,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "f123af4c66ad9baa917363a1a7f41b71faf10520372977efdd72656dbbe8e57e"
+      },
+      "pre_sha256": "1727606ede177c4ac675a2c0a55b7add8e1639866ffe58a4e6410cc9b9d3be51"
+    },
+    {
+      "card_id": "LA-116",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-116_2020年第23题.md",
+      "planned_post_sha256": "b62b30f271393c8d2aef1dcb0b1250622288fdbb5ea588f0f6ac4177a999bae2",
+      "post_sha256": "b62b30f271393c8d2aef1dcb0b1250622288fdbb5ea588f0f6ac4177a999bae2",
+      "postimage": {
+        "bytes": 6591,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "b62b30f271393c8d2aef1dcb0b1250622288fdbb5ea588f0f6ac4177a999bae2"
+      },
+      "pre_sha256": "cdd25d20e3ed7bd74b72f1c5587ef28761a5b100b3f1116583561b525a5166c8"
+    },
+    {
+      "card_id": "LA-117",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-117_2018年第7题.md",
+      "planned_post_sha256": "cc3b7cc9525e257681961fb0df77129c718eed9a710d3244c4703fb7ac187924",
+      "post_sha256": "cc3b7cc9525e257681961fb0df77129c718eed9a710d3244c4703fb7ac187924",
+      "postimage": {
+        "bytes": 6226,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "cc3b7cc9525e257681961fb0df77129c718eed9a710d3244c4703fb7ac187924"
+      },
+      "pre_sha256": "c97a663d681d80d46146c014366d357e0c1a82233dace3c3d1e36517e43984ac"
+    },
+    {
+      "card_id": "LA-118",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-118_强化例题8.8（102152）.md",
+      "planned_post_sha256": "89932a93a9c8e31994bc5f2d73d765118a228a59bd998e5e80308514683169b3",
+      "post_sha256": "89932a93a9c8e31994bc5f2d73d765118a228a59bd998e5e80308514683169b3",
+      "postimage": {
+        "bytes": 6758,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "89932a93a9c8e31994bc5f2d73d765118a228a59bd998e5e80308514683169b3"
+      },
+      "pre_sha256": "6bc3595afbaa74285186a894b54b8f8df5ccc5e88296d8f27ecb4e59fab545c2"
+    },
+    {
+      "card_id": "LA-119",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review",
+        "knowledge",
+        "methods",
+        "body_tags"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-119_强化例题8.9.md",
+      "planned_post_sha256": "ff78cf080a6a0a7d6800c2167ce0fdffe4b73ce56cdfb11b4a40f1201eb06279",
+      "post_sha256": "ff78cf080a6a0a7d6800c2167ce0fdffe4b73ce56cdfb11b4a40f1201eb06279",
+      "postimage": {
+        "bytes": 5786,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "ff78cf080a6a0a7d6800c2167ce0fdffe4b73ce56cdfb11b4a40f1201eb06279"
+      },
+      "pre_sha256": "49d24ca5fe5acb3594c20c630583d2a8262ae3971a4a3db7e3ee30feeff6f595"
+    },
+    {
+      "card_id": "PR-001",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_B42_semantic_review",
+        "subject",
+        "chapter",
+        "topic",
+        "answer",
+        "knowledge",
+        "methods",
+        "error_causes"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/PR-001_强化例题8.2.md",
+      "planned_post_sha256": "077110e0e82513b047277aa36f24576457525995aa7f147b5b3a2e13e0db91cb",
+      "post_sha256": "077110e0e82513b047277aa36f24576457525995aa7f147b5b3a2e13e0db91cb",
+      "postimage": {
+        "bytes": 7657,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "077110e0e82513b047277aa36f24576457525995aa7f147b5b3a2e13e0db91cb"
+      },
+      "pre_sha256": "c13481f05395155769f1351117d372f3cdd1fd24f332311a93ff2bdf60d2efac"
+    },
+    {
+      "card_id": "LA-110",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-747_强化例题8.2.md",
+      "planned_post_sha256": "23d2b5781aadb3037929181e9b73e8d75e9db8fdf3039ffa1331b46a47038b27",
+      "post_sha256": "23d2b5781aadb3037929181e9b73e8d75e9db8fdf3039ffa1331b46a47038b27",
+      "postimage": {
+        "bytes": 3310,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "23d2b5781aadb3037929181e9b73e8d75e9db8fdf3039ffa1331b46a47038b27"
+      },
+      "pre_sha256": "f62f1ed2e21633db58a13884c5bfcbe1671872b3a43524c14603fef3197975f6"
+    },
+    {
+      "card_id": "LA-110",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-110_强化例题8.2-2.md",
+      "planned_post_sha256": "5ee0018e03024b95d30542885dfc9c007859d67ea5bb70c8748fd663ffafd597",
+      "post_sha256": "5ee0018e03024b95d30542885dfc9c007859d67ea5bb70c8748fd663ffafd597",
+      "postimage": {
+        "bytes": 3093,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "5ee0018e03024b95d30542885dfc9c007859d67ea5bb70c8748fd663ffafd597"
+      },
+      "pre_sha256": "4f59d29693db93c12a637f56286750f1f4287883e63075b6f710648cae1fe11f"
+    },
+    {
+      "card_id": "LA-111",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-749_2022年真题第8题.md",
+      "planned_post_sha256": "3e04ea8d1b1f20789e1b324d67af2c6df96721949102e23dbdb0ee5898aade8a",
+      "post_sha256": "3e04ea8d1b1f20789e1b324d67af2c6df96721949102e23dbdb0ee5898aade8a",
+      "postimage": {
+        "bytes": 3286,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "3e04ea8d1b1f20789e1b324d67af2c6df96721949102e23dbdb0ee5898aade8a"
+      },
+      "pre_sha256": "a2a2ca6a23d238e7a35556929b364d19f47c63bb742ccb189a6ad3ee05d7535a"
+    },
+    {
+      "card_id": "LA-111",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-111_2022年真题第8题.md",
+      "planned_post_sha256": "df070654b0e4986f1ecda5c32347fcfc11ff9095b31d163ddc9be2034e39eb43",
+      "post_sha256": "df070654b0e4986f1ecda5c32347fcfc11ff9095b31d163ddc9be2034e39eb43",
+      "postimage": {
+        "bytes": 3314,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "df070654b0e4986f1ecda5c32347fcfc11ff9095b31d163ddc9be2034e39eb43"
+      },
+      "pre_sha256": "b7a62d6d3d998e23fa26311792d2e1f0c67ec4286bb505127e875df9ec6953a1"
+    },
+    {
+      "card_id": "LA-112",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-750_强化例题8.4.md",
+      "planned_post_sha256": "0d10d0e30320d6311b444ccfec12616f511c6c4a118f38d45e84157c182bc3ce",
+      "post_sha256": "0d10d0e30320d6311b444ccfec12616f511c6c4a118f38d45e84157c182bc3ce",
+      "postimage": {
+        "bytes": 3279,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "0d10d0e30320d6311b444ccfec12616f511c6c4a118f38d45e84157c182bc3ce"
+      },
+      "pre_sha256": "e97e1b921f38e4ec8bfd3d4eab9b3b9a83a82e86cc7ff7857329882481d5a43f"
+    },
+    {
+      "card_id": "LA-112",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-112_强化例题8.4-2.md",
+      "planned_post_sha256": "dc45f7ae4a02deb80b23990eecb3551651792f9c855b602931912154156a2951",
+      "post_sha256": "dc45f7ae4a02deb80b23990eecb3551651792f9c855b602931912154156a2951",
+      "postimage": {
+        "bytes": 3062,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "dc45f7ae4a02deb80b23990eecb3551651792f9c855b602931912154156a2951"
+      },
+      "pre_sha256": "4eb6085bb04424c341b09efc15eafef52845987c9a57a4d2fb4946878363aabf"
+    },
+    {
+      "card_id": "LA-113",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-751_强化例题8.5（84080）.md",
+      "planned_post_sha256": "f5da2642ce8430fe831c60a0519bbee0123bfd0ae51d0e5796b57cacce4f8822",
+      "post_sha256": "f5da2642ce8430fe831c60a0519bbee0123bfd0ae51d0e5796b57cacce4f8822",
+      "postimage": {
+        "bytes": 3540,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "f5da2642ce8430fe831c60a0519bbee0123bfd0ae51d0e5796b57cacce4f8822"
+      },
+      "pre_sha256": "274de081e3ec5b569170e64dc0bc8efbe7a482758ed2a277694c33288c5113a7"
+    },
+    {
+      "card_id": "LA-113",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-113_强化例题8.5（84080）.md",
+      "planned_post_sha256": "7fa4dc6899873440eb2a2064f97e83f70687c38303c5f5db73a65ca24502e209",
+      "post_sha256": "7fa4dc6899873440eb2a2064f97e83f70687c38303c5f5db73a65ca24502e209",
+      "postimage": {
+        "bytes": 3321,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "7fa4dc6899873440eb2a2064f97e83f70687c38303c5f5db73a65ca24502e209"
+      },
+      "pre_sha256": "29b8930fbcedbd19231d6f8aafcaebe8aca97ddfde009c3686931d445f4d92aa"
+    },
+    {
+      "card_id": "LA-114",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-752_强化例题8.7.md",
+      "planned_post_sha256": "e9cf8ea0a01676a9726359bee66018ed572918ed41a5845b16efc982ebdd7918",
+      "post_sha256": "e9cf8ea0a01676a9726359bee66018ed572918ed41a5845b16efc982ebdd7918",
+      "postimage": {
+        "bytes": 3257,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "e9cf8ea0a01676a9726359bee66018ed572918ed41a5845b16efc982ebdd7918"
+      },
+      "pre_sha256": "5540a4ece87d0c1833eea7dad79373388c09acfd8844fe5df5cb2f7553f2eae5"
+    },
+    {
+      "card_id": "LA-114",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-114_强化例题8.7-2.md",
+      "planned_post_sha256": "f62c73c22d88fd6e07d83ff2b59b5d8a929a25325cf51c2d9a6d36f255ad5675",
+      "post_sha256": "f62c73c22d88fd6e07d83ff2b59b5d8a929a25325cf51c2d9a6d36f255ad5675",
+      "postimage": {
+        "bytes": 3040,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "f62c73c22d88fd6e07d83ff2b59b5d8a929a25325cf51c2d9a6d36f255ad5675"
+      },
+      "pre_sha256": "2c3711309bdceff6be8b6d5b8a97af91290a90450d8d18f38848b72361fe850c"
+    },
+    {
+      "card_id": "LA-115",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-753_强化例题8.6.md",
+      "planned_post_sha256": "e358c64ac2ea0ec8b38453e3e776a65862f7b2b92cefac4caba5a1b12587e057",
+      "post_sha256": "e358c64ac2ea0ec8b38453e3e776a65862f7b2b92cefac4caba5a1b12587e057",
+      "postimage": {
+        "bytes": 3699,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "e358c64ac2ea0ec8b38453e3e776a65862f7b2b92cefac4caba5a1b12587e057"
+      },
+      "pre_sha256": "d2e8037e40739f052c5453d85e92d1ad5ae9eec6b55cce57bfa9097b62cd3d13"
+    },
+    {
+      "card_id": "LA-115",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-115_强化例题8.6-2.md",
+      "planned_post_sha256": "d64edde837e3714d072b7a0b1451eb50a687f1b14ef5a6ebc46743a769ca2f2e",
+      "post_sha256": "d64edde837e3714d072b7a0b1451eb50a687f1b14ef5a6ebc46743a769ca2f2e",
+      "postimage": {
+        "bytes": 3482,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "d64edde837e3714d072b7a0b1451eb50a687f1b14ef5a6ebc46743a769ca2f2e"
+      },
+      "pre_sha256": "d4bc98ce57d2e89f947d7fc0e7267f06d0e86eb734ba6e564eff5b6658135092"
+    },
+    {
+      "card_id": "LA-116",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-754_2020年第23题.md",
+      "planned_post_sha256": "40ddcfec7e04aab0359a072e36e8bd6cf9cb7871f59a48acad6667a3ba6e5f65",
+      "post_sha256": "40ddcfec7e04aab0359a072e36e8bd6cf9cb7871f59a48acad6667a3ba6e5f65",
+      "postimage": {
+        "bytes": 3459,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "40ddcfec7e04aab0359a072e36e8bd6cf9cb7871f59a48acad6667a3ba6e5f65"
+      },
+      "pre_sha256": "f559ea1a6b8b0b4d379ee8fb73787f36d465d36e9a35ca968547a6644a4bf170"
+    },
+    {
+      "card_id": "LA-116",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-116_2020年第23题.md",
+      "planned_post_sha256": "795c90b31694ce0fba98fb7a7067096383294b9863f17d9758712ac278fba179",
+      "post_sha256": "795c90b31694ce0fba98fb7a7067096383294b9863f17d9758712ac278fba179",
+      "postimage": {
+        "bytes": 3581,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "795c90b31694ce0fba98fb7a7067096383294b9863f17d9758712ac278fba179"
+      },
+      "pre_sha256": "df5c95dff5ad15371f4d2a806996ddbfc958a687d419d251fa7ddb19dcf3d2f6"
+    },
+    {
+      "card_id": "LA-117",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-755_2018年第7题.md",
+      "planned_post_sha256": "ed90ba1eda269983f88cf177720d29f8b68a59484081996b6edf86866bd234a8",
+      "post_sha256": "ed90ba1eda269983f88cf177720d29f8b68a59484081996b6edf86866bd234a8",
+      "postimage": {
+        "bytes": 3467,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "ed90ba1eda269983f88cf177720d29f8b68a59484081996b6edf86866bd234a8"
+      },
+      "pre_sha256": "23063f644089f964d71e3285d915a23030b19a593b1c0916c00bed08b9de46f8"
+    },
+    {
+      "card_id": "LA-117",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-117_2018年第7题.md",
+      "planned_post_sha256": "0ef3d8e9c68a64eeb6dd688d3ce04f9e7ef3bfe5211476455c74e2efb9542c4d",
+      "post_sha256": "0ef3d8e9c68a64eeb6dd688d3ce04f9e7ef3bfe5211476455c74e2efb9542c4d",
+      "postimage": {
+        "bytes": 3479,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "0ef3d8e9c68a64eeb6dd688d3ce04f9e7ef3bfe5211476455c74e2efb9542c4d"
+      },
+      "pre_sha256": "57fc9933cee6ce76775d281bba2914664a2b337ee25d3e5c77ea18d3b84cda0c"
+    },
+    {
+      "card_id": "LA-118",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-756_强化例题8.8（102152）.md",
+      "planned_post_sha256": "bbefd344e0c44e46302cbee7a24a1200fac2e6892c4ea32fdb358744eb102035",
+      "post_sha256": "bbefd344e0c44e46302cbee7a24a1200fac2e6892c4ea32fdb358744eb102035",
+      "postimage": {
+        "bytes": 2964,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "bbefd344e0c44e46302cbee7a24a1200fac2e6892c4ea32fdb358744eb102035"
+      },
+      "pre_sha256": "cbf82ff767fe9d31370cae22d0448a8d46248e1f8d0d5a45c0102c7ef08d774f"
+    },
+    {
+      "card_id": "LA-118",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-118_强化例题8.8（102152）.md",
+      "planned_post_sha256": "abc727327075fba897398102ca3e6cc5daae017f889bd650a6e284e1fa3f2a3e",
+      "post_sha256": "abc727327075fba897398102ca3e6cc5daae017f889bd650a6e284e1fa3f2a3e",
+      "postimage": {
+        "bytes": 3075,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "abc727327075fba897398102ca3e6cc5daae017f889bd650a6e284e1fa3f2a3e"
+      },
+      "pre_sha256": "bd3d3ab63691ac524c72a2faf0fa0d3e6605a111e557144a0c1faa2d285ce4a1"
+    },
+    {
+      "card_id": "LA-119",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-757_强化例题8.9.md",
+      "planned_post_sha256": "94df47f74d3bc01c18da46f5712204b29c7290ece42f4426fb7ef3e44d3458b9",
+      "post_sha256": "94df47f74d3bc01c18da46f5712204b29c7290ece42f4426fb7ef3e44d3458b9",
+      "postimage": {
+        "bytes": 3303,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "94df47f74d3bc01c18da46f5712204b29c7290ece42f4426fb7ef3e44d3458b9"
+      },
+      "pre_sha256": "ef943e57dd7b34b793f237a736bc2aee4b328dfc7db293a59452021cde64a359"
+    },
+    {
+      "card_id": "LA-119",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-119_强化例题8.9.md",
+      "planned_post_sha256": "3a002120bb2af008a707932f4558d5f1c3ac345c4099b2bea2d87e7131f39a01",
+      "post_sha256": "3a002120bb2af008a707932f4558d5f1c3ac345c4099b2bea2d87e7131f39a01",
+      "postimage": {
+        "bytes": 3178,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "3a002120bb2af008a707932f4558d5f1c3ac345c4099b2bea2d87e7131f39a01"
+      },
+      "pre_sha256": "1003965fe11fe7e2e5fa0b6e457c6f6ece8226c59e30e07334187f6044ffd941"
+    },
+    {
+      "card_id": "PR-001",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/MN4-GS-CH01-236_强化例题8.2.md",
+      "planned_post_sha256": "87a17a4982f733c3a68d0ba9d286d38a82feb62627a9cded748fcd4829fbc379",
+      "post_sha256": "87a17a4982f733c3a68d0ba9d286d38a82feb62627a9cded748fcd4829fbc379",
+      "postimage": {
+        "bytes": 5335,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "87a17a4982f733c3a68d0ba9d286d38a82feb62627a9cded748fcd4829fbc379"
+      },
+      "pre_sha256": "aaefd1c3fb00c588cd892c7ca122dadcf4a2f9e994af553aeaf4c652f61f7adf"
+    },
+    {
+      "card_id": "PR-001",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "formal_projection_sha256",
+        "semantic_review_batch",
+        "card_metadata_projection",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/PR-001_强化例题8.2.md",
+      "planned_post_sha256": "4289d089d448b33b2d00b2c2f98e525134c98365487a4c659a6d72cd0de078ad",
+      "post_sha256": "4289d089d448b33b2d00b2c2f98e525134c98365487a4c659a6d72cd0de078ad",
+      "postimage": {
+        "bytes": 3494,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "4289d089d448b33b2d00b2c2f98e525134c98365487a4c659a6d72cd0de078ad"
+      },
+      "pre_sha256": "5df390574cdf124903d5a73a8de6f9ce1611619aefae01b465f0829ba72584fe"
+    },
+    {
+      "card_id": "LA-110",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-110.md",
+      "planned_post_sha256": "5ef0194d28f7711b88edcf408cc8f19db0d45ad1b8e345673d9a936251629c95",
+      "post_sha256": "5ef0194d28f7711b88edcf408cc8f19db0d45ad1b8e345673d9a936251629c95",
+      "postimage": {
+        "bytes": 3517,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "5ef0194d28f7711b88edcf408cc8f19db0d45ad1b8e345673d9a936251629c95"
+      },
+      "pre_sha256": "16a14de6b86a70a148ba51942173ad98b9ed4931d2f0b120c78aeb76530fcea5"
+    },
+    {
+      "card_id": "LA-111",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-111.md",
+      "planned_post_sha256": "c60a58820b80ddacddafda563ebd3e6e217f7fae3770d9e073b7da6145edb2b2",
+      "post_sha256": "c60a58820b80ddacddafda563ebd3e6e217f7fae3770d9e073b7da6145edb2b2",
+      "postimage": {
+        "bytes": 3680,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "c60a58820b80ddacddafda563ebd3e6e217f7fae3770d9e073b7da6145edb2b2"
+      },
+      "pre_sha256": "07cba8e9e9074c41d1a28d2bd6547dc6810d86c4f565b13e4dd2eb048948bf2e"
+    },
+    {
+      "card_id": "LA-112",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-112.md",
+      "planned_post_sha256": "9c9106c5d73319ad8ad79a475c861dbe9fda91d009963e6a7435a458da902293",
+      "post_sha256": "9c9106c5d73319ad8ad79a475c861dbe9fda91d009963e6a7435a458da902293",
+      "postimage": {
+        "bytes": 3484,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "9c9106c5d73319ad8ad79a475c861dbe9fda91d009963e6a7435a458da902293"
+      },
+      "pre_sha256": "2afc49c94204118d31f7bb7f3de596f7e777e703a78410ca6501e07a4015dc06"
+    },
+    {
+      "card_id": "LA-113",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-113.md",
+      "planned_post_sha256": "f81660af73fd3a520f4b0bedd14535e30cc72f00d79e40adc15d93be5f7d12d4",
+      "post_sha256": "f81660af73fd3a520f4b0bedd14535e30cc72f00d79e40adc15d93be5f7d12d4",
+      "postimage": {
+        "bytes": 3810,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "f81660af73fd3a520f4b0bedd14535e30cc72f00d79e40adc15d93be5f7d12d4"
+      },
+      "pre_sha256": "a9ddcae7809f69d430c8543969da10e4842dd919a5c48819cd21175499c83420"
+    },
+    {
+      "card_id": "LA-114",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-114.md",
+      "planned_post_sha256": "4a29a5148394511403ce9e16cd00fa27754eff8f55d09fed71feaa90effd67e4",
+      "post_sha256": "4a29a5148394511403ce9e16cd00fa27754eff8f55d09fed71feaa90effd67e4",
+      "postimage": {
+        "bytes": 3482,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "4a29a5148394511403ce9e16cd00fa27754eff8f55d09fed71feaa90effd67e4"
+      },
+      "pre_sha256": "16fdbf04dea1ff86d68dcca92ff93c5744ffc1bd6e53a1c23af3ef0c0a15a66f"
+    },
+    {
+      "card_id": "LA-115",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-115.md",
+      "planned_post_sha256": "876e4666b24db9bd65c6b04ddd8313f577e22554fb6f2be387d3631eed9607f4",
+      "post_sha256": "876e4666b24db9bd65c6b04ddd8313f577e22554fb6f2be387d3631eed9607f4",
+      "postimage": {
+        "bytes": 3899,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "876e4666b24db9bd65c6b04ddd8313f577e22554fb6f2be387d3631eed9607f4"
+      },
+      "pre_sha256": "79e7401c2e7bb1040d20a09920d162ad73b64590b8809303186db119c1633d14"
+    },
+    {
+      "card_id": "LA-116",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-116.md",
+      "planned_post_sha256": "509b41582faa5b17790964e3869643c474afecbf628bb41a3caa801d04207e62",
+      "post_sha256": "509b41582faa5b17790964e3869643c474afecbf628bb41a3caa801d04207e62",
+      "postimage": {
+        "bytes": 3803,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "509b41582faa5b17790964e3869643c474afecbf628bb41a3caa801d04207e62"
+      },
+      "pre_sha256": "a04d1390f0c7da67c4ccd7d482be7bc04dde116d6fe745f2977a4d2dd743b198"
+    },
+    {
+      "card_id": "LA-117",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-117.md",
+      "planned_post_sha256": "50f87b7cb16990eec1bb1d23782fb13fee0fb60b952c5e93535e666be13b79e3",
+      "post_sha256": "50f87b7cb16990eec1bb1d23782fb13fee0fb60b952c5e93535e666be13b79e3",
+      "postimage": {
+        "bytes": 3775,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "50f87b7cb16990eec1bb1d23782fb13fee0fb60b952c5e93535e666be13b79e3"
+      },
+      "pre_sha256": "f04ff616c78b0bd203f2c9ef7db19dc860364c0c680ba0b916dc5893caf0be7b"
+    },
+    {
+      "card_id": "LA-118",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-118.md",
+      "planned_post_sha256": "0c1499e04d9dfb8bfbeb487b1c4f3b3df5b049a55cc7621c82db212428f3c7d1",
+      "post_sha256": "0c1499e04d9dfb8bfbeb487b1c4f3b3df5b049a55cc7621c82db212428f3c7d1",
+      "postimage": {
+        "bytes": 3413,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "0c1499e04d9dfb8bfbeb487b1c4f3b3df5b049a55cc7621c82db212428f3c7d1"
+      },
+      "pre_sha256": "f8e9c6565a82d059e85e098995f95592d263eb78acab111d51479e01e423fe84"
+    },
+    {
+      "card_id": "LA-119",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-119.md",
+      "planned_post_sha256": "fb90953c8968d006cfab7df1b381a2ed2f0542c80ddd1e37fa95983c5a7a15ac",
+      "post_sha256": "fb90953c8968d006cfab7df1b381a2ed2f0542c80ddd1e37fa95983c5a7a15ac",
+      "postimage": {
+        "bytes": 3630,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "fb90953c8968d006cfab7df1b381a2ed2f0542c80ddd1e37fa95983c5a7a15ac"
+      },
+      "pre_sha256": "7423af4f28efbb9751c289b25d2178837ccaf40a4b180cc326041a6b22bec5ee"
+    },
+    {
+      "card_id": "PR-001",
+      "changed_fields": [
+        "visual_detail_refs",
+        "visual_ids",
+        "question_asset_refs",
+        "solution_asset_refs",
+        "reference_asset_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "card_metadata_projection",
+        "method_gap_summary",
+        "body_full_stale_section_replacement"
+      ],
+      "kind": "selected_source",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-PR-001.md",
+      "planned_post_sha256": "1682ab807950ed2b62d9e9d4908ee3c20c907e1c621f4d55e62260c068758851",
+      "post_sha256": "1682ab807950ed2b62d9e9d4908ee3c20c907e1c621f4d55e62260c068758851",
+      "postimage": {
+        "bytes": 4146,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "1682ab807950ed2b62d9e9d4908ee3c20c907e1c621f4d55e62260c068758851"
+      },
+      "pre_sha256": "9c5f39c89808e0dfafc9f5ba687e3b29591cb887b61a0caf4784461d8178c93e"
+    },
+    {
+      "card_id": "PR-001",
+      "changed_fields": [
+        "example_filename"
+      ],
+      "kind": "readme_projection",
+      "path": "错题知识网络/错题卡/README.md",
+      "planned_post_sha256": "3b0c74c96ecd9245a890ca10bf6c938a66cff9adae252187cf7d36b2fe8e5657",
+      "post_sha256": "3b0c74c96ecd9245a890ca10bf6c938a66cff9adae252187cf7d36b2fe8e5657",
+      "postimage": {
+        "bytes": 286,
+        "encoding": "utf-8",
+        "replay": "B42_prewrite_transforms.py deterministic transform",
+        "sha256": "3b0c74c96ecd9245a890ca10bf6c938a66cff9adae252187cf7d36b2fe8e5657"
+      },
+      "pre_sha256": "a95f48b7e50ec6471b2eded0ddc18d09937cb82f44cde2b88bedef46885173cd"
+    }
+  ],
+  "status": "passed_target_level_semantic_review",
+  "wiki_id": "MATHWIKI-REVIEW-090"
+}

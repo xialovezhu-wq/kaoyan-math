@@ -1,0 +1,3153 @@
+{
+  "asset_summary": {
+    "aggregate_blocked_external_card_ids": [],
+    "aggregate_blocked_selected_card_ids": [],
+    "asset_hash_drift_count": 0,
+    "duplicate_question_asset_groups": [
+      {
+        "card_ids": [
+          "GS-502"
+        ],
+        "decision": "same_source_alias_counted_once_per_sha256",
+        "paths": [
+          "错题知识网络/assets/visual_wrong_questions/GS-502/question_02.png",
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-599/question_01.png"
+        ],
+        "physical_path_count": 2,
+        "sha256": "024e6ee36c98e26da7385caf4752c8807926fc15915108c54d3673ac3ff87eb1",
+        "unique_content_count": 1
+      },
+      {
+        "card_ids": [
+          "GS-502"
+        ],
+        "decision": "same_source_alias_counted_once_per_sha256",
+        "paths": [
+          "错题知识网络/assets/visual_wrong_questions/GS-502/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-599/solution_01.png"
+        ],
+        "physical_path_count": 2,
+        "sha256": "fa6e75db9b837fa81e48c4d7f5ecabcfe7a8a25ba26afe4d085a5e7eba2c46a4",
+        "unique_content_count": 1
+      }
+    ],
+    "global_unique_asset_increment": 22,
+    "identity_blocked_external_card_ids": [],
+    "identity_blocked_selected_card_ids": [],
+    "identity_hold_groups": [],
+    "physical_asset_path_count": 24,
+    "physical_asset_role_path_counts": {
+      "question": 22,
+      "reference": 0,
+      "solution": 2
+    },
+    "question_only_card_ids": [
+      "GS-500",
+      "GS-501",
+      "GS-503",
+      "GS-504",
+      "GS-505",
+      "GS-506",
+      "GS-507",
+      "GS-508",
+      "GS-509",
+      "GS-510",
+      "GS-511",
+      "GS-512",
+      "GS-513",
+      "GS-514",
+      "GS-515",
+      "GS-516",
+      "GS-517",
+      "GS-518",
+      "GS-519"
+    ],
+    "reference_image_card_ids": [],
+    "same_card_alias_groups": [
+      {
+        "card_ids": [
+          "GS-502"
+        ],
+        "decision": "same_source_alias_counted_once_per_sha256",
+        "paths": [
+          "错题知识网络/assets/visual_wrong_questions/GS-502/question_02.png",
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-599/question_01.png"
+        ],
+        "physical_path_count": 2,
+        "sha256": "024e6ee36c98e26da7385caf4752c8807926fc15915108c54d3673ac3ff87eb1",
+        "unique_content_count": 1
+      },
+      {
+        "card_ids": [
+          "GS-502"
+        ],
+        "decision": "same_source_alias_counted_once_per_sha256",
+        "paths": [
+          "错题知识网络/assets/visual_wrong_questions/GS-502/solution_01.png",
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-599/solution_01.png"
+        ],
+        "physical_path_count": 2,
+        "sha256": "fa6e75db9b837fa81e48c4d7f5ecabcfe7a8a25ba26afe4d085a5e7eba2c46a4",
+        "unique_content_count": 1
+      }
+    ],
+    "solution_image_card_ids": [
+      "GS-502"
+    ],
+    "unique_asset_role_counts": {
+      "question": 21,
+      "reference": 0,
+      "solution": 1
+    },
+    "unique_asset_sha256_count": 22,
+    "visual_gap_card_ids": []
+  },
+  "batch_number": 32,
+  "bidirectional_owner_declarations_added": [
+    {
+      "other_card_id": "GS-510",
+      "owner_card_id": "GS-481"
+    },
+    {
+      "other_card_id": "GS-515",
+      "owner_card_id": "GS-488"
+    },
+    {
+      "other_card_id": "GS-481",
+      "owner_card_id": "GS-510"
+    },
+    {
+      "other_card_id": "GS-488",
+      "owner_card_id": "GS-515"
+    }
+  ],
+  "blocked_candidates": [
+    {
+      "current_formal_edge": false,
+      "frozen_pre_review_formal_edge": true,
+      "post_review_formal_edge": false,
+      "source_card_id": "GS-151",
+      "status": "blocked_until_external_endpoint_is_independently_reviewed",
+      "target_card_id": "GS-500"
+    },
+    {
+      "current_formal_edge": false,
+      "frozen_pre_review_formal_edge": true,
+      "post_review_formal_edge": false,
+      "source_card_id": "GS-504",
+      "status": "blocked_until_external_endpoint_is_independently_reviewed",
+      "target_card_id": "GS-589"
+    },
+    {
+      "current_formal_edge": false,
+      "frozen_pre_review_formal_edge": true,
+      "post_review_formal_edge": false,
+      "source_card_id": "GS-511",
+      "status": "blocked_until_external_endpoint_is_independently_reviewed",
+      "target_card_id": "GS-544"
+    }
+  ],
+  "boundary_receipt_writes": [],
+  "campaign_progress": {
+    "batch_number": 32,
+    "batch_reviewed_cards": 20,
+    "cumulative_physical_asset_paths_reviewed": 1026,
+    "cumulative_reviewed_cards": 640,
+    "cumulative_unique_asset_count": 852,
+    "cumulative_unique_asset_role_counts": {
+      "question": 583,
+      "reference": 2,
+      "solution": 267
+    },
+    "remaining_cards": 191,
+    "unique_asset_increment_note": "第32批新增 24 个物理图片路径与 22 个唯一图片内容；GS-502 的两组题图/解析图分别为同内容别名，均按 SHA256 只计一次。"
+  },
+  "card_writes": [
+    {
+      "card_id": "GS-025",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-025_2020年第15题2026.4.1.md",
+      "post_sha256": "ba9fc01b371ed2b03e8adfffa2e50ec9d266937a441821f1ca4b49148be2d008",
+      "pre_sha256": "549f87e1735b0dc02025be44db3f576205d6f1178cfa06e6289de982c0da6756",
+      "reason": "batch32 external owner delta removals=(GS-500) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-040",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-040_580612026.5.5.md",
+      "post_sha256": "b527ce665425bc52bdb89bbc29a649c3308a99e4a4cd04c609d52bae7879a5fd",
+      "pre_sha256": "912151e905a0395cc0633848b93d0a4699d7bfb71363149559eb19c81aecd882",
+      "reason": "batch32 external owner delta removals=(GS-509) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-042",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-042_1000B1.14.md",
+      "post_sha256": "2561d3702beecaec887fc6f17756b633c152649863d91096f5a5845c474ac244",
+      "pre_sha256": "860c8d9879f9f8d4dda0c7bada963249f9ccdadd95f9475ae584c110a73022fd",
+      "reason": "batch32 external owner delta removals=(GS-516) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-049",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-049_1677182026.5.11.md",
+      "post_sha256": "c31f8113d860671e27cefa58c9730df46c2243ca305e5002fd06deb94f1fcc31",
+      "pre_sha256": "09cf668c466531622a1183795cf0919b0cbd5095cf0914114dee1fc9da275e08",
+      "reason": "batch32 external owner delta removals=(GS-507) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-098",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-098_1000题B组5.38.md",
+      "post_sha256": "933168019682ef7ef654bdfddf38e705bc7098556c7faba271a5d53b9b992f6a",
+      "pre_sha256": "09e62376fc4dbfcb668b3117b1befbc5f6af335135081ec887f4564f7d2e8b2e",
+      "reason": "batch32 external owner delta removals=(GS-507) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-103",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-103_1000题强化3.17.md",
+      "post_sha256": "2d78fe407f835a30d34e766ce34d1503cf80b2e77295b65d6c3180a8601c9ea3",
+      "pre_sha256": "b10feb06789155d88066ef01d00005b73a9effbaee04ac0a895a136a461c4166",
+      "reason": "batch32 external owner delta removals=(GS-509) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-127",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-127_强化例题5.1.md",
+      "post_sha256": "5c9cc49dd7e745c07e643a0aa314cdb6147609803239e7cecab84ca165c1660d",
+      "pre_sha256": "c13233680d104bf688e86943c371e5449d2868619d20c528cd8cac74c656468e",
+      "reason": "batch32 external owner delta removals=(GS-507) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-138",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-138_1000题B组5.10.md",
+      "post_sha256": "94f61658469f4d96b0d0aa9873f3ec9f673c23027ecfbeec3ff4d950055a7d44",
+      "pre_sha256": "8978e231fee2192f981be2bacc5f7c73273aeca3e1392dc0c4ad8c69da711c3e",
+      "reason": "batch32 external owner delta removals=(GS-507) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-151",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-151_1000题A组5.20.md",
+      "post_sha256": "be8b83b40693e8972129e756f63cb6cf8ee9a0895528a0d0ee09c56b7a5f3fb3",
+      "pre_sha256": "8e03193aeb28569d04055f9ca36445a8c69e9de8f8be41641706524e9ee73248",
+      "reason": "batch32 external owner delta removals=(GS-500) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-183",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-183_1000题A组6.12.md",
+      "post_sha256": "32a775b1082da797b78fae6fb12cf80412f29ee475a8c67eb4a938f67abb08f5",
+      "pre_sha256": "e708e7b6db51ace65181dddb7bccdbd38306b536bac67309434e164532971b68",
+      "reason": "batch32 external owner delta removals=(GS-514) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-224",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-224_1000题B组5.35.md",
+      "post_sha256": "a9226e17736581a2d4f083603d1474ec2ad77d614fa51fd8aeafeb84b7ee2098",
+      "pre_sha256": "34353a8033b30d6c60445ac32616c53895c48b0130fb0661e0b25240227bdbed",
+      "reason": "batch32 external owner delta removals=(GS-506) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-226",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-226_强化例题6.11.md",
+      "post_sha256": "4f4d4e370e407a82721d3a0cdb0f01e59c8221ef960a987ad10933e43104fc3f",
+      "pre_sha256": "0372deb6af6a4666a295359efe519a626b1a147075b291b5b36e78fc7aaef05b",
+      "reason": "batch32 external owner delta removals=(GS-509) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-481",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-481_102409部分和子列极限.md",
+      "post_sha256": "4ef95e9bd02d2727bd5614528065c5fe6228c7ddfb3b75f390ce2a9cf52a3564",
+      "pre_sha256": "4aa572f69654ea8d403a1d3f38d17558e2fc5fa162c1b4c1ee2cad2f864ca120",
+      "reason": "batch32 external owner delta removals=(none) additions=(GS-510); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-488",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-488_57892指数因子罗尔.md",
+      "post_sha256": "5c8313abb6b95a888651abc61a116d7d2839638033c08f32c8edfdc041a8eb6f",
+      "pre_sha256": "b38cbe156d619b6c222231974a13377677bb7dbc1ac71f9d585fc3c17ad4286e",
+      "reason": "batch32 external owner delta removals=(none) additions=(GS-515); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-500",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-500_57941全部渐近线清单.md",
+      "post_sha256": "9c1f08451fb4757b302b905a5bfba185a8a0d327d90c0d73eb82cbaf421b62da",
+      "pre_sha256": "9a6741a2467592f49d2a6e3c9b6741de8b829ed27f4e1d5721f54454e99c7d91",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-501",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-501_19516交错级数有理化拆项.md",
+      "post_sha256": "83121691535d8387e8e4b27bb1d77a454e549f86818aa53ce883efc96a99df67",
+      "pre_sha256": "7e2a0ce3b1b73b9a5963d6d5a485313969067cc2382ff9334ab46ca140492dae",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-502",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-502_102347条件收敛奇偶拆分.md",
+      "post_sha256": "4aa92b394fbb791a74b4d78b84751709eff46857adeb561475a1c63aa365cea5",
+      "pre_sha256": "43d814e48b0b5778132542c9d1fa859e6becc4921c77d77931d34dd09db6fc34",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-503",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-503_78385有界因子望远镜绝对收敛.md",
+      "post_sha256": "a67d4bdedaa33a5bc66c327b0bc82a8e38b9c0b20b7e6ea26e15fc2e8925dc86",
+      "pre_sha256": "d52cda37959868304fce0f0ed9e222638fe9b56bec3de0fd46c77d6851aa6912",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-504",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-504_102355乘积配项绝对收敛.md",
+      "post_sha256": "4e1da04f5cd2a79f2c3e9a40936ccb3dcdab2033f41052e16da8faf04032be5c",
+      "pre_sha256": "779b9886e349f050c927d58fcf21d0b01319facde3b2d75c0bdd13b67ef0b8df",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-505",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-505_30185交错p级数条件收敛范围.md",
+      "post_sha256": "ee40402f3036c5d38737adc75abb6d30c10c4294fb397f5615fb4cb2f26caaba",
+      "pre_sha256": "a950d2cb2e99cbd43d2c884757fd97415ea15dd875805ba67d05b32b1df6f349",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-506",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-506_57844交叉乘反推商函数.md",
+      "post_sha256": "3f2cc2e1487629edac7359b00fca577c80bc3caa542591d72f5179232ae02cd1",
+      "pre_sha256": "abcfd1a79026dc97ed6aeccd7385e679718365437db9cf5bc94f9aa9e97cdba3",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-507",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-507_170727洛必达反用极值判断.md",
+      "post_sha256": "e57f31239c0533ded97e1ac69f20c3af49fd725e709b1963849f255df7af6e4f",
+      "pre_sha256": "9f4516c86b32f98b94cf3012e3b1f708e6004a3d9ed0802206e9194e83d21a06",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-508",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-508_58023四阶导泰勒判极大.md",
+      "post_sha256": "224ba4a8ae93fb392a8a1e1335cd3bb9fb23c2d2632f5dce86059b391166a93d",
+      "pre_sha256": "bf0f31892ba727c58374e0ddbef5013bc64058afede50fb3f2865ffc61b32b99",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-509",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-509_58085无穷远导数函数极限命题判断.md",
+      "post_sha256": "577438bbe97eb2c276b088b970682f9a581aed944a278ee2d9aa12203aa997ab",
+      "pre_sha256": "31d97d05adc4d3520821bdc9f94eb4223ab60e847572ad4cd682807850cecf46",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-510",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-510_102383调和部分和收敛半径.md",
+      "post_sha256": "236844c7db52f0f98ed412a87e6c02730ea85c544b74d461c34b8983ff21d8af",
+      "pre_sha256": "cbea3d4f451e3027382b027acd4588690197a9640726314967afa8f332aa95ee",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-511",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-511_102386缺项幂级数收敛域.md",
+      "post_sha256": "72dbc12ca091138e29a49d061e3050a2a7fa81a23043ee282169288de95fa36f",
+      "pre_sha256": "0da427be8eef563609709c86843376ac2394d01483e84bf8188f7395a30007a3",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-512",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-512_102389逐项积分收敛域.md",
+      "post_sha256": "7ce7562039faacc980bae19b37ae9c98d3ba6a198ac65dc5d9b00ffe30b988d1",
+      "pre_sha256": "49a5c7c3928ce4da01285576cd436562a40216b48cf7bce3bcb197aad8b36fca",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-513",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-513_57720含参方程根个数.md",
+      "post_sha256": "1dfa0e85752ed414a265ca62a105846ef9b2097098cc4abde48c65de7bc26614",
+      "pre_sha256": "3cc95f5027609a5e87e5b18f4a4cd978e4fa2ef214bfcd05f5dac3e8c018c46d",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-514",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-514_170676凸性端点不等式判断.md",
+      "post_sha256": "a5e2211bf03606db95a9e60a9e2863993e96b80f0e5cafddab3aaf448d7ba53d",
+      "pre_sha256": "a3e7891f9bcdba2d59dbfe54d2e945f89fdc8e7658fd63695806ea6b1e1a3390",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-515",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-515_170678一阶线性微分不等式积分因子.md",
+      "post_sha256": "67701d670aef4dcd869371a4b0bc6be1352b5fce2f41e409cabb32a8f8b5ffe2",
+      "pre_sha256": "5b059d1fd77722d22adbb35b62621a57760fd866cf51e5449d693e922ffaeb16",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-516",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-516_79209含参正项级数收敛域.md",
+      "post_sha256": "cd020c7425e08e15f31f0bd511d1cc124cae70ca89aa22b6e774a7fec16a6afd",
+      "pre_sha256": "f9e9d84778be91e3a3d0a80292c9b9dbbc0e32bdcbeddd9c156fce6bcb874627",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-517",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-517_102393幂级数变形判敛.md",
+      "post_sha256": "ca29408512dcffde2f51b3a32578ac3022cb93009e7d8382fe4b2da31cf71860",
+      "pre_sha256": "3830fa4782c5cf8efcbf2ef8c53341040f95df167e8b7f6a035ad803fe1c0125",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-518",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-518_102395和型幂级数拆分收敛域.md",
+      "post_sha256": "88cfcc4b7081751678edc96f9b5a8fa6cf6d2bb25afa13b120e3060d1d010255",
+      "pre_sha256": "c5a5ec345b7735c119d27bb6957f6b4e030298f0d0e31928ad61d76962a7a7a5",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-519",
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/GS-519_102397卷积型幂级数和函数.md",
+      "post_sha256": "0634e29da270127f9ba2c20fad77b0267da0267d0fbf8d6edb55d9ca84f773a5",
+      "pre_sha256": "bdb6c6cd46e9dfb668d96e8bd61da1fc4a10b2f1ebe274506e2ec1d7ecbea2ae",
+      "reason": "review_evidence_repeat_visual_relation_and_content_repairs"
+    },
+    {
+      "card_id": "GS-521",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-521_82157先导后积求和函数.md",
+      "post_sha256": "fcd5e72a4395fe37b9dca2217e96da7f4034098363223e4f9a9c35af250d649d",
+      "pre_sha256": "df7bebfd2feebbff4e2a918b092a0011cffda9118af53b73932447c885802e47",
+      "reason": "batch32 external owner delta removals=(GS-512, GS-519) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-522",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-522_19533分子含n求导求和.md",
+      "post_sha256": "909193843c50702280a44a27f621d6af52148c7ead62e5371b7dff46ba6da0a0",
+      "pre_sha256": "a3935a065140dd368c2b5a7eb1864d10bc35c778798ebf6ea420926cb90b6a4c",
+      "reason": "batch32 external owner delta removals=(GS-512, GS-519) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-525",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-525_58001导函数图像判极值拐点.md",
+      "post_sha256": "411de9d29046b8a24ba25f99786eb8273000b25940e260ec4b6993938a3ef832",
+      "pre_sha256": "6f5579f1c2f3011dc14bc4a79109b7313e80a7e4c3e3954d030dc8e3313982aa",
+      "reason": "batch32 external owner delta removals=(GS-514) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-533",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-533_62180幂指泰勒展开.md",
+      "post_sha256": "1602059d44c61da319ec8c779c3930e771b60fd177a513d1204b5c8e38aa0449",
+      "pre_sha256": "bbeb6a1c6703d732293a34d95d29b1f82892e845cd7375dc9c6399137b210ffd",
+      "reason": "batch32 external owner delta removals=(GS-516) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-537",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-537_57803已知极值点判极小.md",
+      "post_sha256": "353220e02b96a75c553ca66ece3d1c9fe1090205441d917eaedbb7a8549f132a",
+      "pre_sha256": "fa33b23e10f3de3acf3d35e7c7a8913bd7898b3dcb0e95fe977141ca0b7d7210",
+      "reason": "batch32 external owner delta removals=(GS-507) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-540",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-540_57893切线截距极限.md",
+      "post_sha256": "c3ffc0d0a6771674150db707a4f90b6c01b8ad6d04e3239941a13d133a36b9cd",
+      "pre_sha256": "444f71310c46804f0efecc607da00786af3a7ada9aa30bbb86dad84ae2c92612",
+      "reason": "batch32 external owner delta removals=(GS-507) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-541",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-541_170696导数单调证严格凸.md",
+      "post_sha256": "4bb561f8c487a561603cd8a1ba80615011725ee3a3ce7f605103d909cc481089",
+      "pre_sha256": "33191d955a0b5e42634fb73ad0576143de44e225572c01193a8eb7476dff3c01",
+      "reason": "batch32 external owner delta removals=(GS-506, GS-514) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-542",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-542_170699行列式割线斜率递增.md",
+      "post_sha256": "5da708bae6c9a514344b5ef83a0d5bc82879f2a1e4424c29a98f8db94b6c529f",
+      "pre_sha256": "006c7cfaf1e51287c56618a47ecfb985a841f266184e8aa6cc499d7dca696d5c",
+      "reason": "batch32 external owner delta removals=(GS-506, GS-514) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-544",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-544_78933幂级数收敛域和函数.md",
+      "post_sha256": "6a27beb60d7beadeb751c536e0007ab22004cf0c06c485777fde5331c498a49b",
+      "pre_sha256": "9950fddea9ecc9f04a6c0991c34dcc57e7518724909c8938311a9ffa1f76799f",
+      "reason": "batch32 external owner delta removals=(GS-511, GS-512, GS-518) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-545",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-545_79077递推系数幂级数求和.md",
+      "post_sha256": "a75732c6030d175c5e7ff4f24b6c2994e1b32307801625b2219782eecf76347d",
+      "pre_sha256": "51af7885953d88398d66ae5f2b805b03fb2698ee1c5bf8974fb145197f86dda3",
+      "reason": "batch32 external owner delta removals=(GS-515) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-548",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-548_102417对数化归幂级数展开.md",
+      "post_sha256": "40469d3da8ae4925cd5a3e711b5b9fdee6e40b2a344f46dbec143bf39212daa3",
+      "pre_sha256": "fda49c5de462e77709343feb57ee884e14001622d1d8c14f0ddec8f02c02bdc6",
+      "reason": "batch32 external owner delta removals=(GS-519) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-549",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-549_77603反正切幂级数展开.md",
+      "post_sha256": "c847d3c7aff513a0b87879f6a58fc99fb9609f2b05676ed1ed28e8aa2559e1fd",
+      "pre_sha256": "005a4f56068d100ea46f5fa0a53b76891b80d0fa866fa84262b19dcc3518ce28",
+      "reason": "batch32 external owner delta removals=(GS-511, GS-512) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-552",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-552_138716对数小量通项判散.md",
+      "post_sha256": "c8e853d660d31de77ed79170d7fce6dc7642a7ab7e92bc3e8c2d1c8481356bc3",
+      "pre_sha256": "e3ee13e5094035b3000ff5f85904872b21e318664146b185f9f5f2953cc3dc0b",
+      "reason": "batch32 external owner delta removals=(GS-516) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-555",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-555_138805对数阶乘判散.md",
+      "post_sha256": "d8694c108c21484bb4716dc5b969ad39f6b92f4e8456a9df374336501d5ff151",
+      "pre_sha256": "a3e0bc7c72ce9fa20be068863acca16b85e2303192cb23d007a810f2319724b4",
+      "reason": "batch32 external owner delta removals=(GS-518) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-558",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-558_138644幂对数化归p级数.md",
+      "post_sha256": "3fa2ec8316daa6cc74d5bdd4b9d10af850a608d8584410e8a8740b2406217f80",
+      "pre_sha256": "c12f98c48cbf39654628076037f237d0dc7335f75a082280c12e2dbfe4c44eb7",
+      "reason": "batch32 external owner delta removals=(GS-505) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-560",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-560_138655根式差式判敛.md",
+      "post_sha256": "af0bd7badc0c1b07a6b858107695e6c91837b28ba29db577bbd1a02e1014757e",
+      "pre_sha256": "7bd23e20c3f15583246eac6aae613b22d5c1616ff1d59002deb630d67880d465",
+      "reason": "batch32 external owner delta removals=(GS-505) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-564",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-564_138677导数项差分判敛.md",
+      "post_sha256": "aa9912494b9b28353ff03be76a4efc9aed1b927e0d7a3657207307f7423ce613",
+      "pre_sha256": "cbbb3c5ca622ac70a058272237a1b0af8cfcb855a1574d8d091f2cf5db432792",
+      "reason": "batch32 external owner delta removals=(GS-503, GS-506) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-565",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-565_138688根式差幂判敛.md",
+      "post_sha256": "3091a3b206e7cd0b49223d99faadc80568015fad5b03c78cc0f082b6f893a870",
+      "pre_sha256": "8ec70801258407fbcbd7727dad56226e22da2ac1e2909e5971d734db714c9e86",
+      "reason": "batch32 external owner delta removals=(GS-505) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-566",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-566_138692相邻差望远镜判敛.md",
+      "post_sha256": "8e626a5486256c6a19551a09daf36ce0d6186b4414ac086890aeee6514be22d9",
+      "pre_sha256": "ae9b2780f54261e8e18579df24f46226a4a6e8e4ae11a7fa98b0f2102a7e5f81",
+      "reason": "batch32 external owner delta removals=(GS-503, GS-505) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-567",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-567_138703极限比较p级数判敛.md",
+      "post_sha256": "2a7d48d734ea1337a322bf231bbfe31987ed09bd63e7cc366c207468caf083b9",
+      "pre_sha256": "cae57e6aef7e2776c3526ee34bf231cee9034b6a040fdf1d84be58bc7b3d47e9",
+      "reason": "batch32 external owner delta removals=(GS-505) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-568",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-568_138709抽象级数反例判定.md",
+      "post_sha256": "0ce6a5858f7190b479dd96f47ccf3b0623a10f1907c2402da59e1fae2452c36f",
+      "pre_sha256": "f5903e3dab7a3392e7d15b7b02438c9a57ace677cc1b0bcbce6e2b1e4443b2b3",
+      "reason": "batch32 external owner delta removals=(GS-503, GS-504) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-589",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-589_138734乘积配项绝对收敛.md",
+      "post_sha256": "731c64fb1fc5ca3aaaa4e2064bd40c8762351429f6be3f90792e8462fa69e528",
+      "pre_sha256": "a4e69753f0627b7c2b0dbc198536e183fbb1590ff464e78680a5f7dd078be992",
+      "reason": "batch32 external owner delta removals=(GS-504, GS-505) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-590",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-590_84426差项桥梁充要条件.md",
+      "post_sha256": "414d0e5de0aeb0133ba9ac374c508d18076e45da6194e3f926bde27da375eab0",
+      "pre_sha256": "c508d49248e320cdf623de6ebfdb2c8cc6ece08997a9a3c9b3e1c33b229df070",
+      "reason": "batch32 external owner delta removals=(GS-504) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-598",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-598_138763根式扰动交错级数.md",
+      "post_sha256": "d7195c46e41133b9954d939bf1801d8236339067d9f4bdc58950d48f850cea27",
+      "pre_sha256": "acb326ea63e25d9a9b93e3ddf4d43a90dccb71b2c1442cf8c81e7f39b8b05c08",
+      "reason": "batch32 external owner delta removals=(GS-501, GS-502, GS-505) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-599",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-599_138778隐藏交错正弦级数.md",
+      "post_sha256": "75a2bb7c099b68d7653f078c698e6ec3101d825417548c82d6537ccc3f235bdd",
+      "pre_sha256": "26b086b97b099ea991a1046441be6d252ad56e59b2ea26604eda32b847e73b1c",
+      "reason": "batch32 external owner delta removals=(GS-501, GS-505) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-606",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-606_138781加法项拆等比调和判散.md",
+      "post_sha256": "bf246885afb6fd2ebc6fe0185bdd535d6a296e613108f6e3a5eec9d9747324ba",
+      "pre_sha256": "7efc8270f01c4dd8fe887af9c1b4999af9416297768f197a92609567139c17ad",
+      "reason": "batch32 external owner delta removals=(GS-502) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-607",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-607_138782交错有理因子拆主余项.md",
+      "post_sha256": "3a8f26a40de9a9f4f30070e3a307573c8652f22e5328f23fa2eddf7b65dc4048",
+      "pre_sha256": "d7939afb9a0ea66e6279e6969568fac2f0ac2f6685934707de3c51f9b31c750b",
+      "reason": "batch32 external owner delta removals=(GS-501, GS-502, GS-505) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-611",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-611_79147拆级数几何积分型求和.md",
+      "post_sha256": "ae214443d95a8e5ac946a9c19cecb2dbf8e410be2663c0099a04a905617f3a8a",
+      "pre_sha256": "b8fa590b89ed57e92b0573c029a16dcc6898a7a1d2b09ffcd9964baa5b067770",
+      "reason": "batch32 external owner delta removals=(GS-512, GS-518) additions=(none); synchronize related, body relation statement, and last_updated"
+    },
+    {
+      "card_id": "GS-612",
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/GS-612_77127对数复合二次式展开.md",
+      "post_sha256": "753f548faf190016ba3ae0f72b931c46a95c99190c05a92b995fec2a8c26f20e",
+      "pre_sha256": "2088a10e67b618dc85b48bf7f234f727ea726c04fb01bbde058ffc65f5e4d4d7",
+      "reason": "batch32 external owner delta removals=(GS-519) additions=(none); synchronize related, body relation statement, and last_updated"
+    }
+  ],
+  "closed_on": "2026-07-24",
+  "closeout_id": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260724-B32",
+  "derived_evidence_graph": {
+    "attempts_this_batch": 1,
+    "command": "python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py build",
+    "completion_evidence": "single_process_finished_and_all_35_outputs_rehashed",
+    "final_successful_builds": 1,
+    "outputs": [
+      {
+        "bytes": 32923,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-008_全库逐题语义复核第1批20题.md",
+        "post_sha256": "ca6a5162218bcced410b8981457e4d27e2081de42418ac6a328b21adb64474cf",
+        "pre_sha256": "0959ceb367df8c6960690b2ec561f1765fc7e3312b36507fbfca3feaeb593a81",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 32512,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-010_全库逐题语义复核第2批20题.md",
+        "post_sha256": "ccccdce532eb3e28ac171c31811bb85b5683c0cd6a0cdb62486205a051a90362",
+        "pre_sha256": "78350aaf4d67ddc05170374126907da5caf32e98119a6bda524668315c2bd543",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 34984,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-012_全库逐题语义复核第3批20题.md",
+        "post_sha256": "89889b78d9be3a1e5a3247c879824f49ec58cb0e666bd7b33bee4ae2520d27db",
+        "pre_sha256": "8c1024863ec8927dd97af9a52b842d675d5c7fdb0413d6636f596097a073bbe7",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 38122,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-014_全库逐题语义复核第4批20题.md",
+        "post_sha256": "faa5b787350c838da54bfc7b45e97ba5beffbebd6b6f215ae89212f0e6e19017",
+        "pre_sha256": "c9afa685e873de369b61b768af153f828bf6b5b2c27492a9659d2af660854808",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 37850,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-016_全库逐题语义复核第5批20题.md",
+        "post_sha256": "6b80667d09b7b944ff969b9c1c77441c129108d0f6c28e09f0cf24e1e03350bd",
+        "pre_sha256": "0a436760f343846c2dd68d5bc29e74463fcb98826a1cc22a27f7d6666f9a0913",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 45957,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-018_全库逐题语义复核第6批20题.md",
+        "post_sha256": "bb493659a0bea07eb818574b9b9656f3b0908914aab1f2013f0e0b3d33b62731",
+        "pre_sha256": "c73ad4fb302d64d58d5c4b51fa2bb80522803bdb209ac324f0e93e934c30f2fc",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 52151,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-020_全库逐题语义复核第7批20题.md",
+        "post_sha256": "e57be1fd26a63738cc46cb84d6dc1765b044829ee97faedc5360a53bf6445aa0",
+        "pre_sha256": "f9d667c08940915188056b511d2c1bf2518461c8bd6c33ad64d62795b0ed8e40",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 47429,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-022_全库逐题语义复核第8批20题.md",
+        "post_sha256": "601ec13bc8e62d72c20b1959469c4eb0d71ed08c60ec0d2ce3d1cab2d35072eb",
+        "pre_sha256": "cea548074e2dba5615a674eac6e9bf05fb9cfd5c88a53d05a9afe5939ed3913f",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 40091,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-024_全库逐题语义复核第9批20题.md",
+        "post_sha256": "5aea1f72c353de1b2a6d6b3c8d15aa113fb08a04049ef50b7b9ae2dd35785a24",
+        "pre_sha256": "7093d19f0879615f8a5b9f345e334d7bbebc72829f7b05f27f52dffbf2bb79be",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 38472,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-026_全库逐题语义复核第10批20题.md",
+        "post_sha256": "7aa05b78a3722628cb7936899c4115c2f02544db14c112fb0f52ae85facd30ad",
+        "pre_sha256": "9b5316cbaa66fb1a01a5b2b14c9ac115b78952e2233c30ecc52f69b5fbb8730b",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 37887,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-028_全库逐题语义复核第11批20题.md",
+        "post_sha256": "c8df945cdd58993bff53a3234e2cd74337d549cf3de3b1f9cce392ee3a084db0",
+        "pre_sha256": "66ac4776c8dc15c5b8f6a28f6cab4d33f45736cd730efdc1e5ef648cc6f35907",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 40739,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-030_全库逐题语义复核第12批20题.md",
+        "post_sha256": "de843aedb049c8fb2c88b38d7ab1269c6681b506b9f2c54de2dc9adf77d43a1f",
+        "pre_sha256": "2cbb12221587e765396de7cd823eff8066a396ed77191c7dc554e618e8cfae92",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 42196,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-032_全库逐题语义复核第13批20题.md",
+        "post_sha256": "fd410ed2e4629231a63be093d9272d72a97e8772b387a752be8b22233558a324",
+        "pre_sha256": "192e359ea4599b5dce9d6ade6589c30fe5c8fcaf6189b2d004b67fb6baecb540",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 41882,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-034_全库逐题语义复核第14批20题.md",
+        "post_sha256": "07160988505af1b2a3542ec85db7f7d3f398fb59c8d80569397e2fedd06d4ce6",
+        "pre_sha256": "9089c922d2f7bb1fe1a639a50b8da34b84ab91c6255391d192ca03f75bd83f2d",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 44761,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-036_全库逐题语义复核第15批20题.md",
+        "post_sha256": "88b88680dc5c08bc5f5f4f22afb6230c81f57171ca6c325a6aca5f25f9eb1dfe",
+        "pre_sha256": "d8897be77256757b548cac1bfc7777ecbb726a476c8df532cd6cbd3901b54eb8",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 44893,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-038_全库逐题语义复核第16批20题.md",
+        "post_sha256": "42a88a1157c607f3a079d09d4f892037b7c939c87c58efa9a23db216a2a85463",
+        "pre_sha256": "a15bca6c866ff283db440d3f522cf8e6801173fadbc499a7ac50c1ffbd7afb4c",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 38230,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-040_全库逐题语义复核第17批20题.md",
+        "post_sha256": "ab23d27b42e1e99569f553762ff01414b35b31ca77f51e79ab5bbb21dcdd166d",
+        "pre_sha256": "43d74f2e9c0f6668871af07f8095767eff261d54794c8bfaecb3334be422e150",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 36525,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-042_全库逐题语义复核第18批20题.md",
+        "post_sha256": "c892f65e5948515467aa76735960c0af871d19656ff2384fcdf45ad00aba9f44",
+        "pre_sha256": "9010b56ed7e513a85c66858c820f3c9fe4c9527a11339524022f5bb042c8f1d3",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 47863,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-044_全库逐题语义复核第19批20题.md",
+        "post_sha256": "e492898a273da651607a6ca99c587d6d44b981e3c82010e440ecd9decb7933b2",
+        "pre_sha256": "b7df3d33b696229c4186a1f99a1cc1f2ffa87e16254731e37b3760c111109a26",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 54357,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-046_全库逐题语义复核第20批20题.md",
+        "post_sha256": "5f8cedb28abdae8108b396b4fd689ed56c5b8f8c6ab18c3f816a812eac1db491",
+        "pre_sha256": "bf002475ba875a55fde17f270073ac596e47314c7c246b6f3ecab503f0b9d440",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 45765,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-048_全库逐题语义复核第21批20题.md",
+        "post_sha256": "6bfa6ee574af443e9d46d690fabd8b25f537c234cd570d2da33ff4f8625d0dc9",
+        "pre_sha256": "ecca725df7543eddbb8f6b19e1c71e3e8f6c8ca71129ca8ab20f2e6a5ec95511",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 46337,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-050_全库逐题语义复核第22批20题.md",
+        "post_sha256": "9dc530d952b7a3348493a28d8d3906d50427385d51548ebbd49146b1826f3c4c",
+        "pre_sha256": "c66ca84a9145ec4b9eea9bcd0a31766c2e294f2fb4c04d89b501f8be0d3f931b",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 42712,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-052_全库逐题语义复核第23批20题.md",
+        "post_sha256": "00214fa612833d100d8da700f07aee10ab9d3e3ff2910285854ccb3448fb36cb",
+        "pre_sha256": "7aecc38b34ac095bc74f5b10e35f7a90b1ea0c4994f0061e2abab9f88083dd3e",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 37376,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-054_全库逐题语义复核第24批20题.md",
+        "post_sha256": "d8b129c427439971394078194767bec5b99e30372517157ca0354545f87e006e",
+        "pre_sha256": "880d2bc66e468b7d97f813da99c46d1ca6ceb8037c0c7c483a77a4a5c1066576",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 34282,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-056_全库逐题语义复核第25批20题.md",
+        "post_sha256": "5fad0ad11510c643c0941fbc3d41e30ebbce9211b9adf88a95f7f38c5b4c39c1",
+        "pre_sha256": "6dd17985939fbee7bdf17d417b2325240d9ad7a8625b3d280457db59eeef1e31",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 36199,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-058_全库逐题语义复核第26批20题.md",
+        "post_sha256": "a568bd81ae7eda2fdbf93aeaaa56dff6e17349f2331a51d80197f49b853c0de6",
+        "pre_sha256": "016f180771ce93d42151299220204f7a099748955f31918af873ee2d5338d898",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 36422,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-060_全库逐题语义复核第27批20题.md",
+        "post_sha256": "d8ca311b595e7ec3cac32a624f0d98cfd932e2f9d94327aa16b6e98bba4db878",
+        "pre_sha256": "398b66a498e65c753f668a5b067424a0da3a6c10163f5be7251cdb2560882692",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 36344,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-062_全库逐题语义复核第28批20题.md",
+        "post_sha256": "bb2a63514c351ce2823e2c6d60c16448f7e18f950efe683f4e80f0a274bf499d",
+        "pre_sha256": "5d1656a7b9b62a0960b8beba63a433722ea8606b499ebe5734ad34c928d7e43c",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 45532,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-064_全库逐题语义复核第29批20题.md",
+        "post_sha256": "63e432f450af529b7249731f640e18f14ce69f05da5df704721ca87027b2fb58",
+        "pre_sha256": "ff831e8e114f8f456277b31e13d56bba218d201db627c3ba04777620adbff6f3",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 51199,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-066_全库逐题语义复核第30批20题.md",
+        "post_sha256": "e134587140f4af34ce17f18c1c2b06b07dbbe4c35cc0cf0878d4e00fdebcc7de",
+        "pre_sha256": "7ebaad8f04d2f97f9e2e4b621748dcfb809ebb44610e6530a52193ed490bf1e8",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 62092,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-068_全库逐题语义复核第31批20题.md",
+        "post_sha256": "8e15fe0df8932985c82cba88e0a3238016c8b5c3bdc8bc65c53069bb5cea48b3",
+        "pre_sha256": "fdf8f5c6ac1588227b44b7586ad19c6742daa2720972ff02623f5d32f32a593a",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 60281,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-070_全库逐题语义复核第32批20题.md",
+        "post_sha256": "ac50742c339bf2523f4751f16689954755c29170f3bc3257df4de538ee7a735a",
+        "pre_sha256": null,
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 18584524,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/synthesis/MATHWIKI-SYNTHESIS-002_知识点错因证据图谱.json",
+        "post_sha256": "98f5258a75635f6d96c2d52828a7ce6dd7465f08daa24cb197b66d3a3fa8b00d",
+        "pre_sha256": "68705c04cf25e81a6d11a3548efab230605571e0eb75b8551be607c6f53aa64e",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 183355,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/synthesis/MATHWIKI-SYNTHESIS-002_知识点错因证据图谱.md",
+        "post_sha256": "52a6fa3e770040e55f8a2607c01eb32b20339769822212388602de8fefeff05f",
+        "pre_sha256": "132245fade079806b7bb0d626539e47c70f67abac3861a15e450e8acb8946e13",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 589396,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/wiki/synthesis/MATHWIKI-SYNTHESIS-003_逐题内容与视觉证据索引.md",
+        "post_sha256": "b1d9cc44ecf5a3eca48c56f9bf249ef27b6cef521f0fcfffee8c35f173366ef0",
+        "pre_sha256": "8258ca26b78e824e4393922acd77a9d68b73652bdbe774809c234b87418a8be9",
+        "superseded_post_sha256": null
+      }
+    ],
+    "source_state_sha256": "aa8ed3bf6e0268e6f478ffad36c4d704ca8b78a3a7d61bca9d283c519fa9b4b2",
+    "successful_builds": 1,
+    "superseded_successful_builds": 0
+  },
+  "historical_lineage_revalidation": [
+    {
+      "added_edges": [],
+      "affected_card_ids": [
+        "GS-025",
+        "GS-040"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-027_全库逐题语义复核第10批正式收口.json",
+      "closeout_post_sha256": "d3d7a17272c7df57263c1a01afb169a1e07adab52b4e42b397e69f40b4785846",
+      "closeout_pre_sha256": "6fc07ab312794b53a4611a09ef2ac8a5fbd9e4c04c5099938ec81ebccabf1051",
+      "current_related_by_card": {
+        "GS-025": [
+          "GS-017",
+          "GS-024",
+          "GS-029",
+          "GS-533"
+        ],
+        "GS-040": [
+          "GS-568"
+        ]
+      },
+      "reason": "第32批重绑第10批共 2 张历史卡的关系导航哈希；原逐题语义载荷、validation 与既有谱系保持不变。",
+      "removed_edges": [
+        "GS-025--GS-500",
+        "GS-040--GS-509"
+      ],
+      "review_batch_number": 10,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-026_全库逐题语义复核第10批20题.json",
+      "review_post_sha256": "4fb1e9c32b109c36810e138a003796788919e59d65ef5d34e0707f813e90d3cc",
+      "review_pre_sha256": "29498c2e687f3a5c42a5cbd900d016b34388dfb3f7b445b6c7bfe43da0724d8a"
+    },
+    {
+      "added_edges": [],
+      "affected_card_ids": [
+        "GS-042",
+        "GS-049"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-029_全库逐题语义复核第11批正式收口.json",
+      "closeout_post_sha256": "5d23efb971c6b15e2ab3d29a58f7c5aee7dd93748803d3c245a4360a6a634e21",
+      "closeout_pre_sha256": "240fdd1e700b749c59939c7f85edff1b5111e4ead04453f5e97585380b7139d3",
+      "current_related_by_card": {
+        "GS-042": [
+          "GS-440"
+        ],
+        "GS-049": []
+      },
+      "reason": "第32批重绑第11批共 2 张历史卡的关系导航哈希；原逐题语义载荷、validation 与既有谱系保持不变。",
+      "removed_edges": [
+        "GS-042--GS-516",
+        "GS-049--GS-507"
+      ],
+      "review_batch_number": 11,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-028_全库逐题语义复核第11批20题.json",
+      "review_post_sha256": "cae88bf7264e4242f56dbb093591430e32e2cbb622d9ddadabd18a01c99fa4a0",
+      "review_pre_sha256": "5f388e90ce5e81a7d7cb141f3a287dbee111b6a4f98db3a848c6e27e997aa53f"
+    },
+    {
+      "added_edges": [],
+      "affected_card_ids": [
+        "GS-098"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-033_全库逐题语义复核第13批正式收口.json",
+      "closeout_post_sha256": "fa80bee701e56024a4fa2e8e708231a0b601949477ee0fae7e622678d2ebc498",
+      "closeout_pre_sha256": "4f278b858b6494376641246e73f6418de769dbc81eb2d7d4003bc28bf4a34557",
+      "current_related_by_card": {
+        "GS-098": []
+      },
+      "reason": "第32批重绑第13批共 1 张历史卡的关系导航哈希；原逐题语义载荷、validation 与既有谱系保持不变。",
+      "removed_edges": [
+        "GS-098--GS-507"
+      ],
+      "review_batch_number": 13,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-032_全库逐题语义复核第13批20题.json",
+      "review_post_sha256": "ee37e92314d0569f488f796e03ab13781143d9cbcae8612102912bf45c74481d",
+      "review_pre_sha256": "6eed26dcc3634c19a9a171383e281c0b9ac26c3b52458c66e44deff48ccd68d5"
+    },
+    {
+      "added_edges": [],
+      "affected_card_ids": [
+        "GS-103"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-035_全库逐题语义复核第14批正式收口.json",
+      "closeout_post_sha256": "28da03b5a76c1440545e925f97278622f2c7e1c2650ea99f6839fa31316cbde6",
+      "closeout_pre_sha256": "d57cf07f343709cdcda3eeda775f584fcf29ba386ce938a775b66a9505f1c1b2",
+      "current_related_by_card": {
+        "GS-103": [
+          "GS-223"
+        ]
+      },
+      "reason": "第32批重绑第14批共 1 张历史卡的关系导航哈希；原逐题语义载荷、validation 与既有谱系保持不变。",
+      "removed_edges": [
+        "GS-103--GS-509"
+      ],
+      "review_batch_number": 14,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-034_全库逐题语义复核第14批20题.json",
+      "review_post_sha256": "55da8a1160fb0c304b0e651a699effc2c2df6fe4c620582532f65aac41788839",
+      "review_pre_sha256": "fe0a5744ae99883a80fcef3bb767f90e354d8eea4d59a741da36b53df037e0ed"
+    },
+    {
+      "added_edges": [],
+      "affected_card_ids": [
+        "GS-127",
+        "GS-138"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-037_全库逐题语义复核第15批正式收口.json",
+      "closeout_post_sha256": "c7eb2a79170ed1fddc6a30fed0c134c14062568892e28c718eb539bab9146be0",
+      "closeout_pre_sha256": "7f92d173becf9686df7a11297480744e5239125d38be07596e43ef2c9e2aeb53",
+      "current_related_by_card": {
+        "GS-127": [
+          "GS-540"
+        ],
+        "GS-138": [
+          "GS-234"
+        ]
+      },
+      "reason": "第32批重绑第15批共 2 张历史卡的关系导航哈希；原逐题语义载荷、validation 与既有谱系保持不变。",
+      "removed_edges": [
+        "GS-127--GS-507",
+        "GS-138--GS-507"
+      ],
+      "review_batch_number": 15,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-036_全库逐题语义复核第15批20题.json",
+      "review_post_sha256": "bdde806bd83435a373f191320149de2ba2b00aeeea1d4d1e89791f1db1706cac",
+      "review_pre_sha256": "4a8db647116a7014106c02fdd6a8c356e07eb3e98128d3fa85ccf869f13b2d1f"
+    },
+    {
+      "added_edges": [],
+      "affected_card_ids": [
+        "GS-151"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-039_全库逐题语义复核第16批正式收口.json",
+      "closeout_post_sha256": "8f51135846e13b344ca03c860d6aad3a854e4871d48437b0145da0fec26c6fa7",
+      "closeout_pre_sha256": "1c7cb09c81d9686da94e878c42ee2ad3606bc2e8f2dc40cdf05c5ff6987c5881",
+      "current_related_by_card": {
+        "GS-151": [
+          "GS-017",
+          "GS-150",
+          "GS-158"
+        ]
+      },
+      "reason": "第32批重绑第16批共 1 张历史卡的关系导航哈希；原逐题语义载荷、validation 与既有谱系保持不变。",
+      "removed_edges": [
+        "GS-151--GS-500"
+      ],
+      "review_batch_number": 16,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-038_全库逐题语义复核第16批20题.json",
+      "review_post_sha256": "b25d289d5c8d675befe85b8ba2a73d2491b3be8345b28a10740097f8df6db236",
+      "review_pre_sha256": "4879ab835c51c9fc684289d449ffc579b972c2bb9a67e272c4b4be3f27ba4944"
+    },
+    {
+      "added_edges": [],
+      "affected_card_ids": [
+        "GS-183"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-041_全库逐题语义复核第17批正式收口.json",
+      "closeout_post_sha256": "186126ad4d678e3b6cfd1a62a7873f3f43f5365beb0f8b0f1752f047ce059e0e",
+      "closeout_pre_sha256": "842480e1fa49fcfd432f4789d89fa305e3a39051a67f1539ad40efde479d7c47",
+      "current_related_by_card": {
+        "GS-183": [
+          "GS-664"
+        ]
+      },
+      "reason": "第32批重绑第17批共 1 张历史卡的关系导航哈希；原逐题语义载荷、validation 与既有谱系保持不变。",
+      "removed_edges": [
+        "GS-183--GS-514"
+      ],
+      "review_batch_number": 17,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-040_全库逐题语义复核第17批20题.json",
+      "review_post_sha256": "0c2630ba31fd4bd54c2ffc0375e50d7d03e1e4bffbca0ec5671603bac98a7499",
+      "review_pre_sha256": "080091d0bfa84f4c83e2bd0d1a71c7ef892134e1ec10f5a9635f6c4659eb22c2"
+    },
+    {
+      "added_edges": [],
+      "affected_card_ids": [
+        "GS-224",
+        "GS-226"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-045_全库逐题语义复核第19批正式收口.json",
+      "closeout_post_sha256": "9d2f04e58a163a57cd0e93eac78b701a50e21a178ee64234415a33ab858e12c3",
+      "closeout_pre_sha256": "cb219c01a789a0d9d6d777022183f3cb691f44647e44f24d7ebd17bb08736859",
+      "current_related_by_card": {
+        "GS-224": [],
+        "GS-226": [
+          "GS-223"
+        ]
+      },
+      "reason": "第32批重绑第19批共 2 张历史卡的关系导航哈希；原逐题语义载荷、validation 与既有谱系保持不变。",
+      "removed_edges": [
+        "GS-224--GS-506",
+        "GS-226--GS-509"
+      ],
+      "review_batch_number": 19,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-044_全库逐题语义复核第19批20题.json",
+      "review_post_sha256": "d955f3c7aa28a35842face4caaa48b738754996eb97d8feae7bc101ca538b5f1",
+      "review_pre_sha256": "4053e79a835ff017657ebcf20392d194afd8eb85c643a3e564b530cdcd06ceaf"
+    },
+    {
+      "added_edges": [
+        "GS-481--GS-510",
+        "GS-488--GS-515"
+      ],
+      "affected_card_ids": [
+        "GS-481",
+        "GS-488"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-069_全库逐题语义复核第31批正式收口.json",
+      "closeout_post_sha256": "1ce81e230117ce5d4e01a6a1f293bea5d0c1581f55ede94d185a1e6bd61b0f6e",
+      "closeout_pre_sha256": "3a4823b94a9a9621c4301ded2c6c29516ad6350caca9cfc2c254f92e415b1a05",
+      "current_related_by_card": {
+        "GS-481": [
+          "GS-510"
+        ],
+        "GS-488": [
+          "GS-515"
+        ]
+      },
+      "reason": "第32批重绑第31批共 2 张历史卡的关系导航哈希；原逐题语义载荷、validation 与既有谱系保持不变。",
+      "removed_edges": [],
+      "review_batch_number": 31,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-068_全库逐题语义复核第31批20题.json",
+      "review_post_sha256": "66be063089307d4d862ad992b7263abdc12a4c5443c4abde6d9241edd09f0440",
+      "review_pre_sha256": "348e33886ba9d0d2748d4c9982329d17e5e77f43ddfa9808e4e4a0334580ba0d"
+    }
+  ],
+  "mode": "authorized_full_library_semantic_review",
+  "no_strong_edge_sentinel_card_ids": [
+    "GS-500",
+    "GS-501",
+    "GS-502",
+    "GS-503",
+    "GS-504",
+    "GS-505",
+    "GS-506",
+    "GS-507",
+    "GS-508",
+    "GS-509",
+    "GS-511",
+    "GS-512",
+    "GS-513",
+    "GS-514",
+    "GS-516",
+    "GS-517",
+    "GS-518",
+    "GS-519"
+  ],
+  "policy": {
+    "build_policy": "exactly_one_rebuild_after_formal_review_install",
+    "final_strong_edges_require_bidirectional_owner_declarations": true,
+    "identity_blocked_cards_excluded_from_ordinary_aggregate_edges": true,
+    "identity_duplicate_stable_ids_preserved": true,
+    "no_stable_id_merge_or_delete_without_separate_confirmation": true,
+    "personal_error_requires_existing_user_evidence": true,
+    "question_solution_and_visual_evidence_required_for_every_relation": true,
+    "source_solution_not_treated_as_personal_error": true,
+    "strong_edges_require_both_personal_breakpoints_user_confirmed": true
+  },
+  "registry_writes": [
+    {
+      "card_id": "GS-025",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-025.md",
+      "post_sha256": "843d12e4b1be0a49f15f57e7af3aa36c165d8e08b6e1b9d199eb55cd3047a698",
+      "pre_sha256": "97758c6d1c71d86d0edf3fdd8377b649613cad1eace5e6e69ff24276c186b515",
+      "reason": "project batch32 final external state removals=(GS-500) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-040",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-040.md",
+      "post_sha256": "37c62791ffb550aad027735505e92337310c6c6b774c3a29073a97e93ad1bcb4",
+      "pre_sha256": "0d6e404d47f9bded684a85e69974260c37b2ca3cd612eae28a89fc481fdc2d52",
+      "reason": "project batch32 final external state removals=(GS-509) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-042",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-042.md",
+      "post_sha256": "d3e2dc0fecd82da2459b5496395e9a0b521db19a4d8adfe7a8601bb426b6f678",
+      "pre_sha256": "a4f9aaa44fc9156a1869a5eb2aa3e9baeef6c3143a5446e1338267c1d3a2b6c6",
+      "reason": "project batch32 final external state removals=(GS-516) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-049",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-049.md",
+      "post_sha256": "1bcc46e4dd753a317f7fb9e467acc7d189de5f6afd68264df2bd3ccb34723b73",
+      "pre_sha256": "e1c3306f315576276fb0ed4d1c1b5c6eff98821a95b3f95e433c11746f225573",
+      "reason": "project batch32 final external state removals=(GS-507) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-098",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-098.md",
+      "post_sha256": "6e62202bef591571c99837e64b2a66c67de404621d0868512a514f9688febb55",
+      "pre_sha256": "80f36cbaa950b912809ced90522465ac6610b1e878f2e541a7882a020786b01b",
+      "reason": "project batch32 final external state removals=(GS-507) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-103",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-103.md",
+      "post_sha256": "597184ebf0147e29e0afef66e54008016579cee010cd81e1828b1254836ee5dc",
+      "pre_sha256": "3b87225ed6e638b105183d3fdca8a1d606ff5768a2f8f309ae3f87397a22d798",
+      "reason": "project batch32 final external state removals=(GS-509) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-127",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-127.md",
+      "post_sha256": "2ab69234204a68e4592a7ddee32bcc9d8c5edc2513656d6b5a3c4de740a2158b",
+      "pre_sha256": "ef1ee12faecd6ecd4b6717460808f51c87bdcd25261d32a8ca213c0dd774841f",
+      "reason": "project batch32 final external state removals=(GS-507) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-138",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-138.md",
+      "post_sha256": "d02afde7cca4464c7a9e3e2ab1e5bad9f01f5937a3abe223e9770394fe99f149",
+      "pre_sha256": "38fd9a68dbe3efd6f5445debd2b723b94ca44f0eabdc1f132df56a4e05a74ae3",
+      "reason": "project batch32 final external state removals=(GS-507) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-151",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-151.md",
+      "post_sha256": "f5b9cd9c6995da5efbc590ddfaa374a2e906379451d8da44d009b01471eb10be",
+      "pre_sha256": "16f6d01b2ab37e0ccfc889d678d6374f03e788ff076f117db9e76aab4579e30c",
+      "reason": "project batch32 final external state removals=(GS-500) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-183",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-183.md",
+      "post_sha256": "b765700f3ed17782ac7d26e04c97fe83425f64b54797a81e76c46e9c6bb2d4c9",
+      "pre_sha256": "623933a50fa8da34fdbebcc17bccf5088033a1f145ebbbec8732943c0168323c",
+      "reason": "project batch32 final external state removals=(GS-514) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-224",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-224.md",
+      "post_sha256": "7e10792e73df48fefe01caf9cbdebc7aa5cc013b4eec42547f65229b68a81fee",
+      "pre_sha256": "ceb90dd909379a6024e2f504c906ad05bcba7d9e875b5a2a8bc17a9ba1d2542f",
+      "reason": "project batch32 final external state removals=(GS-506) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-226",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-226.md",
+      "post_sha256": "6d8e7ed1ff71a368fb2c3414e243604464f59b14111f07dc24739db931bae607",
+      "pre_sha256": "4deecc3d0bc947707333ae3c56d62913d1ce0ec35c99f7c27a48de7ceabe24ea",
+      "reason": "project batch32 final external state removals=(GS-509) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-481",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-481.md",
+      "post_sha256": "4c9fe78f1f4eeaed7a7637e781adf88e0903a76345ed913d7ddc197735fe9a9a",
+      "pre_sha256": "33b7ca884bb51998204511aafbd7df7ae706d930605041b49b41f419760867fa",
+      "reason": "project batch32 final external state removals=(none) additions=(GS-510); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-488",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-488.md",
+      "post_sha256": "d4605491750e11e4a6df3f57ea1b13f2a335bfa6fab1047c9982a5bd19b2c05b",
+      "pre_sha256": "68b0266a8bf0edb2bacb8e471f4d5e0b638553fa54dcf5487160ac6a21758b48",
+      "reason": "project batch32 final external state removals=(none) additions=(GS-515); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-500",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-500.md",
+      "post_sha256": "9194bcee2ac71cd0f4645cdb44c49d73768b724c62846079ca91f3bac41be17d",
+      "pre_sha256": "ac1c7a3e2f84a990444ce18925d09ba853fd9ef86b9c18714a0344eb0a0019ce",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-501",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-501.md",
+      "post_sha256": "b1a4423800c15e8a96fdba7cd7b23bce5204bcc1daf47c5bcd81a7596bb6d845",
+      "pre_sha256": "6d7c7828c0ebaa423d849564def245b4f1e5ac8e3fb282af60beec60cd111398",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-502",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-502.md",
+      "post_sha256": "985a3314f9a5f81518d63c483233cf389657f30057fe0eededf3fed6357fe6d6",
+      "pre_sha256": "5e2282c6c9289e7ef2636ed6e2162a06a1d78f6901cdebca7b028e2935083699",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-503",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-503.md",
+      "post_sha256": "791971546c7b56752ff9cccffa4a716676d124bf49d9d00e88425fbcc2618835",
+      "pre_sha256": "0e541523c624d4b7dd37acc391ed0b4daa73588c324b26dc028888fb9812407d",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-504",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-504.md",
+      "post_sha256": "e96a8f103cffa15b28d4e0d05cc4de267098a1ea717005b7be24f5abc4f8d060",
+      "pre_sha256": "9eeb28ba362a994b7123d97e47958499f6da569a3aebac372b6982bd52da757f",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-505",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-505.md",
+      "post_sha256": "296d5242b4bb9a08c183bf5392ba027ffd33b8ce6ec33abe344a0966156c51f0",
+      "pre_sha256": "e82500f3f52f632fe5b1691df1413611a2f4ae1898e95068a6d747bb4ebc4fed",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-506",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-506.md",
+      "post_sha256": "4354a056802e5144364330d908f9410fc3132dc9bb75ed04ffbc172b7bd9dfe5",
+      "pre_sha256": "299ab2b79d038dad322fa52348db0df491f41b69cf4b354ebfde882f1cbb550e",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-507",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-507.md",
+      "post_sha256": "f14705d9cc540a91ea7d37f897a8aefa4eeeb2f941973eee199b9ab7c31edc8b",
+      "pre_sha256": "5d3d6bfc648e0ffb2283d752373e0f8b35b333f99b8b203273db2f016654551e",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-508",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-508.md",
+      "post_sha256": "db4758cf37fc12441812228ba2944c4ffb2a4cd92b96e22c781735d4192b6629",
+      "pre_sha256": "88c0c7f52ed07fa879d961544624e01d227b51eaacd493f042004b42aa4b224a",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-509",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-509.md",
+      "post_sha256": "37ec98ca9d32a6a1c6dcd14cb0455a1d518f881579ced3ffe1d401a7e8113d17",
+      "pre_sha256": "873293f33b7312620b55c8b6ece4feca45255601976e9e4c2897c9a349d1f312",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-510",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-510.md",
+      "post_sha256": "09070bc13cfe0aa12c1f3ade2e3adcfb8daebbc6771f37aa9c054969b7bc435f",
+      "pre_sha256": "c2a60c045ec172e75a3c21364ea4889c5ce1b294410fe467d12f021207b67793",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-511",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-511.md",
+      "post_sha256": "86027b9beda3ce46a9c545d8fb2a45cefb794a5721897e489aab7899306fcac7",
+      "pre_sha256": "857ad833f46d511110cb91a1beb79b7727548eb7739b7b068ae73c1daf0ab34f",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-512",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-512.md",
+      "post_sha256": "28c94a81561e1cff208685a9599dbedc98125aa9d874058cc31010318a9156bf",
+      "pre_sha256": "6c73346e5aeeab72c0a7a0611d05088d5424d4970952dfa9d982947ad1643085",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-513",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-513.md",
+      "post_sha256": "3d33fb57c78b4c6a639f876fce8143eadde583c27e470fd68ff134e30489352a",
+      "pre_sha256": "853617023fa5db4c0dfa7a8aca4e025fdd036070468bb1b532b6123d88602d12",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-514",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-514.md",
+      "post_sha256": "8e8b6dae89f608bf3212c10b073f937abb98d149262d2519040fe7f3ead5c2ce",
+      "pre_sha256": "ea7472b96f548e0653e437aec74cadacc4dad4090c7c171eb162a61d303a3b5f",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-515",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-515.md",
+      "post_sha256": "c7006fa46a90cedfef669a1aa9160d9eb6c4a344d93e33fbcd28d8c4d1b0183f",
+      "pre_sha256": "d6f287e66e4beb9ecca9928eb6a886dc27a2ef2af137b182cd0553c245df33bf",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-516",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-516.md",
+      "post_sha256": "3b26d67daf4775e971cf9cff116b78fd94f9a216e88bd31c9b9f59cb7f058244",
+      "pre_sha256": "c0879bbbdef48e44bae423e1c0698d3fa8a3e520f32c415bad60d0d2915a76af",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-517",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-517.md",
+      "post_sha256": "cd318591d7a76309cfa0f30d999e1f69194943c9530bcfa7607d6518842e64d1",
+      "pre_sha256": "c55e5f357b8c4c650b88dfa32060744bcca6c7ace83ac5809632fe706134256d",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-518",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-518.md",
+      "post_sha256": "3cb1bd393ab22efe6028923c1ed12e69efcd5047fe05aad74e9e786a28f4b418",
+      "pre_sha256": "b74726fa666c78091547e5411534d69a5b6951b08ec44a3b8f2d075097da5164",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-519",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-519.md",
+      "post_sha256": "2ea3fc5c66b97ca2adf8ebe798778b02565c00aef1e97f381b54d21253e5ac5a",
+      "pre_sha256": "e0c8ac86bdd0c0bc1b4f9f0124afefe8030b22b1153815e875181d15373e8102",
+      "reason": "canonical_source_projection_and_visual_relation_parity"
+    },
+    {
+      "card_id": "GS-521",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-521.md",
+      "post_sha256": "4d620de1e4c5bb13e6a5954870af7de59d3b48f0a073ef05c47fe9dd15957e0f",
+      "pre_sha256": "ec1d1c5244e8c9be122861a59eae37998147c371fec7a88fa0bffc3d7c948d72",
+      "reason": "project batch32 final external state removals=(GS-512, GS-519) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-522",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-522.md",
+      "post_sha256": "b5918eb4cdf7e3f43c61ea11214410d3a7bbbfae54020108053dc1245fd4dccf",
+      "pre_sha256": "bce9d3544e37dc4b0041ba71a6367d0fb95619042b2c0833515aa312ab1b17f2",
+      "reason": "project batch32 final external state removals=(GS-512, GS-519) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-525",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-525.md",
+      "post_sha256": "b581969cec98760fd78750fad1e3d7cb6fa2a7991cd266464d7be337cd4d90fd",
+      "pre_sha256": "ffd9a377f6ff9887679cad8faac4369b1a4e884f93db8504781c3c7b559cc805",
+      "reason": "project batch32 final external state removals=(GS-514) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-533",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-533.md",
+      "post_sha256": "f0b2c40a4c5c6e6cc64026edcde868910487a52d97b6c0da5eeeac4e697e3671",
+      "pre_sha256": "774cd17d324acf47bb33a78d30746e5ac9a617fb003bd587262bff32bbc80ecc",
+      "reason": "project batch32 final external state removals=(GS-516) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-537",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-537.md",
+      "post_sha256": "eb270efb4439546dc984817c0d706aef26a0cd77a706d1ba2920dbeda0171d5b",
+      "pre_sha256": "64e69282501386922d4edb71b1f81156818a2f3d7985b9819bee8062304dba5c",
+      "reason": "project batch32 final external state removals=(GS-507) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-540",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-540.md",
+      "post_sha256": "4f2d3d65b6cff67c42cfad51d184d8ae84c30409e891d1e846b2c91b52edd28e",
+      "pre_sha256": "2e55b3bfc1b2ea13f29f77b775b5ededeea2f2c064faa130ecfb76471801a608",
+      "reason": "project batch32 final external state removals=(GS-507) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-541",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-541.md",
+      "post_sha256": "a655e5ee3b1b26c93f41337e76d71920442cb0b03d9f65ff403d0ed1c9a139e5",
+      "pre_sha256": "95f3fcdb67b7e666aa4d47e41c3ba2cc9104f2e9b9a95887689070eb70f842ca",
+      "reason": "project batch32 final external state removals=(GS-506, GS-514) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-542",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-542.md",
+      "post_sha256": "8b1f0611e56184e3133d4b8fa3a718438ae462d4eb3c0afa8ec4782b862beeb9",
+      "pre_sha256": "00e736faa287028a8f6fecf961505871fe4dc6d7d15e822b218a6af477fb77d9",
+      "reason": "project batch32 final external state removals=(GS-506, GS-514) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-544",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-544.md",
+      "post_sha256": "fa5919b020729653691f0b2e1a8a8028c739d19d4b4dc0e122c5e37824d7eed2",
+      "pre_sha256": "70cf8fed4ff8508f19f6e37e9677bc3bfb7d87c1a20388febdf56aefac4828d2",
+      "reason": "project batch32 final external state removals=(GS-511, GS-512, GS-518) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-545",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-545.md",
+      "post_sha256": "1bc47bf26512279706a03c71106b428c8930fe3c5d38b46165f40272a0ae3c85",
+      "pre_sha256": "47afaf9c23458fcf2022321f4d7f2076c645784afa003023f568486dae30260b",
+      "reason": "project batch32 final external state removals=(GS-515) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-548",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-548.md",
+      "post_sha256": "f125b1ff18833cdba81a83f07a922937ba235223a54e324b8ce228f83ab8e600",
+      "pre_sha256": "fa49705066e1586734c72851f0fe0258ec56bcbf7a653b709dd90d5b2764122e",
+      "reason": "project batch32 final external state removals=(GS-519) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-549",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-549.md",
+      "post_sha256": "4f0771363a9c1e43dfd1c56f0548274fbe1cb3c1f4003733b310fd0fba7ac3e7",
+      "pre_sha256": "750c3d09325077e5b9b76ebd91bcf41db2865c94e6648423a7090c0beb12147e",
+      "reason": "project batch32 final external state removals=(GS-511, GS-512) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-552",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-552.md",
+      "post_sha256": "e67d44c146446af232803c0df7f0842a2725e8b9a4c0a1cb337472ca2877c991",
+      "pre_sha256": "1deb7ee3639ac404cbaa6cf9883e137b907910b10569e98b2f1a04d370350046",
+      "reason": "project batch32 final external state removals=(GS-516) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-555",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-555.md",
+      "post_sha256": "379431afc25a7c73dbb442dc8b2a7ec5f7d0be40d3404c71dce0513f5e95f8fa",
+      "pre_sha256": "e5963bd9d35e6260f20ce772f48d71abd3d33ee2e03b30a6d33ffc14dc46abca",
+      "reason": "project batch32 final external state removals=(GS-518) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-558",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-558.md",
+      "post_sha256": "7bdf0a1c67cc65b7a33856fb4a9ea8f155eb4affe9fe9d80ca8220cc1b8e6fde",
+      "pre_sha256": "f96cc6ba361237da86cc3e7d6940d71190d542df88f54b25438faddadd7f793f",
+      "reason": "project batch32 final external state removals=(GS-505) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-560",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-560.md",
+      "post_sha256": "12f0354964a8856befeaa024541b824e8e3772383ae46cf92c0651887a3fa06b",
+      "pre_sha256": "75c9975f2380791cbed139d3a2e05f44dd3ca8a9e2e1c275bdd59504a07d3cc6",
+      "reason": "project batch32 final external state removals=(GS-505) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-564",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-564.md",
+      "post_sha256": "69b8dd4ca41ed5758689e7de07ae2318db33357d43116c3cf10682b850245866",
+      "pre_sha256": "07c94001a033e6267a58829b9347414348bd993898b406df768247fd3989be0b",
+      "reason": "project batch32 final external state removals=(GS-503, GS-506) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-565",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-565.md",
+      "post_sha256": "537e701b9ffd1b2b4580a497a06be115cdbef186bae5fe75331fb68b88037f78",
+      "pre_sha256": "09af3788d96fd6aa83c4a0312a8fbe8afcf5c7b861c3b400e174550ec39e37fb",
+      "reason": "project batch32 final external state removals=(GS-505) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-566",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-566.md",
+      "post_sha256": "67949f99d62654ab793c83746b981ded871bf46dce46c6e95189d70446eab074",
+      "pre_sha256": "81f2ef401b66cf2b41c1c842ad381088db4b689b1fb799a0b6f057bc022123f6",
+      "reason": "project batch32 final external state removals=(GS-503, GS-505) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-567",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-567.md",
+      "post_sha256": "7be833cd849ed99a9e7486a5a517aae5c5637a7482b9decc5d755f410a90796c",
+      "pre_sha256": "613b306279cc1542c7ee5bcf3748463c1c48b1ec3d83f0bc495c13ca1d8282ea",
+      "reason": "project batch32 final external state removals=(GS-505) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-568",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-568.md",
+      "post_sha256": "87d4a7fc977887b2cd8212c4185605fd32668df3c75e42d1b800f09df0c601c8",
+      "pre_sha256": "44cf167317ee64e00d6724dc522c742c0850c86c5af0ca94b4ddb5525630d997",
+      "reason": "project batch32 final external state removals=(GS-503, GS-504) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-589",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-589.md",
+      "post_sha256": "b0d77f1ec4ff962d9cfceebb02701a349c46115e88b3d12192de34cb9eba2272",
+      "pre_sha256": "06d5dbcc0d3b4f06a3240979e4af191734246af8383cfc28b9c550ec86edbf01",
+      "reason": "project batch32 final external state removals=(GS-504, GS-505) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-590",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-590.md",
+      "post_sha256": "e62c0995d9c5ecc220e2a7a1b0c6d55e52939b278fe55405836bcf4d3b7e3b6f",
+      "pre_sha256": "dfefabc7ce02e7307a922cbd5c2ca315e6cbd877ba6df33c3693db7b529faffb",
+      "reason": "project batch32 final external state removals=(GS-504) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-598",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-598.md",
+      "post_sha256": "4f8e3850432f8692443043ef24f579c429f4dda80a2b58f5c5d323fccd12fd9c",
+      "pre_sha256": "bba1cc76519a4cdfd1ba9575a0977cb913ba09dcc234950822156f1a9c79919e",
+      "reason": "project batch32 final external state removals=(GS-501, GS-502, GS-505) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-599",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-599.md",
+      "post_sha256": "5e6c26f314096e803ddcb97c6ada2f88d170d48f7e27c7c410ff2b2f9a0bc0c6",
+      "pre_sha256": "d01c37a8f570fe1c480160a764bbba16dad8630092d81ce3c7b626031d7ddf6c",
+      "reason": "project batch32 final external state removals=(GS-501, GS-505) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-606",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-606.md",
+      "post_sha256": "b790c5696c1f81add0a8fe81b49b0c575c3514556b2050687351e611d209a64a",
+      "pre_sha256": "d19a75043f3ed22f686a98b294d8e001da5287d9c19caefc8eb6b9ff87e6f814",
+      "reason": "project batch32 final external state removals=(GS-502) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-607",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-607.md",
+      "post_sha256": "4d880ca5f9a1eaa3b655cf84bb86283a51829560760dd242c59e013630dc5473",
+      "pre_sha256": "87b290a894c72a51ad6de44f317901e526af56003781db277ce8473c9e12efc3",
+      "reason": "project batch32 final external state removals=(GS-501, GS-502, GS-505) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-611",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-611.md",
+      "post_sha256": "6e0e70c49840eb020738c57c5a2491393a7b790dcb72fdd7e7b20493950d96cf",
+      "pre_sha256": "a94a5ac914f8587ddc77a02477877bc8f5fda72f073365baad01daa1ca23d33a",
+      "reason": "project batch32 final external state removals=(GS-512, GS-518) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    },
+    {
+      "card_id": "GS-612",
+      "kind": "source_summary",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-612.md",
+      "post_sha256": "b490f8e62bc2029202e474a87462680d8962d0ed19356f5cfe3b64ebed8cd0cd",
+      "pre_sha256": "fb3c9b9fe57979e4b318c6777ca0d1f12c6861bc748fcaa38742178d1d64d00f",
+      "reason": "project batch32 final external state removals=(GS-519) additions=(none); synchronize related_wrongnet_refs, body relation statement, last_updated, and formal_projection_sha256"
+    }
+  ],
+  "relation_removals": [
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-500"
+      ],
+      "reason": "GS-017 断在正负无穷整体趋向和渐近线类型判断；GS-500 断在未先列定义域端点与正负无穷的完整清单，具体对象和个人断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-017",
+      "target_card_id": "GS-500"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-025",
+        "GS-500"
+      ],
+      "reason": "GS-025 已进入斜渐近线截距计算但展开阶数不足；GS-500 是在截距前就漏掉垂直及负无穷方向，第一断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-025",
+      "target_card_id": "GS-500"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-040",
+        "GS-509"
+      ],
+      "reason": "两题都可用反例，但 GS-040 是数列不等式的单侧逼近方向，GS-509 是函数/导数无穷远命题并断在反例优先级；具体对象不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-040",
+      "target_card_id": "GS-509"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-042",
+        "GS-516"
+      ],
+      "reason": "GS-042 starts by rewriting a limit and retaining a first-order logarithmic correction; GS-516 has already formed a series ratio and fails later when evaluating a 1^infinity factor.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-042",
+      "target_card_id": "GS-516"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-049",
+        "GS-507"
+      ],
+      "reason": "两题都用邻域保号判极值，但 GS-049 断在未进入函数值比较，GS-507 的首个错误是反用洛必达推导导数比值；个人断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-049",
+      "target_card_id": "GS-507"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-098",
+        "GS-507"
+      ],
+      "reason": "GS-098 是对数真数同阶化简并且端点仍待用户确认；GS-507 是禁止反用洛必达后走连续性与导数定义，第一动作和证据均不满足强边门槛。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-098",
+      "target_card_id": "GS-507"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-103",
+        "GS-509"
+      ],
+      "reason": "GS-103 区分点处导数与去心导函数极限且个人断点待确认；GS-509 是无穷远必然命题的反例筛选，具体对象、第一动作和证据均不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-103",
+      "target_card_id": "GS-509"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-127",
+        "GS-507"
+      ],
+      "reason": "GS-127 的对象是切线截距公式和两个导数定义型极限；GS-507 的对象是 f(x)/x² 极限的保号与反用洛必达，具体动作不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-127",
+      "target_card_id": "GS-507"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-138",
+        "GS-507"
+      ],
+      "reason": "GS-138 是等价无穷小能否求导的 legacy 候选断点；GS-507 有明确的反用洛必达事件，且前者不是 user_confirmed。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-138",
+      "target_card_id": "GS-507"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-151",
+        "GS-500"
+      ],
+      "reason": "两题都高度依赖“定义域端点+正负无穷”全清单，且候选漏项相似；但 GS-151 个人断点为 legacy_unclassified，必须移除正式边并保留为待确认候选。",
+      "reason_code": "external_personal_breakpoint_not_user_confirmed",
+      "source_card_id": "GS-151",
+      "target_card_id": "GS-500"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-183",
+        "GS-514"
+      ],
+      "reason": "GS-183 concerns midpoint concavity plus inverse-function area and fails before chord/area setup; GS-514 concerns a direct convex endpoint inequality and fails only at a later negative-sign check.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-183",
+      "target_card_id": "GS-514"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-515"
+      ],
+      "reason": "Both mention integrating factors, but GS-208 reverse-engineers xe^(-x)f for a Rolle/integral proof, while GS-515 constructs e^(-integral p)f for a differential inequality and ordering result.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-208",
+      "target_card_id": "GS-515"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-224",
+        "GS-506"
+      ],
+      "reason": "虽都研究 f(x)/x，GS-224 的候选入口是在 [0,x] 上用中值定理且个人断点待确认；GS-506 是从选项交叉乘反推商函数，第一动作不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-224",
+      "target_card_id": "GS-506"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-226",
+        "GS-509"
+      ],
+      "reason": "GS-226 直接证明单个导数极限蕴含函数极限且个人断点待确认；GS-509 的个人断点是整组必然命题没有先反例筛选，不是同一第一动作。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-226",
+      "target_card_id": "GS-509"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-501",
+        "GS-502"
+      ],
+      "reason": "GS-501 先检查非标准正项部分的单调性并有理化；GS-502 先把奇偶下标目标拆成收敛部分减奇数正项部分，具体对象和断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-501",
+      "target_card_id": "GS-502"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-505"
+      ],
+      "reason": "GS-501 断在机械套莱布尼茨和未有理化；GS-505 断在条件收敛只写绝对发散而漏原级数收敛，第一动作与断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-501",
+      "target_card_id": "GS-505"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-511"
+      ],
+      "reason": "GS-511 是缺项幂级数漏掉 x^(2n) 后做比值并检查端点；GS-501 是常数项级数的正项单调与有理化，只有交错标签重合。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-501",
+      "target_card_id": "GS-511"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-598"
+      ],
+      "reason": "GS-598 要提出根号主量并作二项式展开；GS-501 要对含奇偶扰动的线性根式分母有理化，首个动作和个人断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-501",
+      "target_card_id": "GS-598"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-599"
+      ],
+      "reason": "GS-599 先把正弦角拆到 nπ 附近制造交错因子；GS-501 是正项单调检查和有理化，具体对象不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-501",
+      "target_card_id": "GS-599"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-607"
+      ],
+      "reason": "GS-607 先凑 (n+1)-2 拆有理因子；GS-501 先检查单调并有理化根式分母，拆项来源与断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-501",
+      "target_card_id": "GS-607"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-504"
+      ],
+      "reason": "GS-502 是条件收敛奇偶正项分拆；GS-504 是把两个题设通项配成乘积并用有界因子，具体对象、第一动作和个人断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-502",
+      "target_card_id": "GS-504"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-502",
+        "GS-505"
+      ],
+      "reason": "GS-502 断在奇偶项拆分与数列/级数边界；GS-505 断在参数条件少写原交错级数收敛，不能由共同的条件收敛标签连强边。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-502",
+      "target_card_id": "GS-505"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-598"
+      ],
+      "reason": "GS-598 以根式主量提取和 Taylor 展开为入口；GS-502 以奇偶项代数拆分为入口，具体动作不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-502",
+      "target_card_id": "GS-598"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-502",
+        "GS-606"
+      ],
+      "reason": "GS-606 拆分子两项并化成等比尾项加调和项；GS-502 拆奇偶下标并用条件收敛的正负项结构，个人断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-502",
+      "target_card_id": "GS-606"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-607"
+      ],
+      "reason": "GS-607 凑有理因子拆主项与绝对收敛余项；GS-502 拆奇偶正项并证明奇数项和发散，首个动作不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-502",
+      "target_card_id": "GS-607"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-504"
+      ],
+      "reason": "GS-503 先取绝对值并用有界正弦压到望远镜差；GS-504 先配成题设两通项乘积，具体比较对象和断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-503",
+      "target_card_id": "GS-504"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-564"
+      ],
+      "reason": "GS-564 用中值定理把 f'(n) 放进函数值差并形成望远镜上界；GS-503 的首个动作是绝对值与有界因子，只有望远镜标签重合。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-503",
+      "target_card_id": "GS-564"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-566"
+      ],
+      "reason": "GS-566 的首个断点就是未直接识别相邻差望远镜；GS-503 已有显式望远镜差，断在未先取绝对值控制振荡因子，个人断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-503",
+      "target_card_id": "GS-566"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-568"
+      ],
+      "reason": "GS-568 要把“一定收敛”翻译为统一上界或反例；GS-503 是对具体有界因子作绝对值比较，题目对象与第一动作不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-503",
+      "target_card_id": "GS-568"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-505"
+      ],
+      "reason": "GS-504 是目标乘积配题设通项；GS-505 是参数型条件收敛的双条件清单，具体对象和个人断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-504",
+      "target_card_id": "GS-505"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-568"
+      ],
+      "reason": "GS-568 处理任意正项级数命题并构造反例；GS-504 处理确定的乘积配项与有界因子，第一动作不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-504",
+      "target_card_id": "GS-568"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-589"
+      ],
+      "reason": "GS-589 与 GS-504 的乘积配项对象、第一动作和候选个人断点高度一致；但 GS-589 尚未完成本轮独立 evidence_origin 收口，正式边先移除并列阻塞候选。",
+      "reason_code": "external_personal_breakpoint_not_user_confirmed",
+      "source_card_id": "GS-504",
+      "target_card_id": "GS-589"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-590"
+      ],
+      "reason": "GS-590 先构造 d_n=b_n-a_n 并做绝对收敛双向控制；GS-504 先配成 (nu_n)(v_n/n)，具体结构和断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-504",
+      "target_card_id": "GS-590"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-558"
+      ],
+      "reason": "GS-558 先把 a^(ln n) 化成 n^(ln a)，断在指数恒等变形；GS-505 先有理化根式差并补齐条件收敛双条件，个人断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-505",
+      "target_card_id": "GS-558"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-560"
+      ],
+      "reason": "GS-560 是两个趋 1 项相减时同步展开到二阶并处理抵消；GS-505 是根式差一阶有理化后检查条件收敛范围，首个动作不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-505",
+      "target_card_id": "GS-560"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-565"
+      ],
+      "reason": "GS-565 断在把有理化后的整体取任意实数 p 次方解释清楚；GS-505 断在漏掉原交错级数收敛条件，个人断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-505",
+      "target_card_id": "GS-565"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-566"
+      ],
+      "reason": "GS-566 先写有限部分和望远镜；GS-505 先估根式差并列条件收敛双条件，只共享参数/级数大类。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-505",
+      "target_card_id": "GS-566"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-567"
+      ],
+      "reason": "GS-567 断在偏离目标、未把 a_n 与 1/n² 作极限比较；GS-505 断在参数范围少一个条件，具体对象与断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-505",
+      "target_card_id": "GS-567"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-589"
+      ],
+      "reason": "GS-589 是抽象乘积配项；GS-505 是参数型交错 p 级数双条件，只有级数章节重合。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-505",
+      "target_card_id": "GS-589"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-598"
+      ],
+      "reason": "GS-598 断在根式扰动的主量提取和 Taylor 展开；GS-505 断在条件收敛范围合并，第一动作不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-505",
+      "target_card_id": "GS-598"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-599"
+      ],
+      "reason": "GS-599 先把正弦角拆到整数倍 π 附近并判断小量阶；GS-505 先有理化根式差，具体对象不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-505",
+      "target_card_id": "GS-599"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-607"
+      ],
+      "reason": "GS-607 先凑有理因子拆成条件收敛主项与绝对收敛余项；GS-505 先化成参数 p 级数并合并边界，断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-505",
+      "target_card_id": "GS-607"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-514"
+      ],
+      "reason": "GS-514 由凸性端点弦线不等式开始，个人错误是乘负数漏变号；GS-506 从选项反推商函数，第一动作和断点不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-506",
+      "target_card_id": "GS-514"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-541"
+      ],
+      "reason": "GS-541 先设内部加权点并在两段用中值定理；GS-506 先同除交叉乘项构造 f(t)/t，具体对象不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-506",
+      "target_card_id": "GS-541"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-542"
+      ],
+      "reason": "GS-542 先把行列式翻译成相邻割线斜率；GS-506 先把交叉乘不等式翻译成商函数，虽同属凸性但不是同一动作或断点。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-506",
+      "target_card_id": "GS-542"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-564"
+      ],
+      "reason": "GS-564 以 [n-1,n] 上中值定理构造望远镜上界；GS-506 以选项交叉乘反推商函数，只有 f'' 定号大类相同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-506",
+      "target_card_id": "GS-564"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-537"
+      ],
+      "reason": "GS-537 已知极值点后分类检查二阶导和特殊点；GS-507 是由 f(x)/x² 极限禁止反用洛必达并用保号性判极小，具体入口不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-507",
+      "target_card_id": "GS-537"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-540"
+      ],
+      "reason": "GS-540 区分切线动点与切点并求 x 轴截距；GS-507 是连续性、导数定义和保号性，题目对象完全不同。",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-507",
+      "target_card_id": "GS-540"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-511"
+      ],
+      "reason": "Harmonic partial-sum coefficient identification is not the same object or action as whole-term ratio testing of an even-power sparse series.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-510",
+      "target_card_id": "GS-511"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-517"
+      ],
+      "reason": "GS-510 identifies and bounds a coefficient sequence; GS-517 uses a conditionally convergent endpoint to infer a radius and transfer it to a new center.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-510",
+      "target_card_id": "GS-517"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-518"
+      ],
+      "reason": "A harmonic partial-sum coefficient radius problem differs from splitting a two-component coefficient and intersecting endpoint domains.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-510",
+      "target_card_id": "GS-518"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-512"
+      ],
+      "reason": "Whole-term ratio testing of a sparse series and termwise integration followed by endpoint rechecking are different concrete operations.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-511",
+      "target_card_id": "GS-512"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-516"
+      ],
+      "reason": "Both use ratios, but GS-511 omits x^(2n), while GS-516 correctly forms the ratio and then mis-evaluates a 1^infinity factor.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-511",
+      "target_card_id": "GS-516"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-517"
+      ],
+      "reason": "A sparse whole-term ratio problem is not the conditional-endpoint radius-transfer problem.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-511",
+      "target_card_id": "GS-517"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-518"
+      ],
+      "reason": "GS-511 must include the variable power in a ratio; GS-518 must split two coefficient components after an endpoint test stalls.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-511",
+      "target_card_id": "GS-518"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-544"
+      ],
+      "reason": "Both cards use the exact series sum (-1)^(n-1)x^(2n)/(2n-1), require the complete-term ratio, and record failure to carry x^(2n); the only failed gate is current user-confirmed evidence at GS-544.",
+      "reason_code": "external_personal_breakpoint_not_user_confirmed",
+      "source_card_id": "GS-511",
+      "target_card_id": "GS-544"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-511",
+        "GS-549"
+      ],
+      "reason": "GS-549 differentiates and reintegrates a composite arctangent and checks function-domain endpoints; it is not the sparse whole-term ratio task.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-511",
+      "target_card_id": "GS-549"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-518"
+      ],
+      "reason": "Termwise integration and new endpoint testing are not coefficient splitting and domain intersection.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-512",
+      "target_card_id": "GS-518"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-519"
+      ],
+      "reason": "Although both touch logarithmic power series, GS-512 integrates a geometric series while GS-519 recognizes a Cauchy-product coefficient.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-512",
+      "target_card_id": "GS-519"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-521"
+      ],
+      "reason": "The resulting logarithmic series is equivalent, but GS-512 must integrate a given f and recheck endpoints, whereas GS-521 must differentiate a target S to derive the mother formula.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-512",
+      "target_card_id": "GS-521"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-522"
+      ],
+      "reason": "GS-522 differentiates a geometric series to sum n x^n and confuses numerator/denominator n templates; GS-512 integrates the geometric series.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-512",
+      "target_card_id": "GS-522"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-544"
+      ],
+      "reason": "GS-544's object is the arctangent-type sparse series; its whole-term ratio and later integral-to-sum actions do not match GS-512's direct integration of the geometric series.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-512",
+      "target_card_id": "GS-544"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-549"
+      ],
+      "reason": "Both use termwise calculus, but the composite-arctangent transcription/endpoint breakpoint is different from producing g's integrated series.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-512",
+      "target_card_id": "GS-549"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-611"
+      ],
+      "reason": "GS-611 already splits two components and then makes inequality, endpoint, intersection, and integration-sign errors; that is not GS-512's first missing termwise-integration action.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-512",
+      "target_card_id": "GS-611"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-525"
+      ],
+      "reason": "Reading extrema/inflection counts from an f' graph is unrelated to a convex endpoint inequality sign audit.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-514",
+      "target_card_id": "GS-525"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-541"
+      ],
+      "reason": "Both concern strict convexity, but GS-541 fails before setting the weighted point and two MVT intervals; GS-514 has already completed convexity and fails only at a later multiplication-by-negative check.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-514",
+      "target_card_id": "GS-541"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-542"
+      ],
+      "reason": "GS-542 translates a determinant into adjacent secant slopes and takes derivative limits; GS-514 substitutes a positive endpoint difference and checks signs.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-514",
+      "target_card_id": "GS-542"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-545"
+      ],
+      "reason": "GS-545 converts a coefficient recurrence to an ODE for a sum function and makes reindexing/sign errors; GS-515 starts from a differential inequality and directly constructs an integrating factor.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-515",
+      "target_card_id": "GS-545"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-533"
+      ],
+      "reason": "GS-533 needs logarithm/exponential two-layer Taylor expansion of (1+x)^(1/x); GS-516 needs only the standard 1^infinity limit inside a completed ratio test.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-516",
+      "target_card_id": "GS-533"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-552"
+      ],
+      "reason": "GS-552 first identifies ln(1+2^-n) as an equivalent small quantity and tests the term limit; GS-516 evaluates an adjacent-term ratio and parameter endpoint.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-516",
+      "target_card_id": "GS-552"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-518"
+      ],
+      "reason": "Conditional-endpoint radius transfer and coefficient splitting/domain intersection are distinct objects and actions.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-517",
+      "target_card_id": "GS-518"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-544"
+      ],
+      "reason": "GS-544's sparse alternating series and arctangent sum function are not the two-component logarithmic-harmonic/geometric domain intersection.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-518",
+      "target_card_id": "GS-544"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-555"
+      ],
+      "reason": "The shared divergent sum 1/(n ln n) is only a comparison component; GS-555 begins with n!<n^n, while GS-518 begins by splitting coefficient components.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-518",
+      "target_card_id": "GS-555"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-611"
+      ],
+      "reason": "Both split a sum into components, but GS-518 fails to split at all; GS-611 explicitly completes that first action and then fails at inequality direction, endpoint, intersection, and integral signs.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-518",
+      "target_card_id": "GS-611"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-521"
+      ],
+      "reason": "GS-521 derives the logarithmic mother formula by differentiating and integrating; GS-519's full object is a harmonic-partial-sum convolution and its first action is coefficient recognition.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-519",
+      "target_card_id": "GS-521"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-522"
+      ],
+      "reason": "GS-522 differentiates the geometric series to sum n x^n; GS-519 forms a Cauchy product with the logarithmic series.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-519",
+      "target_card_id": "GS-522"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-548"
+      ],
+      "reason": "GS-548 uses the cubic-sum identity to rewrite ln(1-x+x^2); sharing the ln(1+u) mother expansion does not match GS-519's convolution breakpoint.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-519",
+      "target_card_id": "GS-548"
+    },
+    {
+      "decision": "remove",
+      "declaration_owners": [
+        "GS-612"
+      ],
+      "reason": "GS-612 factors a quadratic inside a logarithm and audits real-domain/endpoints; GS-519 recognizes a harmonic partial-sum coefficient as a Cauchy product.",
+      "reason_code": "strict_semantic_mismatch",
+      "source_card_id": "GS-519",
+      "target_card_id": "GS-612"
+    }
+  ],
+  "review_receipt_writes": [
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-070_全库逐题语义复核第32批20题.json",
+      "post_sha256": "1cafd44a9410d2563458191407a55a903fbd84830a880167d48981cadb32d06b",
+      "pre_sha256": null,
+      "reason": "batch32_semantic_review_receipt"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-026_全库逐题语义复核第10批20题.json",
+      "post_sha256": "4fb1e9c32b109c36810e138a003796788919e59d65ef5d34e0707f813e90d3cc",
+      "pre_sha256": "29498c2e687f3a5c42a5cbd900d016b34388dfb3f7b445b6c7bfe43da0724d8a",
+      "reason": "batch32_historical_review_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-027_全库逐题语义复核第10批正式收口.json",
+      "post_sha256": "d3d7a17272c7df57263c1a01afb169a1e07adab52b4e42b397e69f40b4785846",
+      "pre_sha256": "6fc07ab312794b53a4611a09ef2ac8a5fbd9e4c04c5099938ec81ebccabf1051",
+      "reason": "batch32_historical_closeout_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-028_全库逐题语义复核第11批20题.json",
+      "post_sha256": "cae88bf7264e4242f56dbb093591430e32e2cbb622d9ddadabd18a01c99fa4a0",
+      "pre_sha256": "5f388e90ce5e81a7d7cb141f3a287dbee111b6a4f98db3a848c6e27e997aa53f",
+      "reason": "batch32_historical_review_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-029_全库逐题语义复核第11批正式收口.json",
+      "post_sha256": "5d23efb971c6b15e2ab3d29a58f7c5aee7dd93748803d3c245a4360a6a634e21",
+      "pre_sha256": "240fdd1e700b749c59939c7f85edff1b5111e4ead04453f5e97585380b7139d3",
+      "reason": "batch32_historical_closeout_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-032_全库逐题语义复核第13批20题.json",
+      "post_sha256": "ee37e92314d0569f488f796e03ab13781143d9cbcae8612102912bf45c74481d",
+      "pre_sha256": "6eed26dcc3634c19a9a171383e281c0b9ac26c3b52458c66e44deff48ccd68d5",
+      "reason": "batch32_historical_review_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-033_全库逐题语义复核第13批正式收口.json",
+      "post_sha256": "fa80bee701e56024a4fa2e8e708231a0b601949477ee0fae7e622678d2ebc498",
+      "pre_sha256": "4f278b858b6494376641246e73f6418de769dbc81eb2d7d4003bc28bf4a34557",
+      "reason": "batch32_historical_closeout_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-034_全库逐题语义复核第14批20题.json",
+      "post_sha256": "55da8a1160fb0c304b0e651a699effc2c2df6fe4c620582532f65aac41788839",
+      "pre_sha256": "fe0a5744ae99883a80fcef3bb767f90e354d8eea4d59a741da36b53df037e0ed",
+      "reason": "batch32_historical_review_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-035_全库逐题语义复核第14批正式收口.json",
+      "post_sha256": "28da03b5a76c1440545e925f97278622f2c7e1c2650ea99f6839fa31316cbde6",
+      "pre_sha256": "d57cf07f343709cdcda3eeda775f584fcf29ba386ce938a775b66a9505f1c1b2",
+      "reason": "batch32_historical_closeout_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-036_全库逐题语义复核第15批20题.json",
+      "post_sha256": "bdde806bd83435a373f191320149de2ba2b00aeeea1d4d1e89791f1db1706cac",
+      "pre_sha256": "4a8db647116a7014106c02fdd6a8c356e07eb3e98128d3fa85ccf869f13b2d1f",
+      "reason": "batch32_historical_review_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-037_全库逐题语义复核第15批正式收口.json",
+      "post_sha256": "c7eb2a79170ed1fddc6a30fed0c134c14062568892e28c718eb539bab9146be0",
+      "pre_sha256": "7f92d173becf9686df7a11297480744e5239125d38be07596e43ef2c9e2aeb53",
+      "reason": "batch32_historical_closeout_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-038_全库逐题语义复核第16批20题.json",
+      "post_sha256": "b25d289d5c8d675befe85b8ba2a73d2491b3be8345b28a10740097f8df6db236",
+      "pre_sha256": "4879ab835c51c9fc684289d449ffc579b972c2bb9a67e272c4b4be3f27ba4944",
+      "reason": "batch32_historical_review_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-039_全库逐题语义复核第16批正式收口.json",
+      "post_sha256": "8f51135846e13b344ca03c860d6aad3a854e4871d48437b0145da0fec26c6fa7",
+      "pre_sha256": "1c7cb09c81d9686da94e878c42ee2ad3606bc2e8f2dc40cdf05c5ff6987c5881",
+      "reason": "batch32_historical_closeout_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-040_全库逐题语义复核第17批20题.json",
+      "post_sha256": "0c2630ba31fd4bd54c2ffc0375e50d7d03e1e4bffbca0ec5671603bac98a7499",
+      "pre_sha256": "080091d0bfa84f4c83e2bd0d1a71c7ef892134e1ec10f5a9635f6c4659eb22c2",
+      "reason": "batch32_historical_review_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-041_全库逐题语义复核第17批正式收口.json",
+      "post_sha256": "186126ad4d678e3b6cfd1a62a7873f3f43f5365beb0f8b0f1752f047ce059e0e",
+      "pre_sha256": "842480e1fa49fcfd432f4789d89fa305e3a39051a67f1539ad40efde479d7c47",
+      "reason": "batch32_historical_closeout_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-044_全库逐题语义复核第19批20题.json",
+      "post_sha256": "d955f3c7aa28a35842face4caaa48b738754996eb97d8feae7bc101ca538b5f1",
+      "pre_sha256": "4053e79a835ff017657ebcf20392d194afd8eb85c643a3e564b530cdcd06ceaf",
+      "reason": "batch32_historical_review_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-045_全库逐题语义复核第19批正式收口.json",
+      "post_sha256": "9d2f04e58a163a57cd0e93eac78b701a50e21a178ee64234415a33ab858e12c3",
+      "pre_sha256": "cb219c01a789a0d9d6d777022183f3cb691f44647e44f24d7ebd17bb08736859",
+      "reason": "batch32_historical_closeout_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-068_全库逐题语义复核第31批20题.json",
+      "post_sha256": "66be063089307d4d862ad992b7263abdc12a4c5443c4abde6d9241edd09f0440",
+      "pre_sha256": "348e33886ba9d0d2748d4c9982329d17e5e77f43ddfa9808e4e4a0334580ba0d",
+      "reason": "batch32_historical_review_lineage_revalidation"
+    },
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-069_全库逐题语义复核第31批正式收口.json",
+      "post_sha256": "1ce81e230117ce5d4e01a6a1f293bea5d0c1581f55ede94d185a1e6bd61b0f6e",
+      "pre_sha256": "3a4823b94a9a9621c4301ded2c6c29516ad6350caca9cfc2c254f92e415b1a05",
+      "reason": "batch32_historical_closeout_lineage_revalidation"
+    }
+  ],
+  "schema_version": "math_target_semantic_closeout_v1",
+  "scope": {
+    "bidirectional_owner_declarations_added": 4,
+    "card_files_written": 63,
+    "derived_output_files_written": 44,
+    "final_strong_edge_owner_declarations": 4,
+    "final_strong_logical_edges": 2,
+    "graph_output_files_written": 35,
+    "held_items": 0,
+    "historical_review_cards_revalidated": 14,
+    "historical_review_snapshots_revalidated": 9,
+    "new_personal_fact_writes": 0,
+    "relation_removals": 78,
+    "removed_owner_declarations": 94,
+    "selected_card_count": 20,
+    "semantic_review_receipt_files_written": 19,
+    "source_files_written": 166,
+    "source_summary_files_written": 63,
+    "visual_detail_files_written": 21,
+    "wrongnet_output_files_written": 9
+  },
+  "script_writes": [],
+  "source_review": {
+    "canonical_snapshot_sha256": "9323c0b1afd118a7bfc2e7c6936aa4e0f2a6608700d09dd5a8236c4708ce459b",
+    "frozen_source_state_sha256": "f4686ab88cd0ca5be7b1831ece81d96d60aba5122b582a405f915d1bb8b34094",
+    "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-070_全库逐题语义复核第32批20题.json",
+    "prior_closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-069_全库逐题语义复核第31批正式收口.json",
+    "prior_closeout_sha256": "3a4823b94a9a9621c4301ded2c6c29516ad6350caca9cfc2c254f92e415b1a05",
+    "record_write_manifest_sha256": "8d5dda4f71564443a8a5f0458e0b6d6381c12a75248aa61edfa3450e7b607454",
+    "review_id": "MATHWIKI-REVIEW-070",
+    "selection_compact_json_sha256": "11228ae9a19d2657ee05c414a3a5f36af981378fd9a3e205c9acd55af5c4f6b4",
+    "selection_order_sha256": "e388d228feb3bf8705f32bb2cc7917a960a854dbdad26d6c7bea9cfd9eed3bec",
+    "sha256": "13fe73f3f151428458a5015e376069e053812fb5929c1cd7fb8168aea698c38f",
+    "source_freeze_sha256": "02fe9a353b0072e0b962870de210785ece513ff2eb0483c1c86f5c555519b359",
+    "visual_manifest_sha256": "02fe9a353b0072e0b962870de210785ece513ff2eb0483c1c86f5c555519b359"
+  },
+  "strict_edge_convergence": {
+    "blocked_candidate_count": 3,
+    "converged_before_formal_build": true,
+    "final_graph_build_status": "completed",
+    "final_rebuild_status": "completed",
+    "final_strong_logical_edges": 2,
+    "final_strong_owner_declarations": 4,
+    "frozen_incident_logical_edges": 78,
+    "frozen_incident_owner_declarations": 94,
+    "graph_build_history": {
+      "attempts": 1,
+      "final_successful": 1,
+      "successful": 1,
+      "superseded_successful": 0
+    },
+    "graph_builds_before_review_install": 0,
+    "identity_blocked_external_card_ids": [],
+    "removed_logical_edges": 78,
+    "removed_owner_declarations": 94,
+    "trigger": "full_frozen_incident_edge_audit",
+    "wrongnet_build_history": {
+      "final_successful": 1,
+      "invocations": 1,
+      "successful": 1,
+      "superseded_successful": 0
+    },
+    "wrongnet_rebuilds_before_review_install": 0
+  },
+  "strong_edges_added": [
+    {
+      "both_personal_breakpoints_user_confirmed": true,
+      "decision": "add",
+      "declaration_owners": [
+        "GS-481",
+        "GS-510"
+      ],
+      "first_action": "先展开并正确解释部分和定义，再进入后续极限或半径判断。",
+      "personal_breakpoint": "把带上限的部分和误读成被选择的项或末项。",
+      "reason": "GS-481 把 S_(2n+1) 误读为奇数项之和，GS-510 把 H_n 误读为 1/n；两端现均有日期化 user_confirmed wrong_history，严格四门槛全部通过。",
+      "same_first_action": true,
+      "same_personal_breakpoint": true,
+      "same_specific_object": true,
+      "source_card_id": "GS-481",
+      "specific_object": "由求和上限定义的部分和量",
+      "target_card_id": "GS-510"
+    },
+    {
+      "both_personal_breakpoints_user_confirmed": true,
+      "decision": "add",
+      "declaration_owners": [
+        "GS-488",
+        "GS-515"
+      ],
+      "first_action": "乘指数积分因子，把 Y'-pY 反向识别为乘积导数。",
+      "personal_breakpoint": "没有从 Y'-pY 反向识别指数积分因子乘积导数。",
+      "reason": "GS-488 取 Y=f'、p=lambda，GS-515 取 Y=f、p=p(x)；两端的具体线性算子、首动作和首断点一致，且均为 user_confirmed。",
+      "same_first_action": true,
+      "same_personal_breakpoint": true,
+      "same_specific_object": true,
+      "source_card_id": "GS-488",
+      "specific_object": "一阶线性组合 Y'-pY",
+      "target_card_id": "GS-515"
+    }
+  ],
+  "strong_edges_verified": [
+    {
+      "both_personal_breakpoints_user_confirmed": true,
+      "decision": "add",
+      "declaration_owners": [
+        "GS-481",
+        "GS-510"
+      ],
+      "first_action": "先展开并正确解释部分和定义，再进入后续极限或半径判断。",
+      "personal_breakpoint": "把带上限的部分和误读成被选择的项或末项。",
+      "reason": "GS-481 把 S_(2n+1) 误读为奇数项之和，GS-510 把 H_n 误读为 1/n；两端现均有日期化 user_confirmed wrong_history，严格四门槛全部通过。",
+      "same_first_action": true,
+      "same_personal_breakpoint": true,
+      "same_specific_object": true,
+      "source_card_id": "GS-481",
+      "specific_object": "由求和上限定义的部分和量",
+      "target_card_id": "GS-510"
+    },
+    {
+      "both_personal_breakpoints_user_confirmed": true,
+      "decision": "add",
+      "declaration_owners": [
+        "GS-488",
+        "GS-515"
+      ],
+      "first_action": "乘指数积分因子，把 Y'-pY 反向识别为乘积导数。",
+      "personal_breakpoint": "没有从 Y'-pY 反向识别指数积分因子乘积导数。",
+      "reason": "GS-488 取 Y=f'、p=lambda，GS-515 取 Y=f、p=p(x)；两端的具体线性算子、首动作和首断点一致，且均为 user_confirmed。",
+      "same_first_action": true,
+      "same_personal_breakpoint": true,
+      "same_specific_object": true,
+      "source_card_id": "GS-488",
+      "specific_object": "一阶线性组合 Y'-pY",
+      "target_card_id": "GS-515"
+    }
+  ],
+  "strong_edges_verified_existing": [],
+  "support_code_repairs": [],
+  "title": "全库逐题语义复核第32批正式收口",
+  "validation": {
+    "derived_output_hash_parity": "passed_44_of_44",
+    "deterministic_relation_preflight": "passed_2_edges_4_bidirectional_declarations_and_78_removals_94_owner_declarations_3_blocked_candidates",
+    "formal_and_generated_hash_parity": "166_source_writes_and_44_derived_outputs_current",
+    "formal_source_write_hash_parity": "passed_147_of_147",
+    "full_test_suite": "passed_357_of_357",
+    "git_diff_check": "passed",
+    "graph_check": "passed",
+    "graph_source_state_parity": "passed_aa8ed3bf6e0268e6f478ffad36c4d704ca8b78a3a7d61bca9d283c519fa9b4b2",
+    "historical_snapshot_revalidation": "passed_9_review_closeout_pairs_14_cards",
+    "json_parse": "passed_draft_generation",
+    "review_receipt_hash_parity": "passed_19_of_19",
+    "selected_hash_bindings": "passed_20_cards_21_details_24_physical_assets_22_unique",
+    "source_write_hash_parity": "passed_166_of_166",
+    "status": "passed",
+    "targeted_tests": "passed_12_of_12_B30_B31_B32",
+    "wrongnet_rebuild_reinvoked_during_validation": false
+  },
+  "visual_writes": [
+    {
+      "card_id": "GS-500",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-500_57941-2026.5.25.md",
+      "post_sha256": "9c9f601bd0a504838aff4b5014c2c19800d864d3b8426c91490a0ccc2625778a",
+      "pre_sha256": "9cb8418aa6b74619a24223ef498d116297aa8152ae4cac4b0c0849204cd436b8",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-501",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-501_19516-2026.5.26.md",
+      "post_sha256": "4adb49c46086efabe0bacc46413332a7e5932c3ee79ff80682530e603616ccc3",
+      "pre_sha256": "ace24b6321a35ec91708741a5e6f4e5de07c89e307fddf703b266e8392f4c212",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-502",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-502_102347-2026.5.26.md",
+      "post_sha256": "c5cef7aee056d8e1a206490ad4b6e4fcd6cb429c8341d4d4db1610212f540aaf",
+      "pre_sha256": "09e77e1a37f7f28ded9bc95cf667cc1095d382c19bf05264833a91d9500d5497",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-503",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-503_78385-2026.5.26.md",
+      "post_sha256": "a4830b578d609d6f712afd4b550b572bc3dc801aa39f683804ead1f7050d12c0",
+      "pre_sha256": "8a7647b53ca051f98bb670dabab50860eeb84f17fe3d4ec0e7686ecdb0589918",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-504",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-504_102355-2026.5.26.md",
+      "post_sha256": "12d8692ffae731bfb7e4ea68360345a54f9b4e0a4fe3825c895673b179bb2ca4",
+      "pre_sha256": "35f67a488f74b28c29c62b73ef7a18e5a5aafc074b2d50e9ff4c22edbbb98003",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-505",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-505_30185-2026.5.26.md",
+      "post_sha256": "d3c5aa19ab1daa3136f016ce6cf35d44bee9362dd9f8ddc7292674f327b320ff",
+      "pre_sha256": "2c896d830e7bff4402c640870c696f163b8ceb5d26d5f31e11e76ec22d2a540c",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-506",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-506_57844-2026.5.27.md",
+      "post_sha256": "4edf11bc685a11f2ff2b4660ee74258f7a7dde3c415fe124664027481a203995",
+      "pre_sha256": "44d4a443602e59b4ed77e96d124dffab157e0d8c3730a2e25b4dfd9bf26515b5",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-507",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-507_170727-2026.5.26.md",
+      "post_sha256": "1527e25d6871a96df2ab73bc4dad57eb752503d9b70f3802be14907c0205789d",
+      "pre_sha256": "a9070532259aef35927e74dde77680decc0d2f12ae86b6d4eff21bde526072e4",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-508",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-508_58023-2026.5.27.md",
+      "post_sha256": "b0c33ba79c49cd797bbef91b2a834611b9bc4fe0686014f6f35575713ae1c7ed",
+      "pre_sha256": "898b3f5f519334d26e224abcab948da719aa19f43f573864c47a24fd7d0cc134",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-509",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-509_58085-2026.5.27.md",
+      "post_sha256": "486a114d89abe31ae618fbbcb7a87256fa05856f996e933b05fbd47f02158324",
+      "pre_sha256": "a9f7c49450f44184dfee8632d9c8f62148411f5478e622c90895ebf5ec7eccff",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-510",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-510_102383-2026.5.28.md",
+      "post_sha256": "54cd55304ec553962f0f3ea84b2b28cf7ecab6f211102f17a9904c5760a70f08",
+      "pre_sha256": "edcb394960eb63ffe34330bb8222a6dd071a728f4f860718e05dc50935980796",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-511",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-511_102386-2026.5.28.md",
+      "post_sha256": "6622482c060c96b354d394f9783dc694fce6b7170b05a886b9caa09ebb2aecc6",
+      "pre_sha256": "36977c696df1faf46d1c92eedb2bac88e9f305be86d4482ea99c54075d84fc06",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-512",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-512_102389-2026.5.28.md",
+      "post_sha256": "9d59ecbde5dfc08e29b2b91c45b0043c359024f482719d83b9c9f72b12dbf31a",
+      "pre_sha256": "4b66a0d4e79d86dcc443ae0d89cfb894da448b1d3a8797a6f821dc2d8098a07c",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-513",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-513_57720-2026.5.29.md",
+      "post_sha256": "08c4ea101afc6588ddb44560dd0f36d793e7eac49c26e05a1f7d58caff605493",
+      "pre_sha256": "54c742cf7f38d5f40824b112f01ac2756b3f88696bd474069291d779cd7cc9c0",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-514",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-514_170676-2026.5.29.md",
+      "post_sha256": "06746e7e97a7580a2a16c3b0dc374dc8a7c63fdd76cdd860f7a8e73003ff8aeb",
+      "pre_sha256": "f64c6bb75a43f73132ef1f7d1cb0edc678fda19136ddc9066069143d3de419a2",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-515",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-515_170678-2026.5.29.md",
+      "post_sha256": "4e516d46be9fd54bd628e6b8fc8daf57e6b0374fdd1746eddf184a8455552431",
+      "pre_sha256": "820190908fb3d1e59d55e5daa1549b83126ea8969265169d13103281a3899835",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-516",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-516_79209-2026.5.30.md",
+      "post_sha256": "a88e91b9335785d3a457161f855ccca36cf729955853e656c494f58e47c294bf",
+      "pre_sha256": "74b7c6e8a6e740051d7eb4bb2bc271fea987d8ba50ba07ea2414403285009e93",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-517",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-517_102393-2026.5.30.md",
+      "post_sha256": "cc466928b7d6fd13fa80a87caf310c1ca5251accf0fe046476bcbef58af14873",
+      "pre_sha256": "deadf4be9a4063286b67e9ac6d1c94b5403b228b74833afb66cb52dd2474d0a2",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-518",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-518_102395-2026.5.30.md",
+      "post_sha256": "ebac526dac6e75cc2e49c8cca56b8f9af4500aebd3f40719ab3a05fda66785c6",
+      "pre_sha256": "3f0b6f6b0fe01e7438b1a43ebe8be3f8b12dc1353cd78af4b56e62f315659b91",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-519",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-519_102397-2026.5.30.md",
+      "post_sha256": "06f2825e022f88ab9a10909b809623146a4e053d20bec99e79d1d0f280f2aaf5",
+      "pre_sha256": "c894cb3e98737adf54376fbd83c1d7d8fd97c5e0ba02a6ae77437793efb92b85",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    },
+    {
+      "card_id": "GS-502",
+      "kind": "selected_visual_detail",
+      "path": "错题知识网络/可视化错题详情/高等数学/MN4-GS-CH01-599_171554.md",
+      "post_sha256": "99ae3b205a93a508c3365b990e967702856fa506b5cf745be5aabd1a2757441a",
+      "pre_sha256": "72d318473dd52ecb085cf5c1494e98653432fd7126e6102fdfbf732d0deb7a14",
+      "reason": "semantic_detail_review_evidence_boundary_and_content_repairs"
+    }
+  ],
+  "warnings": [
+    {
+      "card_ids": [
+        "GS-151",
+        "GS-500",
+        "GS-504",
+        "GS-511",
+        "GS-544",
+        "GS-589"
+      ],
+      "code": "blocked_candidates_not_promoted",
+      "status": "3_candidates_retained_as_nonformal_navigation_only"
+    },
+    {
+      "card_ids": [
+        "GS-502"
+      ],
+      "code": "same_card_asset_aliases_deduplicated",
+      "status": "24_physical_paths_22_unique_contents"
+    },
+    {
+      "card_count": 63,
+      "code": "formal_projection_sha_contract_repaired",
+      "status": "all_63_source_summaries_now_match_canonical_formal_projection"
+    },
+    {
+      "code": "strict_relation_convergence",
+      "status": "78_logical_edges_94_owner_declarations_removed_before_single_build"
+    }
+  ],
+  "wiki_id": "MATHWIKI-REVIEW-071",
+  "wrongnet_rebuild": {
+    "command": "python3 错题知识网络/scripts/wrongnet.py rebuild",
+    "completion_evidence": "single_process_finished_and_all_9_outputs_rehashed",
+    "final_successful_rebuilds": 1,
+    "invocations_this_batch": 1,
+    "outputs": [
+      {
+        "bytes": 4772692,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/生成/wrong_questions.json",
+        "post_sha256": "3e1746ec29ec5fa20550b7a453d4574e404beab7486f6a66521d5b215cf1359e",
+        "pre_sha256": "32e4c62afd045c2d95030b4e6857f4e20c431e6d5622b0ee99a2231642144a47",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 100287,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/生成/专题链关联清单.md",
+        "post_sha256": "6c3a6ebc30679c09440fbc42aaf0c31945e7180638b590688c4b3da424b4497b",
+        "pre_sha256": "7cb0d21dad148ef32abbd2af60cecb55035f081e5ee2a10d0757b43f01e82abb",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 13068,
+        "changed": false,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/生成/弱边审计清单.md",
+        "post_sha256": "e52eb66e7b8e776e0c8e7f58dac296d6b8cbdd9c1e7d0e49ecb147e90f7f4675",
+        "pre_sha256": "e52eb66e7b8e776e0c8e7f58dac296d6b8cbdd9c1e7d0e49ecb147e90f7f4675",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 890560,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/生成/强关联清单.md",
+        "post_sha256": "84600d34a818c0e0540affb84da3d9b95e42bc574d98309815dacddb18e53758",
+        "pre_sha256": "59fb778ad7a1767a9194e2a48933edb2e5318f3a9a9ab11d2609d014e8ef0de5",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 1070404,
+        "changed": false,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/生成/按知识点复做清单.md",
+        "post_sha256": "9c17fe51a0595f95b53fb50cd1018b1b3fb07beaf6f844fa5523f257ccc56b1a",
+        "pre_sha256": "9c17fe51a0595f95b53fb50cd1018b1b3fb07beaf6f844fa5523f257ccc56b1a",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 1739195,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/生成/相似题清单.md",
+        "post_sha256": "2b0a7844aeb13079733d7bf9e70dd78d3b58f32e87e933d8ca9d1152e28c11d8",
+        "pre_sha256": "a6deb52d363a3937463a84c5561027d3c4ddfadc7edff5633346cd9c1df0a549",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 660493,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/生成/知识网络图.mmd",
+        "post_sha256": "00d7a9ddab0333a22e32192e30d0daeeaf6b9ea9788d854b2a5e2599fa39dc39",
+        "pre_sha256": "2a328dc81a8884e001b81dfe33216a83b0ba222831f5c013b4f863f3a1402f93",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 549637,
+        "changed": false,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/生成/错题索引.md",
+        "post_sha256": "4385307b00bf424eb96b711d8e454d631efca361ee0dd108b3d6e815a2475f21",
+        "pre_sha256": "4385307b00bf424eb96b711d8e454d631efca361ee0dd108b3d6e815a2475f21",
+        "superseded_post_sha256": null
+      },
+      {
+        "bytes": 15121,
+        "changed": true,
+        "final_changed_from_superseded": false,
+        "path": "错题知识网络/生成/错题网络概览.md",
+        "post_sha256": "30703a92715a6ec84e9f6f0263a79bf5834fb0429bac17b1fe8805aa91cc176d",
+        "pre_sha256": "52c806014094470dfb6a781843abd90b1a15a03e6ae6e0e0166e52b4c8142bf1",
+        "superseded_post_sha256": null
+      }
+    ],
+    "successful_rebuilds": 1,
+    "summary": {
+      "medium": 687,
+      "strong": 2129,
+      "weak_audit": 35
+    },
+    "superseded_successful_rebuilds": 0
+  },
+  "batch34_lineage_revalidation": {
+    "batch_number": 34,
+    "date": "2026-07-24",
+    "prior_source_review_sha256": "1cafd44a9410d2563458191407a55a903fbd84830a880167d48981cadb32d06b",
+    "current_source_review_sha256": "13fe73f3f151428458a5015e376069e053812fb5929c1cd7fb8168aea698c38f",
+    "affected_card_ids": [
+      "GS-511"
+    ],
+    "content_change_scope": "relation_metadata_and_navigation_reference_only",
+    "removed_edges": [],
+    "added_edges": [
+      "GS-511--GS-544"
+    ],
+    "current_related_by_card": {
+      "GS-511": [
+        "GS-544"
+      ]
+    },
+    "prior_lineage_fields_preserved": [
+      "historical_lineage_revalidation"
+    ],
+    "historical_closeout_payload_preserved": true,
+    "note": "第34批以计划卡哈希重绑第32批关系谱系；原语义判断与 validation 保持不变。"
+  }
+}

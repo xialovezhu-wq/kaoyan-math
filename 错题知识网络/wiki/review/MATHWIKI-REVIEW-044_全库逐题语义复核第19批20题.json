@@ -1,0 +1,3132 @@
+{
+  "schema_version": "math_target_semantic_review_batch_v1",
+  "wiki_id": "MATHWIKI-REVIEW-044",
+  "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260723-B19",
+  "title": "全库逐题语义复核第19批20题",
+  "reviewed_on": "2026-07-23",
+  "batch_number": 19,
+  "campaign_formal_card_count": 831,
+  "scope": {
+    "card_count": 20,
+    "physical_asset_path_count": 22,
+    "unique_visual_content_sha256_count": 22,
+    "canonical_detail_count": 20,
+    "reviewed_detail_file_count": 20,
+    "physical_asset_role_path_counts": {
+      "question": 20,
+      "solution": 2,
+      "reference": 0
+    },
+    "unique_visual_content_role_counts": {
+      "question": 20,
+      "solution": 2,
+      "reference": 0
+    }
+  },
+  "frozen_source_state_sha256": "1407e3eee8079ececfa5bf16f0337fe911c23d58ab210dace448f1d81bd3db7f",
+  "frozen_selection": {
+    "selection_order_sha256": "e8adda7a0a05125dd2851fb1c05e5749e2b179d8023a879ef0776f46c811cf8b",
+    "selection_compact_json_sha256": "89a6abd5542a1d4a3bbfcc2cfa7f9e90acea7b400ac633a5da12bae62f26f625",
+    "canonical_snapshot_sha256": "66c001f85b33fd2625ec7e0f7e083f58a7960f051d2e2726254b2df7beabba9f",
+    "visual_manifest_sha256": "3893a9ccf90cef6097d6fdd622ad5ec4e47c36fcb3710f4d0f7b12b571af6982",
+    "record_write_manifest_sha256": "3893a9ccf90cef6097d6fdd622ad5ec4e47c36fcb3710f4d0f7b12b571af6982",
+    "prior_closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-043_全库逐题语义复核第18批正式收口.json",
+    "prior_closeout_sha256": "7dca7bb6b632b705d5e89d5f37ffe0040ccb0f809dc296d62cfd9052427de1f9",
+    "registered_cards": 20,
+    "registered_detail_files": 20,
+    "registered_physical_asset_paths": 22,
+    "pre_review_path_hash_drift_count": 0
+  },
+  "guardrails": {
+    "formal_related_write": true,
+    "formal_card_write": true,
+    "formal_visual_write": true,
+    "mode": "FORMAL_CLOSEOUT",
+    "review_origin_mode": "FULL_VISUAL_TARGET_REVIEW",
+    "formal_closeout_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B19",
+    "personal_error_requires_explicit_evidence": true,
+    "duplicate_physical_assets_reviewed_once_per_sha256": true,
+    "identity_blocked_cards_participate_in_aggregate_edges": false,
+    "stable_id_merge_or_delete": false,
+    "wrongnet_rebuild_policy": "exactly_once_after_all_formal_source_edits"
+  },
+  "evidence_distribution": {
+    "user_confirmed": 1,
+    "pending_user_confirmation": 19,
+    "legacy_unclassified": 0
+  },
+  "evidence_card_ids": {
+    "user_confirmed": [
+      "GS-221"
+    ],
+    "pending_user_confirmation": [
+      "GS-209",
+      "GS-212",
+      "GS-213",
+      "GS-214",
+      "GS-215",
+      "GS-216",
+      "GS-217",
+      "GS-218",
+      "GS-219",
+      "GS-220",
+      "GS-223",
+      "GS-224",
+      "GS-225",
+      "GS-226",
+      "GS-227",
+      "GS-228",
+      "GS-229",
+      "GS-230",
+      "GS-231"
+    ],
+    "legacy_unclassified": []
+  },
+  "repeat_count_vector": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "asset_boundary": {
+    "solution_image_card_ids": [
+      "GS-213",
+      "GS-218"
+    ],
+    "question_only_card_ids": [
+      "GS-209",
+      "GS-212",
+      "GS-214",
+      "GS-215",
+      "GS-216",
+      "GS-217",
+      "GS-219",
+      "GS-220",
+      "GS-221",
+      "GS-223",
+      "GS-224",
+      "GS-225",
+      "GS-226",
+      "GS-227",
+      "GS-228",
+      "GS-229",
+      "GS-230",
+      "GS-231"
+    ],
+    "formal_question_evidence_excluded_card_ids": [],
+    "visual_gap_card_ids": [],
+    "same_card_alias_groups": [],
+    "identity_hold_groups": [
+      {
+        "group_id": "B11-ID-05",
+        "selected_card_id": "GS-052",
+        "member_ids": [
+          "GS-052",
+          "GS-231",
+          "GS-248",
+          "GS-345"
+        ],
+        "evidence": "same_source_refid_and_byte_identical_question_image",
+        "aggregate_edge_policy": "block_until_relinked"
+      }
+    ],
+    "visual_mismatch_groups": [],
+    "cross_id_exact_duplicate_assets": [
+      {
+        "sha256": "31d5ada84ff84d9fbcbc7140ec1730813c4df2a6dbe99ee31f7b69d8116c7a54",
+        "bindings": [
+          {
+            "card_id": "GS-052",
+            "role": "question",
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-052/question_01.png"
+          },
+          {
+            "card_id": "GS-231",
+            "role": "question",
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-231/question_01.png"
+          },
+          {
+            "card_id": "GS-248",
+            "role": "question",
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-248/question_01.png"
+          },
+          {
+            "card_id": "GS-345",
+            "role": "question",
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-345/question_01.png"
+          }
+        ],
+        "decision": "hold_without_merge_delete_or_recurrence_increment"
+      }
+    ]
+  },
+  "relation_audit": {
+    "existing_verified": [
+      {
+        "source_card_id": "GS-213",
+        "target_card_id": "GS-576",
+        "declaration_owners": [
+          "GS-213",
+          "GS-576"
+        ],
+        "decision": "verify_existing_strong_edge",
+        "rationale": "同为微分不等式经指数因子转成辅助函数单调性。",
+        "reason": "同为微分不等式经指数因子转成辅助函数单调性。"
+      },
+      {
+        "source_card_id": "GS-213",
+        "target_card_id": "GS-488",
+        "declaration_owners": [
+          "GS-213",
+          "GS-488"
+        ],
+        "decision": "verify_existing_strong_edge",
+        "rationale": "同为从一阶线性导数组合反推指数因子完整导数。",
+        "reason": "同为从一阶线性导数组合反推指数因子完整导数。"
+      },
+      {
+        "source_card_id": "GS-215",
+        "target_card_id": "GS-216",
+        "declaration_owners": [
+          "GS-215",
+          "GS-216"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "共享正权积分零点机制，本题额外分部换权并两次 Rolle。",
+        "reason": "共享正权积分零点机制，本题额外分部换权并两次 Rolle。"
+      },
+      {
+        "source_card_id": "GS-217",
+        "target_card_id": "GS-535",
+        "declaration_owners": [
+          "GS-217",
+          "GS-535"
+        ],
+        "decision": "verify_existing_strong_edge",
+        "rationale": "共享 Taylor 余项的定量放缩机制。",
+        "reason": "共享 Taylor 余项的定量放缩机制。"
+      },
+      {
+        "source_card_id": "GS-221",
+        "target_card_id": "GS-534",
+        "declaration_owners": [
+          "GS-221",
+          "GS-534"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "都构造 f(x)-μx，把指定导数值化为零导数点。",
+        "reason": "都构造 f(x)-μx，把指定导数值化为零导数点。"
+      },
+      {
+        "source_card_id": "GS-223",
+        "target_card_id": "GS-226",
+        "declaration_owners": [
+          "GS-223",
+          "GS-226"
+        ],
+        "decision": "verify_existing_strong_edge",
+        "rationale": "都把导数渐近信息经移动中值点转成函数层结论。",
+        "reason": "都把导数渐近信息经移动中值点转成函数层结论。"
+      },
+      {
+        "source_card_id": "GS-224",
+        "target_card_id": "GS-506",
+        "declaration_owners": [
+          "GS-224",
+          "GS-506"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "都用中值定理抽样导数并由导函数单调性判商函数单调。",
+        "reason": "都用中值定理抽样导数并由导函数单调性判商函数单调。"
+      },
+      {
+        "source_card_id": "GS-225",
+        "target_card_id": "GS-452",
+        "declaration_owners": [
+          "GS-225",
+          "GS-452"
+        ],
+        "decision": "verify_existing_strong_edge",
+        "rationale": "都从函数值差的局部估计制造导数信息。",
+        "reason": "都从函数值差的局部估计制造导数信息。"
+      },
+      {
+        "source_card_id": "GS-228",
+        "target_card_id": "GS-450",
+        "declaration_owners": [
+          "GS-228",
+          "GS-450"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "共享凸函数切线下界与 Taylor 余项非负机制。",
+        "reason": "共享凸函数切线下界与 Taylor 余项非负机制。"
+      }
+    ],
+    "added": [
+      {
+        "source_card_id": "GS-209",
+        "target_card_id": "GS-213",
+        "declaration_owners": [
+          "GS-209",
+          "GS-213"
+        ],
+        "decision": "add_specific_strong_edge_bidirectionally",
+        "rationale": "同为 f'-cf>0 经 f(x)e^{-cx} 转为单调性并比较比值。",
+        "reason": "同为 f'-cf>0 经 f(x)e^{-cx} 转为单调性并比较比值。"
+      },
+      {
+        "source_card_id": "GS-214",
+        "target_card_id": "GS-474",
+        "declaration_owners": [
+          "GS-214",
+          "GS-474"
+        ],
+        "decision": "add_specific_strong_edge_bidirectionally",
+        "rationale": "同为从目标式反推辅助函数并制造端点同值后用 Rolle。",
+        "reason": "同为从目标式反推辅助函数并制造端点同值后用 Rolle。"
+      },
+      {
+        "source_card_id": "GS-219",
+        "target_card_id": "GS-227",
+        "declaration_owners": [
+          "GS-219",
+          "GS-227"
+        ],
+        "decision": "add_specific_strong_edge_bidirectionally",
+        "rationale": "同为最大值点连接零值端点，利用短区间放大导数估计。",
+        "reason": "同为最大值点连接零值端点，利用短区间放大导数估计。"
+      },
+      {
+        "source_card_id": "GS-223",
+        "target_card_id": "GS-103",
+        "declaration_owners": [
+          "GS-223",
+          "GS-103"
+        ],
+        "decision": "add_specific_strong_edge_bidirectionally",
+        "rationale": "共享点处差商与去心导函数极限之间的中值定理桥接。",
+        "reason": "共享点处差商与去心导函数极限之间的中值定理桥接。"
+      },
+      {
+        "source_card_id": "GS-226",
+        "target_card_id": "GS-509",
+        "declaration_owners": [
+          "GS-226",
+          "GS-509"
+        ],
+        "decision": "add_specific_strong_edge_bidirectionally",
+        "rationale": "共享无穷远导数信息到函数极限的条件边界。",
+        "reason": "共享无穷远导数信息到函数极限的条件边界。"
+      },
+      {
+        "source_card_id": "GS-227",
+        "target_card_id": "GS-570",
+        "declaration_owners": [
+          "GS-227",
+          "GS-570"
+        ],
+        "decision": "add_specific_strong_edge_bidirectionally",
+        "rationale": "共享最值点、费马条件与 Taylor 导数估计链。",
+        "reason": "共享最值点、费马条件与 Taylor 导数估计链。"
+      },
+      {
+        "source_card_id": "GS-230",
+        "target_card_id": "GS-543",
+        "declaration_owners": [
+          "GS-230",
+          "GS-543"
+        ],
+        "decision": "add_specific_strong_edge_bidirectionally",
+        "rationale": "共享等长分段分别取中值点再依顺序比较的机制。",
+        "reason": "共享等长分段分别取中值点再依顺序比较的机制。"
+      }
+    ],
+    "removed": [
+      {
+        "source_card_id": "GS-208",
+        "target_card_id": "GS-213",
+        "declaration_owners": [
+          "GS-208",
+          "GS-213"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "身份链接冻结，禁止恢复聚合强边。",
+        "reason": "身份链接冻结，禁止恢复聚合强边。"
+      },
+      {
+        "source_card_id": "GS-208",
+        "target_card_id": "GS-218",
+        "declaration_owners": [
+          "GS-208"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "身份链接冻结，禁止恢复聚合强边。",
+        "reason": "身份链接冻结，禁止恢复聚合强边。"
+      },
+      {
+        "source_card_id": "GS-214",
+        "target_card_id": "GS-477",
+        "declaration_owners": [
+          "GS-214",
+          "GS-477"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-214",
+        "target_card_id": "GS-215",
+        "declaration_owners": [
+          "GS-215"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-214",
+        "target_card_id": "GS-220",
+        "declaration_owners": [
+          "GS-220"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-215",
+        "target_card_id": "GS-218",
+        "declaration_owners": [
+          "GS-215"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-215",
+        "target_card_id": "GS-220",
+        "declaration_owners": [
+          "GS-220"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-216",
+        "target_card_id": "GS-220",
+        "declaration_owners": [
+          "GS-220"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-218",
+        "target_card_id": "GS-220",
+        "declaration_owners": [
+          "GS-220"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-220",
+        "target_card_id": "GS-245",
+        "declaration_owners": [
+          "GS-220",
+          "GS-245"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-215",
+        "target_card_id": "GS-241",
+        "declaration_owners": [
+          "GS-241"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-216",
+        "target_card_id": "GS-241",
+        "declaration_owners": [
+          "GS-241"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-215",
+        "target_card_id": "GS-244",
+        "declaration_owners": [
+          "GS-244"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-216",
+        "target_card_id": "GS-244",
+        "declaration_owners": [
+          "GS-244"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-215",
+        "target_card_id": "GS-245",
+        "declaration_owners": [
+          "GS-245"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-220",
+        "target_card_id": "GS-321",
+        "declaration_owners": [
+          "GS-321"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-220",
+        "target_card_id": "GS-334",
+        "declaration_owners": [
+          "GS-334"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-216",
+        "target_card_id": "GS-571",
+        "declaration_owners": [
+          "GS-216",
+          "GS-571"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-217",
+        "target_card_id": "GS-450",
+        "declaration_owners": [
+          "GS-450"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-219",
+        "target_card_id": "GS-476",
+        "declaration_owners": [
+          "GS-219",
+          "GS-476"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-219",
+        "target_card_id": "GS-537",
+        "declaration_owners": [
+          "GS-219",
+          "GS-537"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-219",
+        "target_card_id": "GS-229",
+        "declaration_owners": [
+          "GS-229"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-221",
+        "target_card_id": "GS-490",
+        "declaration_owners": [
+          "GS-221"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-221",
+        "target_card_id": "GS-506",
+        "declaration_owners": [
+          "GS-221"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-221",
+        "target_card_id": "GS-514",
+        "declaration_owners": [
+          "GS-221",
+          "GS-514"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-221",
+        "target_card_id": "GS-476",
+        "declaration_owners": [
+          "GS-476"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-221",
+        "target_card_id": "GS-525",
+        "declaration_owners": [
+          "GS-525"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-221",
+        "target_card_id": "GS-537",
+        "declaration_owners": [
+          "GS-537"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-223",
+        "target_card_id": "GS-225",
+        "declaration_owners": [
+          "GS-223"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-223",
+        "target_card_id": "GS-227",
+        "declaration_owners": [
+          "GS-227"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-223",
+        "target_card_id": "GS-229",
+        "declaration_owners": [
+          "GS-229"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-226",
+        "target_card_id": "GS-227",
+        "declaration_owners": [
+          "GS-226",
+          "GS-227"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-227",
+        "target_card_id": "GS-229",
+        "declaration_owners": [
+          "GS-227",
+          "GS-229"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-227",
+        "target_card_id": "GS-230",
+        "declaration_owners": [
+          "GS-227",
+          "GS-230"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-229",
+        "target_card_id": "GS-230",
+        "declaration_owners": [
+          "GS-229",
+          "GS-230"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-230",
+        "target_card_id": "GS-438",
+        "declaration_owners": [
+          "GS-230"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-230",
+        "target_card_id": "GS-477",
+        "declaration_owners": [
+          "GS-230"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      },
+      {
+        "source_card_id": "GS-230",
+        "target_card_id": "GS-509",
+        "declaration_owners": [
+          "GS-230"
+        ],
+        "decision": "remove_broad_or_method_mismatched_edge",
+        "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+        "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+      }
+    ],
+    "existing_verified_count": 9,
+    "existing_verified_pre_owner_count": 14,
+    "existing_verified_owner_count": 18,
+    "removed_count": 38,
+    "removed_owner_count": 49,
+    "added_count": 7,
+    "added_owner_count": 14,
+    "bidirectional_owner_declarations_added_count": 18,
+    "combined_strong_logical_edge_count": 16,
+    "combined_owner_declaration_count": 32,
+    "aggregate_blocked_card_ids": [
+      "GS-231"
+    ],
+    "source_ambiguity_held_but_aggregation_allowed_card_ids": [
+      "GS-224"
+    ],
+    "zero_degree_card_ids": [
+      "GS-212",
+      "GS-218",
+      "GS-220",
+      "GS-229",
+      "GS-231"
+    ]
+  },
+  "campaign_progress": {
+    "batch_number": 19,
+    "batch_reviewed_cards": 20,
+    "cumulative_reviewed_cards": 380,
+    "remaining_cards": 451,
+    "cumulative_physical_asset_paths_reviewed": 704,
+    "cumulative_unique_asset_count": 575,
+    "cumulative_unique_asset_role_counts": {
+      "question": 359,
+      "solution": 214,
+      "reference": 2
+    }
+  },
+  "cards": [
+    {
+      "card_id": "GS-209",
+      "card_path": "错题知识网络/错题卡/GS-209_1000题B组6.8.md",
+      "card_sha256": "bddc6ee146e6f3e6a586499e692462cde3cdc6946eb3f134bd3a5bca00b33efe",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-209_1000题B组6.8.md"
+      ],
+      "reviewed_detail_sha256": [
+        "f307c6e3b3af68e9bb4beeafcb4eea21b95c0d0c987d06969fb891e156cc692e"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-209/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "b91568dcabc8fbec409054496697a7faf63f2d0c86c19de7bfea4a255d36d69c"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知可导正函数满足一阶微分不等式，判断多个函数值比值。",
+      "asked_output": "选择必然成立的比值不等式",
+      "answer": "B",
+      "solution_outline": [
+        "构造指数因子辅助函数 f(x)e^{-2x}。",
+        "由导数为正判定辅助函数严格递增。",
+        "按自变量顺序比较辅助函数值并还原比值。"
+      ],
+      "knowledge_nodes": [
+        "微分不等式",
+        "指数因子辅助函数",
+        "导数判单调",
+        "比值比较"
+      ],
+      "first_action": "先构造 f(x)e^{-2x} 并计算导数符号",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先构造 f(x)e^{-2x} 并计算导数符号”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "exponential_factor_verified",
+          "severity": "medium",
+          "finding": "答案 B 与指数因子单调性比较完整一致。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-209",
+          "target_card_id": "GS-213",
+          "declaration_owners": [
+            "GS-209",
+            "GS-213"
+          ],
+          "decision": "add_specific_strong_edge_bidirectionally",
+          "rationale": "同为 f'-cf>0 经 f(x)e^{-cx} 转为单调性并比较比值。",
+          "reason": "同为 f'-cf>0 经 f(x)e^{-cx} 转为单调性并比较比值。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-212",
+      "card_path": "错题知识网络/错题卡/GS-212_1000题B组6.5.md",
+      "card_sha256": "931151dc36f37e4cd6ee7659cb3b6a54593c5798a69ee75d4378b834995fbd69",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-212_1000题B组6.5.md"
+      ],
+      "reviewed_detail_sha256": [
+        "f505eacc95dfcdae730cf3e0b90ee8d1f7fca11fd42c22135fdff4a2d93b10e1"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-212/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "b13796e293ef39e14d4bc50257cb531b652e9da7fe9c7b23af3641f9cf2fbab0"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "正函数满足平方导数不等式，且 f(x)-x 在零点取得给定极值，证明指数上界。",
+      "asked_output": "证明 f(x) 不超过 e^x",
+      "answer": "令 F=ln f，由 F''<0 和零点处切线得到 F(x)≤x。",
+      "solution_outline": [
+        "由正性取对数。",
+        "把原不等式化为对数函数严格凹。",
+        "由极值条件求切点函数值和斜率，再用切线上界。"
+      ],
+      "knowledge_nodes": [
+        "对数凹性",
+        "二阶导数判凹凸性",
+        "凹函数切线上界"
+      ],
+      "first_action": "先令 F=ln f 并计算 F''",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先令 F=ln f 并计算 F''”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "logarithmic_concavity_formula_repaired",
+          "severity": "medium",
+          "finding": "损坏公式与来源记录中两处凹凸方向错误已修复。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-213",
+      "card_path": "错题知识网络/错题卡/GS-213_2020年第六题.md",
+      "card_sha256": "7c8703429dbd1b53c0b30b96cca5434f17b65ec2409e8694c2080d85f2e7ee27",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-213_2020年第六题.md"
+      ],
+      "reviewed_detail_sha256": [
+        "a492c4b8ee4ded64f29c31941d31b22451080672399edd23cda7c7fc1ecc2e56"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-213/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-213/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "84f61954c0e54aef0249b4a72126905280af63c0debf356c4bb9f666c8a39e78",
+        "c6ae804dff451eafdc03114ac252ee63c2c2a17fb4f15ca2c372c29208e3fcce"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知 f'(x)>f(x)>0，判断离散点函数值比值。",
+      "asked_output": "选择必然成立的比值不等式",
+      "answer": "B",
+      "solution_outline": [
+        "构造 f(x)e^{-x}。",
+        "证明辅助函数严格递增。",
+        "比较 -1 与 0 对应取值并还原。"
+      ],
+      "knowledge_nodes": [
+        "微分不等式",
+        "指数因子辅助函数",
+        "函数单调性",
+        "比值比较"
+      ],
+      "first_action": "先写 F(x)=f(x)e^{-x}",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先写 F(x)=f(x)e^{-x}”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": true,
+        "solution_review": "question_and_solution_images_reviewed",
+        "question_solution": "verified_consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "visual_solution_and_identity_freeze",
+          "severity": "medium",
+          "finding": "题图和解析图一致；GS-208 身份冻结边未恢复。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-213",
+          "target_card_id": "GS-576",
+          "declaration_owners": [
+            "GS-213",
+            "GS-576"
+          ],
+          "decision": "verify_existing_strong_edge",
+          "rationale": "同为微分不等式经指数因子转成辅助函数单调性。",
+          "reason": "同为微分不等式经指数因子转成辅助函数单调性。"
+        },
+        {
+          "source_card_id": "GS-213",
+          "target_card_id": "GS-488",
+          "declaration_owners": [
+            "GS-213",
+            "GS-488"
+          ],
+          "decision": "verify_existing_strong_edge",
+          "rationale": "同为从一阶线性导数组合反推指数因子完整导数。",
+          "reason": "同为从一阶线性导数组合反推指数因子完整导数。"
+        },
+        {
+          "source_card_id": "GS-209",
+          "target_card_id": "GS-213",
+          "declaration_owners": [
+            "GS-209",
+            "GS-213"
+          ],
+          "decision": "add_specific_strong_edge_bidirectionally",
+          "rationale": "同为 f'-cf>0 经 f(x)e^{-cx} 转为单调性并比较比值。",
+          "reason": "同为 f'-cf>0 经 f(x)e^{-cx} 转为单调性并比较比值。"
+        },
+        {
+          "source_card_id": "GS-208",
+          "target_card_id": "GS-213",
+          "declaration_owners": [
+            "GS-208",
+            "GS-213"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "身份链接冻结，禁止恢复聚合强边。",
+          "reason": "身份链接冻结，禁止恢复聚合强边。"
+        }
+      ],
+      "batch31_lineage_revalidation": {
+        "batch_number": 31,
+        "date": "2026-07-24",
+        "prior_card_sha256": "c2931afe68345d8a82ab86f969eee3b8de2a2e35da0452d8f18b49571da09608",
+        "current_card_sha256": "2462aff4bc7907f8d00ef99a16b1471da56a56e4529bbc06b4812ca582d28ab8",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-209",
+          "GS-576"
+        ],
+        "removed_edges": [
+          "GS-213--GS-488"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第31批删除 GS-213--GS-488 的旧宽泛关系声明；第19批原逐题语义载荷与既有谱系保持不变。"
+      },
+      "batch35_lineage_revalidation": {
+        "batch_number": 35,
+        "date": "2026-07-24",
+        "prior_card_sha256": "2462aff4bc7907f8d00ef99a16b1471da56a56e4529bbc06b4812ca582d28ab8",
+        "current_card_sha256": "7c8703429dbd1b53c0b30b96cca5434f17b65ec2409e8694c2080d85f2e7ee27",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-209"
+        ],
+        "removed_edges": [
+          "GS-213--GS-576"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "batch31_lineage_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第35批重绑 GS-213 的关系导航哈希；第19批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-214",
+      "card_path": "错题知识网络/错题卡/GS-214_强化例题6.2（4恒等变形）.md",
+      "card_sha256": "329b576bfdeee3017306bb2757b1c8e42f84496176869efac91a10ed2aeee0cc",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-214_强化例题6.2（4恒等变形）.md"
+      ],
+      "reviewed_detail_sha256": [
+        "e0cdfc2cf5802f548fd8199518520a40945b873ac0dd0091c1d64213952e3937"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-214/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "1d26d7da9e32057670ca28969b703fe3eed76fa049d339e0a3d9fd586c4a88ca"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "在连续可导及导数非零条件下证明函数值差与导数比的存在性等式。",
+      "asked_output": "证明存在满足比例式的内部点",
+      "answer": "构造两端为零的乘积辅助函数后用 Rolle，并另证分母非零。",
+      "solution_outline": [
+        "交叉相乘反推两个因子。",
+        "构造乘积使两端为零并用 Rolle。",
+        "在中值点至右端点上再用中值定理验证分母非零。"
+      ],
+      "knowledge_nodes": [
+        "罗尔定理",
+        "乘积辅助函数",
+        "拉格朗日中值定理",
+        "分母非零性"
+      ],
+      "first_action": "先把目标比例式交叉相乘并反推乘积辅助函数",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先把目标比例式交叉相乘并反推乘积辅助函数”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "denominator_nonzero_repaired",
+          "severity": "medium",
+          "finding": "相除前缺失的分母非零证明已补齐。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-214",
+          "target_card_id": "GS-474",
+          "declaration_owners": [
+            "GS-214",
+            "GS-474"
+          ],
+          "decision": "add_specific_strong_edge_bidirectionally",
+          "rationale": "同为从目标式反推辅助函数并制造端点同值后用 Rolle。",
+          "reason": "同为从目标式反推辅助函数并制造端点同值后用 Rolle。"
+        },
+        {
+          "source_card_id": "GS-214",
+          "target_card_id": "GS-477",
+          "declaration_owners": [
+            "GS-214",
+            "GS-477"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-214",
+          "target_card_id": "GS-215",
+          "declaration_owners": [
+            "GS-215"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-214",
+          "target_card_id": "GS-220",
+          "declaration_owners": [
+            "GS-220"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ],
+      "batch30_lineage_revalidation": {
+        "batch_number": 30,
+        "date": "2026-07-24",
+        "prior_card_sha256": "4f74bb300d1a5ce68e1871b7c2b8b2f1a084dbc268937776ab8b7c99aa64b818",
+        "current_card_sha256": "329b576bfdeee3017306bb2757b1c8e42f84496176869efac91a10ed2aeee0cc",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [],
+        "removed_edges": [
+          "GS-214--GS-474"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "GS-214 的个人断点仍待用户确认，不能与 GS-474 形成普通强边；第19批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-215",
+      "card_path": "错题知识网络/错题卡/GS-215_强化例题6.6.md",
+      "card_sha256": "f36fe4f9052f4319cac4cf21203d04e367fd282e6a4ef179b59c28a1b82df598",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-215_强化例题6.6.md"
+      ],
+      "reviewed_detail_sha256": [
+        "3324d2380795af7fac9fa31e8c02a6d80f5e0a0d1c20f1486fd24b1d4a48bdb7"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-215/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "074700864d3413824eda9d3865069dfe3e76175fe16263d206147bc15173a399"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "连续函数满足无权积分和余弦加权积分均为零，证明内部至少两个不同零点。",
+      "asked_output": "证明两个不同的内部零点存在",
+      "answer": "分部积分换成正权后用保号反证得到变上限积分的内部零点，再两次 Rolle。",
+      "solution_outline": [
+        "构造 F(x)=∫_0^x f。",
+        "分部积分把 cos 权换成 sin 正权。",
+        "用连续函数保号反证得到内部 F(c)=0。",
+        "在两侧区间分别使用 Rolle。"
+      ],
+      "knowledge_nodes": [
+        "分部积分",
+        "正权积分保号",
+        "变上限积分",
+        "罗尔定理"
+      ],
+      "first_action": "先构造变上限积分并把 cos 权分部换成 sin 正权",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先构造变上限积分并把 cos 权分部换成 sin 正权”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "invalid_integral_mvt_replaced",
+          "severity": "high",
+          "finding": "原无权积分中值定理可能取端点，已改为无端点漏洞的正权保号反证。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-215",
+          "target_card_id": "GS-216",
+          "declaration_owners": [
+            "GS-215",
+            "GS-216"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "共享正权积分零点机制，本题额外分部换权并两次 Rolle。",
+          "reason": "共享正权积分零点机制，本题额外分部换权并两次 Rolle。"
+        },
+        {
+          "source_card_id": "GS-214",
+          "target_card_id": "GS-215",
+          "declaration_owners": [
+            "GS-215"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-215",
+          "target_card_id": "GS-218",
+          "declaration_owners": [
+            "GS-215"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-215",
+          "target_card_id": "GS-220",
+          "declaration_owners": [
+            "GS-220"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-215",
+          "target_card_id": "GS-241",
+          "declaration_owners": [
+            "GS-241"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-215",
+          "target_card_id": "GS-244",
+          "declaration_owners": [
+            "GS-244"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-215",
+          "target_card_id": "GS-245",
+          "declaration_owners": [
+            "GS-245"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-216",
+      "card_path": "错题知识网络/错题卡/GS-216_强化例题6.5.md",
+      "card_sha256": "8656d4b3b82194a296cc99714ec9df4dce4577f9d16a1992cd4642ba0943a46d",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-216_强化例题6.5.md"
+      ],
+      "reviewed_detail_sha256": [
+        "aee201efe1ff2352333d1078d52efd3d0c885deb844c8c5931a7840e3adbc2b5"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-216/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "54ae1bd4a4af9b7f67fb3837927bf1160e831a05a1b52eca65378b5efa7818f1"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "连续函数乘正余弦权的积分为零，证明内部零点存在。",
+      "asked_output": "证明存在内部函数零点",
+      "answer": "构造带权变上限积分，端点同值后用 Rolle。",
+      "solution_outline": [
+        "检查 cos x 在区间内部恒正。",
+        "构造带权变上限积分。",
+        "用 Rolle 得乘积为零，再由正权推出 f 为零。"
+      ],
+      "knowledge_nodes": [
+        "正权函数",
+        "变上限积分",
+        "罗尔定理"
+      ],
+      "first_action": "先确认 cos x 在给定区间内部恒正",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先确认 cos x 在给定区间内部恒正”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "positive_weight_verified",
+          "severity": "medium",
+          "finding": "正权条件、端点同值和 Rolle 收口均已核验。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-215",
+          "target_card_id": "GS-216",
+          "declaration_owners": [
+            "GS-215",
+            "GS-216"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "共享正权积分零点机制，本题额外分部换权并两次 Rolle。",
+          "reason": "共享正权积分零点机制，本题额外分部换权并两次 Rolle。"
+        },
+        {
+          "source_card_id": "GS-216",
+          "target_card_id": "GS-220",
+          "declaration_owners": [
+            "GS-220"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-216",
+          "target_card_id": "GS-241",
+          "declaration_owners": [
+            "GS-241"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-216",
+          "target_card_id": "GS-244",
+          "declaration_owners": [
+            "GS-244"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-216",
+          "target_card_id": "GS-571",
+          "declaration_owners": [
+            "GS-216",
+            "GS-571"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-217",
+      "card_path": "错题知识网络/错题卡/GS-217_强化例题11.18.md",
+      "card_sha256": "d10048e94270e52ff91d8267b2f7e74751df409dce94682db42abfbc44f26aa6",
+      "later_batch_revalidation": {
+        "batch_number": 20,
+        "date": "2026-07-23",
+        "prior_card_sha256": "512a722274309d911750d5987862a37c974a6f92d7c36ffdf66024d8279cf61a",
+        "current_card_sha256": "d10048e94270e52ff91d8267b2f7e74751df409dce94682db42abfbc44f26aa6",
+        "content_change_scope": "related_field_and_identity_hold_annotation",
+        "current_related": [],
+        "removed_edges": [
+          "GS-535"
+        ],
+        "added_edges": [],
+        "identity_group": {
+          "group_id": "B20-ID-02",
+          "member_ids": [
+            "GS-217",
+            "GS-252",
+            "GS-342"
+          ],
+          "evidence": "cross_source_mathematically_identical_stem_conditions_targets_and_constants",
+          "resolution": "hold_without_merge_delete_or_recurrence_increment"
+        },
+        "historical_relation_decisions_preserved": true,
+        "historical_aggregate_edge_policy_preserved_as_snapshot": "allow",
+        "current_aggregate_edge_policy": "block_until_relinked",
+        "stable_ids_preserved": true,
+        "note": "第20批发现 GS-217 与 GS-252、GS-342 的题干、条件、两个待证目标及常数完全相同；其中 GS-252 与 GS-342 还共享 source_refid 和字节相同题图。故删除 GS-217--GS-535 并冻结普通强边；第19批原始判断作为历史快照保留。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-217_强化例题11.18.md"
+      ],
+      "reviewed_detail_sha256": [
+        "e1239d61d762f48bf24d1def5bb49846ebe55a90ff6ae31f2bd6c7ff3cfb250b"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-217/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "67766e30f9d147d26ea6ccf5c15193a050e9431aa5d1985cd4689f58b0ad1f5d"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "二阶导有界且两端导数相等，估计线性插值误差及梯形积分误差。",
+      "asked_output": "证明点态误差和积分误差上界",
+      "answer": "点态上界为 x(1-x)/2，积分上界为 1/12。",
+      "solution_outline": [
+        "在 0 和 1 两端写带二阶 Lagrange 余项的一阶 Taylor 公式。",
+        "用 1-x 与 x 加权消去一阶项。",
+        "取绝对值放缩并积分。"
+      ],
+      "knowledge_nodes": [
+        "一阶 Taylor 公式",
+        "二阶 Lagrange 余项",
+        "端点线性插值误差",
+        "积分放缩"
+      ],
+      "first_action": "先写双端点的一阶 Taylor 公式及二阶余项",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先写双端点的一阶 Taylor 公式及二阶余项”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "taylor_terminology_repaired",
+          "severity": "medium",
+          "finding": "展开阶数与余项导数阶数的术语已统一，常数 1/12 已核对。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-217",
+          "target_card_id": "GS-535",
+          "declaration_owners": [
+            "GS-217",
+            "GS-535"
+          ],
+          "decision": "verify_existing_strong_edge",
+          "rationale": "共享 Taylor 余项的定量放缩机制。",
+          "reason": "共享 Taylor 余项的定量放缩机制。"
+        },
+        {
+          "source_card_id": "GS-217",
+          "target_card_id": "GS-450",
+          "declaration_owners": [
+            "GS-450"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-218",
+      "card_path": "错题知识网络/错题卡/GS-218_2019年第21题.md",
+      "card_sha256": "6a3dbef77eb8f6c402641d745c120838062dcb7ef995db2edb336be87df296d0",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-218_2019年第21题.md"
+      ],
+      "reviewed_detail_sha256": [
+        "44b2e3aa0231beaecfaf5b9353e1f976f046ed56cd9f7a1c9acb882c7739d4c8"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-218/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-218/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "024928d47696eb58820f7011748b682674435f6eff66270b4bbbd821f04e9bf4",
+        "6be4796664f5cc913661a19ae0eaca649744b55599ede3a3426754efce696a71"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "积分平均值与端点条件下证明一阶导零点和二阶导严格上界点存在。",
+      "asked_output": "完成两个导数存在性证明",
+      "answer": "先由积分中值定理接 Rolle；再令 F=f+x^2 分段比较平均斜率。",
+      "solution_outline": [
+        "把积分平均值变成内部函数值。",
+        "与端点同值后使用 Rolle。",
+        "构造 F=f+x^2，在两段取平均斜率。",
+        "对 F' 再用中值定理得到 F''<0。"
+      ],
+      "knowledge_nodes": [
+        "积分中值定理",
+        "罗尔定理",
+        "辅助函数吸收常数",
+        "分段平均斜率比较"
+      ],
+      "first_action": "先把积分条件变成某点函数值",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先把积分条件变成某点函数值”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": true,
+        "solution_review": "question_and_solution_images_reviewed",
+        "question_solution": "verified_consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "multistage_mvt_verified",
+          "severity": "medium",
+          "finding": "题图与解析图一致，多段中值定理链条完整。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-208",
+          "target_card_id": "GS-218",
+          "declaration_owners": [
+            "GS-208"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "身份链接冻结，禁止恢复聚合强边。",
+          "reason": "身份链接冻结，禁止恢复聚合强边。"
+        },
+        {
+          "source_card_id": "GS-215",
+          "target_card_id": "GS-218",
+          "declaration_owners": [
+            "GS-215"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-218",
+          "target_card_id": "GS-220",
+          "declaration_owners": [
+            "GS-220"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-219",
+      "card_path": "错题知识网络/错题卡/GS-219_强化例题6.7.md",
+      "card_sha256": "3b46888107ef660579490258719945c4f1c5ae31c5c8bb0dd93ac971b451be43",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-219_强化例题6.7.md"
+      ],
+      "reviewed_detail_sha256": [
+        "5569ffe58b372676199ad51f76adc3fcd29f02e472d7c35ae7af51580475cf74"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-219/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "2a57971a0ddfbc86f8ad488c6aa908eafea6eb5275a6f6e28d1852ac1fd6e59f"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "函数在开区间取得最大值 2 与最小值，证明一阶导和二阶导的严格估计。",
+      "asked_output": "证明存在 f'>2 与 f''<-4 的点",
+      "answer": "端点到最大值点用中值定理；最大值点到最小值点用带二阶余项的一阶 Taylor 公式。",
+      "solution_outline": [
+        "设最大值点和最小值点。",
+        "从零端点连接最大值点估计一阶导。",
+        "在最大值点展开至最小值点并用区间长度小于 1 放缩。"
+      ],
+      "knowledge_nodes": [
+        "费马定理",
+        "拉格朗日中值定理",
+        "一阶 Taylor 公式",
+        "二阶 Lagrange 余项",
+        "区间长度放缩"
+      ],
+      "first_action": "先把内点最值落到具体点并写费马条件",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先把内点最值落到具体点并写费马条件”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "order_safe_taylor_point",
+          "severity": "medium",
+          "finding": "章节已纠正，Taylor 中值点改为不预设两极值点先后顺序。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-219",
+          "target_card_id": "GS-227",
+          "declaration_owners": [
+            "GS-219",
+            "GS-227"
+          ],
+          "decision": "add_specific_strong_edge_bidirectionally",
+          "rationale": "同为最大值点连接零值端点，利用短区间放大导数估计。",
+          "reason": "同为最大值点连接零值端点，利用短区间放大导数估计。"
+        },
+        {
+          "source_card_id": "GS-219",
+          "target_card_id": "GS-476",
+          "declaration_owners": [
+            "GS-219",
+            "GS-476"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-219",
+          "target_card_id": "GS-537",
+          "declaration_owners": [
+            "GS-219",
+            "GS-537"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-219",
+          "target_card_id": "GS-229",
+          "declaration_owners": [
+            "GS-229"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-220",
+      "card_path": "错题知识网络/错题卡/GS-220_1000题A组21.md",
+      "card_sha256": "84936650abcc5c7e73d949edcee901ddfaf3240fdfc85a8af4b841b1b1b69303",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-220_1000题A组21.md"
+      ],
+      "reviewed_detail_sha256": [
+        "8c0193a3c923649dcb81ceef07487c3b491425462d0646929cb319ffda6102ed"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-220/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "8d90637d1f51237339037677aa2cc2089c32f686f22a11fafc19b58290ee83c1"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "给定带 k+1 分母的系数和为零，判断多项式在单位区间的根。",
+      "asked_output": "判断内部实根个数的必然结论",
+      "answer": "B，至少有一个内部实根。",
+      "solution_outline": [
+        "把目标多项式看成某个原函数的导数。",
+        "系数条件变成原函数两端同值。",
+        "用 Rolle 得内部根。"
+      ],
+      "knowledge_nodes": [
+        "系数条件与积分矩",
+        "反向构造原函数",
+        "端点同值",
+        "罗尔定理"
+      ],
+      "first_action": "看到 a_k/(k+1) 先反构原函数",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“看到 a_k/(k+1) 先反构原函数”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "antiderivative_reconstruction_verified",
+          "severity": "medium",
+          "finding": "答案 B 及存在性而非唯一性的边界已核验。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-214",
+          "target_card_id": "GS-220",
+          "declaration_owners": [
+            "GS-220"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-215",
+          "target_card_id": "GS-220",
+          "declaration_owners": [
+            "GS-220"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-216",
+          "target_card_id": "GS-220",
+          "declaration_owners": [
+            "GS-220"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-218",
+          "target_card_id": "GS-220",
+          "declaration_owners": [
+            "GS-220"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-220",
+          "target_card_id": "GS-245",
+          "declaration_owners": [
+            "GS-220",
+            "GS-245"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-220",
+          "target_card_id": "GS-321",
+          "declaration_owners": [
+            "GS-321"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-220",
+          "target_card_id": "GS-334",
+          "declaration_owners": [
+            "GS-334"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-221",
+      "card_path": "错题知识网络/错题卡/GS-221_1000题B组6.14.md",
+      "card_sha256": "2d7245d54f7cc99e16901def51c7299fbd6c5542caad74b1d55c0a89f22bcf4f",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-221_1000题B组6.14.md"
+      ],
+      "reviewed_detail_sha256": [
+        "aed2e0ceed899ef0dad90bcf94e5c3ebcf2b480aedc17ab1a443f6c50c5d1f26"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-221/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "1466739a115fc08358f338dab1d6865c1caffecaa8c86d2a6a41b6d5a649a72c"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "严格凹函数上用指定导数值定义点列，证明解唯一、点列收敛及函数值趋于最大值。",
+      "asked_output": "证明两部分存在唯一性与极限结论",
+      "answer": "每个 x_n 唯一存在，且 x_n 趋于唯一最大值点，f(x_n) 趋于 M。",
+      "solution_outline": [
+        "构造 f(x)-(M/n)x，把指定导数值化成零导数点。",
+        "用 f' 严格递减保证唯一。",
+        "把 M/n 的递减反向转为 x_n 单增并以最大值点为上界。",
+        "用反证锁定极限点，再由 f 连续传递函数值极限。"
+      ],
+      "knowledge_nodes": [
+        "严格凹性",
+        "导函数严格单调",
+        "指定导数水平集",
+        "单调有界准则",
+        "导数零点唯一"
+      ],
+      "first_action": "先比较相邻导数值并用 f' 严格递减反推点列单调",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "第二问未先使用单调有界准则；并混淆导数值与函数值、误把 x_n 当极值点",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "两条独立 wrong_history 事件",
+        "confidence": "high"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "existence_and_limit_proof_repaired",
+          "severity": "high",
+          "finding": "n=1 正性漏洞、过强 C2 条件、未给出的 f' 连续性与无证据压缩映射归因均已修复。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "按两次 wrong_history 继续定向复做并保留用户事实。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-221",
+          "target_card_id": "GS-534",
+          "declaration_owners": [
+            "GS-221",
+            "GS-534"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "都构造 f(x)-μx，把指定导数值化为零导数点。",
+          "reason": "都构造 f(x)-μx，把指定导数值化为零导数点。"
+        },
+        {
+          "source_card_id": "GS-221",
+          "target_card_id": "GS-490",
+          "declaration_owners": [
+            "GS-221"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-221",
+          "target_card_id": "GS-506",
+          "declaration_owners": [
+            "GS-221"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-221",
+          "target_card_id": "GS-514",
+          "declaration_owners": [
+            "GS-221",
+            "GS-514"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-221",
+          "target_card_id": "GS-476",
+          "declaration_owners": [
+            "GS-476"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-221",
+          "target_card_id": "GS-525",
+          "declaration_owners": [
+            "GS-525"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-221",
+          "target_card_id": "GS-537",
+          "declaration_owners": [
+            "GS-537"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ],
+      "batch33_lineage_revalidation": {
+        "batch_number": 33,
+        "date": "2026-07-24",
+        "prior_card_sha256": "6d59919947c64096b684d23603fe381ef1ba088f0bc9c175da7ba07c0096101d",
+        "current_card_sha256": "2d7245d54f7cc99e16901def51c7299fbd6c5542caad74b1d55c0a89f22bcf4f",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [],
+        "removed_edges": [
+          "GS-221--GS-534"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第33批重绑 GS-221 的当前关系导航哈希；第19批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-223",
+      "card_path": "错题知识网络/错题卡/GS-223_强化例题6.9.md",
+      "card_sha256": "08ed226325ee473c85b5f310f2b5399eb806bb6ec0ceeee61145c12e1ae9e03c",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-223_强化例题6.9.md"
+      ],
+      "reviewed_detail_sha256": [
+        "485f2351001b0a446eb84046ca122da31c92600a0a0ae7c0b7799558a7db26bf"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-223/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "76e9efa22809154e357c150bc3d6f265af1fde0ccef88c5030d674b388fa5bbc"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知右侧导函数极限，证明端点右导数存在且等于该极限。",
+      "asked_output": "证明右导数等于 A",
+      "answer": "右差商经拉格朗日中值定理化为移动中值点处导数，再夹逼取极限。",
+      "solution_outline": [
+        "固定右侧点并在端点至该点使用中值定理。",
+        "把差商写成 f'(xi_x)。",
+        "由 xi_x 夹在端点与移动点之间取右极限。"
+      ],
+      "knowledge_nodes": [
+        "单侧导数定义",
+        "移动中值点",
+        "拉格朗日中值定理",
+        "夹逼准则"
+      ],
+      "first_action": "先把右差商改写成内部点导数",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先把右差商改写成内部点导数”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "half_open_domain_preserved",
+          "severity": "medium",
+          "finding": "源题半开右邻域已恢复，未额外添加右端点连续条件。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-223",
+          "target_card_id": "GS-226",
+          "declaration_owners": [
+            "GS-223",
+            "GS-226"
+          ],
+          "decision": "verify_existing_strong_edge",
+          "rationale": "都把导数渐近信息经移动中值点转成函数层结论。",
+          "reason": "都把导数渐近信息经移动中值点转成函数层结论。"
+        },
+        {
+          "source_card_id": "GS-223",
+          "target_card_id": "GS-103",
+          "declaration_owners": [
+            "GS-223",
+            "GS-103"
+          ],
+          "decision": "add_specific_strong_edge_bidirectionally",
+          "rationale": "共享点处差商与去心导函数极限之间的中值定理桥接。",
+          "reason": "共享点处差商与去心导函数极限之间的中值定理桥接。"
+        },
+        {
+          "source_card_id": "GS-223",
+          "target_card_id": "GS-225",
+          "declaration_owners": [
+            "GS-223"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-223",
+          "target_card_id": "GS-227",
+          "declaration_owners": [
+            "GS-227"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-223",
+          "target_card_id": "GS-229",
+          "declaration_owners": [
+            "GS-229"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-224",
+      "card_path": "错题知识网络/错题卡/GS-224_1000题B组5.35.md",
+      "card_sha256": "a9226e17736581a2d4f083603d1474ec2ad77d614fa51fd8aeafeb84b7ee2098",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-224_1000题B组5.35.md"
+      ],
+      "reviewed_detail_sha256": [
+        "c61f45faea647cd34383ab61b5a321cd04a701524de514a46201905f937d6c7e"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-224/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "4c4bbd44c5ff2b49d1ac4b74b9f4ab68b32df72c3bc2a483c0d10f1676c6044b"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "端点函数值为零且导函数递增，证明 f(x)/x 单调递增。",
+      "asked_output": "证明商函数单调性",
+      "answer": "中值定理给出 f(x)=f'(xi_x)x，再由 f' 递增判商函数导数非负。",
+      "solution_outline": [
+        "在 [0,x] 上用中值定理抽样导数。",
+        "求商函数导数。",
+        "用 xi_x<x 与 f' 单调判号。"
+      ],
+      "knowledge_nodes": [
+        "拉格朗日中值定理",
+        "商函数求导",
+        "导函数单调"
+      ],
+      "first_action": "先在 [0,x] 上写 f(x)=f'(xi_x)x",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "具体个人错因待确认；只确认端点未给导数时应优先使用中值定理",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "mastery_and_error_evidence_conflict_resolved",
+          "severity": "high",
+          "finding": "保留 2026-05-20 复做正确与已掌握记录；撤销无用户作答支撑的 AI 2/5 和具体错因归因。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-224",
+          "target_card_id": "GS-506",
+          "declaration_owners": [
+            "GS-224",
+            "GS-506"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "都用中值定理抽样导数并由导函数单调性判商函数单调。",
+          "reason": "都用中值定理抽样导数并由导函数单调性判商函数单调。"
+        }
+      ],
+      "batch32_lineage_revalidation": {
+        "batch_number": 32,
+        "date": "2026-07-24",
+        "prior_card_sha256": "34353a8033b30d6c60445ac32616c53895c48b0130fb0661e0b25240227bdbed",
+        "current_card_sha256": "a9226e17736581a2d4f083603d1474ec2ad77d614fa51fd8aeafeb84b7ee2098",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [],
+        "removed_edges": [
+          "GS-224--GS-506"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第32批重绑 GS-224 的当前关系导航哈希；第19批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-225",
+      "card_path": "错题知识网络/错题卡/GS-225_强化例题6.10.md",
+      "card_sha256": "5b109f0a7bfed1c4125f091fc0933bfcbbb812b8e987df9562c21488479e3e8e",
+      "later_batch_revalidation": {
+        "batch_number": 29,
+        "date": "2026-07-24",
+        "prior_card_sha256": "db0fd42930e753c32962ed1ec5a13204d8e99ee492ee222deb454d2e3f989442",
+        "current_card_sha256": "5b109f0a7bfed1c4125f091fc0933bfcbbb812b8e987df9562c21488479e3e8e",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "暂无强边"
+        ],
+        "removed_edges": [
+          "GS-452"
+        ],
+        "added_edges": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第29批删除 GS-225 对 GS-452 的旧所有者声明；仅同步关系元数据与导航引用，原逐题语义判断保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-225_强化例题6.10.md"
+      ],
+      "reviewed_detail_sha256": [
+        "739040a77c613c7234f931481785eaaafd6cc6f2d71c3dfcf9a9cb9d480519ec"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-225/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "e6fcbaeebe81fbbe5c986137f587703356985f7a9593b0d7135dae5a151a7d62"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "指数大于 1 的 Hölder 条件下证明函数恒为常数。",
+      "asked_output": "证明函数恒定",
+      "answer": "Hölder 条件给连续性和差商趋零，故处处导数为零，再由中值定理得常数。",
+      "solution_outline": [
+        "由 Hölder 条件确认连续性。",
+        "固定内点并除以距离得到差商上界。",
+        "由指数大于 1 夹逼导数为零。",
+        "用拉格朗日中值定理收口。"
+      ],
+      "knowledge_nodes": [
+        "Hölder 条件",
+        "差商估计",
+        "夹逼准则",
+        "拉格朗日中值定理"
+      ],
+      "first_action": "先固定内点，把 Hölder 条件除以距离",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先固定内点，把 Hölder 条件除以距离”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "holder_continuity_and_evidence_boundary",
+          "severity": "medium",
+          "finding": "已补连续性前提并把无用户作答支撑的高置信错因降为待确认。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-225",
+          "target_card_id": "GS-452",
+          "declaration_owners": [
+            "GS-225",
+            "GS-452"
+          ],
+          "decision": "verify_existing_strong_edge",
+          "rationale": "都从函数值差的局部估计制造导数信息。",
+          "reason": "都从函数值差的局部估计制造导数信息。"
+        },
+        {
+          "source_card_id": "GS-223",
+          "target_card_id": "GS-225",
+          "declaration_owners": [
+            "GS-223"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-226",
+      "card_path": "错题知识网络/错题卡/GS-226_强化例题6.11.md",
+      "card_sha256": "4f4d4e370e407a82721d3a0cdb0f01e59c8221ef960a987ad10933e43104fc3f",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-226_强化例题6.11.md"
+      ],
+      "reviewed_detail_sha256": [
+        "c3730a368ccff66c91f3f35616fa25ad5082fc2ef40457fc546eab80490ce698"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-226/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "eaa09a5783e7f6f37bd785bc59a49e7fb06c72bd0982d1678b29b13220e68c8d"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "导数在负无穷处趋于正数，证明函数在负无穷处趋于负无穷。",
+      "asked_output": "证明函数的无穷极限",
+      "answer": "先由极限保号给导数正下界，再用中值定理得到线性上界。",
+      "solution_outline": [
+        "选取足够靠左的阈值使 f'>A/2。",
+        "在 [x,X0] 上使用中值定理。",
+        "整理函数值差并令 x 趋于负无穷。"
+      ],
+      "knowledge_nodes": [
+        "极限保号",
+        "拉格朗日中值定理",
+        "线性估计"
+      ],
+      "first_action": "先把导数极限变成尾部统一正下界",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先把导数极限变成尾部统一正下界”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "tail_derivative_linear_bound_verified",
+          "severity": "medium",
+          "finding": "区间方向、符号和负无穷收口均已核验。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-223",
+          "target_card_id": "GS-226",
+          "declaration_owners": [
+            "GS-223",
+            "GS-226"
+          ],
+          "decision": "verify_existing_strong_edge",
+          "rationale": "都把导数渐近信息经移动中值点转成函数层结论。",
+          "reason": "都把导数渐近信息经移动中值点转成函数层结论。"
+        },
+        {
+          "source_card_id": "GS-226",
+          "target_card_id": "GS-509",
+          "declaration_owners": [
+            "GS-226",
+            "GS-509"
+          ],
+          "decision": "add_specific_strong_edge_bidirectionally",
+          "rationale": "共享无穷远导数信息到函数极限的条件边界。",
+          "reason": "共享无穷远导数信息到函数极限的条件边界。"
+        },
+        {
+          "source_card_id": "GS-226",
+          "target_card_id": "GS-227",
+          "declaration_owners": [
+            "GS-226",
+            "GS-227"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ],
+      "batch32_lineage_revalidation": {
+        "batch_number": 32,
+        "date": "2026-07-24",
+        "prior_card_sha256": "0372deb6af6a4666a295359efe519a626b1a147075b291b5b36e78fc7aaef05b",
+        "current_card_sha256": "4f4d4e370e407a82721d3a0cdb0f01e59c8221ef960a987ad10933e43104fc3f",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-223"
+        ],
+        "removed_edges": [
+          "GS-226--GS-509"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第32批重绑 GS-226 的当前关系导航哈希；第19批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-227",
+      "card_path": "错题知识网络/错题卡/GS-227_强化例题6.12.md",
+      "card_sha256": "6013cc6c68d2b83c3f777f66aafd64ab5243e1d0257017dd725ab8cbfe25bfdc",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-227_强化例题6.12.md"
+      ],
+      "reviewed_detail_sha256": [
+        "5a2a6886cbe4fe774d20e37e24ff46784e28c6044f2e9f2f2ad68d1bf2f1c816"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-227/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "d70ac44c17e68c16229722cd8b3abdda45645353bec9991b0c67afeb96d56722"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "端点函数值为零，以 M 表示绝对值最大值，证明导数下界及附加条件下 M=0。",
+      "asked_output": "证明两个最值与导数估计结论",
+      "answer": "连接最大值点与较近端点；第二问由两侧积分等号链和导数连续性反证。",
+      "solution_outline": [
+        "若 M>0 取内部绝对值最大值点并连接较近端点。",
+        "由中值定理得到 |f'|≥M。",
+        "附加 |f'|≤M 时，两侧估计迫使最大值点为 1。",
+        "积分取等迫使左右导数恒为相反常数，与连续性矛盾。"
+      ],
+      "knowledge_nodes": [
+        "闭区间最值",
+        "拉格朗日中值定理",
+        "积分取等条件",
+        "导数连续性"
+      ],
+      "first_action": "先把 M 落到绝对值最大值点并连接较近端点",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先把 M 落到绝对值最大值点并连接较近端点”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "full_equality_case_proof_added",
+          "severity": "high",
+          "finding": "原页没有解析文字；本轮补入了包含 M=0 边界与完整等号链的规范证明。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-219",
+          "target_card_id": "GS-227",
+          "declaration_owners": [
+            "GS-219",
+            "GS-227"
+          ],
+          "decision": "add_specific_strong_edge_bidirectionally",
+          "rationale": "同为最大值点连接零值端点，利用短区间放大导数估计。",
+          "reason": "同为最大值点连接零值端点，利用短区间放大导数估计。"
+        },
+        {
+          "source_card_id": "GS-227",
+          "target_card_id": "GS-570",
+          "declaration_owners": [
+            "GS-227",
+            "GS-570"
+          ],
+          "decision": "add_specific_strong_edge_bidirectionally",
+          "rationale": "共享最值点、费马条件与 Taylor 导数估计链。",
+          "reason": "共享最值点、费马条件与 Taylor 导数估计链。"
+        },
+        {
+          "source_card_id": "GS-223",
+          "target_card_id": "GS-227",
+          "declaration_owners": [
+            "GS-227"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-226",
+          "target_card_id": "GS-227",
+          "declaration_owners": [
+            "GS-226",
+            "GS-227"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-227",
+          "target_card_id": "GS-229",
+          "declaration_owners": [
+            "GS-227",
+            "GS-229"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-227",
+          "target_card_id": "GS-230",
+          "declaration_owners": [
+            "GS-227",
+            "GS-230"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ],
+      "batch35_lineage_revalidation": {
+        "batch_number": 35,
+        "date": "2026-07-24",
+        "prior_card_sha256": "d7459eb92944d6c6ea9ad8d23fb753c8549fc303c20c7132b8b18e122d13eca7",
+        "current_card_sha256": "6013cc6c68d2b83c3f777f66aafd64ab5243e1d0257017dd725ab8cbfe25bfdc",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-219"
+        ],
+        "removed_edges": [
+          "GS-227--GS-570"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第35批重绑 GS-227 的关系导航哈希；第19批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-228",
+      "card_path": "错题知识网络/错题卡/GS-228_1000题B组6.6.md",
+      "card_sha256": "1b706fc8b1c283cc68cbdbb0db062668092ed1bec763c9fffbc9fe2cfeb67b6e",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-228_1000题B组6.6.md"
+      ],
+      "reviewed_detail_sha256": [
+        "5a08e05bc9893cc8a5c4aee33825033d76f533538c09d947eec52471fb382a83"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-228/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "6f67c2eb33550eb7efe2f769d6b101fff0ec9ebbd5f5c11929bdc671a0d68cee"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "二阶导非负的整轴函数满足切线下界，证明若整轴有界则为常值。",
+      "asked_output": "证明凸性切线不等式与常值结论",
+      "answer": "凸函数在切线上方；非常值产生非零斜率，按正负分别向右或向左推出无界。",
+      "solution_outline": [
+        "由 f''≥0 得 f' 单调及切线下界。",
+        "反设非常值并由中值定理得到非零斜率。",
+        "正斜率向右、负斜率向左使用切线下界。"
+      ],
+      "knowledge_nodes": [
+        "凸函数",
+        "切线下界",
+        "拉格朗日中值定理",
+        "有界性反证"
+      ],
+      "first_action": "先把 f''≥0 翻译成凸函数切线下界",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先把 f''≥0 翻译成凸函数切线下界”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "convexity_and_slope_cases_repaired",
+          "severity": "high",
+          "finding": "凹凸术语、过强 C2 条件及不成立的不妨假设均已修复。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-228",
+          "target_card_id": "GS-450",
+          "declaration_owners": [
+            "GS-228",
+            "GS-450"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "共享凸函数切线下界与 Taylor 余项非负机制。",
+          "reason": "共享凸函数切线下界与 Taylor 余项非负机制。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-229",
+      "card_path": "错题知识网络/错题卡/GS-229_1000题B组6.10.md",
+      "card_sha256": "8f136fd60a10f764c950a91dfaabcb37836ffef3879b58ba52681ae9a5a6efb7",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-229_1000题B组6.10.md"
+      ],
+      "reviewed_detail_sha256": [
+        "5a75fbde2ca332566bb84097a34972864518bc23611657e3cfe42e21de092cb6"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-229/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "499cc1ef15f88bb4b0e8a9666c2cb5e974b86944bd530c35cd4c7f2fbe7b4c2f"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "变上限积分定义函数，用中值点参数 theta(x) 表示并求其零点附近极限。",
+      "asked_output": "证明参数存在唯一并求极限",
+      "answer": "参数唯一存在，且 theta(x) 趋于 1/√3。",
+      "solution_outline": [
+        "对原函数在 [0,x] 上使用中值定理。",
+        "把中值点写成 x theta(x)。",
+        "用导数严格递增得唯一。",
+        "以 Taylor 展开求 theta 极限。"
+      ],
+      "knowledge_nodes": [
+        "中值点参数化",
+        "单调性判唯一",
+        "Taylor 展开",
+        "等价无穷小"
+      ],
+      "first_action": "先把中值点写成 x theta(x)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先把中值点写成 x theta(x)”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "theta_limit_verified",
+          "severity": "medium",
+          "finding": "唯一性条件、正根分支和 1/√3 极限已核验。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-219",
+          "target_card_id": "GS-229",
+          "declaration_owners": [
+            "GS-229"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-223",
+          "target_card_id": "GS-229",
+          "declaration_owners": [
+            "GS-229"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-227",
+          "target_card_id": "GS-229",
+          "declaration_owners": [
+            "GS-227",
+            "GS-229"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-229",
+          "target_card_id": "GS-230",
+          "declaration_owners": [
+            "GS-229",
+            "GS-230"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-230",
+      "card_path": "错题知识网络/错题卡/GS-230_1000题A组8.5.md",
+      "card_sha256": "c21a98f04ed0f3604b867a409f575f348457204d417790e3b14ce56795ac07a3",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-230_1000题A组8.5.md"
+      ],
+      "reviewed_detail_sha256": [
+        "b62d5d0d88f13a39e0cd7becd6c8c723d11a0346e6b89881330a170198e54a89"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-230/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "02911a5e94fccbc3a6a6439b830b6937353a3e256df59545fbcbf851b60ba064"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "正且递减函数的变上限积分在基点两侧取等距点，比较两个积分值。",
+      "asked_output": "选择有序对",
+      "answer": "A，即 (-2,1)。",
+      "solution_outline": [
+        "由积分方向判左值为负、右值为正。",
+        "在两个等长区间分别使用中值定理。",
+        "利用中值点顺序和 f 递减比较绝对值。"
+      ],
+      "knowledge_nodes": [
+        "变上限积分",
+        "积分方向",
+        "等长分段",
+        "拉格朗日中值定理"
+      ],
+      "first_action": "先判两侧积分符号，再拆成等长区间",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡未记录用户作答过程；当前只确认复做第一动作是“先判两侧积分符号，再拆成等长区间”",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧导入只支持一次历史收录，未验证独立复发事件",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "equal_interval_comparison_verified",
+          "severity": "medium",
+          "finding": "答案 A、有序对顺序与绝对值比较均已核验。",
+          "resolution_status": "resolved_formal_closeout",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-230",
+          "target_card_id": "GS-543",
+          "declaration_owners": [
+            "GS-230",
+            "GS-543"
+          ],
+          "decision": "add_specific_strong_edge_bidirectionally",
+          "rationale": "共享等长分段分别取中值点再依顺序比较的机制。",
+          "reason": "共享等长分段分别取中值点再依顺序比较的机制。"
+        },
+        {
+          "source_card_id": "GS-227",
+          "target_card_id": "GS-230",
+          "declaration_owners": [
+            "GS-227",
+            "GS-230"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-229",
+          "target_card_id": "GS-230",
+          "declaration_owners": [
+            "GS-229",
+            "GS-230"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-230",
+          "target_card_id": "GS-438",
+          "declaration_owners": [
+            "GS-230"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-230",
+          "target_card_id": "GS-477",
+          "declaration_owners": [
+            "GS-230"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        },
+        {
+          "source_card_id": "GS-230",
+          "target_card_id": "GS-509",
+          "declaration_owners": [
+            "GS-230"
+          ],
+          "decision": "remove_broad_or_method_mismatched_edge",
+          "rationale": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。",
+          "reason": "仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。"
+        }
+      ],
+      "batch34_lineage_revalidation": {
+        "batch_number": 34,
+        "date": "2026-07-24",
+        "prior_card_sha256": "110c2d3f8ae17ac2892627b39adf26dad3a6ed95b847acaa21b93a343dd2b7e2",
+        "current_card_sha256": "c21a98f04ed0f3604b867a409f575f348457204d417790e3b14ce56795ac07a3",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [],
+        "removed_edges": [
+          "GS-230--GS-543"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第34批重绑 GS-230 的关系导航哈希；第19批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-231",
+      "card_path": "错题知识网络/错题卡/GS-231_强化例题11.191358042026.4.28-2.md",
+      "card_sha256": "bf4c0d4f7d8dd8758f22f992ee38fa0273393729b2ea435ea7661032c3cd6818",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-231_强化例题11.19-135804-2026.4.28.md"
+      ],
+      "reviewed_detail_sha256": [
+        "a4ecdb3664b854f68df577310eaafef13e71f50e659e606421c4dbd76f1513d0"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-231/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "31d5ada84ff84d9fbcbc7140ec1730813c4df2a6dbe99ee31f7b69d8116c7a54"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "严格凹且端点同零的函数，证明二阶导与函数比值的非负广义积分下界。",
+      "asked_output": "证明广义积分不小于 4",
+      "answer": "取内部最大值点，在两侧用中值定理制造导数差，再以 x0(1-x0)≤1/4 收口。",
+      "solution_outline": [
+        "先判内部函数值为正并按非负广义积分理解端点。",
+        "取最大值 M=f(x0)。",
+        "两侧中值定理给出正负导数值。",
+        "在内部紧区间积分 |f''| 得 M/[x0(1-x0)]。",
+        "用 f≤M 与非负广义积分支配性得到下界 4。"
+      ],
+      "knowledge_nodes": [
+        "严格凹性",
+        "广义积分",
+        "最大值放缩",
+        "拉格朗日中值定理",
+        "牛顿莱布尼茨公式"
+      ],
+      "first_action": "先判内部正性并取最大值点",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "具体个人错因待确认；旧生成解析中的第二人称错因叙述已撤销",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "一个 source_refid 对应四个稳定 ID；重复 ID 不计作四次错误",
+        "confidence": "low"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_text_solution_reviewed",
+        "question_solution": "question_only_no_independent_solution_asset",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "improper_integral_identity_hold_and_evidence_repaired",
+          "severity": "high",
+          "finding": "补全广义积分边界和导数差等式；撤销生成解析造成的个人错因与 AI 评分，并保持 B11-ID-05 身份冻结。",
+          "resolution_status": "resolved_math_and_held_identity",
+          "recommended_action": "后续复做时采集用户第一动作；在此之前不升级个人错因。"
+        }
+      ],
+      "relation_decisions": []
+    }
+  ]
+}

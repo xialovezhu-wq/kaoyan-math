@@ -1,0 +1,42 @@
+---
+wiki_id: MATHWIKI-METHOD-CLUSTER-470
+type: method_cluster
+title: "部分分式拆分"
+subject: "高等数学"
+source_refs:
+  - "错题知识网络/错题卡/"
+wiki_refs:
+  - "SRC-WRONGCARDS-INDEX"
+  - "MATHWIKI-COVERAGE-MATRIX"
+status: active
+last_updated: 2026-07-15
+---
+
+# 部分分式拆分
+
+## 定位
+
+本页是自动生成的方法簇页面，用于把具有相同标签或动作断点的正式错题接入 LLM Wiki。它只列轻量元数据，不复制完整题干或长解析。
+
+## 覆盖统计
+
+- 相关错题数：2
+- 涉及科目：高等数学
+- 代表错题：GS-111；GS-296
+
+## 错题清单
+
+| id | source summary | subject | chapter | knowledge | status | formal card |
+|---|---|---|---|---|---|---|
+| GS-111 | [[SRC-WQ-GS-111]] | 高等数学 | 一元函数微分学应用 | 一元函数微分学应用；高阶导数；部分分式；多元函数偏导 | 待复做 | `错题知识网络/错题卡/GS-111_强化例题4.22026.4.1.md` |
+| GS-296 | [[SRC-WQ-GS-296]] | 高等数学 | 定积分应用 | 定积分；定积分应用；旋转体体积；反常积分 | 待复做 | `错题知识网络/错题卡/GS-296_2023年真题第19题.md` |
+
+## 后续编译动作
+
+- 如果某个方法簇对应稳定第一动作，升级或更新 `wiki/methods/MATHWIKI-*-METHOD-*`。
+- 如果只是泛方法标签，继续保留为索引页，不强行深度总结。
+
+## 入口
+
+- [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
+- [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]

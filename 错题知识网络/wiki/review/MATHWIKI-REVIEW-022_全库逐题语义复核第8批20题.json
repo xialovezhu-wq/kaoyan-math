@@ -1,0 +1,2225 @@
+{
+  "schema_version": "math_target_semantic_review_batch_v1",
+  "wiki_id": "MATHWIKI-REVIEW-022",
+  "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260723-B08",
+  "title": "全库逐题语义复核第8批20题",
+  "reviewed_on": "2026-07-23",
+  "batch_number": 8,
+  "campaign_formal_card_count": 831,
+  "scope": {
+    "card_count": 20,
+    "physical_asset_path_count": 41,
+    "unique_visual_content_sha256_count": 41,
+    "canonical_detail_count": 20,
+    "reviewed_detail_file_count": 20,
+    "physical_asset_role_path_counts": {
+      "question": 20,
+      "solution": 21,
+      "reference": 0
+    },
+    "unique_visual_content_role_counts": {
+      "question": 20,
+      "solution": 21,
+      "reference": 0
+    }
+  },
+  "frozen_source_state_sha256": "9ca8cc068c1e2117a2494828042a77fbb0ced610c8147f31935b9df6ff88aa23",
+  "frozen_selection": {
+    "selection_order_sha256": "3f6329319ce4fe6db579de1f83a393862e0022b01501c0929fc3d0e460794138",
+    "selection_compact_json_sha256": "982780b00f50afa89a57a144afc29739a40b19e6b52ac5d443df9cc8ba8736d8",
+    "canonical_snapshot_sha256": "3726f57d84dfc651a652440d16076a3cd05d97707447052649a081ef27c30202",
+    "canonical_snapshot_bytes": 17593,
+    "visual_manifest_sha256": "1a095bcf946121ab3761a88c86f492373e10697c540a82c643e509f06a0b3ead",
+    "registered_cards": 20,
+    "registered_detail_files": 20,
+    "registered_physical_asset_paths": 41,
+    "pre_review_path_hash_drift_count": 0
+  },
+  "guardrails": {
+    "formal_related_write": true,
+    "formal_card_write": true,
+    "formal_visual_write": true,
+    "mode": "FORMAL_CLOSEOUT",
+    "review_origin_mode": "FULL_VISUAL_TARGET_REVIEW",
+    "formal_closeout_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B08",
+    "personal_error_requires_explicit_evidence": true,
+    "duplicate_physical_assets_reviewed_once_per_sha256": true,
+    "identity_blocked_cards_participate_in_aggregate_edges": false,
+    "stable_id_merge_or_delete": false
+  },
+  "selection_groups": [
+    "triple_integral_coordinate_and_surface_boundary",
+    "definite_and_improper_integral_breakpoints",
+    "polar_area_and_curve_length_formula_boundary",
+    "integration_by_parts_and_riemann_sum_actions"
+  ],
+  "cards": [
+    {
+      "card_id": "GS-668",
+      "pre_formal_closeout_card_sha256": "b30f44b36f4736e8ea22f8f822f489cc9d62790a08b786835f663cd0a66259d3",
+      "card_sha256": "491c2cc756b168155d00332dbc2972d96edce5861fc6f31b5a1e1b127828f29a",
+      "later_batch_revalidation": {
+        "batch_number": 27,
+        "date": "2026-07-23",
+        "prior_card_sha256": "a16d683a1789b82524b515ab24dd32bd60c33d0830194c99a70ad564cea516d0",
+        "current_card_sha256": "491c2cc756b168155d00332dbc2972d96edce5861fc6f31b5a1e1b127828f29a",
+        "content_change_scope": "related_field_only",
+        "current_related": [
+          "GS-666",
+          "GS-659",
+          "GS-669",
+          "GS-670"
+        ],
+        "removed_edges": [
+          "GS-667"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第27批按具体对象断点重审后删除 GS-668--GS-667；球体区域条件与偏心圆盘极径边界不再作为同一强关系。"
+      },
+      "reviewed_detail_sha256": [
+        "c2fcbca349e732c8cd2d86c46e7db4778ecf6d7930df4b36da0513b0718d394a"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "1a5eb1105afa69ba27535866ab0bd0e7712d3db53681d04ec56321aacab9ecca"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "b35efef6aee74b6233207af286865281ae7fd234746e3695f97cddedd0d713d7",
+        "9d5a3eeb15052cfd5c53d52e14eb2f882ea7a5c7f43a2c91c27a85d07ef2b39d",
+        "38d2afa340913ab35113400ec8e9518f1c026549905e90000dd12a3e8c7eb4e7"
+      ],
+      "physical_asset_path_count": 3,
+      "content_review_status": "verified",
+      "question_summary": "在单位球内计算三重积分 \\(\\iiint_\\Omega z^2\\,dV\\)。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$\\displaystyle \\frac{4\\pi}{15}$",
+      "solution_outline": [
+        "用轮换对称性平均三个坐标平方积分。",
+        "区分球体区域与球面边界，保留 \\(\\rho^2\\)。",
+        "乘球面坐标体积元积分，或改走截面面积法。"
+      ],
+      "knowledge_nodes": [
+        "多元函数积分学",
+        "三重积分",
+        "三重积分对称性",
+        "球面坐标",
+        "定积分",
+        "三重积分换序",
+        "先二后一截面法",
+        "截面面积法",
+        "定积分计算"
+      ],
+      "first_action": "先写 $I=\\frac13\\iiint_\\Omega(x^2+y^2+z^2)\\,dV$，再标注“$x^2+y^2+z^2\\le1$ 只限定区域，不能把被积函数替换成 $1$”，令 $x^2+y^2+z^2=\\rho^2$ 后继续球面坐标积分。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "利用对称性后立即把区域条件 $x^2+y^2+z^2\\le1$ 当成球面等式 $x^2+y^2+z^2=1$，用单位球体积替代了仍含 $\\rho^2$ 的积分。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "2026-07-06 首次记录截面半径识别、约分和三角积分断点；2026-07-15 复做再次做错，新增把球体区域不等式误当成球面等式、用体积替代变量积分的概念断点。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "missing_second_solution_reference_repaired",
+          "severity": "medium",
+          "finding": "正式卡漏引 manifest 已绑定的第二张解析图。",
+          "recommended_action": "已补入 solution_02.png。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-659",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-659",
+            "GS-668"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为固定坐标、求截面尺寸与面积后累加。"
+        },
+        {
+          "target_card_id": "GS-666",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-668"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为三重积分轮换对称性与截面法，并区分积分相等和点态替换。"
+        },
+        {
+          "target_card_id": "GS-667",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-668"
+          ],
+          "evidence_code": "K2",
+          "reason": "同把固定边界尺寸与区域内部可变量混为一谈。"
+        },
+        {
+          "target_card_id": "GS-669",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-668",
+            "GS-669"
+          ],
+          "evidence_code": "K2",
+          "reason": "同需区分三维区域条件、边界等式与可变径向量。"
+        },
+        {
+          "target_card_id": "GS-670",
+          "decision": "add_strong_edge",
+          "declaration_owners": [
+            "GS-668"
+          ],
+          "evidence_code": "K2",
+          "reason": "同在单位球化后必须保留随半径变化的被积函数，不能把区域条件替成常数。"
+        },
+        {
+          "target_card_id": "GS-691",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-691"
+          ],
+          "evidence_code": "K2",
+          "reason": "同由圆截面标准式区分半径和半径平方。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-669",
+      "pre_formal_closeout_card_sha256": "6f71155f166e8f74274197f0c183a708bc85df927c88dbd3e8736a17d6a3dc79",
+      "card_sha256": "be9767c7a2d342a47da0a59928a3b32760c3a022b57ef1181571ec06c7acb1c8",
+      "reviewed_detail_sha256": [
+        "464fe8534e22fbeed478cf48ec66104bba8fc1216e63fe5e6aa748bab460a159"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "b80e041e81d02a10b2ef4215900ddcb4e8beeb61a90bd606b991ad7ddb242566"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "06cfc7a811ddd9e53f240b7731b93b7bf05f55efb0fab1a1fdfdceee016ff5e9",
+        "215d2b9cf8fa7b3c7ecf9b7b96dd929c5bca0fb0c4542bf47a70606ecb348ec7"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "在圆锥 \\(\\sqrt{x^2+y^2}\\le z\\le1\\) 内计算径向倒数的三重积分。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$\\displaystyle \\pi(\\sqrt2-1)$",
+      "solution_outline": [
+        "把圆锥条件化为极角限制。",
+        "由平面 \\(z=1\\) 得径向上限。",
+        "积分并用非负性与倒数特殊值复查。"
+      ],
+      "knowledge_nodes": [
+        "多元函数积分学",
+        "三重积分",
+        "球面坐标",
+        "二次曲面",
+        "向量代数与空间解析几何",
+        "圆锥面识别",
+        "三重积分换元",
+        "坐标系选择",
+        "极角范围确定"
+      ],
+      "first_action": "写出 $\\sqrt{x^2+y^2}=\\rho\\sin\\varphi$、$z=\\rho\\cos\\varphi$，先将圆锥条件化为 $\\sin\\varphi\\le\\cos\\varphi$，明确它限制的是极角而不是径向。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "把带根号的 $\\sqrt{x^2+y^2}$ 错按 $\\rho^2\\sin^2\\varphi$ 代入，误造第二个径向上界并中断球面坐标路线；随后错误合并不等式、扩大极角范围，且在负值检查和 $\\frac1{\\cos(\\pi/4)}$ 的倒数代入处再次断链。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "wrong_history 已记录 2026-07-06 与 2026-07-17 两次同题失败；第二次虽然能主动选择球面坐标，但仍在圆锥条件代入、区域判型、设限、合理性验算和倒数代入的连续动作链上出错。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-670",
+          "decision": "add_strong_edge",
+          "declaration_owners": [
+            "GS-669"
+          ],
+          "evidence_code": "K2",
+          "reason": "先判圆锥或椭球，再把不同边界角色翻译为球面坐标范围。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-671",
+      "pre_formal_closeout_card_sha256": "7acb66e34a8d5e46fe44e945e4adb7973954af074972a07546f0f8950ef04983",
+      "card_sha256": "6dabd65ae48256bfd31e628f5234e8ae6fb92bae4c9d220cf07898dcf5383a47",
+      "later_batch_revalidation": {
+        "source_batch": 24,
+        "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260723-B24",
+        "status": "current_hash_revalidated_after_later_relation_write",
+        "prior_card_sha256": "0e46b69d80d14c99a611612b13259b43e455ffb802f8535fc6b2724a0d701662",
+        "current_card_sha256": "ddda5f4329da61790edce664b20293bb808feae3eab98b4aafb4f5a4b083e23a",
+        "current_aggregate_edge_policy": "allow",
+        "current_related": [
+          "GS-577",
+          "GS-663"
+        ],
+        "relation_delta": {
+          "added_edges": [],
+          "removed_edges": [
+            "GS-328"
+          ]
+        },
+        "prior_relation_decisions_preserved": true,
+        "note": "第24批选中 GS-328 后按同题身份冻结政策删除 GS-671--GS-328 普通边；GS-671 已确认的个人断点与其余关系不改写。"
+      },
+      "reviewed_detail_sha256": [
+        "20b7c6241393be6f1568f5702ad7d1ac790fd356f6b3e5366a122e7c0124e5d5"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "6e1a2b0077d2bd8a350f17a2d304a8e9a500cec2f7e0ecda2404fbcec47e3719"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "fdc0dbdf09c2694e1f4eb4420e081bc8a6d9252d13b4e9de480a4f9fe5823d4f",
+        "fc6c95451a2cc5451bf6c25abed638d37c99549c9e83c20cf08e9935b0c4e3b0"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "根据 \\(f' <0\\) 或 \\(f''>0\\) 判断对称区间三角权积分的符号。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "D，正确结论为 (1) 和 (4)。",
+      "solution_outline": [
+        "把负半轴反折到正半轴。",
+        "用单调性判断 \\(f(x)-f(-x)\\) 的符号。",
+        "余弦项分部积分后复用正弦权结论。"
+      ],
+      "knowledge_nodes": [
+        "定积分",
+        "定积分性质",
+        "函数单调性",
+        "分部积分",
+        "对称换元",
+        "先判型",
+        "区间拆分",
+        "区间再现",
+        "积分保序",
+        "单调性比较"
+      ],
+      "first_action": "先把 $\\int_{-\\pi}^{\\pi}f(x)\\sin xdx$ 拆成 $\\int_{-\\pi}^{0}+\\int_{0}^{\\pi}$，再令 $x=-u$ 把前半段改写到 $[0,\\pi]$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有触发对称区间拆分和 $x=-u$ 换元再现，导致没有得到 $\\int_0^\\pi [f(x)-f(-x)]\\sin xdx$ 这个可判号形式。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-07 wrong_history 记录 1 次独立同题失败；相似题只作训练连线，不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-328",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-671"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为反折换元后统一到同一区间判号。"
+        },
+        {
+          "target_card_id": "GS-577",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-577",
+            "GS-671"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为三角权函数下的对称换元和同区间比较。"
+        },
+        {
+          "target_card_id": "GS-662",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-671"
+          ],
+          "evidence_code": "R2",
+          "reason": "引入中间量点态比较与对称拆区间再现不同。"
+        },
+        {
+          "target_card_id": "GS-663",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-663",
+            "GS-671"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为符号变化后作差或反折，再在统一区间比较。"
+        },
+        {
+          "target_card_id": "GS-684",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-684"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享分部积分大类，权函数判号与高阶导降阶不同。"
+        }
+      ],
+      "batch35_lineage_revalidation": {
+        "batch_number": 35,
+        "date": "2026-07-24",
+        "prior_card_sha256": "ddda5f4329da61790edce664b20293bb808feae3eab98b4aafb4f5a4b083e23a",
+        "current_card_sha256": "9d0270279a82105df8deb9b62f395080955dbfc842bfe8fa703861b5d2e7cd4f",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-663"
+        ],
+        "removed_edges": [
+          "GS-577--GS-671"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第35批重绑 GS-671 的关系导航哈希；第8批原逐题语义载荷保持不变。"
+      },
+      "batch38_lineage_revalidation": {
+        "batch_number": 38,
+        "date": "2026-07-25",
+        "prior_card_sha256": "9d0270279a82105df8deb9b62f395080955dbfc842bfe8fa703861b5d2e7cd4f",
+        "current_card_sha256": "6dabd65ae48256bfd31e628f5234e8ae6fb92bae4c9d220cf07898dcf5383a47",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "暂无强边"
+        ],
+        "removed_edges": [
+          "GS-663--GS-671"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "batch35_lineage_revalidation",
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第38批重绑 GS-671 的关系导航哈希；第8批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-672",
+      "pre_formal_closeout_card_sha256": "11bb309fe1f6de61e425c09230a3a20daeab7384c4b06cf35f28213182582422",
+      "card_sha256": "11bb309fe1f6de61e425c09230a3a20daeab7384c4b06cf35f28213182582422",
+      "reviewed_detail_sha256": [
+        "41ed9a8fe4a2299270dee1e186ff88b5880b5dd342a73bc65e39c02629418947"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "607e06f166616dedf1c939669fe6c86e1ecd53f24d5504c236400d9b89c27421"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "e7e80db1c5308e369b519558af35cbaa7b8bd9d275491d09a28cc42e0834c909",
+        "89432ddca73e247f129031f41fb7d3fead335244adeb5ffa5e32fa12e2ac1b55"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "把极坐标曲线 \\(r=\\theta\\) 与极轴围成的面积写成黎曼和。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "A，面积 $A=\\frac{4\\pi^3}{3}$，对应极限和为 $\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^n\\frac{4\\pi^3i^2}{n^3}$。",
+      "solution_outline": [
+        "写极坐标面积积分。",
+        "写取样点与小宽度。",
+        "按定积分定义形成黎曼和。"
+      ],
+      "knowledge_nodes": [
+        "定积分",
+        "定积分定义",
+        "定积分应用",
+        "平面图形面积",
+        "极坐标面积微元",
+        "微元法建模",
+        "黎曼和",
+        "先判型",
+        "曲线表达形式判断",
+        "取样点",
+        "代入化简"
+      ],
+      "first_action": "先写出 $A=\\frac12\\int_0^{2\\pi}\\theta^2d\\theta$，把本题从“螺线图像”转成定积分。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先调用极坐标面积微元 $dA=\\frac12r^2d\\theta$；随后对黎曼和中 $f(\\theta_i)$ 还要乘 $\\Delta\\theta$ 的“高乘宽”含义不稳。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "wrong_history 已记录 2026-07-07 与 2026-07-16 两次同题失败；两次都需要讲解才能把极坐标面积积分与黎曼和中的取样点、小宽度稳定串联。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "latest_recurrence_synced_to_visual_detail",
+          "severity": "medium",
+          "finding": "详情页停留在首次错误，未覆盖 2026-07-16 复发。",
+          "recommended_action": "已同步第二次复发和当前第一断点。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-680",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-672",
+            "GS-680"
+          ],
+          "evidence_code": "K2",
+          "reason": "同一极坐标面积微元，一题用小扇形、一题用二重积分。"
+        },
+        {
+          "target_card_id": "GS-688",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-672",
+            "GS-688"
+          ],
+          "evidence_code": "K2",
+          "reason": "同一黎曼和断点，取样点函数值必须乘小宽度。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-673",
+      "pre_formal_closeout_card_sha256": "32b1ba5ba9d2d1701eb2ac0233c2c8e45c92925ac3bc6d0a23239fb10c7852f4",
+      "card_sha256": "b08578cbea831655f7a310de56c5eccd3c094e67cd831fd60063039b8205fe1a",
+      "reviewed_detail_sha256": [
+        "1950941b44c1c5998d67f6aff7fdcf67d8b79f0829a8a6c08e6f8086d1d48f29"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "0bfa0d292762b98c8ff5e643b8ba66113001c4b7826ca41a79d006b8fbd639fb"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "df3f2f51254ff3c56768f9c5f0a22e0c78888dadb08228512270ca4e805040fe",
+        "f8546d1508c9e87e1a5068b0bdbcf00fbc85d815b0a86828ef9491d390d77eee"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "比较两个积分定义函数的无穷小阶数。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "A，同阶无穷小；$\\displaystyle\\frac{\\alpha(x)}{\\beta(x)}\\to\\frac19$。",
+      "solution_outline": [
+        "设公共积分函数并求最低阶主部。",
+        "分别代入复合自变量与幂次。",
+        "比较主项系数得到比值。"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "等价无穷小",
+        "无穷小阶数比较",
+        "一阶线性主部",
+        "定积分",
+        "变上限积分",
+        "洛必达法则",
+        "先判型",
+        "积分主部",
+        "变上限积分等价替换",
+        "主导项比较",
+        "代入复合自变量"
+      ],
+      "first_action": "先写 $f(t)\\sim6t$，并计算 $g(x)=\\int_0^x f(t)dt\\sim\\int_0^x6t\\,dt=3x^2$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先找 $g(x)$ 的等价主部，而是直接比较 $f(x)$ 与 $g(x)$ 并反复套洛必达，导致没有把题目化成 $g(x^3)$ 与 $[g(x)]^3$ 的主部比较。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-07 wrong_history 记录 1 次独立同题失败；其他主部判阶题不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-016",
+          "decision": "add_strong_edge",
+          "declaration_owners": [
+            "GS-673"
+          ],
+          "evidence_code": "K2",
+          "reason": "变上限积分型无穷小都先求局部主部再判阶。"
+        },
+        {
+          "target_card_id": "GS-547",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-673"
+          ],
+          "evidence_code": "K2",
+          "reason": "同先取得积分函数最低阶主部再比较阶数。"
+        },
+        {
+          "target_card_id": "GS-579",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-673"
+          ],
+          "evidence_code": "R2",
+          "reason": "参数方程可导性后 Taylor 与积分函数主部判阶不同。"
+        },
+        {
+          "target_card_id": "GS-585",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-673"
+          ],
+          "evidence_code": "R2",
+          "reason": "复合上限求导漏链式系数与积分主部替换不同。"
+        }
+      ],
+      "batch34_lineage_revalidation": {
+        "batch_number": 34,
+        "date": "2026-07-24",
+        "prior_card_sha256": "528f8a805902e9b4203edf448d7cff4278f9b83abe688ce5bf033d1381fb998a",
+        "current_card_sha256": "b08578cbea831655f7a310de56c5eccd3c094e67cd831fd60063039b8205fe1a",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-016"
+        ],
+        "removed_edges": [
+          "GS-547--GS-673"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第34批重绑 GS-673 的关系导航哈希；第8批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-674",
+      "pre_formal_closeout_card_sha256": "334d15e0af2b143a32761a7f9a38a652e93095ffa55c58d25b4782ed5dc1c82e",
+      "card_sha256": "132f1c791e246e85468cf72518cfb9808857c278c4b7bba85041b3282fb65e56",
+      "later_batch_revalidation": {
+        "batch_number": 17,
+        "date": "2026-07-23",
+        "prior_card_sha256": "6893396375c8e375348fad3ee14668b853d4f033a05b92bc47ec3698e6f41dbb",
+        "current_card_sha256": "132f1c791e246e85468cf72518cfb9808857c278c4b7bba85041b3282fb65e56",
+        "content_change_scope": "related_field_only",
+        "current_related": [],
+        "removed_edges": [
+          "GS-174"
+        ],
+        "added_edges": [],
+        "historical_relation_decisions_preserved": true,
+        "note": "第17批识别 GS-174 与 GS-315 为精确同题身份组并阻断普通聚合边；GS-174 与本卡不再保留倒代换宽泛边，第8批其他判断保持不变。"
+      },
+      "reviewed_detail_sha256": [
+        "256b5f3b740e480ad1e5fce3fead385346b70a3358e77aea7621653dcf15cc9b"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "f4be9930ab10bda3fb6aa8f140b3145cc1bcacdfac35f8c2f8ceb1e4c2265336"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "1a6735b20fb965ea4efa7b194a5ceb538015ae49ae4b536388313d315ce136d3",
+        "e164d04cd6618fa85195d7a92f52c3aa8c8c3418b153d8eb8d63482a3b5e86b1"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "求两个互为倒数上限的定积分之和的值域。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "B，a\\\\in[0,+\\\\infty)。",
+      "solution_outline": [
+        "对第二个积分作倒数代换。",
+        "统一上限并合并被积函数。",
+        "化为半个对数平方并求值域。"
+      ],
+      "knowledge_nodes": [
+        "定积分",
+        "定积分等式",
+        "变上限积分",
+        "第一类换元",
+        "一元函数积分学的计算",
+        "单调性与极值",
+        "先判型",
+        "定积分等式入口",
+        "倒代换",
+        "定积分换元",
+        "上限统一",
+        "积分合并",
+        "通分化简",
+        "凑微分",
+        "值域求解"
+      ],
+      "first_action": "先令第二个积分中 $t=1/u$，写出 $dt=-\\frac1{u^2}du$，并把积分上下限 $1,1/x$ 转成 $1,x$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先用 $t=1/u$ 倒代换统一两个积分上限，而是只观察 $x\\to0^+$ 时第二个积分趋向无穷的一端趋势。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-07 wrong_history 记录 1 次独立同题失败；其他定积分换元题不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-174",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-174",
+            "GS-674"
+          ],
+          "evidence_code": "K2",
+          "reason": "同由倒数结构触发倒代换并统一积分区间。"
+        },
+        {
+          "target_card_id": "GS-186",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-674"
+          ],
+          "evidence_code": "R2",
+          "reason": "区间平移与倒数代换统一上限不是同一第一动作。"
+        },
+        {
+          "target_card_id": "GS-191",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-674"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享最终值域目标，题型与第一动作不同。"
+        },
+        {
+          "target_card_id": "GS-678",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-678"
+          ],
+          "evidence_code": "R2",
+          "reason": "倒数代换与平移换元只属宽泛工具类。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-675",
+      "pre_formal_closeout_card_sha256": "6274be78b54b92759e82ec67c335a046a08e52317978baccfdcfbb591ef66def",
+      "card_sha256": "96e7996fda7f2a570ad9498ac4564a9c81465da6b04edeb88ee790085f31bcb2",
+      "reviewed_detail_sha256": [
+        "e4dfb21a0e01cb49bfa5bd694796e7b5a02954bcd183d707bdef96fe2ff68762"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "2cf5ae6a3d37212d5184504dadca03249e097f0821a803c2ba006c5a0c2a9495"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "6aa8317f33d6598aaf3acb9cfb8936a423c3cf1e185b85c56a493ea008e32690",
+        "342f5a52c68e35a2c0948bc1ddc6c101011b2f2bf9c10c0c9aac1cfccb9a9c4d"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "判断 \\(\\int_1^{+\\infty}dx/(x^p\\ln^q x)\\) 的收敛参数。",
+      "asked_output": "判断参数范围",
+      "answer": "A；\\(p>1\\) 且 \\(q<1\\)。",
+      "solution_outline": [
+        "令 \\(t=\\ln x\\) 统一两个危险端点。",
+        "在 \\(t=0^+\\) 判 \\(q<1\\)。",
+        "在无穷端分 \\(p\\) 的三种情形并取条件交集。"
+      ],
+      "knowledge_nodes": [
+        "反常积分",
+        "对数型积分",
+        "等价无穷小",
+        "比较判别法",
+        "极限比较判别法",
+        "先判型",
+        "找反常点",
+        "区间拆分",
+        "反常积分判敛",
+        "p型判敛",
+        "等价比较判别",
+        "边界单独验证",
+        "对数幂比较"
+      ],
+      "first_action": "先标出两个反常点 \\(x=1^+\\) 与 \\(x\\to+\\infty\\)，并把积分拆成 \\([1,e]\\) 和 \\([e,+\\infty)\\) 两段分别判敛。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "只把题目当成无穷远处的 \\(1/x^p\\) 比较题，没有先检查 \\(x=1\\) 处 \\(\\ln x=0\\) 导致的有限瑕点。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-07 wrong_history 记录 1 次独立同题失败；其他含参反常积分不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "consistent_after_proof_repair",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "improper_integral_necessity_proof_repaired",
+          "severity": "high",
+          "finding": "原比较上界只能证明充分性，不能单独推出 p>1 的必要性。",
+          "recommended_action": "改用 t=ln x 统一两端并分类证明。",
+          "resolution_status": "resolved"
+        },
+        {
+          "code": "unsupported_specific_wrong_choice_removed",
+          "severity": "medium",
+          "finding": "dated wrong_history 不支持用户曾具体误选 q>1。",
+          "recommended_action": "只保留有证据的漏查有限瑕点。",
+          "resolution_status": "resolved"
+        },
+        {
+          "code": "visual_placeholders_replaced",
+          "severity": "medium",
+          "finding": "lecture_refs 仍为待补充。",
+          "recommended_action": "已绑定详情、题图和解析图。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-180",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-675"
+          ],
+          "evidence_code": "K2",
+          "reason": "同一第一动作是列出全部反常端点并分段判敛。"
+        },
+        {
+          "target_card_id": "GS-580",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-675"
+          ],
+          "evidence_code": "K2",
+          "reason": "同一错因是未先识别有限瑕点并拆开危险端点。"
+        },
+        {
+          "target_card_id": "GS-581",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-675"
+          ],
+          "evidence_code": "R2",
+          "reason": "无穷端主项抵消与漏查有限瑕点不是同一动作。"
+        },
+        {
+          "target_card_id": "GS-582",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-675"
+          ],
+          "evidence_code": "R2",
+          "reason": "无穷端趋零速度与漏查 x=1 有限瑕点不同。"
+        },
+        {
+          "target_card_id": "GS-676",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-676"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为含参反常积分同时检查有限端和无穷端。"
+        },
+        {
+          "target_card_id": "GS-696",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-696"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为 x=1 瑕点识别并要求共同截断。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "8b461022712f939c28fe85d9456ba609c7719d42b1a35e986af9fec0e03a1f49",
+        "current_card_sha256": "96e7996fda7f2a570ad9498ac4564a9c81465da6b04edeb88ee790085f31bcb2",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-180"
+        ],
+        "removed_edges": [
+          "GS-580--GS-675"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-675 的关系导航哈希；第8批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-676",
+      "pre_formal_closeout_card_sha256": "2411059dccd96ae6dd43f58b4b3e50400e6e8e8f5a8562139d13e8ea59abaf4e",
+      "card_sha256": "940440b187cfd0713c10e2ba32daa76d7f37790b9eb673b19da7a63fd2787ff5",
+      "reviewed_detail_sha256": [
+        "dbfa37d32aa7836080fc19257e1b45a185d9b31e5b34a3dcb05fbadafdb3804a"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "a02ef1487a1ed821f6edd46ef288592484bc3185030786792eca83a29e1a7040"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "c41bef1f9feb5245fd2c61aeae5d67160265f96c3f8a41f4cf6cac04752bcc24",
+        "0764d4fcd78d9fa2e9a2dfd115df116697dd340acb070f90155bb26e19ef4c9d"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "判断含 \\(x^{1-p}\\arctan x/(2+x^p)\\) 的反常积分收敛参数。",
+      "asked_output": "判断参数范围",
+      "answer": "A；\\(1<p<3\\)。",
+      "solution_outline": [
+        "分别检查 0 与无穷两个端点。",
+        "零点作整体等价得到 \\(p<3\\)。",
+        "无穷端作整体等价得到 \\(p>1\\)。"
+      ],
+      "knowledge_nodes": [
+        "反常积分",
+        "等价无穷小",
+        "比较判别法",
+        "极限比较判别法",
+        "先判型",
+        "找反常点",
+        "区间拆分",
+        "反常积分判敛",
+        "p型判敛",
+        "等价比较判别",
+        "边界单独验证"
+      ],
+      "first_action": "先标出 \\(x=0^+\\) 与 \\(x\\to+\\infty\\) 两个反常端点，并把积分拆成 \\([0,1]\\) 和 \\([1,+\\infty)\\) 两段。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "把 \\(\\arctan0\\) 和 \\(2+0^p\\) 都有定义当作 0 点正常，漏看 \\(x^{1-p}\\) 在 \\(p>1\\) 时会变成 \\(1/x^{p-1}\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-07 wrong_history 记录 1 次独立同题失败；其他端点判敛题不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "potential_endpoint_language_clarified",
+          "severity": "medium",
+          "finding": "旧表述容易把 0 无条件称为瑕点。",
+          "recommended_action": "改为随参数检查整体局部阶数的潜在奇端点。",
+          "resolution_status": "resolved"
+        },
+        {
+          "code": "visual_placeholders_replaced",
+          "severity": "medium",
+          "finding": "lecture_refs 仍为待补充。",
+          "recommended_action": "已绑定详情、题图和解析图。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-180",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-676"
+          ],
+          "evidence_code": "K2",
+          "reason": "同需检查点态代入不能替代端点局部可积性。"
+        },
+        {
+          "target_card_id": "GS-580",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-676"
+          ],
+          "evidence_code": "K2",
+          "reason": "同需区分函数值存在与端点局部可积。"
+        },
+        {
+          "target_card_id": "GS-581",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-676"
+          ],
+          "evidence_code": "R2",
+          "reason": "无穷端参数主项抵消与零点局部阶数检查不同。"
+        },
+        {
+          "target_card_id": "GS-582",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-676"
+          ],
+          "evidence_code": "K4",
+          "reason": "同把端点的点态表现误当成反常积分可积性的充分证据。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "b0cab24bcf35bf84576ddaff311bfc2ddf154012232c500dc2f4266f274cc341",
+        "current_card_sha256": "940440b187cfd0713c10e2ba32daa76d7f37790b9eb673b19da7a63fd2787ff5",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-180",
+          "GS-675"
+        ],
+        "removed_edges": [
+          "GS-580--GS-676",
+          "GS-582--GS-676"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-676 的关系导航哈希；第8批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-677",
+      "pre_formal_closeout_card_sha256": "dbba4c36cdff870d394ce5e0ddd95654b130a6b1a5f66dd21fac7c6d5e5d2515",
+      "card_sha256": "92149a66db0566ce60e3e53cbb7b70ffca58a8970d80e253efbe61c3c24a2360",
+      "reviewed_detail_sha256": [
+        "f5dc216854a04b1cb863cf143d8b95410371f135a29fa4af5b9194f4f6a84341"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "c74603513476475fb1992479ce2df76f8afa7e94f7a5fbb76909455e73ebe98b"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "984d2814fd920b8316aaac9668076e9ff966e05503c80afd04d7548f79955d0c",
+        "3bf6cd5ad25aa8c97e5b6b30133f9a05323f32ac3688cf416b5e382f4a24ce77"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "由反常积分收敛确定参数并计算积分值。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "C；当 \\(a=1\\) 时，\\(I=\\ln2\\)。",
+      "solution_outline": [
+        "线性拆项写两个基本原函数。",
+        "保留共同有限上限并比较对数主部。",
+        "收敛迫使 \\(a=1\\)，再计算上下端贡献。"
+      ],
+      "knowledge_nodes": [
+        "反常积分",
+        "反常积分极限",
+        "一元函数积分学的计算",
+        "不定积分",
+        "根式积分",
+        "对数型积分",
+        "参数分类讨论",
+        "先判型",
+        "线性拆项",
+        "直接求原函数",
+        "根式积分公式",
+        "对数型原函数",
+        "整体取极限",
+        "主导项比较"
+      ],
+      "first_action": "先把积分写成两个原函数项，分别写出 \\(\\ln(x+\\sqrt{x^2+4})\\) 和 \\(a\\ln(x+2)\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "先通分导致结构变复杂，并且忘记 \\(\\int dx/\\sqrt{x^2+a^2}\\) 的对数原函数公式。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-07 wrong_history 记录 1 次独立同题失败；其他根式反常积分不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "visual_placeholders_replaced",
+          "severity": "medium",
+          "finding": "lecture_refs 仍含待补充。",
+          "recommended_action": "已绑定详情、题图和解析图。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-581",
+          "decision": "add_strong_edge",
+          "declaration_owners": [
+            "GS-677"
+          ],
+          "evidence_code": "K2",
+          "reason": "反常积分收敛性都迫使无穷端的 1/x 型主项系数抵消。"
+        },
+        {
+          "target_card_id": "GS-587",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-677"
+          ],
+          "evidence_code": "R2",
+          "reason": "凑幂换元与线性拆项识别根式原函数不同。"
+        },
+        {
+          "target_card_id": "GS-687",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-687"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为对数根式反常积分并整体处理无穷端对数项。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "b78f7c4912ffc3e12380e9b999274337c7ca5f535568253f1f87e711aa3e67a6",
+        "current_card_sha256": "92149a66db0566ce60e3e53cbb7b70ffca58a8970d80e253efbe61c3c24a2360",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "暂无强边"
+        ],
+        "removed_edges": [
+          "GS-581--GS-677"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-677 的关系导航哈希；第8批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-678",
+      "pre_formal_closeout_card_sha256": "0aa9797217fc4c85dec2e603541b5748ffda3426eb62e8461a62cff44eb9ec72",
+      "card_sha256": "161739569d32bdb2cdef326060a82203747907adc146fabb850c033a0e20c84c",
+      "reviewed_detail_sha256": [
+        "7b1af5f0782a2fd3a4acd52eed70ce0153c5681108ef4a1c3a18b1b1b1a7c8ef"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "94bd5faf835ae02be29649fbdafd5db90827d8ffe111f9242bafa00bdc3f2942"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "84e0f7b3b5d0ca753037f44047e819ac51c5dd5f669df6a187fa2a9c27595b03",
+        "58b00a7b9e31cd72d927a2f07cdbdec7ddabafdca80be33c16ebec6a4ffc7bad"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "求连续函数平移差分定积分的极限，并核对平移定义域。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$f(x)-f(x_0)$。",
+      "solution_outline": [
+        "先确认平移仍在定义域内。",
+        "令 \\(u=t+h\\) 把内部平移转成积分限平移。",
+        "用变限积分求导得到端点函数值之差。"
+      ],
+      "knowledge_nodes": [
+        "函数极限",
+        "定积分",
+        "变限积分",
+        "第一类换元",
+        "先判型",
+        "定积分换元",
+        "区间平移",
+        "变限积分求导",
+        "莱布尼茨法则",
+        "微积分基本定理",
+        "平移差分关系"
+      ],
+      "first_action": "先令 $u=t+\\Delta x$，把 $\\int_{x_0}^{x}f(t+\\Delta x)dt$ 改写为 $\\int_{x_0+\\Delta x}^{x+\\Delta x}f(u)du$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先通过换元把 $\\Delta x$ 从被积函数内部转移到积分上下限，导致无法进入变限积分求导。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-07 wrong_history 记录 1 次独立同题失败；其他区间平移题不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "source_condition_incomplete",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "source_condition_incomplete",
+          "severity": "high",
+          "finding": "闭区间连续不足以保证双侧平移后的函数值均有定义。",
+          "recommended_action": "保留题源缺口并明确邻域连续或允许增量前提。",
+          "resolution_status": "documented_boundary"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-186",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-678"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为区间平移，把函数内部平移转成积分区间平移。"
+        },
+        {
+          "target_card_id": "GS-338",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-678"
+          ],
+          "evidence_code": "K2",
+          "reason": "同把外部参数移到积分限再用变限积分求导。"
+        },
+        {
+          "target_card_id": "GS-661",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-678"
+          ],
+          "evidence_code": "R2",
+          "reason": "分段函数二阶可导检查与平移换元入口不同。"
+        },
+        {
+          "target_card_id": "GS-689",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-689"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为变限积分求导，固定反常端点不妨碍可变端点求导。"
+        },
+        {
+          "target_card_id": "GS-697",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-697"
+          ],
+          "evidence_code": "K2",
+          "reason": "同一平移换元，必须区分积分变量和外部参数。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-679",
+      "pre_formal_closeout_card_sha256": "ac93ea5697175c771b6dbb7de7097210e3af61be41453ab463e891d7e669bec7",
+      "card_sha256": "c6366fd0662d54746f4e9490de4e71fb2adf7f7b9f7a47aa95dce1abfe3943dd",
+      "later_batch_revalidation": {
+        "batch_number": 29,
+        "date": "2026-07-24",
+        "prior_card_sha256": "3ce5dfb1bfc7be79ede3d85b30da4eadea694a24f49b2c539dd183960450465f",
+        "current_card_sha256": "68461939d17eaae7bd37594047cdaea11c2d7deb8f9823c915017f5f16237e50",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-584"
+        ],
+        "removed_edges": [
+          "GS-458"
+        ],
+        "added_edges": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第29批确认 GS-679 与 GS-458 不满足同对象、同第一动作和同断点门槛；仅同步关系元数据与导航引用，原题目、解析、知识点和个人证据保持不变。"
+      },
+      "reviewed_detail_sha256": [
+        "a4dd1db1bba6d6838a722eb8681cb074b913b9b7d4e59052add6f4f3715a2cb8"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "d3b637b72bbf9577e100467d6fecf8ecc04fc7e386534ef33a334ef42566ca43"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "ee148e8342e3d394529975d71b786daa7d3283db81772056589bbcf4097fe2ed",
+        "72dc2de4876025afa999fe2f7a77ed90ec3b67d98b27d26aac9c77325cb990eb"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "由幂指极限条件得到对数导数方程并求正函数。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$f(x)=\\frac{x}{\\sin x}$。",
+      "solution_outline": [
+        "对幂指极限取对数并匹配真实增量。",
+        "得到 \\(f'/f=1/x-\\cot x\\)。",
+        "积分并由零点极限定常数。"
+      ],
+      "knowledge_nodes": [
+        "幂指极限",
+        "导数定义",
+        "导数定义型极限",
+        "自变量增量",
+        "极限条件反推导数",
+        "等价无穷小",
+        "一元函数微分学应用",
+        "微分方程",
+        "一阶微分方程",
+        "一阶线性微分方程",
+        "先判型",
+        "取对数",
+        "自变量增量匹配",
+        "对数导数",
+        "可分离变量",
+        "变量分离积分",
+        "初值定常数",
+        "等价无穷小定常数"
+      ],
+      "first_action": "先把 $\\frac{\\sin x-x\\cos x}{x\\sin x}$ 拆成 $\\frac1x-\\frac{\\cos x}{\\sin x}$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "推到 $\\frac{f'}{f}$ 后没有继续拆右端并积分，导致无法求出 $f(x)=C\\frac{x}{\\sin x}$ 的通解。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-07 wrong_history 记录 1 次独立同题失败；其他微分方程题不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-165",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-679"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享幂指极限取对数的前段工具，本题个人断点在对数导数方程求解。"
+        },
+        {
+          "target_card_id": "GS-458",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-679"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为非标准自变量增量的导数定义匹配。"
+        },
+        {
+          "target_card_id": "GS-584",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-679"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为得到对数导数方程后积分并由初值定常数。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "68461939d17eaae7bd37594047cdaea11c2d7deb8f9823c915017f5f16237e50",
+        "current_card_sha256": "c6366fd0662d54746f4e9490de4e71fb2adf7f7b9f7a47aa95dce1abfe3943dd",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "暂无强边"
+        ],
+        "removed_edges": [
+          "GS-584--GS-679"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-679 的关系导航哈希；第8批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-680",
+      "pre_formal_closeout_card_sha256": "08ab087bba13a25f3e66264bc73cfc6d2442175072afe6be06b4f1c2ddb574bc",
+      "card_sha256": "f10600da00a118cdd7e0b0455f9c1480c6a39aa6d20a631bea83e3190c823db1",
+      "reviewed_detail_sha256": [
+        "166f6dca4da42931cf37b48404514e91e848161738b481f2c3f95903a2061bc8"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "8f25ee7cc2b11ec5efce5f6f1c7b04fd839333a9cc53850775f70fa87f07aeab"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "6b46d45ffd28f58b817716d8101f01f3c68664f955a560d8bc700234be75897f",
+        "1068e8855dcd4c6c47a4fb4cd42e83164c36c70154076a0e2122f050c1fa7ba5"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算双纽线 \\((x^2+y^2)^2=x^2-y^2\\) 围成的面积。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "面积为 $1$。",
+      "solution_outline": [
+        "极坐标化边界并检查非负角域。",
+        "利用坐标轴对称取一瓣。",
+        "对 1 使用极坐标面积元积分。"
+      ],
+      "knowledge_nodes": [
+        "二重积分极坐标法",
+        "二重积分对称性",
+        "平面图形面积",
+        "极坐标面积微元",
+        "三角恒等变形",
+        "面积微元建模",
+        "角域判定"
+      ],
+      "first_action": "先令 $x=r\\cos\\theta,\\ y=r\\sin\\theta$，得到 $r^2=\\cos2\\theta$，并由 $r^2\\ge0$ 判断第一象限角域为 $0\\le\\theta\\le\\frac{\\pi}{4}$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先把对称性、角域限制和面积微元三件事串起来；不清楚为什么求面积等价于对 $1$ 积分，极坐标后内层被积函数变成 $r$。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-08 wrong_history 记录 1 次独立同题失败；GS-672 是跨卡训练连线，不计作本题复发。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "repeat_count_cross_card_inference_removed",
+          "severity": "medium",
+          "finding": "旧字段把 GS-672 计为本题第二次复发。",
+          "recommended_action": "只按本卡 dated wrong_history 计 1 次。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-400",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-680"
+          ],
+          "evidence_code": "R2",
+          "reason": "双圆交集的最小半径分界与双纽线存在角域不同。"
+        },
+        {
+          "target_card_id": "GS-409",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-680"
+          ],
+          "evidence_code": "R2",
+          "reason": "多边界射线分块与双纽线非负角域不同。"
+        },
+        {
+          "target_card_id": "GS-410",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-680"
+          ],
+          "evidence_code": "K2",
+          "reason": "同一双纽线方程、极坐标化与非负角域检查。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-681",
+      "pre_formal_closeout_card_sha256": "d74b1af175901d6651a4f1f65d87d82a80f2374ff2d129754e5db0a3b34f2c34",
+      "card_sha256": "ec800be01123a77207bca583e9f0300abb52adfc9db0082f295d3cd6e97cfc05",
+      "reviewed_detail_sha256": [
+        "bb5c9199321da803f7ff4358de40e0d18d4f8330bbf6888d00b568bd1368666a"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "061f2a2a5261811994402b641cf66c44edef5368151ee42ee3d2546e2cc4a462"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "d3950a771104a77203c97b9a96e3e9594e35d02e1ba17c47bc438298cde4a8ad",
+        "687898ec1641883c0edd2e82aefd305bb579b4b67a0956ec7863669f2ad1548c"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算心形线 \\(r=1+\\cos\\theta\\) 的全长。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "全长为 $8$。",
+      "solution_outline": [
+        "先区分弧长与面积并写弧长微元。",
+        "检查完整描线、半径符号和实际对称轴。",
+        "化简半角根式并积分。"
+      ],
+      "knowledge_nodes": [
+        "定积分",
+        "定积分应用",
+        "曲线弧长",
+        "极坐标",
+        "三角恒等变形",
+        "半角公式",
+        "极坐标弧长公式",
+        "曲线表达形式判断",
+        "对称性验证",
+        "参数范围检查",
+        "求导"
+      ],
+      "first_action": "先写“所求对象是曲线长度”，并落笔 $ds=\\sqrt{r^2+(r')^2}\\,d\\theta$；随后再检查 $0\\le\\theta\\le2\\pi$ 是否完整描线以及 $r(\\theta)=r(2\\pi-\\theta)$ 只支持上下半边等长。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先区分弧长与面积并写 $ds=\\sqrt{r^2+(r')^2}\\,d\\theta$；对称性只凭图形印象取四倍，没有用方程验证；还误判 $1+\\cos\\theta$ 在一周内会为负。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "wrong_history 已记录 2026-07-08 与 2026-07-20 两次独立同题失败；GS-595 只作同题型训练连线，不计作第三次复发。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "repeat_count_related_card_inference_removed",
+          "severity": "medium",
+          "finding": "旧字段把 GS-595 计作一次本卡复发。",
+          "recommended_action": "只按两条同题 dated wrong_history 计 2 次。",
+          "resolution_status": "resolved"
+        },
+        {
+          "code": "latest_first_breakpoint_synced",
+          "severity": "high",
+          "finding": "旧详情称主公式不是主要问题，与 2026-07-20 忘记弧长公式冲突。",
+          "recommended_action": "已把对象识别与弧长公式设为当前第一动作。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-595",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-681"
+          ],
+          "evidence_code": "K2",
+          "reason": "同题型、同极坐标弧长公式入口。"
+        },
+        {
+          "target_card_id": "GS-644",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-681"
+          ],
+          "evidence_code": "K2",
+          "reason": "同先区分几何量，再验证对称性与完整参数范围。"
+        },
+        {
+          "target_card_id": "GS-682",
+          "decision": "add_strong_edge",
+          "declaration_owners": [
+            "GS-681"
+          ],
+          "evidence_code": "K2",
+          "reason": "直接对照 r=r(theta) 与 theta=theta(r) 两种弧长公式入口。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "20274897cc236ac2a005539862148146714ed785d426dbc2a6835bb8edb780a0",
+        "current_card_sha256": "ec800be01123a77207bca583e9f0300abb52adfc9db0082f295d3cd6e97cfc05",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-644",
+          "GS-682"
+        ],
+        "removed_edges": [
+          "GS-595--GS-681"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-681 的关系导航哈希；第8批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-682",
+      "pre_formal_closeout_card_sha256": "a1b9950f4b742b6380e59ee2bc8aee9a8b5bf0a543cb8d30fbdc241cf9c58e9f",
+      "card_sha256": "1a8970c5a7bf3929024af92d8e2a8c9f325a837d773a66fcd5d4c40cc07106ce",
+      "reviewed_detail_sha256": [
+        "61ab83aadbaad39a81d4177ab32fbeae1d9a0360f608f6efc9075f8d43cc4837"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "de20eaeb55a1f6dcfa51bdb12e68a14fbe07c63e79073ac82fbd23b7653bf816"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "1edd673796a983869be53e2e5c680a98887bc0de488a29062ada1a82d0ffb3c3",
+        "72692d6fd4d63a09c14572228731cdcebe895e444fcc5bd44ee0c21dc81e3fa0"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算由 \\(\\theta=\\frac12(r+1/r)\\) 给出的极坐标曲线弧长。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$2+\\frac12\\ln3$",
+      "solution_outline": [
+        "把 \\(r\\) 当参数写直角坐标参数方程。",
+        "求两个参数导数并平方相加。",
+        "利用 \\(r>0\\) 去绝对值后积分。"
+      ],
+      "knowledge_nodes": [
+        "曲线弧长",
+        "极坐标",
+        "参数方程",
+        "参数方程求导",
+        "三角恒等变形",
+        "曲线表达形式判断",
+        "极坐标转参数方程",
+        "参数方程弧长公式",
+        "平方和化简",
+        "绝对值去除条件检查"
+      ],
+      "first_action": "先令 $\\theta(r)=\\frac12(r+\\frac1r)$，写出 $x(r)=r\\cos\\theta(r),\\ y(r)=r\\sin\\theta(r)$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有第一时间把 $\\theta=\\theta(r)$ 代入 $x=r\\cos\\theta,\\ y=r\\sin\\theta$ 转成以 $r$ 为参数的参数方程；后续平方相加时漏掉 $\\cos^2\\theta+\\sin^2\\theta=1$。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "本题在 2026-07-08 与 2026-07-17 两次做错时，均未独立启动“把 $r$ 当参数并写出 $x(r),y(r)$”这一第一动作；第二次入口提示后后续计算可完成。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-298",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-298",
+            "GS-682"
+          ],
+          "evidence_code": "K2",
+          "reason": "同由变量关系选择自然参数并使用参数弧长公式。"
+        },
+        {
+          "target_card_id": "GS-469",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-469",
+            "GS-682"
+          ],
+          "evidence_code": "K2",
+          "reason": "同把极坐标关系改写成参数方程再求导。"
+        },
+        {
+          "target_card_id": "GS-595",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-595",
+            "GS-682"
+          ],
+          "evidence_code": "K2",
+          "reason": "构成 r=r(theta) 直接用公式与 theta=theta(r) 先参数化的对照。"
+        },
+        {
+          "target_card_id": "GS-644",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-644"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为参数曲线弧长与参数导数平方和。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "a1b9950f4b742b6380e59ee2bc8aee9a8b5bf0a543cb8d30fbdc241cf9c58e9f",
+        "current_card_sha256": "1a8970c5a7bf3929024af92d8e2a8c9f325a837d773a66fcd5d4c40cc07106ce",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-298",
+          "GS-469"
+        ],
+        "removed_edges": [
+          "GS-595--GS-682"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-682 的关系导航哈希；第8批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-683",
+      "pre_formal_closeout_card_sha256": "bd8eaa451173e3d9894482e28d6f9bd2b32cb5fb89160bff769bf15ab6752d5e",
+      "card_sha256": "763a7bc5391450a289021faaf61123d0a3125be8bac030a9f758a841c7a4d882",
+      "reviewed_detail_sha256": [
+        "b0417e13d53a211d8079074567c98770a860e5ff0290d4bf8b3479cbc7997fcd"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "4935954c290cdfd3fa206915af7a83e72e8f55531bb1564bd111d92b8ae8d657"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "f2d837b5da7c75a3c176fb7e2fc485c99e8213543112a80d6d0dda185909744b",
+        "7f3209e1a678c38ca5a30765350954e9636a32b0370d8421ded548159ec48a0c"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "由变上限积分恒等式与反函数关系求 \\(g'(3)\\)。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$1$",
+      "solution_outline": [
+        "对变上限积分等式求导。",
+        "用反函数复合恒等式求对应点导数。",
+        "调用反函数求导公式收口。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "反函数求导",
+        "变上限积分",
+        "复合函数求导",
+        "变上限积分求导",
+        "反函数对应点",
+        "反函数求导法则",
+        "代入点值"
+      ],
+      "first_action": "先写 $g'(f(1))=\\frac1{f'(1)}$，再由 $f(1)=3$ 得 $g'(3)=\\frac1{f'(1)}$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "求出 $f'(1)=1$ 后，没有调用反函数求导法则完成 $g'(3)$ 的收尾。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-08 wrong_history 记录 1 次独立同题失败；其他反函数求导题不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-124",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-683"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为先找反函数对应点，再用原函数导数的倒数。"
+        },
+        {
+          "target_card_id": "GS-283",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-683"
+          ],
+          "evidence_code": "K2",
+          "reason": "同用变上限积分求导与反函数复合恒等式。"
+        },
+        {
+          "target_card_id": "GS-526",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-683"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为反函数恒等式求导与对应点代入。"
+        }
+      ],
+      "batch22_current_lineage_revalidation": {
+        "batch_number": 22,
+        "date": "2026-07-23",
+        "prior_card_sha256": "58fe21417e2d63cc0171567cc9893e7d3574312df50d9d62e8744f132b9e749f",
+        "current_card_sha256": "193f99209d9aaaf33b424e7247afb61b91bff0cdfca3a413b3183d7c6222af3f",
+        "content_change_scope": "batch22_current_lineage_and_related_field_update",
+        "b22_edge_delta": {
+          "removed_edges": [
+            "GS-283"
+          ],
+          "added_edges": []
+        },
+        "current_related": [
+          "GS-124",
+          "GS-526"
+        ],
+        "reviewed_detail_sha256_preserved": true,
+        "prior_later_batch_revalidations_preserved": true,
+        "historical_relation_decisions_preserved": true,
+        "note": "第22批删除 GS-683 与 GS-283 的宽泛边；第8批历史结论与详情哈希保持不变。"
+      },
+      "batch33_lineage_revalidation": {
+        "batch_number": 33,
+        "date": "2026-07-24",
+        "prior_card_sha256": "193f99209d9aaaf33b424e7247afb61b91bff0cdfca3a413b3183d7c6222af3f",
+        "current_card_sha256": "763a7bc5391450a289021faaf61123d0a3125be8bac030a9f758a841c7a4d882",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-124"
+        ],
+        "removed_edges": [
+          "GS-526--GS-683"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "batch22_current_lineage_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第33批重绑 GS-683 的当前关系导航哈希；第8批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-684",
+      "pre_formal_closeout_card_sha256": "d5eb2c927f8969fc4f0ed6b0ee8d6d7e44a57a0656161d92748de570508033d5",
+      "card_sha256": "b8f6afc6f3e257be6e4316d58bfb462824b9a1cf43c2d3fa312ae817ce8c94ca",
+      "reviewed_detail_sha256": [
+        "db9deeb580dc6e939492851fe3b06b3c59177f80f08ee86c245be828ab211840"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "4c9d228ae52240f106321d25df9675887e2986665bb49b5923e40d531f623f30"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "81ccdc7e65faa7e38dfd5f106416f5b6f9c131e7b8bb15e17ef5b8bdc7b4e2f8",
+        "ca2728d7cb3c19bcc57fc4df2fa7d3c470eabd209cd232b684ff865467acac09"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "由低阶函数值与积分值计算 \\(\\int_0^1x^2f''(2x)dx\\)。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$0$",
+      "solution_outline": [
+        "把复合二阶导写成带系数的微分形式。",
+        "连续两次分部积分降阶。",
+        "换元接上题设积分值。"
+      ],
+      "knowledge_nodes": [
+        "定积分",
+        "高阶导数",
+        "分部积分",
+        "一元函数积分学的计算",
+        "复合函数求导",
+        "第一类换元",
+        "分部积分降阶",
+        "定积分分部",
+        "微分形式转换",
+        "复合导数系数处理"
+      ],
+      "first_action": "先把 $f''(2x)\\,dx$ 写成 $\\frac12 d(f'(2x))$，对 $\\int_0^1 x^2 f''(2x)\\,dx$ 做第一次分部积分。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "想到分部积分但没有落笔执行微分形式转换和第一次降阶，转去对 $f$ 在 $x=2$ 处作 Taylor 展开。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-08 wrong_history 记录 1 次独立同题失败；其他分部积分题不合并计数。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "broken_method_link_and_term_repaired",
+          "severity": "medium",
+          "finding": "cluster 009 路径不存在且编号不是分部积分，知识点又误写为降幂。",
+          "recommended_action": "改链 cluster 007，并统一为分部积分降阶。",
+          "resolution_status": "resolved"
+        },
+        {
+          "code": "manifest_derivative_order_repaired",
+          "severity": "medium",
+          "finding": "manifest note 把 f''(2x) 误写成 f(2x)。",
+          "recommended_action": "已修正二阶导对象。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-329",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-684"
+          ],
+          "evidence_code": "K2",
+          "reason": "同先处理复合导数系数，再分部积分降阶。"
+        },
+        {
+          "target_card_id": "GS-685",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-685"
+          ],
+          "evidence_code": "K2",
+          "reason": "GS-685 是 GS-684 第二次降阶后的复合边界项子链。"
+        },
+        {
+          "target_card_id": "GS-686",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-686"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为想到分部积分后仍需正确分配微分因子并执行降阶或降幂。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-685",
+      "pre_formal_closeout_card_sha256": "7cfd454ed9b62d5034ca943f0bb0af828838a4595f3897815bcd1b45a1deecf6",
+      "card_sha256": "929b63bac89e93c7904146deef1939940a10fdb1f2e0b65a25bb35f5fa51c7d3",
+      "reviewed_detail_sha256": [
+        "48cc89b1c9053b35c63ad9ca2b21b471522e5c0cfe4708361659d74a8d49a678"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "f7dfb6eacb7197b915177dd53ea0398a9506bfd829783eb21f15c8c0c26a7123"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "b4367554c2b779d857ce3284f1aeb8775db1116bd2cb7c2b643b7ed2dd24bf13",
+        "7a4c20de1cdd3181dbcc893697b11a08d8f1740b6766df271e6885aa14dcbc81"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "由原函数关系和导数定义型极限求函数平均值。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$\\displaystyle \\frac16-\\frac14\\ln3$",
+      "solution_outline": [
+        "还原原函数关系并识别导数定义极限。",
+        "对复合一阶导积分分部积分。",
+        "边界项按外层到内层逐级代入。"
+      ],
+      "knowledge_nodes": [
+        "导数定义",
+        "导数定义型极限",
+        "等价无穷小",
+        "复合自变量",
+        "不定积分",
+        "定积分",
+        "分部积分",
+        "一元函数积分学的计算",
+        "复合函数求导",
+        "函数平均值",
+        "原函数求导",
+        "正弦等价无穷小",
+        "导数定义拆差商",
+        "函数平均值公式",
+        "定积分分部",
+        "复合函数边界代入",
+        "边界项复查"
+      ],
+      "first_action": "先在上限处写出 $x=1\\Rightarrow2x=2\\Rightarrow f(2)=\\frac13$，再计算 $\\frac12\\cdot1\\cdot f(2)$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "代入 $x=1$ 后没有重新计算内层 $2x$，直接把 $f(2x)$ 抄成 $f(1)$。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-10 wrong_history 记录 1 次独立同题失败；相似的代入点错误不计作本题复发。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "repeat_count_cross_card_inference_removed",
+          "severity": "medium",
+          "finding": "旧字段把 GS-035 的相似错因计成本题第二次。",
+          "recommended_action": "只按 2026-07-10 本题事件计 1 次。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-035",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-685"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享宽泛的代入点错位标签，判断点连续性与复合边界项的动作链不同。"
+        },
+        {
+          "target_card_id": "GS-329",
+          "decision": "add_strong_edge",
+          "declaration_owners": [
+            "GS-685"
+          ],
+          "evidence_code": "K2",
+          "reason": "核心积分、复合导数系数、原函数条件与最终结果同构。"
+        },
+        {
+          "target_card_id": "GS-601",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-685"
+          ],
+          "evidence_code": "R2",
+          "reason": "外层负号分配与复合边界内层代入不同。"
+        },
+        {
+          "target_card_id": "GS-692",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-685",
+            "GS-692"
+          ],
+          "evidence_code": "K4",
+          "reason": "同一具体错因是复合函数边界代入跳过内层表达式。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-686",
+      "pre_formal_closeout_card_sha256": "5faf1c61e372a712f1e93d8ae9f61bc5658fde066f90cdeaf601575c688fd108",
+      "card_sha256": "d78cc1c0e3b254ea13113fa3ee92a8255ad3c5c49a23a5ec55cd6058a08f0f73",
+      "reviewed_detail_sha256": [
+        "f7b45c19e51b1c4db2cc7520818a3f6e5ef018b455ee07e229a03d83ce11e9c0"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "eee138e65ded596978d005cb37eb60b328c4eb277c3e0df2ff11a6e895a22f3a"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "568571e32562a202a69bed047a40cf126f431b4a7e74a0c0c436203a070b3688",
+        "964ff01db8de29f5913ecf15be75d16058831562db9781d36befb8d0b8a97185"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "由狄利克雷积分计算 sinc 平方反常积分。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$\\displaystyle \\frac{\\pi}{2}$",
+      "solution_outline": [
+        "先在有限截断区间上写 \\(x^{-2}dx=d(-1/x)\\)。",
+        "分部积分并逐端检查边界项。",
+        "换元接到狄利克雷积分。"
+      ],
+      "knowledge_nodes": [
+        "反常积分",
+        "反常积分极限",
+        "一元函数积分学的计算",
+        "分部积分",
+        "分母平方凑微分",
+        "分部积分降幂",
+        "三角恒等变形",
+        "二倍角公式",
+        "等价无穷小",
+        "正弦等价无穷小",
+        "第一类换元",
+        "定积分分部",
+        "反常积分边界处理",
+        "夹逼",
+        "自指积分移项闭合"
+      ],
+      "first_action": "先把 $\\frac{\\sin^2x}{x^2}dx$ 写成 $\\sin^2x\\,d(-1/x)$，明确取 $u=\\sin^2x$、$dv=x^{-2}dx$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有把分母平方单独放入 $dv$，而是把整个被积函数取作 $u$；随后没有识别新积分中原目标积分重新出现，也没有区分原被积函数与分部积分边界项的端点极限。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-10 wrong_history 记录 1 次独立同题失败；GS-630 只作同方法训练连线，不计作本题复发。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "repeat_count_related_card_inference_removed",
+          "severity": "medium",
+          "finding": "旧字段把 GS-630 计成本题第二次。",
+          "recommended_action": "只按 2026-07-10 本题事件计 1 次。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-601",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-686"
+          ],
+          "evidence_code": "R2",
+          "reason": "去括号符号错误与分部积分因子分配不同。"
+        },
+        {
+          "target_card_id": "GS-609",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-686"
+          ],
+          "evidence_code": "K2",
+          "reason": "同把分母平方分配给微分因子后分部积分。"
+        },
+        {
+          "target_card_id": "GS-630",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-686"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为分母平方凑 d(-1/u) 以降低分母幂次。"
+        },
+        {
+          "target_card_id": "GS-687",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-687"
+          ],
+          "evidence_code": "K2",
+          "reason": "同先在有限截断区间分部积分并检查反常边界项。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-687",
+      "pre_formal_closeout_card_sha256": "ce59a3bba6777e7587040445d0538bcb872571c430d1ed2c320c604a86af7eb1",
+      "card_sha256": "b5c422a5b0f28fa45268b050eaba3fbf549d37fc769ef2320e75545b571d28a4",
+      "reviewed_detail_sha256": [
+        "a1b959097c56d4891d488b1b7777ac31a56b2401b3c58252a74d4cded284ea7a"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "1b3a09b9a9f1e95604f58f0447b92f0cde8c185b66ba1f50e177844a9ff47d89"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "c133985c42196e76ff00959079240163182f39276f56216e10fa851b9a0634b0",
+        "9bc4d57b2878b7deb23f65003bcd9f2533048a6eafeac80d62bb98d2a3bb109f"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算对数根式反常积分并整体处理无穷上限。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$\\displaystyle \\pi-2\\ln2$",
+      "solution_outline": [
+        "设共同有限上限并分部积分。",
+        "根式换元时核对系数和端点。",
+        "合并完整原函数后整体取极限。"
+      ],
+      "knowledge_nodes": [
+        "反常积分",
+        "分部积分",
+        "根式换元",
+        "反正切型积分",
+        "反三角函数主值",
+        "对数型积分",
+        "等价无穷小",
+        "有限上限截断",
+        "牛顿莱布尼茨公式",
+        "原函数整体取极限",
+        "对数差合并",
+        "定积分分部",
+        "三联换元检查"
+      ],
+      "first_action": "先写 $I=\\lim_{b\\to+\\infty}\\int_1^b f(x)\\,dx=\\lim_{b\\to+\\infty}[F(b)-F(1)]$，暂时不把 $+\\infty$ 代入任何一个原函数单项。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "在 $2\\sqrt{x}\\ln(1+x)$ 这一单项处提前判断发散并停止，没有把它与 $-2\\sqrt{x}\\ln x$ 合成 $2\\sqrt{x}\\ln\\frac{1+x}{x}$；随后换元漏掉一倍系数，并把 $\\arctan1$ 的特殊值记错。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-10 wrong_history 记录 1 次独立同题失败；GS-677 只作同类反常积分训练连线，不计作本题复发。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "repeat_count_related_card_inference_removed",
+          "severity": "medium",
+          "finding": "旧字段把 GS-677 计成本题第二次。",
+          "recommended_action": "只按 2026-07-10 本题事件计 1 次。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-168",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-687"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为有限上限截断并合并对数差后再取无穷极限。"
+        },
+        {
+          "target_card_id": "GS-266",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-687"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享反正切原函数成分，反常积分整体收口链不同。"
+        },
+        {
+          "target_card_id": "GS-689",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-689"
+          ],
+          "evidence_code": "R2",
+          "reason": "原函数整体极限与反常尾积分求导洛必达不同。"
+        },
+        {
+          "target_card_id": "GS-696",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-696"
+          ],
+          "evidence_code": "K2",
+          "reason": "同一错因是拆看发散单项而未在共同截断下合并抵消。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-688",
+      "pre_formal_closeout_card_sha256": "f1ef1d3ba6dfa4f293dadeefee2a9bb11d2d6b04b2dc0fa1653a8da491368f9c",
+      "card_sha256": "12fdc50742486b7517a70d0eab59cd0c0df4fac385622094637b6ae87fc4a19e",
+      "reviewed_detail_sha256": [
+        "681eba626cdb7b7a402a1879e379046b2dcb820f10f4c3c234bf9393a3d184da"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "2e01f05f6fecda7ade23fcacc727e6b6b07455f1e2132f08f8a8f6f48441eade"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "085694c4565c42ab7e26fd4b3ca353e9299a9d4b1f84326b2a3b094e9d924eb8",
+        "7e65864a2f2b86e8e9e2a22d3eb3da90b6ea8c0b07ef25fc997e2cc4aeb41109"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算分式和式与对数和式组成的混合数列极限。",
+      "asked_output": "计算或判断题目所求量",
+      "answer": "$\\displaystyle 2\\ln2-\\frac34$",
+      "solution_outline": [
+        "先按线性性拆开异构和式。",
+        "分式部分统一放缩并夹逼。",
+        "对数部分提取宽度后转黎曼和。"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "数列极限",
+        "定积分",
+        "定积分定义",
+        "黎曼和",
+        "夹逼准则",
+        "有限和线性性",
+        "异构和式拆分",
+        "放缩型和式",
+        "等差数列求和",
+        "对数幂次提取",
+        "分部积分"
+      ],
+      "first_action": "先写 $S_n=\\sum_{k=1}^n\\frac{k}{2n^2+k}$、$T_n=\\sum_{k=1}^n\\ln\\left(\\frac{n+k}{n}\\right)^{1/n}$，把问题改成分别求 $\\lim S_n$ 与 $\\lim T_n$，再为每一部分单独判型。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先拆成两个和式，因而第一部分未进入夹逼路线；第二部分虽识别到黎曼和相似性，却因忘记标准形式和等差求和公式而中断。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-10 wrong_history 记录 1 次独立同题失败；GS-672 只作黎曼和训练连线，不计作本题复发。"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "repeat_count_related_card_inference_removed",
+          "severity": "medium",
+          "finding": "旧字段把 GS-672 计成本题第二次。",
+          "recommended_action": "只按 2026-07-10 本题事件计 1 次。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-170",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-688"
+          ],
+          "evidence_code": "K2",
+          "reason": "同为标准化对数和式并转成黎曼和。"
+        }
+      ]
+    }
+  ]
+}

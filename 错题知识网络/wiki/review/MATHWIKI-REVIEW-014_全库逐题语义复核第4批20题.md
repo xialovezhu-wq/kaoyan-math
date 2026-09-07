@@ -1,0 +1,486 @@
+---
+wiki_id: MATHWIKI-REVIEW-014
+type: target_level_semantic_review_batch
+title: 全库逐题语义复核第4批20题
+subject: 数学一
+knowledge:
+  - 全库逐题复核
+  - 题图解析图核对
+  - 知识点错因连线
+source_refs:
+  - 错题知识网络/错题卡/
+  - 错题知识网络/可视化错题详情/
+  - 错题知识网络/assets/visual_wrong_questions/
+  - 错题知识网络/wiki/review/MATHWIKI-REVIEW-014_全库逐题语义复核第4批20题.json
+status: active
+last_updated: 2026-07-22
+---
+
+# 全库逐题语义复核第4批20题
+
+## 本批结论
+
+本批共逐题核对 20 张正式卡，当前哈希仍有效的完整复核为 0 张；覆盖 65 个物理图片路径与 30 个唯一图片内容。全库当前共 882 张正式卡，本轮活动累计完成 119 张，剩余 763 张。
+
+本批有 14 张出现结构、身份、元数据或来源正文质量问题。证据充分且无歧义的修正已经正式收口；身份冲突、稳定 ID 合并或证据不足项仍保留为 needs_user，详见 `MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B04`。
+
+## 证据边界
+
+- `verified` 表示题面、所问对象、答案、解析路线和当前全部图片内容已经逐一核对，并由正式卡 SHA、详情页 SHA 与图片 SHA-256 绑定。
+- 个人错因仍按 `confirmed_personal`、`legacy_unclassified`、`pending_user_confirmation` 和重复占位分别处理；读懂解析不能反推用户为什么做错。
+- 同一哈希的重复物理图片只视觉核对一次，但所有物理路径都纳入数量和集合一致性检查。
+- 关系裁决中已正式应用的变更以正式收口回执为准；未应用项仍是 SHADOW 建议。
+
+## 批次总览
+
+| 错题 | 题目在问什么 | 知识点 | 答案 | 个人错因边界 | 质量发现 |
+|---|---|---|---|---|---|
+| [LA-078](http://127.0.0.1:8765/open/LA-078) | 选择正确的线性方程组解性结论。 | 线性方程组、矩阵秩、行空间正交、零空间、秩-零化度关系 | C：Bᵀy=b 有唯一解。 | pending_user_confirmation：旧卡没有用户真实作答；只确认复做入口是把零乘积翻译为子空间包含，再用维数闭合。 | malformed_source_frontmatter_repaired |
+| [GS-137](http://127.0.0.1:8765/open/GS-137) | 给出分段导数、不可导点及全部极值。 | 一元函数微分学应用、单调性与极值、分段函数连续可导、分段函数求导、幂指函数求导 | x=0 不可导；极小值为 f(-1)=1-e^(-1)、f(e^(-1))=e^(-2/e)，极大值为 f(0)=1。 | confirmed_personal：解析截图中的用户提问直接确认：曾把极值点误认为必须满足导数为零，遗漏不可导内点仍可能按定义成为极值点。 | cross_id_semantic_duplicate_question |
+| [GS-194](http://127.0.0.1:8765/open/GS-194) | 求二阶可降阶微分方程通解。 | 微分方程、二阶可降阶微分方程、乘积导数结构、复合量降阶 | y²=C₁x²+C₂。 | pending_user_confirmation：旧卡没有用户真实作答；乘积导数识别只是待复做确认的方法入口。 | cross_id_duplicate_question_asset |
+| [GS-211](http://127.0.0.1:8765/open/GS-211) | 求二阶可降阶微分方程通解。 | 微分方程、二阶可降阶微分方程、乘积导数结构、复合量降阶 | y²=C₁x²+C₂。 | pending_user_confirmation：旧卡没有用户真实作答；漏掉外层 x 只是待复做确认的候选风险。 | cross_id_duplicate_question_asset |
+| [GS-256](http://127.0.0.1:8765/open/GS-256) | 证明带参数的对数不等式。 | 一元函数微分学应用、微分不等式证明、对数不等式、导数判单调、单调性与极值 | 当 k≥ln2-1 时，所给不等式对全部 x>0 成立。 | pending_user_confirmation：旧卡没有用户真实作答；同号转化仅作为客观方法入口。 | cross_subject_visual_alias_resolved |
+| [GS-301](http://127.0.0.1:8765/open/GS-301) | 求弧长 s 与旋转曲面面积 A。 | 定积分、定积分应用、曲线弧长、旋转曲面面积 | s=22/3，A=425π/9。 | pending_user_confirmation：旧卡没有用户真实作答；先反求曲线再区分两个几何量只是复做入口。 | cross_id_duplicate_question_asset |
+| [GS-302](http://127.0.0.1:8765/open/GS-302) | 求弧长 s 与旋转曲面面积 A。 | 定积分、定积分应用、曲线弧长、旋转曲面面积 | s=22/3，A=425π/9。 | pending_user_confirmation：旧卡没有用户真实作答；目标拆分与半径绝对值检查只是复做入口。 | cross_id_duplicate_question_asset |
+| [GS-354](http://127.0.0.1:8765/open/GS-354) | 选择正确命题个数。 | 多元函数极限、多元函数偏导、偏导定义、累次极限 | B：①③④正确，共 3 个。 | pending_user_confirmation：旧卡没有用户真实作答；不能把常见的定义混淆写成个人错因。 | cross_id_duplicate_question_asset |
+| [GS-356](http://127.0.0.1:8765/open/GS-356) | 选择正确命题个数。 | 多元函数极限、多元函数偏导、偏导定义、累次极限 | B：①③④正确，共 3 个。 | pending_user_confirmation：旧卡没有用户真实作答；复做时再确认具体断点。 | cross_id_duplicate_question_asset |
+| [GS-360](http://127.0.0.1:8765/open/GS-360) | 选择正确判断。 | 多元函数偏导、极限与连续、可微定义、偏导连续性 | D。 | pending_user_confirmation：旧卡没有用户真实作答；性质链混淆只是候选风险。 | cross_id_duplicate_question_asset、solution_asset_reference_only |
+| [GS-363](http://127.0.0.1:8765/open/GS-363) | 选择正确命题个数。 | 多元函数极限、多元函数偏导、偏导定义、累次极限 | B：①③④正确，共 3 个。 | pending_user_confirmation：旧卡没有用户真实作答；不能从解析图反推个人漏步。 | cross_id_duplicate_question_asset |
+| [GS-373](http://127.0.0.1:8765/open/GS-373) | 选择正确判断。 | 多元函数偏导、极限与连续、可微定义、偏导连续性 | D。 | pending_user_confirmation：旧卡没有用户真实作答；性质链混淆只是候选风险。 | cross_id_duplicate_question_asset、solution_asset_reference_only |
+| [GS-386](http://127.0.0.1:8765/open/GS-386) | 选择关于二维极值的正确结论。 | 多元函数微分学、多元函数极值 | B：所有直线限制均在 0 取极小，但二维函数在原点不是极小。 | pending_user_confirmation：旧卡没有用户真实作答；直线限制不能替代完整邻域只是复做入口。 | source_locator_mismatch |
+| [GS-401](http://127.0.0.1:8765/open/GS-401) | 计算二重积分。 | 二重积分、二重积分对称性、二重积分极坐标法 | 43√2/120。 | pending_user_confirmation：旧卡没有用户真实作答；先拆奇偶部只是客观复做入口。 | cross_id_duplicate_question_asset、source_solution_symmetry_sentence_error |
+| [GS-403](http://127.0.0.1:8765/open/GS-403) | 计算二重积分。 | 二重积分、二重积分对称性、二重积分轮换对称性 | 8ln3/3。 | pending_user_confirmation：旧卡没有用户真实作答；轮换对称触发只是客观复做入口。 | cross_id_duplicate_question_asset、source_detail_chapter_and_link_repaired |
+| [GS-412](http://127.0.0.1:8765/open/GS-412) | 利用对称性与极坐标计算积分。 | 二重积分、二重积分对称性、二重积分极坐标法 | 43√2/120。 | pending_user_confirmation：旧卡没有用户真实作答；身份维护动作不属于数学第一动作。 | cross_id_duplicate_question_asset |
+| [LA-012](http://127.0.0.1:8765/open/LA-012) | 计算单位阵加秩一外积的行列式。 | 行列式、秩一矩阵、秩一扰动行列式、矩阵行列式引理、特征值与特征向量 | det(I+ααᵀ)=1+αᵀα=1+Σxᵢ²。 | pending_user_confirmation：旧卡没有用户真实作答；把秩一扰动当普通高阶行列式硬算只是候选风险。 | invalid_source_detail_proof_repaired |
+| [LA-035](http://127.0.0.1:8765/open/LA-035) | 求正定参数范围。 | 二次型、正定矩阵、平方和型二次型正定、线性形式公共零点、线性方程组零解判定 | a≠-1。 | pending_user_confirmation：旧卡没有用户真实作答；平方和不自动等于正定只是复做入口。 | — |
+| [LA-037](http://127.0.0.1:8765/open/LA-037) | 构造合同变换矩阵 C。 | 二次型、二次型合同变换、配方法构造合同矩阵、变量代换矩阵方向 | C=[[√2,0,0],[-√2,√3,0],[0,-√3,1]]。 | pending_user_confirmation：旧卡没有用户真实作答；变量方向写反只是待复做确认的候选风险。 | — |
+| [LA-038](http://127.0.0.1:8765/open/LA-038) | 构造两个二次型之间的合同矩阵 D。 | 二次型、双二次型合同、共同规范形、换元矩阵合成 | D=[[1/√2,1/√2-3/(2√5)],[0,2/√5]]。 | pending_user_confirmation：旧卡没有用户真实作答；变换合成方向写反只是待复做确认的候选风险。 | — |
+
+## 逐题复核
+
+### LA-078 强化例题5.1-2
+
+- 题目：设 A 为秩 2 的 2×5 矩阵、B 为秩 3 的 3×5 矩阵且 ABᵀ=O；对任意非零 b∈N(A)，判断 Bᵀy=b 的解性。
+- 所问：选择正确的线性方程组解性结论。
+- 知识点：线性方程组；矩阵秩；行空间正交；零空间；秩-零化度关系
+- 第一动作：逐列读取 \(AB^{\mathrm T}=O\)：\(B^{\mathrm T}\) 的每一列都落入 \(N(A)\)
+- 答案：C：Bᵀy=b 有唯一解。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；只确认复做入口是把零乘积翻译为子空间包含，再用维数闭合。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 由 ABᵀ=O 得 Row(B)⊆N(A)。
+  - 由 dim N(A)=3=dim Row(B) 得 Row(B)=N(A)。
+  - b 属于 Col(Bᵀ)，且 Bᵀ 列满秩，因此解存在且唯一。
+- 质量发现：
+  - `malformed_source_frontmatter_repaired`：MN4-GS-CH01-719 的重复破损 frontmatter 已修复为单一有效 YAML。；建议：
+- 关系裁决：
+  - LA-079：`remove_after_cross_id_byte_identical_identity_evidence`；B5 发现 LA-079 与 LA-084 的题图、解析图和 source_refid 完全相同；LA-079 进入身份待裁决组后不得继续参与普通知识强边。
+- 当前快照：`stale`；正式卡 `9f000a843281347682802707151e62b96b69c9c46ac9208e8c1e1d28cf6a940c`；唯一图片 2 个；物理路径 10 个。
+
+### GS-137 2019年第15题 分段函数求导与不可导点极值
+
+- 题目：对分段函数 x>0 时 x^(2x)、x≤0 时 xe^x+1 求导并求极值。
+- 所问：给出分段导数、不可导点及全部极值。
+- 知识点：一元函数微分学应用；单调性与极值；分段函数连续可导；分段函数求导；幂指函数求导
+- 第一动作：先列出各段内部驻点、分段点和不可导点作为候选
+- 答案：x=0 不可导；极小值为 f(-1)=1-e^(-1)、f(e^(-1))=e^(-2/e)，极大值为 f(0)=1。
+- 个人错因边界：confirmed_personal；解析截图中的用户提问直接确认：曾把极值点误认为必须满足导数为零，遗漏不可导内点仍可能按定义成为极值点。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 各段分别求导，幂指函数先取对数。
+  - 把驻点、分段点与不可导点共同列为候选。
+  - 用左右差商与各区间单调性判定极值。
+- 质量发现：
+  - `cross_id_semantic_duplicate_question`：GS-137 与 GS-166 题面语义相同且同批导入，但题图裁切 SHA、source_refid 和来源定位不同；无独立复发证据。；建议：
+- 关系裁决：
+  - GS-166：`identity_candidate_blocked`；身份候选不作为普通语义边。
+  - GS-498：`strong_candidate_deferred`；同为分段点/不可导点极值候选完整性，待身份裁决后再连。
+  - GS-145：`remove_weak_or_stale`；具体对象和第一动作不足以构成强边。
+- 当前快照：`stale`；正式卡 `5bdba8fe736b525743fd3dbcf3ad8d26ad95ff2569f48dd769a3db13322260e8`；唯一图片 2 个；物理路径 2 个。
+
+### GS-194 强化例题15.7：乘积导数结构降阶
+
+- 题目：求解 xyy″+x(y′)^2-yy′=0。
+- 所问：求二阶可降阶微分方程通解。
+- 知识点：微分方程；二阶可降阶微分方程；乘积导数结构；复合量降阶
+- 第一动作：先把 \(yy''+(y')^2\) 识别为 \((yy')'\)
+- 答案：y²=C₁x²+C₂。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；乘积导数识别只是待复做确认的方法入口。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 识别 yy″+(y′)²=(yy′)′。
+  - 令 P=yy′，化为 xP′-P=0。
+  - 先得 P=Cx，再积分得到 y²=C₁x²+C₂。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-194、GS-211 属于身份待裁决组 QIMG-a8d9a426e02c78c6；题图、解析图和 refid 完全相同，无独立复发证据。；建议：
+- 关系裁决：
+  - GS-211：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-193：`remove_broad_topic_edge`；只共享微分方程大类。
+  - GS-204：`remove_broad_topic_edge`；具体降阶触发不同。
+- 当前快照：`stale`；正式卡 `60b1cf8fa572e349bc37ac008b78e3f9274d3d23072ee1f37ac22aef42c350bb`；唯一图片 2 个；物理路径 2 个。
+
+### GS-211 强化例题15.7-2：乘积导数结构降阶
+
+- 题目：求解 xyy″+x(y′)^2-yy′=0。
+- 所问：求二阶可降阶微分方程通解。
+- 知识点：微分方程；二阶可降阶微分方程；乘积导数结构；复合量降阶
+- 第一动作：先识别 \((yy')'=yy''+(y')^2\)，并令 \(P=yy'\)
+- 答案：y²=C₁x²+C₂。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；漏掉外层 x 只是待复做确认的候选风险。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 识别乘积导数结构。
+  - 保留外层系数 x，令 P=yy′ 后得到 xP′-P=0。
+  - 积分得到 y²=C₁x²+C₂。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-194、GS-211 属于身份待裁决组 QIMG-a8d9a426e02c78c6；题图、解析图和 refid 完全相同，无独立复发证据。；建议：
+- 关系裁决：
+  - GS-194：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-193：`remove_broad_topic_edge`；只共享微分方程大类。
+  - GS-204：`remove_broad_topic_edge`；具体降阶触发不同。
+- 当前快照：`stale`；正式卡 `82d1847977658e640c1a05bcdcb9eec7990c394eb99ff9e301ddba3e6e7b7c18`；唯一图片 2 个；物理路径 2 个。
+
+### GS-256 强化例题6.20
+
+- 题目：已知 k≥ln2-1，证明对所有 x>0，(x-1)(x-ln²x+2klnx-1)≥0。
+- 所问：证明带参数的对数不等式。
+- 知识点：一元函数微分学应用；微分不等式证明；对数不等式；导数判单调；单调性与极值
+- 第一动作：先设 \(f(x)=x-\ln^2x+2k\ln x-1\)，把目标转成证明 \(x-1\) 与 \(f(x)\) 同号。
+- 答案：当 k≥ln2-1 时，所给不等式对全部 x>0 成立。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；同号转化仅作为客观方法入口。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 设 f(x)=x-ln²x+2klnx-1，把目标转为 f(x) 与 x-1 同号。
+  - 由 f′(x)=g(x)/x，引入 g(x)=x-2lnx+2k。
+  - g 在 x=2 取最小且 g(2)≥0，故 f 单调不减；结合 f(1)=0 收口。
+- 质量发现：
+  - `cross_subject_visual_alias_resolved`：LA-003 与对应 MN4 来源是历史错分/重复来源；视觉证据保留，但不再作为普通语义关系。；建议：
+- 关系裁决：
+  - GS-492：`verified_strong_existing`；共享变号因子、同号转化和导数判号链。
+  - LA-003：`remove_source_alias_relation`；来源别名不是数学强边。
+- 当前快照：`stale`；正式卡 `7cf5e2f06ce9d40bb016640b759d867e54ef0d5bb1567540da60487565f6aff2`；唯一图片 3 个；物理路径 5 个。
+
+### GS-301 2021年第19题：弧长与旋转曲面面积综合
+
+- 题目：由不定积分等式反求曲线 y=f(x)，求 4≤x≤9 上弧长及绕 x 轴旋转的曲面面积。
+- 所问：求弧长 s 与旋转曲面面积 A。
+- 知识点：定积分；定积分应用；曲线弧长；旋转曲面面积
+- 第一动作：先对等式两边求导得到 f(x)/sqrt(x)=x/3-1
+- 答案：s=22/3，A=425π/9。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；先反求曲线再区分两个几何量只是复做入口。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 对不定积分等式求导得到 f(x)。
+  - 化简 √(1+[f′(x)]²) 后积分求弧长。
+  - 确认区间内 f(x)>0，再用 2π∫|f(x)|√(1+[f′(x)]²)dx 求面积。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-301、GS-302 属于身份待裁决组 QIMG-670a0d6e1a3f91d3；题图、解析图和 refid 完全相同，无独立复发证据。；建议：
+- 关系裁决：
+  - GS-302：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-305：`strong_candidate_deferred`；共享旋转曲面面积公式与半径绝对值检查，待身份裁决。
+- 当前快照：`stale`；正式卡 `62472a891f91cde6cb2b6c61b6926a4a0bd0a29e85ad6da882c2bf36a38c261b`；唯一图片 2 个；物理路径 2 个。
+
+### GS-302 2021年第19题-2：弧长与旋转曲面面积综合
+
+- 题目：由不定积分等式反求曲线 y=f(x)，求 4≤x≤9 上弧长及绕 x 轴旋转的曲面面积。
+- 所问：求弧长 s 与旋转曲面面积 A。
+- 知识点：定积分；定积分应用；曲线弧长；旋转曲面面积
+- 第一动作：先对等式两边求导得到 f(x)/sqrt(x)=x/3-1
+- 答案：s=22/3，A=425π/9。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；目标拆分与半径绝对值检查只是复做入口。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 先由积分等式求导反求 f(x)。
+  - 分别写弧长与旋转曲面面积公式。
+  - 检查 f(x)>0 后去掉半径绝对值并计算。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-301、GS-302 属于身份待裁决组 QIMG-670a0d6e1a3f91d3；题图、解析图和 refid 完全相同，无独立复发证据。；建议：
+- 关系裁决：
+  - GS-301：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-305：`strong_candidate_deferred`；共享旋转曲面面积公式与半径绝对值检查，待身份裁决。
+- 当前快照：`stale`；正式卡 `04e30442bdb3a300893c5f1928e91a773dc25245e616627f15d4f8ebe7678141`；唯一图片 2 个；物理路径 2 个。
+
+### GS-354 2020年第五题
+
+- 题目：判断分段二元函数在原点的偏导、混合偏导、二重极限和累次极限四个命题。
+- 所问：选择正确命题个数。
+- 知识点：多元函数极限；多元函数偏导；偏导定义；累次极限
+- 第一动作：先列出偏导、混合偏导、二重极限和累次极限各自的定义入口
+- 答案：B：①③④正确，共 3 个。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；不能把常见的定义混淆写成个人错因。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 四个命题分别回到各自定义。
+  - 点处偏导成立，邻域偏导不能完整定义，故混合偏导命题不成立。
+  - 用统一估计确认二重极限和给定次序累次极限均为 0。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-354、GS-356、GS-363 属于身份待裁决组 QIMG-fdf71202d2eac169；题图、解析图和 refid 完全相同，无独立复发证据。；建议：
+- 关系裁决：
+  - GS-356：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-363：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-355：`strong_candidate_deferred`；共享二重极限与累次极限定义分离，待身份裁决。
+- 当前快照：`stale`；正式卡 `b82c0f339c72a034a5a42581754884726e3c64705bafef48d17845f71a85d3b3`；唯一图片 2 个；物理路径 2 个。
+
+### GS-356 2020年第五题-2
+
+- 题目：判断分段二元函数在原点的偏导、混合偏导、二重极限和累次极限四个命题。
+- 所问：选择正确命题个数。
+- 知识点：多元函数极限；多元函数偏导；偏导定义；累次极限
+- 第一动作：先列出偏导、混合偏导、二重极限和累次极限各自的定义入口
+- 答案：B：①③④正确，共 3 个。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；复做时再确认具体断点。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 逐项回到偏导、混合偏导、二重极限和累次极限定义。
+  - 特殊路径只能否定极限；证明存在必须给统一估计。
+  - 核得三个命题成立、混合偏导命题不成立。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-354、GS-356、GS-363 属于身份待裁决组 QIMG-fdf71202d2eac169；题图、解析图和 refid 完全相同，无独立复发证据。；建议：
+- 关系裁决：
+  - GS-354：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-363：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-355：`strong_candidate_deferred`；待身份裁决后再审。
+- 当前快照：`stale`；正式卡 `e60a0f3bd983c8a8ff49d871b02e6b17b47bc96e1067f8dc9eaa7831357a07e5`；唯一图片 2 个；物理路径 2 个。
+
+### GS-360 强化例题13.11
+
+- 题目：判断给定二元分段函数在原点的连续性、两个偏导、邻域偏导连续性与可微性。
+- 所问：选择正确判断。
+- 知识点：多元函数偏导；极限与连续；可微定义；偏导连续性
+- 第一动作：先用 \(y=0\) 与 \(y=x\) 检查连续性，再用点处差商求两个偏导，最后检查邻域偏导是否存在
+- 答案：D。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；性质链混淆只是候选风险。
+- 一致性：题图—解析 consistent_after_independent_text_verification；正式卡—图片 consistent
+- 解析主线：
+  - 沿 y=0 与 y=x 得不同极限，故原点不连续。
+  - 按点处差商得到两个偏导均为 0。
+  - 邻域部分点偏导不存在；不连续也直接推出不可微。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-360、GS-373 属于身份待裁决组 QIMG-0f2ff7ede0952b0d；题图、示意图和 refid 完全相同，无独立复发证据。；建议：
+  - `solution_asset_reference_only`：solution_01 是示意图/视频截帧，不是完整解析；文字解答已独立核验。；建议：
+- 关系裁决：
+  - GS-373：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-351：`strong_candidate_deferred`；共享偏导、连续、可微边界，待两端身份裁决。
+  - GS-626：`remove_broad_topic_edge`；只共享多元函数性质大类。
+- 当前快照：`stale`；正式卡 `23b530d57087705f547571770db6d80db373e34d48d03c32909a960d6ff948c8`；唯一图片 2 个；物理路径 2 个。
+
+### GS-363 2020年第五题-3
+
+- 题目：判断分段二元函数在原点的偏导、混合偏导、二重极限和累次极限四个命题。
+- 所问：选择正确命题个数。
+- 知识点：多元函数极限；多元函数偏导；偏导定义；累次极限
+- 第一动作：先列出偏导、混合偏导、二重极限和累次极限各自的定义入口
+- 答案：B：①③④正确，共 3 个。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；不能从解析图反推个人漏步。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 把四种算子分开判断。
+  - 用定义计算点处偏导并检查邻域导数存在性。
+  - 用统一控制而非有限条路径证明二重极限。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-354、GS-356、GS-363 属于身份待裁决组 QIMG-fdf71202d2eac169；题图、解析图和 refid 完全相同，无独立复发证据。；建议：
+- 关系裁决：
+  - GS-354：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-356：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-355：`strong_candidate_deferred`；待身份裁决后再审。
+- 当前快照：`stale`；正式卡 `21cb6c828b854a90bbca34ff06992eb5cabba24fd9cbe5e867942cd80c831e7d`；唯一图片 2 个；物理路径 2 个。
+
+### GS-373 强化例题13.11-2
+
+- 题目：判断给定二元分段函数在原点的连续性、两个偏导、邻域偏导连续性与可微性。
+- 所问：选择正确判断。
+- 知识点：多元函数偏导；极限与连续；可微定义；偏导连续性
+- 第一动作：先用 \(y=0\) 与 \(y=x\) 检查连续性，再用点处差商求两个偏导，最后检查邻域偏导是否存在
+- 答案：D。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；性质链混淆只是候选风险。
+- 一致性：题图—解析 consistent_after_independent_text_verification；正式卡—图片 consistent
+- 解析主线：
+  - 用两条路径先否定连续性。
+  - 再按点处定义求两个偏导。
+  - 检查邻域偏导存在性，并由不连续推出不可微。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-360、GS-373 属于身份待裁决组 QIMG-0f2ff7ede0952b0d；题图、示意图和 refid 完全相同，无独立复发证据。；建议：
+  - `solution_asset_reference_only`：solution_01 是示意图/视频截帧，不是完整解析；文字解答已独立核验。；建议：
+- 关系裁决：
+  - GS-360：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-358：`strong_candidate_deferred`；共享偏导、连续、可微边界，待两端身份裁决。
+  - GS-626：`remove_broad_topic_edge`；只共享多元函数性质大类。
+- 当前快照：`stale`；正式卡 `83ad86843ca3a0aa8c5eb7d215953dcaf65d8d1370c59d07785d7d5e71d7fc69`；唯一图片 2 个；物理路径 2 个。
+
+### GS-386 强化例题13.25
+
+- 题目：已知沿每条直线 y=kx 的一元限制在 x=0 取极小，判断二维函数在原点的极值。
+- 所问：选择关于二维极值的正确结论。
+- 知识点：多元函数微分学；多元函数极值
+- 第一动作：先把一元限制与二维邻域拆成两个命题，并单独检查 \(k=0\)，再寻找曲线路径或符号区域
+- 答案：B：所有直线限制均在 0 取极小，但二维函数在原点不是极小。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；直线限制不能替代完整邻域只是复做入口。
+- 一致性：题图—解析 consistent；正式卡—图片 content_consistent_source_locator_hold
+- 解析主线：
+  - 对每个固定 k 检查一元限制，单独覆盖 k=0。
+  - 回到二维邻域定义。
+  - 在 x²<y<2x² 的区域找到负值，否定二维极小。
+- 质量发现：
+  - `source_locator_mismatch`：解析页眉写例13.26，但 OO3 节点明确为强化例题13.25，且另有不同内容的 13.26；保留稳定来源待核。；建议：
+- 关系裁决：
+  - GS-388：`verified_strong_added`；共享退化判别后沿抛物线路径寻找正负值的具体动作。
+  - GS-391：`remove_weak_or_stale`；首要触发与方法链不同。
+- 当前快照：`stale`；正式卡 `293c7209a83c41214b248d68dc499b16cfe5b9b2f2d02714d9a8f5a6f886df3f`；唯一图片 2 个；物理路径 2 个。
+
+### GS-401 2019年第18题
+
+- 题目：在由 |x|≤y 与 (x²+y²)³≤y⁴ 定义的区域上计算 (x+y)/√(x²+y²) 的二重积分。
+- 所问：计算二重积分。
+- 知识点：二重积分；二重积分对称性；二重积分极坐标法
+- 第一动作：先把被积函数拆成 x 项和 y 项，并判断 x 项关于 x 为奇函数
+- 答案：43√2/120。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；先拆奇偶部只是客观复做入口。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent_after_documented_source_sentence_error
+- 解析主线：
+  - 区域仅关于 y 轴对称，先消去被积函数中的 x/r 奇部。
+  - 在右半区写 π/4≤θ≤π/2、0≤r≤sin²θ。
+  - 化为 ∫sin⁵θ dθ 并计算。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-401、GS-412 属于身份待裁决组 QIMG-b14a749195896d6c；题图、解析图和 refid 完全相同，无独立复发证据。；建议：
+  - `source_solution_symmetry_sentence_error`：来源解析误称区域同时关于 x、y 轴对称；实际仅关于 y 轴对称，后续计算使用了正确对称性。；建议：
+- 关系裁决：
+  - GS-412：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-400：`remove_broad_topic_edge`；区域与首要动作不同。
+  - GS-402：`remove_medium_navigation_edge`；只共享下游奇函数消项。
+  - GS-411：`remove_content_mismatch_edge`；GS-411 绑定的是另一道题。
+- 当前快照：`stale`；正式卡 `f7d40306b9cd7ad50f1c0bf19bfada858e7f5b4c07d38119307ab0d1bb86c33a`；唯一图片 2 个；物理路径 2 个。
+
+### GS-403 2024年真题17
+
+- 题目：在第一象限由 xy=1/3、xy=3、y=x/3、y=3x 围成的区域上计算 ∬(1+x-y)dxdy。
+- 所问：计算二重积分。
+- 知识点：二重积分；二重积分对称性；二重积分轮换对称性
+- 第一动作：先写出交换 x,y 后的被积函数，并与原被积函数相加
+- 答案：8ln3/3。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；轮换对称触发只是客观复做入口。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 区域关于 y=x 轮换对称。
+  - 把原积分与交换 x、y 后的积分相加，线性项抵消。
+  - 转化为区域面积；用 u=xy 与比例变量计算面积。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-403、GS-405、GS-408、GS-414 属于身份待裁决组 QIMG-c5a70ef93f434cc7；题图、两张解析图和 refid 完全相同，无独立复发证据。；建议：
+  - `source_detail_chapter_and_link_repaired`：三份 MN4 来源详情的章节污染与失效正式卡链接已修复。；建议：
+- 关系裁决：
+  - GS-405：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-408：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-414：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-400：`strong_candidate_deferred`；轮换对称方法候选，待身份裁决。
+  - GS-666：`strong_candidate_deferred`；变量代换候选，待身份裁决。
+  - GS-695：`strong_candidate_deferred`；区域变换候选，待身份裁决。
+- 当前快照：`stale`；正式卡 `73d15bbce7041f84cffd0f01248eea5503f8936717034cb54dce0dc7c0bc23b4`；唯一图片 3 个；物理路径 8 个。
+
+### GS-412 2019年第18题-2
+
+- 题目：在关于 y 轴对称的区域上计算 (x+y)/√(x²+y²) 的二重积分。
+- 所问：利用对称性与极坐标计算积分。
+- 知识点：二重积分；二重积分对称性；二重积分极坐标法
+- 第一动作：先拆成 \(x/r+y/r\)，判定 \(x/r\) 在对称区域上的积分为零
+- 答案：43√2/120。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；身份维护动作不属于数学第一动作。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 拆成 x/r 与 y/r 两项。
+  - 利用 y 轴对称消去关于 x 的奇部。
+  - 在右半区用极坐标计算剩余积分。
+- 质量发现：
+  - `cross_id_duplicate_question_asset`：GS-401、GS-412 属于身份待裁决组 QIMG-b14a749195896d6c；题图、解析图和 refid 完全相同，无独立复发证据。；建议：
+- 关系裁决：
+  - GS-401：`identity_candidate_blocked`；完全同源身份候选。
+  - GS-410：`strong_candidate_deferred`；对称消项方法候选，待身份裁决。
+  - GS-411：`remove_content_mismatch_edge`；GS-411 绑定的是另一道题。
+  - GS-407：`remove_broad_topic_edge`；具体区域与第一动作不同。
+- 当前快照：`stale`；正式卡 `4d5b9d298d458222af82b200b7ddf3e426e69381745aec92b7bafab05a7b0af3`；唯一图片 2 个；物理路径 2 个。
+
+### LA-012 强化例题1.2-2 秩一扰动行列式
+
+- 题目：对非零列向量 α，计算 det(I+ααᵀ)。
+- 所问：计算单位阵加秩一外积的行列式。
+- 知识点：行列式；秩一矩阵；秩一扰动行列式；矩阵行列式引理；特征值与特征向量
+- 第一动作：先判断 alpha alpha^T 是秩一矩阵，非零特征值为 alpha^T alpha
+- 答案：det(I+ααᵀ)=1+αᵀα=1+Σxᵢ²。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；把秩一扰动当普通高阶行列式硬算只是候选风险。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 识别 ααᵀ 为秩一矩阵。
+  - 可用非零特征值 αᵀα 的平移，或矩阵行列式引理。
+  - 来源详情中的加边法已改为可核验的分块行列式证明。
+- 质量发现：
+  - `invalid_source_detail_proof_repaired`：来源详情原列变换不能推出单位列；已换为可独立核验的分块行列式/加边法证明。；建议：
+- 关系裁决：
+  - LA-052：`verified_strong_added`；共享单位阵加秩一外积的第一识别动作。
+  - LA-001：`remove_broad_topic_edge`；只共享行列式大类。
+  - LA-019：`remove_broad_topic_edge`；具体结构和方法不同。
+- 当前快照：`stale`；正式卡 `45e180dd8d77a8d02cd7bac390a258fc05f28c2ed3ec384eb8135f939704f213`；唯一图片 2 个；物理路径 4 个。
+
+### LA-035 平方和二次型正定参数
+
+- 题目：判断平方和型二次型 (x₁+x₂)²+(x₂+x₃)²+(ax₃+x₁)² 正定时参数 a 的范围。
+- 所问：求正定参数范围。
+- 知识点：二次型；正定矩阵；平方和型二次型正定；线性形式公共零点；线性方程组零解判定
+- 第一动作：先令所有平方项同时为零，写出对应线性方程组
+- 答案：a≠-1。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；平方和不自动等于正定只是复做入口。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 平方和先保证半正定。
+  - 令三个线性形式同时为零。
+  - 对应系数矩阵行列式为 a+1；只有零解当且仅当 a≠-1。
+- 关系裁决：
+  - LA-026：`verified_strong_added`；共享平方和公共零点与零解判定的具体边界。
+  - LA-042：`verified_strong_existing`；保留正定参数题的强对照。
+  - LA-030：`remove_broad_topic_edge`；只共享二次型大类。
+  - LA-031：`remove_broad_topic_edge`；特征值惯性指数链与本题不同。
+  - LA-034：`remove_broad_topic_edge`；特征值惯性指数链与本题不同。
+- 当前快照：`stale`；正式卡 `73c06606dafbf3190ceb21b474dc6b8e372f37dee916d14e44dcd4336670496e`；唯一图片 2 个；物理路径 4 个。
+
+### LA-037 二次型配方法构造合同矩阵
+
+- 题目：给定对称矩阵 A 与目标对角矩阵 Λ，求可逆 C 使 CᵀAC=Λ。
+- 所问：构造合同变换矩阵 C。
+- 知识点：二次型；二次型合同变换；配方法构造合同矩阵；变量代换矩阵方向
+- 第一动作：先把 \(x^{\mathsf T}Ax\) 配成与 \(\Lambda\) 匹配的平方和
+- 答案：C=[[√2,0,0],[-√2,√3,0],[0,-√3,1]]。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；变量方向写反只是待复做确认的候选风险。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 把 xᵀAx 配成与 Λ 匹配的平方和。
+  - 先得到 y=Bx。
+  - 按题目方向反解 x=Cy，得到 C=B⁻¹ 并回验。
+- 关系裁决：
+  - LA-030：`verified_strong_existing`；共享配方法构造合同矩阵。
+  - LA-038：`verified_strong_existing`；共享共同规范形与变换方向合成。
+  - LA-041：`verified_strong_existing`；共享合同变换矩阵方向检查。
+- 当前快照：`stale`；正式卡 `0d6ceb39abcbec2334825a71f36e5f7964bfc388a7cc136c78e9bed7dee81021`；唯一图片 2 个；物理路径 4 个。
+
+### LA-038 双二次型配方法求合同矩阵
+
+- 题目：给定两个合同实对称矩阵 A、B，求 D 使 A=DᵀBD。
+- 所问：构造两个二次型之间的合同矩阵 D。
+- 知识点：二次型；双二次型合同；共同规范形；换元矩阵合成
+- 第一动作：先分别配方得到两个到同一规范形的换元矩阵
+- 答案：D=[[1/√2,1/√2-3/(2√5)],[0,2/√5]]。
+- 个人错因边界：pending_user_confirmation；旧卡没有用户真实作答；变换合成方向写反只是待复做确认的候选风险。
+- 一致性：题图—解析 consistent；正式卡—图片 consistent
+- 解析主线：
+  - 分别把 A、B 的二次型配到同一规范形。
+  - 记两次换元为 z=D₁x 与 z=D₂y。
+  - 按 A=DᵀBD 的方向合成 D=D₂⁻¹D₁。
+- 关系裁决：
+  - LA-030：`verified_strong_existing`；共享配方法与合同矩阵构造。
+  - LA-037：`verified_strong_existing`；共享变量方向与矩阵合成。
+  - LA-043：`verified_strong_existing`；共享双二次型共同规范形路线。
+- 当前快照：`stale`；正式卡 `debe4ad5a1dc579e00bb2dd5c33e7fe5c8f7755eda09865a8d52812ff82febc7`；唯一图片 2 个；物理路径 4 个。
+
+## 重建与验收
+
+```bash
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py build
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py check
+python3 -m unittest tests.test_knowledge_error_evidence_graph
+```

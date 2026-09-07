@@ -1,0 +1,2464 @@
+{
+  "schema_version": "math_target_semantic_closeout_v1",
+  "wiki_id": "MATHWIKI-REVIEW-019",
+  "closeout_id": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B06",
+  "title": "全库逐题语义复核第6批正式收口",
+  "closed_on": "2026-07-22",
+  "authorization": {
+    "source": "用户在本任务中明确授权每批约20题后立即正式收口确定性修正",
+    "scope": "题面、解析图、知识点、既有个人错因证据、强关系、必要视觉详情与派生重建",
+    "exclusions": [
+      "稳定 ID 合并或删除",
+      "缺少证据的个人事实",
+      "题源条件或来源编号的静默补造",
+      "身份冲突的自动裁决"
+    ]
+  },
+  "scope": {
+    "reviewed_cards": 20,
+    "aggregate_edge_allowed_cards": 17,
+    "aggregate_edge_blocked_cards": 3,
+    "formal_card_files_written": 25,
+    "logical_relation_removals": 65,
+    "physical_relation_declarations_removed": 79,
+    "invalid_placeholder_relation_values_normalized": 0,
+    "strong_logical_edges_added": 2,
+    "strong_logical_edges_verified_existing": 37,
+    "strong_logical_edges_verified": 39,
+    "visual_detail_files_written": 20,
+    "semantic_review_receipt_files_written": 1,
+    "prior_review_snapshots_revalidated": 0,
+    "visual_registry_files_written": 0,
+    "boundary_receipt_files_written": 0,
+    "wrongnet_generated_files_rebuilt": 9,
+    "derived_graph_files_built": 9,
+    "new_personal_fact_writes": 0,
+    "stable_id_merges": 0,
+    "stable_id_deletes": 0,
+    "held_items": 3,
+    "identity_holds": 3,
+    "identity_hold_groups": 1,
+    "identity_held_reviewed_cards": 3,
+    "identity_held_total_cards": 4,
+    "source_metadata_holds": 0,
+    "reference_only_solution_assets": 0
+  },
+  "source_review": {
+    "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-018_全库逐题语义复核第6批20题.json",
+    "sha256": "b7dee7786c8f42ebd2b2dcff29b449501b787119e07505fe4abbac8085b53f5d",
+    "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260722-B06",
+    "frozen_source_state_sha256": "7bb33898be5af9cbf5f8c3d0d178ab80771e5d57433eadb19f76e68835542e0d"
+  },
+  "batch23_lineage_revalidation": {
+    "batch_number": 23,
+    "date": "2026-07-23",
+    "source_review_rehashed": true,
+    "prior_source_review_sha256": "ce317313d6c39a1ac37c7474b68d3390147fbd9bc5bf61900cfac7081310ce26",
+    "current_source_review_sha256": "5d1ca5765135adb5164c02c0d897048be68c8b1b31f1993c01199b82f80c996b",
+    "affected_cards": [
+      {
+        "card_id": "GS-600",
+        "b23_edge_delta": {
+          "removed_edges": [],
+          "added_edges": [
+            "GS-303"
+          ]
+        },
+        "current_related": [
+          "GS-595",
+          "GS-303"
+        ],
+        "current_card_sha256": "a0b7d415be5583a619d85fcd81752a5fca870de309de005f0d5ee7ca112b577b"
+      }
+    ],
+    "historical_card_writes_validation_and_derived_snapshots_preserved": true,
+    "existing_lineage_revalidations_preserved": true,
+    "note": "第23批只回填 GS-600 当前卡哈希与新增关系后继；第6批 card_writes、validation、派生快照和既有 lineage 保持为当时历史证据。"
+  },
+  "batch22_lineage_revalidation": {
+    "batch_number": 22,
+    "date": "2026-07-23",
+    "source_review_rehashed": true,
+    "prior_source_review_sha256": "66524bf0fb09f9e949001aada6a0ac838e3647d072fbd97b1251711a5949c396",
+    "current_source_review_sha256": "ce317313d6c39a1ac37c7474b68d3390147fbd9bc5bf61900cfac7081310ce26",
+    "affected_cards": [
+      {
+        "card_id": "GS-604",
+        "b22_edge_delta": {
+          "removed_edges": [
+            "GS-278"
+          ],
+          "added_edges": []
+        },
+        "current_related": [
+          "GS-605"
+        ],
+        "current_card_sha256": "aca851f981a5c244cb5c7a423bffb15edf6ab5e35a8a32332427fe2b09ceb996"
+      }
+    ],
+    "historical_card_writes_validation_and_derived_snapshots_preserved": true,
+    "existing_lineage_revalidations_preserved": true,
+    "note": "第22批只回填当前卡哈希和关系后继事实；第6批 card_writes、validation、派生快照及既有 lineage 均保持为当时历史证据。"
+  },
+  "card_writes": [
+    {
+      "card_id": "GS-405",
+      "path": "错题知识网络/错题卡/GS-405_2024年真题17-2.md",
+      "pre_sha256": "fd1c2eb760d564769d9adfd27115b44e7b51563f55f893cb85e9a922b5db3562",
+      "post_sha256": "6ef54191b2ae9aa2ddcb00b706acf99e69644719d7d08ad800db9e38a340a51e",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "record_identity_hold_without_merge_or_delete",
+        "keep_identity_blocked_card_out_of_ordinary_related_edges"
+      ]
+    },
+    {
+      "card_id": "GS-408",
+      "path": "错题知识网络/错题卡/GS-408_2024年真题17-3.md",
+      "pre_sha256": "05b8d6360087f87b46456a1036484db835ffc834677924c0585335302aaefa07",
+      "post_sha256": "1ad195158de46c164cce4aa954c6b04987eb87d73b5ce8d7791ba9bb7021f5e2",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "record_identity_hold_without_merge_or_delete",
+        "keep_identity_blocked_card_out_of_ordinary_related_edges"
+      ]
+    },
+    {
+      "card_id": "GS-414",
+      "path": "错题知识网络/错题卡/GS-414_2024年真题17-4.md",
+      "pre_sha256": "05bb2652b2b7574fb8ceb1b436738e7b17a93f6e8ea43e57d035d27a2f5da678",
+      "post_sha256": "1600b6c33f97ea29410717315c6c6f40987e531b0eb3fce1026d3b2edaf6a521",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "record_identity_hold_without_merge_or_delete",
+        "keep_identity_blocked_card_out_of_ordinary_related_edges"
+      ]
+    },
+    {
+      "card_id": "GS-600",
+      "path": "错题知识网络/错题卡/GS-600_58064变上限积分曲线弧长.md",
+      "pre_sha256": "1eb12f0faf2335ecf8b1899d77b9f2a9b6e0dd133d09e05e9914a59f540188b5",
+      "post_sha256": "ec8e223b1932da0dd0e94415c827065b50e8dd9c40e3f19678900864d784f18b",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-603",
+      "path": "错题知识网络/错题卡/GS-603_57707指数幂分式换元.md",
+      "pre_sha256": "a99ce79e097aa95faa9a86b56d2689a5997c6316ec2bf79bf8f167027253964b",
+      "post_sha256": "62b309fe2b9f3ea9bb4249a66da1ebacba0bbab2605e2d10cd5e3ddc03bcf8a7",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-604",
+      "path": "错题知识网络/错题卡/GS-604_57707有理函数分式拆分.md",
+      "pre_sha256": "24a68a8d1b50923b7e6953396af4cdc993de997fd0ab3c0ab9f997b5df46d70c",
+      "post_sha256": "12e3930e70875505bbe21cf5dbd07261f132dc9675346eede4281a841db81bb9",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-605",
+      "path": "错题知识网络/错题卡/GS-605_57707反三角乘有理分部绕圈.md",
+      "pre_sha256": "435dba461e829f7d44cfe988078907c2f6b5a296bcb278acb3fecd7a2147b569",
+      "post_sha256": "8408d320fc6acfcf199178af759c30857fe1d4daba9fc95bd3439a7c55788973",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-609",
+      "path": "错题知识网络/错题卡/GS-609_57707对数幂积分泰勒误用.md",
+      "pre_sha256": "e44c499d27abd566bf22b2ba122218abafcd2f86d03c30e8524ad7ce456ebffc",
+      "post_sha256": "28bcfbff391f24e72291b91c03481b3396cfd5e465c979d2256a8a3855057640",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-610",
+      "path": "错题知识网络/错题卡/GS-610_57869根式整体换元分部.md",
+      "pre_sha256": "a02074e87123405ffbbd679355241627dbb252f4614e87d0e691cb249f4bebfd",
+      "post_sha256": "71b40e1c4530682e1512a954c337d9c08bf212b506df07b3a05137513a8ea19d",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-618",
+      "path": "错题知识网络/错题卡/GS-618_57869-3根式三角代换回代.md",
+      "pre_sha256": "737115ced1c299f77364bed02f6600808e85d7771be9ee10e84c33780a0a33e1",
+      "post_sha256": "c5d8972bae1e502c1fc78a6ac6eddb6f39088cf79817ed5de90fff7b8b1686b5",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-619",
+      "path": "错题知识网络/错题卡/GS-619_57869-4三角代换中段化简.md",
+      "pre_sha256": "f42701d5f513a161e583b49cf3d4e5b6bd3bac0332b9c7811472a76681327099",
+      "post_sha256": "53327864ce6d2273b4999d3b10a97fcb28a330071cd9931c7339ebf7a3d6f2de",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-620",
+      "path": "错题知识网络/错题卡/GS-620_57869-6根式幂次凑微分.md",
+      "pre_sha256": "d14d8dbb86b366634d873295accfee97c76c1e775921d5cf9e0c7ea5891cacf4",
+      "post_sha256": "a290b8db5c45b2fa40469833265c5dec604c8c9b71a16da4c03947a2c49c5761",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-621",
+      "path": "错题知识网络/错题卡/GS-621_57931-1三角有理式补分子.md",
+      "pre_sha256": "cafd9c720d05d699cd53c927d6a3536018582dd3d99b2fca3e41634e933c5b9e",
+      "post_sha256": "0225df44761e29e71ac0884d46321f65157ec9730a018b899189c51ad67c056a",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-622",
+      "path": "错题知识网络/错题卡/GS-622_57931-2半角平方化凑微分.md",
+      "pre_sha256": "162fd842291de1115d7f5518913007526f49ad18eea920135c02a719a21974f3",
+      "post_sha256": "0745419c47598757398fbeda96598374981f1b1c3721813d5c3a04a76b2e5a94",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-623",
+      "path": "错题知识网络/错题卡/GS-623_57931-3分母整体线性拆分.md",
+      "pre_sha256": "6d4ba1d714f078a8d1cd02048bc58d4d1b3c9d9cfdbc8b48e88aac7bb116c982",
+      "post_sha256": "ec722f402af34ff899c2776257ebad86aba7e244581c36c0e768c579251001da",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations",
+        "add_verified_first_action_or_method_chain_relation"
+      ]
+    },
+    {
+      "card_id": "GS-624",
+      "path": "错题知识网络/错题卡/GS-624_57931-5倍角半角万能代换.md",
+      "pre_sha256": "ccf590d0ee16e324f6e929dd7eab6cf6794405d15dd49167be3f0f6f2d43fcd6",
+      "post_sha256": "63c642271ddfc95ebfaf40f9603250884e8a1643d5a8904fbc5bdcee584df631",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-625",
+      "path": "错题知识网络/错题卡/GS-625_57931-6参数退化三角凑微分.md",
+      "pre_sha256": "5582631ad9aed47618679181670579e58aab803d48f14ea2e0fde423211e1641",
+      "post_sha256": "ad7a9bcad2ea3bfc70bb8def9d2818d778b9ea3d565f1071e3839453a5cb2cb1",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count"
+      ]
+    },
+    {
+      "card_id": "GS-630",
+      "path": "错题知识网络/错题卡/GS-630_57979-3分母平方凑微分分部.md",
+      "pre_sha256": "274abbe748b991aea3ac2c167c678d528c7e47ce30de231a7a052bad2ca402f9",
+      "post_sha256": "ed2ce2cc54ac8681b96c0e4b95fe0a00c9865cd0135eb4b7d56c8d7d47a1be45",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-631",
+      "path": "错题知识网络/错题卡/GS-631_57979-5根式换元反解部分分式.md",
+      "pre_sha256": "6cbc6ad4872e2b6fe9aae946e93d8ecee198095bcba18bef01d121f297c9fd52",
+      "post_sha256": "474f491d78549155819ac83ecbf8f59163bb4003b81d4924a40c8471e752a53a",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations",
+        "add_verified_first_action_or_method_chain_relation"
+      ]
+    },
+    {
+      "card_id": "GS-632",
+      "path": "错题知识网络/错题卡/GS-632_57979-6平方展开分部抵消.md",
+      "pre_sha256": "83025a18f9f58668bfd9335393b728a925e4a0cd5effcf64952422a85ddf4734",
+      "post_sha256": "1253acbb919d4d142684b3b742527ce5039b55c55bd2823b536030a9d597547a",
+      "reasons": [
+        "reconcile_question_solution_knowledge_first_action_domain_and_personal_evidence_boundary",
+        "normalize_existing_wrong_history_evidence_origin_and_repeat_event_count",
+        "remove_rejected_broad_source_adjacent_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-076",
+      "path": "错题知识网络/错题卡/GS-076_1000题B2.2.md",
+      "pre_sha256": "0f49e89dc6a453146c89206ec1aeb9b64cea04e06ae979f069475591375d8052",
+      "post_sha256": "dc6f5c509e91f23b60bd1146248f2258219121354a8d9d7167f1e988cff00e16",
+      "reasons": [
+        "remove_rejected_broad_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-162",
+      "path": "错题知识网络/错题卡/GS-162_强化例题9.11（135747）.md",
+      "pre_sha256": "2eab6d8246dcf511bc02bad6a0f7fd390eea13f4476688386fef8aebe6b0db09",
+      "post_sha256": "dd1e6d5dd4afbe3328033305e87d3eb3290b5f5795e2f90c529bae243450a0d2",
+      "reasons": [
+        "remove_rejected_broad_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-270",
+      "path": "错题知识网络/错题卡/GS-270_强化例题9.3（2）.md",
+      "pre_sha256": "3c8eae63e611eb4fac24d3ef361f9cdb9f23af387efee0d19b6e283db7edfdf3",
+      "post_sha256": "99f9db7fc353ec0f7bade39074edeaec85f4a972e9e8733633dd4257c00d104f",
+      "reasons": [
+        "remove_rejected_broad_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-681",
+      "path": "错题知识网络/错题卡/GS-681_193347心形线极坐标弧长.md",
+      "pre_sha256": "1a7c1860428342120499c1e4343843f8bdd2eef35a4a6b75240df86ef0379694",
+      "post_sha256": "d74b1af175901d6651a4f1f65d87d82a80f2374ff2d129754e5db0a3b34f2c34",
+      "reasons": [
+        "remove_rejected_broad_or_stale_relation_declarations"
+      ]
+    },
+    {
+      "card_id": "GS-684",
+      "path": "错题知识网络/错题卡/GS-684_58093分部积分降阶.md",
+      "pre_sha256": "5786eb6337c70a8a54a20758319aae4a4b9684dbb5e28c4493cb9ed147e838b5",
+      "post_sha256": "d5eb2c927f8969fc4f0ed6b0ee8d6d7e44a57a0656161d92748de570508033d5",
+      "reasons": [
+        "remove_rejected_broad_or_stale_relation_declarations"
+      ]
+    }
+  ],
+  "visual_writes": [
+    {
+      "card_id": "GS-405",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-405_缺图登记-2024年真题17-2.md",
+      "pre_sha256": "085813109b282dfdf91146cb99c080a18c6eec62d5d1124f9fd1ce269f1151cd",
+      "post_sha256": "ab732be4dc2351536051755e7c62a394a3db0f2998be5757447017f4b07b4a63",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-408",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-408_缺图登记-2024年真题17-3.md",
+      "pre_sha256": "90902a78931e9bee49122debeccbe9529daaea9d253e75da89a6eceaec700fc0",
+      "post_sha256": "a1941c31b84b1f66b63e569faff966a3ef81daaff91f2ef7b7ebb4cd45d2aa82",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-414",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-414_缺图登记-2024年真题17-4.md",
+      "pre_sha256": "70346e6fc19e24a1c99a34e7391e48a93b1b760f0759978a5a70e9b9bfb788d3",
+      "post_sha256": "42842b886fcaf042785bb00963e600f1ea4fe70b99f1d3845e131f7b5deccc7f",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-600",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-600_58064.md",
+      "pre_sha256": "3a596fe7a600083284ad27dcfc76cedec71c9367ff643e63cfd0e9245fb5c55a",
+      "post_sha256": "6c15887dc8be13ac20435cea52eb1e759053b44e7ab7e10479be44ee5600f270",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-603",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-603_57707-1.md",
+      "pre_sha256": "ba177ac0000bda3fc5c52ec561bf62a9813e40ab1e4490ffd859a53d577ddd64",
+      "post_sha256": "e97b2fd600b79b0b02bb637b883d4a873b4f7af882d5f1b4f13e939d340559ea",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-604",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-604_57707-4.md",
+      "pre_sha256": "993bc0e75f747947347fef02ff2662f21d5f5347726763dd1c3e9da1bc444b52",
+      "post_sha256": "e692741f00de8630e5f96839c45013b0892000c2545100d5c7eaf3af12b0f4c8",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-605",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-605_57707-2.md",
+      "pre_sha256": "fe9bbcc0a67e7f9f0398f1a56b53a0dc509b9ac050f76743a42a350c2abcc766",
+      "post_sha256": "105d935146ed19034abfd949068a4fca88415d1d68c892b87f1bd98e9a2224d5",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-609",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-609_57707-5.md",
+      "pre_sha256": "7277300764c11acd6980b8ec87037430714aacb6a606ec8cf457aeef167fbd2d",
+      "post_sha256": "28bf5d00110760e2e93c3555097bcef0fa6a4884a38f6b9af5d8e45aca8e4dde",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-610",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-610_57869-2.md",
+      "pre_sha256": "2c20cf102d02dc3a128aac9bd6cccaead2d95e62df9821b44aa6bc37f4c72906",
+      "post_sha256": "3f9f6494e5e6614ef8769847bab715d5a60b215d2b01118b28dbfe431bb428ca",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-618",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-618_57869-3.md",
+      "pre_sha256": "ca39f1b944e904b8900521365525486e84ce7c684c4cbeb2c91443ef830b36cf",
+      "post_sha256": "9703e82f88c4b364f00fc29f505293df7ce4c281316a234f4a533ed7ef7af1e9",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-619",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-619_57869-4.md",
+      "pre_sha256": "e816c4a57ae3bc9e0d01f144c969eac082440a34f6a5a19dcdc457a58e584fd3",
+      "post_sha256": "80a7b677d4c41b059747c8e11b1485469b331dd2a36d48c2dc56027cad73bd01",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-620",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-620_57869-6.md",
+      "pre_sha256": "d358e96ec82ec38d24df779c660e5a21762204e31d50a4bc1e5cbbee543f9da9",
+      "post_sha256": "7353ad5f810ceee7899c03def2bf4432b24d82afe63a43a9b7c8b851381bf8d7",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-621",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-621_57931-1.md",
+      "pre_sha256": "544cd0b707797c50a77c5b6b2fe96d142c168872fd77b4ebd06b7e05680022ca",
+      "post_sha256": "3382812509ee5d740669a5b572291631e9e00b818160dff09fa99c6873b8d358",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-622",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-622_57931-2.md",
+      "pre_sha256": "3167e40101ab4cfcc1788540ae156c5d8a4b6aa83b8baf0101521559249ff7b5",
+      "post_sha256": "39ae17aa2d5d095a5aac3293904840572339e0a0eb7d7ca97ea432d86ad46741",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-623",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-623_57931-3.md",
+      "pre_sha256": "8cb96fe6834178710248f2621344aaf5a85dcdae4f9bc4cae972c166c9775766",
+      "post_sha256": "194d10ee3c5cba689a11660d3db1caeca7dabe0967d8a91ffb7d0003b099eaad",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-624",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-624_57931-5.md",
+      "pre_sha256": "1cb535ff8bc14761c22aa10b0ab046ff2d5a9e2ea19dead828e65956c31aeff0",
+      "post_sha256": "a0be93f5d5d7614fa98dc7311fb8b211fa597436df89c1fb1d1cb078e33d7265",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-625",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-625_57931-6.md",
+      "pre_sha256": "65edfaf510299ec85837779d6c3062ad3c3d208609a7b859776d22da01139853",
+      "post_sha256": "92d410244430d36b7ce1db0ad096734c880af964fe7c762042e41cc4f4b64c2b",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-630",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-630_57979-3.md",
+      "pre_sha256": "409f0dcb737a58a5f6b4814b36d39d761bd555ccadde37027d617794a67802b2",
+      "post_sha256": "a5867a3acd6eabb900396bcdb5beaa3753c8fbef7a5e642a4db49514366e6728",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-631",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-631_57979-5.md",
+      "pre_sha256": "ebc2791819f29dfe40722683d3ec83fa8c222da485fc2153f57c6d6ddeef100a",
+      "post_sha256": "6a88c0bf5d6e9f4cfa7930d1df33c839a40d3ccdfc56679870be2ebe956a8156",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    },
+    {
+      "card_id": "GS-632",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-632_57979-6.md",
+      "pre_sha256": "95fb3a468d0af7a674896ea1e686f4a5ea88f1d196d3db12cf14eae9cee4bcf9",
+      "post_sha256": "175fa1752b0b52788551029de39e6b0baaa6775821ff3f8f6011b50536316ab6",
+      "reason": "bind_verified_question_solution_semantics_domain_first_action_and_personal_evidence_boundary"
+    }
+  ],
+  "registry_writes": [],
+  "boundary_receipt_writes": [],
+  "review_receipt_writes": [
+    {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-018_全库逐题语义复核第6批20题.json",
+      "pre_sha256": null,
+      "post_sha256": "3648ce594b3006a6f0d26f1a0ec45be644049c3bfb95e38c527bf9a8ec32bcad",
+      "reason": "create_hash_bound_target_level_review_for_batch_6"
+    }
+  ],
+  "relation_policy": {
+    "logical_edge_model": "undirected_declaration_by_either_endpoint",
+    "duplicate_yaml_declaration_required": false,
+    "every_formal_edge_requires_question_solution_or_image_evidence": true,
+    "personal_error_requires_existing_evidence": true,
+    "identity_blocked_cards_participate_in_aggregate_edges": false,
+    "broad_source_adjacent_or_single_identity_edges_removed_from_formal_related": true
+  },
+  "relation_removals": [
+    {
+      "source_card_id": "GS-076",
+      "target_card_id": "GS-632",
+      "removed_declaration_owners": [
+        "GS-076"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R1",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-162",
+      "target_card_id": "GS-604",
+      "removed_declaration_owners": [
+        "GS-162"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-162",
+      "target_card_id": "GS-621",
+      "removed_declaration_owners": [
+        "GS-162"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-162",
+      "target_card_id": "GS-623",
+      "removed_declaration_owners": [
+        "GS-162"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-162",
+      "target_card_id": "GS-624",
+      "removed_declaration_owners": [
+        "GS-162"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-162",
+      "target_card_id": "GS-631",
+      "removed_declaration_owners": [
+        "GS-162"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-266",
+      "target_card_id": "GS-605",
+      "removed_declaration_owners": [
+        "GS-605"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-270",
+      "target_card_id": "GS-604",
+      "removed_declaration_owners": [
+        "GS-270",
+        "GS-604"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-270",
+      "target_card_id": "GS-605",
+      "removed_declaration_owners": [
+        "GS-605"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-466",
+      "target_card_id": "GS-600",
+      "removed_declaration_owners": [
+        "GS-600"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R4",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-546",
+      "target_card_id": "GS-618",
+      "removed_declaration_owners": [
+        "GS-618"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R4",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-546",
+      "target_card_id": "GS-619",
+      "removed_declaration_owners": [
+        "GS-619"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R4",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-581",
+      "target_card_id": "GS-604",
+      "removed_declaration_owners": [
+        "GS-604"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-587",
+      "target_card_id": "GS-618",
+      "removed_declaration_owners": [
+        "GS-618"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-600",
+      "target_card_id": "GS-621",
+      "removed_declaration_owners": [
+        "GS-621"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R4",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-600",
+      "target_card_id": "GS-622",
+      "removed_declaration_owners": [
+        "GS-622"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R4",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-600",
+      "target_card_id": "GS-624",
+      "removed_declaration_owners": [
+        "GS-624"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R4",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-601",
+      "target_card_id": "GS-605",
+      "removed_declaration_owners": [
+        "GS-605"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-601",
+      "target_card_id": "GS-609",
+      "removed_declaration_owners": [
+        "GS-609"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-602",
+      "target_card_id": "GS-610",
+      "removed_declaration_owners": [
+        "GS-610"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R4",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-604",
+      "removed_declaration_owners": [
+        "GS-603",
+        "GS-604"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-605",
+      "removed_declaration_owners": [
+        "GS-603",
+        "GS-605"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-609",
+      "removed_declaration_owners": [
+        "GS-609"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-618",
+      "removed_declaration_owners": [
+        "GS-618"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-619",
+      "removed_declaration_owners": [
+        "GS-619"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-621",
+      "removed_declaration_owners": [
+        "GS-621"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R1",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-622",
+      "removed_declaration_owners": [
+        "GS-622"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R1",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-623",
+      "removed_declaration_owners": [
+        "GS-623"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R1",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-625",
+      "removed_declaration_owners": [
+        "GS-625"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R1",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-604",
+      "target_card_id": "GS-609",
+      "removed_declaration_owners": [
+        "GS-609"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-604",
+      "target_card_id": "GS-631",
+      "removed_declaration_owners": [
+        "GS-631"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-605",
+      "target_card_id": "GS-631",
+      "removed_declaration_owners": [
+        "GS-631"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-610",
+      "target_card_id": "GS-618",
+      "removed_declaration_owners": [
+        "GS-618"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-610",
+      "target_card_id": "GS-619",
+      "removed_declaration_owners": [
+        "GS-619"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-610",
+      "target_card_id": "GS-620",
+      "removed_declaration_owners": [
+        "GS-620"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-610",
+      "target_card_id": "GS-630",
+      "removed_declaration_owners": [
+        "GS-630"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-618",
+      "target_card_id": "GS-620",
+      "removed_declaration_owners": [
+        "GS-618",
+        "GS-620"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-618",
+      "target_card_id": "GS-631",
+      "removed_declaration_owners": [
+        "GS-631"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-619",
+      "target_card_id": "GS-620",
+      "removed_declaration_owners": [
+        "GS-619",
+        "GS-620"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-619",
+      "target_card_id": "GS-621",
+      "removed_declaration_owners": [
+        "GS-621"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R1",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-619",
+      "target_card_id": "GS-622",
+      "removed_declaration_owners": [
+        "GS-622"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R1",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-619",
+      "target_card_id": "GS-623",
+      "removed_declaration_owners": [
+        "GS-623"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R1",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-619",
+      "target_card_id": "GS-624",
+      "removed_declaration_owners": [
+        "GS-624"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R1",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-620",
+      "target_card_id": "GS-630",
+      "removed_declaration_owners": [
+        "GS-630"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-620",
+      "target_card_id": "GS-631",
+      "removed_declaration_owners": [
+        "GS-631"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-621",
+      "target_card_id": "GS-622",
+      "removed_declaration_owners": [
+        "GS-621",
+        "GS-622"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R3",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-621",
+      "target_card_id": "GS-623",
+      "removed_declaration_owners": [
+        "GS-621",
+        "GS-623"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R3",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-621",
+      "target_card_id": "GS-624",
+      "removed_declaration_owners": [
+        "GS-621",
+        "GS-624"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R3",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-621",
+      "target_card_id": "GS-625",
+      "removed_declaration_owners": [
+        "GS-621",
+        "GS-625"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R3",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-622",
+      "target_card_id": "GS-623",
+      "removed_declaration_owners": [
+        "GS-622",
+        "GS-623"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R3",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-622",
+      "target_card_id": "GS-625",
+      "removed_declaration_owners": [
+        "GS-622",
+        "GS-625"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R3",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-622",
+      "target_card_id": "GS-630",
+      "removed_declaration_owners": [
+        "GS-630"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-622",
+      "target_card_id": "GS-632",
+      "removed_declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-622",
+      "target_card_id": "GS-681",
+      "removed_declaration_owners": [
+        "GS-681"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R6",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-623",
+      "target_card_id": "GS-624",
+      "removed_declaration_owners": [
+        "GS-623",
+        "GS-624"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R3",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-623",
+      "target_card_id": "GS-625",
+      "removed_declaration_owners": [
+        "GS-623",
+        "GS-625"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R3",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-623",
+      "target_card_id": "GS-630",
+      "removed_declaration_owners": [
+        "GS-630"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-623",
+      "target_card_id": "GS-632",
+      "removed_declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-624",
+      "target_card_id": "GS-625",
+      "removed_declaration_owners": [
+        "GS-624",
+        "GS-625"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R3",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-624",
+      "target_card_id": "GS-681",
+      "removed_declaration_owners": [
+        "GS-681"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R6",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-630",
+      "target_card_id": "GS-631",
+      "removed_declaration_owners": [
+        "GS-631"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-630",
+      "target_card_id": "GS-632",
+      "removed_declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-630",
+      "target_card_id": "GS-684",
+      "removed_declaration_owners": [
+        "GS-684"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-631",
+      "target_card_id": "GS-632",
+      "removed_declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-632",
+      "target_card_id": "GS-684",
+      "removed_declaration_owners": [
+        "GS-684"
+      ],
+      "decision": "remove_broad_irrelevant_source_adjacent_or_stale_edge",
+      "evidence_code": "R2",
+      "bidirectional_query_verified": true
+    }
+  ],
+  "strong_edges_added": [
+    {
+      "source_card_id": "GS-266",
+      "target_card_id": "GS-623",
+      "declaration_owners": [
+        "GS-623"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "added_in_batch_6",
+      "added_in_batch": 6,
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-270",
+      "target_card_id": "GS-631",
+      "declaration_owners": [
+        "GS-631"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "added_in_batch_6",
+      "added_in_batch": 6,
+      "bidirectional_query_verified": true
+    }
+  ],
+  "strong_edges_verified_existing": [
+    {
+      "source_card_id": "GS-163",
+      "target_card_id": "GS-603",
+      "declaration_owners": [
+        "GS-163",
+        "GS-603"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-168",
+      "target_card_id": "GS-604",
+      "declaration_owners": [
+        "GS-168"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-266",
+      "target_card_id": "GS-604",
+      "declaration_owners": [
+        "GS-266",
+        "GS-604"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-268",
+      "target_card_id": "GS-603",
+      "declaration_owners": [
+        "GS-268",
+        "GS-603"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-268",
+      "target_card_id": "GS-618",
+      "declaration_owners": [
+        "GS-618"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-268",
+      "target_card_id": "GS-620",
+      "declaration_owners": [
+        "GS-620"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-269",
+      "target_card_id": "GS-619",
+      "declaration_owners": [
+        "GS-269",
+        "GS-619"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-270",
+      "target_card_id": "GS-603",
+      "declaration_owners": [
+        "GS-270",
+        "GS-603"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-270",
+      "target_card_id": "GS-610",
+      "declaration_owners": [
+        "GS-610"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-278",
+      "target_card_id": "GS-604",
+      "declaration_owners": [
+        "GS-278",
+        "GS-604"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-292",
+      "target_card_id": "GS-600",
+      "declaration_owners": [
+        "GS-292"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K4",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-292",
+      "target_card_id": "GS-618",
+      "declaration_owners": [
+        "GS-292"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K4",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-292",
+      "target_card_id": "GS-619",
+      "declaration_owners": [
+        "GS-292"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-575",
+      "target_card_id": "GS-610",
+      "declaration_owners": [
+        "GS-610"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-587",
+      "target_card_id": "GS-603",
+      "declaration_owners": [
+        "GS-587",
+        "GS-603"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-592",
+      "target_card_id": "GS-618",
+      "declaration_owners": [
+        "GS-618"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-592",
+      "target_card_id": "GS-619",
+      "declaration_owners": [
+        "GS-619"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-595",
+      "target_card_id": "GS-600",
+      "declaration_owners": [
+        "GS-600"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K5",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-600",
+      "target_card_id": "GS-635",
+      "declaration_owners": [
+        "GS-635"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K4",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-600",
+      "target_card_id": "GS-644",
+      "declaration_owners": [
+        "GS-644"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K5",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-620",
+      "declaration_owners": [
+        "GS-620"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-637",
+      "declaration_owners": [
+        "GS-637"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-604",
+      "target_card_id": "GS-605",
+      "declaration_owners": [
+        "GS-604",
+        "GS-605"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-605",
+      "target_card_id": "GS-609",
+      "declaration_owners": [
+        "GS-609"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-605",
+      "target_card_id": "GS-630",
+      "declaration_owners": [
+        "GS-630"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-605",
+      "target_card_id": "GS-632",
+      "declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K3",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-609",
+      "target_card_id": "GS-610",
+      "declaration_owners": [
+        "GS-610"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-609",
+      "target_card_id": "GS-630",
+      "declaration_owners": [
+        "GS-630"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-609",
+      "target_card_id": "GS-632",
+      "declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-609",
+      "target_card_id": "GS-686",
+      "declaration_owners": [
+        "GS-686"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-610",
+      "target_card_id": "GS-631",
+      "declaration_owners": [
+        "GS-631"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-618",
+      "target_card_id": "GS-619",
+      "declaration_owners": [
+        "GS-618",
+        "GS-619"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-620",
+      "target_card_id": "GS-636",
+      "declaration_owners": [
+        "GS-636"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-621",
+      "target_card_id": "GS-632",
+      "declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-622",
+      "target_card_id": "GS-624",
+      "declaration_owners": [
+        "GS-622",
+        "GS-624"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-630",
+      "target_card_id": "GS-686",
+      "declaration_owners": [
+        "GS-686"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-632",
+      "target_card_id": "GS-710",
+      "declaration_owners": [
+        "GS-710"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "KP",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    }
+  ],
+  "strong_edges_verified": [
+    {
+      "source_card_id": "GS-266",
+      "target_card_id": "GS-623",
+      "declaration_owners": [
+        "GS-623"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "added_in_batch_6",
+      "added_in_batch": 6,
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-270",
+      "target_card_id": "GS-631",
+      "declaration_owners": [
+        "GS-631"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "added_in_batch_6",
+      "added_in_batch": 6,
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-163",
+      "target_card_id": "GS-603",
+      "declaration_owners": [
+        "GS-163",
+        "GS-603"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-168",
+      "target_card_id": "GS-604",
+      "declaration_owners": [
+        "GS-168"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-266",
+      "target_card_id": "GS-604",
+      "declaration_owners": [
+        "GS-266",
+        "GS-604"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-268",
+      "target_card_id": "GS-603",
+      "declaration_owners": [
+        "GS-268",
+        "GS-603"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-268",
+      "target_card_id": "GS-618",
+      "declaration_owners": [
+        "GS-618"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-268",
+      "target_card_id": "GS-620",
+      "declaration_owners": [
+        "GS-620"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-269",
+      "target_card_id": "GS-619",
+      "declaration_owners": [
+        "GS-269",
+        "GS-619"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-270",
+      "target_card_id": "GS-603",
+      "declaration_owners": [
+        "GS-270",
+        "GS-603"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-270",
+      "target_card_id": "GS-610",
+      "declaration_owners": [
+        "GS-610"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-278",
+      "target_card_id": "GS-604",
+      "declaration_owners": [
+        "GS-278",
+        "GS-604"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-292",
+      "target_card_id": "GS-600",
+      "declaration_owners": [
+        "GS-292"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K4",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-292",
+      "target_card_id": "GS-618",
+      "declaration_owners": [
+        "GS-292"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K4",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-292",
+      "target_card_id": "GS-619",
+      "declaration_owners": [
+        "GS-292"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-575",
+      "target_card_id": "GS-610",
+      "declaration_owners": [
+        "GS-610"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-587",
+      "target_card_id": "GS-603",
+      "declaration_owners": [
+        "GS-587",
+        "GS-603"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-592",
+      "target_card_id": "GS-618",
+      "declaration_owners": [
+        "GS-618"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-592",
+      "target_card_id": "GS-619",
+      "declaration_owners": [
+        "GS-619"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-595",
+      "target_card_id": "GS-600",
+      "declaration_owners": [
+        "GS-600"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K5",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-600",
+      "target_card_id": "GS-635",
+      "declaration_owners": [
+        "GS-635"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K4",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-600",
+      "target_card_id": "GS-644",
+      "declaration_owners": [
+        "GS-644"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K5",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-620",
+      "declaration_owners": [
+        "GS-620"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-603",
+      "target_card_id": "GS-637",
+      "declaration_owners": [
+        "GS-637"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-604",
+      "target_card_id": "GS-605",
+      "declaration_owners": [
+        "GS-604",
+        "GS-605"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-605",
+      "target_card_id": "GS-609",
+      "declaration_owners": [
+        "GS-609"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-605",
+      "target_card_id": "GS-630",
+      "declaration_owners": [
+        "GS-630"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-605",
+      "target_card_id": "GS-632",
+      "declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K3",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-609",
+      "target_card_id": "GS-610",
+      "declaration_owners": [
+        "GS-610"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-609",
+      "target_card_id": "GS-630",
+      "declaration_owners": [
+        "GS-630"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-609",
+      "target_card_id": "GS-632",
+      "declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-609",
+      "target_card_id": "GS-686",
+      "declaration_owners": [
+        "GS-686"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-610",
+      "target_card_id": "GS-631",
+      "declaration_owners": [
+        "GS-631"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-618",
+      "target_card_id": "GS-619",
+      "declaration_owners": [
+        "GS-618",
+        "GS-619"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-620",
+      "target_card_id": "GS-636",
+      "declaration_owners": [
+        "GS-636"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-621",
+      "target_card_id": "GS-632",
+      "declaration_owners": [
+        "GS-632"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-622",
+      "target_card_id": "GS-624",
+      "declaration_owners": [
+        "GS-622",
+        "GS-624"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K2",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-630",
+      "target_card_id": "GS-686",
+      "declaration_owners": [
+        "GS-686"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "K1",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    },
+    {
+      "source_card_id": "GS-632",
+      "target_card_id": "GS-710",
+      "declaration_owners": [
+        "GS-710"
+      ],
+      "decision": "verified_strong_method_or_breakpoint_edge",
+      "evidence_code": "KP",
+      "edge_status": "verified_existing",
+      "bidirectional_query_verified": true
+    }
+  ],
+  "reviewed_without_formal_relation_change": [
+    "GS-405",
+    "GS-408",
+    "GS-414"
+  ],
+  "held_needs_user": [
+    {
+      "card_id": "GS-405",
+      "duplicate_group": "QIMG-c5a70ef93f434cc7",
+      "status": "needs_user_decision",
+      "hold_kind": "identity",
+      "reason": "题图、两张解析图和 source_refid 与 GS-403 完全相同；无独立复发证据。"
+    },
+    {
+      "card_id": "GS-408",
+      "duplicate_group": "QIMG-c5a70ef93f434cc7",
+      "status": "needs_user_decision",
+      "hold_kind": "identity",
+      "reason": "题图、两张解析图和 source_refid 与 GS-403 完全相同；无独立复发证据。"
+    },
+    {
+      "card_id": "GS-414",
+      "duplicate_group": "QIMG-c5a70ef93f434cc7",
+      "status": "needs_user_decision",
+      "hold_kind": "identity",
+      "reason": "题图、两张解析图和 source_refid 与 GS-403 完全相同；无独立复发证据。"
+    }
+  ],
+  "wrongnet_rebuild": {
+    "command": "python3 错题知识网络/scripts/wrongnet.py rebuild",
+    "invocations_this_batch": 1,
+    "policy": "exactly_once_after_all_formal_source_edits",
+    "content_changed": true,
+    "status": "ok",
+    "note": "第6批只运行一次；后续验证没有再次执行。",
+    "outputs": [
+      {
+        "path": "错题知识网络/生成/wrong_questions.json",
+        "pre_sha256": "41bd22c1580674c1fa297c5ce614c69c609be38ee0938c08967493fe063d066e",
+        "post_sha256": "b2de9bb170ea4e9331dbe17d1e1d4eddbc8fe08c1b2629c8ad61c23654fbb182"
+      },
+      {
+        "path": "错题知识网络/生成/专题链关联清单.md",
+        "pre_sha256": "78e040bb082763b02dafa23ded5a1980f366717be451aac676e48df507bbacb0",
+        "post_sha256": "78e040bb082763b02dafa23ded5a1980f366717be451aac676e48df507bbacb0"
+      },
+      {
+        "path": "错题知识网络/生成/弱边审计清单.md",
+        "pre_sha256": "b7286c09e5da13b7b45fefa7938157ea7a6f834450786a883ed63b578367c5a1",
+        "post_sha256": "b7286c09e5da13b7b45fefa7938157ea7a6f834450786a883ed63b578367c5a1"
+      },
+      {
+        "path": "错题知识网络/生成/强关联清单.md",
+        "pre_sha256": "8397f33fbd64691bf5b074d2fd117a190fc5f408446506a5baf6c09be2c83fd6",
+        "post_sha256": "69c28d81d9b61bb8bcc56366c36188d36ac3d93bc43ff26b0e59070b723ad783"
+      },
+      {
+        "path": "错题知识网络/生成/按知识点复做清单.md",
+        "pre_sha256": "3e0b1dc8ece2e0a7167091af7cd58b317a59104596e78f4ecb6b6234f3983c11",
+        "post_sha256": "e43ca61adfba1feaa5af4d665d26e7b5665dcd22b215c33c710200ef6e676b7f"
+      },
+      {
+        "path": "错题知识网络/生成/相似题清单.md",
+        "pre_sha256": "4cb84a68f451de106498b47f1e5402656138da625859567dc6e53e62cfae87a2",
+        "post_sha256": "e6289ea26944a97454fe2931b2dce61c4ac669f1161732561c920a6cd1ff82f9"
+      },
+      {
+        "path": "错题知识网络/生成/知识网络图.mmd",
+        "pre_sha256": "9f4c5df8777d7bd65ab68fbe6c1f36359db91ac45825ab057b1300bb9ef5999c",
+        "post_sha256": "e527bbc305c9d98d56646db81e04522df2b6d920a8ab7886179b425e2a35aaa4"
+      },
+      {
+        "path": "错题知识网络/生成/错题索引.md",
+        "pre_sha256": "41ae9e42d52a0d96152e380f5bd0e3c5add937bded9350e5b42ef413571374dc",
+        "post_sha256": "3d5202b532042aeee12a200dbb7d238dc15e26c8795fbe79a60b27bbacd01876"
+      },
+      {
+        "path": "错题知识网络/生成/错题网络概览.md",
+        "pre_sha256": "895f0d41f3b0c4c5cea52f6c0ca92d48ede56dab8a5e7e570780f60f206abc77",
+        "post_sha256": "2769020d2486ef2f3c62020fbe0fa0a63a927848666f15e5fbf361d248be2f46"
+      }
+    ]
+  },
+  "derived_evidence_graph": {
+    "build_command": "python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py build",
+    "check_command": "python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py check",
+    "source_state_sha256": "09ce9b347f3a1b50666cc1b329675b751c78fa33c750196e5c993de28196d4fe",
+    "check_status": "ok",
+    "outputs": [
+      {
+        "path": "错题知识网络/wiki/synthesis/MATHWIKI-SYNTHESIS-002_知识点错因证据图谱.json",
+        "pre_sha256": "80f7fad3ad9ebd3c8516fca19b13c6c0ef4b20cf23b0477816224f3af1cd57f1",
+        "post_sha256": "49543f663020618e40edf77749809ce54291a2c43ba56032ab618a53ece8efed"
+      },
+      {
+        "path": "错题知识网络/wiki/synthesis/MATHWIKI-SYNTHESIS-002_知识点错因证据图谱.md",
+        "pre_sha256": "6602a2cf2a8367a8149406c495b28ac0f23720f02a13f122f0ce883f76794087",
+        "post_sha256": "2cf37ca652c8b4432f94613712291da692c8e5d3d133c5b190ba76c0b9021a0e"
+      },
+      {
+        "path": "错题知识网络/wiki/synthesis/MATHWIKI-SYNTHESIS-003_逐题内容与视觉证据索引.md",
+        "pre_sha256": "3b9737737ec071d6cd3b49f3b33b1d97568e13b12fab8e11175d15461766265e",
+        "post_sha256": "66517b300fff291274020e0c6fffbfd58e0bdb99b55fe45d11694d3139e6eb30"
+      },
+      {
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-008_全库逐题语义复核第1批20题.md",
+        "pre_sha256": "f5ef86e7fa56a1604d63bc592ddd2411f3db88072e670e1d0222c11c3b8371d1",
+        "post_sha256": "87c683f630376e81d2487bcdb409f91dbf969cdeb9ea5c9bb504a4fbb1956215"
+      },
+      {
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-010_全库逐题语义复核第2批20题.md",
+        "pre_sha256": "30cc9909e1683d61694457bfee10a26a99f02d31fb376a0605dcaa9c549b73c3",
+        "post_sha256": "edb1e899fa31131f3bc86d247fa74235df967343be9c5ee29dcac33f98e9cf14"
+      },
+      {
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-012_全库逐题语义复核第3批20题.md",
+        "pre_sha256": "0d655ffb5bb97882e36e0530a1162e2bbbeb861474ba4e897c695b8750396dab",
+        "post_sha256": "909a122e0c168a0b691f2605305f7d7cc5aa8a31ae48fc149e605118475b4173"
+      },
+      {
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-014_全库逐题语义复核第4批20题.md",
+        "pre_sha256": "b42411f6b44f8ad7fc90bd2cb2e776037620c596c77c15a7d866716e5ed73564",
+        "post_sha256": "7b085c943712a3ee0ab60658c556b91744bb57f86d0686e799dbccbd4fd230fa"
+      },
+      {
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-016_全库逐题语义复核第5批20题.md",
+        "pre_sha256": "a45656b2d6b17de7889c7ab4fb6a389c2f80c14287015f8b4c4a3ec43d104209",
+        "post_sha256": "bf972e3941354fb5c8f27bb14291ed0abcfbdd69a6a3f1e517a1e52782ff7962"
+      },
+      {
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-018_全库逐题语义复核第6批20题.md",
+        "pre_sha256": null,
+        "post_sha256": "a581ed65e5e060c8ac52a2e439f95c5b4218946c0e40284fd945058a425c5c8e"
+      }
+    ],
+    "campaign_summary": {
+      "batch_count": 6,
+      "reviewed_cards": 120,
+      "verified_cards": 120,
+      "stale_cards": 0,
+      "remaining_cards": 711,
+      "physical_asset_paths": 346,
+      "unique_asset_sha256": 232,
+      "unique_asset_roles": {
+        "question": 109,
+        "reference": 2,
+        "solution": 121
+      }
+    }
+  },
+  "visual_registry_validation": {
+    "manifest_records": 978,
+    "manifest_linked_wrongnet": 749,
+    "manifest_question_images_copied": 955,
+    "manifest_solution_images_copied": 447,
+    "manifest_open_links": 978,
+    "asset_mapping_records": 1402,
+    "asset_mapping_linked_wrongnet_assets": 1157,
+    "new_visual_ids": [],
+    "exact_asset_sha256_verified": true,
+    "all_asset_paths_exist": true,
+    "stored_sha256_records_verified": 64,
+    "registry_writes_required": false
+  },
+  "validation": {
+    "json_parse": "15_wiki_json_files_ok",
+    "yaml_frontmatter": "831_formal_cards_with_831_unique_ids_ok",
+    "relation_bidirectional_queries": "65_removed_absent_and_39_strong_present_in_both_query_orders",
+    "visual_registry_parity": "978_manifest_records_and_1402_asset_mapping_records_all_paths_present_and_64_stored_sha256_exact",
+    "knowledge_error_graph_check": "source_state_09ce9b347f3a1b50666cc1b329675b751c78fa33c750196e5c993de28196d4fe_ok",
+    "targeted_tests": "27_tests_ok",
+    "full_test_suite": "224_tests_ok",
+    "obsidian_cli_read_outline_search": "ok",
+    "git_diff_check": "ok",
+    "formal_and_generated_hash_parity": "46_source_writes_and_18_derived_outputs_current"
+  },
+  "campaign_progress": {
+    "batch_number": 6,
+    "batch_reviewed_cards": 20,
+    "cumulative_reviewed_cards": 120,
+    "remaining_cards": 711,
+    "cumulative_physical_asset_paths_reviewed": 346,
+    "cumulative_unique_asset_count": 232,
+    "cumulative_unique_asset_role_counts": {
+      "question": 109,
+      "solution": 121,
+      "reference": 2
+    }
+  },
+  "documented_quality_warnings": [
+    {
+      "card_id": "GS-618",
+      "code": "solution_route_and_user_route_separated",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-631",
+      "code": "same_event_action_gaps_not_counted_as_recurrences",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-605",
+      "code": "truncated_visual_detail_sentence_and_formula_repaired",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-609",
+      "code": "truncated_visual_detail_sentence_and_formula_repaired",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-610",
+      "code": "truncated_visual_detail_sentence_and_formula_repaired",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-618",
+      "code": "truncated_visual_detail_sentence_and_formula_repaired",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-619",
+      "code": "truncated_visual_detail_sentence_and_formula_repaired",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-620",
+      "code": "truncated_visual_detail_sentence_and_formula_repaired",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-621",
+      "code": "truncated_visual_detail_sentence_and_formula_repaired",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-623",
+      "code": "truncated_visual_detail_sentence_and_formula_repaired",
+      "status": "resolved_formal_closeout"
+    },
+    {
+      "card_id": "GS-631",
+      "code": "truncated_visual_detail_sentence_and_formula_repaired",
+      "status": "resolved_formal_closeout"
+    }
+  ],
+  "batch16_lineage_revalidation": {
+    "batch_number": 16,
+    "date": "2026-07-23",
+    "source_review_rehashed": true,
+    "prior_source_review_sha256": "3648ce594b3006a6f0d26f1a0ec45be644049c3bfb95e38c527bf9a8ec32bcad",
+    "current_source_review_sha256": "73c11a4296917370483e506152b51dd35a068a0d98467ccf5458dc651ba89602",
+    "revalidated_card_ids": [
+      "GS-603",
+      "GS-623"
+    ],
+    "superseded_historical_edges": [
+      "GS-163--GS-603"
+    ],
+    "added_later_edges": [
+      "GS-163--GS-623"
+    ],
+    "unresolved_identity_holds_preserved": [],
+    "historical_card_writes_and_relation_decisions_preserved": true,
+    "note": "第16批只追加当前哈希与关系变更的后继事实；不改写原批次事务证据。"
+  },
+  "batch17_lineage_revalidation": {
+    "batch_number": 17,
+    "date": "2026-07-23",
+    "source_review_rehashed": true,
+    "prior_source_review_sha256": "73c11a4296917370483e506152b51dd35a068a0d98467ccf5458dc651ba89602",
+    "current_source_review_sha256": "cd336478ed4a6e67f5f8f89ff8f1de53f12e797a192f47b35f892d3beaeff553",
+    "revalidated_card_ids": [
+      "GS-604"
+    ],
+    "superseded_historical_edges": [
+      "GS-168--GS-604"
+    ],
+    "added_later_edges": [],
+    "unresolved_identity_holds_preserved": [],
+    "historical_card_writes_and_relation_decisions_preserved": true,
+    "note": "第17批只追加 GS-604 当前哈希与 GS-168 宽泛边移除事实；不改写第6批原事务证据。"
+  },
+  "batch21_lineage_revalidation": {
+    "batch_number": 21,
+    "date": "2026-07-23",
+    "source_review_rehashed": true,
+    "prior_source_review_sha256": "cd336478ed4a6e67f5f8f89ff8f1de53f12e797a192f47b35f892d3beaeff553",
+    "current_source_review_sha256": "66524bf0fb09f9e949001aada6a0ac838e3647d072fbd97b1251711a5949c396",
+    "revalidated_card_ids": [
+      "GS-604",
+      "GS-610"
+    ],
+    "removed_edges": [
+      "GS-266--GS-604"
+    ],
+    "added_later_edges": [
+      "GS-275--GS-610"
+    ],
+    "historical_card_writes_and_relation_decisions_preserved": true,
+    "note": "第21批只追加 GS-604、GS-610 的当前哈希与后续关系变更事实；第6批 card_writes、relation_decisions 及第17批 lineage 均保留为当时历史证据。"
+  },
+  "batch35_lineage_revalidation": {
+    "batch_number": 35,
+    "date": "2026-07-24",
+    "prior_source_review_sha256": "5d1ca5765135adb5164c02c0d897048be68c8b1b31f1993c01199b82f80c996b",
+    "current_source_review_sha256": "a16c64d0dee4abd51ec6998b3f5a027ac941bbb5d0bf977c6554bdd3238289a2",
+    "affected_card_ids": [
+      "GS-610"
+    ],
+    "content_change_scope": "relation_metadata_and_navigation_reference_only",
+    "removed_edges": [
+      "GS-575--GS-610"
+    ],
+    "added_edges": [],
+    "current_related_by_card": {
+      "GS-610": [
+        "GS-270",
+        "GS-275",
+        "GS-609"
+      ]
+    },
+    "prior_lineage_fields_preserved": [
+      "batch16_lineage_revalidation",
+      "batch17_lineage_revalidation",
+      "batch21_lineage_revalidation",
+      "batch22_lineage_revalidation",
+      "batch23_lineage_revalidation"
+    ],
+    "historical_closeout_payload_preserved": true,
+    "note": "第35批以计划卡哈希重绑第6批关系谱系；原语义判断与 validation 保持不变。"
+  },
+  "batch36_lineage_revalidation": {
+    "batch_number": 36,
+    "date": "2026-07-24",
+    "prior_source_review_sha256": "a16c64d0dee4abd51ec6998b3f5a027ac941bbb5d0bf977c6554bdd3238289a2",
+    "current_source_review_sha256": "b7dee7786c8f42ebd2b2dcff29b449501b787119e07505fe4abbac8085b53f5d",
+    "affected_card_ids": [
+      "GS-600",
+      "GS-603",
+      "GS-618",
+      "GS-619"
+    ],
+    "content_change_scope": "relation_metadata_and_navigation_reference_only",
+    "removed_edges": [
+      "GS-587--GS-603",
+      "GS-592--GS-618",
+      "GS-592--GS-619",
+      "GS-595--GS-600"
+    ],
+    "added_edges": [],
+    "current_related_by_card": {
+      "GS-600": [
+        "GS-303"
+      ],
+      "GS-603": [
+        "GS-268",
+        "GS-270"
+      ],
+      "GS-618": [
+        "GS-268",
+        "GS-619"
+      ],
+      "GS-619": [
+        "GS-269",
+        "GS-618"
+      ]
+    },
+    "prior_lineage_fields_preserved": [
+      "batch16_lineage_revalidation",
+      "batch17_lineage_revalidation",
+      "batch21_lineage_revalidation",
+      "batch22_lineage_revalidation",
+      "batch23_lineage_revalidation",
+      "batch35_lineage_revalidation"
+    ],
+    "historical_closeout_payload_preserved": true,
+    "note": "第36批以正式写入哈希重绑第6批关系谱系；原语义判断与 validation 保持不变。"
+  }
+}

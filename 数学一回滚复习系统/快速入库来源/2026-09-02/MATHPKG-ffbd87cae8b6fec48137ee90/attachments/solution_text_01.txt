@@ -1,0 +1,26 @@
+卷面写法
+
+由相似三角形，
+
+$$
+\frac rh=\frac6{18},
+\qquad
+V_1=\frac13\pi r^2h=\frac{\pi h^3}{27},
+\qquad
+V_2=25\pi y.
+$$
+
+由 \(V_1+V_2=\text{常数}\)，对时间求导得
+
+$$
+\frac{\pi h^2}{9}\frac{dh}{dt}
++25\pi\frac{dy}{dt}=0.
+$$
+
+代入 \(h=12\)、\(\frac{dh}{dt}=-1\)，得
+
+$$
+-16\pi+25\pi\frac{dy}{dt}=0,
+\qquad
+\boxed{\frac{dy}{dt}=\frac{16}{25}\ \mathrm{cm/min}}.
+$$

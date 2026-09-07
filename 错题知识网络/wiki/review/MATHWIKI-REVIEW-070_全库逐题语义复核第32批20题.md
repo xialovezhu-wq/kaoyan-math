@@ -1,0 +1,520 @@
+---
+wiki_id: MATHWIKI-REVIEW-070
+type: target_level_semantic_review_batch
+title: 全库逐题语义复核第32批20题
+subject: 数学一
+knowledge:
+  - 全库逐题复核
+  - 题图解析图核对
+  - 知识点错因连线
+source_refs:
+  - 错题知识网络/错题卡/
+  - 错题知识网络/可视化错题详情/
+  - 错题知识网络/assets/visual_wrong_questions/
+  - 错题知识网络/wiki/review/MATHWIKI-REVIEW-070_全库逐题语义复核第32批20题.json
+status: active
+last_updated: 2026-07-24
+---
+
+# 全库逐题语义复核第32批20题
+
+## 本批结论
+
+本批共逐题核对 20 张正式卡，当前哈希仍有效的完整复核为 0 张；覆盖 24 个物理图片路径与 22 个唯一图片内容。全库当前共 882 张正式卡，本轮活动累计完成 119 张，剩余 763 张。
+
+本批有 3 张出现结构、身份、元数据或来源正文质量问题。证据充分且无歧义的修正已经正式收口；身份冲突、稳定 ID 合并或证据不足项仍保留为 needs_user，详见 `pending_MATHWIKI-REVIEW-071`。
+
+## 证据边界
+
+- `verified` 表示题面、所问对象、答案、解析路线和当前全部图片内容已经逐一核对，并由正式卡 SHA、详情页 SHA 与图片 SHA-256 绑定。
+- 个人错因仍按 `confirmed_personal`、`legacy_unclassified`、`pending_user_confirmation` 和重复占位分别处理；读懂解析不能反推用户为什么做错。
+- 同一哈希的重复物理图片只视觉核对一次，但所有物理路径都纳入数量和集合一致性检查。
+- 关系裁决中已正式应用的变更以正式收口回执为准；未应用项仍是 SHADOW 建议。
+
+## 批次总览
+
+| 错题 | 题目在问什么 | 知识点 | 答案 | 个人错因边界 | 质量发现 |
+|---|---|---|---|---|---|
+| [GS-500](http://127.0.0.1:8765/open/GS-500) | 列出所有垂直、水平或斜渐近线，不能只给一个无穷远方向。 | 一元函数微分学应用、极限与连续、渐近线、无穷远极限、等价无穷小 | 定义域为 \((-\infty,-\frac12)\cup(0,+\infty)\)。全部渐近线为 \(x=-\frac12\)，\(y=2(\ln2)x+1+\frac{\ln2}{4}\)，\(y=-2(\ln2)x-1-\frac{\ln2}{4}\)。 | confirmed_personal：没有先建立“全部渐近线”检查清单，只算正无穷方向，漏掉垂直渐近线和负无穷方向。 | evidence_provenance_and_relation_cleanup、unconfirmed_external_breakpoint_strong_edges_downgraded |
+| [GS-501](http://127.0.0.1:8765/open/GS-501) | 给出收敛或发散结论，并说明判别依据。 | 无穷级数、数项级数敛散性判别、交错级数、莱布尼茨判别法、调和级数、根式有理化、级数拆项 | 发散。 | confirmed_personal：把交错级数机械等同于可直接套莱布尼茨，没有先检查正项部分单调性；比较不等号方向也不稳。 | corrupt_harmonic_latex_and_relation_cleanup |
+| [GS-502](http://127.0.0.1:8765/open/GS-502) | 在四个敛散性选项中选择正确结论并给出拆分证明。 | 无穷级数、数项级数敛散性判别、交错级数、条件收敛、奇偶项拆分、级数拆项、正项级数发散、条件收敛正负项拆分 | A，发散。 | confirmed_personal：前两次错误事件分别断在未拆奇偶项，以及混淆数列与级数、误反推单调并缺少奇数项发散的严谨证明。 | repeat_count_and_partial_sum_rigor_repaired |
+| [GS-503](http://127.0.0.1:8765/open/GS-503) | 判定绝对收敛、条件收敛或发散。 | 无穷级数、数项级数敛散性判别、任意项级数、绝对收敛、正项级数比较判别法、望远镜级数、有界函数放缩 | A，绝对收敛。 | confirmed_personal：被 sin(n+k) 的符号变化带去找交错性，没有先检查绝对收敛；比较判别方向也曾倒置。 | evidence_provenance_and_incoming_relation_cleanup |
+| [GS-504](http://127.0.0.1:8765/open/GS-504) | 从四个组合级数命题中选出必然正确者。 | 无穷级数、数项级数敛散性判别、任意项级数、绝对收敛、条件收敛、正项级数比较判别法、级数收敛必要条件、收敛数列有界性 | B，\(\sum u_nv_n\) 绝对收敛。 | confirmed_personal：条件收敛定义记反，且没有把目标项配成题面给出的 (nu_n)(v_n/n)。 | detail_premise_miscopy_repaired、unconfirmed_external_breakpoint_strong_edges_downgraded |
+| [GS-505](http://127.0.0.1:8765/open/GS-505) | 给出参数 p 的精确区间并检查两端点。 | 无穷级数、数项级数敛散性判别、任意项级数、交错级数、绝对收敛、条件收敛、莱布尼茨判别法、p级数、参数型p级数、级数收敛必要条件、等价通项比较、等价无穷小、根式有理化 | \(-\frac12<p\le\frac12\)。 | confirmed_personal：连续两次只写绝对值级数发散的上界条件，漏掉原交错级数收敛所需的 α>0。 | repeat_provenance_and_relation_cleanup |
+| [GS-506](http://127.0.0.1:8765/open/GS-506) | 选出由凹性必然推出的交叉乘不等式。 | 一元函数微分学应用、中值定理、拉格朗日中值定理、函数值不等式、辅助函数构造、二阶导数判单调性、凹凸性与拐点 | B | confirmed_personal：没有由选项的交叉相乘反推 f(t)/t，误构造 t f(t)。 | evidence_provenance_and_relation_cleanup |
+| [GS-507](http://127.0.0.1:8765/open/GS-507) | 选出关于函数值、导数值和局部极值的正确结论。 | 一元函数微分学应用、导数定义、极限与连续、极限保号性、局部极值、等价无穷小、洛必达法则使用条件 | D | confirmed_personal：把洛必达法则反向使用，试图由原函数比值极限推出导数比值极限。 | generic_method_gap_template_replaced |
+| [GS-508](http://127.0.0.1:8765/open/GS-508) | 判断 x0 是极大点、极小点、拐点或均不能确定。 | 一元函数微分学应用、泰勒公式、高阶导数判定极值、局部极值、函数局部形态、连续函数局部保号性 | B，\(f(x)\) 在 \(x_0\) 处取得极大值。 | confirmed_personal：不是结论性计算错误，而是入口过慢：未优先识别首个非零高阶导数对应的 Taylor 判别。 | slow_entry_event_boundary_recorded |
+| [GS-509](http://127.0.0.1:8765/open/GS-509) | 先排除非必然命题，再证明唯一必然命题。 | 一元函数微分学应用、无穷远极限、导数极限、函数极限、拉格朗日中值定理、极限保号性 | D | confirmed_personal：把“必有”型选择题直接当证明题，没有先用反例筛选。 | counterexample_first_action_and_relation_cleanup |
+| [GS-510](http://127.0.0.1:8765/open/GS-510) | convergence radius | 无穷级数、幂级数、幂级数收敛半径、部分和数列、调和级数 | \(\boxed{1}\)。 | confirmed_personal：The user treated the partial sum as its last summand, so the coefficient object was misidentified before any radius calculation. | partial_sum_object_and_visual_binding_repaired |
+| [GS-511](http://127.0.0.1:8765/open/GS-511) | complete convergence domain including endpoints | 无穷级数、幂级数、幂级数收敛域、缺项幂级数、比值判别法、莱布尼茨判别法、交错级数 | \(\boxed{[-1,1]}\)。 | confirmed_personal：The user dropped the variable factor by ratio-testing only (-1)^(n-1)/(2n-1). | complete_term_ratio_and_endpoint_review_repaired、unconfirmed_external_breakpoint_strong_edges_downgraded |
+| [GS-512](http://127.0.0.1:8765/open/GS-512) | the two complete convergence domains and the corresponding option | 无穷级数、幂级数、幂级数收敛域、幂级数逐项积分、变上限积分、交错级数、莱布尼茨判别法 | B；\(f(x)\) 的收敛域为 \((-1,1)\)，\(g(x)\) 的收敛域为 \([-1,1)\)。 | confirmed_personal：The user stopped after recognizing the integral and did not produce the new series/endpoints transaction. | termwise_integration_and_endpoint_review_repaired |
+| [GS-513](http://127.0.0.1:8765/open/GS-513) | parameter range and option | 一元函数微分学应用、方程根个数、单调性与极值、零点定理 | A，即 $\|k\|>\dfrac{2\sqrt3}{9}$ | confirmed_personal：The user stayed with the fractional equation and differentiated 1/x^2 instead of first performing the equivalent polynomial transformation. | generic_method_gap_template_replaced_with_cubic_branching |
+| [GS-514](http://127.0.0.1:8765/open/GS-514) | the correct pair of statements and option | 一元函数微分学应用、凹凸性与拐点、二阶导数判凹凸性、函数值不等式 | D，即命题 (1)(3) 正确，(2)(4) 错误。 | confirmed_personal：The convexity step was already correct; the first failure occurred later when multiplying by -1 without reversing the inequality. | negative_sign_audit_and_visual_binding_repaired |
+| [GS-515](http://127.0.0.1:8765/open/GS-515) | the necessarily true order and option | 一元函数微分学应用、微分不等式、辅助函数构造、积分因子、一阶线性微分方程 | A，即 $f(0)<f(a)<f(b)$ | confirmed_personal：The user tried to infer f'>0 directly although f's sign was not yet known, rather than constructing the integrating-factor auxiliary function. | integrating_factor_boundary_and_visual_binding_repaired |
+| [GS-516](http://127.0.0.1:8765/open/GS-516) | left endpoint a and the complete convergence domain | 无穷级数、正项级数敛散性判别、比值判别法、函数项级数收敛域、幂指极限、级数收敛必要条件 | $a=-1$，收敛域 $(-1,+\infty)$ | confirmed_personal：The ratio had already been formed correctly; the first failure was evaluating the 1^infinity factor by direct substitution. | one_power_infinity_ratio_step_repaired |
+| [GS-517](http://127.0.0.1:8765/open/GS-517) | absolute convergence, conditional convergence, divergence, or indeterminate | 无穷级数、幂级数、幂级数收敛半径、幂级数收敛域、阿贝尔定理、幂级数逐项求导、条件收敛 | A（在 $x=2$ 处绝对收敛） | confirmed_personal：The user did not establish R=2 from the conditional endpoint and therefore had no entry into the transformed series. | conditional_endpoint_radius_transfer_repaired |
+| [GS-518](http://127.0.0.1:8765/open/GS-518) | complete convergence domain | 无穷级数、幂级数、幂级数收敛域、级数拆项、广义调和级数、p级数、交错级数、莱布尼茨判别法、等比级数 | $[-1,1)$ | confirmed_personal：The user kept the sum coefficient as one object and did not split it after the overall endpoint test became inconclusive. | wrong_problem_detail_body_fully_replaced |
+| [GS-519](http://127.0.0.1:8765/open/GS-519) | sum function and its interval of validity | 无穷级数、幂级数、幂级数和函数、幂级数乘法、常用幂级数展开式、几何级数、对数级数展开、幂级数系数提取 | $\dfrac{-\ln(1-x)}{1-x}$，$-1<x<1$ | confirmed_personal：The user did not map the harmonic partial-sum coefficient to a Cauchy product and therefore could not invoke the mother expansions. | cauchy_product_coefficient_recognition_repaired |
+
+## 逐题复核
+
+### GS-500 57941 全部渐近线清单
+
+- 题目：求曲线 y=sqrt(4x^2+x)·ln(2+1/x) 的全部渐近线。
+- 所问：列出所有垂直、水平或斜渐近线，不能只给一个无穷远方向。
+- 知识点：一元函数微分学应用；极限与连续；渐近线；无穷远极限；等价无穷小
+- 第一动作：先联立根号与对数的定义域条件，列出定义域端点、x→+∞、x→-∞ 三类检查位置。
+- 答案：定义域为 \((-\infty,-\frac12)\cup(0,+\infty)\)。全部渐近线为 \(x=-\frac12\)，\(y=2(\ln2)x+1+\frac{\ln2}{4}\)，\(y=-2(\ln2)x-1-\frac{\ln2}{4}\)。
+- 个人错因边界：confirmed_personal；没有先建立“全部渐近线”检查清单，只算正无穷方向，漏掉垂直渐近线和负无穷方向。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 联立 4x^2+x≥0 与 2+1/x>0，得定义域 (-∞,-1/2)∪(0,∞)，并检查端点 -1/2、0 以及正负无穷。
+  - x→-1/2^- 时对数趋 -∞ 而根式趋正的有限值，得到垂直渐近线 x=-1/2；x=0 不是垂直渐近线。
+  - 分别在 x→+∞ 与 x→-∞ 计算斜率及截距，得 y=2ln2·x+1+ln2/4 与 y=-2ln2·x-1-ln2/4。
+- 质量发现：
+  - `evidence_provenance_and_relation_cleanup`：求曲线 y=sqrt(4x^2+x)·ln(2+1/x) 的全部渐近线。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；evidence_provenance_and_relation_cleanup。；建议：
+  - `unconfirmed_external_breakpoint_strong_edges_downgraded`：至少一个外部候选端点的个人断点证据仍为 pending_user_confirmation、legacy_unclassified，或身份冻结；因此不写入普通 related 强边。；建议：
+- 关系裁决：
+  - GS-017：`remove`；GS-017 断在正负无穷整体趋向和渐近线类型判断；GS-500 断在未先列定义域端点与正负无穷的完整清单，具体对象和个人断点不同。
+  - GS-025：`remove`；GS-025 已进入斜渐近线截距计算但展开阶数不足；GS-500 是在截距前就漏掉垂直及负无穷方向，第一断点不同。
+  - GS-151：`blocked_candidate`；blocked_until_external_endpoint_is_independently_reviewed
+  - GS-151：`remove`；两题都高度依赖“定义域端点+正负无穷”全清单，且候选漏项相似；但 GS-151 个人断点为 legacy_unclassified，必须移除正式边并保留为待确认候选。
+- 当前快照：`stale`；正式卡 `9c1f08451fb4757b302b905a5bfba185a8a0d327d90c0d73eb82cbaf421b62da`；唯一图片 1 个；物理路径 1 个。
+
+### GS-501 19516 交错级数有理化拆项
+
+- 题目：判断级数 Σ_{n=2}^∞ (-1)^n/[sqrt(n)+(-1)^n] 的敛散性。
+- 所问：给出收敛或发散结论，并说明判别依据。
+- 知识点：无穷级数；数项级数敛散性判别；交错级数；莱布尼茨判别法；调和级数；根式有理化；级数拆项
+- 第一动作：先抽出正项部分检查莱布尼茨条件；发现奇偶跳变后立即对原通项有理化。
+- 答案：发散。
+- 个人错因边界：confirmed_personal；把交错级数机械等同于可直接套莱布尼茨，没有先检查正项部分单调性；比较不等号方向也不稳。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 对原通项分母有理化，得到 (-1)^n(sqrt(n)-(-1)^n)/(n-1)=(-1)^n sqrt(n)/(n-1)-1/(n-1)。
+  - 第一部分为收敛交错级数，第二部分为发散调和尾项，因此原级数发散。
+- 质量发现：
+  - `corrupt_harmonic_latex_and_relation_cleanup`：判断级数 Σ_{n=2}^∞ (-1)^n/[sqrt(n)+(-1)^n] 的敛散性。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；corrupt_harmonic_latex_and_relation_cleanup。；建议：
+- 关系裁决：
+  - GS-502：`remove`；GS-501 先检查非标准正项部分的单调性并有理化；GS-502 先把奇偶下标目标拆成收敛部分减奇数正项部分，具体对象和断点不同。
+  - GS-505：`remove`；GS-501 断在机械套莱布尼茨和未有理化；GS-505 断在条件收敛只写绝对发散而漏原级数收敛，第一动作与断点不同。
+  - GS-511：`remove`；GS-511 是缺项幂级数漏掉 x^(2n) 后做比值并检查端点；GS-501 是常数项级数的正项单调与有理化，只有交错标签重合。
+  - GS-598：`remove`；GS-598 要提出根号主量并作二项式展开；GS-501 要对含奇偶扰动的线性根式分母有理化，首个动作和个人断点不同。
+  - GS-599：`remove`；GS-599 先把正弦角拆到 nπ 附近制造交错因子；GS-501 是正项单调检查和有理化，具体对象不同。
+  - GS-607：`remove`；GS-607 先凑 (n+1)-2 拆有理因子；GS-501 先检查单调并有理化根式分母，拆项来源与断点不同。
+- 当前快照：`stale`；正式卡 `83121691535d8387e8e4b27bb1d77a454e549f86818aa53ce883efc96a99df67`；唯一图片 1 个；物理路径 1 个。
+
+### GS-502 102347 条件收敛奇偶拆分 2026.6.15
+
+- 题目：已知 Σ(-1)^(n-1)u_n 条件收敛且 u_n>0，判断 Σ(u_{2n}-2u_{2n-1}) 的敛散性。
+- 所问：在四个敛散性选项中选择正确结论并给出拆分证明。
+- 知识点：无穷级数；数项级数敛散性判别；交错级数；条件收敛；奇偶项拆分；级数拆项；正项级数发散；条件收敛正负项拆分
+- 第一动作：先写 u_{2n}-2u_{2n-1}=(u_{2n}-u_{2n-1})-u_{2n-1}。
+- 答案：A，发散。
+- 个人错因边界：confirmed_personal；前两次错误事件分别断在未拆奇偶项，以及混淆数列与级数、误反推单调并缺少奇数项发散的严谨证明。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 把目标部分和拆成 Σ(u_{2n}-u_{2n-1})-Σu_{2n-1}；第一项是原收敛交错级数的偶数部分和。
+  - 由条件收敛可知 Σu_n 发散；结合交错部分和收敛，用有限部分和等式证明奇数正项部分和发散到 +∞，故目标部分和趋 -∞，选 A。
+- 质量发现：
+  - `repeat_count_and_partial_sum_rigor_repaired`：已知 Σ(-1)^(n-1)u_n 条件收敛且 u_n>0，判断 Σ(u_{2n}-2u_{2n-1}) 的敛散性。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；repeat_count_and_partial_sum_rigor_repaired。；建议：
+- 关系裁决：
+  - GS-501：`remove`；GS-501 先检查非标准正项部分的单调性并有理化；GS-502 先把奇偶下标目标拆成收敛部分减奇数正项部分，具体对象和断点不同。
+  - GS-504：`remove`；GS-502 是条件收敛奇偶正项分拆；GS-504 是把两个题设通项配成乘积并用有界因子，具体对象、第一动作和个人断点不同。
+  - GS-505：`remove`；GS-502 断在奇偶项拆分与数列/级数边界；GS-505 断在参数条件少写原交错级数收敛，不能由共同的条件收敛标签连强边。
+  - GS-598：`remove`；GS-598 以根式主量提取和 Taylor 展开为入口；GS-502 以奇偶项代数拆分为入口，具体动作不同。
+  - GS-606：`remove`；GS-606 拆分子两项并化成等比尾项加调和项；GS-502 拆奇偶下标并用条件收敛的正负项结构，个人断点不同。
+  - GS-607：`remove`；GS-607 凑有理因子拆主项与绝对收敛余项；GS-502 拆奇偶正项并证明奇数项和发散，首个动作不同。
+- 当前快照：`stale`；正式卡 `a89aa44b5de9ffc06a0598e05cb92b31c1a8faca16bb8a5fd0dda9ec5dd315cc`；唯一图片 3 个；物理路径 5 个。
+
+### GS-503 78385 有界因子望远镜绝对收敛
+
+- 题目：判断 Σ(1/sqrt(n)-1/sqrt(n+1))sin(n+k) 的敛散性，其中 k 为常数。
+- 所问：判定绝对收敛、条件收敛或发散。
+- 知识点：无穷级数；数项级数敛散性判别；任意项级数；绝对收敛；正项级数比较判别法；望远镜级数；有界函数放缩
+- 第一动作：先取绝对值并写 |sin(n+k)|≤1，把通项压到正的望远镜差。
+- 答案：A，绝对收敛。
+- 个人错因边界：confirmed_personal；被 sin(n+k) 的符号变化带去找交错性，没有先检查绝对收敛；比较判别方向也曾倒置。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 取绝对值并用 |sin(n+k)|≤1。
+  - 上界 Σ(1/sqrt(n)-1/sqrt(n+1)) 是收敛望远镜级数，因此原级数绝对收敛。
+- 质量发现：
+  - `evidence_provenance_and_incoming_relation_cleanup`：判断 Σ(1/sqrt(n)-1/sqrt(n+1))sin(n+k) 的敛散性，其中 k 为常数。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；evidence_provenance_and_incoming_relation_cleanup。；建议：
+- 关系裁决：
+  - GS-504：`remove`；GS-503 先取绝对值并用有界正弦压到望远镜差；GS-504 先配成题设两通项乘积，具体比较对象和断点不同。
+  - GS-564：`remove`；GS-564 用中值定理把 f'(n) 放进函数值差并形成望远镜上界；GS-503 的首个动作是绝对值与有界因子，只有望远镜标签重合。
+  - GS-566：`remove`；GS-566 的首个断点就是未直接识别相邻差望远镜；GS-503 已有显式望远镜差，断在未先取绝对值控制振荡因子，个人断点不同。
+  - GS-568：`remove`；GS-568 要把“一定收敛”翻译为统一上界或反例；GS-503 是对具体有界因子作绝对值比较，题目对象与第一动作不同。
+- 当前快照：`stale`；正式卡 `a67d4bdedaa33a5bc66c327b0bc82a8e38b9c0b20b7e6ea26e15fc2e8925dc86`；唯一图片 1 个；物理路径 1 个。
+
+### GS-504 102355 乘积配项绝对收敛
+
+- 题目：已知 Σn u_n 绝对收敛且 Σ(v_n/n) 条件收敛，判断给出的组合级数中哪个结论成立。
+- 所问：从四个组合级数命题中选出必然正确者。
+- 知识点：无穷级数；数项级数敛散性判别；任意项级数；绝对收敛；条件收敛；正项级数比较判别法；级数收敛必要条件；收敛数列有界性
+- 第一动作：先把 |u_nv_n| 配成 |nu_n|·|v_n/n|。
+- 答案：B，\(\sum u_nv_n\) 绝对收敛。
+- 个人错因边界：confirmed_personal；条件收敛定义记反，且没有把目标项配成题面给出的 (nu_n)(v_n/n)。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 由 Σ(v_n/n) 收敛得 v_n/n→0，故序列 v_n/n 有界。
+  - 写 |u_nv_n|=|nu_n|·|v_n/n|，用有界因子控制和 Σ|nu_n| 收敛，得 Σu_nv_n 绝对收敛，选 B。
+- 质量发现：
+  - `detail_premise_miscopy_repaired`：已知 Σn u_n 绝对收敛且 Σ(v_n/n) 条件收敛，判断给出的组合级数中哪个结论成立。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；detail_premise_miscopy_repaired。；建议：
+  - `unconfirmed_external_breakpoint_strong_edges_downgraded`：至少一个外部候选端点的个人断点证据仍为 pending_user_confirmation、legacy_unclassified，或身份冻结；因此不写入普通 related 强边。；建议：
+- 关系裁决：
+  - GS-502：`remove`；GS-502 是条件收敛奇偶正项分拆；GS-504 是把两个题设通项配成乘积并用有界因子，具体对象、第一动作和个人断点不同。
+  - GS-503：`remove`；GS-503 先取绝对值并用有界正弦压到望远镜差；GS-504 先配成题设两通项乘积，具体比较对象和断点不同。
+  - GS-505：`remove`；GS-504 是目标乘积配题设通项；GS-505 是参数型条件收敛的双条件清单，具体对象和个人断点不同。
+  - GS-568：`remove`；GS-568 处理任意正项级数命题并构造反例；GS-504 处理确定的乘积配项与有界因子，第一动作不同。
+  - GS-589：`blocked_candidate`；blocked_until_external_endpoint_is_independently_reviewed
+  - GS-589：`remove`；GS-589 与 GS-504 的乘积配项对象、第一动作和候选个人断点高度一致；但 GS-589 尚未完成本轮独立 evidence_origin 收口，正式边先移除并列阻塞候选。
+  - GS-590：`remove`；GS-590 先构造 d_n=b_n-a_n 并做绝对收敛双向控制；GS-504 先配成 (nu_n)(v_n/n)，具体结构和断点不同。
+- 当前快照：`stale`；正式卡 `4e1da04f5cd2a79f2c3e9a40936ccb3dcdab2033f41052e16da8faf04032be5c`；唯一图片 1 个；物理路径 1 个。
+
+### GS-505 30185 交错p级数条件收敛范围
+
+- 题目：求交错级数 Σ(-1)^(n+1)(sqrt(n+1)-sqrt(n))/n^p 条件收敛时参数 p 的范围。
+- 所问：给出参数 p 的精确区间并检查两端点。
+- 知识点：无穷级数；数项级数敛散性判别；任意项级数；交错级数；绝对收敛；条件收敛；莱布尼茨判别法；p级数；参数型p级数；级数收敛必要条件；等价通项比较；等价无穷小；根式有理化
+- 第一动作：先有理化根式差并令 α=p+1/2，再同时写原级数收敛与绝对值级数发散。
+- 答案：\(-\frac12<p\le\frac12\)。
+- 个人错因边界：confirmed_personal；连续两次只写绝对值级数发散的上界条件，漏掉原交错级数收敛所需的 α>0。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 有理化得 sqrt(n+1)-sqrt(n)~1/(2sqrt(n))，令 α=p+1/2。
+  - 原交错级数收敛要求 α>0，绝对值级数发散要求 α≤1；合并为 -1/2<p≤1/2。
+- 质量发现：
+  - `repeat_provenance_and_relation_cleanup`：求交错级数 Σ(-1)^(n+1)(sqrt(n+1)-sqrt(n))/n^p 条件收敛时参数 p 的范围。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；repeat_provenance_and_relation_cleanup。；建议：
+- 关系裁决：
+  - GS-501：`remove`；GS-501 断在机械套莱布尼茨和未有理化；GS-505 断在条件收敛只写绝对发散而漏原级数收敛，第一动作与断点不同。
+  - GS-502：`remove`；GS-502 断在奇偶项拆分与数列/级数边界；GS-505 断在参数条件少写原交错级数收敛，不能由共同的条件收敛标签连强边。
+  - GS-504：`remove`；GS-504 是目标乘积配题设通项；GS-505 是参数型条件收敛的双条件清单，具体对象和个人断点不同。
+  - GS-558：`remove`；GS-558 先把 a^(ln n) 化成 n^(ln a)，断在指数恒等变形；GS-505 先有理化根式差并补齐条件收敛双条件，个人断点不同。
+  - GS-560：`remove`；GS-560 是两个趋 1 项相减时同步展开到二阶并处理抵消；GS-505 是根式差一阶有理化后检查条件收敛范围，首个动作不同。
+  - GS-565：`remove`；GS-565 断在把有理化后的整体取任意实数 p 次方解释清楚；GS-505 断在漏掉原交错级数收敛条件，个人断点不同。
+  - GS-566：`remove`；GS-566 先写有限部分和望远镜；GS-505 先估根式差并列条件收敛双条件，只共享参数/级数大类。
+  - GS-567：`remove`；GS-567 断在偏离目标、未把 a_n 与 1/n² 作极限比较；GS-505 断在参数范围少一个条件，具体对象与断点不同。
+  - GS-589：`remove`；GS-589 是抽象乘积配项；GS-505 是参数型交错 p 级数双条件，只有级数章节重合。
+  - GS-598：`remove`；GS-598 断在根式扰动的主量提取和 Taylor 展开；GS-505 断在条件收敛范围合并，第一动作不同。
+  - GS-599：`remove`；GS-599 先把正弦角拆到整数倍 π 附近并判断小量阶；GS-505 先有理化根式差，具体对象不同。
+  - GS-607：`remove`；GS-607 先凑有理因子拆成条件收敛主项与绝对收敛余项；GS-505 先化成参数 p 级数并合并边界，断点不同。
+- 当前快照：`stale`；正式卡 `e2a10eb2d3a03fe08f716d29fcc738e75ace83148a5cf57163b1fed9b66912ce`；唯一图片 1 个；物理路径 1 个。
+
+### GS-506 57844 交叉乘反推商函数
+
+- 题目：已知 f''<0、f(0)=0 且 0<a<x<b，判断涉及 af(x)、xf(a)、bf(x)、xf(b) 的交叉乘不等式。
+- 所问：选出由凹性必然推出的交叉乘不等式。
+- 知识点：一元函数微分学应用；中值定理；拉格朗日中值定理；函数值不等式；辅助函数构造；二阶导数判单调性；凹凸性与拐点
+- 第一动作：先同除正数，把交叉乘结构改写成 f(a)/a、f(x)/x、f(b)/b 的比较。
+- 答案：B
+- 个人错因边界：confirmed_personal；没有由选项的交叉相乘反推 f(t)/t，误构造 t f(t)。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 把交叉乘不等式同除正数，转成 f(t)/t 在 a<x<b 上的比较。
+  - 由 f''<0、f(0)=0 可用凹性或中值定理证明 f(t)/t 严格递减，故 f(a)/a>f(x)/x>f(b)/b，选 B。
+- 质量发现：
+  - `evidence_provenance_and_relation_cleanup`：已知 f''<0、f(0)=0 且 0<a<x<b，判断涉及 af(x)、xf(a)、bf(x)、xf(b) 的交叉乘不等式。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；evidence_provenance_and_relation_cleanup。；建议：
+- 关系裁决：
+  - GS-224：`remove`；虽都研究 f(x)/x，GS-224 的候选入口是在 [0,x] 上用中值定理且个人断点待确认；GS-506 是从选项交叉乘反推商函数，第一动作不同。
+  - GS-514：`remove`；GS-514 由凸性端点弦线不等式开始，个人错误是乘负数漏变号；GS-506 从选项反推商函数，第一动作和断点不同。
+  - GS-541：`remove`；GS-541 先设内部加权点并在两段用中值定理；GS-506 先同除交叉乘项构造 f(t)/t，具体对象不同。
+  - GS-542：`remove`；GS-542 先把行列式翻译成相邻割线斜率；GS-506 先把交叉乘不等式翻译成商函数，虽同属凸性但不是同一动作或断点。
+  - GS-564：`remove`；GS-564 以 [n-1,n] 上中值定理构造望远镜上界；GS-506 以选项交叉乘反推商函数，只有 f'' 定号大类相同。
+- 当前快照：`stale`；正式卡 `3f2cc2e1487629edac7359b00fca577c80bc3caa542591d72f5179232ae02cd1`；唯一图片 1 个；物理路径 1 个。
+
+### GS-507 170727 洛必达反用极值判断
+
+- 题目：已知 f 在 0 的邻域可导且 lim_{x→0}f(x)/x^2=1，判断 f(0)、f'(0) 与局部极值结论。
+- 所问：选出关于函数值、导数值和局部极值的正确结论。
+- 知识点：一元函数微分学应用；导数定义；极限与连续；极限保号性；局部极值；等价无穷小；洛必达法则使用条件
+- 第一动作：不得反用洛必达；先由连续性确定 f(0)=0，再分别走导数定义与极限保号。
+- 答案：D
+- 个人错因边界：confirmed_personal；把洛必达法则反向使用，试图由原函数比值极限推出导数比值极限。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 由可导必连续及给定极限得 f(0)=0。
+  - 按导数定义 f'(0)=lim f(x)/x=lim x·f(x)/x^2=0；极限保号给出充分小的非零 x 有 f(x)>0=f(0)，故 f(0) 为局部极小值，选 D。
+- 质量发现：
+  - `generic_method_gap_template_replaced`：已知 f 在 0 的邻域可导且 lim_{x→0}f(x)/x^2=1，判断 f(0)、f'(0) 与局部极值结论。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；generic_method_gap_template_replaced。；建议：
+- 关系裁决：
+  - GS-049：`remove`；两题都用邻域保号判极值，但 GS-049 断在未进入函数值比较，GS-507 的首个错误是反用洛必达推导导数比值；个人断点不同。
+  - GS-098：`remove`；GS-098 是对数真数同阶化简并且端点仍待用户确认；GS-507 是禁止反用洛必达后走连续性与导数定义，第一动作和证据均不满足强边门槛。
+  - GS-127：`remove`；GS-127 的对象是切线截距公式和两个导数定义型极限；GS-507 的对象是 f(x)/x² 极限的保号与反用洛必达，具体动作不同。
+  - GS-138：`remove`；GS-138 是等价无穷小能否求导的 legacy 候选断点；GS-507 有明确的反用洛必达事件，且前者不是 user_confirmed。
+  - GS-537：`remove`；GS-537 已知极值点后分类检查二阶导和特殊点；GS-507 是由 f(x)/x² 极限禁止反用洛必达并用保号性判极小，具体入口不同。
+  - GS-540：`remove`；GS-540 区分切线动点与切点并求 x 轴截距；GS-507 是连续性、导数定义和保号性，题目对象完全不同。
+- 当前快照：`stale`；正式卡 `e57f31239c0533ded97e1ac69f20c3af49fd725e709b1963849f255df7af6e4f`；唯一图片 1 个；物理路径 1 个。
+
+### GS-508 58023 四阶导泰勒判极大
+
+- 题目：已知 f 四阶连续可导，f'(x0)=f''(x0)=f'''(x0)=0 且 f^(4)(x0)<0，判断 x0 的局部形态。
+- 所问：判断 x0 是极大点、极小点、拐点或均不能确定。
+- 知识点：一元函数微分学应用；泰勒公式；高阶导数判定极值；局部极值；函数局部形态；连续函数局部保号性
+- 第一动作：先写到首个非零阶的 Taylor-Lagrange 余项，并对四阶导与四次幂定号。
+- 答案：B，\(f(x)\) 在 \(x_0\) 处取得极大值。
+- 个人错因边界：confirmed_personal；不是结论性计算错误，而是入口过慢：未优先识别首个非零高阶导数对应的 Taylor 判别。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 四阶导连续且在 x0 为负，故 x0 邻域内四阶导仍为负。
+  - Taylor-Lagrange 余项给 f(x)-f(x0)=f^(4)(ξ)(x-x0)^4/4!<0，故 x0 为严格局部极大点，选 B。
+- 质量发现：
+  - `slow_entry_event_boundary_recorded`：已知 f 四阶连续可导，f'(x0)=f''(x0)=f'''(x0)=0 且 f^(4)(x0)<0，判断 x0 的局部形态。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；slow_entry_event_boundary_recorded。；建议：
+- 当前快照：`stale`；正式卡 `224ba4a8ae93fb392a8a1e1335cd3bb9fb23c2d2632f5dce86059b391166a93d`；唯一图片 1 个；物理路径 1 个。
+
+### GS-509 58085 无穷远导数函数极限命题判断
+
+- 题目：判断无穷远处函数极限与导数极限之间四个“若……则必有……”命题中必然成立者。
+- 所问：先排除非必然命题，再证明唯一必然命题。
+- 知识点：一元函数微分学应用；无穷远极限；导数极限；函数极限；拉格朗日中值定理；极限保号性
+- 第一动作：先用最简单函数逐项找反例，排不掉的命题再证明。
+- 答案：D
+- 个人错因边界：confirmed_personal；把“必有”型选择题直接当证明题，没有先用反例筛选。
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 用 f(x)=x 排除 A、C，用 f(x)=e^{-x} 排除 B。
+  - 对 D，由 f'(x)→+∞ 取充分大 X 后 f'(x)>1；在 [X,x] 上用拉格朗日中值定理得 f(x)>f(X)+x-X→+∞。
+- 质量发现：
+  - `counterexample_first_action_and_relation_cleanup`：判断无穷远处函数极限与导数极限之间四个“若……则必有……”命题中必然成立者。：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；counterexample_first_action_and_relation_cleanup。；建议：
+- 关系裁决：
+  - GS-040：`remove`；两题都可用反例，但 GS-040 是数列不等式的单侧逼近方向，GS-509 是函数/导数无穷远命题并断在反例优先级；具体对象不同。
+  - GS-103：`remove`；GS-103 区分点处导数与去心导函数极限且个人断点待确认；GS-509 是无穷远必然命题的反例筛选，具体对象、第一动作和证据均不同。
+  - GS-226：`remove`；GS-226 直接证明单个导数极限蕴含函数极限且个人断点待确认；GS-509 的个人断点是整组必然命题没有先反例筛选，不是同一第一动作。
+- 当前快照：`stale`；正式卡 `577438bbe97eb2c276b088b970682f9a581aed944a278ee2d9aa12203aa997ab`；唯一图片 1 个；物理路径 1 个。
+
+### GS-510 102383 调和部分和收敛半径
+
+- 题目：Given a_n=sum_{k=1}^n 1/k, find the convergence radius of sum_{n>=1} a_n x^n.
+- 所问：convergence radius
+- 知识点：无穷级数；幂级数；幂级数收敛半径；部分和数列；调和级数
+- 第一动作：Translate the summation definition into a harmonic partial sum, then bound 1<=a_n<=n before applying the radius formula.
+- 答案：\(\boxed{1}\)。
+- 个人错因边界：confirmed_personal；The user treated the partial sum as its last summand, so the coefficient object was misidentified before any radius calculation.
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - Recognize a_n as the harmonic partial-sum sequence rather than its last term.
+  - Use 1<=a_n<=n, hence the n-th root of a_n tends to 1.
+  - Apply Cauchy-Hadamard to obtain R=1.
+- 质量发现：
+  - `partial_sum_object_and_visual_binding_repaired`：Given a_n=sum_{k=1}^n 1/k, find the convergence radius of sum_{n>=1} a_n x^n.：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；partial_sum_object_and_visual_binding_repaired。；建议：
+- 关系裁决：
+  - GS-481：`add`；GS-481 把 S_(2n+1) 误读为奇数项之和，GS-510 把 H_n 误读为 1/n；两端现均有日期化 user_confirmed wrong_history，严格四门槛全部通过。
+  - GS-511：`remove`；Harmonic partial-sum coefficient identification is not the same object or action as whole-term ratio testing of an even-power sparse series.
+  - GS-517：`remove`；GS-510 identifies and bounds a coefficient sequence; GS-517 uses a conditionally convergent endpoint to infer a radius and transfer it to a new center.
+  - GS-518：`remove`；A harmonic partial-sum coefficient radius problem differs from splitting a two-component coefficient and intersecting endpoint domains.
+- 当前快照：`stale`；正式卡 `236844c7db52f0f98ed412a87e6c02730ea85c544b74d461c34b8983ff21d8af`；唯一图片 1 个；物理路径 1 个。
+
+### GS-511 102386 缺项幂级数收敛域
+
+- 题目：Find the convergence domain of sum_{n>=1} (-1)^(n-1)x^(2n)/(2n-1).
+- 所问：complete convergence domain including endpoints
+- 知识点：无穷级数；幂级数；幂级数收敛域；缺项幂级数；比值判别法；莱布尼茨判别法；交错级数
+- 第一动作：Define the full u_n(x), ratio-test the complete term, and then check both endpoints in the original series.
+- 答案：\(\boxed{[-1,1]}\)。
+- 个人错因边界：confirmed_personal；The user dropped the variable factor by ratio-testing only (-1)^(n-1)/(2n-1).
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - Treat the complete term as u_n(x) and compute the absolute adjacent-term ratio, which tends to x^2.
+  - Obtain the open interval |x|<1.
+  - At x=1 and x=-1, x^(2n)=1 and both endpoint series are the same convergent alternating odd-harmonic series, so the domain is [-1,1].
+- 质量发现：
+  - `complete_term_ratio_and_endpoint_review_repaired`：Find the convergence domain of sum_{n>=1} (-1)^(n-1)x^(2n)/(2n-1).：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；complete_term_ratio_and_endpoint_review_repaired。；建议：
+  - `unconfirmed_external_breakpoint_strong_edges_downgraded`：至少一个外部候选端点的个人断点证据仍为 pending_user_confirmation、legacy_unclassified，或身份冻结；因此不写入普通 related 强边。；建议：
+- 关系裁决：
+  - GS-501：`remove`；GS-511 是缺项幂级数漏掉 x^(2n) 后做比值并检查端点；GS-501 是常数项级数的正项单调与有理化，只有交错标签重合。
+  - GS-510：`remove`；Harmonic partial-sum coefficient identification is not the same object or action as whole-term ratio testing of an even-power sparse series.
+  - GS-512：`remove`；Whole-term ratio testing of a sparse series and termwise integration followed by endpoint rechecking are different concrete operations.
+  - GS-516：`remove`；Both use ratios, but GS-511 omits x^(2n), while GS-516 correctly forms the ratio and then mis-evaluates a 1^infinity factor.
+  - GS-517：`remove`；A sparse whole-term ratio problem is not the conditional-endpoint radius-transfer problem.
+  - GS-518：`remove`；GS-511 must include the variable power in a ratio; GS-518 must split two coefficient components after an endpoint test stalls.
+  - GS-544：`blocked_candidate`；blocked_until_external_endpoint_is_independently_reviewed
+  - GS-544：`remove`；Both cards use the exact series sum (-1)^(n-1)x^(2n)/(2n-1), require the complete-term ratio, and record failure to carry x^(2n); the only failed gate is current user-confirmed evidence at GS-544.
+  - GS-549：`remove`；GS-549 differentiates and reintegrates a composite arctangent and checks function-domain endpoints; it is not the sparse whole-term ratio task.
+- 当前快照：`stale`；正式卡 `be15c7333a4cc122f136989f5f6328d9188aa98cf55a1fee597bc9e95bc28ff9`；唯一图片 1 个；物理路径 1 个。
+
+### GS-512 102389 逐项积分收敛域
+
+- 题目：For f(x)=sum_{n>=0}x^n and g(x)=integral_0^x f(t)dt, choose the convergence domains of f and g.
+- 所问：the two complete convergence domains and the corresponding option
+- 知识点：无穷级数；幂级数；幂级数收敛域；幂级数逐项积分；变上限积分；交错级数；莱布尼茨判别法
+- 第一动作：Write the termwise-integrated series explicitly, then treat it as a new power series and independently test its endpoints.
+- 答案：B；\(f(x)\) 的收敛域为 \((-1,1)\)，\(g(x)\) 的收敛域为 \([-1,1)\)。
+- 个人错因边界：confirmed_personal；The user stopped after recognizing the integral and did not produce the new series/endpoints transaction.
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - The geometric series f has domain (-1,1).
+  - Termwise integration gives g(x)=sum_{n>=0}x^(n+1)/(n+1) with the same radius.
+  - Recheck endpoints: g(-1) is alternating harmonic and converges, while g(1) is harmonic and diverges, hence g has domain [-1,1) and option B is correct.
+- 质量发现：
+  - `termwise_integration_and_endpoint_review_repaired`：For f(x)=sum_{n>=0}x^n and g(x)=integral_0^x f(t)dt, choose the convergence domains of f and g.：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；termwise_integration_and_endpoint_review_repaired。；建议：
+- 关系裁决：
+  - GS-511：`remove`；Whole-term ratio testing of a sparse series and termwise integration followed by endpoint rechecking are different concrete operations.
+  - GS-518：`remove`；Termwise integration and new endpoint testing are not coefficient splitting and domain intersection.
+  - GS-519：`remove`；Although both touch logarithmic power series, GS-512 integrates a geometric series while GS-519 recognizes a Cauchy-product coefficient.
+  - GS-521：`remove`；The resulting logarithmic series is equivalent, but GS-512 must integrate a given f and recheck endpoints, whereas GS-521 must differentiate a target S to derive the mother formula.
+  - GS-522：`remove`；GS-522 differentiates a geometric series to sum n x^n and confuses numerator/denominator n templates; GS-512 integrates the geometric series.
+  - GS-544：`remove`；GS-544's object is the arctangent-type sparse series; its whole-term ratio and later integral-to-sum actions do not match GS-512's direct integration of the geometric series.
+  - GS-549：`remove`；Both use termwise calculus, but the composite-arctangent transcription/endpoint breakpoint is different from producing g's integrated series.
+  - GS-611：`remove`；GS-611 already splits two components and then makes inequality, endpoint, intersection, and integration-sign errors; that is not GS-512's first missing termwise-integration action.
+- 当前快照：`stale`；正式卡 `7ce7562039faacc980bae19b37ae9c98d3ba6a198ac65dc5d9b00ffe30b988d1`；唯一图片 1 个；物理路径 1 个。
+
+### GS-513 57720 含参方程根个数 2026.5.29
+
+- 题目：For x nonzero, determine the k-range for which kx+1/x^2=1 has exactly one real root.
+- 所问：parameter range and option
+- 知识点：一元函数微分学应用；方程根个数；单调性与极值；零点定理
+- 第一动作：Use x nonzero to multiply the equation by x^2, form the cubic, and branch k=0 before the derivative analysis.
+- 答案：A，即 $|k|>\dfrac{2\sqrt3}{9}$
+- 个人错因边界：confirmed_personal；The user stayed with the fractional equation and differentiated 1/x^2 instead of first performing the equivalent polynomial transformation.
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - Use x nonzero to multiply by x^2 and obtain the equivalent cubic F(x)=kx^3-x^2+1.
+  - Handle k=0 separately; it gives two roots.
+  - For k nonzero, use F'(x)=x(3kx-2), evaluate F at 0 and 2/(3k), and require the nonzero extremum to remain strictly positive; this gives |k|>2sqrt(3)/9.
+- 质量发现：
+  - `generic_method_gap_template_replaced_with_cubic_branching`：For x nonzero, determine the k-range for which kx+1/x^2=1 has exactly one real root.：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；generic_method_gap_template_replaced_with_cubic_branching。；建议：
+- 当前快照：`stale`；正式卡 `1dfa0e85752ed414a265ca62a105846ef9b2097098cc4abde48c65de7bc26614`；唯一图片 1 个；物理路径 1 个。
+
+### GS-514 170676 凸性端点不等式判断
+
+- 题目：Under f''>0 and f(0)=f(1) on [0,1], determine which of four endpoint-chord inequalities hold for x in (0,1).
+- 所问：the correct pair of statements and option
+- 知识点：一元函数微分学应用；凹凸性与拐点；二阶导数判凹凸性；函数值不等式
+- 第一动作：Write the strict endpoint-chord inequality, reduce to a positive difference d, and audit every sign reversal during equivalent transformations.
+- 答案：D，即命题 (1)(3) 正确，(2)(4) 错误。
+- 个人错因边界：confirmed_personal；The convexity step was already correct; the first failure occurred later when multiplying by -1 without reversing the inequality.
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - Strict convexity gives f(x)<(1-x)f(0)+xf(1)=f(0)=f(1).
+  - Set d=f(0)-f(x)>0, so f(x)-f(0)=-d and f(1)-f(x)=d.
+  - Substitution shows statements (1) and (3) are true and (2),(4) false, hence D.
+- 质量发现：
+  - `negative_sign_audit_and_visual_binding_repaired`：Under f''>0 and f(0)=f(1) on [0,1], determine which of four endpoint-chord inequalities hold for x in (0,1).：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；negative_sign_audit_and_visual_binding_repaired。；建议：
+- 关系裁决：
+  - GS-183：`remove`；GS-183 concerns midpoint concavity plus inverse-function area and fails before chord/area setup; GS-514 concerns a direct convex endpoint inequality and fails only at a later negative-sign check.
+  - GS-506：`remove`；GS-514 由凸性端点弦线不等式开始，个人错误是乘负数漏变号；GS-506 从选项反推商函数，第一动作和断点不同。
+  - GS-525：`remove`；Reading extrema/inflection counts from an f' graph is unrelated to a convex endpoint inequality sign audit.
+  - GS-541：`remove`；Both concern strict convexity, but GS-541 fails before setting the weighted point and two MVT intervals; GS-514 has already completed convexity and fails only at a later multiplication-by-negative check.
+  - GS-542：`remove`；GS-542 translates a determinant into adjacent secant slopes and takes derivative limits; GS-514 substitutes a positive endpoint difference and checks signs.
+- 当前快照：`stale`；正式卡 `a5e2211bf03606db95a9e60a9e2863993e96b80f0e5cafddab3aaf448d7ba53d`；唯一图片 1 个；物理路径 1 个。
+
+### GS-515 170678 一阶线性微分不等式积分因子 2026.5.29
+
+- 题目：For f'-p(x)f>0, f(0)>=0, and positive continuous p on [0,+infinity), order f(0), f(a), f(b) for 0<a<b.
+- 所问：the necessarily true order and option
+- 知识点：一元函数微分学应用；微分不等式；辅助函数构造；积分因子；一阶线性微分方程
+- 第一动作：Construct the positive integrating factor e^(-integral p) and rewrite the differential inequality as a positive product derivative.
+- 答案：A，即 $f(0)<f(a)<f(b)$
+- 个人错因边界：confirmed_personal；The user tried to infer f'>0 directly although f's sign was not yet known, rather than constructing the integrating-factor auxiliary function.
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - Let P(x)=integral_0^x p(t)dt and Phi(x)=e^(-P(x))f(x).
+  - Then Phi'(x)=e^(-P(x))[f'(x)-p(x)f(x)]>0, so Phi is increasing and Phi(x)>Phi(0)=f(0)>=0 for x>0.
+  - Since e^(P(x)) is positive and strictly increasing, f(x)=e^(P(x))Phi(x) is strictly increasing on positive x and f(0)<f(a)<f(b), option A.
+- 质量发现：
+  - `integrating_factor_boundary_and_visual_binding_repaired`：For f'-p(x)f>0, f(0)>=0, and positive continuous p on [0,+infinity), order f(0), f(a), f(b) for 0<a<b.：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；integrating_factor_boundary_and_visual_binding_repaired。；建议：
+- 关系裁决：
+  - GS-208：`remove`；Both mention integrating factors, but GS-208 reverse-engineers xe^(-x)f for a Rolle/integral proof, while GS-515 constructs e^(-integral p)f for a differential inequality and ordering result.
+  - GS-488：`add`；GS-488 取 Y=f'、p=lambda，GS-515 取 Y=f、p=p(x)；两端的具体线性算子、首动作和首断点一致，且均为 user_confirmed。
+  - GS-545：`remove`；GS-545 converts a coefficient recurrence to an ODE for a sum function and makes reindexing/sign errors; GS-515 starts from a differential inequality and directly constructs an integrating factor.
+- 当前快照：`stale`；正式卡 `67701d670aef4dcd869371a4b0bc6be1352b5fce2f41e409cabb32a8f8b5ffe2`；唯一图片 1 个；物理路径 1 个。
+
+### GS-516 79209 含参正项级数收敛域 2026.5.30
+
+- 题目：Find a when sum_{n>=1}(n!/n^n)e^(-nx) has convergence domain (a,+infinity).
+- 所问：left endpoint a and the complete convergence domain
+- 知识点：无穷级数；正项级数敛散性判别；比值判别法；函数项级数收敛域；幂指极限；级数收敛必要条件
+- 第一动作：Ratio-test the full positive term and explicitly rewrite the 1^infinity factor before solving the parameter inequality.
+- 答案：$a=-1$，收敛域 $(-1,+\infty)$
+- 个人错因边界：confirmed_personal；The ratio had already been formed correctly; the first failure was evaluating the 1^infinity factor by direct substitution.
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - For u_n>0, compute u_(n+1)/u_n=e^(-x)(n/(n+1))^n.
+  - Use (n/(n+1))^n=(1+1/n)^(-n)->e^(-1), so the ratio limit is e^(-1-x) and convergence requires x>-1.
+  - At x=-1 the ratio test is inconclusive; the term sequence increases and does not tend to zero, so the endpoint diverges. Thus a=-1.
+- 质量发现：
+  - `one_power_infinity_ratio_step_repaired`：Find a when sum_{n>=1}(n!/n^n)e^(-nx) has convergence domain (a,+infinity).：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；one_power_infinity_ratio_step_repaired。；建议：
+- 关系裁决：
+  - GS-042：`remove`；GS-042 starts by rewriting a limit and retaining a first-order logarithmic correction; GS-516 has already formed a series ratio and fails later when evaluating a 1^infinity factor.
+  - GS-511：`remove`；Both use ratios, but GS-511 omits x^(2n), while GS-516 correctly forms the ratio and then mis-evaluates a 1^infinity factor.
+  - GS-533：`remove`；GS-533 needs logarithm/exponential two-layer Taylor expansion of (1+x)^(1/x); GS-516 needs only the standard 1^infinity limit inside a completed ratio test.
+  - GS-552：`remove`；GS-552 first identifies ln(1+2^-n) as an equivalent small quantity and tests the term limit; GS-516 evaluates an adjacent-term ratio and parameter endpoint.
+- 当前快照：`stale`；正式卡 `cd020c7425e08e15f31f0bd511d1cc124cae70ca89aa22b6e774a7fec16a6afd`；唯一图片 1 个；物理路径 1 个。
+
+### GS-517 102393 幂级数变形判敛 2026.5.30
+
+- 题目：If sum a_n(x+1)^n converges conditionally at x=1, determine the behavior at x=2 of sum n a_n(x-1)^n.
+- 所问：absolute convergence, conditional convergence, divergence, or indeterminate
+- 知识点：无穷级数；幂级数；幂级数收敛半径；幂级数收敛域；阿贝尔定理；幂级数逐项求导；条件收敛
+- 第一动作：Identify the original center and use conditional convergence to set R equal to the distance to x=1 before tracking the coefficient and center transformation.
+- 答案：A（在 $x=2$ 处绝对收敛）
+- 个人错因边界：confirmed_personal；The user did not establish R=2 from the conditional endpoint and therefore had no entry into the transformed series.
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - The original center is -1; conditional convergence at x=1 forces that point to be an endpoint, so R=2.
+  - Multiplying coefficients by n preserves the radius; changing (x+1) to (x-1) moves the center to 1.
+  - At x=2 the new distance from center is 1<2, so the transformed series converges absolutely.
+- 质量发现：
+  - `conditional_endpoint_radius_transfer_repaired`：If sum a_n(x+1)^n converges conditionally at x=1, determine the behavior at x=2 of sum n a_n(x-1)^n.：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；conditional_endpoint_radius_transfer_repaired。；建议：
+- 关系裁决：
+  - GS-510：`remove`；GS-510 identifies and bounds a coefficient sequence; GS-517 uses a conditionally convergent endpoint to infer a radius and transfer it to a new center.
+  - GS-511：`remove`；A sparse whole-term ratio problem is not the conditional-endpoint radius-transfer problem.
+  - GS-518：`remove`；Conditional-endpoint radius transfer and coefficient splitting/domain intersection are distinct objects and actions.
+- 当前快照：`stale`；正式卡 `ca29408512dcffde2f51b3a32578ac3022cb93009e7d8382fe4b2da31cf71860`；唯一图片 1 个；物理路径 1 个。
+
+### GS-518 102395 和型幂级数拆分收敛域 2026.5.30
+
+- 题目：Find the convergence domain of sum_{n>=2}(1/(n ln n)+1/2^n)x^n.
+- 所问：complete convergence domain
+- 知识点：无穷级数；幂级数；幂级数收敛域；级数拆项；广义调和级数；p级数；交错级数；莱布尼茨判别法；等比级数
+- 第一动作：Split the two coefficient components into separate power series, compute each domain, and intersect them with independent endpoint checks.
+- 答案：$[-1,1)$
+- 个人错因边界：confirmed_personal；The user kept the sum coefficient as one object and did not split it after the overall endpoint test became inconclusive.
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - Split the series into sum x^n/(n ln n) and sum (x/2)^n.
+  - The first has domain [-1,1): at x=1 the logarithmic harmonic series diverges, and at x=-1 the alternating series converges.
+  - The geometric part has domain (-2,2); intersecting gives [-1,1).
+- 质量发现：
+  - `wrong_problem_detail_body_fully_replaced`：Find the convergence domain of sum_{n>=2}(1/(n ln n)+1/2^n)x^n.：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；wrong_problem_detail_body_fully_replaced。；建议：
+- 关系裁决：
+  - GS-510：`remove`；A harmonic partial-sum coefficient radius problem differs from splitting a two-component coefficient and intersecting endpoint domains.
+  - GS-511：`remove`；GS-511 must include the variable power in a ratio; GS-518 must split two coefficient components after an endpoint test stalls.
+  - GS-512：`remove`；Termwise integration and new endpoint testing are not coefficient splitting and domain intersection.
+  - GS-517：`remove`；Conditional-endpoint radius transfer and coefficient splitting/domain intersection are distinct objects and actions.
+  - GS-544：`remove`；GS-544's sparse alternating series and arctangent sum function are not the two-component logarithmic-harmonic/geometric domain intersection.
+  - GS-555：`remove`；The shared divergent sum 1/(n ln n) is only a comparison component; GS-555 begins with n!<n^n, while GS-518 begins by splitting coefficient components.
+  - GS-611：`remove`；Both split a sum into components, but GS-518 fails to split at all; GS-611 explicitly completes that first action and then fails at inequality direction, endpoint, intersection, and integral signs.
+- 当前快照：`stale`；正式卡 `88cfcc4b7081751678edc96f9b5a8fa6cf6d2bb25afa13b120e3060d1d010255`；唯一图片 1 个；物理路径 1 个。
+
+### GS-519 102397 卷积型幂级数和函数 2026.5.30
+
+- 题目：Find the sum function of sum_{n>=1}(1+1/2+...+1/n)x^n.
+- 所问：sum function and its interval of validity
+- 知识点：无穷级数；幂级数；幂级数和函数；幂级数乘法；常用幂级数展开式；几何级数；对数级数展开；幂级数系数提取
+- 第一动作：Recognize a front partial sum in the coefficients as multiplication by 1/(1-x), then identify the logarithmic mother series.
+- 答案：$\dfrac{-\ln(1-x)}{1-x}$，$-1<x<1$
+- 个人错因边界：confirmed_personal；The user did not map the harmonic partial-sum coefficient to a Cauchy product and therefore could not invoke the mother expansions.
+- 一致性：题图—解析 consistent_with_registered_textual_solution；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - Recognize the harmonic partial sum H_n as the x^n coefficient of the Cauchy product of sum_{n>=1}x^n/n and sum_{n>=0}x^n.
+  - Use sum x^n/n=-ln(1-x) and sum x^n=1/(1-x).
+  - Multiply inside the common open interval |x|<1 to get -ln(1-x)/(1-x); both endpoints diverge for the original H_n x^n series.
+- 质量发现：
+  - `cauchy_product_coefficient_recognition_repaired`：Find the sum function of sum_{n>=1}(1+1/2+...+1/n)x^n.：题面、文字解析、正式卡、个人 wrong_history 与全部登记图片已逐项核对；cauchy_product_coefficient_recognition_repaired。；建议：
+- 关系裁决：
+  - GS-512：`remove`；Although both touch logarithmic power series, GS-512 integrates a geometric series while GS-519 recognizes a Cauchy-product coefficient.
+  - GS-521：`remove`；GS-521 derives the logarithmic mother formula by differentiating and integrating; GS-519's full object is a harmonic-partial-sum convolution and its first action is coefficient recognition.
+  - GS-522：`remove`；GS-522 differentiates the geometric series to sum n x^n; GS-519 forms a Cauchy product with the logarithmic series.
+  - GS-548：`remove`；GS-548 uses the cubic-sum identity to rewrite ln(1-x+x^2); sharing the ln(1+u) mother expansion does not match GS-519's convolution breakpoint.
+  - GS-612：`remove`；GS-612 factors a quadratic inside a logarithm and audits real-domain/endpoints; GS-519 recognizes a harmonic partial-sum coefficient as a Cauchy product.
+- 当前快照：`stale`；正式卡 `0634e29da270127f9ba2c20fad77b0267da0267d0fbf8d6edb55d9ca84f773a5`；唯一图片 1 个；物理路径 1 个。
+
+## 重建与验收
+
+```bash
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py build
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py check
+python3 -m unittest tests.test_knowledge_error_evidence_graph
+```

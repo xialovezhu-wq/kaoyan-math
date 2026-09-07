@@ -1,0 +1,1044 @@
+{
+  "actual_count": 5,
+  "candidate_bundle_sha256": "2cd3a5c1eaad292e018e491bfa7797f88257df3a2a70fc17cdf00b0b93cd8696",
+  "date": "2026-09-01",
+  "exam_date": "2026-12-20",
+  "luna_execution": {
+    "agent_id": "/root/warmup_series_univariate",
+    "model": "gpt-5.6-luna",
+    "read_only": true,
+    "reasoning_effort": "max",
+    "semantic_read_performed": true,
+    "status": "completed",
+    "supporting_agents": [
+      {
+        "agent_id": "/root/warmup_series_univariate",
+        "shard": "series_and_univariate_analysis",
+        "status": "completed"
+      },
+      {
+        "agent_id": "/root/warmup_curves_fields",
+        "shard": "curves_and_fields",
+        "status": "completed"
+      },
+      {
+        "agent_id": "/root/warmup_surfaces_space",
+        "shard": "surfaces_and_space",
+        "status": "completed"
+      }
+    ]
+  },
+  "mode": "prestudy",
+  "queue_id": "WQ-3c9d75ef4b141715593d89a1",
+  "request_version": "native-luna-semantic-v1",
+  "requested_count": 5,
+  "schema_version": "prestudy-warmup-v5",
+  "selected": [
+    {
+      "anchor_card_source_version": "c16a452dffd89213291c0f8f79d889dfb0b04a5a68fd0d1e9eeaf5057dae3828",
+      "anchor_due_date": "2026-09-01",
+      "anchor_evidence": {
+        "card_id": "GS-769",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-a9698d1add27fe68",
+        "gap_key": "GAP-ea25ddfdabbaab14bbb1",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "定积分",
+          "分部积分法",
+          "泰勒公式",
+          "拉格朗日余项",
+          "积分三角不等式",
+          "二阶导数误差界"
+        ],
+        "method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先检查 \\(p(a)=p(b)=0\\) 和 \\(p''(x)=2\\)，确认两次分部积分会消去第一层边界并产生 \\(2\\int_a^b f(x)\\,dx\\)。",
+          "expected_method": "令 \\(p(x)=(x-a)(x-b)\\)，利用 \\(p(a)=p(b)=0\\) 连续两次分部积分把 \\(f''\\) 降到 \\(f\\)；第二问对恒等式取绝对值，用 \\(M\\) 控制 \\(|f''|\\)，再计算非负核积分。",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "目标中出现多项式权函数乘 \\(f''(x)\\) 的积分，而结论要求 \\(f(x)\\) 的积分、端点值及二阶导数最大值误差界。",
+          "missed_action": "仅由“连续二阶导数”调出泰勒公式，没有让目标中的加权高阶导数积分触发分部积分降阶；第二问没有启动积分绝对值估计模板。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "待匹配"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先检查 \\(p(a)=p(b)=0\\) 和 \\(p''(x)=2\\)，确认两次分部积分会消去第一层边界并产生 \\(2\\int_a^b f(x)\\,dx\\)。",
+          "expected_method": "令 \\(p(x)=(x-a)(x-b)\\)，利用 \\(p(a)=p(b)=0\\) 连续两次分部积分把 \\(f''\\) 降到 \\(f\\)；第二问对恒等式取绝对值，用 \\(M\\) 控制 \\(|f''|\\)，再计算非负核积分。",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "目标中出现多项式权函数乘 \\(f''(x)\\) 的积分，而结论要求 \\(f(x)\\) 的积分、端点值及二阶导数最大值误差界。",
+          "missed_action": "仅由“连续二阶导数”调出泰勒公式，没有让目标中的加权高阶导数积分触发分部积分降阶；第二问没有启动积分绝对值估计模板。",
+          "need_user_confirmation": false,
+          "next_reminder": "看见 \\(\\int p(x)f''(x)\\,dx\\) 且目标要 \\(f\\)，先检查 \\(p\\) 的端点值和二阶导数，再决定是否连续分部积分。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "待匹配",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-08-31 首次正式记录。",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "a9698d1add27fe68798395818db35aa528e9fe624847b3d024f04c277851cbe0",
+        "source_version": "a9698d1add27fe68798395818db35aa528e9fe624847b3d024f04c277851cbe0",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "已由连续二阶导数调出泰勒展开并识别端点常数项，但把两个不同且随 \\(x\\) 变化的拉格朗日余项当成可合并对象；未由目标中的 \\((x-a)(x-b)f''(x)\\) 触发连续分部积分降阶，也未在第二问启动积分绝对值与 \\(M\\) 的估计链。"
+      },
+      "anchor_evidence_source_version": "a9698d1add27fe68798395818db35aa528e9fe624847b3d024f04c277851cbe0",
+      "anchor_failure_date": "2026-08-31",
+      "anchor_gap_occurrence_id": "GAPO-b298fce67624d813c6c0db48",
+      "anchor_id": "GS-769",
+      "anchor_unit_id": "MATH1-GS-WQ-GS769",
+      "anchor_unit_source_version": "d478e9546af13591be5fc29073c5f39a659bf3850d29a26879630c71460643e0",
+      "anchor_wrong_event_id": "GS-769|2026-08-31|1",
+      "candidate_bundle_sha256": "2cd3a5c1eaad292e018e491bfa7797f88257df3a2a70fc17cdf00b0b93cd8696",
+      "card_source_version": "b8f6afc6f3e257be6e4316d58bfb462824b9a1cf43c2d3fa312ae817ce8c94ca",
+      "delivered_card_id": "GS-684",
+      "delivered_due_date": null,
+      "delivered_unit_id": null,
+      "delivered_unit_source_version": null,
+      "due_date": "2026-09-01",
+      "dynamic_priority": 0,
+      "evidence": {
+        "card_id": "GS-684",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-fec658b4be087675",
+        "gap_key": "GAP-f8f708a936a73a011ce8",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "定积分",
+          "高阶导数",
+          "分部积分",
+          "一元函数积分学的计算",
+          "复合函数求导",
+          "第一类换元",
+          "分部积分降阶"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先把 $f''(2x)\\,dx$ 写成 $\\frac12 d(f'(2x))$，对 $\\int_0^1 x^2 f''(2x)\\,dx$ 做第一次分部积分。",
+          "expected_method": "通过两次分部积分把 $f''(2x)$ 逐级降为 $f'(2x)$、$f(2x)$，再用 $t=2x$ 换元接上题设积分值。",
+          "knowledge_gap_or_method_gap": "动作链断裂",
+          "method_trigger": "目标积分含 $x^2 f''(2x)$，题目只给 $f(2)$、$f'(2)$ 和 $\\int_0^2 f(x)\\,dx$ 这类低阶信息。",
+          "missed_action": "想到分部积分但没有落笔执行微分形式转换和第一次降阶，转去对 $f$ 在 $x=2$ 处作 Taylor 展开。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H09-005"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先把 $f''(2x)\\,dx$ 写成 $\\frac12 d(f'(2x))$，对 $\\int_0^1 x^2 f''(2x)\\,dx$ 做第一次分部积分。",
+          "expected_method": "通过两次分部积分把 $f''(2x)$ 逐级降为 $f'(2x)$、$f(2x)$，再用 $t=2x$ 换元接上题设积分值。",
+          "knowledge_gap_or_method_gap": "动作链断裂",
+          "method_trigger": "目标积分含 $x^2 f''(2x)$，题目只给 $f(2)$、$f'(2)$ 和 $\\int_0^2 f(x)\\,dx$ 这类低阶信息。",
+          "missed_action": "想到分部积分但没有落笔执行微分形式转换和第一次降阶，转去对 $f$ 在 $x=2$ 处作 Taylor 展开。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到定积分里有 $x^m f''(ax)$ 且题设给低阶函数值或积分值，先把 $f''(ax)\\,dx$ 写成 $\\frac1a d(f'(ax))$ 做分部积分降阶。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H09-005",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-07-08 wrong_history 记录 1 次独立同题失败；其他分部积分题不合并计数。",
+          "review_priority": 4
+        },
+        "selection_value": 5,
+        "source_hash": "fec658b4be0876750ac28296bd9e83ed48d3ccea96983b777494236c4e6d7259",
+        "source_version": "fec658b4be0876750ac28296bd9e83ed48d3ccea96983b777494236c4e6d7259",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "看到 $\\int_0^1 x^2 f''(2x)\\,dx$ 且题目给出 $f(2)$、$f'(2)$、$\\int_0^2 f(x)\\,dx$ 时，虽然想到分部积分，但没有实际写出 $f''(2x)\\,dx=\\frac12 d(f'(2x))$ 做降阶；反而在 $x=2$ 处作 Taylor 展开并对 $[0,2]$ 积分，导致入口切错。"
+      },
+      "evidence_source_version": "fec658b4be0876750ac28296bd9e83ed48d3ccea96983b777494236c4e6d7259",
+      "formal_card_path": "错题知识网络/错题卡/GS-684_58093分部积分降阶.md",
+      "id": "GS-684",
+      "luna_query_id": "/root/warmup_series_univariate",
+      "mastery": 3,
+      "match_mode": "exact_gap",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 0,
+      "queue_item_id": "QI-d623d0c70da855649204",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS769",
+      "selection_mode": "luna_semantic_exact_gap",
+      "selection_reason": "正式到期单元的代理检查 GS-769；实际投递已入库旧题 GS-684；匹配层级 exact_gap",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-769_112849梯形积分恒等式与二阶导误差界.md",
+          "role": "anchor",
+          "sha256": "c16a452dffd89213291c0f8f79d889dfb0b04a5a68fd0d1e9eeaf5057dae3828"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-684_58093分部积分降阶.md",
+          "role": "candidate",
+          "sha256": "b8f6afc6f3e257be6e4316d58bfb462824b9a1cf43c2d3fa312ae817ce8c94ca"
+        }
+      ],
+      "semantic_match_level": "exact_gap",
+      "semantic_plan_sha256": "925ca86e39b87b0e6fb62185d2ceac398250028dc1723d487e040f3067c68ed9",
+      "semantic_private_reason": "GS-769 与 GS-684 都有高置信用户确认：面对含高阶导数的加权定积分，已想到或转向局部 Taylor，却没有实际启动连续分部积分把导数逐级降到题设提供的低阶信息；两题的首个方法断点一致，题面与边界条件不同。",
+      "semantic_public_value_reason": "换一道题面检验近期一元积分证明中的方法迁移，避免只记住原题步骤。",
+      "semantic_selection_v5": true,
+      "source": "ID:58093 / 用户题图与解析图 / 2026-07-08",
+      "unit_id": "MATH1-GS-WQ-GS769",
+      "unit_source_version": "d478e9546af13591be5fc29073c5f39a659bf3850d29a26879630c71460643e0"
+    },
+    {
+      "anchor_card_source_version": "69ab44fc5601b5dfe7afc4defeead77daf6383900ea90c23763b764e95d212d5",
+      "anchor_due_date": "2026-08-30",
+      "anchor_evidence": {
+        "card_id": "GS-695",
+        "declared_origin": "",
+        "evidence_id": "EV-12921fc89808ccdc",
+        "gap_key": "GAP-46af12b62c4fcf73cf9d",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "曲线积分",
+          "第一型曲线积分",
+          "弧长微元",
+          "曲线参数化"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "",
+          "expected_first_action": "先在积分号下写两个平方项积分相等；只在积分整体层面平均系数，不能先写被积函数点态等式。",
+          "expected_method": "先写 x^2 与 y^2 的曲线积分相等；只在积分整体层面平均 a、b 两个系数，凑出 x^2+y^2；随后检查能否代入曲线方程，并把 x、y 的一阶曲线矩转换为形心坐标乘曲线长度。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "闭曲线交换 x、y 后不变，而第一型曲线积分的被积函数含 a x^2+b y^2。",
+          "missed_action": "未把轮换对称写成两个曲线积分的整体等式；后续又把 \\(ds\\) 当成二维面积微元，未先确认曲线只有一个参数自由度。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-007"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "legacy_unclassified",
+        "origin_declared": false,
+        "origin_label": "历史结构化证据，来源未分类",
+        "personal_confirmed": false,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "expected_first_action": "先在积分号下写两个平方项积分相等；只在积分整体层面平均系数，不能先写被积函数点态等式。",
+          "expected_method": "先写 x^2 与 y^2 的曲线积分相等；只在积分整体层面平均 a、b 两个系数，凑出 x^2+y^2；随后检查能否代入曲线方程，并把 x、y 的一阶曲线矩转换为形心坐标乘曲线长度。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "闭曲线交换 x、y 后不变，而第一型曲线积分的被积函数含 a x^2+b y^2。",
+          "missed_action": "未把轮换对称写成两个曲线积分的整体等式；后续又把 \\(ds\\) 当成二维面积微元，未先确认曲线只有一个参数自由度。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到第一型曲线积分中的 a x^2+b y^2，先写“积分整体相等”而不是点态相等；若需直接计算，先用一个参数表示曲线并写 \\(ds=\\|r'(t)\\|dt\\)。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H18-007",
+          "repeat_count": 2,
+          "repeat_count_source": "2026-07-14 首次记录完整动作链；2026-08-29 再次暴露积分层级与弧长微元对象混淆。",
+          "review_priority": 4
+        },
+        "selection_value": 3,
+        "source_hash": "12921fc89808ccdc52b34a8d69bcb36d813fe7b2a4b0654371ce3f1fa7096f6c",
+        "source_version": "12921fc89808ccdc52b34a8d69bcb36d813fe7b2a4b0654371ce3f1fa7096f6c",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "2026-08-29 复发时把曲线轮换对称误写成点态等式 \\(x^2=y^2\\)，并把一维弧长微元 \\(ds\\) 与二维曲面面积微元 \\(dS\\)、\\(dx\\,dy\\) 混淆；正确边界是先证明两个曲线积分整体相等，再沿曲线使用约束或参数化计算。"
+      },
+      "anchor_evidence_source_version": "12921fc89808ccdc52b34a8d69bcb36d813fe7b2a4b0654371ce3f1fa7096f6c",
+      "anchor_failure_date": "2026-08-29",
+      "anchor_gap_occurrence_id": "GAPO-a5228cf71ce0a92e0bae7081",
+      "anchor_id": "GS-695",
+      "anchor_unit_id": "MATH1-GS-WQ-GS695",
+      "anchor_unit_source_version": "1bbba631b8253fe1f166812b9d115fbe801c6e3279917f241b2b86e7ca45cbac",
+      "anchor_wrong_event_id": "GS-695|2026-08-29|2",
+      "candidate_bundle_sha256": "2cd3a5c1eaad292e018e491bfa7797f88257df3a2a70fc17cdf00b0b93cd8696",
+      "card_source_version": "608fd79852d132ac22eb0c1dd6a199535d37a453b1c3b8d98c8bc2e2610fd283",
+      "delivered_card_id": "GS-754",
+      "delivered_due_date": "2026-08-20",
+      "delivered_unit_id": "MATH1-GS-WQ-GS754",
+      "delivered_unit_source_version": "a4c0b1662532d393837148f314c62c1ebd22cc4b3982d7ae6f6550085afe66c5",
+      "due_date": "2026-08-30",
+      "dynamic_priority": 46,
+      "evidence": {
+        "card_id": "GS-754",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-34f4942ef9fcc301",
+        "gap_key": "GAP-15b94ef0cce62daf5c74",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "第一型曲面积分",
+          "对称性"
+        ],
+        "method_gap": {
+          "action_gap_type": "A-CONCEPT",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "写 x+y+z=(x-a)+(y-b)+(z-c)+(a+b+c)",
+          "expected_method": "围绕球心做平移分解，奇项积分消失",
+          "knowledge_gap_or_method_gap": "概念混淆",
+          "method_trigger": "球面中心为 (a,b,c)，被积函数是 x+y+z 的线性组合",
+          "missed_action": "没有先把坐标平移到球心",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-008"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "A-CONCEPT",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "写 x+y+z=(x-a)+(y-b)+(z-c)+(a+b+c)",
+          "expected_method": "围绕球心做平移分解，奇项积分消失",
+          "knowledge_gap_or_method_gap": "概念混淆",
+          "method_trigger": "球面中心为 (a,b,c)，被积函数是 x+y+z 的线性组合",
+          "missed_action": "没有先把坐标平移到球心",
+          "need_user_confirmation": false,
+          "next_reminder": "看到偏心球面的线性被积函数，先减球心坐标，再用奇对称。",
+          "opd_tag": [
+            "P思路"
+          ],
+          "related_method_card_id": "H18-008",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-08-19 首次正式记录该断点。",
+          "review_priority": 4
+        },
+        "selection_value": 5,
+        "source_hash": "34f4942ef9fcc301a0fa2a311809f369b883665ddac42f79260f1dd99cd053d1",
+        "source_version": "34f4942ef9fcc301a0fa2a311809f369b883665ddac42f79260f1dd99cd053d1",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": false
+        },
+        "structured_targetable": true,
+        "wrong_point": "把积分平均意义上的对称消项误解为被积函数可以逐点替换成常数。"
+      },
+      "evidence_source_version": "34f4942ef9fcc301a0fa2a311809f369b883665ddac42f79260f1dd99cd053d1",
+      "formal_card_path": "错题知识网络/错题卡/GS-754_138696球面曲面积分中心对称.md",
+      "id": "GS-754",
+      "luna_query_id": "/root/warmup_series_univariate",
+      "mastery": 3,
+      "match_mode": "exact_gap",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 12,
+      "queue_item_id": "QI-63244340e23d35d3bdf4",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS695",
+      "selection_mode": "luna_semantic_exact_gap",
+      "selection_reason": "正式到期单元的代理检查 GS-695；实际投递已入库旧题 GS-754；匹配层级 exact_gap",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-695_84305第一型曲线积分对称与形心.md",
+          "role": "anchor",
+          "sha256": "69ab44fc5601b5dfe7afc4defeead77daf6383900ea90c23763b764e95d212d5"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-754_138696球面曲面积分中心对称.md",
+          "role": "candidate",
+          "sha256": "608fd79852d132ac22eb0c1dd6a199535d37a453b1c3b8d98c8bc2e2610fd283"
+        }
+      ],
+      "semantic_match_level": "exact_gap",
+      "semantic_plan_sha256": "925ca86e39b87b0e6fb62185d2ceac398250028dc1723d487e040f3067c68ed9",
+      "semantic_private_reason": "GS-695 与 GS-754 的用户确认断点相同：把积分整体层面的对称关系误当成被积对象逐点恒等；候选把曲线积分换成球面曲面积分，能直接检验这一概念边界是否迁移。",
+      "semantic_public_value_reason": "同属多元积分但更换了几何对象，适合检验概念边界的独立迁移。",
+      "semantic_selection_v5": true,
+      "source": "ID:138696 / 249-14 / ZIP完整对话与题图 / 2026-08-19",
+      "unit_id": "MATH1-GS-WQ-GS695",
+      "unit_source_version": "1bbba631b8253fe1f166812b9d115fbe801c6e3279917f241b2b86e7ca45cbac"
+    },
+    {
+      "anchor_card_source_version": "0575784818fa693c50c0271b27939c9216857544b6367f148db822aeef1041d2",
+      "anchor_due_date": "2026-07-29",
+      "anchor_evidence": {
+        "card_id": "GS-668",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-fe8c2d20d68fc551",
+        "gap_key": "GAP-9af0958b10ac3078a3b8",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "三重积分",
+          "三重积分对称性",
+          "球面坐标",
+          "定积分"
+        ],
+        "method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "写出 $r^2=x^2+y^2+z^2\\le1$，因此 $0\\le r\\le1$，并检查这个范围是否同时覆盖所有方向。",
+          "expected_method": "先把完整区域条件翻译为 $r^2\\le1$，直接得到 $0\\le r\\le1$；再把 $z^2$ 写成 $r^2\\cos^2\\varphi$，连同体积元设置球面坐标积分。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "题目给出完整单位球区域 $x^2+y^2+z^2\\le1$，球面坐标的径向范围应由完整区域边界确定，而不能由单个坐标的必要条件代替。",
+          "missed_action": "只取了单位球条件推出的必要条件 $z\\le1$，再反向当成充分条件确定 $r$ 的上界；没有检查 $r\\le1/\\cos\\varphi$ 会包含球外点，也没有处理 $\\cos\\varphi\\le0$ 时不等式方向与意义的变化。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-005"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "写出 $r^2=x^2+y^2+z^2\\le1$，因此 $0\\le r\\le1$，并检查这个范围是否同时覆盖所有方向。",
+          "expected_method": "先把完整区域条件翻译为 $r^2\\le1$，直接得到 $0\\le r\\le1$；再把 $z^2$ 写成 $r^2\\cos^2\\varphi$，连同体积元设置球面坐标积分。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "题目给出完整单位球区域 $x^2+y^2+z^2\\le1$，球面坐标的径向范围应由完整区域边界确定，而不能由单个坐标的必要条件代替。",
+          "missed_action": "只取了单位球条件推出的必要条件 $z\\le1$，再反向当成充分条件确定 $r$ 的上界；没有检查 $r\\le1/\\cos\\varphi$ 会包含球外点，也没有处理 $\\cos\\varphi\\le0$ 时不等式方向与意义的变化。",
+          "need_user_confirmation": false,
+          "next_reminder": "球面坐标的 $r$ 上界由完整区域边界决定；单个坐标不等式通常只是必要条件。先写 $r^2=x^2+y^2+z^2$，再整体翻译区域。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H18-005",
+          "repeat_count": 3,
+          "repeat_count_source": "wrong_history 已记录三次错误；本次首断点是用较弱的单坐标必要条件代替完整球体条件，与 2026-07-15 的“区域与边界混淆”相关但不相同。",
+          "review_priority": 4
+        },
+        "selection_value": 5,
+        "source_hash": "fe8c2d20d68fc551a53316957b74be54ab6fb83d962eacd983b28c5ca7511222",
+        "source_version": "fe8c2d20d68fc551a53316957b74be54ab6fb83d962eacd983b28c5ca7511222",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "当前复做已会选择球面坐标，但用单个坐标条件 $z\\le1$ 代替了完整区域条件 $x^2+y^2+z^2\\le1$。前者只是单位球内点必然满足的必要条件，不能反过来描述整个球体；径向范围必须直接由 $r^2=x^2+y^2+z^2\\le1$ 得到 $0\\le r\\le1$。"
+      },
+      "anchor_evidence_source_version": "fe8c2d20d68fc551a53316957b74be54ab6fb83d962eacd983b28c5ca7511222",
+      "anchor_failure_date": "2026-07-28",
+      "anchor_gap_occurrence_id": "GAPO-0ce4aed70e4e0962ee907ba4",
+      "anchor_id": "GS-668",
+      "anchor_unit_id": "MATH1-GS-WQ-GS668",
+      "anchor_unit_source_version": "1a09761f6314542fb42cf0ea5bd996a0b31cf851e6ac8559cf3ce6058a8351dd",
+      "anchor_wrong_event_id": "GS-668|2026-07-28|3",
+      "candidate_bundle_sha256": "2cd3a5c1eaad292e018e491bfa7797f88257df3a2a70fc17cdf00b0b93cd8696",
+      "card_source_version": "4af58433f095cea6784b7da5a18d0438d41e461db6dad8e4101aecc5ae3e5169",
+      "delivered_card_id": "GS-670",
+      "delivered_due_date": "2026-07-29",
+      "delivered_unit_id": "MATH1-GS-WQ-GS670",
+      "delivered_unit_source_version": "55d22ebbf3e28e37d44862ab7b96f4b102bbc5f3adf87c9c9632157981feed54",
+      "due_date": "2026-07-29",
+      "dynamic_priority": 149,
+      "evidence": {
+        "card_id": "GS-670",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-b2152b79e257e86b",
+        "gap_key": "GAP-c77393d4511113708e3f",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "三重积分",
+          "球面坐标",
+          "二次曲面"
+        ],
+        "method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先把 $4y^2$ 写成 $(2y)^2$，令 $u=x,\\ v=2y,\\ w=z$。",
+          "expected_method": "先令 $u=x,\\ v=2y,\\ w=z$，把椭球化为单位球 $u^2+v^2+w^2\\le1$ 并计算雅可比 $\\frac12$；再令 $r^2=u^2+v^2+w^2$，用球面坐标体积元或等价的薄球壳 $4\\pi r^2dr$ 计算径向积分。",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "题目给出椭球 $x^2+4y^2+z^2\\le1$，且被积函数正好是 $1-(x^2+4y^2+z^2)$，应触发“同一二次型 -> 伸缩换元 -> 单位球 -> 球面坐标”。",
+          "missed_action": "本次仍未由“区域与被积函数共享同一二次型”触发椭球伸缩换元；换元一经指出即可继续，首断点稳定落在第一方法入口。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-016"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先把 $4y^2$ 写成 $(2y)^2$，令 $u=x,\\ v=2y,\\ w=z$。",
+          "expected_method": "先令 $u=x,\\ v=2y,\\ w=z$，把椭球化为单位球 $u^2+v^2+w^2\\le1$ 并计算雅可比 $\\frac12$；再令 $r^2=u^2+v^2+w^2$，用球面坐标体积元或等价的薄球壳 $4\\pi r^2dr$ 计算径向积分。",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "题目给出椭球 $x^2+4y^2+z^2\\le1$，且被积函数正好是 $1-(x^2+4y^2+z^2)$，应触发“同一二次型 -> 伸缩换元 -> 单位球 -> 球面坐标”。",
+          "missed_action": "本次仍未由“区域与被积函数共享同一二次型”触发椭球伸缩换元；换元一经指出即可继续，首断点稳定落在第一方法入口。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到椭球区域与被积函数共用同一二次型，先伸缩换元化单位球并补雅可比；若换元后被积函数只含 $r$，立即写球面坐标体积元，或用薄球壳 $4\\pi r^2dr$ 化成一维径向积分。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H18-016",
+          "repeat_count": 3,
+          "repeat_count_source": "wrong_history 已记录三次同题失败，三次均未独立触发“同形二次型先伸缩换元到单位球”的第一动作。",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "b2152b79e257e86b4eff8221468e72acacc0d29af436e1338cd168d421f3efa0",
+        "source_version": "b2152b79e257e86b4eff8221468e72acacc0d29af436e1338cd168d421f3efa0",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": false,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "看到椭球区域与被积函数共享同一个二次型 $x^2+4y^2+z^2$ 时，仍没有把 $4y^2$ 看成 $(2y)^2$ 并立即作伸缩换元 $u=x,\\ v=2y,\\ w=z$。会算椭球体积只能处理常数被积函数，不能替代对变量权重的积分；本次明确换元后，后续单位球计算能够推进。"
+      },
+      "evidence_source_version": "b2152b79e257e86b4eff8221468e72acacc0d29af436e1338cd168d421f3efa0",
+      "formal_card_path": "错题知识网络/错题卡/GS-670_102450椭球伸缩换元球面坐标.md",
+      "id": "GS-670",
+      "luna_query_id": "/root/warmup_series_univariate",
+      "mastery": 2,
+      "match_mode": "knowledge_fallback",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 3,
+      "overdue_days": 34,
+      "queue_item_id": "QI-0f1f16113d65962aa452",
+      "recurrence_count": 2,
+      "score_target_unit_id": "MATH1-GS-WQ-GS668",
+      "selection_mode": "luna_semantic_fine_knowledge",
+      "selection_reason": "正式到期单元的代理检查 GS-668；实际投递已入库旧题 GS-670；匹配层级 knowledge_fallback",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-668_102610球体截面球面坐标.md",
+          "role": "anchor",
+          "sha256": "0575784818fa693c50c0271b27939c9216857544b6367f148db822aeef1041d2"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-670_102450椭球伸缩换元球面坐标.md",
+          "role": "candidate",
+          "sha256": "4af58433f095cea6784b7da5a18d0438d41e461db6dad8e4101aecc5ae3e5169"
+        }
+      ],
+      "semantic_match_level": "fine_knowledge",
+      "semantic_plan_sha256": "925ca86e39b87b0e6fb62185d2ceac398250028dc1723d487e040f3067c68ed9",
+      "semantic_private_reason": "GS-668 最新断点是把完整空间区域条件降成单坐标必要条件，导致径向范围错误；GS-670 的连续复发是未把共享二次型翻译成伸缩坐标，且曾把带径向权重的积分当成常数乘体积。两题都检验空间区域、坐标变换与径向变量的对象分层，但第一动作不同，因此只认定为细粒度知识匹配。",
+      "semantic_public_value_reason": "更换空间区域与表达方式，检验三重积分中的对象识别能否迁移。",
+      "semantic_selection_v5": true,
+      "source": "ID:102450 / 用户截图与答案图 / 2026-07-06",
+      "unit_id": "MATH1-GS-WQ-GS668",
+      "unit_source_version": "1a09761f6314542fb42cf0ea5bd996a0b31cf851e6ac8559cf3ce6058a8351dd"
+    },
+    {
+      "anchor_card_source_version": "a89aa44b5de9ffc06a0598e05cb92b31c1a8faca16bb8a5fd0dda9ec5dd315cc",
+      "anchor_due_date": "2026-08-15",
+      "anchor_evidence": {
+        "card_id": "GS-502",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-955139889589abc3",
+        "gap_key": "GAP-573306386b44f5553ea8",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "无穷级数",
+          "数项级数敛散性判别",
+          "交错级数",
+          "条件收敛",
+          "奇偶项拆分",
+          "级数拆项",
+          "正项级数发散",
+          "条件收敛正负项拆分"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先写出通项拆分：\\(u_{2n}-2u_{2n-1}=(u_{2n}-u_{2n-1})-u_{2n-1}\\)",
+          "expected_method": "先提取条件收敛信息，再做奇偶项拆分，把目标级数拆成收敛部分与发散正项部分",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "看到条件收敛的交错级数，并且目标项出现 \\(u_{2n},u_{2n-1}\\)",
+          "missed_action": "没有第一时间拆通项；混淆 \\(u_n\\) 与 \\(\\sum u_n\\)；误认为条件收敛可反推出 \\(u_n\\) 单调递减；奇数项级数发散证明不严谨",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H16-016"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先写出通项拆分：\\(u_{2n}-2u_{2n-1}=(u_{2n}-u_{2n-1})-u_{2n-1}\\)",
+          "expected_method": "先提取条件收敛信息，再做奇偶项拆分，把目标级数拆成收敛部分与发散正项部分",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "看到条件收敛的交错级数，并且目标项出现 \\(u_{2n},u_{2n-1}\\)",
+          "missed_action": "没有第一时间拆通项；混淆 \\(u_n\\) 与 \\(\\sum u_n\\)；误认为条件收敛可反推出 \\(u_n\\) 单调递减；奇数项级数发散证明不严谨",
+          "need_user_confirmation": false,
+          "next_reminder": "看到条件收敛，不是说 \\(u_n\\) 发散，而是说 \\(\\sum u_n\\) 发散；看到奇偶下标，先拆通项，再接回原交错级数。",
+          "opd_tag": [
+            "O目标",
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H16-016",
+          "repeat_count": 3,
+          "repeat_count_source": "wrong_history",
+          "review_batch": "MATHWIKI-REVIEW-070",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "955139889589abc3e8e246e843dff59ced827aa705ae8bbbb3bb77a3e9721643",
+        "source_version": "955139889589abc3e8e246e843dff59ced827aa705ae8bbbb3bb77a3e9721643",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "已知 \\(\\sum(-1)^{n-1}u_n\\) 条件收敛且 \\(u_n>0\\) 时，第一步应把条件收敛翻译成“交错级数收敛、正项级数 \\(\\sum u_n\\) 发散”，再把 \\(u_{2n}-2u_{2n-1}\\) 拆成 \\((u_{2n}-u_{2n-1})-u_{2n-1}\\)；本次仍混淆 \\(u_n\\) 与 \\(\\sum u_n\\)，并误把 Leibniz 判别法当作可反推单调。"
+      },
+      "anchor_evidence_source_version": "955139889589abc3e8e246e843dff59ced827aa705ae8bbbb3bb77a3e9721643",
+      "anchor_failure_date": "2026-08-14",
+      "anchor_gap_occurrence_id": "GAPO-1050dcd516f57f82309ee578",
+      "anchor_id": "GS-502",
+      "anchor_unit_id": "MATH1-GS-WQ-GS502",
+      "anchor_unit_source_version": "eb7f0d25ead26a1cac8065be11bb078b440e331b1344d1b84a8bff526674aa8a",
+      "anchor_wrong_event_id": "GS-502|2026-08-14|3",
+      "candidate_bundle_sha256": "2cd3a5c1eaad292e018e491bfa7797f88257df3a2a70fc17cdf00b0b93cd8696",
+      "card_source_version": "f8501a45f9b0f5fa7dd6ec2b6825abe0ad6dfd6c7c3c7544f1fb8743339497be",
+      "delivered_card_id": "GS-607",
+      "delivered_due_date": "2026-06-16",
+      "delivered_unit_id": "MATH1-GS-WQ-GS607",
+      "delivered_unit_source_version": "869beacbfabc7b2b3e67f3394b0a3ecd01316c5bf372b68dec447e0a03631346",
+      "due_date": "2026-08-15",
+      "dynamic_priority": 240,
+      "evidence": {
+        "card_id": "GS-607",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-f835c1a726e0daa9",
+        "gap_key": "GAP-27517116f8df9ebbd46f",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "无穷级数",
+          "数项级数敛散性判别",
+          "交错级数",
+          "莱布尼茨判别法",
+          "条件收敛",
+          "绝对收敛",
+          "p级数",
+          "级数拆项",
+          "极限比较判别法",
+          "收敛级数线性运算"
+        ],
+        "method_gap": {
+          "action_gap_type": "B2-TRIGGER",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先把 \\(n-1\\) 写成 \\((n+1)-2\\)，即 \\(\\frac{n-1}{n+1}=1-\\frac2{n+1}\\)",
+          "expected_method": "把 \\(\\frac{n-1}{n+1}\\) 写成 \\(1-\\frac2{n+1}\\)，拆成交错主项与绝对收敛余项，分别用莱布尼茨/ p 级数判定，再用线性性质合成",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "交错级数中出现 \\(\\frac{n-1}{n+1}\\)，分子分母只差常数（慢衰减交错项里嵌有理因子）",
+          "missed_action": "没有主动凑 \\((n+1)-2\\) 做恒等变形拆项；最后“条件收敛+绝对收敛=条件收敛”结论缺严谨证明",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H16-016"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B2-TRIGGER",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先把 \\(n-1\\) 写成 \\((n+1)-2\\)，即 \\(\\frac{n-1}{n+1}=1-\\frac2{n+1}\\)",
+          "expected_method": "把 \\(\\frac{n-1}{n+1}\\) 写成 \\(1-\\frac2{n+1}\\)，拆成交错主项与绝对收敛余项，分别用莱布尼茨/ p 级数判定，再用线性性质合成",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "交错级数中出现 \\(\\frac{n-1}{n+1}\\)，分子分母只差常数（慢衰减交错项里嵌有理因子）",
+          "missed_action": "没有主动凑 \\((n+1)-2\\) 做恒等变形拆项；最后“条件收敛+绝对收敛=条件收敛”结论缺严谨证明",
+          "need_user_confirmation": false,
+          "next_reminder": "看到交错级数里有 \\(\\frac{n-1}{n+1}\\) 这种分子分母只差常数的有理因子，先凑成 \\(1-\\frac2{n+1}\\) 拆出交错主项与绝对收敛余项，再分别判、最后合成。",
+          "opd_tag": [
+            "O目标",
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H16-016",
+          "repeat_count": 1,
+          "repeat_count_source": "wrong_history",
+          "review_batch": "MATHWIKI-REVIEW-080",
+          "review_priority": 4
+        },
+        "selection_value": 5,
+        "source_hash": "f835c1a726e0daa99541fe222e0a3493c9caa1f5cdfb20d51ea91e0a1ae95693",
+        "source_version": "f835c1a726e0daa99541fe222e0a3493c9caa1f5cdfb20d51ea91e0a1ae95693",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "看到交错级数 \\(\\sum(-1)^{n-1}\\frac{n-1}{n+1}\\cdot\\frac1{\\sqrt[10]{n}}\\) 时，没有主动把 \\(\\frac{n-1}{n+1}\\) 凑成 \\(1-\\frac2{n+1}\\)（即 \\(n-1=(n+1)-2\\)）从而拆成“交错主项 − 绝对收敛余项”；正确入口是拆成 \\(\\sum(-1)^{n-1}\\frac1{\\sqrt[10]{n}}\\)（\\(p=\\frac1{10}\\)，Leibniz 条件收敛）与 \\(\\sum\\frac{(-1)^{n-1}2}{(n+1)\\sqrt[10]{n}}\\)（与 \\(p=\\frac{11}{10}\\) 比较，绝对收敛），再用“条件收敛+绝对收敛=条件收敛”判定。"
+      },
+      "evidence_source_version": "f835c1a726e0daa99541fe222e0a3493c9caa1f5cdfb20d51ea91e0a1ae95693",
+      "formal_card_path": "错题知识网络/错题卡/GS-607_138782交错有理因子拆主余项.md",
+      "id": "GS-607",
+      "luna_query_id": "/root/warmup_series_univariate",
+      "mastery": 3,
+      "match_mode": "knowledge_fallback",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 77,
+      "queue_item_id": "QI-2285f376e2987dec0358",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS502",
+      "selection_mode": "luna_semantic_fine_knowledge",
+      "selection_reason": "正式到期单元的代理检查 GS-502；实际投递已入库旧题 GS-607；匹配层级 knowledge_fallback",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-502_102347条件收敛奇偶拆分.md",
+          "role": "anchor",
+          "sha256": "a89aa44b5de9ffc06a0598e05cb92b31c1a8faca16bb8a5fd0dda9ec5dd315cc"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-607_138782交错有理因子拆主余项.md",
+          "role": "candidate",
+          "sha256": "f8501a45f9b0f5fa7dd6ec2b6825abe0ad6dfd6c7c3c7544f1fb8743339497be"
+        }
+      ],
+      "semantic_match_level": "fine_knowledge",
+      "semantic_plan_sha256": "925ca86e39b87b0e6fb62185d2ceac398250028dc1723d487e040f3067c68ed9",
+      "semantic_private_reason": "GS-502 需要先准确翻译条件收敛，再按奇偶结构拆分目标并严谨连接各子级数；GS-607 需要把交错项拆成条件收敛主项与绝对收敛余项再合成。具体恒等变形不同，但共享条件收敛、绝对收敛和结构拆分的细粒度知识链。",
+      "semantic_public_value_reason": "换一种级数结构，检验分类结论能否在新表达中稳定成立。",
+      "semantic_selection_v5": true,
+      "source": "ID:138782（210-44） / 用户模式A输出与题目解析图 / 2026-06-15",
+      "unit_id": "MATH1-GS-WQ-GS502",
+      "unit_source_version": "eb7f0d25ead26a1cac8065be11bb078b440e331b1344d1b84a8bff526674aa8a"
+    },
+    {
+      "anchor_card_source_version": "285f3fad94109e012cf43aec55c501edba3267114976344091f031718865935b",
+      "anchor_due_date": "2026-08-05",
+      "anchor_evidence": {
+        "card_id": "GS-708",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-c58bc59dd373dfbb",
+        "gap_key": "GAP-6080fa4ec18bf2942075",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "曲线积分",
+          "第二型曲线积分",
+          "格林公式",
+          "有向边界",
+          "平面图形面积"
+        ],
+        "method_gap": {
+          "action_gap_type": "A-COND",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "在图上分别标出半径 2 外圆对应 \\(\\pi/2\\) 圆心角、半径 1 内圆对应 \\(\\pi\\) 圆心角。",
+          "expected_method": "逐段识别圆心、半径、起终点和圆心角，再按“外部四分之一圆减内部上半圆”计算面积。",
+          "knowledge_gap_or_method_gap": "条件识别断点",
+          "method_trigger": "格林公式把曲线积分化成面积后，需要由两段圆弧确定区域 \\(D\\) 的实际面积。",
+          "missed_action": "没有检查内圆弧从 \\((0,0)\\) 到 \\((2,0)\\) 覆盖整个上半圆，直接把其面积份额写成四分之一。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "待匹配"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "A-COND",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "在图上分别标出半径 2 外圆对应 \\(\\pi/2\\) 圆心角、半径 1 内圆对应 \\(\\pi\\) 圆心角。",
+          "expected_method": "逐段识别圆心、半径、起终点和圆心角，再按“外部四分之一圆减内部上半圆”计算面积。",
+          "knowledge_gap_or_method_gap": "条件识别断点",
+          "method_trigger": "格林公式把曲线积分化成面积后，需要由两段圆弧确定区域 \\(D\\) 的实际面积。",
+          "missed_action": "没有检查内圆弧从 \\((0,0)\\) 到 \\((2,0)\\) 覆盖整个上半圆，直接把其面积份额写成四分之一。",
+          "need_user_confirmation": false,
+          "next_reminder": "格林公式化成面积后，先用圆弧起终点确定圆心角，再写外面积减内面积。",
+          "opd_tag": [
+            "D细节"
+          ],
+          "related_method_card_id": "待匹配",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-08-04 首次确认“内圆半圆误判为四分之一圆”这一精确断点；与 2026-07-19 的 P、Q 映射错点不同。",
+          "review_priority": 4
+        },
+        "selection_value": 5,
+        "source_hash": "c58bc59dd373dfbbc7c9a811792c1c1af6492a5edeabfe4076164727cebee537",
+        "source_version": "c58bc59dd373dfbbc7c9a811792c1c1af6492a5edeabfe4076164727cebee537",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "最新首断点是区域边界份额识别错误：把圆心 \\((1,0)\\)、半径 1 的圆在目标区域中的上半圆面积误判为四分之一圆面积；正确面积是半径 2 圆的四分之一减去半径 1 圆的二分之一。历史 P、Q 映射错点继续保留。"
+      },
+      "anchor_evidence_source_version": "c58bc59dd373dfbbc7c9a811792c1c1af6492a5edeabfe4076164727cebee537",
+      "anchor_failure_date": "2026-08-04",
+      "anchor_gap_occurrence_id": "GAPO-0e0948737d5095de03005878",
+      "anchor_id": "GS-708",
+      "anchor_unit_id": "MATH1-GS-WQ-GS708",
+      "anchor_unit_source_version": "c289e7a1d6f79a5b74a1102a3f2f121226e3c9814804fe8542c7e06c2d0828b4",
+      "anchor_wrong_event_id": "GS-708|2026-08-04|2",
+      "candidate_bundle_sha256": "2cd3a5c1eaad292e018e491bfa7797f88257df3a2a70fc17cdf00b0b93cd8696",
+      "card_source_version": "24182e5017cc22f3d9f7b4d6b291a4d22ec094fba669f23b6303b1e10863d81e",
+      "delivered_card_id": "GS-758",
+      "delivered_due_date": "2026-08-21",
+      "delivered_unit_id": "MATH1-GS-WQ-GS758",
+      "delivered_unit_source_version": "694a4a610315df78253b9265b8ffcf8e1ed78b7d9373916d5e7c3b07787d162d",
+      "due_date": "2026-08-05",
+      "dynamic_priority": 43,
+      "evidence": {
+        "card_id": "GS-758",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-fecd96791e2be8e5",
+        "gap_key": "GAP-8aad22c695f2b30af577",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "第二型曲线积分",
+          "Green公式"
+        ],
+        "method_gap": {
+          "action_gap_type": "B2-TRIGGER",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "分别令 y=0 与 x=0，得到顶点 (±1,0)、(0,±1/a)",
+          "expected_method": "用坐标轴截距画出菱形并计算对角线或四三角形面积",
+          "knowledge_gap_or_method_gap": "触发信息遗漏",
+          "method_trigger": "格林公式已经把问题化为由 |x|+|ay|≤1 围成区域的面积",
+          "missed_action": "没有把绝对值方程转成轴截距",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-010"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B2-TRIGGER",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "分别令 y=0 与 x=0，得到顶点 (±1,0)、(0,±1/a)",
+          "expected_method": "用坐标轴截距画出菱形并计算对角线或四三角形面积",
+          "knowledge_gap_or_method_gap": "触发信息遗漏",
+          "method_trigger": "格林公式已经把问题化为由 |x|+|ay|≤1 围成区域的面积",
+          "missed_action": "没有把绝对值方程转成轴截距",
+          "need_user_confirmation": false,
+          "next_reminder": "看到绝对值闭曲线，先求轴截距画图，再写面积。",
+          "opd_tag": [
+            "P思路"
+          ],
+          "related_method_card_id": "H18-010",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-08-20 首次正式记录该断点。",
+          "review_priority": 4
+        },
+        "selection_value": 5,
+        "source_hash": "fecd96791e2be8e52d75317cc580bff0695588a454939ff50d160662bdcaaeea",
+        "source_version": "fecd96791e2be8e52d75317cc580bff0695588a454939ff50d160662bdcaaeea",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "没有从绝对值边界读出 x、y 轴截距，无法把菱形面积表示为 2/a。"
+      },
+      "evidence_source_version": "fecd96791e2be8e52d75317cc580bff0695588a454939ff50d160662bdcaaeea",
+      "formal_card_path": "错题知识网络/错题卡/GS-758_138727格林公式与含参菱形面积.md",
+      "id": "GS-758",
+      "luna_query_id": "/root/warmup_series_univariate",
+      "mastery": 3,
+      "match_mode": "knowledge_fallback",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 11,
+      "queue_item_id": "QI-96da33876a408968e4d0",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS708",
+      "selection_mode": "luna_semantic_fine_knowledge",
+      "selection_reason": "正式到期单元的代理检查 GS-708；实际投递已入库旧题 GS-758；匹配层级 knowledge_fallback",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-708_78025补线格林公式与PQ映射.md",
+          "role": "anchor",
+          "sha256": "285f3fad94109e012cf43aec55c501edba3267114976344091f031718865935b"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-758_138727格林公式与含参菱形面积.md",
+          "role": "candidate",
+          "sha256": "24182e5017cc22f3d9f7b4d6b291a4d22ec094fba669f23b6303b1e10863d81e"
+        }
+      ],
+      "semantic_match_level": "fine_knowledge",
+      "semantic_plan_sha256": "925ca86e39b87b0e6fb62185d2ceac398250028dc1723d487e040f3067c68ed9",
+      "semantic_private_reason": "GS-708 最新断点是在曲线积分化成面积后误判圆弧对应的区域份额；GS-758 在同类转换后无法由绝对值边界提取截距与区域面积。两题共同检验从边界表达读取实际区域并完成面积闭环，但具体边界形状和第一动作不同。",
+      "semantic_public_value_reason": "题面与边界表达均已更换，适合检验同类综合题的独立迁移。",
+      "semantic_selection_v5": true,
+      "source": "ID:138727 / 例18.18 / ZIP完整对话与题图 / 2026-08-20",
+      "unit_id": "MATH1-GS-WQ-GS708",
+      "unit_source_version": "c289e7a1d6f79a5b74a1102a3f2f121226e3c9814804fe8542c7e06c2d0828b4"
+    }
+  ],
+  "semantic_ordering_decided": true,
+  "semantic_plan_sha256": "925ca86e39b87b0e6fb62185d2ceac398250028dc1723d487e040f3067c68ed9",
+  "sol_verification": {
+    "sol_reopened": true,
+    "verified_at": "2026-09-01T07:52:17+08:00",
+    "verified_evidence": [
+      {
+        "path": "错题知识网络/错题卡/GS-769_112849梯形积分恒等式与二阶导误差界.md",
+        "sha256": "c16a452dffd89213291c0f8f79d889dfb0b04a5a68fd0d1e9eeaf5057dae3828"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-684_58093分部积分降阶.md",
+        "sha256": "b8f6afc6f3e257be6e4316d58bfb462824b9a1cf43c2d3fa312ae817ce8c94ca"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-695_84305第一型曲线积分对称与形心.md",
+        "sha256": "69ab44fc5601b5dfe7afc4defeead77daf6383900ea90c23763b764e95d212d5"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-754_138696球面曲面积分中心对称.md",
+        "sha256": "608fd79852d132ac22eb0c1dd6a199535d37a453b1c3b8d98c8bc2e2610fd283"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-668_102610球体截面球面坐标.md",
+        "sha256": "0575784818fa693c50c0271b27939c9216857544b6367f148db822aeef1041d2"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-670_102450椭球伸缩换元球面坐标.md",
+        "sha256": "4af58433f095cea6784b7da5a18d0438d41e461db6dad8e4101aecc5ae3e5169"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-502_102347条件收敛奇偶拆分.md",
+        "sha256": "a89aa44b5de9ffc06a0598e05cb92b31c1a8faca16bb8a5fd0dda9ec5dd315cc"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-607_138782交错有理因子拆主余项.md",
+        "sha256": "f8501a45f9b0f5fa7dd6ec2b6825abe0ad6dfd6c7c3c7544f1fb8743339497be"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-708_78025补线格林公式与PQ映射.md",
+        "sha256": "285f3fad94109e012cf43aec55c501edba3267114976344091f031718865935b"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-758_138727格林公式与含参菱形面积.md",
+        "sha256": "24182e5017cc22f3d9f7b4d6b291a4d22ec094fba669f23b6303b1e10863d81e"
+      }
+    ]
+  },
+  "supersedes_queue_id": "WQ-5100132ba3def3db6af92a59"
+}

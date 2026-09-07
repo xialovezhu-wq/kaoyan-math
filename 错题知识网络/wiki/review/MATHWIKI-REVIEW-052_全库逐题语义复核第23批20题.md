@@ -1,0 +1,503 @@
+---
+wiki_id: MATHWIKI-REVIEW-052
+type: target_level_semantic_review_batch
+title: 全库逐题语义复核第23批20题
+subject: 数学一
+knowledge:
+  - 全库逐题复核
+  - 题图解析图核对
+  - 知识点错因连线
+source_refs:
+  - 错题知识网络/错题卡/
+  - 错题知识网络/可视化错题详情/
+  - 错题知识网络/assets/visual_wrong_questions/
+  - 错题知识网络/wiki/review/MATHWIKI-REVIEW-052_全库逐题语义复核第23批20题.json
+status: active
+last_updated: 2026-07-23
+---
+
+# 全库逐题语义复核第23批20题
+
+## 本批结论
+
+本批共逐题核对 20 张正式卡，当前哈希仍有效的完整复核为 0 张；覆盖 30 个物理图片路径与 29 个唯一图片内容。全库当前共 882 张正式卡，本轮活动累计完成 119 张，剩余 763 张。
+
+本批有 12 张出现结构、身份、元数据或来源正文质量问题。证据充分且无歧义的修正已经正式收口；身份冲突、稳定 ID 合并或证据不足项仍保留为 needs_user，详见 `MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B23`。
+
+## 证据边界
+
+- `verified` 表示题面、所问对象、答案、解析路线和当前全部图片内容已经逐一核对，并由正式卡 SHA、详情页 SHA 与图片 SHA-256 绑定。
+- 个人错因仍按 `confirmed_personal`、`legacy_unclassified`、`pending_user_confirmation` 和重复占位分别处理；读懂解析不能反推用户为什么做错。
+- 同一哈希的重复物理图片只视觉核对一次，但所有物理路径都纳入数量和集合一致性检查。
+- 关系裁决中已正式应用的变更以正式收口回执为准；未应用项仍是 SHADOW 建议。
+
+## 批次总览
+
+| 错题 | 题目在问什么 | 知识点 | 答案 | 个人错因边界 | 质量发现 |
+|---|---|---|---|---|---|
+| [GS-300](http://127.0.0.1:8765/open/GS-300) | 变上限积分定义曲线弧长 | 定积分、曲线弧长、变上限积分 | \(\displaystyle \sqrt3+\frac{4\pi}{3}\) | pending_user_confirmation：旧卡没有保存用户当时个人错因；复做时要先由根号确定变上限函数定义域，再求导得到弧长积分的被积函数。 | — |
+| [GS-303](http://127.0.0.1:8765/open/GS-303) | 变上限积分曲线全长 | 定积分、定积分应用、曲线弧长、变上限积分、三角恒等变形 | \(4\) | confirmed_personal：把变上限积分的固定起点 0 误当成积分变量或自变量的最小允许值，错误删去 \([ -\frac\pi2,0 ]\)，只计算了半条曲线。 | confirmed_domain_lower_endpoint_confusion_preserved |
+| [GS-304](http://127.0.0.1:8765/open/GS-304) | 无界区域旋转体体积 | 定积分、旋转体体积、反常积分、Gamma型积分 | \(\displaystyle \frac{\pi}{9}\) | pending_user_confirmation：旧卡没有保存用户当时个人错因；复做时要先识别无界区域绕 \(x\) 轴旋转体积公式，再把体积写成反常积分计算。 | — |
+| [GS-305](http://127.0.0.1:8765/open/GS-305) | 旋转曲面侧面积与总表面积口径辨析 | 定积分、旋转曲面侧面积、端面面积、总表面积口径 | 来源解析给出侧面积 \(\displaystyle S_{\mathrm{侧}}=\frac{\pi}{4}(e^{2t}-e^{-2t})+\pi t\)；若求含端面的总表面积，还应加 \(\pi y^2(0)+\pi y^2(t)\) | pending_user_confirmation：旧卡没有保存用户当时个人错因；待用户确认的复做入口是先区分旋转曲面侧面积与含端面的总表面积，再识别 \(1+(y')^2=y^2\)。 | lateral_surface_vs_total_surface_scope_conflict |
+| [GS-306](http://127.0.0.1:8765/open/GS-306) | 尖峰核定积分极限 | 定积分、定积分性质、中值定理、极限与连续、单侧极限与双侧极限、参数符号 | 右极限为 \(\pi f(0)\)，左极限为 \(-\pi f(0)\)；原题双侧极限仅当 \(f(0)=0\) 时存在，且极限为 \(0\) | pending_user_confirmation：暂无明确个人错因；待用户确认的复做入口是先检查原题写的是双侧 \(h\to0\)，再分别处理 \(h\to0^+\) 与 \(h\to0^-\) 的核符号和质量。 | two_sided_spike_kernel_limit_corrected、legacy_question_filename_reclassified_as_solution |
+| [GS-307](http://127.0.0.1:8765/open/GS-307) | 奇偶周期函数的高阶导数取值 | 高阶导数、函数奇偶性与导数性质、周期函数 | \(0\) | pending_user_confirmation：暂无明确个人错因；本轮依据题图与解析图修复题型定位：本题核心是先判 \(f(x)\) 的周期性与奇偶性，再递推判断 \(f'''(x)\) 的奇偶性，不宜直接硬求三阶导。 | — |
+| [GS-308](http://127.0.0.1:8765/open/GS-308) | 变上限积分与复合函数奇偶性判断 | 定积分、定积分性质、变上限积分、函数奇偶性与导数性质、复合函数 | \(C\) | pending_user_confirmation：暂无明确个人错因（旧卡未记录用户当时错步）；网络补强重点是把 \(\int_0^{\varphi(x)}h(t)dt\) 先抽象为 \(H(\varphi(x))\)，防止只看复合上限或误把周期性当答案。 | — |
+| [GS-309](http://127.0.0.1:8765/open/GS-309) | 积分函数奇偶性判断 | 定积分、定积分性质、函数奇偶性、嵌套变上限积分、常数项对奇偶性的影响 | (D)。先判 \(t\) 与 \(f(t)\) 都是奇函数，所以 \(t f(t)\) 为偶函数；再用积分上限函数的奇偶性和常数项判断。 | confirmed_personal：本质上是“奇偶函数乘法规则”和“积分函数奇偶性条件”没有彻底区分。你把“奇 × 奇 = 偶”与“偶 × 奇 = 奇”混乱了，同时忽略了：积分函数要成为奇函数，必须满足经过原点这一条件，即 $F(0)=0$。 | — |
+| [GS-310](http://127.0.0.1:8765/open/GS-310) | 绝对值三角函数整周期积分 | 定积分、定积分等式、定积分性质、第一类换元、周期函数 | D，I=2，与 a,n 均无关。 | pending_user_confirmation：暂无明确个人错因；本轮按题图与解析图补强复做入口：先令 \(t=nx\)，再利用 \(\|\sin t\|\) 的周期性把长度 \(n\pi\) 的区间化为整周期积分。 | — |
+| [GS-311](http://127.0.0.1:8765/open/GS-311) | 绝对值三角函数半周期积分 | 定积分、定积分等式、定积分性质、三角恒等变形、周期函数、参数分类讨论 | C，I 与 a,k 均有关；来源图上方虽手写 B，但后续分类表明 k 为奇数时余段一般依赖 a，因此数学结论为 C。 | pending_user_confirmation：暂无明确个人错因；本轮按题图与解析图补强复做入口：先把 \(\sqrt{1-\sin^2 x}\) 化为 \(\|\cos x\|\)，再按 \(k\) 的奇偶判断是否留下半周期余段。 | handwritten_option_conflicts_with_mathematical_derivation |
+| [GS-312](http://127.0.0.1:8765/open/GS-312) | 反三角主值与周期积分 | 定积分、定积分性质、变上限积分、变上限积分平均型极限、夹逼准则、反三角函数主值、周期函数 | \(f(x)=x\ (0\le x\le \pi/2),\ f(x)=\pi-x\ (\pi/2<x<\pi)\)；\(\lim_{x\to+\infty}\frac{S(x)}{\sqrt{1+x^2}}=\frac\pi4\) | confirmed_personal：\(\arcsin(\sin x)\) 被误当成可直接等于 \(x\) 的结构，没有先检查 \(\arcsin\) 的主值区间；在 \(\frac\pi2<x<\pi\) 时应把角化成 \(\pi-x\)。本次复发集中在第二问：第一问分段后，没有继续识别 \(f(x)\) 的 \(\pi\) 周期性，也没有把 \(S(x)\) 拆成整周期面积加余项后用夹逼准则。 | same_card_visual_alias_deduplicated |
+| [GS-313](http://127.0.0.1:8765/open/GS-313) | 三角换元与区间再现定积分 | 定积分、定积分性质、定积分等式、三角换元 | $\frac{\pi}{8}\ln2$ | pending_user_confirmation：旧卡未保存用户当时个人错因；安全复做入口是先令 \(x=\tan t\) 消去 \(1+x^2\)，再在 \([0,\pi/4]\) 上做区间再现配对，是否曾断在此处仍待用户确认。 | — |
+| [GS-314](http://127.0.0.1:8765/open/GS-314) | 定积分符号判断 | 定积分、定积分性质、定积分等式、极限与连续 | $I>0$，选 A。 | pending_user_confirmation：旧卡未保存用户当时个人错因；安全复做入口是先作区间再现，把原式化成 \(\sin x/x\) 标准核后再分段判号，是否曾断在此处仍待用户确认。 | duplicate_identity_hold |
+| [GS-315](http://127.0.0.1:8765/open/GS-315) | 反常积分等式与换元求值 | 定积分、反常积分、第二类换元、定积分性质 | $\int_0^{+\infty}\frac{dx}{1+x^4}=\int_0^{+\infty}\frac{x^2}{1+x^4}\,dx=\frac{\sqrt2}{4}\pi$。 | pending_user_confirmation：旧卡未保存用户当时个人错因；安全复做入口是先用 \(x=1/t\) 倒代换建立互补积分相等，再合并并作结构换元，是否曾断在此处仍待用户确认。 | duplicate_identity_hold |
+| [GS-316](http://127.0.0.1:8765/open/GS-316) | 反常积分型数列极限 | 极限与连续、数列极限、反常积分、定积分、等价无穷小、幂指极限、华里士公式 | \boxed{e^{-1}} | confirmed_personal：没有识别出反常积分中出现 $1+x^2$ 且区间为 $0\to+\infty$ 时，应优先用 $x=\tan t$ 化成三角函数幂积分；同时华里士公式不熟，导致无法快速把 $\frac{a_{n+1}}{a_n}$ 化成 $1-\frac1{2n}$，后续指数型极限对数化也没有顺畅接上。2026-06-09 复发新增错点：因 $a_{n+1},a_n$ 上下限相同，错误地把比值 $\frac{a_{n+1}}{a_n}$ 放进一个积分号算成 $\int_0^{+\infty}\frac{dx}{1+x^2}=\frac\pi2$——两个积分的比值一般不能变成被积函数比值的积分，必须分别算出 $a_{n+1}$、$a_n$ 再作比。 | — |
+| [GS-317](http://127.0.0.1:8765/open/GS-317) | 华里士积分数列极限 | 数列极限、定积分、夹逼准则、华里士公式 | \(\frac{\pi}{2}\) | pending_user_confirmation：旧卡未保存用户当时个人错因；安全复做入口是先由 \(0<1-x^2<1\) 比较幂次，再准确写出 \(a_n=I_{n+1}\) 并用相邻 Wallis 项夹逼，是否曾断在此处仍待用户确认。 | wallis_index_mapping_corrected |
+| [GS-318](http://127.0.0.1:8765/open/GS-318) | 罗尔定理辅助函数构造 | 中值定理、罗尔定理、一元函数微分学应用、辅助函数构造 | 已复做正确；核心训练点是把目标式改造成 \(F'(x)=0\)，再用罗尔定理。 | legacy_unclassified：旧卡只有未分类的历史错题记录，未保存用户当时作答过程；安全复做入口是把目标式反推为某个辅助函数的导数为零，是否曾断在此处仍待用户确认。 | legacy_success_not_upgraded_to_personal_error_evidence |
+| [GS-319](http://127.0.0.1:8765/open/GS-319) | 定积分不等式反推函数 | 定积分、定积分性质、定积分不等式 | $f(x)\equiv x^2,\ 0\le x\le1$。 | pending_user_confirmation：旧卡未保存用户当时个人错因；安全复做入口是先把常数项积分化，再与平方项、交叉项凑成非负平方积分，是否曾断在此处仍待用户确认。 | duplicate_identity_hold |
+| [GS-320](http://127.0.0.1:8765/open/GS-320) | 导数积分估计证明 | 定积分、定积分性质、定积分不等式、牛顿莱布尼茨公式、闭区间最值定理、函数值不等式、一元函数微分学应用 | 证明成立：取 \(\|f\|\) 最大点后，两侧函数值差积分估计得到 \(\|f(x)\|\le\frac12\int_a^b\|f'(t)\|\,dt\)。 | pending_user_confirmation：旧卡未保存用户当时个人错因；安全复做入口是先取 \(\|f\|\) 最大点，再由两端点把函数值差写成一阶导数积分，是否曾断在此处仍待用户确认。 | first_derivative_condition_restored、duplicate_identity_hold |
+| [GS-321](http://127.0.0.1:8765/open/GS-321) | 积分等式构造零点 | 定积分、定积分等式、分部积分、零点定理 | 证明成立：设 $F(x)=\int_0^x f(t)dt$，分部积分得 $\int_0^1xF(x)dx=0$，再由连续性推出内部零点。 | pending_user_confirmation：旧卡未保存用户当时个人错因；安全复做入口是先设前缀原函数并对 \(\int x^2F'(x)\) 分部积分，再用连续性找内部零点，是否曾断在此处仍待用户确认。 | duplicate_identity_hold |
+
+## 逐题复核
+
+### GS-300 2023年真题第12题：变上限积分曲线弧长
+
+- 题目：求曲线
+
+\[
+y=\int_{-\sqrt3}^{x}\sqrt{3-t^2}\,dt
+\]
+
+的弧长。
+- 所问：变上限积分定义曲线弧长
+- 知识点：定积分；曲线弧长；变上限积分
+- 第一动作：先由 3-x^2>=0 写出 -sqrt(3)<=x<=sqrt(3)
+- 答案：\(\displaystyle \sqrt3+\frac{4\pi}{3}\)
+- 个人错因边界：pending_user_confirmation；旧卡没有保存用户当时个人错因；复做时要先由根号确定变上限函数定义域，再求导得到弧长积分的被积函数。
+- 一致性：题图—解析 independent_solution_assets_present；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先由根号条件确定定义域，再求导代入弧长公式
+- 关系裁决：
+  - GS-299：`verify_existing_strong_edge`；两题都对变上限积分给出的曲线先求导，再进入弧长积分；GS-299 还需先由微分方程确定生成函数。
+- 当前快照：`stale`；正式卡 `bf3288c38d1f4298246391e7c0eb052af8301c56341fc2f872eb5ddee06b855a`；唯一图片 2 个；物理路径 2 个。
+
+### GS-303 强化例题10.10（139620）：三角变上限曲线全长
+
+- 题目：求曲线
+
+\[
+y=\int_0^x\sqrt{\cos t}\,dt
+\]
+
+的全长。
+- 所问：变上限积分曲线全长
+- 知识点：定积分；定积分应用；曲线弧长；变上限积分；三角恒等变形
+- 第一动作：先把 0 标为固定积分起点，再由 cos x>=0 单独写出 x 的完整实值区间。
+- 答案：\(4\)
+- 个人错因边界：confirmed_personal；把变上限积分的固定起点 0 误当成积分变量或自变量的最小允许值，错误删去 \([ -\frac\pi2,0 ]\)，只计算了半条曲线。
+- 一致性：题图—解析 independent_solution_assets_present；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 区分固定积分起点与自变量定义域；由根式条件确定包含 0 的完整连续区间，并允许 x 小于 0 时采用反向定积分。
+- 质量发现：
+  - `confirmed_domain_lower_endpoint_confusion_preserved`：用户事实明确支持把定积分固定下限误当定义域最小值；只保留这一已确认断点。；建议：
+- 关系裁决：
+  - GS-600：`add_specific_strong_edge_bidirectionally`；两题都由变上限积分定义曲线并求全长，第一动作是先独立确定自变量完整定义域，再求导进入弧长公式。
+- 当前快照：`stale`；正式卡 `4d52afe4cc405b54c96a5efc1a213fb5895b379a635903956305497d67bf6803`；唯一图片 2 个；物理路径 2 个。
+
+### GS-304 强化例题10.12：无界区域旋转体体积
+
+- 题目：曲线
+
+\[
+y=\sqrt x\,e^{-\frac32x},\qquad x\ge0
+\]
+
+下方及 \(x\) 轴上方的无界区域绕 \(x\) 轴旋转一周，求所得旋转体体积。
+- 所问：无界区域旋转体体积
+- 知识点：定积分；旋转体体积；反常积分；Gamma型积分
+- 第一动作：先写 V=pi∫_0^{+infty} f^2(x) dx
+- 答案：\(\displaystyle \frac{\pi}{9}\)
+- 个人错因边界：pending_user_confirmation；旧卡没有保存用户当时个人错因；复做时要先识别无界区域绕 \(x\) 轴旋转体积公式，再把体积写成反常积分计算。
+- 一致性：题图—解析 independent_solution_assets_present；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先写旋转体体积的反常积分，再平方函数并做指数换元
+- 关系裁决：
+  - GS-296：`add_specific_strong_edge_bidirectionally`；两题都对无界区域建立反常积分，分别计算面积或旋转体体积并检查收敛。
+- 当前快照：`stale`；正式卡 `431d5d3ef58400ee384bc60418800fb1b3974d22929833a1692eca8bafd28bf1`；唯一图片 2 个；物理路径 2 个。
+
+### GS-305 强化例题10.14：双曲函数旋转曲面侧面积与端面口径
+
+- 题目：求曲线
+
+\[
+y=\frac{e^x+e^{-x}}2,\qquad x=0,\qquad x=t\ (t>0),\qquad y=0
+\]
+
+围成的曲边梯形绕 \(x\) 轴旋转一周所得旋转体的表面积。
+- 所问：旋转曲面侧面积与总表面积口径辨析
+- 知识点：定积分；旋转曲面侧面积；端面面积；总表面积口径
+- 第一动作：先标明来源公式计算的是侧面积 \(S_{\mathrm{侧}}=2\pi\int_0^t y\sqrt{1+(y')^2}\,dx\)
+- 答案：来源解析给出侧面积 \(\displaystyle S_{\mathrm{侧}}=\frac{\pi}{4}(e^{2t}-e^{-2t})+\pi t\)；若求含端面的总表面积，还应加 \(\pi y^2(0)+\pi y^2(t)\)
+- 个人错因边界：pending_user_confirmation；旧卡没有保存用户当时个人错因；待用户确认的复做入口是先区分旋转曲面侧面积与含端面的总表面积，再识别 \(1+(y')^2=y^2\)。
+- 一致性：题图—解析 independent_solution_assets_present；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先确认题目要侧面积还是含端面的总表面积；侧面积写 \(2\pi\int y\,ds\)，再识别 \(1+(y')^2=y^2\)
+- 质量发现：
+  - `lateral_surface_vs_total_surface_scope_conflict`：来源公式只计算旋转曲面侧面积；若题意要求旋转体总表面积，还需加两端圆盘。；建议：
+- 当前快照：`stale`；正式卡 `156787d51625f1a87fb3a6f0f824d91c9301607c602e44026a04e925fea7e74f`；唯一图片 2 个；物理路径 2 个。
+
+### GS-306 强化例题11.1：尖峰核双侧极限边界
+
+- 题目：原题印刷为
+
+$$
+\lim_{h\to0}\int_{-1}^{1}\frac{h}{h^2+x^2}f(x)\,dx,
+$$
+
+其中 \(f\) 在 \([-1,1]\) 上连续。这里是双侧极限，不能静默改成 \(h\to0^+\)。
+- 所问：尖峰核定积分极限
+- 知识点：定积分；定积分性质；中值定理；极限与连续；单侧极限与双侧极限；参数符号
+- 第一动作：先圈出题面的 \(h\to0\)，分别写 \(h\to0^+\) 与 \(h\to0^-\)
+- 答案：右极限为 \(\pi f(0)\)，左极限为 \(-\pi f(0)\)；原题双侧极限仅当 \(f(0)=0\) 时存在，且极限为 \(0\)
+- 个人错因边界：pending_user_confirmation；暂无明确个人错因；待用户确认的复做入口是先检查原题写的是双侧 \(h\to0\)，再分别处理 \(h\to0^+\) 与 \(h\to0^-\) 的核符号和质量。
+- 一致性：题图—解析 independent_solution_assets_present；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先分清单侧与双侧；对 \(h\to0^+\) 用局部化质量得到 \(\pi f(0)\)，再由积分关于 \(h\) 为奇函数推出左极限
+- 质量发现：
+  - `two_sided_spike_kernel_limit_corrected`：题面写双侧 h 趋零，来源草图只处理右极限；现已补全左右极限与双侧存在条件。；建议：
+  - `legacy_question_filename_reclassified_as_solution`：question_02.png 实为来源解析草图；保留历史路径并在人工复核回执中按 solution 角色计入。；建议：
+- 当前快照：`stale`；正式卡 `636d5e90655aa5413e8d51826bee2a26b1472a257d4bb51a04e50eee2d7ff3e0`；唯一图片 2 个；物理路径 2 个。
+
+### GS-307 88806 高阶导数奇偶周期
+
+- 题目：已知
+
+\[
+f(x)=e^{\sin x}+e^{-\sin x},
+\]
+
+求
+
+\[
+f'''(2\pi).
+\]
+- 所问：奇偶周期函数的高阶导数取值
+- 知识点：高阶导数；函数奇偶性与导数性质；周期函数
+- 第一动作：先验证 f(-x)=f(x) 且 f(x) 以 2pi 为周期
+- 答案：\(0\)
+- 个人错因边界：pending_user_confirmation；暂无明确个人错因；本轮依据题图与解析图修复题型定位：本题核心是先判 \(f(x)\) 的周期性与奇偶性，再递推判断 \(f'''(x)\) 的奇偶性，不宜直接硬求三阶导。
+- 一致性：题图—解析 independent_solution_assets_present；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先判整体奇偶性和周期性，再递推导函数奇偶性
+- 关系裁决：
+  - GS-121：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；两题都用周期性把取值点拉回原点，再用函数与各阶导数的奇偶递推收口。
+  - GS-308：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、局部工具或旧自动候选，具体对象、条件与第一动作不足以形成强边。
+  - GS-457：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、局部工具或旧自动候选，具体对象、条件与第一动作不足以形成强边。
+  - GS-530：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、局部工具或旧自动候选，具体对象、条件与第一动作不足以形成强边。
+- 当前快照：`stale`；正式卡 `5fad35d14606751cf66f76a798e440c433de567536a976cd97b7fb6ba8a9b08c`；唯一图片 2 个；物理路径 2 个。
+
+### GS-308 105878 变限积分奇偶性
+
+- 题目：已知
+
+\[
+f(x)=\int_0^x e^{\cos t}\,dt,\qquad
+g(x)=\int_0^{\sin x} e^{t^2}\,dt,
+\]
+
+判断 \(f(x)\)、\(g(x)\) 的奇偶性或周期性。
+- 所问：变上限积分与复合函数奇偶性判断
+- 知识点：定积分；定积分性质；变上限积分；函数奇偶性与导数性质；复合函数
+- 第一动作：先令 H(u)=积分 0 到 u 的 h(t)dt 并判断 H 的奇偶性
+- 答案：\(C\)
+- 个人错因边界：pending_user_confirmation；暂无明确个人错因（旧卡未记录用户当时错步）；网络补强重点是把 \(\int_0^{\varphi(x)}h(t)dt\) 先抽象为 \(H(\varphi(x))\)，防止只看复合上限或误把周期性当答案。
+- 一致性：题图—解析 independent_solution_assets_present；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 祖孙三代式变限积分奇偶性判断
+- 关系裁决：
+  - GS-309：`add_specific_strong_edge_bidirectionally`；两题都逐层判断被积函数、从零变限原函数与复合上限的奇偶性，并检查非零下限带来的常数项。
+  - GS-572：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、局部工具或旧自动候选，具体对象、条件与第一动作不足以形成强边。
+- 当前快照：`stale`；正式卡 `f6f9866deea53717665e935a7317f0d16e230d008e519cac33993f6ab8d700bd`；唯一图片 2 个；物理路径 2 个。
+
+### GS-309 57723 2026.5.5
+
+- 题目：设 \(f(x)\) 在 \((-\infty,+\infty)\) 内为连续奇函数，\(a\) 为常数，判断下列函数中必为偶函数的是：
+
+\[
+\begin{aligned}
+\text{(A)}\;&\int_0^x du\int_a^u t f(t)\,dt,\\
+\text{(B)}\;&\int_a^x du\int_0^u f(t)\,dt,\\
+\text{(C)}\;&\int_0^x du\int_a^u f(t)\,dt,\\
+\text{(D)}\;&\int_a^x du\int_0^u t f(t)\,dt.
+\end{aligned}
+\]
+- 所问：积分函数奇偶性判断
+- 知识点：定积分；定积分性质；函数奇偶性；嵌套变上限积分；常数项对奇偶性的影响
+- 第一动作：先判 \(t\) 是奇函数且 \(f(t)\) 是奇函数，从而 \(t f(t)\) 是偶函数
+- 答案：(D)。先判 \(t\) 与 \(f(t)\) 都是奇函数，所以 \(t f(t)\) 为偶函数；再用积分上限函数的奇偶性和常数项判断。
+- 个人错因边界：confirmed_personal；本质上是“奇偶函数乘法规则”和“积分函数奇偶性条件”没有彻底区分。你把“奇 × 奇 = 偶”与“偶 × 奇 = 奇”混乱了，同时忽略了：积分函数要成为奇函数，必须满足经过原点这一条件，即 $F(0)=0$。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先判被积函数奇偶性，再判断从 0 到 \(x\) 的积分函数奇偶性，最后检查下限 \(a\) 带来的常数项。
+- 关系裁决：
+  - GS-572：`add_specific_strong_edge_bidirectionally`；两题都从被积函数奇偶性递推到原函数奇偶性，并单独检查积分常数是否破坏结论。
+  - GS-449：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、局部工具或旧自动候选，具体对象、条件与第一动作不足以形成强边。
+- 当前快照：`stale`；正式卡 `62b009db9274cc204bb73e0a4f81f8a086e36df0f7a07cf6c04729440c1eb941`；唯一图片 1 个；物理路径 1 个。
+
+### GS-310 135836 绝对正弦整周期积分
+
+- 题目：设
+
+$$
+I=\int_a^{a+\pi}|\sin nx|\,dx,\qquad n=1,2,\cdots,
+$$
+
+其中 \(a\) 为任意常数，判断 \(I\) 与 \(a,n\) 的关系。
+- 所问：绝对值三角函数整周期积分
+- 知识点：定积分；定积分等式；定积分性质；第一类换元；周期函数
+- 第一动作：先令 t=nx 并同步改上下限和 dx=dt/n
+- 答案：D，I=2，与 a,n 均无关。
+- 个人错因边界：pending_user_confirmation；暂无明确个人错因；本轮按题图与解析图补强复做入口：先令 \(t=nx\)，再利用 \(|\sin t|\) 的周期性把长度 \(n\pi\) 的区间化为整周期积分。
+- 一致性：题图—解析 independent_solution_assets_present；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先换元 t=nx，再用 |sin t| 的 pi 周期做整周期积分
+- 关系裁决：
+  - GS-311：`verify_existing_strong_edge`；两题都把绝对三角函数积分按周期拆成整周期与余段，并据区间长度参数分类。
+- 当前快照：`stale`；正式卡 `b555d6f64f7cb3fbd6e2f8239d1ac7dd09c0d1b83de01da432bdac6a39a81fc4`；唯一图片 2 个；物理路径 2 个。
+
+### GS-311 135837 绝对余弦半周期余段积分
+
+- 题目：设
+
+$$
+I=\int_a^{a+\frac{k\pi}{2}}\sqrt{1-\sin^2 x}\,dx,
+$$
+
+其中 \(k\) 为正整数，\(a\) 为任意常数，判断 \(I\) 与 \(a,k\) 的关系。
+- 所问：绝对值三角函数半周期积分
+- 知识点：定积分；定积分等式；定积分性质；三角恒等变形；周期函数；参数分类讨论
+- 第一动作：先把根式改写为绝对余弦
+- 答案：C，I 与 a,k 均有关；来源图上方虽手写 B，但后续分类表明 k 为奇数时余段一般依赖 a，因此数学结论为 C。
+- 个人错因边界：pending_user_confirmation；暂无明确个人错因；本轮按题图与解析图补强复做入口：先把 \(\sqrt{1-\sin^2 x}\) 化为 \(|\cos x|\)，再按 \(k\) 的奇偶判断是否留下半周期余段。
+- 一致性：题图—解析 independent_solution_assets_present；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先化绝对值，再按周期与奇偶拆整周期和余段
+- 质量发现：
+  - `handwritten_option_conflicts_with_mathematical_derivation`：来源图手写 B 与后续按 k 奇偶分类的推导冲突；数学结论应为 C。；建议：
+- 当前快照：`stale`；正式卡 `3b085ce04e118af716bd32a57c1182aa8ca20030727021266c750716cee4b3c8`；唯一图片 2 个；物理路径 2 个。
+
+### GS-312 103059 反三角周期积分
+
+- 题目：已知 \(f(x)=|\arcsin(\sin x)|\)，先在 \([0,\pi]\) 上写出分段表达式，再令 \(S(x)=\int_0^x f(t)\,dt\)，求 \(\lim_{x\to+\infty}S(x)/\sqrt{1+x^2}\)。
+- 所问：反三角主值与周期积分
+- 知识点：定积分；定积分性质；变上限积分；变上限积分平均型极限；夹逼准则；反三角函数主值；周期函数
+- 第一动作：先检查 \(\arcsin\) 的主值区间，在 \([0,\pi]\) 上写出 \(f(x)=x\) 与 \(f(x)=\pi-x\) 的分段式
+- 答案：\(f(x)=x\ (0\le x\le \pi/2),\ f(x)=\pi-x\ (\pi/2<x<\pi)\)；\(\lim_{x\to+\infty}\frac{S(x)}{\sqrt{1+x^2}}=\frac\pi4\)
+- 个人错因边界：confirmed_personal；\(\arcsin(\sin x)\) 被误当成可直接等于 \(x\) 的结构，没有先检查 \(\arcsin\) 的主值区间；在 \(\frac\pi2<x<\pi\) 时应把角化成 \(\pi-x\)。本次复发集中在第二问：第一问分段后，没有继续识别 \(f(x)\) 的 \(\pi\) 周期性，也没有把 \(S(x)\) 拆成整周期面积加余项后用夹逼准则。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先按 \(\arcsin\) 主值区间分段，再利用 \(\pi\) 周期和整周期面积夹逼。
+- 质量发现：
+  - `same_card_visual_alias_deduplicated`：两条详情路径绑定同一稳定卡，两个题图路径字节相同，只复核一次内容。；建议：
+- 关系裁决：
+  - GS-129：`verify_existing_strong_edge`；两题都先按反三角函数主值范围还原周期分段，并严格处理分段端点。
+  - GS-586：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；两题都把长区间周期函数积分拆成完整周期与有界余段，以单周期平均值求无穷远平均型极限。
+  - GS-572：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、局部工具或旧自动候选，具体对象、条件与第一动作不足以形成强边。
+- 当前快照：`stale`；正式卡 `6007b997f5d327015b1abedf5cda27d6245d7a5a6f447b8fef66232c307bcb2a`；唯一图片 1 个；物理路径 2 个。
+
+### GS-313 强化例题11.7-2
+
+- 题目：计算 $\int_0^1\frac{\ln(1+x)}{1+x^2}\,dx$。
+- 所问：三角换元与区间再现定积分
+- 知识点：定积分；定积分性质；定积分等式；三角换元
+- 第一动作：先令 x=tan t 把积分区间换成 0 到 pi/4
+- 答案：$\frac{\pi}{8}\ln2$
+- 个人错因边界：pending_user_confirmation；旧卡未保存用户当时个人错因；安全复做入口是先令 \(x=\tan t\) 消去 \(1+x^2\)，再在 \([0,\pi/4]\) 上做区间再现配对，是否曾断在此处仍待用户确认。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先三角换元，再用区间再现配对化成常数
+- 当前快照：`stale`；正式卡 `741ca99cef300c94d08a5d4491764ff02437974fe5b28b9abf8f1d777ee811d8`；唯一图片 1 个；物理路径 1 个。
+
+### GS-314 强化例题11.13（判断定积分的正负）
+
+- 题目：判断 $I=\int_0^{3\pi/2}\frac{\cos x}{2x-3\pi}\,dx$ 的正负。
+- 所问：定积分符号判断
+- 知识点：定积分；定积分性质；定积分等式；极限与连续
+- 第一动作：先作区间再现 x 替换为 3pi/2-x
+- 答案：$I>0$，选 A。
+- 个人错因边界：pending_user_confirmation；旧卡未保存用户当时个人错因；安全复做入口是先作区间再现，把原式化成 \(\sin x/x\) 标准核后再分段判号，是否曾断在此处仍待用户确认。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 用区间再现把分式化成易判号标准核
+- 质量发现：
+  - `duplicate_identity_hold`：GS-314、GS-322、GS-328 的题图字节相同；稳定 ID 保留，普通聚合边冻结，个人证据与次数不迁移。；建议：
+- 关系裁决：
+  - GS-577：`remove_identity_or_broad_edge`；题面身份已进入同题冻结组，同题身份不再保留为普通知识关系。
+  - GS-322：`remove_identity_edge`；题面身份已进入同题冻结组，同题身份不再保留为普通知识关系。
+  - GS-328：`remove_identity_edge`；题面身份已进入同题冻结组，同题身份不再保留为普通知识关系。
+- 当前快照：`stale`；正式卡 `dcb8408385e84ed377d4d3d26f0eb08d24b26a3f02a3e71da2402adf4a40782f`；唯一图片 1 个；物理路径 1 个。
+
+### GS-315 1000题A组11.6-2
+
+- 题目：证明并求值 $\int_0^{+\infty}\frac{dx}{1+x^4}$ 与 $\int_0^{+\infty}\frac{x^2}{1+x^4}\,dx$。
+- 所问：反常积分等式与换元求值
+- 知识点：定积分；反常积分；第二类换元；定积分性质
+- 第一动作：先令 x=1/t 检查两个反常积分是否相等
+- 答案：$\int_0^{+\infty}\frac{dx}{1+x^4}=\int_0^{+\infty}\frac{x^2}{1+x^4}\,dx=\frac{\sqrt2}{4}\pi$。
+- 个人错因边界：pending_user_confirmation；旧卡未保存用户当时个人错因；安全复做入口是先用 \(x=1/t\) 倒代换建立互补积分相等，再合并并作结构换元，是否曾断在此处仍待用户确认。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先倒代换证明两积分相等，再结构换元求值
+- 质量发现：
+  - `duplicate_identity_hold`：GS-315、GS-174 的题图字节相同；稳定 ID 保留，普通聚合边冻结，个人证据与次数不迁移。；建议：
+- 当前快照：`stale`；正式卡 `203e987c7e257f8369d10e91447ab0199833618a667f671d8cb845d6d403205f`；唯一图片 1 个；物理路径 1 个。
+
+### GS-316 1000题b组2.12 / 84273 2026.5.11
+
+- 题目：设
+$$
+a_n=\int_0^{+\infty}\frac{dx}{(1+x^2)^n},
+$$
+求
+$$
+\lim_{n\to\infty}\left(\frac{a_{n+1}}{a_n}\right)^{\ln(1+e^{2n})}.
+$$
+核心是先把反常积分化成 $\cos$ 幂积分，再用华里士公式求相邻项比值。
+- 所问：反常积分型数列极限
+- 知识点：极限与连续；数列极限；反常积分；定积分；等价无穷小；幂指极限；华里士公式
+- 第一动作：先令 \(x=\tan t\)，把 \(a_n\) 化为 \(\int_0^{\pi/2}\cos^{2n-2}t\,dt\)
+- 答案：\boxed{e^{-1}}
+- 个人错因边界：confirmed_personal；没有识别出反常积分中出现 $1+x^2$ 且区间为 $0\to+\infty$ 时，应优先用 $x=\tan t$ 化成三角函数幂积分；同时华里士公式不熟，导致无法快速把 $\frac{a_{n+1}}{a_n}$ 化成 $1-\frac1{2n}$，后续指数型极限对数化也没有顺畅接上。2026-06-09 复发新增错点：因 $a_{n+1},a_n$ 上下限相同，错误地把比值 $\frac{a_{n+1}}{a_n}$ 放进一个积分号算成 $\int_0^{+\infty}\frac{dx}{1+x^2}=\frac\pi2$——两个积分的比值一般不能变成被积函数比值的积分，必须分别算出 $a_{n+1}$、$a_n$ 再作比。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先用 \(x=\tan t\) 化为 Wallis 积分，再用 Wallis 递推求相邻项比值，最后对数化指数型极限。
+- 关系裁决：
+  - GS-073：`verify_existing_strong_edge`；两题都必须先把参数积分化为 Wallis 型；共同陷阱是把两个积分的比值错误放进同一个积分号。
+  - GS-317：`verify_existing_strong_edge`；两题都以三角换元接 Wallis 积分，并严格跟踪相邻项下标、递推与夹逼。
+  - GS-546：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；两题都用三角换元与 Wallis 递推，把含参数的积分比值化成下标代数式。
+  - GS-007：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、局部工具或旧自动候选，具体对象、条件与第一动作不足以形成强边。
+- 当前快照：`stale`；正式卡 `8d74ae1b8733972e5e6d66b52c1fae325cee6d47bae5e6d6ad04102fe757b719`；唯一图片 1 个；物理路径 1 个。
+
+### GS-317 1000题B组2.13
+
+- 题目：给定 \(a_n=\int_0^1(1-x^2)^{n/2}\,dx\)，先证明单调性，再令 \(x=\sin t\) 化为 Wallis 积分并用奇偶项夹逼，求 \(\lim n a_n^2\)。
+- 所问：华里士积分数列极限
+- 知识点：数列极限；定积分；夹逼准则；华里士公式
+- 第一动作：先在 \(0<x<1\) 上比较 \((1-x^2)^{(n+1)/2}\) 与 \((1-x^2)^{n/2}\)，推出 \(a_{n+1}<a_n\)
+- 答案：\(\frac{\pi}{2}\)
+- 个人错因边界：pending_user_confirmation；旧卡未保存用户当时个人错因；安全复做入口是先由 \(0<1-x^2<1\) 比较幂次，再准确写出 \(a_n=I_{n+1}\) 并用相邻 Wallis 项夹逼，是否曾断在此处仍待用户确认。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先比较幂次证明单调；再令 \(I_m=\int_0^{\pi/2}\cos^m t\,dt\)，准确对应 \(a_n=I_{n+1}\)，用相邻 Wallis 项乘积夹逼。
+- 质量发现：
+  - `wallis_index_mapping_corrected`：换元后应为 a_n=I_{n+1}，旧下标表达已修正并补全夹逼链。；建议：
+- 关系裁决：
+  - GS-073：`verify_existing_strong_edge`；两题都要保持 Wallis 积分的正确下标映射，再用相邻项关系完成计算或夹逼。
+  - GS-546：`verify_existing_strong_edge`；两题都通过三角换元、下标对应与 Wallis 递推控制参数积分。
+- 当前快照：`stale`；正式卡 `2edec040566ab365c2a26db95c45f9615d438435919c0560a033eb8d6b473260`；唯一图片 1 个；物理路径 1 个。
+
+### GS-318 强化例题11.10
+
+- 题目：已知函数 \(f(x)\) 在 \([0,\pi/2]\) 上可导，且
+
+$$
+\int_0^{\pi/2}f(x)\cos x\,dx=0.
+$$
+
+证明存在 \(\xi\in(0,\pi/2)\)，使
+
+$$
+f'(\xi)=f(\xi)\tan\xi.
+$$
+- 所问：罗尔定理辅助函数构造
+- 知识点：中值定理；罗尔定理；一元函数微分学应用；辅助函数构造
+- 第一动作：先把目标等式移到一边，反推它能否写成某个辅助函数的导数为零
+- 答案：已复做正确；核心训练点是把目标式改造成 \(F'(x)=0\)，再用罗尔定理。
+- 个人错因边界：legacy_unclassified；旧卡只有未分类的历史错题记录，未保存用户当时作答过程；安全复做入口是把目标式反推为某个辅助函数的导数为零，是否曾断在此处仍待用户确认。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 从结论中的 f,f' 反推乘积函数或积分因子
+- 质量发现：
+  - `legacy_success_not_upgraded_to_personal_error_evidence`：历史复做正确不证明旧错因；证据保持 legacy_unclassified 并继续需要用户确认。；建议：
+- 关系裁决：
+  - GS-474：`add_specific_strong_edge_bidirectionally`；两题都从待证的导数等式反推乘积型辅助函数，再用两个零点接罗尔定理。
+  - GS-488：`add_specific_strong_edge_bidirectionally`；两题都把目标式识别为带积分因子乘积的导数为零，再构造辅助函数使用罗尔定理。
+- 当前快照：`stale`；正式卡 `17de4a05f9ed0bea6629f903cfcf9af74e962235e52934a6d39d08ed2f6ec261`；唯一图片 1 个；物理路径 1 个。
+
+### GS-319 强化例题11.17 某些特殊的函数值，我们也可以用定积分表示出来
+
+- 题目：设 \(f(x)\) 在 \([0,1]\) 上连续，且
+
+$$
+\int_0^1 2x^2f(x)\,dx\ge \int_0^1 f^2(x)\,dx+\frac15.
+$$
+
+求 \(f(x)\)。
+- 所问：定积分不等式反推函数
+- 知识点：定积分；定积分性质；定积分不等式
+- 第一动作：先把 1/5 写成 0 到 1 上 x^4 的积分
+- 答案：$f(x)\equiv x^2,\ 0\le x\le1$。
+- 个人错因边界：pending_user_confirmation；旧卡未保存用户当时个人错因；安全复做入口是先把常数项积分化，再与平方项、交叉项凑成非负平方积分，是否曾断在此处仍待用户确认。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 常数项积分化后凑完全平方，再用积分保号性取等号
+- 质量发现：
+  - `duplicate_identity_hold`：GS-319、GS-339 的题图字节相同；稳定 ID 保留，普通聚合边冻结，个人证据与次数不迁移。；建议：
+- 关系裁决：
+  - GS-450：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、局部工具或旧自动候选，具体对象、条件与第一动作不足以形成强边。
+- 当前快照：`stale`；正式卡 `da7b5536c1016721d2ced7916df77ec015f9eaf09b1381c3c23d521c9074b644`；唯一图片 1 个；物理路径 1 个。
+
+### GS-320 1000题A组11.9
+
+- 题目：设 \(f'(x)\) 在 \([a,b]\) 上连续，且 \(f(a)=f(b)=0\)。证明对任意 \(x\in(a,b)\)，有
+
+$$
+|f(x)|\le\frac12\int_a^b|f'(t)|\,dt.
+$$
+- 所问：导数积分估计证明
+- 知识点：定积分；定积分性质；定积分不等式；牛顿莱布尼茨公式；闭区间最值定理；函数值不等式；一元函数微分学应用
+- 第一动作：先取 |f| 的最大点
+- 答案：证明成立：取 \(|f|\) 最大点后，两侧函数值差积分估计得到 \(|f(x)|\le\frac12\int_a^b|f'(t)|\,dt\)。
+- 个人错因边界：pending_user_confirmation；旧卡未保存用户当时个人错因；安全复做入口是先取 \(|f|\) 最大点，再由两端点把函数值差写成一阶导数积分，是否曾断在此处仍待用户确认。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先取绝对值最大点，再用端点为 0 和牛顿莱布尼茨估计两侧差
+- 质量发现：
+  - `first_derivative_condition_restored`：题图条件与不等式只涉及一阶导数；旧二阶导数转写污染已清除并补全端点条件。；建议：
+  - `duplicate_identity_hold`：GS-320、GS-347 的题图字节相同；稳定 ID 保留，普通聚合边冻结，个人证据与次数不迁移。；建议：
+- 关系裁决：
+  - GS-347：`remove_identity_edge`；题面身份已进入同题冻结组，同题身份不再保留为普通知识关系。
+- 当前快照：`stale`；正式卡 `03847833b7ebf56d7199a6f8aef0d9639e7c071e5f19e94fda9d31c2320ca416`；唯一图片 1 个；物理路径 1 个。
+
+### GS-321 1000题B组11.7
+
+- 题目：设 \(f(x)\) 在 \([0,1]\) 上连续，且
+
+$$
+\int_0^1x^2f(x)\,dx=\int_0^1f(x)\,dx.
+$$
+
+证明至少存在一点 \(\xi\in(0,1)\)，使
+
+$$
+\int_0^\xi f(x)\,dx=0.
+$$
+- 所问：积分等式构造零点
+- 知识点：定积分；定积分等式；分部积分；零点定理
+- 第一动作：先设 F(x) 为从 0 到 x 的 f(t) 积分
+- 答案：证明成立：设 $F(x)=\int_0^x f(t)dt$，分部积分得 $\int_0^1xF(x)dx=0$，再由连续性推出内部零点。
+- 个人错因边界：pending_user_confirmation；旧卡未保存用户当时个人错因；安全复做入口是先设前缀原函数并对 \(\int x^2F'(x)\) 分部积分，再用连续性找内部零点，是否曾断在此处仍待用户确认。
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 构造原函数并对带权项分部积分降阶
+- 质量发现：
+  - `duplicate_identity_hold`：GS-321、GS-334 的题图字节相同；稳定 ID 保留，普通聚合边冻结，个人证据与次数不迁移。；建议：
+- 关系裁决：
+  - GS-334：`remove_identity_edge`；题面身份已进入同题冻结组，同题身份不再保留为普通知识关系。
+- 当前快照：`stale`；正式卡 `f45892e65b59f4d5f66d53618d92d227f31814c9a4ee1eee4d3b47b46515f0ae`；唯一图片 1 个；物理路径 1 个。
+
+## 重建与验收
+
+```bash
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py build
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py check
+python3 -m unittest tests.test_knowledge_error_evidence_graph
+```

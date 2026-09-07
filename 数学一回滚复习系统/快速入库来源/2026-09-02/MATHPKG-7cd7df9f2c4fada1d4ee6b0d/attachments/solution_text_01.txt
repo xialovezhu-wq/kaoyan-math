@@ -1,0 +1,19 @@
+卷面写法
+
+$$
+\Omega=\left\{(x,y,z)\ \middle|\ x^2+y^2\le1,\quad 0\le z\le1-x\right\}.
+$$
+
+\(\Sigma\) 为 \(\Omega\) 的封闭边界，取外侧。由高斯公式及 \(\Omega\) 关于 \(xOz\) 面的对称性，
+
+$$
+\begin{aligned}
+I
+&=\iiint_\Omega(2z-xz\sin y+3y\sin x)\,dV\\
+&=\iiint_\Omega2z\,dV\\
+&=\iint_{x^2+y^2\le1}\left[\int_0^{1-x}2z\,dz\right]dx\,dy\\
+&=\iint_{x^2+y^2\le1}(1-x)^2\,dx\,dy\\
+&=\int_0^{2\pi}\int_0^1(1-r\cos\theta)^2r\,dr\,d\theta\\
+&=\boxed{\frac{5\pi}{4}}.
+\end{aligned}
+$$

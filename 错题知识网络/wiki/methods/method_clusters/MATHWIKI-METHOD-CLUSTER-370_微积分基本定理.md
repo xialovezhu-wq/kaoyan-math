@@ -1,0 +1,46 @@
+---
+wiki_id: MATHWIKI-METHOD-CLUSTER-370
+type: method_cluster
+title: "微积分基本定理"
+subject: "高等数学"
+source_refs:
+  - "错题知识网络/错题卡/"
+wiki_refs:
+  - "SRC-WRONGCARDS-INDEX"
+  - "MATHWIKI-COVERAGE-MATRIX"
+status: active
+last_updated: "2026-08-31"
+---
+
+# 微积分基本定理
+
+## 定位
+
+本页是自动生成的方法簇页面，用于把具有相同标签或动作断点的正式错题接入 LLM Wiki。它只列轻量元数据，不复制完整题干或长解析。
+
+## 覆盖统计
+
+- 相关错题数：2
+- 涉及科目：高等数学
+- 代表错题：GS-661；GS-678
+
+## 错题清单
+
+| id | source summary | subject | chapter | knowledge | status | formal card |
+|---|---|---|---|---|---|---|
+| GS-661 | [[SRC-WQ-GS-661]] | 高等数学 | 定积分 | 极限与连续；函数极限；变上限积分；分段函数连续可导；分段函数求导；分段点左右导数检查 | 待复做 | `错题知识网络/错题卡/GS-661_193707变上限积分二阶可导.md` |
+| GS-678 | [[SRC-WQ-GS-678]] | 高等数学 | 定积分 | 函数极限；定积分；变限积分；第一类换元 | 待复做 | `错题知识网络/错题卡/GS-678_57857平移换元变限极限.md` |
+
+## 后续编译动作
+
+- 如果某个方法簇对应稳定第一动作，升级或更新 `wiki/methods/MATHWIKI-*-METHOD-*`。
+- 如果只是泛方法标签，继续保留为索引页，不强行深度总结。
+
+## 入口
+
+- [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
+- [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]
+
+## 2026-08-31 增量
+
+- 新增 [[SRC-WQ-GS-767]]：由变上限体积函数得到当前水平截面积。；正式 ID：`GS-767`。

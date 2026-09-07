@@ -1,0 +1,2339 @@
+{
+  "schema_version": "math_target_semantic_review_batch_v1",
+  "wiki_id": "MATHWIKI-REVIEW-030",
+  "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260723-B12",
+  "title": "全库逐题语义复核第12批20题",
+  "reviewed_on": "2026-07-23",
+  "batch_number": 12,
+  "campaign_formal_card_count": 831,
+  "scope": {
+    "card_count": 20,
+    "physical_asset_path_count": 23,
+    "unique_visual_content_sha256_count": 21,
+    "canonical_detail_count": 20,
+    "reviewed_detail_file_count": 24,
+    "physical_asset_role_path_counts": {
+      "question": 22,
+      "solution": 1,
+      "reference": 0
+    },
+    "unique_visual_content_role_counts": {
+      "question": 20,
+      "solution": 1,
+      "reference": 0
+    }
+  },
+  "frozen_source_state_sha256": "3898a37670675906ea560c17182994c5c08af6b3a5dabfa36a8eb3bd7fad97f4",
+  "frozen_selection": {
+    "selection_order_sha256": "b309045ff645d3984b1c996b2a0a08983896f5667becf6e17507933512166cf3",
+    "selection_compact_json_sha256": "bb72abd2cc1ec909d51ed3016b0ee8f809990e180908d7a33e01118c16c6ff9a",
+    "canonical_snapshot_sha256": "d6e4efc2e6472b11d222bd761819c9ce928e16ab7a0973d866887ae52b9b379e",
+    "visual_manifest_sha256": "c8b2c7ac1cb3cb6f1cc15506cdfe51dac3993ad8145ba50f0dd4cf46686ebed3",
+    "registered_cards": 20,
+    "registered_detail_files": 24,
+    "registered_physical_asset_paths": 23,
+    "pre_review_path_hash_drift_count": 0
+  },
+  "guardrails": {
+    "formal_related_write": true,
+    "formal_card_write": true,
+    "formal_visual_write": true,
+    "mode": "FORMAL_CLOSEOUT",
+    "review_origin_mode": "FULL_VISUAL_TARGET_REVIEW",
+    "formal_closeout_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B12",
+    "personal_error_requires_explicit_evidence": true,
+    "duplicate_physical_assets_reviewed_once_per_sha256": true,
+    "stable_id_merge_or_delete": false,
+    "wrongnet_rebuild_policy": "exactly_once_after_all_formal_source_edits"
+  },
+  "evidence_distribution": {
+    "user_confirmed": 7,
+    "pending_user_confirmation": 13,
+    "legacy_unclassified": 0
+  },
+  "asset_boundary": {
+    "solution_image_card_ids": [
+      "GS-072"
+    ],
+    "question_only_card_ids": [
+      "GS-062",
+      "GS-063",
+      "GS-064",
+      "GS-065",
+      "GS-066",
+      "GS-067",
+      "GS-068",
+      "GS-069",
+      "GS-070",
+      "GS-071",
+      "GS-073",
+      "GS-074",
+      "GS-075",
+      "GS-076",
+      "GS-077",
+      "GS-078",
+      "GS-080",
+      "GS-081"
+    ],
+    "visual_gap_card_ids": [
+      "GS-079"
+    ],
+    "same_card_alias_groups": [
+      {
+        "group_id": "B12-ALIAS-01",
+        "card_id": "GS-073",
+        "visual_ids": [
+          "VIS-GS-073",
+          "MN4-GS-CH01-110"
+        ],
+        "evidence": "byte_identical_question_image"
+      },
+      {
+        "group_id": "B12-ALIAS-02",
+        "card_id": "GS-080",
+        "visual_ids": [
+          "VIS-GS-080",
+          "MN4-GS-CH01-111"
+        ],
+        "evidence": "byte_identical_question_image"
+      }
+    ],
+    "identity_hold_groups": [
+      {
+        "group_id": "B12-ID-01",
+        "selected_card_id": "GS-062",
+        "member_ids": [
+          "GS-055",
+          "GS-062"
+        ],
+        "evidence": "same_source_refid_and_byte_identical_question_image"
+      },
+      {
+        "group_id": "B12-ID-02",
+        "selected_card_id": "GS-068",
+        "member_ids": [
+          "GS-023",
+          "GS-068",
+          "GS-441"
+        ],
+        "evidence": "GS-023_and_GS-068_byte_identical;_GS-441_equivalent_log_exponent_transform"
+      },
+      {
+        "group_id": "B12-ID-03",
+        "selected_card_id": "GS-070",
+        "member_ids": [
+          "GS-054",
+          "GS-070"
+        ],
+        "evidence": "same_source_refid_and_byte_identical_question_image"
+      },
+      {
+        "group_id": "B12-ID-04",
+        "selected_card_id": "GS-079",
+        "member_ids": [
+          "GS-067",
+          "GS-079"
+        ],
+        "evidence": "same_source_and_text;_GS-079_current_asset_is_mismatch"
+      }
+    ]
+  },
+  "relation_audit": {
+    "existing_verified": [
+      {
+        "source_card_id": "GS-058",
+        "target_card_id": "GS-065",
+        "declaration_owners": [
+          "GS-058",
+          "GS-065"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+      },
+      {
+        "source_card_id": "GS-064",
+        "target_card_id": "GS-491",
+        "declaration_owners": [
+          "GS-064",
+          "GS-491"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+      },
+      {
+        "source_card_id": "GS-073",
+        "target_card_id": "GS-316",
+        "declaration_owners": [
+          "GS-073",
+          "GS-316"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+      },
+      {
+        "source_card_id": "GS-073",
+        "target_card_id": "GS-317",
+        "declaration_owners": [
+          "GS-073",
+          "GS-317"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+      },
+      {
+        "source_card_id": "GS-073",
+        "target_card_id": "GS-546",
+        "declaration_owners": [
+          "GS-073",
+          "GS-546"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+      },
+      {
+        "source_card_id": "GS-073",
+        "target_card_id": "GS-592",
+        "declaration_owners": [
+          "GS-073",
+          "GS-592"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+      }
+    ],
+    "removed": [
+      {
+        "source_card_id": "GS-001",
+        "target_card_id": "GS-075",
+        "declaration_owners": [
+          "GS-001",
+          "GS-075"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-008",
+        "target_card_id": "GS-080",
+        "declaration_owners": [
+          "GS-008",
+          "GS-080"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-063",
+        "target_card_id": "GS-066",
+        "declaration_owners": [
+          "GS-063",
+          "GS-066"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-063",
+        "target_card_id": "GS-071",
+        "declaration_owners": [
+          "GS-063",
+          "GS-071"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-063",
+        "target_card_id": "GS-079",
+        "declaration_owners": [
+          "GS-079"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-063",
+        "target_card_id": "GS-431",
+        "declaration_owners": [
+          "GS-063",
+          "GS-431"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-063",
+        "target_card_id": "GS-439",
+        "declaration_owners": [
+          "GS-439"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-063",
+        "target_card_id": "GS-441",
+        "declaration_owners": [
+          "GS-441"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-063",
+        "target_card_id": "GS-446",
+        "declaration_owners": [
+          "GS-446"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-065",
+        "target_card_id": "GS-434",
+        "declaration_owners": [
+          "GS-065"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-066",
+        "target_card_id": "GS-079",
+        "declaration_owners": [
+          "GS-066",
+          "GS-079"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-066",
+        "target_card_id": "GS-441",
+        "declaration_owners": [
+          "GS-441"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-066",
+        "target_card_id": "GS-444",
+        "declaration_owners": [
+          "GS-066",
+          "GS-444"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-066",
+        "target_card_id": "GS-446",
+        "declaration_owners": [
+          "GS-066",
+          "GS-446"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-067",
+        "target_card_id": "GS-074",
+        "declaration_owners": [
+          "GS-067"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-067",
+        "target_card_id": "GS-078",
+        "declaration_owners": [
+          "GS-067"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-068",
+        "target_card_id": "GS-226",
+        "declaration_owners": [
+          "GS-068",
+          "GS-226"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-071",
+        "target_card_id": "GS-430",
+        "declaration_owners": [
+          "GS-430"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-071",
+        "target_card_id": "GS-441",
+        "declaration_owners": [
+          "GS-441"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-071",
+        "target_card_id": "GS-446",
+        "declaration_owners": [
+          "GS-071",
+          "GS-446"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-073",
+        "target_card_id": "GS-170",
+        "declaration_owners": [
+          "GS-073"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-074",
+        "target_card_id": "GS-079",
+        "declaration_owners": [
+          "GS-074"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-074",
+        "target_card_id": "GS-430",
+        "declaration_owners": [
+          "GS-430"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-074",
+        "target_card_id": "GS-444",
+        "declaration_owners": [
+          "GS-074"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-076",
+        "target_card_id": "GS-162",
+        "declaration_owners": [
+          "GS-076"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-076",
+        "target_card_id": "GS-292",
+        "declaration_owners": [
+          "GS-076"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-078",
+        "target_card_id": "GS-080",
+        "declaration_owners": [
+          "GS-078",
+          "GS-080"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-078",
+        "target_card_id": "GS-435",
+        "declaration_owners": [
+          "GS-435"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-078",
+        "target_card_id": "GS-442",
+        "declaration_owners": [
+          "GS-078",
+          "GS-442"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-078",
+        "target_card_id": "GS-444",
+        "declaration_owners": [
+          "GS-078",
+          "GS-444"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-079",
+        "target_card_id": "GS-444",
+        "declaration_owners": [
+          "GS-079"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-079",
+        "target_card_id": "GS-446",
+        "declaration_owners": [
+          "GS-446"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-080",
+        "target_card_id": "GS-081",
+        "declaration_owners": [
+          "GS-080",
+          "GS-081"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-081",
+        "target_card_id": "GS-223",
+        "declaration_owners": [
+          "GS-223"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-081",
+        "target_card_id": "GS-234",
+        "declaration_owners": [
+          "GS-081",
+          "GS-234"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-081",
+        "target_card_id": "GS-439",
+        "declaration_owners": [
+          "GS-439"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-081",
+        "target_card_id": "GS-454",
+        "declaration_owners": [
+          "GS-454"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      },
+      {
+        "source_card_id": "GS-441",
+        "target_card_id": "GS-491",
+        "declaration_owners": [
+          "GS-491"
+        ],
+        "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+      }
+    ],
+    "added": [
+      {
+        "source_card_id": "GS-067",
+        "target_card_id": "GS-444",
+        "declaration_owners": [
+          "GS-067",
+          "GS-444"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-077",
+        "target_card_id": "GS-080",
+        "declaration_owners": [
+          "GS-077",
+          "GS-080"
+        ],
+        "decision": "add_strong_edge"
+      }
+    ],
+    "existing_verified_count": 6,
+    "existing_verified_owner_count": 12,
+    "removed_count": 38,
+    "removed_owner_count": 53,
+    "added_count": 2,
+    "added_owner_count": 4,
+    "bidirectional_owner_declarations_added_count": 8,
+    "combined_strong_logical_edge_count": 8,
+    "combined_owner_declaration_count": 16,
+    "zero_degree_card_ids": [
+      "GS-062",
+      "GS-063",
+      "GS-066",
+      "GS-068",
+      "GS-069",
+      "GS-070",
+      "GS-071",
+      "GS-072",
+      "GS-074",
+      "GS-075",
+      "GS-076",
+      "GS-078",
+      "GS-079",
+      "GS-081"
+    ]
+  },
+  "cards": [
+    {
+      "card_id": "GS-062",
+      "card_path": "错题知识网络/错题卡/GS-062_强化例题2.51355022026.4.18-2.md",
+      "card_sha256": "fa5d8d559faabd2e5eae09120af062c3f7de750b59915100591005dcddf9dcba",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-062_强化例题2.5-135502-2026.4.18.md"
+      ],
+      "reviewed_detail_sha256": [
+        "d9cb2fc15acbb12bf887666b9de924d3fcae530b7c7ccf3edd732d9bfc20387a"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "0b506cdc3c19cb6efca332d8deb9737a0fcc25ce419e5b8d7308a456cb8642b0"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "根式递推的不变区间与极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$\\displaystyle \\lim_{n\\to\\infty}x_n=1$。",
+      "solution_outline": [
+        "先建立不变区间，再用平方作差证明尾项单调有界，最后筛选固定点。",
+        "先判断从第几项进入稳定区间，再谈单调性。"
+      ],
+      "knowledge_nodes": [
+        "递推数列",
+        "不变区间",
+        "尾项单调",
+        "固定点候选筛选"
+      ],
+      "first_action": "先证明从第二项起 $0<x_n\\le1$。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始作答未独立留存；当前只确认复做入口是先把尾项压入 (0,1]，再由平方作差判单调，是否为当时第一断点待复做确认。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧批量仅有1条来源记录；无独立作答过程"
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "duplicate_formal_identity_hold",
+          "severity": "medium",
+          "finding": "GS-062 and GS-055 have the same source, question and byte-identical question image; stable IDs are retained without an ordinary edge.",
+          "resolution_status": "held_for_identity_resolution"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "card_id": "GS-062",
+          "identity_group_id": "B12-ID-01",
+          "member_ids": [
+            "GS-055",
+            "GS-062"
+          ],
+          "decision": "hold_without_merge_delete_or_aggregate_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-063",
+      "card_path": "错题知识网络/错题卡/GS-063_强化例题2.6.md",
+      "card_sha256": "2fa43f4cceb4ae3a06dbd4e666bc4f8be4ad101cb9b8ba3efbc95828d242bfc9",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-063_强化例题2.6---57772-2026.5.11.md"
+      ],
+      "reviewed_detail_sha256": [
+        "71b27c3ba875c3ae21af5509df7a8f439fb835f8f6ee1dd6d4c89246b9e5de22"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "7653d8bfcd20db016dcf0af4d643f8550941de7df31afdc0a83cc4e094bfa523"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "对数夹逼与数列收敛证明",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "不等式成立，且数列收敛。",
+      "solution_outline": [
+        "先用积分夹逼证明前问，再把两侧分别用于单调性与下界。",
+        "前问两侧不等式要分工复用，并逐项检查求和下标。"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "单调有界准则",
+        "定积分",
+        "对数裂项"
+      ],
+      "first_action": "先写 $\\ln(1+x)=\\int_0^x(1+t)^{-1}dt$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "三次记录共同指向：未先把对数差写成积分夹逼，且没有把左侧用于判递减、右侧用于构造下界，并混淆 H_n-ln n 与 H_n-ln$n+1$ 的下标对应。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 3,
+        "repeat_count_source": "wrong_history 明确记录3次不同日期或阶段的失败"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "log_integral_inequality_chain_verified",
+          "severity": "medium",
+          "finding": "The two sides of the logarithm estimate are now separated into monotonicity and lower-bound roles with indices checked.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-066",
+          "declaration_owners": [
+            "GS-063",
+            "GS-066"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-071",
+          "declaration_owners": [
+            "GS-063",
+            "GS-071"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-079",
+          "declaration_owners": [
+            "GS-079"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-431",
+          "declaration_owners": [
+            "GS-063",
+            "GS-431"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-439",
+          "declaration_owners": [
+            "GS-439"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-441",
+          "declaration_owners": [
+            "GS-441"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-446",
+          "declaration_owners": [
+            "GS-446"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-064",
+      "card_path": "错题知识网络/错题卡/GS-064_1000题强化2.1.md",
+      "card_sha256": "9acf73ab03efa2f695c0de26b2a3b123d7794ad34d92c669bd987eea36e16e8e",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-064_1000题强化2.1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "d33e6b28f0f8a001d98f2dc20b477bbc0a7cc5f10d630320266ee19b4879c5af"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "6562fafa1a7e14f01b77448aa221257fad72ef53887127944a9fedebf04e7c05"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "幂指数列单调性判断",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "B，单调递减。",
+      "solution_outline": [
+        "幂指结构先取对数，再函数化并用导数判单调。",
+        "题目问单调性时，求出极限还没有完成任务。"
+      ],
+      "knowledge_nodes": [
+        "幂指函数",
+        "导数判单调",
+        "离散数列函数化"
+      ],
+      "first_action": "先写 $a_n=e^{\\ln(n+3)/(n+3)}$，把目标转为判断 $g(x)=\\ln x/x$ 的单调性。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "已有具体记录：只算了极限，没有继续把幂指结构取对数、函数化并求导判断单调性；分式求导也未熟练调用。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "视觉来源中的具体错题记录；仅计1次"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "unsupported_mastery_estimate_removed",
+          "severity": "medium",
+          "finding": "The old AI-only mastery estimate was removed; no new user redo evidence was invented.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-064",
+          "target_card_id": "GS-491",
+          "declaration_owners": [
+            "GS-064",
+            "GS-491"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+        }
+      ],
+      "batch31_lineage_revalidation": {
+        "batch_number": 31,
+        "date": "2026-07-24",
+        "prior_card_sha256": "1db80e833370aea2f28367686f231d4dd16953c2978d9bf21c4fe2228692dbb3",
+        "current_card_sha256": "9acf73ab03efa2f695c0de26b2a3b123d7794ad34d92c669bd987eea36e16e8e",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [],
+        "removed_edges": [
+          "GS-064--GS-491"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第31批删除 GS-064--GS-491 的旧宽泛关系声明；第12批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-065",
+      "card_path": "错题知识网络/错题卡/GS-065_1000题强化2.4.md",
+      "card_sha256": "780591c86f27c04fe1f0b8079504d3c205631aec894c5c48baa35ddfbe5fe66b",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-065_1000题强化2.4.md"
+      ],
+      "reviewed_detail_sha256": [
+        "dccfc09ce3bc300c7a60364858f85213be20027074f4dcf7a1f6199b2694eab0"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "9ebdddb30a3c796535a3ce5c8c0ec61137266e51c1367fa407c1397c47870fad"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "严格距离收缩下的不动点迭代",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "存在唯一不动点 $\\xi$，且 $\\displaystyle\\lim_{n\\to\\infty}x_n=\\xi$。",
+      "solution_outline": [
+        "先证唯一不动点，再用严格距离收缩证明迭代项保持同侧并单调逼近。",
+        "先区分严格距离收缩与统一压缩常数，再选择同侧单调或几何误差路线。"
+      ],
+      "knowledge_nodes": [
+        "连续函数零点",
+        "唯一不动点",
+        "严格距离收缩",
+        "迭代收敛"
+      ],
+      "first_action": "先令 $g(x)=f(x)-x$，用端点异号与严格距离收缩证明唯一根。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始作答未独立留存；当前只确认复做入口是先构造 g$x$=f$x$-x 得到唯一不动点，再证明迭代项在同侧单调逼近。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧批量仅有1条来源记录；无独立作答过程"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "uniform_contraction_claim_removed",
+          "severity": "high",
+          "finding": "Pointwise strict distance decrease is no longer presented as a uniform Banach contraction; the proof uses a unique fixed point and same-side monotone iteration.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-065",
+          "target_card_id": "GS-434",
+          "declaration_owners": [
+            "GS-065"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-058",
+          "target_card_id": "GS-065",
+          "declaration_owners": [
+            "GS-058",
+            "GS-065"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-066",
+      "card_path": "错题知识网络/错题卡/GS-066_1034472026.5.8.md",
+      "card_sha256": "e514b9ecbb3a13d524a27f10fc88ceb9619664eaa764f189e5a87a257f9c6e46",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-066_103447-2026.5.8-2026.5.20.md"
+      ],
+      "reviewed_detail_sha256": [
+        "1af890b433dea42982ec408482bfce63b749f64d346fa4c186f08d24183f49d8"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "761cbfe32e9aab4d6a1ca402399cd11bfdeeed0cbcc0457bc233ded52fccf778"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "分式递推的不变区间与极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$\\displaystyle\\lim_{n\\to\\infty}x_n=\\sqrt c$。",
+      "solution_outline": [
+        "先证不变区间，再作差证明单调，最后代入固定点方程。",
+        "不变区间没有闭合前，不要提前使用 c-x_n² 的符号。"
+      ],
+      "knowledge_nodes": [
+        "递推数列",
+        "不变区间",
+        "单调有界准则",
+        "参数不等式"
+      ],
+      "first_action": "先用归纳证明 $0\\le x_n\\le\\sqrt c$，再写相邻项差。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "三次记录显示断点逐步收窄到上界构造：知道要证 0≤x_n≤√c，但没有完成分式变形与负分式比较方向，因而无法合法进入作差判单调。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 3,
+        "repeat_count_source": "wrong_history 明确记录2026-04-24、2026-05-08、2026-05-20三次失败"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "repeat_count_and_invariant_interval_repaired",
+          "severity": "medium",
+          "finding": "Three confirmed failures are preserved and the invariant-interval inequality is completed before monotonicity is used.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-066",
+          "declaration_owners": [
+            "GS-063",
+            "GS-066"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-066",
+          "target_card_id": "GS-079",
+          "declaration_owners": [
+            "GS-066",
+            "GS-079"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-066",
+          "target_card_id": "GS-441",
+          "declaration_owners": [
+            "GS-441"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-066",
+          "target_card_id": "GS-444",
+          "declaration_owners": [
+            "GS-066",
+            "GS-444"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-066",
+          "target_card_id": "GS-446",
+          "declaration_owners": [
+            "GS-066",
+            "GS-446"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-067",
+      "card_path": "错题知识网络/错题卡/GS-067_1000题强化2.8.md",
+      "card_sha256": "589eb6992d49884d7a5266fbcc9101f97d29cde9d36457c668f8e72077b872af",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-067_1000题强化2.8-2026.5.11.md"
+      ],
+      "reviewed_detail_sha256": [
+        "e73d8218206d6849e326b94b1c55c8f2a8af5cfe494acf08e101b4bb12016fdd"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "b6ef212c37c5186782d5124ca298c65e236dbc01cd57d9b9aa379b8f8c08f71f"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "正切递推的区间保持与三阶极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$\\displaystyle\\lim x_n=0$，第二问为 $-\\frac13$。",
+      "solution_outline": [
+        "先锁区间，再作差判单调，最后用三阶泰勒处理第二问。",
+        "区间保持是正切不等式和泰勒路线的合法前提。"
+      ],
+      "knowledge_nodes": [
+        "递推数列",
+        "区间不变性",
+        "单调有界准则",
+        "泰勒公式"
+      ],
+      "first_action": "先证明 $F(x)=2x-\\tan x$ 把 $(0,\\pi/4)$ 映回自身。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "视觉解析提出的候选断点是没有先用归纳法锁定 $0,\\pi/4$，但缺少独立用户作答轨迹；本批只登记为待复做确认的方法入口。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "同一来源记录1次；视觉解析不能独立证明个人第一断点"
+      },
+      "consistency": {
+        "question_identity": "provisional_visual_representative_for_GS-079",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "provisional_visual_representative",
+          "severity": "medium",
+          "finding": "GS-067 is the verified visual representative for source 103486 while GS-079 remains blocked; the recurrence and third-order limit were checked.",
+          "resolution_status": "held_pending_identity_relink"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-067",
+          "target_card_id": "GS-074",
+          "declaration_owners": [
+            "GS-067"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-067",
+          "target_card_id": "GS-078",
+          "declaration_owners": [
+            "GS-067"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-067",
+          "target_card_id": "GS-444",
+          "declaration_owners": [
+            "GS-067",
+            "GS-444"
+          ],
+          "decision": "add_strong_edge"
+        },
+        {
+          "card_id": "GS-067",
+          "paired_card_id": "GS-079",
+          "decision": "allow_provisional_visual_representative_only"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-068",
+      "card_path": "错题知识网络/错题卡/GS-068_2018年第21题788612026.4.18-2.md",
+      "card_sha256": "fd2bd443e41c679a7eeeb98a36ef732f469c235adb0f87ff2af8828e72bdf769",
+      "later_batch_revalidation": {
+        "batch_number": 29,
+        "date": "2026-07-24",
+        "prior_card_sha256": "6c140e766f40ffc0bc9bd6df28a0fcdce30b6d7f1685a7f8134a67cc2f608e7f",
+        "current_card_sha256": "fd2bd443e41c679a7eeeb98a36ef732f469c235adb0f87ff2af8828e72bdf769",
+        "content_change_scope": "duplicate_identity_metadata_and_aggregate_policy_only",
+        "current_related": [
+          "暂无强边"
+        ],
+        "removed_edges": [],
+        "added_edges": [],
+        "current_aggregate_edge_policy": "block_until_relinked",
+        "identity_group": "B12-ID-02",
+        "historical_semantic_payload_preserved": true,
+        "note": "第29批把 GS-023、GS-068、GS-441 统一登记为 B12-ID-02，并保持普通关系聚合阻断；未迁移个人错因，也未增加复发次数。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-068_2018年第21题-78861-2026.4.18.md"
+      ],
+      "reviewed_detail_sha256": [
+        "8aa261c85bc21f015fd249e715ad6e6cbeb37b06bf71bcf3e17c95b18086df22"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "994959bffa1709bc6228caed7d2a9cebeeff3cb75db28453f7a54aa4f7cc3fd6"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "指数隐式递推数列的收敛与极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$\\displaystyle\\lim_{n\\to\\infty}x_n=0$。",
+      "solution_outline": [
+        "用指数差商制造相邻项大小关系，再走单调有界与极限方程。",
+        "隐式递推不能先假设极限存在；先证明相邻项不等式。"
+      ],
+      "knowledge_nodes": [
+        "指数隐式递推",
+        "拉格朗日中值定理",
+        "单调有界",
+        "极限方程"
+      ],
+      "first_action": "把 $e^{x_n}-1$ 写成 $e^{x_n}-e^0$，在 $[0,x_n]$ 上用中值定理。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始作答未独立留存；当前只确认指数差商应先触发拉格朗日中值定理。GS-068 与 GS-023、GS-441 是同一递推的不同登记，不另计复发。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧批量仅有1条来源记录；重复身份不另计复发"
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "duplicate_formal_identity_hold",
+          "severity": "medium",
+          "finding": "GS-023, GS-068 and the transformed GS-441 registration are held as one identity family without ordinary semantic edges.",
+          "resolution_status": "held_for_identity_resolution"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-068",
+          "target_card_id": "GS-226",
+          "declaration_owners": [
+            "GS-068",
+            "GS-226"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "card_id": "GS-068",
+          "identity_group_id": "B12-ID-02",
+          "member_ids": [
+            "GS-023",
+            "GS-068",
+            "GS-441"
+          ],
+          "decision": "hold_without_merge_delete_or_aggregate_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-069",
+      "card_path": "错题知识网络/错题卡/GS-069_580492026.4.18.md",
+      "card_sha256": "5f647829595d9cf5d8225ebbbc770041525241ca30841b95983296d6f7901645",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-069_58049-2026.4.18.md"
+      ],
+      "reviewed_detail_sha256": [
+        "4b521cdee4e517d1bf56b171bf468e7ef7bdf147d3ceee1ed872f1408951fe8c"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "4c351d0e8b9c20024b3186b39ae09a21b85f8e16cf9add947f063aa7f3c5cca4"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "相邻根式和式作差极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$\\displaystyle\\frac{\\sqrt2}{2}$。",
+      "solution_outline": [
+        "先求和，再有理化并同除最高阶量。",
+        "先精确有理化，再判断常数系数。"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "等差数列求和",
+        "根式有理化",
+        "主导项"
+      ],
+      "first_action": "先写出两段等差和的闭式 $n(n+1)/2$ 与 $n(n-1)/2$。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始作答未独立留存；当前只确认复做入口是先把两个相邻和式求和，再有理化，是否为当时第一断点待确认。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧批量仅有1条来源记录；无独立作答过程"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "adjacent_radical_sum_solution_verified",
+          "severity": "medium",
+          "finding": "The neighboring arithmetic sums, rationalization and constant factor were checked against the image.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-070",
+      "card_path": "错题知识网络/错题卡/GS-070_强化例题2.41715552026.4.18-2.md",
+      "card_sha256": "5f280d1ba4442a7298984c0dca4874640c9e0fff2183e590d7f250b98f8ccbe7",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-070_强化例题2.4-171555-2026.4.18.md"
+      ],
+      "reviewed_detail_sha256": [
+        "ddf34ef0999c29dca33ce3b1835bdce270eb767a1a964969d9e56bfeaf60db7c"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "ca1313b2d7cd815f84543c4df216fd97990dcf2974f559257991aebb1f10981a"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "倒数结构递推数列极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$\\displaystyle\\lim_{n\\to\\infty}x_n=2$。",
+      "solution_outline": [
+        "先把尾项送入稳定区间，再从第二项起作差判单调。",
+        "先说明从第几项起满足单调条件。"
+      ],
+      "knowledge_nodes": [
+        "递推数列",
+        "基本不等式",
+        "尾项单调",
+        "固定点筛选"
+      ],
+      "first_action": "令 $u_n=x_n-1$，显出 $u_n+1/u_n$ 并证明 $x_{n+1}\\ge2$。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始作答未独立留存；当前只确认复做入口是把递推式平移成 u+1/u 结构，先证明第二项起进入 [2,+∞)。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧批量仅有1条来源记录；重复身份不另计复发"
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "duplicate_formal_identity_hold",
+          "severity": "medium",
+          "finding": "GS-070 and GS-054 have the same source, question and byte-identical image; stable IDs are retained without an ordinary edge.",
+          "resolution_status": "held_for_identity_resolution"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "card_id": "GS-070",
+          "identity_group_id": "B12-ID-03",
+          "member_ids": [
+            "GS-054",
+            "GS-070"
+          ],
+          "decision": "hold_without_merge_delete_or_aggregate_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-071",
+      "card_path": "错题知识网络/错题卡/GS-071_577392026.4.22.md",
+      "card_sha256": "6a200ddf976b1edcc93b5a526cf6b74e18078f024dc8dfd70a9ef21d68fb81f6",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-071_57739-2026.5.20.md"
+      ],
+      "reviewed_detail_sha256": [
+        "2308eb996565141309dcebb6c889327d9bb97c945f89a245fa774564e0dc3e75"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "bcbea6c5359b9be58c59d39a0f93524956a4697f9aa3830582c8067666a934fc"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "根式递推的单调性与上界构造",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$\\displaystyle\\lim_{n\\to\\infty}x_n=\\frac{1+\\sqrt{1+4a}}2$。",
+      "solution_outline": [
+        "先证单调，再从递推式本身做出上界，最后代极限方程。",
+        "单调性只是半条链；下一步必须由递推式制造上界。"
+      ],
+      "knowledge_nodes": [
+        "递推数列",
+        "数学归纳法",
+        "上界构造",
+        "固定点方程"
+      ],
+      "first_action": "先比较相邻项并用归纳证明递增；随后立刻平方递推式构造上界。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "三次记录显示：先是没有启动单调有界主线，随后断在单调性之后，未能由递推式平方和比值估计构造上界。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 3,
+        "repeat_count_source": "wrong_history 明确记录2026-04-22、2026-05-08、2026-05-20三次失败"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "upper_bound_chain_restored",
+          "severity": "medium",
+          "finding": "The proof now continues past monotonicity and constructs an upper bound directly from the squared recurrence.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-071",
+          "declaration_owners": [
+            "GS-063",
+            "GS-071"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-071",
+          "target_card_id": "GS-430",
+          "declaration_owners": [
+            "GS-430"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-071",
+          "target_card_id": "GS-441",
+          "declaration_owners": [
+            "GS-441"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-071",
+          "target_card_id": "GS-446",
+          "declaration_owners": [
+            "GS-071",
+            "GS-446"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-072",
+      "card_path": "错题知识网络/错题卡/GS-072_2022年第六题.md",
+      "card_sha256": "28ffbc6d53fb3639cff9a44f9ade1098e01df7ccbe74bcac659d9851da34b9dc",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-072_2022年第六题.md"
+      ],
+      "reviewed_detail_sha256": [
+        "837f07576b31c8e2998ad2dd3b1ff60067f2dca219522c5b565cf18e20cf327a"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "05b8d81fe286e3dd8be5701010869c4a2eacb6fa9238fb9788feb92e5cef97a3",
+        "709d0f4cee1d320a85f0323fe28d1eaf62710f39e4df1b29cc6342722cf65be7"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "复合数列极限的可逆反推",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "D。",
+      "solution_outline": [
+        "可逆时用连续反函数反推；不可逆时找两个不同输入同值并构造振荡反例。",
+        "复合极限反推的第一道门是值域上的一一性。"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "复合函数",
+        "一一性",
+        "反函数连续性"
+      ],
+      "first_action": "先写出内层值域，再判断外层函数在该区间是否一一可逆。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始作答未独立留存；当前只确认复做时应先检查外层函数在内层值域上是否一一可逆，不可逆时构造同值振荡反例。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧批量仅有1条来源记录；题图与解析图不能反推个人错因"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": true,
+        "solution_review": "question_and_solution_image_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "question_and_solution_image_cross_checked",
+          "severity": "medium",
+          "finding": "The inverse-function condition and endpoint oscillation counterexample were checked against both question and solution images.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-073",
+      "card_path": "错题知识网络/错题卡/GS-073_103499.md",
+      "card_sha256": "1dfbaa7c3bb9d5189ebb6f4b557ce16aa4ba53d9603d15c8bea8f066819650a1",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-073_103499.md",
+        "错题知识网络/可视化错题详情/高等数学/GS-073_强化例题2.8.md",
+        "错题知识网络/可视化错题详情/高等数学/MN4-GS-CH01-110_103499-2026.5.11.md"
+      ],
+      "reviewed_detail_sha256": [
+        "62991c737fd4304699e4e83011aee1559f65e8b7093b46dad64f1e0a496b9588",
+        "0c072feaba9058a62628e4a6ac355b2431d0c2a17c3ba2ce5678445df1ed1ff8",
+        "c0acd082ea9879a33cbc2099ea10641e2b190dec2a0e07d3106926b253e768b6"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "499b15a5df4d5395304d593fbaea0e0bc2849730733a4ca0167e9af9cb2a360f"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 2,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "参数积分递推与指数型极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "C，$e^{-1}$。",
+      "solution_outline": [
+        "先建立参数积分递推，再把底数化成只含 n 的表达式处理指数极限。",
+        "积分号不是乘法括号；先找换元、恒等拆分与递推。"
+      ],
+      "knowledge_nodes": [
+        "定积分",
+        "三角换元",
+        "分部积分递推",
+        "指数型极限"
+      ],
+      "first_action": "令 $x=\\sin t$，再用 $\\cos^2t=1-\\sin^2t$ 把 $a_n$ 写成 $b_n-b_{n+2}$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "已有具体记录：三角换元后把两个积分的比值误当成被积函数可以直接约掉，没有先用 cos²t=1-sin²t 建立 a_n=b_n-b_{n+2}。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-05-11具体错误记录；2026-06-11复做正确不另计失败"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "same_card_asset_alias_preserved",
+          "severity": "medium",
+          "finding": "The canonical and MN4 alias question images are byte-identical and remain one card; the illegal cancellation trap and Wallis recurrence were verified.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-073",
+          "target_card_id": "GS-170",
+          "declaration_owners": [
+            "GS-073"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-073",
+          "target_card_id": "GS-316",
+          "declaration_owners": [
+            "GS-073",
+            "GS-316"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+        },
+        {
+          "source_card_id": "GS-073",
+          "target_card_id": "GS-317",
+          "declaration_owners": [
+            "GS-073",
+            "GS-317"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+        },
+        {
+          "source_card_id": "GS-073",
+          "target_card_id": "GS-546",
+          "declaration_owners": [
+            "GS-073",
+            "GS-546"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+        },
+        {
+          "source_card_id": "GS-073",
+          "target_card_id": "GS-592",
+          "declaration_owners": [
+            "GS-073",
+            "GS-592"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration"
+        }
+      ],
+      "batch34_lineage_revalidation": {
+        "batch_number": 34,
+        "date": "2026-07-24",
+        "prior_card_sha256": "5c2cbe7a69261a906ecdab5079ed804ac8eec8fcd0080fec4623191cb0f4496e",
+        "current_card_sha256": "e96ddf6fedab84a9b393a1c2d6c44fe6a3bbac650937774c6430cc5a7c668d47",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-316",
+          "GS-317",
+          "GS-592"
+        ],
+        "removed_edges": [
+          "GS-073--GS-546"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第34批重绑 GS-073 的关系导航哈希；第12批原逐题语义载荷保持不变。"
+      },
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "e96ddf6fedab84a9b393a1c2d6c44fe6a3bbac650937774c6430cc5a7c668d47",
+        "current_card_sha256": "1dfbaa7c3bb9d5189ebb6f4b557ce16aa4ba53d9603d15c8bea8f066819650a1",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-316",
+          "GS-317"
+        ],
+        "removed_edges": [
+          "GS-073--GS-592"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "batch34_lineage_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-073 的关系导航哈希；第12批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-074",
+      "card_path": "错题知识网络/错题卡/GS-074_强化例题2.9.md",
+      "card_sha256": "7faed2750d8c67a64a6bc6faa7864933bb598b2caa47ba218f5e427158edee80",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-074_强化例题2.9.md"
+      ],
+      "reviewed_detail_sha256": [
+        "91bea238f8a8fe1495396769cf9a2fe690b70dc57553f0d80c42173a11a28465"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "4850669a7ff3c3c7298daed89fb2617a08f46c1c4d39a515ea0d025972fec97c"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "双通项递推的同阶指数",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "C，$a=3$。",
+      "solution_outline": [
+        "消元后先证 b_n 趋零，再用三阶泰勒比较同阶指数。",
+        "同阶比较前必须先证明参与展开的小量确实趋零。"
+      ],
+      "knowledge_nodes": [
+        "递推数列",
+        "同阶无穷小",
+        "泰勒公式",
+        "双通项消元"
+      ],
+      "first_action": "先由 $a_n+b_n=\\pi/2$ 消去 $a_n$，得到 $b_{n+1}=b_n-\\sin b_n$。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "视觉解析提出的候选断点是未先消去 a_n、未证明 b_n↓0、未接三阶泰勒；缺少独立用户作答轨迹，本批不写成已确认个人第一断点。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧视觉解析仅支持候选入口；无独立作答过程"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "truncated_question_and_answer_restored",
+          "severity": "high",
+          "finding": "The complete two-sequence recurrence, requested exponent and answer C with a=3 were restored.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-067",
+          "target_card_id": "GS-074",
+          "declaration_owners": [
+            "GS-067"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-074",
+          "target_card_id": "GS-079",
+          "declaration_owners": [
+            "GS-074"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-074",
+          "target_card_id": "GS-430",
+          "declaration_owners": [
+            "GS-430"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-074",
+          "target_card_id": "GS-444",
+          "declaration_owners": [
+            "GS-074"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-075",
+      "card_path": "错题知识网络/错题卡/GS-075_强化例题2.10.md",
+      "card_sha256": "6c0e208db1f037fe9b92920f5d9b767b878c60856044e158e97108e81dadd33e",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-075_强化例题2.10.md"
+      ],
+      "reviewed_detail_sha256": [
+        "82039c15e3b921b6eddb983977df82a8bc359d3aa39c1878e08e67f81f6ef900"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "d508f368e8bae055c2d4748c5a6c77f1ab7644c3671e8e22773fbfe160a8887b"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "对数约束下的幂指型数列极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "1。",
+      "solution_outline": [
+        "先确定底层小量，再指数化幂指式并用题设对数关系消去 n。",
+        "先证明所有等价无穷小所需的小量极限，再做对数化。"
+      ],
+      "knowledge_nodes": [
+        "幂指极限",
+        "等价无穷小",
+        "余弦单调性",
+        "对数化"
+      ],
+      "first_action": "先由 $0<b_n<a_n\\to0$ 得到 $b_n\\to0$。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始作答未独立留存；当前只确认复做入口是先由余弦单调性证明 b_n→0，再利用题设取对数消去 n。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧批量仅有1条来源记录；无独立作答过程"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "logarithmic_elimination_chain_verified",
+          "severity": "medium",
+          "finding": "The proof first establishes b_n tends to zero, then uses the given logarithmic identity to eliminate n.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-001",
+          "target_card_id": "GS-075",
+          "declaration_owners": [
+            "GS-001",
+            "GS-075"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-076",
+      "card_path": "错题知识网络/错题卡/GS-076_1000题B2.2.md",
+      "card_sha256": "5053cd31d564f2ebc5b0fc2fa831a7f73110057a9b4825c0d26a3c09fcedf76a",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-076_1000题B2.2.md"
+      ],
+      "reviewed_detail_sha256": [
+        "aab60ce793dfb22bc0b05b9ed76e102ff9b9e62bdb1bbbc7fdafdc262984071e"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "e50a1b3f71cffdc605b07b1b2a62a60727c349bdf957816198e4bdfd9e1ad0d1"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "周期区间内隐式根的相邻差极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "D，π。",
+      "solution_outline": [
+        "先按正切周期拆出相位偏移，再由 tan δ_n 趋无穷确定 δ_n 的极限。",
+        "周期根序列优先写成 nπ 加区间内偏移量。"
+      ],
+      "knowledge_nodes": [
+        "隐式根序列",
+        "正切周期",
+        "区间定位",
+        "数列极限"
+      ],
+      "first_action": "令 $t_n=\\sqrt{a_n}=n\\pi+\\delta_n$，其中 $0<\\delta_n<\\pi/2$。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "视觉解析提出的候选断点是未使用根所在周期区间；但没有独立作答证据。旧解析还错误声称差角式分子有界，本批已改用相位分解。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧视觉解析仅支持候选入口；无独立作答过程"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "false_bounded_numerator_removed",
+          "severity": "high",
+          "finding": "The false claim that a_{n+1}-a_n is bounded was removed; the verified proof uses t_n=n*pi+delta_n and delta_n tending to pi/2.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-076",
+          "target_card_id": "GS-162",
+          "declaration_owners": [
+            "GS-076"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-076",
+          "target_card_id": "GS-292",
+          "declaration_owners": [
+            "GS-076"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-077",
+      "card_path": "错题知识网络/错题卡/GS-077_1000题强化2.6.md",
+      "card_sha256": "dfbbb9c1ee319152ac2b4cc946b8be0fa812fd485daac49fc3e16c52c083baa1",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-077_1000题强化2.6.md"
+      ],
+      "reviewed_detail_sha256": [
+        "8b890db17b3db88e703f86ed06209dac9bc004c05c7a02ad8ec757e1db132301"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "7510f8c5ed38abb4f2978c00b63c64ec3132ce0ef5ca19c677a1b297641f6ddc"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "双递推数列的无穷小阶比较证明",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$y_n=o(x_n)$。",
+      "solution_outline": [
+        "给慢衰减序列建指数下界，给快衰减序列写正确显式式子，再按比值定义判阶。",
+        "显式通项先用 n=1、2 自检指数下标。"
+      ],
+      "knowledge_nodes": [
+        "函数凹性",
+        "递推数列",
+        "无穷小阶比较",
+        "指数衰减"
+      ],
+      "first_action": "先用正弦的凹性证明 $\\sin x>2x/\\pi$，给 $x_n$ 建可迭代下界。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始作答未独立留存；当前只确认题面方法入口。旧解析把 y_n 的指数写成 2^n，并把 g''<0 误称为凸，本批均已纠正。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧批量仅有1条来源记录；无独立作答过程"
+      },
+      "consistency": {
+        "question_identity": "distinct_variant",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "explicit_term_and_concavity_repaired",
+          "severity": "high",
+          "finding": "The exact term is (1/2)^(2^(n-1)), and a negative second derivative is correctly described as concavity.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-077",
+          "target_card_id": "GS-080",
+          "declaration_owners": [
+            "GS-077",
+            "GS-080"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-078",
+      "card_path": "错题知识网络/错题卡/GS-078_1000题强化2.7.md",
+      "card_sha256": "31904bef4bc8e1b9e512c9cf87d56fd71157fbb45ee83677d30baacb2eef66ec",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-078_1000题强化2.7.md"
+      ],
+      "reviewed_detail_sha256": [
+        "1513b40af8361a5a295f814e472bc6eaf11208b0987b7d747bfa269e32868b9d"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "672c6edf950fb740b1081d10963bea2ec5eb30443c73ab7f7c592039c394c813"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "余弦隐式递推的二阶极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$\\displaystyle\\lim x_n=0$，且 $\\displaystyle\\lim x_{n+1}/x_n^2=1/2$。",
+      "solution_outline": [
+        "先从原递推证明单调与极限，再拆 1-cos，并先证明 x_{n+1}/x_n 趋零后处理二阶项。",
+        "每一步变形都回查原递推；删项前先证明相对阶数。"
+      ],
+      "knowledge_nodes": [
+        "递推数列",
+        "余弦单调性",
+        "等价无穷小",
+        "二阶主项"
+      ],
+      "first_action": "先由 $\\cos x_{n+1}-\\cos x_n=x_{n+1}>0$ 比较相邻项。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "视觉解析提出的候选断点是未拆出 1-cos，但缺少独立作答证据。旧解析还伪造了 x_{n+1}=cos x_n，并由 cos A=A 错推 A=0，本批已完整修正。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧视觉解析仅支持候选入口；无独立作答过程"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "fabricated_recurrence_and_limit_equation_removed",
+          "severity": "high",
+          "finding": "The false recurrence x_{n+1}=cos x_n and false fixed-point inference were removed; the proof now follows the original cosine difference and a second-order split.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-067",
+          "target_card_id": "GS-078",
+          "declaration_owners": [
+            "GS-067"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-078",
+          "target_card_id": "GS-080",
+          "declaration_owners": [
+            "GS-078",
+            "GS-080"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-078",
+          "target_card_id": "GS-435",
+          "declaration_owners": [
+            "GS-435"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-078",
+          "target_card_id": "GS-442",
+          "declaration_owners": [
+            "GS-078",
+            "GS-442"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-078",
+          "target_card_id": "GS-444",
+          "declaration_owners": [
+            "GS-078",
+            "GS-444"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-079",
+      "card_path": "错题知识网络/错题卡/GS-079_1000题强化2.8-2.md",
+      "card_sha256": "64e822562fef105ca3e383f69233d2ad020740c19020d671346cfafeec28129e",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-079_1000题A组11.5.md",
+        "错题知识网络/可视化错题详情/高等数学/GS-079_缺图登记-1000题强化2.8-2-1034862026.5.11.md"
+      ],
+      "reviewed_detail_sha256": [
+        "5a15413c6882543104c87e6cd1509365dedde6dbfb1ae995be3312a240395573",
+        "7ada6608ad2ea7b29f9db3342dab59aa11af3330b43a89dd6f02b34599190455"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "2b1330d514fb48129d23057ee882dc29fee3b5b86cb2b8f8bbd0fca33f888ba7"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "正切递推的区间保持与三阶极限",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "$\\displaystyle\\lim x_n=0$，第二问为 $-1/3$。",
+      "solution_outline": [
+        "先锁区间，再作差判单调，最后用三阶泰勒处理第二问。",
+        "本卡先解决视觉身份；未裁决前不参与普通强边聚合。"
+      ],
+      "knowledge_nodes": [
+        "递推数列",
+        "区间不变性",
+        "单调有界准则",
+        "泰勒公式"
+      ],
+      "first_action": "先证明 $F(x)=2x-\\tan x$ 保持 $(0,\\pi/4)$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "2026-05-11记录明确指出：没有先证明 0<x_n<π/4 的区间不变性，导致后续正切比较与单调有界缺少前提。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-05-11具体错误记录；与GS-067身份待裁决，不合并计数"
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold_needs_source_confirmation",
+        "independent_solution_asset": false,
+        "solution_review": "formal_text_reviewed_and_mismatch_asset_excluded",
+        "formal_visual": "blocked_visual_mismatch"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "canonical_visual_identity_mismatch",
+          "severity": "high",
+          "finding": "The current GS-079 image is an unrelated integral mean-value-theorem problem and is excluded from formal question evidence while retained in the hash snapshot as mismatch evidence.",
+          "resolution_status": "held_for_manual_relink"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-063",
+          "target_card_id": "GS-079",
+          "declaration_owners": [
+            "GS-079"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-066",
+          "target_card_id": "GS-079",
+          "declaration_owners": [
+            "GS-066",
+            "GS-079"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-074",
+          "target_card_id": "GS-079",
+          "declaration_owners": [
+            "GS-074"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-079",
+          "target_card_id": "GS-444",
+          "declaration_owners": [
+            "GS-079"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-079",
+          "target_card_id": "GS-446",
+          "declaration_owners": [
+            "GS-446"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "card_id": "GS-079",
+          "identity_group_id": "B12-ID-04",
+          "member_ids": [
+            "GS-067",
+            "GS-079"
+          ],
+          "decision": "hold_without_merge_delete_or_aggregate_edge"
+        },
+        {
+          "card_id": "GS-079",
+          "mismatch_asset_path": "错题知识网络/assets/visual_wrong_questions/GS-079/question_01.png",
+          "decision": "exclude_asset_from_formal_question_evidence_and_block_aggregate_edges"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-080",
+      "card_path": "错题知识网络/错题卡/GS-080_2023年真题第三题.md",
+      "card_sha256": "353101f2bf88c66d59536323ddb9b2847e53965a611075c2151bc50983ea61b7",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-080_2023年真题第三题.md",
+        "错题知识网络/可视化错题详情/高等数学/MN4-GS-CH01-111_2023年真题第三题-2026.5.10.md"
+      ],
+      "reviewed_detail_sha256": [
+        "cdab8e2db1852c0c56dfab68dfcd5ad891f27b572828bd544e66f1d5529632ed",
+        "0c6f706236c3ddd3d150b350b07e1d7c3dcab4bf69ace4de4b979513888fe152"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "f2ff360c21648b29d1c97ccb44388895372b671b6c0f62915c67e4c8a68d9544"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 2,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "双递推数列的无穷小阶比较",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "B，$y_n=o(x_n)$。",
+      "solution_outline": [
+        "用固定点与区间筛选极限，再用比值数列的相邻比值和等比压缩判阶。",
+        "项取不到0与极限能否为0是两件事；比值趋零要落成最终压缩。"
+      ],
+      "knowledge_nodes": [
+        "递推数列",
+        "无穷小阶比较",
+        "固定点候选筛选",
+        "相邻比值压缩"
+      ],
+      "first_action": "先证明两列都趋零，再设 $z_n=y_n/x_n$ 并计算相邻比值。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "三次记录显示：先是未构造比值数列，后续虽已想到固定点和 z_n=y_n/x_n，却把“每项非零”误当成“极限非零”，并未把相邻比值趋零落实为等比压缩。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 3,
+        "repeat_count_source": "wrong_history 明确记录初错、2026-05-10、2026-06-10三次失败"
+      },
+      "consistency": {
+        "question_identity": "distinct_variant",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "same_card_alias_and_repeat_chain_verified",
+          "severity": "medium",
+          "finding": "Both same-card image paths were reviewed, three confirmed failures were preserved, and the adjacent-ratio argument is completed by geometric compression.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-008",
+          "target_card_id": "GS-080",
+          "declaration_owners": [
+            "GS-008",
+            "GS-080"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-078",
+          "target_card_id": "GS-080",
+          "declaration_owners": [
+            "GS-078",
+            "GS-080"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-080",
+          "target_card_id": "GS-081",
+          "declaration_owners": [
+            "GS-080",
+            "GS-081"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-077",
+          "target_card_id": "GS-080",
+          "declaration_owners": [
+            "GS-077",
+            "GS-080"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-081",
+      "card_path": "错题知识网络/错题卡/GS-081_1000题B组3.6.md",
+      "card_sha256": "a8b677fee53cecbfda9e95b3227da66b3e4de916eee739c610b7e270508e4d34",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-081_1000题B组3.6.md"
+      ],
+      "reviewed_detail_sha256": [
+        "bcaad259ea2df17de85753b8664b568f75a74452eb737ad5b8face75491d0178"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "0741216b8e7040a8d989f65a078b0d8e19610b209d1a9a4ad67b8fb178afc8a7"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "可导函数复合极限与对数差",
+      "asked_output": "完成题目要求的证明、判断或极限计算，并写出合法的第一动作。",
+      "answer": "B，$a$。",
+      "solution_outline": [
+        "用一阶展开统一比较分子、函数差与对数差的主项。",
+        "先检查定义域，再写出各层复合量的一阶主项。"
+      ],
+      "knowledge_nodes": [
+        "导数定义",
+        "一阶展开",
+        "对数等价无穷小",
+        "复合函数极限"
+      ],
+      "first_action": "先写 $f(t)=a+at+o(t)$，并确认 $f(x)>0$ 使对数有定义。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "视觉解析提出的候选断点是未判断对数中值点趋于 a、也未用一阶展开比较同阶；缺少独立作答证据，本批不写成已确认个人错因。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "旧视觉解析仅支持候选入口；无独立作答过程"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "truncated_question_and_answer_restored",
+          "severity": "high",
+          "finding": "The complete logarithmic composite limit and answer B with value a were restored with the positivity domain check.",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-080",
+          "target_card_id": "GS-081",
+          "declaration_owners": [
+            "GS-080",
+            "GS-081"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-081",
+          "target_card_id": "GS-223",
+          "declaration_owners": [
+            "GS-223"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-081",
+          "target_card_id": "GS-234",
+          "declaration_owners": [
+            "GS-081",
+            "GS-234"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-081",
+          "target_card_id": "GS-439",
+          "declaration_owners": [
+            "GS-439"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        },
+        {
+          "source_card_id": "GS-081",
+          "target_card_id": "GS-454",
+          "declaration_owners": [
+            "GS-454"
+          ],
+          "decision": "remove_broad_edge_or_block_identity_ambiguous_aggregation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2606 @@
+{
+  "schema_version": "math_target_semantic_review_batch_v1",
+  "wiki_id": "MATHWIKI-REVIEW-024",
+  "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260723-B09",
+  "title": "全库逐题语义复核第9批20题",
+  "reviewed_on": "2026-07-23",
+  "batch_number": 9,
+  "campaign_formal_card_count": 831,
+  "scope": {
+    "card_count": 20,
+    "physical_asset_path_count": 25,
+    "unique_visual_content_sha256_count": 23,
+    "canonical_detail_count": 20,
+    "reviewed_detail_file_count": 21,
+    "physical_asset_role_path_counts": {
+      "question": 21,
+      "solution": 4,
+      "reference": 0
+    },
+    "unique_visual_content_role_counts": {
+      "question": 20,
+      "solution": 3,
+      "reference": 0
+    }
+  },
+  "frozen_source_state_sha256": "df29e2ef6586dc40bbb3cc4f003723e97ce9db839175a0c49d5b5311f7af88cc",
+  "frozen_selection": {
+    "selection_order_sha256": "88b79a4513e1bead11c2933e7db63f9841bcaa58d82aa9f0852f9a7c83b90c84",
+    "selection_compact_json_sha256": "d15fbaa545db11142829495d194228e846fa909993ab06a36385d926b01d710e",
+    "canonical_snapshot_sha256": "c98285c736b87400b74884e204dcde71eeef2ef39019bf7fef79d84c31b8a001",
+    "visual_manifest_sha256": "1657489b72ff96c44422782467c0577d8804ca4a9166a81bae773776b53d0417",
+    "registered_cards": 20,
+    "registered_detail_files": 21,
+    "registered_physical_asset_paths": 25,
+    "pre_review_path_hash_drift_count": 0
+  },
+  "guardrails": {
+    "formal_related_write": true,
+    "formal_card_write": true,
+    "formal_visual_write": true,
+    "mode": "FORMAL_CLOSEOUT",
+    "review_origin_mode": "FULL_VISUAL_TARGET_REVIEW",
+    "formal_closeout_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B09",
+    "personal_error_requires_explicit_evidence": true,
+    "duplicate_physical_assets_reviewed_once_per_sha256": true,
+    "same_card_alias_preserves_all_manifest_records": true,
+    "stable_id_merge_or_delete": false,
+    "wrongnet_rebuild_policy": "exactly_once_after_all_formal_source_edits"
+  },
+  "evidence_distribution": {
+    "user_confirmed": 4,
+    "pending_user_confirmation": 12,
+    "legacy_unclassified": 4
+  },
+  "asset_boundary": {
+    "solution_image_card_ids": [
+      "GS-003",
+      "GS-014",
+      "GS-689"
+    ],
+    "question_only_card_ids": [
+      "GS-001",
+      "GS-002",
+      "GS-004",
+      "GS-006",
+      "GS-007",
+      "GS-008",
+      "GS-009",
+      "GS-010",
+      "GS-011",
+      "GS-012",
+      "GS-013",
+      "GS-015",
+      "GS-016",
+      "GS-017",
+      "GS-018",
+      "GS-019",
+      "GS-020"
+    ],
+    "same_card_alias_card_id": "GS-003"
+  },
+  "relation_audit": {
+    "existing_verified": [
+      {
+        "source_card_id": "GS-001",
+        "target_card_id": "GS-075",
+        "declaration_owners": [
+          "GS-001",
+          "GS-075"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-003",
+        "target_card_id": "GS-440",
+        "declaration_owners": [
+          "GS-003"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-003",
+        "target_card_id": "GS-585",
+        "declaration_owners": [
+          "GS-003"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-003",
+        "target_card_id": "GS-649",
+        "declaration_owners": [
+          "GS-003",
+          "GS-649"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-008",
+        "target_card_id": "GS-023",
+        "declaration_owners": [
+          "GS-023"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-008",
+        "target_card_id": "GS-080",
+        "declaration_owners": [
+          "GS-008",
+          "GS-080"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-009",
+        "target_card_id": "GS-010",
+        "declaration_owners": [
+          "GS-010"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-009",
+        "target_card_id": "GS-011",
+        "declaration_owners": [
+          "GS-011"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-012",
+        "target_card_id": "GS-287",
+        "declaration_owners": [
+          "GS-012",
+          "GS-287"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-015",
+        "target_card_id": "GS-463",
+        "declaration_owners": [
+          "GS-463"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-016",
+        "target_card_id": "GS-547",
+        "declaration_owners": [
+          "GS-547"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-016",
+        "target_card_id": "GS-579",
+        "declaration_owners": [
+          "GS-579"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-016",
+        "target_card_id": "GS-673",
+        "declaration_owners": [
+          "GS-673"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-017",
+        "target_card_id": "GS-025",
+        "declaration_owners": [
+          "GS-017",
+          "GS-025"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-017",
+        "target_card_id": "GS-151",
+        "declaration_owners": [
+          "GS-017"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-017",
+        "target_card_id": "GS-459",
+        "declaration_owners": [
+          "GS-017",
+          "GS-459"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-017",
+        "target_card_id": "GS-460",
+        "declaration_owners": [
+          "GS-017",
+          "GS-460"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-017",
+        "target_card_id": "GS-497",
+        "declaration_owners": [
+          "GS-017",
+          "GS-497"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-017",
+        "target_card_id": "GS-500",
+        "declaration_owners": [
+          "GS-500"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-019",
+        "target_card_id": "GS-020",
+        "declaration_owners": [
+          "GS-019"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-020",
+        "target_card_id": "GS-547",
+        "declaration_owners": [
+          "GS-020",
+          "GS-547"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-440",
+        "target_card_id": "GS-689",
+        "declaration_owners": [
+          "GS-689"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-585",
+        "target_card_id": "GS-689",
+        "declaration_owners": [
+          "GS-689"
+        ],
+        "decision": "verify_existing_strong_edge"
+      },
+      {
+        "source_card_id": "GS-678",
+        "target_card_id": "GS-689",
+        "declaration_owners": [
+          "GS-689"
+        ],
+        "decision": "verify_existing_strong_edge"
+      }
+    ],
+    "removed": [
+      {
+        "source_card_id": "GS-001",
+        "target_card_id": "GS-585",
+        "declaration_owners": [
+          "GS-001"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-007",
+        "target_card_id": "GS-013",
+        "declaration_owners": [
+          "GS-007"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-007",
+        "target_card_id": "GS-094",
+        "declaration_owners": [
+          "GS-007",
+          "GS-094"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-007",
+        "target_card_id": "GS-096",
+        "declaration_owners": [
+          "GS-007"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-008",
+        "target_card_id": "GS-234",
+        "declaration_owners": [
+          "GS-008",
+          "GS-234"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-009",
+        "target_card_id": "GS-029",
+        "declaration_owners": [
+          "GS-029"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-009",
+        "target_card_id": "GS-030",
+        "declaration_owners": [
+          "GS-030"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-009",
+        "target_card_id": "GS-170",
+        "declaration_owners": [
+          "GS-009",
+          "GS-170"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-009",
+        "target_card_id": "GS-316",
+        "declaration_owners": [
+          "GS-009",
+          "GS-316"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-010",
+        "target_card_id": "GS-011",
+        "declaration_owners": [
+          "GS-010",
+          "GS-011"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-010",
+        "target_card_id": "GS-013",
+        "declaration_owners": [
+          "GS-013"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-010",
+        "target_card_id": "GS-038",
+        "declaration_owners": [
+          "GS-010"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-011",
+        "target_card_id": "GS-013",
+        "declaration_owners": [
+          "GS-013"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-011",
+        "target_card_id": "GS-033",
+        "declaration_owners": [
+          "GS-011"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-012",
+        "target_card_id": "GS-020",
+        "declaration_owners": [
+          "GS-012"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-012",
+        "target_card_id": "GS-051",
+        "declaration_owners": [
+          "GS-012",
+          "GS-051"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-013",
+        "target_card_id": "GS-038",
+        "declaration_owners": [
+          "GS-013"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-016",
+        "target_card_id": "GS-438",
+        "declaration_owners": [
+          "GS-438"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-016",
+        "target_card_id": "GS-585",
+        "declaration_owners": [
+          "GS-585"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-019",
+        "target_card_id": "GS-028",
+        "declaration_owners": [
+          "GS-019"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-019",
+        "target_card_id": "GS-113",
+        "declaration_owners": [
+          "GS-113"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-019",
+        "target_card_id": "GS-287",
+        "declaration_owners": [
+          "GS-287"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-019",
+        "target_card_id": "GS-349",
+        "declaration_owners": [
+          "GS-019"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-020",
+        "target_card_id": "GS-022",
+        "declaration_owners": [
+          "GS-022"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      },
+      {
+        "source_card_id": "GS-020",
+        "target_card_id": "GS-287",
+        "declaration_owners": [
+          "GS-287"
+        ],
+        "decision": "remove_broad_or_stale_edge"
+      }
+    ],
+    "added": [
+      {
+        "source_card_id": "GS-001",
+        "target_card_id": "GS-009",
+        "declaration_owners": [
+          "GS-001"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-002",
+        "target_card_id": "GS-099",
+        "declaration_owners": [
+          "GS-002"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-002",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-002"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-002",
+        "target_card_id": "GS-530",
+        "declaration_owners": [
+          "GS-002"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-004",
+        "target_card_id": "GS-050",
+        "declaration_owners": [
+          "GS-004"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-006",
+        "target_card_id": "GS-013",
+        "declaration_owners": [
+          "GS-006"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-006",
+        "target_card_id": "GS-661",
+        "declaration_owners": [
+          "GS-006"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-007",
+        "target_card_id": "GS-274",
+        "declaration_owners": [
+          "GS-007"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-007",
+        "target_card_id": "GS-316",
+        "declaration_owners": [
+          "GS-007"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-008",
+        "target_card_id": "GS-430",
+        "declaration_owners": [
+          "GS-008"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-009",
+        "target_card_id": "GS-533",
+        "declaration_owners": [
+          "GS-009"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-010",
+        "target_card_id": "GS-026",
+        "declaration_owners": [
+          "GS-010"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-010",
+        "target_card_id": "GS-533",
+        "declaration_owners": [
+          "GS-010"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-012",
+        "target_card_id": "GS-661",
+        "declaration_owners": [
+          "GS-012"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-019",
+        "target_card_id": "GS-051",
+        "declaration_owners": [
+          "GS-019"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-020",
+        "target_card_id": "GS-460",
+        "declaration_owners": [
+          "GS-020"
+        ],
+        "decision": "add_strong_edge"
+      },
+      {
+        "source_card_id": "GS-689",
+        "target_card_id": "GS-715",
+        "declaration_owners": [
+          "GS-689"
+        ],
+        "decision": "add_strong_edge"
+      }
+    ],
+    "existing_verified_count": 24,
+    "existing_verified_owner_count": 33,
+    "removed_count": 25,
+    "removed_owner_count": 31,
+    "added_count": 17,
+    "added_owner_count": 17,
+    "combined_strong_logical_edge_count": 41,
+    "combined_owner_declaration_count": 50,
+    "zero_degree_card_ids": [
+      "GS-014",
+      "GS-018"
+    ]
+  },
+  "cards": [
+    {
+      "card_id": "GS-689",
+      "card_path": "错题知识网络/错题卡/GS-689_193306反常尾积分洛必达.md",
+      "card_sha256": "2223d04230e059eacc42bad8829c13f5b02aa3c78bf4f2ce1bd696fd9148faed",
+      "later_batch_revalidation": {
+        "batch_number": 29,
+        "date": "2026-07-24",
+        "prior_card_sha256": "01c0216133246a7655b9cf340359f1c143ca9a4c6b80c3225fbecccc175bd797",
+        "current_card_sha256": "f0480f8e0c93cf8c8aa5693ff6a0d4f2d2f23c3cf1fca0d3701abf1eb3cbc49b",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-585",
+          "GS-678",
+          "GS-715"
+        ],
+        "removed_edges": [
+          "GS-440"
+        ],
+        "added_edges": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第29批确认 GS-689 与 GS-440 的对象和首动作不同；仅删除旧关系声明并同步导航引用，原逐题语义判断保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-689_193306反常尾积分洛必达.md"
+      ],
+      "reviewed_detail_sha256": [
+        "5e6f433dce7e5e0096d04e0f41eada03ac88a9915db50b299ead736e27e1bd31"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "056436b7dc67f96e51c595e368c53f90509db8c016c982e030c98375d305f1cc",
+        "7771dadfc1c7e46adc31cc6ee67c66e92d0cbca3d6a5286102bc3eda33b6d53f"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "反常尾积分与对数商的无穷比无穷型极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(\\displaystyle 1\\)",
+      "solution_outline": [
+        "先用固定常数点 $a$ 把反常尾积分拆成 $\\int_x^a f(t)dt$ 与不含 $x$ 的常数尾项，确认其导数为 $-f(x)$；再把 $\\ln(1/x)$ 化成 $-\\ln x$ 求导，最后在无穷比无穷型条件下使用洛必达。",
+        "先取固定的 $a>0$，写 $F(x)=\\int_x^a\\frac{e^{-t}}t dt+\\int_a^{+\\infty}\\frac{e^{-t}}t dt$，指出第二项与 $x$ 无关，从而得到 $F'(x)=-e^{-x}/x$。"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "函数极限",
+        "洛必达法则",
+        "反常积分",
+        "反常积分极限",
+        "变限积分",
+        "复合函数求导",
+        "等价无穷小"
+      ],
+      "first_action": "先取固定的 $a>0$，写 $F(x)=\\int_x^a\\frac{e^{-t}}t dt+\\int_a^{+\\infty}\\frac{e^{-t}}t dt$，指出第二项与 $x$ 无关，从而得到 $F'(x)=-e^{-x}/x$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "已判断为无穷比无穷型并想到洛必达，但把固定的反常积分端点 $+\\infty$ 误认为会阻止分子关于下限 $x$ 求导，没有先写 $\\int_x^{+\\infty}f(t)dt=\\int_x^a f(t)dt+\\int_a^{+\\infty}f(t)dt$；分母求导时又把 $\\ln(1/x)$、$-\\ln x$ 与 $1/\\ln x$ 混为一类，导致导数错误。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "当前仅有 2026-07-10 这 1 条同卡实际失败记录；GS-585、GS-678 等相关题只用于方法连线，不计入本题复发次数。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": true,
+        "solution_review": "verified_from_solution_image",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "solution_image_derivative_sign_typo_recorded",
+          "severity": "medium",
+          "finding": "解析图一处漏写负号，但下一行代入和最终答案正确。",
+          "resolution_status": "resolved_in_formal_text_and_detail"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-440",
+          "target_card_id": "GS-689",
+          "declaration_owners": [
+            "GS-689"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-585",
+          "target_card_id": "GS-689",
+          "declaration_owners": [
+            "GS-689"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-678",
+          "target_card_id": "GS-689",
+          "declaration_owners": [
+            "GS-689"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-689",
+          "target_card_id": "GS-715",
+          "declaration_owners": [
+            "GS-689"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "f0480f8e0c93cf8c8aa5693ff6a0d4f2d2f23c3cf1fca0d3701abf1eb3cbc49b",
+        "current_card_sha256": "2223d04230e059eacc42bad8829c13f5b02aa3c78bf4f2ce1bd696fd9148faed",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-678",
+          "GS-715"
+        ],
+        "removed_edges": [
+          "GS-585--GS-689"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-689 的关系导航哈希；第9批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-001",
+      "card_path": "错题知识网络/错题卡/GS-001_22026.3.11T1.md",
+      "card_sha256": "1658d965dd4a8f33a27d033659c55ee6e86eece890a2027de901066e6cfb8197",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-001_2-2026.3.11-T1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "64846efba1af543faebb34656c61545c0d26e53d108394d6fdd5f9dfa70ac61b"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "def9dc39d2e4b8483b2bd4f757927270985ade907434412edbcf13a61dd777b5"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "幂指型数列极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "A，\\(e^{-2/\\pi}\\)",
+      "solution_outline": [
+        "幂指极限先指数化，再把 arctan 与 \\(\\pi/4\\) 的差转成标准一阶小量。",
+        "先写成 \\(e^{n\\ln u_n}\\)，再用 arctan 差角公式把 \\(\\arctan\\frac{n}{n+1}-\\frac\\pi4\\) 化为一阶小量。"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "幂指极限",
+        "等价无穷小"
+      ],
+      "first_action": "先写成 \\(e^{n\\ln u_n}\\)，再用 arctan 差角公式把 \\(\\arctan\\frac{n}{n+1}-\\frac\\pi4\\) 化为一阶小量。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "OO3 来源中的“错误原因”字段把候选断点记为忘记 arctan 差角公式，因而没有把 \\(\\arctan\\frac{n}{n+1}-\\arctan1\\) 化成一阶小量。但 dated wrong_history 只保留了日期，个人归属尚未闭合，因此该断点按 pending_user_confirmation 处理。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-03-11 的 wrong_history 仅有 1 条同卡失败日期记录；解析或关系复核不另计一次作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-001",
+          "target_card_id": "GS-075",
+          "declaration_owners": [
+            "GS-001",
+            "GS-075"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-001",
+          "target_card_id": "GS-585",
+          "declaration_owners": [
+            "GS-001"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-001",
+          "target_card_id": "GS-009",
+          "declaration_owners": [
+            "GS-001"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-002",
+      "card_path": "错题知识网络/错题卡/GS-002_22026.3.11T2.md",
+      "card_sha256": "8093e207c16a2c5db99fe0bc7e9a5373ff3c1c0598f3c16793fbc3f855f6e95a",
+      "later_batch_revalidation": {
+        "batch_number": 29,
+        "date": "2026-07-24",
+        "prior_card_sha256": "8fe9419b81e23b5dea0d04c0213a9a71a38c9fd1fc9a2aaa1fe6ea49498c78d5",
+        "current_card_sha256": "ec2c9dbb96082132f6c918608d0e162bb8400210f5cbc1cec5cca67efdba4d90",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-099",
+          "GS-530"
+        ],
+        "removed_edges": [
+          "GS-458"
+        ],
+        "added_edges": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第29批确认 GS-002 与 GS-458 的对象和首动作不同；仅删除旧关系声明并同步导航引用，原逐题语义判断保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-002_2-2026.3.11-T2.md"
+      ],
+      "reviewed_detail_sha256": [
+        "b2b7e77658d074923e23015dacc383340f0cd95539806652ad6b374bc3c7c66f"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "b5662218dcce80bf3a4247c984ac16bf69c6d4ee344f377e3096c9843f3e573f"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "导数定义差商反求导数",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "f'(a)=\\sqrt{a}.",
+      "solution_outline": [
+        "先用平方差因式分解和有限极限条件确定点值，再把非零因子直接取极限，剩下导数差商。",
+        "先因式分解 \\(f^2(x)-a\\) 与 \\(x^2-a^2\\)，由有限极限先推出 \\(f(a)=\\sqrt a\\)，再分离非零因子。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "极限与连续"
+      ],
+      "first_action": "先因式分解 \\(f^2(x)-a\\) 与 \\(x^2-a^2\\)，由有限极限先推出 \\(f(a)=\\sqrt a\\)，再分离非零因子。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "忽略了非 0 因子，没有立即代入化简，而是继续纠缠分子分母。正确做法是：发现 \\((x+a) \\neq 0\\) 后，应该马上运算，把这一项单独取极限为常数。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "MarginNote 来源 refid 9cd0a155fd25bbde534b51eb7c0436e2 与 2026-03-11 dated history 共同支持 1 次同卡失败；没有第二次失败记录。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-002",
+          "target_card_id": "GS-099",
+          "declaration_owners": [
+            "GS-002"
+          ],
+          "decision": "add_strong_edge"
+        },
+        {
+          "source_card_id": "GS-002",
+          "target_card_id": "GS-458",
+          "declaration_owners": [
+            "GS-002"
+          ],
+          "decision": "add_strong_edge"
+        },
+        {
+          "source_card_id": "GS-002",
+          "target_card_id": "GS-530",
+          "declaration_owners": [
+            "GS-002"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ],
+      "batch33_lineage_revalidation": {
+        "batch_number": 33,
+        "date": "2026-07-24",
+        "prior_card_sha256": "ec2c9dbb96082132f6c918608d0e162bb8400210f5cbc1cec5cca67efdba4d90",
+        "current_card_sha256": "8093e207c16a2c5db99fe0bc7e9a5373ff3c1c0598f3c16793fbc3f855f6e95a",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-099"
+        ],
+        "removed_edges": [
+          "GS-002--GS-530"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第33批重绑 GS-002 的当前关系导航哈希；第9批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-003",
+      "card_path": "错题知识网络/错题卡/GS-003_22026.3.11T1-2.md",
+      "card_sha256": "6671d1dbcb6f44bb712fd7de93e12ae6fc53531c615718061ae2ed49e89d78ab",
+      "later_batch_revalidation": {
+        "batch_number": 29,
+        "date": "2026-07-24",
+        "prior_card_sha256": "72c3c7a218b5344e1e79e9c06837012c14a63e6a6fcf1feb5de4a93d9a2d3e87",
+        "current_card_sha256": "6f2639e32b2f154180a058685f2af905b4d577d9e506973e20318000ae75b7e5",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-585",
+          "GS-649"
+        ],
+        "removed_edges": [
+          "GS-440"
+        ],
+        "added_edges": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第29批确认 GS-003 与 GS-440 不满足同细对象及同断点门槛；仅同步关系元数据与导航引用，原题目和证据判断保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-003_2-2026.3.11-T1-2.md",
+        "错题知识网络/可视化错题详情/高等数学/MN4-GS-CH01-003_2-2026.3.11-T1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "2dfb327bf4c17b77e6f9373df1ef5f8f78b88f9cf259856efe5dd594d28e67c8",
+        "ac46d1befc6111dd249106b8a00b985868a7213ba07d9054d652a59192324a9c"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "2b37709b921edbea28b453c8fd376d5295f16cc788538cac58263f5a36c38281",
+        "c684aa6d49a22169d6a7f28ec446dfb892261b8a82bc1773528622ba372e3a27"
+      ],
+      "physical_asset_path_count": 4,
+      "physical_asset_role_path_counts": {
+        "question": 2,
+        "solution": 2,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "变上限积分与指数三角函数差的未定式极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(\\displaystyle \\frac12\\)",
+      "solution_outline": [
+        "先拆分或通分，把整体未定式化成可分别处理的局部极限。",
+        "先把第一项拆成 \\(\\frac1{e^x-1}+\\frac{\\int_0^x e^{t^2}dt}{e^x-1}\\)。"
+      ],
+      "knowledge_nodes": [
+        "函数极限",
+        "洛必达法则",
+        "泰勒公式",
+        "等价无穷小",
+        "变上限积分"
+      ],
+      "first_action": "先把第一项拆成 \\(\\frac1{e^x-1}+\\frac{\\int_0^x e^{t^2}dt}{e^x-1}\\)。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；旧批量导入未记录用户原始作答过程。本轮根据题图与解析确认复做入口：看到两个趋于无穷的分式相减时，先判为 \\(\\infty-\\infty\\) 型，拆成可分别处理的极限；其中变上限积分部分转为 \\(0/0\\) 后用洛必达，指数与三角函数差用通分后泰勒/等价无穷小比较。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-03-11 的 wrong_history 仅有 1 条同卡失败记录；2026-07-02 是解析维护复核，不计作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": true,
+        "solution_review": "verified_from_solution_image",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "same_card_asset_alias_preserved",
+          "severity": "info",
+          "finding": "两个详情与四条物理路径属于同一 source_refid 的字节级别名。",
+          "resolution_status": "preserved_without_duplicate_or_recurrence"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-003",
+          "target_card_id": "GS-440",
+          "declaration_owners": [
+            "GS-003"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-003",
+          "target_card_id": "GS-585",
+          "declaration_owners": [
+            "GS-003"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-003",
+          "target_card_id": "GS-649",
+          "declaration_owners": [
+            "GS-003",
+            "GS-649"
+          ],
+          "decision": "verify_existing_strong_edge"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "6f2639e32b2f154180a058685f2af905b4d577d9e506973e20318000ae75b7e5",
+        "current_card_sha256": "2eebc85fe8f223542bfe596f0459fa9b68bb2936315162405440ba1ae539b33d",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-649"
+        ],
+        "removed_edges": [
+          "GS-003--GS-585"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-003 的关系导航哈希；第9批原逐题语义载荷保持不变。"
+      },
+      "batch37_lineage_revalidation": {
+        "batch_number": 37,
+        "date": "2026-07-25",
+        "prior_card_sha256": "2eebc85fe8f223542bfe596f0459fa9b68bb2936315162405440ba1ae539b33d",
+        "current_card_sha256": "6671d1dbcb6f44bb712fd7de93e12ae6fc53531c615718061ae2ed49e89d78ab",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "暂无强边"
+        ],
+        "removed_edges": [
+          "GS-003--GS-649"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "batch36_lineage_revalidation",
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第37批重绑 GS-003 的关系导航哈希；第9批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-004",
+      "card_path": "错题知识网络/错题卡/GS-004_2581122026.3.11T2.md",
+      "card_sha256": "81b95a9d7df353421f3a3c4b88390c7a0254b88a3a3acb4f0c3cddb91761b65d",
+      "later_batch_revalidation": {
+        "batch_number": 11,
+        "date": "2026-07-23",
+        "reason": "remove_broad_edge_to_GS-050",
+        "prior_card_sha256": "83213114520fef4aef49d7aefd2353ba170d5a69282e078082073749720dae90",
+        "current_card_sha256": "81b95a9d7df353421f3a3c4b88390c7a0254b88a3a3acb4f0c3cddb91761b65d",
+        "content_change_scope": "related_field_only"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-004_2-58112-2026.3.11-T2.md"
+      ],
+      "reviewed_detail_sha256": [
+        "7bf94f94b9937c37dd3926ca7435c37173babe10799c5ba510b17b884c6017dd"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "0d55a3ca068757f0441a733d65a76d9992404a1b3b4e99c641f89d1f9ebda75b"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "数列极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "C",
+      "solution_outline": [
+        "先用特值法排除非必然项，再对剩余命题作反证或联立证明。",
+        "先构造简单特值或反例检查每个选项是否必然成立，不能用特值法直接证明正确项。"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "极限与连续"
+      ],
+      "first_action": "先构造简单特值或反例检查每个选项是否必然成立，不能用特值法直接证明正确项。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：数列极限存在性判断要先用特值法排除错误选项，再对剩余“必然成立”选项作反证证明。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-03-11 的 wrong_history 仅有 1 条同卡失败记录；后续图片与解析维护不计作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "cross_question_manifest_note_removed",
+          "severity": "high",
+          "finding": "旧 manifest note 混入中点 Taylor 与积分符号串题文字。",
+          "resolution_status": "resolved"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-004",
+          "target_card_id": "GS-050",
+          "declaration_owners": [
+            "GS-004"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-006",
+      "card_path": "错题知识网络/错题卡/GS-006_1000题基础2.61030172026.5.7.md",
+      "card_sha256": "1458130d24fea8dbcf7da828d8f65a7a620cecd7e9cb1bf105c05a4c7fd2c371",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-006_1000题基础2.6-103017-2026.5.7.md"
+      ],
+      "reviewed_detail_sha256": [
+        "9409a58d760d530d94e3cdca23c5cb9b8f320aeb910b509354d08ae5b959a5ab"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "32ed75e6a552b34ccd78389e2b5b92c62910338a530899620c5fa52007ebf8d2"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "含参数的 n 次根最大项主导极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(\\displaystyle \\lim_{n\\to\\infty}\\sqrt[n]{1+|x|^{3n}}=\\begin{cases}x^3,&x>1,\\\\1,&-1\\le x\\le1,\\\\-x^3,&x<-1.\\end{cases}\\)",
+      "solution_outline": [
+        "把根号内改写成若干非负底数的 \\(n\\) 次幂之和，先用最大项主导，再按绝对值分类还原",
+        "先把根号内写成 \\(1^n+(|x|^3)^n\\)，比较 \\(1\\) 与 \\(|x|^3\\)"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "数列极限",
+        "n 次根极限",
+        "最大项主导",
+        "绝对值分段"
+      ],
+      "first_action": "先把根号内写成 \\(1^n+(|x|^3)^n\\)，比较 \\(1\\) 与 \\(|x|^3\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：看到 \\(\\sqrt[n]{1+|x|^{3n}}\\) 要先改写成 \\(1^n+(|x|^3)^n\\) 的 n 次根号模型，再比较 \\(1\\) 与 \\(|x|^3\\)，最后把绝对值还原成关于 \\(x\\) 的分段结果。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-05-07 的 wrong_history 仅有 1 条同卡失败日期记录；解析推导的复做入口不另计一次作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-006",
+          "target_card_id": "GS-013",
+          "declaration_owners": [
+            "GS-006"
+          ],
+          "decision": "add_strong_edge"
+        },
+        {
+          "source_card_id": "GS-006",
+          "target_card_id": "GS-661",
+          "declaration_owners": [
+            "GS-006"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ],
+      "batch37_lineage_revalidation": {
+        "batch_number": 37,
+        "date": "2026-07-25",
+        "prior_card_sha256": "6507170a559aaafa8097e7f93cb3a4128ce68a0a6562ce21d7986212d72982f5",
+        "current_card_sha256": "1458130d24fea8dbcf7da828d8f65a7a620cecd7e9cb1bf105c05a4c7fd2c371",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-013"
+        ],
+        "removed_edges": [
+          "GS-006--GS-661"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第37批重绑 GS-006 的关系导航哈希；第9批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-007",
+      "card_path": "错题知识网络/错题卡/GS-007_1000题强化2.112026.4.17.md",
+      "card_sha256": "3d1e46509cb9c6a54916f40b9378410ac232fb41c87a9f6a811f1c29709806b1",
+      "later_batch_revalidation": {
+        "source_batch": 23,
+        "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260723-B23",
+        "status": "current_hash_revalidated_after_later_relation_write",
+        "current_card_sha256": "3d1e46509cb9c6a54916f40b9378410ac232fb41c87a9f6a811f1c29709806b1",
+        "current_aggregate_edge_policy": "allow",
+        "current_related": [
+          "GS-274"
+        ],
+        "relation_delta": {
+          "added_edges": [],
+          "removed_edges": [
+            "GS-316"
+          ]
+        },
+        "prior_relation_decisions_preserved": true,
+        "note": "第23批复核确认 GS-007 与 GS-316 只共享宽泛幂指极限背景，具体积分对象与第一动作不同，删除旧普通边；第9批个人证据保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-007_1000题强化2.11-2026.4.17.md"
+      ],
+      "reviewed_detail_sha256": [
+        "c461c89c8e917704c079bb1adee5594975e2b99e8a98372b52984fa85992980f"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "ee59f743bb3af53e2e8331024e967f4590b63f4b74d71e7313eef77eca8073d5"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "幂指函数极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(e^{-2}\\)",
+      "solution_outline": [
+        "先判断 \\(\\ln t\\) 的符号，把绝对值拆掉，再进入换元、分部积分或显式表达式化简",
+        "先写 \\(0<t<1\\Rightarrow \\ln t<0\\Rightarrow |\\ln t|=-\\ln t\\)"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "幂指极限",
+        "绝对值分类",
+        "极限与连续"
+      ],
+      "first_action": "先写 \\(0<t<1\\Rightarrow \\ln t<0\\Rightarrow |\\ln t|=-\\ln t\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先根据 \\(0<t<1\\) 判断 \\(\\ln t<0\\)，漏掉 \\(|\\ln t|=-\\ln t\\)，导致积分定义数列 \\(a_n\\) 的显式表达式无法正确化简。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "MarginNote 来源 refid da5884e7ab17d84bdd050a2b136a09f5 与 2026-04-17 dated history 共同支持 1 次同卡失败；没有第二次失败记录。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-007",
+          "target_card_id": "GS-013",
+          "declaration_owners": [
+            "GS-007"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-007",
+          "target_card_id": "GS-094",
+          "declaration_owners": [
+            "GS-007",
+            "GS-094"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-007",
+          "target_card_id": "GS-096",
+          "declaration_owners": [
+            "GS-007"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-007",
+          "target_card_id": "GS-274",
+          "declaration_owners": [
+            "GS-007"
+          ],
+          "decision": "add_strong_edge"
+        },
+        {
+          "source_card_id": "GS-007",
+          "target_card_id": "GS-316",
+          "declaration_owners": [
+            "GS-007"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-008",
+      "card_path": "错题知识网络/错题卡/GS-008_1000题b组2.152026.4.17.md",
+      "card_sha256": "a02b6bfe3854ff255e6af43008658d8e998b06352e753e7e2bd702f5769418ce",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-008_1000题b组2.15-2026.4.17.md"
+      ],
+      "reviewed_detail_sha256": [
+        "0ac60be063447c2d9a9eab3ac9cd90b17e51364301b2dbdb92610c8cc07fc732"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "e81990a0e8001463d29822c5223275c287153373b6c2cf8e32a090a3eadd7ef1"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "迭代收缩估计与高阶无穷小",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(x_n=o(e^{-n/2})\\)，即 \\(\\displaystyle \\lim_{n\\to\\infty}\\frac{x_n}{e^{-n/2}}=0\\)。",
+      "solution_outline": [
+        "先用拉格朗日中值定理把导数界转成收缩估计，再把 \\(x_n=o(e^{-n/2})\\) 改写为 \\(e^{n/2}|x_n|\\to0\\) 并夹逼",
+        "先用中值定理写出 \\(|x_{n+1}|\\le e^{-1}|x_n|\\)"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "等价无穷小",
+        "拉格朗日中值定理",
+        "幂指极限",
+        "极限与连续",
+        "数列极限",
+        "中值定理"
+      ],
+      "first_action": "先用中值定理写出 \\(|x_{n+1}|\\le e^{-1}|x_n|\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：由 \\(|f'(x)|\\le 1/e\\) 先用中值定理得到迭代收缩估计 \\(|x_n|\\le e^{-(n-1)}|x_1|\\)，再把“高阶无穷小”转成 \\(e^{n/2}|x_n|\\to0\\) 的夹逼。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-04-17 的 wrong_history 仅有 1 条同卡失败日期记录；解析推导的复做入口不另计一次作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-008",
+          "target_card_id": "GS-023",
+          "declaration_owners": [
+            "GS-023"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-008",
+          "target_card_id": "GS-080",
+          "declaration_owners": [
+            "GS-008",
+            "GS-080"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-008",
+          "target_card_id": "GS-234",
+          "declaration_owners": [
+            "GS-008",
+            "GS-234"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-008",
+          "target_card_id": "GS-430",
+          "declaration_owners": [
+            "GS-008"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-009",
+      "card_path": "错题知识网络/错题卡/GS-009_580182026.4.17.md",
+      "card_sha256": "70eeb2d0fcfcbeda37244a2c5897a0e4cf1ca535bcbe63944fb8a5e1e475fd37",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-009_58018-2026.4.17.md"
+      ],
+      "reviewed_detail_sha256": [
+        "cf8142adfef688d466277e73dbc35c02acf9651958d4f167dbac3a83748a4ad2"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "1c665e01f90524d7f97f76af68a0206705edcfb101e21395897ae24b0b8eddf1"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "幂指函数极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(\\displaystyle \\lim_{x\\to+\\infty}\\left(\\frac{a^{1/x}+b^{1/x}+c^{1/x}}{3}\\right)^x=\\sqrt[3]{abc}\\)。",
+      "solution_outline": [
+        "先取对数，把幂指极限转为指数部分极限；对每个 (a^{1/x}) 使用统一的一阶展开 (a^{1/x}=1+(\\ln a)/x+o(1/x))，再处理平均底数。",
+        "先令 \\(L\\) 为原极限并取对数，转求 \\(x\\ln\\frac{a^{1/x}+b^{1/x}+c^{1/x}}3\\)"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "等价无穷小",
+        "幂指极限"
+      ],
+      "first_action": "先令 \\(L\\) 为原极限并取对数，转求 \\(x\\ln\\frac{a^{1/x}+b^{1/x}+c^{1/x}}3\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：看到底数趋于 1、指数趋于无穷的幂指极限，先取对数，把 \\(a^{1/x}-1\\)、\\(b^{1/x}-1\\)、\\(c^{1/x}-1\\) 化成 \\(\\ln a/x\\)、\\(\\ln b/x\\)、\\(\\ln c/x\\) 的等价量。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-04-17 的 wrong_history 仅有 1 条同卡失败日期记录；解析推导的复做入口不另计一次作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-009",
+          "target_card_id": "GS-010",
+          "declaration_owners": [
+            "GS-010"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-009",
+          "target_card_id": "GS-011",
+          "declaration_owners": [
+            "GS-011"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-009",
+          "target_card_id": "GS-029",
+          "declaration_owners": [
+            "GS-029"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-009",
+          "target_card_id": "GS-030",
+          "declaration_owners": [
+            "GS-030"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-009",
+          "target_card_id": "GS-170",
+          "declaration_owners": [
+            "GS-009",
+            "GS-170"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-009",
+          "target_card_id": "GS-316",
+          "declaration_owners": [
+            "GS-009",
+            "GS-316"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-009",
+          "target_card_id": "GS-533",
+          "declaration_owners": [
+            "GS-009"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ],
+      "batch33_lineage_revalidation": {
+        "batch_number": 33,
+        "date": "2026-07-24",
+        "prior_card_sha256": "f7f33341821302b5a828a1b200369dae4b741f0b9e6a773fddbb793b49accd74",
+        "current_card_sha256": "70eeb2d0fcfcbeda37244a2c5897a0e4cf1ca535bcbe63944fb8a5e1e475fd37",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [],
+        "removed_edges": [
+          "GS-009--GS-533"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第33批重绑 GS-009 的当前关系导航哈希；第9批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-010",
+      "card_path": "错题知识网络/错题卡/GS-010_580182026.4.18.md",
+      "card_sha256": "ec25bb50c0cab6c5826fa2f903f29a0967bed78b3d3923a6fedb03e9ffd2ff7a",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-010_58018-2026.4.18.md"
+      ],
+      "reviewed_detail_sha256": [
+        "dcce9b08dc6f8144b1fabd2ca28e3326523f508c87c76778b3166aa1a798fb5c"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "6baa056d2755df497d8b06f36ecd2d03e1102bb8bd344a905c122f0d840c9043"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "幂指函数极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(\\displaystyle \\lim_{x\\to0}\\frac{(1+x)^{3/x}-e^3}{x}=-\\frac32e^3\\)。",
+      "solution_outline": [
+        "先指数化并提公共因子 \\(e^3\\)，把分子差值造为 \\(e^u-1\\)，再用等价无穷小和二阶对数小量",
+        "先把 \\((1+x)^{3/x}\\) 写成 \\(e^{\\frac3x\\ln(1+x)}\\)，并提取 \\(e^3\\) 造出 \\(e^u-1\\)"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "等价无穷小",
+        "洛必达法则",
+        "幂指极限"
+      ],
+      "first_action": "先把 \\((1+x)^{3/x}\\) 写成 \\(e^{\\frac3x\\ln(1+x)}\\)，并提取 \\(e^3\\) 造出 \\(e^u-1\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：指数型表达式作差后除以 \\(x\\)，要先把 \\((1+x)^{3/x}\\) 指数化，再提 \\(e^3\\) 造出 \\(e^u-1\\)，最后用 \\(e^u-1\\sim u\\) 和 \\(\\ln(1+x)-x\\) 的二阶小量。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-04-18 的 wrong_history 仅有 1 条同卡失败日期记录；解析推导的复做入口不另计一次作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-010",
+          "target_card_id": "GS-011",
+          "declaration_owners": [
+            "GS-010",
+            "GS-011"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-010",
+          "target_card_id": "GS-013",
+          "declaration_owners": [
+            "GS-013"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-010",
+          "target_card_id": "GS-038",
+          "declaration_owners": [
+            "GS-010"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-010",
+          "target_card_id": "GS-026",
+          "declaration_owners": [
+            "GS-010"
+          ],
+          "decision": "add_strong_edge"
+        },
+        {
+          "source_card_id": "GS-010",
+          "target_card_id": "GS-533",
+          "declaration_owners": [
+            "GS-010"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ],
+      "batch33_lineage_revalidation": {
+        "batch_number": 33,
+        "date": "2026-07-24",
+        "prior_card_sha256": "5684bc7e4ac9693dbb86e022d7fc46ce457865d295f839b9af66fa5991407f5a",
+        "current_card_sha256": "ec25bb50c0cab6c5826fa2f903f29a0967bed78b3d3923a6fedb03e9ffd2ff7a",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-009",
+          "GS-026"
+        ],
+        "removed_edges": [
+          "GS-010--GS-533"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第33批重绑 GS-010 的当前关系导航哈希；第9批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-011",
+      "card_path": "错题知识网络/错题卡/GS-011_580182026.4.18-2.md",
+      "card_sha256": "1c7442bb633a8bffc3c42953615f2a2d9191dbc86c1ae5884a2afbda41c385a3",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-011_58018-2026.4.18.md"
+      ],
+      "reviewed_detail_sha256": [
+        "c09765b33fe8636f511266c500ef5d603258a93e03de0a87c9f6a4baf9e340c9"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "bc3be4e58943f08e7d69a440086fc0a94146db1ed77e2635f11d588c39f552fa"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "幂指函数极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(\\displaystyle \\lim_{x\\to0^+}x^{\\sin x}=1\\)。",
+      "solution_outline": [
+        "先利用右极限保证底数为正，再指数化为 \\(e^{\\sin x\\ln x}\\)，转求指数部分极限",
+        "先确认 \\(x\\to0^+\\) 时 \\(x>0\\)，再写 \\(x^{\\sin x}=e^{\\sin x\\ln x}\\)"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "等价无穷小",
+        "洛必达法则",
+        "幂指极限"
+      ],
+      "first_action": "先确认 \\(x\\to0^+\\) 时 \\(x>0\\)，再写 \\(x^{\\sin x}=e^{\\sin x\\ln x}\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：处理 \\(x^{\\sin x}\\) 时要先注意 \\(x\\to0^+\\) 保证底数为正，再指数化为 \\(e^{\\sin x\\ln x}\\)，把问题转成 \\(\\sin x\\ln x\\to0\\)。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-04-18 的 wrong_history 仅有 1 条同卡失败日期记录；解析推导的复做入口不另计一次作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-011",
+          "target_card_id": "GS-013",
+          "declaration_owners": [
+            "GS-013"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-011",
+          "target_card_id": "GS-033",
+          "declaration_owners": [
+            "GS-011"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-012",
+      "card_path": "错题知识网络/错题卡/GS-012_581092026.4.22.md",
+      "card_sha256": "d72b6f24b93a88d1d26e4d7024f7aa2bff75d7897a0af5f10815b502c9c0c818",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-012_58109连续性.md"
+      ],
+      "reviewed_detail_sha256": [
+        "4e12ee16de5f015efbde896be796f9bc1e1c9eeed3e6a9a589d8198db306b8fc"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "5c50778f19413f02435dc345d8a1aff9768b618c474b5b91c9511dc75ef66624"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "由数列极限定义的分段函数连续性与间断点",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "$f(x)$ 在 $x=0,\\pm1$ 处间断，其中 $x=0$ 为可去间断点，$x=\\pm1$ 为跳跃间断点。",
+      "solution_outline": [
+        "先找候选点：无定义点、分母零点、分段点、取整点、绝对值转折点。",
+        "先按 \\(0<|x|<1\\)、\\(|x|=1\\)、\\(|x|>1\\) 求出极限定义的分段函数，再检查 \\(x=0,\\pm1\\) 的左右极限和函数值。"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "数列极限",
+        "间断点分类",
+        "主导项",
+        "等价无穷小"
+      ],
+      "first_action": "先按 \\(0<|x|<1\\)、\\(|x|=1\\)、\\(|x|>1\\) 求出极限定义的分段函数，再检查 \\(x=0,\\pm1\\) 的左右极限和函数值。",
+      "personal_error": {
+        "evidence_status": "legacy_unclassified",
+        "first_breakpoint": "旧结构化字段把断点记录为：没有先按 $|x|$ 与 1 的大小关系求出极限所定义的分段函数，就直接进入连续性判断。该描述能定位复做动作，但现有日期记录没有保存原始作答过程，证据来源仍按 legacy_unclassified 处理。",
+        "evidence_origin": "legacy_unclassified",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-04-22 的 wrong_history 仅有 1 条同卡失败日期记录；相关题不计入本题复发次数。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-012",
+          "target_card_id": "GS-287",
+          "declaration_owners": [
+            "GS-012",
+            "GS-287"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-012",
+          "target_card_id": "GS-020",
+          "declaration_owners": [
+            "GS-012"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-012",
+          "target_card_id": "GS-051",
+          "declaration_owners": [
+            "GS-012",
+            "GS-051"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-012",
+          "target_card_id": "GS-661",
+          "declaration_owners": [
+            "GS-012"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ],
+      "batch22_current_lineage_revalidation": {
+        "batch_number": 22,
+        "date": "2026-07-23",
+        "prior_card_sha256": "de0b60fa116a1b465a397246ecb8d5e14f3c31fb2d281c88ea4765cce668e232",
+        "current_card_sha256": "001c49a8268943d77302e23b8eae2be80c5c476953aaaeb6818436558c169e43",
+        "content_change_scope": "batch22_current_lineage_and_related_field_update",
+        "b22_edge_delta": {
+          "removed_edges": [
+            "GS-287"
+          ],
+          "added_edges": []
+        },
+        "current_related": [
+          "GS-661"
+        ],
+        "reviewed_detail_sha256_preserved": true,
+        "prior_later_batch_revalidations_preserved": true,
+        "historical_relation_decisions_preserved": true,
+        "note": "第22批删除 GS-012 与 GS-287 的宽泛边；第9批历史结论与详情哈希保持不变。"
+      },
+      "batch37_lineage_revalidation": {
+        "batch_number": 37,
+        "date": "2026-07-25",
+        "prior_card_sha256": "001c49a8268943d77302e23b8eae2be80c5c476953aaaeb6818436558c169e43",
+        "current_card_sha256": "d72b6f24b93a88d1d26e4d7024f7aa2bff75d7897a0af5f10815b502c9c0c818",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "暂无强边"
+        ],
+        "removed_edges": [
+          "GS-012--GS-661"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "batch22_current_lineage_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第37批重绑 GS-012 的关系导航哈希；第9批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-013",
+      "card_path": "错题知识网络/错题卡/GS-013_580412026.5.7.md",
+      "card_sha256": "8b2bc08c48aeae2e5974a2086cc111f1d8872a97653f17f1e016e8c8537a0d73",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-013_58041数列极限.md"
+      ],
+      "reviewed_detail_sha256": [
+        "55b15015781416da83658bccd2607c005b9cbe965947df353d1464436bddf767"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "8c0fb6acc7fefe5e49c4b826f0e964f71f9350399cb735b2fe0090b08af98e38"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "n 次根号下 n 次幂和的最大项主导",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(\\boxed{a_1^{-1}}\\)",
+      "solution_outline": [
+        "先把负指数改成倒数幂，注意大小关系会反转，再用 n 次根号最大底数主导",
+        "先把 \\(a_i^{-n}\\) 写成 \\((1/a_i)^n\\)，比较 \\(1/a_1\\) 与 \\(1/a_2\\)"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "主导项",
+        "n 次根极限",
+        "最大项主导",
+        "极限与连续"
+      ],
+      "first_action": "先把 \\(a_i^{-n}\\) 写成 \\((1/a_i)^n\\)，比较 \\(1/a_1\\) 与 \\(1/a_2\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：看到 \\(a_1^{-n}+a_2^{-n}\\) 的 n 次根号，要先把负指数改写成倒数幂，再根据 \\(0<a_1<a_2\\) 判断主导底数是 \\(1/a_1\\)。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-05-07 的 wrong_history 仅有 1 条同卡失败日期记录；解析推导的复做入口不另计一次作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-013",
+          "target_card_id": "GS-038",
+          "declaration_owners": [
+            "GS-013"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-014",
+      "card_path": "错题知识网络/错题卡/GS-014_2022年真题第一题.md",
+      "card_sha256": "46253f2a171188a2d93bdf97e261f3e7cf1bc6317ca9ec15951ff6a0f3a8c692",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-014_2022年真题第一题.md"
+      ],
+      "reviewed_detail_sha256": [
+        "f0c23732ec5831ebbbc2542ad5e6133d51f0a3888c8d5c94c75c043be7ac9ab3"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "63d0f58edb8598d3dab790977591244c0c4fba59df0197e076bb956fc3750412",
+        "8f1edda1be83e80a2bfc26da48ca286925b2210e6906f599e28c7ffbef2c9feb"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "等价无穷小关系命题判断",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "C（①③④）",
+      "solution_outline": [
+        "逐条回到极限定义判断，遇到平方等价先检查符号反例。",
+        "先写出 \\(\\alpha\\sim\\beta\\iff\\alpha/\\beta\\to1\\) 与 \\(\\alpha-\\beta=o(\\alpha)\\iff(\\alpha-\\beta)/\\alpha\\to0\\)。"
+      ],
+      "knowledge_nodes": [
+        "函数极限",
+        "等价无穷小",
+        "无穷小阶数比较"
+      ],
+      "first_action": "先写出 \\(\\alpha\\sim\\beta\\iff\\alpha/\\beta\\to1\\) 与 \\(\\alpha-\\beta=o(\\alpha)\\iff(\\alpha-\\beta)/\\alpha\\to0\\)。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "暂无明确个人错因；本轮依据题图与解析修复题型定位：本题核心是用等价无穷小定义和小 o 定义判断命题真伪，尤其不能由平方等价直接反推原量等价。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-05-07 的 wrong_history 仅有 1 条同卡失败记录；2026-07-02 是图片与解析复核，不是一次作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": true,
+        "solution_review": "verified_from_solution_image",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-015",
+      "card_path": "错题知识网络/错题卡/GS-015_1000题B组5.12026.4.28.md",
+      "card_sha256": "28da0771cb47da44ef98ad29875db3b175ca3383cc9f73df6d6fb49667b0fe85",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-015_1000题B组5.1切线.md"
+      ],
+      "reviewed_detail_sha256": [
+        "fab013a83d2528fb2ac50a0d6e553e018a77e49e8d518e9c87daa62ef769a414"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "5be93a536eac93460aebe3055780ec5978ce53e9ed7e58fb7aae4a2086c16e0d"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "由函数增量关系反求点值与导数并写切线",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "A，\\(Y=-eX+e\\)。",
+      "solution_outline": [
+        "先代入 (x=0) 求点值，再同除以增量 (x) 凑导数定义；最后用切线点斜式。",
+        "先代 \\(x=0\\) 求 \\(f(1)\\)，再把等式两边除以 \\(x\\) 并令 \\(x\\to0\\)，用导数定义求 \\(f'(1)\\)。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "变上限积分",
+        "洛必达法则",
+        "导数定义",
+        "极限与连续",
+        "定积分"
+      ],
+      "first_action": "先代 \\(x=0\\) 求 \\(f(1)\\)，再把等式两边除以 \\(x\\) 并令 \\(x\\to0\\)，用导数定义求 \\(f'(1)\\)。",
+      "personal_error": {
+        "evidence_status": "legacy_unclassified",
+        "first_breakpoint": "旧结构化字段记录了两个断点：求出 $f(1)$ 后，没有把原等式两边同除以增量 $x$ 来凑 $f'(1)$ 的定义；求出点值和导数后，没有直接使用切线点斜式。原始作答过程未单独保存，证据来源按 legacy_unclassified 处理。",
+        "evidence_origin": "legacy_unclassified",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-04-28 的 wrong_history 仅有 1 条同卡失败日期记录；2026-05-17 复做正确不增加错误次数。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-015",
+          "target_card_id": "GS-463",
+          "declaration_owners": [
+            "GS-463"
+          ],
+          "decision": "verify_existing_strong_edge"
+        }
+      ],
+      "batch30_lineage_revalidation": {
+        "batch_number": 30,
+        "date": "2026-07-24",
+        "prior_card_sha256": "0ca1b7dee2887695317dc2a5b1c3f803d337a5e634c78fea55c842b490c9e32d",
+        "current_card_sha256": "28da0771cb47da44ef98ad29875db3b175ca3383cc9f73df6d6fb49667b0fe85",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [],
+        "removed_edges": [
+          "GS-015--GS-463"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第30批独立证据审计撤回 GS-015--GS-463 候选强边；GS-015 仍无已确认强边，第9批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-016",
+      "card_path": "错题知识网络/错题卡/GS-016_579162026.4.28.md",
+      "card_sha256": "30580ae6f19ef5aa7cf4e6c16ba20c268c44f027a5afada0e0b873b31482f09e",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-016_57916-2026.4.28.md"
+      ],
+      "reviewed_detail_sha256": [
+        "922cf4752b3cdf5b264895e8d037a6fa28fdd8e696d4c3d1795cd24873ba5b1d"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "b6ab5cb5bc326d80352a880e545d6de5eb106efac929dfef15b255f99cd03aad"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "无穷小阶数比较",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "$$ \\beta(x),\\ \\alpha(x),\\ \\gamma(x) $$",
+      "solution_outline": [
+        "先把积分看成关于小上限 (u) 的函数并判其主阶，再把 (u(x)) 的阶数回代；本题不以 Leibniz 求导为第一入口。",
+        "先令 \\(u=1-\\cos x\\)，把 \\(\\int_0^u\\sin t\\,dt\\) 化为 \\(1-\\cos u\\sim \\frac12u^2\\)，再代回 \\(u\\sim\\frac12x^2\\) 判阶。"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "等价无穷小",
+        "无穷小阶数比较",
+        "变上限积分",
+        "泰勒展开"
+      ],
+      "first_action": "先令 \\(u=1-\\cos x\\)，把 \\(\\int_0^u\\sin t\\,dt\\) 化为 \\(1-\\cos u\\sim \\frac12u^2\\)，再代回 \\(u\\sim\\frac12x^2\\) 判阶。",
+      "personal_error": {
+        "evidence_status": "legacy_unclassified",
+        "first_breakpoint": "旧结构化字段记录的断点是：前两个无穷小能判阶，但没有把复合上限积分先化为关于小上限 $u$ 的主部，再回代 $u=1-\\cos x$ 的阶数。原始作答过程未单独保存，证据来源按 legacy_unclassified 处理。",
+        "evidence_origin": "legacy_unclassified",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-04-28 的 wrong_history 仅有 1 条同卡失败日期记录；2026-06-09 复做正确不增加错误次数。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-016",
+          "target_card_id": "GS-547",
+          "declaration_owners": [
+            "GS-547"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-016",
+          "target_card_id": "GS-579",
+          "declaration_owners": [
+            "GS-579"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-016",
+          "target_card_id": "GS-673",
+          "declaration_owners": [
+            "GS-673"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-016",
+          "target_card_id": "GS-438",
+          "declaration_owners": [
+            "GS-438"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-016",
+          "target_card_id": "GS-585",
+          "declaration_owners": [
+            "GS-585"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-017",
+      "card_path": "错题知识网络/错题卡/GS-017_1000题A组5.72026.5.7.md",
+      "card_sha256": "ef452236392b88682850d6394b2add77f19066ccb18f1d44476d56ac06719151",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-017_1000题A组5.7-2026.5.7-2026.5.25.md"
+      ],
+      "reviewed_detail_sha256": [
+        "0f7bec0bca086d60e6b9d01d07a32cb0170758a0a9300947823549b5683b726e"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "98e171538cd2652c8229409ce363d2d8542b8bbacbdcf7da3394f548a88b3747"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "曲线渐近线判断",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "B，题图所问的斜渐近线为 \\(y=2x\\)。补充：\\(x\\to-\\infty\\) 时水平渐近线为 \\(y=0\\)。",
+      "solution_outline": [
+        "先判断整体趋向，区分水平渐近线和斜渐近线，再处理局部等价",
+        "先分 \\(x\\to+\\infty\\) 和 \\(x\\to-\\infty\\) 两个方向，分别判断函数整体趋向和 \\(y-kx\\) 的极限。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "洛必达法则",
+        "渐近线",
+        "无穷远极限",
+        "等价无穷小",
+        "等价无穷小使用条件"
+      ],
+      "first_action": "先分 \\(x\\to+\\infty\\) 和 \\(x\\to-\\infty\\) 两个方向，分别判断函数整体趋向和 \\(y-kx\\) 的极限。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先判断整体趋向，就机械套用等价无穷小。负无穷方向应先看 \\(e^{2x}\\to0\\)，从而 \\(e^{2x}-1\\to-1\\)，\\(|e^{2x}-1|\\to1\\)，\\(\\ln|e^{2x}-1|\\to0\\)；并且要立即识别：若 \\(\\lim_{x\\to\\infty}y(x)=C\\)，则 \\(y=C\\) 是水平渐近线。所以本题负无穷方向对应水平渐近线 \\(y=0\\)，不是斜渐近线。正无穷方向仍需按 \\(a=\\lim y/x\\)、\\(b=\\lim(y-ax)\\) 求出斜渐近线 \\(y=2x\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "2026-05-07 与 2026-05-25 的 wrong_history 分别记录了截距收尾错误和负无穷方向渐近线类型误判，共 2 次独立同题失败。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-017",
+          "target_card_id": "GS-025",
+          "declaration_owners": [
+            "GS-017",
+            "GS-025"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-017",
+          "target_card_id": "GS-151",
+          "declaration_owners": [
+            "GS-017"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-017",
+          "target_card_id": "GS-459",
+          "declaration_owners": [
+            "GS-017",
+            "GS-459"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-017",
+          "target_card_id": "GS-460",
+          "declaration_owners": [
+            "GS-017",
+            "GS-460"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-017",
+          "target_card_id": "GS-497",
+          "declaration_owners": [
+            "GS-017",
+            "GS-497"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-017",
+          "target_card_id": "GS-500",
+          "declaration_owners": [
+            "GS-500"
+          ],
+          "decision": "verify_existing_strong_edge"
+        }
+      ],
+      "batch30_lineage_revalidation": {
+        "batch_number": 30,
+        "date": "2026-07-24",
+        "prior_card_sha256": "a710f93f97d7ed08c7c61d5abb77f0b1ed084221fff81949c05ada0d1a83af1b",
+        "current_card_sha256": "f759a0fe55aed14aad608f5b9296fd96b58bc8d1a0d59a25c4cfbaf95e55764d",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-025",
+          "GS-151",
+          "GS-497"
+        ],
+        "removed_edges": [
+          "GS-017--GS-459",
+          "GS-017--GS-460"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第30批删除 GS-017 对 GS-459、GS-460 的旧宽泛关系声明；第9批原逐题语义载荷保持不变。"
+      },
+      "batch31_lineage_revalidation": {
+        "batch_number": 31,
+        "date": "2026-07-24",
+        "prior_card_sha256": "f759a0fe55aed14aad608f5b9296fd96b58bc8d1a0d59a25c4cfbaf95e55764d",
+        "current_card_sha256": "ef452236392b88682850d6394b2add77f19066ccb18f1d44476d56ac06719151",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-025",
+          "GS-151"
+        ],
+        "removed_edges": [
+          "GS-017--GS-497"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "batch30_lineage_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第31批删除 GS-017--GS-497 的旧宽泛关系声明；第9批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-018",
+      "card_path": "错题知识网络/错题卡/GS-018_2580862026.3.11T2.md",
+      "card_sha256": "14815ef1e4373ec7720d1c2e961db45b393a4b30606eda664841b313095b7f01",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-018_2-58086-2026.3.11-T2.md"
+      ],
+      "reviewed_detail_sha256": [
+        "54f7e2411369afaee8d705edb6c7121b06ac522ad81568348e11839d116f1dd4"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "0a8918b3eacd2fef0aa1e29e73be4a2ad401eb7015ab79074f74863c541ff450"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "无穷大量增长阶比较",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "A，\\(f(x)<g(x)<h(x)\\)。",
+      "solution_outline": [
+        "先按增长阶链排序，必要时用比值极限验证 \\((\\ln x)^p\\ll x^q\\ll a^x\\)",
+        "先写增长阶链 \\((\\ln x)^p\\ll x^q\\ll a^x\\)，再用比值极限验证相邻两项"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "洛必达法则",
+        "无穷大量比较",
+        "对数幂与幂函数增长阶",
+        "幂函数与指数函数增长阶"
+      ],
+      "first_action": "先写增长阶链 \\((\\ln x)^p\\ll x^q\\ll a^x\\)，再用比值极限验证相邻两项",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：比较 \\((\\ln x)^2\\)、\\(x\\)、\\(e^{x/2}\\) 的增长速度时，先用增长阶链 \\((\\ln x)^p\\ll x^q\\ll a^x\\) 或比值极限判断，不能凭函数外观排序。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-03-11 的 wrong_history 仅有 1 条同卡失败日期记录；2026-05-10 复做正确不增加错误次数。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-019",
+      "card_path": "错题知识网络/错题卡/GS-019_580182026.4.16.md",
+      "card_sha256": "9951bb064ccff8413a82f6102fa9a4f8212afa1bbced7c1946b023246e1e9178",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-019_58018-2026.4.16.md"
+      ],
+      "reviewed_detail_sha256": [
+        "bc90aebbc7fd110e8c795e81acdba72f45054ecf8f61a0a92cc689001a76b165"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "e7461825c4d467ad489dd00c75de7e663e473f60ea5fc15ba94789af74c60768"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "无穷远处分式极限的主导项比较",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "\\(\\displaystyle \\lim_{x\\to\\infty}\\frac{x^2-x\\sin x}{x^2+x\\sin(1/x)}=1\\)。",
+      "solution_outline": [
+        "先同除最高阶 \\(x^2\\)，再把三角扰动处理成有界量乘无穷小或等价小量",
+        "先上下同除最高阶 \\(x^2\\)，把 \\(x\\sin x/x^2\\) 改成 \\(\\sin x/x\\)"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "函数极限",
+        "无穷大量比较",
+        "有界函数乘无穷小"
+      ],
+      "first_action": "先上下同除最高阶 \\(x^2\\)，把 \\(x\\sin x/x^2\\) 改成 \\(\\sin x/x\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：无穷大比值型极限要先同除最高阶 \\(x^2\\)，再用“有界函数乘无穷小”为零处理 \\(\\sin x/x\\) 与 \\(\\sin(1/x)/x\\)。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-04-16 的 wrong_history 仅有 1 条同卡失败日期记录；解析推导的复做入口不另计一次作答。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-019",
+          "target_card_id": "GS-020",
+          "declaration_owners": [
+            "GS-019"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-019",
+          "target_card_id": "GS-028",
+          "declaration_owners": [
+            "GS-019"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-019",
+          "target_card_id": "GS-113",
+          "declaration_owners": [
+            "GS-113"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-019",
+          "target_card_id": "GS-287",
+          "declaration_owners": [
+            "GS-287"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-019",
+          "target_card_id": "GS-349",
+          "declaration_owners": [
+            "GS-019"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-019",
+          "target_card_id": "GS-051",
+          "declaration_owners": [
+            "GS-019"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-020",
+      "card_path": "错题知识网络/错题卡/GS-020_580722026.5.7.md",
+      "card_sha256": "ed532b77f10b4752be103ac748a4bae1a2d3a8fd8fbed01bd2cfeeaf1f4e0ffd",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-020_58072-2026.5.7.md"
+      ],
+      "reviewed_detail_sha256": [
+        "b5e26a82be04001dd91293d2c7b717e8557a6d211d0745e44d8c20f5bdfdaf70"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "55372af37fa3014cb7e6bf32264ac00b18e5d31c94a198859bce301565f92cf0"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "无穷远处立方根式参数待定极限",
+      "asked_output": "计算、判断或证明题目所求对象",
+      "answer": "$$ \\boxed{a=-1,\\quad b=0} $$",
+      "solution_outline": [
+        "总方向：把和差化成乘除或提主项。",
+        "先从 \\(\\sqrt[3]{1-x^6}\\) 中提出最高次项 \\(x^2\\)，确定主导项为 \\(-x^2\\)，再逐级消去主项。"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "等价无穷小",
+        "主导项",
+        "无穷大量比较"
+      ],
+      "first_action": "先从 \\(\\sqrt[3]{1-x^6}\\) 中提出最高次项 \\(x^2\\)，确定主导项为 \\(-x^2\\)，再逐级消去主项。",
+      "personal_error": {
+        "evidence_status": "legacy_unclassified",
+        "first_breakpoint": "旧结构化详情把断点记录为：从 $\\sqrt[3]{1-x^6}$ 提取主量时幂次判断错误；确定 $a=-1$ 后，没有继续通过精确差值求出常数项 $b$。该描述来自历史结构化内容，原始作答过程未单独保存，证据来源按 legacy_unclassified 处理。",
+        "evidence_origin": "legacy_unclassified",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-05-07 的 wrong_history 仅有 1 条同卡失败日期记录；相关根式题不计入本题复发次数。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "no_independent_solution_asset_text_cross_check_only",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "invalid_equivalence_subtraction_repaired",
+          "severity": "high",
+          "finding": "不能由 A(x)~ -x^2 直接推出 A(x)+x^2 趋零。",
+          "resolution_status": "resolved_by_exact_cubic_identity"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-020",
+          "target_card_id": "GS-547",
+          "declaration_owners": [
+            "GS-020",
+            "GS-547"
+          ],
+          "decision": "verify_existing_strong_edge"
+        },
+        {
+          "source_card_id": "GS-020",
+          "target_card_id": "GS-022",
+          "declaration_owners": [
+            "GS-022"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-020",
+          "target_card_id": "GS-287",
+          "declaration_owners": [
+            "GS-287"
+          ],
+          "decision": "remove_broad_or_stale_edge"
+        },
+        {
+          "source_card_id": "GS-020",
+          "target_card_id": "GS-460",
+          "declaration_owners": [
+            "GS-020"
+          ],
+          "decision": "add_strong_edge"
+        }
+      ],
+      "batch30_lineage_revalidation": {
+        "batch_number": 30,
+        "date": "2026-07-24",
+        "prior_card_sha256": "95c939e266ebb9b19511821c9c40a0dc91900fccd6dcee779c5ae997022a26fb",
+        "current_card_sha256": "a00f0bde65fd4ffb43eb8c1f2fd0afafca414cfad1d9d2b040d63e82daf37fe6",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-547"
+        ],
+        "removed_edges": [
+          "GS-020--GS-460"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "GS-020 的个人断点证据仍为 legacy_unclassified，不能与 GS-460 形成普通强边；第9批原逐题语义载荷保持不变。"
+      },
+      "batch34_lineage_revalidation": {
+        "batch_number": 34,
+        "date": "2026-07-24",
+        "prior_card_sha256": "a00f0bde65fd4ffb43eb8c1f2fd0afafca414cfad1d9d2b040d63e82daf37fe6",
+        "current_card_sha256": "ed532b77f10b4752be103ac748a4bae1a2d3a8fd8fbed01bd2cfeeaf1f4e0ffd",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [],
+        "removed_edges": [
+          "GS-020--GS-547"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "batch30_lineage_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第34批重绑 GS-020 的关系导航哈希；第9批原逐题语义载荷保持不变。"
+      }
+    }
+  ]
+}

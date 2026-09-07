@@ -1,0 +1,438 @@
+---
+wiki_id: MATHWIKI-REVIEW-056
+type: target_level_semantic_review_batch
+title: 全库逐题语义复核第25批20题
+subject: 数学一
+knowledge:
+  - 全库逐题复核
+  - 题图解析图核对
+  - 知识点错因连线
+source_refs:
+  - 错题知识网络/错题卡/
+  - 错题知识网络/可视化错题详情/
+  - 错题知识网络/assets/visual_wrong_questions/
+  - 错题知识网络/wiki/review/MATHWIKI-REVIEW-056_全库逐题语义复核第25批20题.json
+status: active
+last_updated: 2026-07-23
+---
+
+# 全库逐题语义复核第25批20题
+
+## 本批结论
+
+本批共逐题核对 20 张正式卡，当前哈希仍有效的完整复核为 2 张；覆盖 21 个物理图片路径与 12 个唯一图片内容。全库当前共 882 张正式卡，本轮活动累计完成 119 张，剩余 763 张。
+
+本批有 17 张出现结构、身份、元数据或来源正文质量问题。证据充分且无歧义的修正已经正式收口；身份冲突、稳定 ID 合并或证据不足项仍保留为 needs_user，详见 `MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B25`。
+
+## 证据边界
+
+- `verified` 表示题面、所问对象、答案、解析路线和当前全部图片内容已经逐一核对，并由正式卡 SHA、详情页 SHA 与图片 SHA-256 绑定。
+- 个人错因仍按 `confirmed_personal`、`legacy_unclassified`、`pending_user_confirmation` 和重复占位分别处理；读懂解析不能反推用户为什么做错。
+- 同一哈希的重复物理图片只视觉核对一次，但所有物理路径都纳入数量和集合一致性检查。
+- 关系裁决中已正式应用的变更以正式收口回执为准；未应用项仍是 SHADOW 建议。
+
+## 批次总览
+
+| 错题 | 题目在问什么 | 知识点 | 答案 | 个人错因边界 | 质量发现 |
+|---|---|---|---|---|---|
+| [GS-342](http://127.0.0.1:8765/open/GS-342) | Taylor余项积分估计证明 | 一元函数微分学应用、中值定理、泰勒公式、拉格朗日余项、线性插值误差、梯形公式误差、定积分、定积分性质 | 点态估计为 $\|f(x)-f(0)(1-x)-f(1)x\|\le \frac{x(1-x)}2$；积分估计为 $\left\|\int_0^1 f(x)dx-\frac{f(0)+f(1)}2\right\|\le\frac1{12}$。 | pending_user_confirmation：旧批量卡未记录用户个人错因；低置信推断为没有先做双端展开并加权消去一阶项 | duplicate_identity_hold |
+| [GS-343](http://127.0.0.1:8765/open/GS-343) | 振荡积分分部估计证明 | 定积分、分部积分、定积分不等式、振荡积分估计、微分形式转换 | $$\left\|\int_x^{x+1}\sin u^2\,du\right\|\le\frac1x\quad(x>0)$$ | pending_user_confirmation：旧卡未记录用户实际漏步；复做风险是没有先把相位导数提出，导致只能做粗放缩 | duplicate_identity_hold |
+| [GS-344](http://127.0.0.1:8765/open/GS-344) | 题面身份待重连 | 定积分（仅按来源目录暂存） | Unavailable until the correct question surface is restored. | not_assessable_missing_question_surface：正确题面缺失且现有图像已核验为 LA-017；不得从错配视觉或旧摘要反推个人方法断点。 | visual_question_mismatch |
+| [GS-345](http://127.0.0.1:8765/open/GS-345) | 凹函数积分不等式证明 | 一元函数微分学应用、中值定理、凹凸性与拐点、定积分、定积分性质、非负广义积分、严格凹函数内部正性、最大值点 | $\int_0^1\left\|\frac{f^{\prime\prime}(x)}{f(x)}\right\|dx\ge4$，积分按端点非负广义积分理解。 | pending_user_confirmation：旧批量卡未记录用户个人错因；低置信推断为没有先用二阶导定号确认分母正性和拆区间入口 | duplicate_identity_hold |
+| [GS-346](http://127.0.0.1:8765/open/GS-346) | 导数有界积分范围估计 | 定积分、定积分性质、中值定理、一元函数微分学应用 | 选 C，$\frac34<\int_0^1 f(x)dx<\frac54$。 | pending_user_confirmation：旧批量卡未记录用户个人错因；低置信推断为没有先把导数有界条件转成两段线性上下包络 | duplicate_identity_hold |
+| [GS-347](http://127.0.0.1:8765/open/GS-347) | 导数积分估计证明 | 定积分、定积分性质、一元函数微分学应用、中值定理 | $\|f(x)\|\le\frac12\int_a^b\|f^{\prime}(t)\|dt$。 | pending_user_confirmation：旧批量卡未记录用户个人错因；低置信推断为没有先取最坏点并从两端同时估计 | duplicate_identity_hold |
+| [GS-348](http://127.0.0.1:8765/open/GS-348) | 导数有界积分范围估计 | 定积分、定积分性质、中值定理、一元函数微分学应用 | 选 C，$\frac34<\int_0^1 f(x)dx<\frac54$。 | pending_user_confirmation：旧批量卡未记录用户个人错因；低置信推断为没有先把导数有界条件转成两段线性上下包络 | duplicate_identity_hold |
+| [GS-349](http://127.0.0.1:8765/open/GS-349) | 具体题面待补 | 多元函数微分学（仅按来源标题暂存） | Unavailable until the concrete question surface is restored. | not_assessable_missing_question_surface：缺具体题目、题图、可靠 OCR 和用户作答过程，暂不判定个人方法断点。 | missing_question_surface |
+| [GS-350](http://127.0.0.1:8765/open/GS-350) | 二元函数连续性与可微性判定 | 多元函数微分学、多元函数连续可微、多元函数偏导、可微定义、一阶线性主部、极限与连续 | 连续但不可微，选 B。 | user_confirmed：不知道连续和可微各自从哪个定义起步，也没有把可微判断转成 \(\Delta f-f_x(0,0)\Delta x-f_y(0,0)\Delta y=o(\rho)\)。 | duplicate_identity_hold |
+| [GS-351](http://127.0.0.1:8765/open/GS-351) | 可微性与偏导连续性判定 | 多元函数微分学、多元函数偏导、多元函数连续可微、可微定义、极限与连续 | 选 B，在 $(0,0)$ 处可微，但偏导数不连续。 | pending_user_confirmation：旧批量卡未记录用户个人错因；低置信推断为没有先把偏导连续性与可微性拆开逐项核验 | duplicate_identity_hold |
+| [GS-352](http://127.0.0.1:8765/open/GS-352) | 多元函数极限存在性判定 | 多元函数极限、极限与连续、无穷小阶数比较、多元函数微分学 | 极限不存在。 | pending_user_confirmation：旧批量卡未记录用户个人错因；低置信推断为只试直线路径，没有继续构造变阶路径 | — |
+| [GS-353](http://127.0.0.1:8765/open/GS-353) | 无穷远二元极限夹逼 | 多元函数极限、极限与连续、多元函数微分学 | 极限为 $0$。 | pending_user_confirmation：旧批量卡未记录用户个人错因；低置信推断为没有先把正定二次型转成可用于夹逼的下界 | duplicate_identity_hold |
+| [GS-355](http://127.0.0.1:8765/open/GS-355) | 二重极限与累次极限判别 | 多元函数极限、累次极限、极限与连续、多元函数微分学 | $I_1$ 不存在，$I_2=0$，选 C。 | pending_user_confirmation：缺少用户作答过程；低置信推断可能把累次极限存在误当成二重极限存在 | — |
+| [GS-357](http://127.0.0.1:8765/open/GS-357) | 二重极限与累次极限判别 | 多元函数极限、累次极限、极限与连续、多元函数微分学 | $I_1=1,\ I_2=-1,\ I_3$ 不存在，选 A。 | pending_user_confirmation：缺少用户作答过程；低置信推断可能没有先按内外层顺序固定变量 | — |
+| [GS-358](http://127.0.0.1:8765/open/GS-358) | 可微性与偏导连续性判定 | 多元函数微分学、多元函数偏导、多元函数连续可微、可微定义、极限与连续 | 选 B，在 $(0,0)$ 处可微，但偏导数不连续。 | pending_user_confirmation：缺少用户作答过程；低置信推断可能只算原点偏导或把偏导连续当成可微必要条件 | duplicate_identity_hold |
+| [GS-359](http://127.0.0.1:8765/open/GS-359) | 偏导连续性与可微性判定 | 多元函数微分学、多元函数连续可微、极限与连续、可微定义、多元函数偏导 | \(\boxed{f_x(0,0)\text{ 不连续，但 }f\text{ 在 }(0,0)\text{ 可微}}\) | pending_user_confirmation：原卡未沉淀该入口，容易把偏导连续性与可微性混成同一个判断。 | duplicate_identity_hold |
+| [GS-361](http://127.0.0.1:8765/open/GS-361) | 可微但偏导不连续判定 | 多元函数微分学、多元函数连续可微、极限与连续、可微定义、多元函数偏导 | B（可微，但偏导数不连续） | pending_user_confirmation：历史卡未区分可微与偏导连续性，方法标签停在换元/分类讨论。 | duplicate_identity_hold |
+| [GS-362](http://127.0.0.1:8765/open/GS-362) | 连续与间断判定 | 多元函数微分学、多元函数连续可微、极限与连续 | \boxed{ \frac{\partial f}{\partial x}(0,0)\ \text{不连续},\qquad f(x,y)\ \text{在 }(0,0)\text{可微} } | pending_user_confirmation：缺少用户作答过程；低置信推断可能由偏导不连续直接否定可微，没有回到可微定义 | duplicate_identity_hold |
+| [GS-364](http://127.0.0.1:8765/open/GS-364) | 连续但不可微判定 | 多元函数微分学、多元函数连续可微、极限与连续、可微定义、多元函数偏导 | B | pending_user_confirmation：历史卡误归入数列极限，未沉淀连续、偏导、可微三段判别链。 | duplicate_identity_hold |
+| [GS-365](http://127.0.0.1:8765/open/GS-365) | 可微但偏导不连续判定 | 多元函数微分学、多元函数连续可微、极限与连续、可微定义、多元函数偏导 | B（可微，但偏导数不连续） | pending_user_confirmation：历史卡未沉淀入口且答案字段残缺，容易把本题当普通连续性或二重积分题。 | duplicate_identity_hold |
+
+## 逐题复核
+
+### GS-342 强化例题11.18-3
+
+- 题目：证明二阶导有界时，函数相对端点线性插值的误差估计，以及由点态估计推出积分误差估计。
+- 所问：Taylor余项积分估计证明
+- 知识点：一元函数微分学应用；中值定理；泰勒公式；拉格朗日余项；线性插值误差；梯形公式误差；定积分；定积分性质
+- 第一动作：先在点 x 处分别展开 f(0) 与 f(1)
+- 答案：点态估计为 $|f(x)-f(0)(1-x)-f(1)x|\le \frac{x(1-x)}2$；积分估计为 $\left|\int_0^1 f(x)dx-\frac{f(0)+f(1)}2\right|\le\frac1{12}$。
+- 个人错因边界：pending_user_confirmation；旧批量卡未记录用户个人错因；低置信推断为没有先做双端展开并加权消去一阶项
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 双端Taylor余项估计
+  - 加权消一阶项
+  - 积分保序
+  - 余项放缩
+- 质量发现：
+  - `duplicate_identity_hold`：GS-342 is a stable-ID member of B20-ID-02; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `5964abfabc7deddf1e9db6d0fe284783fb2d71d3f8306bd623fe17f8c118edc1`；唯一图片 1 个；物理路径 1 个。
+
+### GS-343 1000题A组11.10-3
+
+- 题目：求证 $f(x)=\int_x^{x+1}\sin u^2\,du$ 在 $x>0$ 时满足 $|f(x)|\le 1/x$。
+- 所问：振荡积分分部估计证明
+- 知识点：定积分；分部积分；定积分不等式；振荡积分估计；微分形式转换
+- 第一动作：先写 sin u^2 du=-1/(2u)d(cos u^2)
+- 答案：$$\left|\int_x^{x+1}\sin u^2\,du\right|\le\frac1x\quad(x>0)$$
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户实际漏步；复做风险是没有先把相位导数提出，导致只能做粗放缩
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 分部积分
+  - 振荡积分估计
+  - 微分形式转换
+  - 绝对值放缩
+- 质量发现：
+  - `duplicate_identity_hold`：GS-343 is a stable-ID member of B11-ID-01; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `8c8972bd68d3508252f55108fb7d93b4c223940a574cb1bdb3f3bbda4f88c04e`；唯一图片 1 个；物理路径 1 个。
+
+### GS-344 1000题A组11.11-4
+
+- 题目：Correct GS-344 question surface is unavailable; its registered image is LA-017 and is excluded.
+- 所问：题面身份待重连
+- 知识点：定积分（仅按来源目录暂存）
+- 第一动作：—
+- 答案：Unavailable until the correct question surface is restored.
+- 个人错因边界：not_assessable_missing_question_surface；正确题面缺失且现有图像已核验为 LA-017；不得从错配视觉或旧摘要反推个人方法断点。
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 blocked_by_documented_evidence_gap
+- 解析主线：
+  - 待题面重连后确定
+- 质量发现：
+  - `visual_question_mismatch`：question_01.png belongs to LA-017, not GS-344.；建议：
+- 当前快照：`stale`；正式卡 `0c9976a5a4f9f5081b5a99f9c0963140664949f73eec248cf1bd5e918acceba0`；唯一图片 0 个；物理路径 0 个。
+
+### GS-345 强化例题11.19 135804 2026.4.28-4
+
+- 题目：已知 \(f\in C^2[0,1]\)、\(f(0)=f(1)=0\)、\(f^{\prime\prime}(x)<0\)，证明按端点广义积分理解的 \(\int_0^1\left|f^{\prime\prime}(x)/f(x)\right|dx\ge4\)。
+- 所问：凹函数积分不等式证明
+- 知识点：一元函数微分学应用；中值定理；凹凸性与拐点；定积分；定积分性质；非负广义积分；严格凹函数内部正性；最大值点
+- 第一动作：先判断 f 在开区间内为正，并确定最大值点
+- 答案：$\int_0^1\left|\frac{f^{\prime\prime}(x)}{f(x)}\right|dx\ge4$，积分按端点非负广义积分理解。
+- 个人错因边界：pending_user_confirmation；旧批量卡未记录用户个人错因；低置信推断为没有先用二阶导定号确认分母正性和拆区间入口
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 凹凸性判定
+  - 最大值点拆区间
+  - 拉格朗日中值定理
+  - 牛顿莱布尼茨公式
+  - 放缩收尾
+- 质量发现：
+  - `duplicate_identity_hold`：GS-345 is a stable-ID member of B11-ID-05; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `af58d13887179b81061c1701269f438eaab6257380e6c45109a963a5bed8203d`；唯一图片 1 个；物理路径 1 个。
+
+### GS-346 1000题B组11.3-3
+
+- 题目：已知 $f(0)=f(1)=1$ 且 $\max_{0\le x\le1}|f^{\prime}(x)|=1$，判断 $\int_0^1f(x)dx$ 的范围。
+- 所问：导数有界积分范围估计
+- 知识点：定积分；定积分性质；中值定理；一元函数微分学应用
+- 第一动作：先把区间分成左右两段并写出端点线性包络
+- 答案：选 C，$\frac34<\int_0^1 f(x)dx<\frac54$。
+- 个人错因边界：pending_user_confirmation；旧批量卡未记录用户个人错因；低置信推断为没有先把导数有界条件转成两段线性上下包络
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 特殊值检验
+  - 分段积分估计
+  - 拉格朗日中值定理
+  - 积分夹逼
+- 质量发现：
+  - `duplicate_identity_hold`：GS-346 is a stable-ID member of B11-ID-02; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `a38c30a8fca3ce0d5df87f18c3d86a2336d0dcd85d36c8c66fb55a428cb8f668`；唯一图片 1 个；物理路径 1 个。
+
+### GS-347 1000题A组11.9-2
+
+- 题目：已知 $f^{\prime}$ 连续且 $f(a)=f(b)=0$，证明 $|f(x)|\le\frac12\int_a^b|f^{\prime}(t)|dt$。
+- 所问：导数积分估计证明
+- 知识点：定积分；定积分性质；一元函数微分学应用；中值定理
+- 第一动作：先取 x0 使 |f(x0)| 达到全区间最大值
+- 答案：$|f(x)|\le\frac12\int_a^b|f^{\prime}(t)|dt$。
+- 个人错因边界：pending_user_confirmation；旧批量卡未记录用户个人错因；低置信推断为没有先取最坏点并从两端同时估计
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 极值点控制
+  - 牛顿莱布尼茨公式
+  - 三角不等式
+  - 导数积分估计
+- 质量发现：
+  - `duplicate_identity_hold`：GS-347 is a stable-ID member of B23-ID-04; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `b38f328601c5ff4e65f099fa25e1f3239ea43ce51a88a4c21ec519cae165a93f`；唯一图片 1 个；物理路径 1 个。
+
+### GS-348 1000题B组11.3-4
+
+- 题目：已知 $f(0)=f(1)=1$ 且 $\max_{0\le x\le1}|f^{\prime}(x)|=1$，判断 $\int_0^1f(x)dx$ 的范围。
+- 所问：导数有界积分范围估计
+- 知识点：定积分；定积分性质；中值定理；一元函数微分学应用
+- 第一动作：先把区间分成左右两段并写出端点线性包络
+- 答案：选 C，$\frac34<\int_0^1 f(x)dx<\frac54$。
+- 个人错因边界：pending_user_confirmation；旧批量卡未记录用户个人错因；低置信推断为没有先把导数有界条件转成两段线性上下包络
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 特殊值检验
+  - 分段积分估计
+  - 拉格朗日中值定理
+  - 积分夹逼
+- 质量发现：
+  - `duplicate_identity_hold`：GS-348 is a stable-ID member of B11-ID-02; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `2e90018ba44eb3790deb1692fe88b28f5118b942f988cbe2040678fe6dc4084a`；唯一图片 1 个；物理路径 1 个。
+
+### GS-349 高数数学强化第13讲—多元函数微分学
+
+- 题目：Only a chapter placeholder remains; no concrete stem, image, reliable OCR, or answer-bearing source exists.
+- 所问：具体题面待补
+- 知识点：多元函数微分学（仅按来源标题暂存）
+- 第一动作：—
+- 答案：Unavailable until the concrete question surface is restored.
+- 个人错因边界：not_assessable_missing_question_surface；缺具体题目、题图、可靠 OCR 和用户作答过程，暂不判定个人方法断点。
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 blocked_by_documented_evidence_gap
+- 解析主线：
+  - 待题面补齐后确定
+- 质量发现：
+  - `missing_question_surface`：Concrete question evidence is unavailable.；建议：
+- 当前快照：`current`；正式卡 `0622996c540a3c94c21a52d8c7849825a2682a59bc14bff3d828893ed447d3a1`；唯一图片 0 个；物理路径 0 个。
+
+### GS-350 强化例题13.10-2
+
+- 题目：设 \[ f(x,y)= \begin{cases} \dfrac{x^2y}{x^2+y^2}, &(x,y)\ne(0,0),\\ 0, &(x,y)=(0,0). \end{cases} \] 判断 \(f(x,y)\) 在 \((0,0)\) 处的连续性和可微性。
+- 所问：二元函数连续性与可微性判定
+- 知识点：多元函数微分学；多元函数连续可微；多元函数偏导；可微定义；一阶线性主部；极限与连续
+- 第一动作：先写 \(|f(x,y)|=\frac{x^2}{x^2+y^2}|y|\le |y|\)；进入可微性时，先分别沿 \(x\) 轴和 \(y\) 轴套偏导定义。
+- 答案：连续但不可微，选 B。
+- 个人错因边界：user_confirmed；不知道连续和可微各自从哪个定义起步，也没有把可微判断转成 \(\Delta f-f_x(0,0)\Delta x-f_y(0,0)\Delta y=o(\rho)\)。
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 取绝对值
+  - 有界性放缩
+  - 偏导定义
+  - 可微定义
+  - 一阶线性主部
+  - 凑Δz-dz
+  - 小o误差项
+  - 特殊路径
+- 质量发现：
+  - `duplicate_identity_hold`：GS-350 is a stable-ID member of B11-ID-04; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `2d91096ea99757847a7379f12b7b94e06e0e6ef1179668c871f130b602b63528`；唯一图片 1 个；物理路径 1 个。
+
+### GS-351 强化例题13.12
+
+- 题目：判断分段函数 $f(x,y)=(x^2+y^2)\sin\frac1{x^2+y^2}$ 在原点处的可微性及偏导连续性。
+- 所问：可微性与偏导连续性判定
+- 知识点：多元函数微分学；多元函数偏导；多元函数连续可微；可微定义；极限与连续
+- 第一动作：先用偏导定义计算原点偏导，再写可微定义余项
+- 答案：选 B，在 $(0,0)$ 处可微，但偏导数不连续。
+- 个人错因边界：pending_user_confirmation；旧批量卡未记录用户个人错因；低置信推断为没有先把偏导连续性与可微性拆开逐项核验
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 偏导定义
+  - 特殊路径
+  - 可微定义
+  - 有界性放缩
+- 质量发现：
+  - `duplicate_identity_hold`：GS-351 is a stable-ID member of B25-ID-01; ordinary aggregate edges are blocked.；建议：
+- 关系裁决：
+  - GS-358：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+- 当前快照：`stale`；正式卡 `0df7121f21aaddf0af8a92adb516e11ec995adc125c0a2bc4f65dfd1948dff5e`；唯一图片 1 个；物理路径 1 个。
+
+### GS-352 强化例题13.2
+
+- 题目：判断 $\lim_{(x,y)\to(0,0)}\frac{x^3+y^3}{x^2+y}$ 是否存在。
+- 所问：多元函数极限存在性判定
+- 知识点：多元函数极限；极限与连续；无穷小阶数比较；多元函数微分学
+- 第一动作：先试同阶路径，再构造能抵消分母低阶项的变阶路径
+- 答案：极限不存在。
+- 个人错因边界：pending_user_confirmation；旧批量卡未记录用户个人错因；低置信推断为只试直线路径，没有继续构造变阶路径
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 特殊路径
+  - 变阶路径
+  - 阶数比较
+- 当前快照：`stale`；正式卡 `dc5b4bf4f8f641622e90a242276233c2c33c62962432495a49f207e0d92dc2b5`；唯一图片 1 个；物理路径 1 个。
+
+### GS-353 强化例题13.3-2
+
+- 题目：求 $x,y\to\infty$ 时 $\frac{x+y}{x^2-xy+y^2}$ 的极限。
+- 所问：无穷远二元极限夹逼
+- 知识点：多元函数极限；极限与连续；多元函数微分学
+- 第一动作：先把 x^2-xy+y^2 配成平方和并写出下界
+- 答案：极限为 $0$。
+- 个人错因边界：pending_user_confirmation；旧批量卡未记录用户个人错因；低置信推断为没有先把正定二次型转成可用于夹逼的下界
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 配方法
+  - 正定二次型估计
+  - 夹逼准则
+- 质量发现：
+  - `duplicate_identity_hold`：GS-353 is a stable-ID member of B11-ID-03; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `1a8dfdb0d784764c433a0569af3fe5bbb0463efe6f6a076eb1b33999969535d9`；唯一图片 1 个；物理路径 1 个。
+
+### GS-355 强化例题13.5
+
+- 题目：比较二元函数 $f(x,y)=\frac{xy}{x^2+y^2}$ 的二重极限与累次极限。
+- 所问：二重极限与累次极限判别
+- 知识点：多元函数极限；累次极限；极限与连续；多元函数微分学
+- 第一动作：先用 y=kx 检查二重极限是否依赖路径，再按顺序固定变量计算累次极限
+- 答案：$I_1$ 不存在，$I_2=0$，选 C。
+- 个人错因边界：pending_user_confirmation；缺少用户作答过程；低置信推断可能把累次极限存在误当成二重极限存在
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 同阶路径
+  - 累次极限固定变量
+  - 特殊路径
+- 关系裁决：
+  - GS-357：`keep`；shared exact first action: fix the inner variable, compute iterated limits, then decide the double limit
+- 当前快照：`stale`；正式卡 `50531564a7761b048fa812d09193349bf407a56313f588927b539e07116a1d63`；唯一图片 1 个；物理路径 1 个。
+
+### GS-357 强化例题13.6
+
+- 题目：比较 $f(x,y)=\frac{x^2-y^2}{x^2+y^2}$ 的两个累次极限与二重极限。
+- 所问：二重极限与累次极限判别
+- 知识点：多元函数极限；累次极限；极限与连续；多元函数微分学
+- 第一动作：先固定内层变量分别计算两个累次极限
+- 答案：$I_1=1,\ I_2=-1,\ I_3$ 不存在，选 A。
+- 个人错因边界：pending_user_confirmation；缺少用户作答过程；低置信推断可能没有先按内外层顺序固定变量
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 累次极限固定变量
+  - 特殊路径
+  - 二重极限判别
+- 当前快照：`stale`；正式卡 `f53cf923d9a90cd993072054aa00e95979e438d9396e2c9ecd780ed812330136`；唯一图片 1 个；物理路径 1 个。
+
+### GS-358 强化例题13.12-2
+
+- 题目：判断分段函数 $f(x,y)=(x^2+y^2)\sin\frac1{x^2+y^2}$ 在原点处的可微性及偏导连续性。
+- 所问：可微性与偏导连续性判定
+- 知识点：多元函数微分学；多元函数偏导；多元函数连续可微；可微定义；极限与连续
+- 第一动作：先用偏导定义求原点偏导，再写邻域偏导公式检查连续性
+- 答案：选 B，在 $(0,0)$ 处可微，但偏导数不连续。
+- 个人错因边界：pending_user_confirmation；缺少用户作答过程；低置信推断可能只算原点偏导或把偏导连续当成可微必要条件
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 偏导定义
+  - 特殊路径
+  - 可微定义
+  - 有界性放缩
+- 质量发现：
+  - `duplicate_identity_hold`：GS-358 is a stable-ID member of B25-ID-01; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `5729bf8cf610ac09b7200d4b8c8e4a60c88271117c2fc991f46c57fb21d5c2a5`；唯一图片 1 个；物理路径 1 个。
+
+### GS-359 2024年真题选择题第五题
+
+- 题目：📘 张宇《高数十八讲》—第13讲：多元函数微分学（偏导连续性 & 可微判定） 题目给定 f(x,y)= \begin{cases} (x^2+y^2)\sin\dfrac1{xy}, & xy\ne0,\4pt] 0, & xy=0. \end{cases} 判断在 \((0,0)\) 处： - \(\dfrac{\partial f}{\partial x}\) 是否连续？ - \(f(x,y)\) 是否可微？ 答案：(C) \(\…
+- 所问：偏导连续性与可微性判定
+- 知识点：多元函数微分学；多元函数连续可微；极限与连续；可微定义；多元函数偏导
+- 第一动作：先用偏导定义求 \(f_x(0,0),f_y(0,0)\)，再在 \(xy\ne0\) 区域写偏导表达式查连续性。
+- 答案：\(\boxed{f_x(0,0)\text{ 不连续，但 }f\text{ 在 }(0,0)\text{ 可微}}\)
+- 个人错因边界：pending_user_confirmation；原卡未沉淀该入口，容易把偏导连续性与可微性混成同一个判断。
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 偏导定义
+  - 可微定义
+  - 有界性放缩
+  - 夹逼准则
+- 质量发现：
+  - `duplicate_identity_hold`：GS-359 is a stable-ID member of B25-ID-02; ordinary aggregate edges are blocked.；建议：
+- 关系裁决：
+  - GS-361：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-365：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-370：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-372：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-375：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+- 当前快照：`stale`；正式卡 `43be490679d232106aeb6cbdfc093b71b16d2e04b50203271146b944469d31db`；唯一图片 1 个；物理路径 4 个。
+
+### GS-361 强化例题13.12-3
+
+- 题目：✅ 1. 知识点与方法 考点：二元函数在一点的可微性与偏导连续性 方法 ① 原点用偏导定义求 \(fx(0,0),fy(0,0)\) ② 邻域内求偏导公式，看极限是否存在 ③ \(\Delta f=o(\rho)\) 判可微（直角坐标，不用极坐标） 函数 f(x,y)= \begin{cases} (x^2+y^2)\,\sin\dfrac{1}{x^2+y^2}, & (x,y)\ne(0,0),\6pt] 0, & (0,0).…
+- 所问：可微但偏导不连续判定
+- 知识点：多元函数微分学；多元函数连续可微；极限与连续；可微定义；多元函数偏导
+- 第一动作：先用偏导定义求原点两个偏导，再用有界性证明 \(\Delta f=o(\rho)\)。
+- 答案：B（可微，但偏导数不连续）
+- 个人错因边界：pending_user_confirmation；历史卡未区分可微与偏导连续性，方法标签停在换元/分类讨论。
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 偏导定义
+  - 可微定义
+  - 有界性放缩
+  - 特殊路径
+- 质量发现：
+  - `duplicate_identity_hold`：GS-361 is a stable-ID member of B25-ID-01; ordinary aggregate edges are blocked.；建议：
+- 关系裁决：
+  - GS-365：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-370：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-371：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-372：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+- 当前快照：`stale`；正式卡 `1d9018ec42b1afdfa24ce39b8f618b7252e22b1581f2cd25d89114f560173dec`；唯一图片 1 个；物理路径 1 个。
+
+### GS-362 2024年真题选择题第五题-2
+
+- 题目：📘 张宇《高数十八讲》—第13讲：多元函数微分学（偏导连续性 & 可微判定） 题目给定 f(x,y)= \begin{cases} (x^2+y^2)\sin\dfrac1{xy}, & xy\ne0,\4pt] 0, & xy=0. \end{cases} 判断在 \((0,0)\) 处： - \(\dfrac{\partial f}{\partial x}\) 是否连续？ - \(f(x,y)\) 是否可微？ 答案：(C) \(\…
+- 所问：连续与间断判定
+- 知识点：多元函数微分学；多元函数连续可微；极限与连续
+- 第一动作：先用夹逼验证原函数增量为 o(rho)，再另算偏导函数极限判断连续性
+- 答案：\boxed{ \frac{\partial f}{\partial x}(0,0)\ \text{不连续},\qquad f(x,y)\ \text{在 }(0,0)\text{可微} }
+- 个人错因边界：pending_user_confirmation；缺少用户作答过程；低置信推断可能由偏导不连续直接否定可微，没有回到可微定义
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 等价变形
+  - 夹逼
+  - 分类讨论
+  - 夹逼准则
+- 质量发现：
+  - `duplicate_identity_hold`：GS-362 is a stable-ID member of B25-ID-02; ordinary aggregate edges are blocked.；建议：
+- 关系裁决：
+  - GS-369：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-375：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+- 当前快照：`current`；正式卡 `d54f0577ca552c5d8498173b7f0a7f873c880d0bbf17d0a944ed03942207bef4`；唯一图片 1 个；物理路径 1 个。
+
+### GS-364 强化例题13.10-3
+
+- 题目：按张宇《高数十八讲》风格——三向解题法总结 ✅ 1）考点定位与所用方法 章节：多元函数在一点的连续性与可微性判定 方法： 连续性 → 放缩估计（夹逼） 把分子高阶吸到分母里 → “有界 × 趋零” 可微性 → 定义检验 偏导 → 写 \( \Delta f \) → 判 \Delta f - fx\Delta x - fy\Delta y = o(\rho),\qquad \rho=\sqrt{(\Delta x)^2+(\Delta…
+- 所问：连续但不可微判定
+- 知识点：多元函数微分学；多元函数连续可微；极限与连续；可微定义；多元函数偏导
+- 第一动作：先取绝对值放缩证明 \(f(x,y)\to0\)，再沿坐标轴算原点偏导。
+- 答案：B
+- 个人错因边界：pending_user_confirmation；历史卡误归入数列极限，未沉淀连续、偏导、可微三段判别链。
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 有界性放缩
+  - 偏导定义
+  - 可微定义
+  - 特殊路径
+- 质量发现：
+  - `duplicate_identity_hold`：GS-364 is a stable-ID member of B11-ID-04; ordinary aggregate edges are blocked.；建议：
+- 当前快照：`stale`；正式卡 `470f65c765d5e386a01337c3e30bd43cf6bc35e46d4e67310845216f9db53866`；唯一图片 1 个；物理路径 1 个。
+
+### GS-365 强化例题13.12-4
+
+- 题目：✅ 1. 知识点与方法 考点：二元函数在一点的可微性与偏导连续性 方法 ① 原点用偏导定义求 \(fx(0,0),fy(0,0)\) ② 邻域内求偏导公式，看极限是否存在 ③ \(\Delta f=o(\rho)\) 判可微（直角坐标，不用极坐标） 函数 f(x,y)= \begin{cases} (x^2+y^2)\,\sin\dfrac{1}{x^2+y^2}, & (x,y)\ne(0,0),\6pt] 0, & (0,0).…
+- 所问：可微但偏导不连续判定
+- 知识点：多元函数微分学；多元函数连续可微；极限与连续；可微定义；多元函数偏导
+- 第一动作：先用偏导定义求原点偏导，再用有界性估计 \(\Delta f/\rho\)。
+- 答案：B（可微，但偏导数不连续）
+- 个人错因边界：pending_user_confirmation；历史卡未沉淀入口且答案字段残缺，容易把本题当普通连续性或二重积分题。
+- 一致性：题图—解析 consistent_or_gap_explicit；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 偏导定义
+  - 可微定义
+  - 有界性放缩
+  - 特殊路径
+- 质量发现：
+  - `duplicate_identity_hold`：GS-365 is a stable-ID member of B25-ID-01; ordinary aggregate edges are blocked.；建议：
+- 关系裁决：
+  - GS-370：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-371：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+  - GS-372：`remove`；identity-held endpoint cannot keep an ordinary semantic edge
+- 当前快照：`stale`；正式卡 `5336f4275e8d13873be373621333a8df2eda5433e2af32e021885111390e1dfa`；唯一图片 1 个；物理路径 1 个。
+
+## 重建与验收
+
+```bash
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py build
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py check
+python3 -m unittest tests.test_knowledge_error_evidence_graph
+```

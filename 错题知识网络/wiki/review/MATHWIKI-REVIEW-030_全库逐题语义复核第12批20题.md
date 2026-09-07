@@ -1,0 +1,466 @@
+---
+wiki_id: MATHWIKI-REVIEW-030
+type: target_level_semantic_review_batch
+title: 全库逐题语义复核第12批20题
+subject: 数学一
+knowledge:
+  - 全库逐题复核
+  - 题图解析图核对
+  - 知识点错因连线
+source_refs:
+  - 错题知识网络/错题卡/
+  - 错题知识网络/可视化错题详情/
+  - 错题知识网络/assets/visual_wrong_questions/
+  - 错题知识网络/wiki/review/MATHWIKI-REVIEW-030_全库逐题语义复核第12批20题.json
+status: active
+last_updated: 2026-07-23
+---
+
+# 全库逐题语义复核第12批20题
+
+## 本批结论
+
+本批共逐题核对 20 张正式卡，当前哈希仍有效的完整复核为 17 张；覆盖 23 个物理图片路径与 21 个唯一图片内容。全库当前共 882 张正式卡，本轮活动累计完成 119 张，剩余 763 张。
+
+本批有 5 张出现结构、身份、元数据或来源正文质量问题。证据充分且无歧义的修正已经正式收口；身份冲突、稳定 ID 合并或证据不足项仍保留为 needs_user，详见 `MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B12`。
+
+## 证据边界
+
+- `verified` 表示题面、所问对象、答案、解析路线和当前全部图片内容已经逐一核对，并由正式卡 SHA、详情页 SHA 与图片 SHA-256 绑定。
+- 个人错因仍按 `confirmed_personal`、`legacy_unclassified`、`pending_user_confirmation` 和重复占位分别处理；读懂解析不能反推用户为什么做错。
+- 同一哈希的重复物理图片只视觉核对一次，但所有物理路径都纳入数量和集合一致性检查。
+- 关系裁决中已正式应用的变更以正式收口回执为准；未应用项仍是 SHADOW 建议。
+
+## 批次总览
+
+| 错题 | 题目在问什么 | 知识点 | 答案 | 个人错因边界 | 质量发现 |
+|---|---|---|---|---|---|
+| [GS-062](http://127.0.0.1:8765/open/GS-062) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 递推数列、不变区间、尾项单调、固定点候选筛选 | $\displaystyle \lim_{n\to\infty}x_n=1$。 | pending_user_confirmation：个人原始作答未独立留存；当前只确认复做入口是先把尾项压入 (0,1]，再由平方作差判单调，是否为当时第一断点待复做确认。 | duplicate_formal_identity_hold |
+| [GS-063](http://127.0.0.1:8765/open/GS-063) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 数列极限、单调有界准则、定积分、对数裂项 | 不等式成立，且数列收敛。 | confirmed_personal：三次记录共同指向：未先把对数差写成积分夹逼，且没有把左侧用于判递减、右侧用于构造下界，并混淆 H_n-ln n 与 H_n-ln$n+1$ 的下标对应。 | log_integral_inequality_chain_verified |
+| [GS-064](http://127.0.0.1:8765/open/GS-064) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 幂指函数、导数判单调、离散数列函数化 | B，单调递减。 | confirmed_personal：已有具体记录：只算了极限，没有继续把幂指结构取对数、函数化并求导判断单调性；分式求导也未熟练调用。 | unsupported_mastery_estimate_removed |
+| [GS-065](http://127.0.0.1:8765/open/GS-065) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 连续函数零点、唯一不动点、严格距离收缩、迭代收敛 | 存在唯一不动点 $\xi$，且 $\displaystyle\lim_{n\to\infty}x_n=\xi$。 | pending_user_confirmation：个人原始作答未独立留存；当前只确认复做入口是先构造 g$x$=f$x$-x 得到唯一不动点，再证明迭代项在同侧单调逼近。 | uniform_contraction_claim_removed |
+| [GS-066](http://127.0.0.1:8765/open/GS-066) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 递推数列、不变区间、单调有界准则、参数不等式 | $\displaystyle\lim_{n\to\infty}x_n=\sqrt c$。 | confirmed_personal：三次记录显示断点逐步收窄到上界构造：知道要证 0≤x_n≤√c，但没有完成分式变形与负分式比较方向，因而无法合法进入作差判单调。 | repeat_count_and_invariant_interval_repaired |
+| [GS-067](http://127.0.0.1:8765/open/GS-067) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 递推数列、区间不变性、单调有界准则、泰勒公式 | $\displaystyle\lim x_n=0$，第二问为 $-\frac13$。 | pending_user_confirmation：视觉解析提出的候选断点是没有先用归纳法锁定 $0,\pi/4$，但缺少独立用户作答轨迹；本批只登记为待复做确认的方法入口。 | provisional_visual_representative |
+| [GS-068](http://127.0.0.1:8765/open/GS-068) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 指数隐式递推、拉格朗日中值定理、单调有界、极限方程 | $\displaystyle\lim_{n\to\infty}x_n=0$。 | pending_user_confirmation：个人原始作答未独立留存；当前只确认指数差商应先触发拉格朗日中值定理。GS-068 与 GS-023、GS-441 是同一递推的不同登记，不另计复发。 | duplicate_formal_identity_hold |
+| [GS-069](http://127.0.0.1:8765/open/GS-069) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 数列极限、等差数列求和、根式有理化、主导项 | $\displaystyle\frac{\sqrt2}{2}$。 | pending_user_confirmation：个人原始作答未独立留存；当前只确认复做入口是先把两个相邻和式求和，再有理化，是否为当时第一断点待确认。 | adjacent_radical_sum_solution_verified |
+| [GS-070](http://127.0.0.1:8765/open/GS-070) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 递推数列、基本不等式、尾项单调、固定点筛选 | $\displaystyle\lim_{n\to\infty}x_n=2$。 | pending_user_confirmation：个人原始作答未独立留存；当前只确认复做入口是把递推式平移成 u+1/u 结构，先证明第二项起进入 [2,+∞)。 | duplicate_formal_identity_hold |
+| [GS-071](http://127.0.0.1:8765/open/GS-071) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 递推数列、数学归纳法、上界构造、固定点方程 | $\displaystyle\lim_{n\to\infty}x_n=\frac{1+\sqrt{1+4a}}2$。 | confirmed_personal：三次记录显示：先是没有启动单调有界主线，随后断在单调性之后，未能由递推式平方和比值估计构造上界。 | upper_bound_chain_restored |
+| [GS-072](http://127.0.0.1:8765/open/GS-072) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 数列极限、复合函数、一一性、反函数连续性 | D。 | pending_user_confirmation：个人原始作答未独立留存；当前只确认复做时应先检查外层函数在内层值域上是否一一可逆，不可逆时构造同值振荡反例。 | question_and_solution_image_cross_checked |
+| [GS-073](http://127.0.0.1:8765/open/GS-073) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 定积分、三角换元、分部积分递推、指数型极限 | C，$e^{-1}$。 | confirmed_personal：已有具体记录：三角换元后把两个积分的比值误当成被积函数可以直接约掉，没有先用 cos²t=1-sin²t 建立 a_n=b_n-b_{n+2}。 | same_card_asset_alias_preserved |
+| [GS-074](http://127.0.0.1:8765/open/GS-074) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 递推数列、同阶无穷小、泰勒公式、双通项消元 | C，$a=3$。 | pending_user_confirmation：视觉解析提出的候选断点是未先消去 a_n、未证明 b_n↓0、未接三阶泰勒；缺少独立用户作答轨迹，本批不写成已确认个人第一断点。 | truncated_question_and_answer_restored |
+| [GS-075](http://127.0.0.1:8765/open/GS-075) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 幂指极限、等价无穷小、余弦单调性、对数化 | 1。 | pending_user_confirmation：个人原始作答未独立留存；当前只确认复做入口是先由余弦单调性证明 b_n→0，再利用题设取对数消去 n。 | logarithmic_elimination_chain_verified |
+| [GS-076](http://127.0.0.1:8765/open/GS-076) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 隐式根序列、正切周期、区间定位、数列极限 | D，π。 | pending_user_confirmation：视觉解析提出的候选断点是未使用根所在周期区间；但没有独立作答证据。旧解析还错误声称差角式分子有界，本批已改用相位分解。 | false_bounded_numerator_removed |
+| [GS-077](http://127.0.0.1:8765/open/GS-077) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 函数凹性、递推数列、无穷小阶比较、指数衰减 | $y_n=o(x_n)$。 | pending_user_confirmation：个人原始作答未独立留存；当前只确认题面方法入口。旧解析把 y_n 的指数写成 2^n，并把 g''<0 误称为凸，本批均已纠正。 | explicit_term_and_concavity_repaired |
+| [GS-078](http://127.0.0.1:8765/open/GS-078) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 递推数列、余弦单调性、等价无穷小、二阶主项 | $\displaystyle\lim x_n=0$，且 $\displaystyle\lim x_{n+1}/x_n^2=1/2$。 | pending_user_confirmation：视觉解析提出的候选断点是未拆出 1-cos，但缺少独立作答证据。旧解析还伪造了 x_{n+1}=cos x_n，并由 cos A=A 错推 A=0，本批已完整修正。 | fabricated_recurrence_and_limit_equation_removed |
+| [GS-079](http://127.0.0.1:8765/open/GS-079) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 递推数列、区间不变性、单调有界准则、泰勒公式 | $\displaystyle\lim x_n=0$，第二问为 $-1/3$。 | confirmed_personal：2026-05-11记录明确指出：没有先证明 0<x_n<π/4 的区间不变性，导致后续正切比较与单调有界缺少前提。 | canonical_visual_identity_mismatch |
+| [GS-080](http://127.0.0.1:8765/open/GS-080) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 递推数列、无穷小阶比较、固定点候选筛选、相邻比值压缩 | B，$y_n=o(x_n)$。 | confirmed_personal：三次记录显示：先是未构造比值数列，后续虽已想到固定点和 z_n=y_n/x_n，却把“每项非零”误当成“极限非零”，并未把相邻比值趋零落实为等比压缩。 | same_card_alias_and_repeat_chain_verified |
+| [GS-081](http://127.0.0.1:8765/open/GS-081) | 完成题目要求的证明、判断或极限计算，并写出合法的第一动作。 | 导数定义、一阶展开、对数等价无穷小、复合函数极限 | B，$a$。 | pending_user_confirmation：视觉解析提出的候选断点是未判断对数中值点趋于 a、也未用一阶展开比较同阶；缺少独立作答证据，本批不写成已确认个人错因。 | truncated_question_and_answer_restored |
+
+## 逐题复核
+
+### GS-062 强化例题2.5 135502 2026.4.18-2
+
+- 题目：根式递推的不变区间与极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：递推数列；不变区间；尾项单调；固定点候选筛选
+- 第一动作：先证明从第二项起 $0<x_n\le1$。
+- 答案：$\displaystyle \lim_{n\to\infty}x_n=1$。
+- 个人错因边界：pending_user_confirmation；个人原始作答未独立留存；当前只确认复做入口是先把尾项压入 (0,1]，再由平方作差判单调，是否为当时第一断点待复做确认。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先建立不变区间，再用平方作差证明尾项单调有界，最后筛选固定点。
+  - 先判断从第几项进入稳定区间，再谈单调性。
+- 质量发现：
+  - `duplicate_formal_identity_hold`：GS-062 and GS-055 have the same source, question and byte-identical question image; stable IDs are retained without an ordinary edge.；建议：
+- 关系裁决：
+  - ：`hold_without_merge_delete_or_aggregate_edge`；
+- 当前快照：`current`；正式卡 `fa5d8d559faabd2e5eae09120af062c3f7de750b59915100591005dcddf9dcba`；唯一图片 1 个；物理路径 1 个。
+
+### GS-063 强化例题2.6 / 57772 2026.5.11
+
+- 题目：对数夹逼与数列收敛证明
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：数列极限；单调有界准则；定积分；对数裂项
+- 第一动作：先写 $\ln(1+x)=\int_0^x(1+t)^{-1}dt$。
+- 答案：不等式成立，且数列收敛。
+- 个人错因边界：confirmed_personal；三次记录共同指向：未先把对数差写成积分夹逼，且没有把左侧用于判递减、右侧用于构造下界，并混淆 H_n-ln n 与 H_n-ln$n+1$ 的下标对应。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先用积分夹逼证明前问，再把两侧分别用于单调性与下界。
+  - 前问两侧不等式要分工复用，并逐项检查求和下标。
+- 质量发现：
+  - `log_integral_inequality_chain_verified`：The two sides of the logarithm estimate are now separated into monotonicity and lower-bound roles with indices checked.；建议：
+- 关系裁决：
+  - GS-066：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-071：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-079：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-431：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-439：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-441：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-446：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+- 当前快照：`current`；正式卡 `2fa43f4cceb4ae3a06dbd4e666bc4f8be4ad101cb9b8ba3efbc95828d242bfc9`；唯一图片 1 个；物理路径 1 个。
+
+### GS-064 1000题强化2.1
+
+- 题目：幂指数列单调性判断
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：幂指函数；导数判单调；离散数列函数化
+- 第一动作：先写 $a_n=e^{\ln(n+3)/(n+3)}$，把目标转为判断 $g(x)=\ln x/x$ 的单调性。
+- 答案：B，单调递减。
+- 个人错因边界：confirmed_personal；已有具体记录：只算了极限，没有继续把幂指结构取对数、函数化并求导判断单调性；分式求导也未熟练调用。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 幂指结构先取对数，再函数化并用导数判单调。
+  - 题目问单调性时，求出极限还没有完成任务。
+- 质量发现：
+  - `unsupported_mastery_estimate_removed`：The old AI-only mastery estimate was removed; no new user redo evidence was invented.；建议：
+- 关系裁决：
+  - GS-491：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；
+- 当前快照：`current`；正式卡 `9acf73ab03efa2f695c0de26b2a3b123d7794ad34d92c669bd987eea36e16e8e`；唯一图片 1 个；物理路径 1 个。
+
+### GS-065 1000题强化2.4
+
+- 题目：严格距离收缩下的不动点迭代
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：连续函数零点；唯一不动点；严格距离收缩；迭代收敛
+- 第一动作：先令 $g(x)=f(x)-x$，用端点异号与严格距离收缩证明唯一根。
+- 答案：存在唯一不动点 $\xi$，且 $\displaystyle\lim_{n\to\infty}x_n=\xi$。
+- 个人错因边界：pending_user_confirmation；个人原始作答未独立留存；当前只确认复做入口是先构造 g$x$=f$x$-x 得到唯一不动点，再证明迭代项在同侧单调逼近。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先证唯一不动点，再用严格距离收缩证明迭代项保持同侧并单调逼近。
+  - 先区分严格距离收缩与统一压缩常数，再选择同侧单调或几何误差路线。
+- 质量发现：
+  - `uniform_contraction_claim_removed`：Pointwise strict distance decrease is no longer presented as a uniform Banach contraction; the proof uses a unique fixed point and same-side monotone iteration.；建议：
+- 关系裁决：
+  - GS-434：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-065：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；
+- 当前快照：`current`；正式卡 `780591c86f27c04fe1f0b8079504d3c205631aec894c5c48baa35ddfbe5fe66b`；唯一图片 1 个；物理路径 1 个。
+
+### GS-066 103447 2026.5.20
+
+- 题目：分式递推的不变区间与极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：递推数列；不变区间；单调有界准则；参数不等式
+- 第一动作：先用归纳证明 $0\le x_n\le\sqrt c$，再写相邻项差。
+- 答案：$\displaystyle\lim_{n\to\infty}x_n=\sqrt c$。
+- 个人错因边界：confirmed_personal；三次记录显示断点逐步收窄到上界构造：知道要证 0≤x_n≤√c，但没有完成分式变形与负分式比较方向，因而无法合法进入作差判单调。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先证不变区间，再作差证明单调，最后代入固定点方程。
+  - 不变区间没有闭合前，不要提前使用 c-x_n² 的符号。
+- 质量发现：
+  - `repeat_count_and_invariant_interval_repaired`：Three confirmed failures are preserved and the invariant-interval inequality is completed before monotonicity is used.；建议：
+- 关系裁决：
+  - GS-066：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-079：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-441：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-444：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-446：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+- 当前快照：`current`；正式卡 `e514b9ecbb3a13d524a27f10fc88ceb9619664eaa764f189e5a87a257f9c6e46`；唯一图片 1 个；物理路径 1 个。
+
+### GS-067 1000题强化2.8 2026.5.11
+
+- 题目：正切递推的区间保持与三阶极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：递推数列；区间不变性；单调有界准则；泰勒公式
+- 第一动作：先证明 $F(x)=2x-\tan x$ 把 $(0,\pi/4)$ 映回自身。
+- 答案：$\displaystyle\lim x_n=0$，第二问为 $-\frac13$。
+- 个人错因边界：pending_user_confirmation；视觉解析提出的候选断点是没有先用归纳法锁定 $0,\pi/4$，但缺少独立用户作答轨迹；本批只登记为待复做确认的方法入口。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先锁区间，再作差判单调，最后用三阶泰勒处理第二问。
+  - 区间保持是正切不等式和泰勒路线的合法前提。
+- 质量发现：
+  - `provisional_visual_representative`：GS-067 is the verified visual representative for source 103486 while GS-079 remains blocked; the recurrence and third-order limit were checked.；建议：
+- 关系裁决：
+  - GS-074：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-078：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-444：`add_strong_edge`；
+  - ：`allow_provisional_visual_representative_only`；
+- 当前快照：`current`；正式卡 `589eb6992d49884d7a5266fbcc9101f97d29cde9d36457c668f8e72077b872af`；唯一图片 1 个；物理路径 1 个。
+
+### GS-068 2018年第21题 78861 2026.4.18
+
+- 题目：指数隐式递推数列的收敛与极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：指数隐式递推；拉格朗日中值定理；单调有界；极限方程
+- 第一动作：把 $e^{x_n}-1$ 写成 $e^{x_n}-e^0$，在 $[0,x_n]$ 上用中值定理。
+- 答案：$\displaystyle\lim_{n\to\infty}x_n=0$。
+- 个人错因边界：pending_user_confirmation；个人原始作答未独立留存；当前只确认指数差商应先触发拉格朗日中值定理。GS-068 与 GS-023、GS-441 是同一递推的不同登记，不另计复发。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 用指数差商制造相邻项大小关系，再走单调有界与极限方程。
+  - 隐式递推不能先假设极限存在；先证明相邻项不等式。
+- 质量发现：
+  - `duplicate_formal_identity_hold`：GS-023, GS-068 and the transformed GS-441 registration are held as one identity family without ordinary semantic edges.；建议：
+- 关系裁决：
+  - GS-226：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - ：`hold_without_merge_delete_or_aggregate_edge`；
+- 当前快照：`current`；正式卡 `fd2bd443e41c679a7eeeb98a36ef732f469c235adb0f87ff2af8828e72bdf769`；唯一图片 1 个；物理路径 1 个。
+
+### GS-069 58049 2026.4.18
+
+- 题目：相邻根式和式作差极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：数列极限；等差数列求和；根式有理化；主导项
+- 第一动作：先写出两段等差和的闭式 $n(n+1)/2$ 与 $n(n-1)/2$。
+- 答案：$\displaystyle\frac{\sqrt2}{2}$。
+- 个人错因边界：pending_user_confirmation；个人原始作答未独立留存；当前只确认复做入口是先把两个相邻和式求和，再有理化，是否为当时第一断点待确认。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先求和，再有理化并同除最高阶量。
+  - 先精确有理化，再判断常数系数。
+- 质量发现：
+  - `adjacent_radical_sum_solution_verified`：The neighboring arithmetic sums, rationalization and constant factor were checked against the image.；建议：
+- 当前快照：`current`；正式卡 `5f647829595d9cf5d8225ebbbc770041525241ca30841b95983296d6f7901645`；唯一图片 1 个；物理路径 1 个。
+
+### GS-070 强化例题2.4 171555 2026.4.18
+
+- 题目：倒数结构递推数列极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：递推数列；基本不等式；尾项单调；固定点筛选
+- 第一动作：令 $u_n=x_n-1$，显出 $u_n+1/u_n$ 并证明 $x_{n+1}\ge2$。
+- 答案：$\displaystyle\lim_{n\to\infty}x_n=2$。
+- 个人错因边界：pending_user_confirmation；个人原始作答未独立留存；当前只确认复做入口是把递推式平移成 u+1/u 结构，先证明第二项起进入 [2,+∞)。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先把尾项送入稳定区间，再从第二项起作差判单调。
+  - 先说明从第几项起满足单调条件。
+- 质量发现：
+  - `duplicate_formal_identity_hold`：GS-070 and GS-054 have the same source, question and byte-identical image; stable IDs are retained without an ordinary edge.；建议：
+- 关系裁决：
+  - ：`hold_without_merge_delete_or_aggregate_edge`；
+- 当前快照：`current`；正式卡 `5f280d1ba4442a7298984c0dca4874640c9e0fff2183e590d7f250b98f8ccbe7`；唯一图片 1 个；物理路径 1 个。
+
+### GS-071 57739 2026.5.20
+
+- 题目：根式递推的单调性与上界构造
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：递推数列；数学归纳法；上界构造；固定点方程
+- 第一动作：先比较相邻项并用归纳证明递增；随后立刻平方递推式构造上界。
+- 答案：$\displaystyle\lim_{n\to\infty}x_n=\frac{1+\sqrt{1+4a}}2$。
+- 个人错因边界：confirmed_personal；三次记录显示：先是没有启动单调有界主线，随后断在单调性之后，未能由递推式平方和比值估计构造上界。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先证单调，再从递推式本身做出上界，最后代极限方程。
+  - 单调性只是半条链；下一步必须由递推式制造上界。
+- 质量发现：
+  - `upper_bound_chain_restored`：The proof now continues past monotonicity and constructs an upper bound directly from the squared recurrence.；建议：
+- 关系裁决：
+  - GS-071：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-430：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-441：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-446：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+- 当前快照：`current`；正式卡 `6a200ddf976b1edcc93b5a526cf6b74e18078f024dc8dfd70a9ef21d68fb81f6`；唯一图片 1 个；物理路径 1 个。
+
+### GS-072 2022年第六题 复合数列极限反推
+
+- 题目：复合数列极限的可逆反推
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：数列极限；复合函数；一一性；反函数连续性
+- 第一动作：先写出内层值域，再判断外层函数在该区间是否一一可逆。
+- 答案：D。
+- 个人错因边界：pending_user_confirmation；个人原始作答未独立留存；当前只确认复做时应先检查外层函数在内层值域上是否一一可逆，不可逆时构造同值振荡反例。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 可逆时用连续反函数反推；不可逆时找两个不同输入同值并构造振荡反例。
+  - 复合极限反推的第一道门是值域上的一一性。
+- 质量发现：
+  - `question_and_solution_image_cross_checked`：The inverse-function condition and endpoint oscillation counterexample were checked against both question and solution images.；建议：
+- 当前快照：`current`；正式卡 `28ffbc6d53fb3639cff9a44f9ade1098e01df7ccbe74bcac659d9851da34b9dc`；唯一图片 2 个；物理路径 2 个。
+
+### GS-073 103499
+
+- 题目：参数积分递推与指数型极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：定积分；三角换元；分部积分递推；指数型极限
+- 第一动作：令 $x=\sin t$，再用 $\cos^2t=1-\sin^2t$ 把 $a_n$ 写成 $b_n-b_{n+2}$。
+- 答案：C，$e^{-1}$。
+- 个人错因边界：confirmed_personal；已有具体记录：三角换元后把两个积分的比值误当成被积函数可以直接约掉，没有先用 cos²t=1-sin²t 建立 a_n=b_n-b_{n+2}。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先建立参数积分递推，再把底数化成只含 n 的表达式处理指数极限。
+  - 积分号不是乘法括号；先找换元、恒等拆分与递推。
+- 质量发现：
+  - `same_card_asset_alias_preserved`：The canonical and MN4 alias question images are byte-identical and remain one card; the illegal cancellation trap and Wallis recurrence were verified.；建议：
+- 关系裁决：
+  - GS-170：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-316：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；
+  - GS-317：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；
+  - GS-546：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；
+  - GS-592：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；
+- 当前快照：`stale`；正式卡 `1dfbaa7c3bb9d5189ebb6f4b557ce16aa4ba53d9603d15c8bea8f066819650a1`；唯一图片 1 个；物理路径 2 个。
+
+### GS-074 强化例题2.9
+
+- 题目：双通项递推的同阶指数
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：递推数列；同阶无穷小；泰勒公式；双通项消元
+- 第一动作：先由 $a_n+b_n=\pi/2$ 消去 $a_n$，得到 $b_{n+1}=b_n-\sin b_n$。
+- 答案：C，$a=3$。
+- 个人错因边界：pending_user_confirmation；视觉解析提出的候选断点是未先消去 a_n、未证明 b_n↓0、未接三阶泰勒；缺少独立用户作答轨迹，本批不写成已确认个人第一断点。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 消元后先证 b_n 趋零，再用三阶泰勒比较同阶指数。
+  - 同阶比较前必须先证明参与展开的小量确实趋零。
+- 质量发现：
+  - `truncated_question_and_answer_restored`：The complete two-sequence recurrence, requested exponent and answer C with a=3 were restored.；建议：
+- 关系裁决：
+  - GS-074：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-079：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-430：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-444：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+- 当前快照：`current`；正式卡 `7faed2750d8c67a64a6bc6faa7864933bb598b2caa47ba218f5e427158edee80`；唯一图片 1 个；物理路径 1 个。
+
+### GS-075 强化例题2.10
+
+- 题目：对数约束下的幂指型数列极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：幂指极限；等价无穷小；余弦单调性；对数化
+- 第一动作：先由 $0<b_n<a_n\to0$ 得到 $b_n\to0$。
+- 答案：1。
+- 个人错因边界：pending_user_confirmation；个人原始作答未独立留存；当前只确认复做入口是先由余弦单调性证明 b_n→0，再利用题设取对数消去 n。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先确定底层小量，再指数化幂指式并用题设对数关系消去 n。
+  - 先证明所有等价无穷小所需的小量极限，再做对数化。
+- 质量发现：
+  - `logarithmic_elimination_chain_verified`：The proof first establishes b_n tends to zero, then uses the given logarithmic identity to eliminate n.；建议：
+- 关系裁决：
+  - GS-075：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+- 当前快照：`current`；正式卡 `6c0e208db1f037fe9b92920f5d9b767b878c60856044e158e97108e81dadd33e`；唯一图片 1 个；物理路径 1 个。
+
+### GS-076 1000题B2.2
+
+- 题目：周期区间内隐式根的相邻差极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：隐式根序列；正切周期；区间定位；数列极限
+- 第一动作：令 $t_n=\sqrt{a_n}=n\pi+\delta_n$，其中 $0<\delta_n<\pi/2$。
+- 答案：D，π。
+- 个人错因边界：pending_user_confirmation；视觉解析提出的候选断点是未使用根所在周期区间；但没有独立作答证据。旧解析还错误声称差角式分子有界，本批已改用相位分解。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先按正切周期拆出相位偏移，再由 tan δ_n 趋无穷确定 δ_n 的极限。
+  - 周期根序列优先写成 nπ 加区间内偏移量。
+- 质量发现：
+  - `false_bounded_numerator_removed`：The false claim that a_{n+1}-a_n is bounded was removed; the verified proof uses t_n=n*pi+delta_n and delta_n tending to pi/2.；建议：
+- 关系裁决：
+  - GS-162：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-292：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+- 当前快照：`current`；正式卡 `5053cd31d564f2ebc5b0fc2fa831a7f73110057a9b4825c0d26a3c09fcedf76a`；唯一图片 1 个；物理路径 1 个。
+
+### GS-077 1000题强化2.6
+
+- 题目：双递推数列的无穷小阶比较证明
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：函数凹性；递推数列；无穷小阶比较；指数衰减
+- 第一动作：先用正弦的凹性证明 $\sin x>2x/\pi$，给 $x_n$ 建可迭代下界。
+- 答案：$y_n=o(x_n)$。
+- 个人错因边界：pending_user_confirmation；个人原始作答未独立留存；当前只确认题面方法入口。旧解析把 y_n 的指数写成 2^n，并把 g''<0 误称为凸，本批均已纠正。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 给慢衰减序列建指数下界，给快衰减序列写正确显式式子，再按比值定义判阶。
+  - 显式通项先用 n=1、2 自检指数下标。
+- 质量发现：
+  - `explicit_term_and_concavity_repaired`：The exact term is (1/2)^(2^(n-1)), and a negative second derivative is correctly described as concavity.；建议：
+- 关系裁决：
+  - GS-080：`add_strong_edge`；
+- 当前快照：`current`；正式卡 `dfbbb9c1ee319152ac2b4cc946b8be0fa812fd485daac49fc3e16c52c083baa1`；唯一图片 1 个；物理路径 1 个。
+
+### GS-078 1000题强化2.7
+
+- 题目：余弦隐式递推的二阶极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：递推数列；余弦单调性；等价无穷小；二阶主项
+- 第一动作：先由 $\cos x_{n+1}-\cos x_n=x_{n+1}>0$ 比较相邻项。
+- 答案：$\displaystyle\lim x_n=0$，且 $\displaystyle\lim x_{n+1}/x_n^2=1/2$。
+- 个人错因边界：pending_user_confirmation；视觉解析提出的候选断点是未拆出 1-cos，但缺少独立作答证据。旧解析还伪造了 x_{n+1}=cos x_n，并由 cos A=A 错推 A=0，本批已完整修正。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先从原递推证明单调与极限，再拆 1-cos，并先证明 x_{n+1}/x_n 趋零后处理二阶项。
+  - 每一步变形都回查原递推；删项前先证明相对阶数。
+- 质量发现：
+  - `fabricated_recurrence_and_limit_equation_removed`：The false recurrence x_{n+1}=cos x_n and false fixed-point inference were removed; the proof now follows the original cosine difference and a second-order split.；建议：
+- 关系裁决：
+  - GS-078：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-080：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-435：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-442：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-444：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+- 当前快照：`current`；正式卡 `31904bef4bc8e1b9e512c9cf87d56fd71157fbb45ee83677d30baacb2eef66ec`；唯一图片 1 个；物理路径 1 个。
+
+### GS-079 1000题强化2.8-2 / 103486 2026.5.11
+
+- 题目：正切递推的区间保持与三阶极限
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：递推数列；区间不变性；单调有界准则；泰勒公式
+- 第一动作：先证明 $F(x)=2x-\tan x$ 保持 $(0,\pi/4)$。
+- 答案：$\displaystyle\lim x_n=0$，第二问为 $-1/3$。
+- 个人错因边界：confirmed_personal；2026-05-11记录明确指出：没有先证明 0<x_n<π/4 的区间不变性，导致后续正切比较与单调有界缺少前提。
+- 一致性：题图—解析 —；正式卡—图片 blocked_visual_mismatch
+- 解析主线：
+  - 先锁区间，再作差判单调，最后用三阶泰勒处理第二问。
+  - 本卡先解决视觉身份；未裁决前不参与普通强边聚合。
+- 质量发现：
+  - `canonical_visual_identity_mismatch`：The current GS-079 image is an unrelated integral mean-value-theorem problem and is excluded from formal question evidence while retained in the hash snapshot as mismatch evidence.；建议：
+- 关系裁决：
+  - GS-079：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-079：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-079：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-444：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-446：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - ：`hold_without_merge_delete_or_aggregate_edge`；
+  - ：`exclude_asset_from_formal_question_evidence_and_block_aggregate_edges`；
+- 当前快照：`stale`；正式卡 `64e822562fef105ca3e383f69233d2ad020740c19020d671346cfafeec28129e`；唯一图片 1 个；物理路径 1 个。
+
+### GS-080 2023年真题第三题 2026.6.10
+
+- 题目：双递推数列的无穷小阶比较
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：递推数列；无穷小阶比较；固定点候选筛选；相邻比值压缩
+- 第一动作：先证明两列都趋零，再设 $z_n=y_n/x_n$ 并计算相邻比值。
+- 答案：B，$y_n=o(x_n)$。
+- 个人错因边界：confirmed_personal；三次记录显示：先是未构造比值数列，后续虽已想到固定点和 z_n=y_n/x_n，却把“每项非零”误当成“极限非零”，并未把相邻比值趋零落实为等比压缩。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 用固定点与区间筛选极限，再用比值数列的相邻比值和等比压缩判阶。
+  - 项取不到0与极限能否为0是两件事；比值趋零要落成最终压缩。
+- 质量发现：
+  - `same_card_alias_and_repeat_chain_verified`：Both same-card image paths were reviewed, three confirmed failures were preserved, and the adjacent-ratio argument is completed by geometric compression.；建议：
+- 关系裁决：
+  - GS-080：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-080：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-081：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-080：`add_strong_edge`；
+- 当前快照：`stale`；正式卡 `353101f2bf88c66d59536323ddb9b2847e53965a611075c2151bc50983ea61b7`；唯一图片 1 个；物理路径 2 个。
+
+### GS-081 1000题B组3.6
+
+- 题目：可导函数复合极限与对数差
+- 所问：完成题目要求的证明、判断或极限计算，并写出合法的第一动作。
+- 知识点：导数定义；一阶展开；对数等价无穷小；复合函数极限
+- 第一动作：先写 $f(t)=a+at+o(t)$，并确认 $f(x)>0$ 使对数有定义。
+- 答案：B，$a$。
+- 个人错因边界：pending_user_confirmation；视觉解析提出的候选断点是未判断对数中值点趋于 a、也未用一阶展开比较同阶；缺少独立作答证据，本批不写成已确认个人错因。
+- 一致性：题图—解析 —；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 用一阶展开统一比较分子、函数差与对数差的主项。
+  - 先检查定义域，再写出各层复合量的一阶主项。
+- 质量发现：
+  - `truncated_question_and_answer_restored`：The complete logarithmic composite limit and answer B with value a were restored with the positivity domain check.；建议：
+- 关系裁决：
+  - GS-081：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-223：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-234：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-439：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+  - GS-454：`remove_broad_edge_or_block_identity_ambiguous_aggregation`；
+- 当前快照：`current`；正式卡 `a8b677fee53cecbfda9e95b3227da66b3e4de916eee739c610b7e270508e4d34`；唯一图片 1 个；物理路径 1 个。
+
+## 重建与验收
+
+```bash
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py build
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py check
+python3 -m unittest tests.test_knowledge_error_evidence_graph
+```

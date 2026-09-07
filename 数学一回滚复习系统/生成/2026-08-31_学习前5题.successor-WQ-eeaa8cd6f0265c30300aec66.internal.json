@@ -1,0 +1,1049 @@
+{
+  "actual_count": 5,
+  "candidate_bundle_sha256": "3e63c5eed9135aa7e84ec8f0f1e294d5f6ab02e8c61bcf0dc19a338f37f99f11",
+  "date": "2026-08-31",
+  "exam_date": "2026-12-20",
+  "luna_execution": {
+    "agent_id": "/root/luna_curve_field",
+    "model": "gpt-5.6-luna",
+    "read_only": true,
+    "reasoning_effort": "max",
+    "semantic_read_performed": true,
+    "status": "completed",
+    "supporting_agents": [
+      {
+        "agent_id": "/root/luna_curve_field",
+        "shard": "curve_and_vector_field",
+        "status": "completed"
+      },
+      {
+        "agent_id": "/root/luna_series_analysis",
+        "shard": "series_and_univariate_analysis",
+        "status": "completed"
+      },
+      {
+        "agent_id": "/root/luna_surface_space",
+        "shard": "surface_and_spatial_geometry",
+        "status": "completed"
+      }
+    ]
+  },
+  "mode": "prestudy",
+  "queue_id": "WQ-eeaa8cd6f0265c30300aec66",
+  "request_version": "native-luna-semantic-v1",
+  "requested_count": 5,
+  "schema_version": "prestudy-warmup-v5",
+  "selected": [
+    {
+      "anchor_card_source_version": "b1e45e7ccd8ad4f5c3ca6f20afa3b2afa8ee77748316cc913d3ff7c6960716cd",
+      "anchor_due_date": "2026-08-29",
+      "anchor_evidence": {
+        "card_id": "GS-709",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-f038b0d3486c5ce8",
+        "gap_key": "GAP-cb9be7f04954a3adad20",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "曲线积分",
+          "第二型曲线积分",
+          "格林公式",
+          "多连通区域",
+          "有向边界",
+          "椭圆面积"
+        ],
+        "method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先解 \\(4x^2+y^2=0\\)，确认原点是奇点且位于 \\(x^2+y^2=2\\) 内部，因此不能直接对整圆盘套格林公式。",
+          "expected_method": "先标出 P、Q 并检查分母为零的点；若奇点位于曲线内部，则挖去包含奇点的小区域，在无奇点的多连通区域上使用格林公式，再把外圈积分转移到小边界。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "闭曲线积分的被积函数含有分母，并准备使用格林公式或由 \\(Q_x=P_y\\) 判断积分。",
+          "missed_action": "算出 \\(Q_x=P_y\\) 后没有核对连续偏导条件，也没有先处理区域内部的原点奇点。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "待匹配"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先解 \\(4x^2+y^2=0\\)，确认原点是奇点且位于 \\(x^2+y^2=2\\) 内部，因此不能直接对整圆盘套格林公式。",
+          "expected_method": "先标出 P、Q 并检查分母为零的点；若奇点位于曲线内部，则挖去包含奇点的小区域，在无奇点的多连通区域上使用格林公式，再把外圈积分转移到小边界。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "闭曲线积分的被积函数含有分母，并准备使用格林公式或由 \\(Q_x=P_y\\) 判断积分。",
+          "missed_action": "算出 \\(Q_x=P_y\\) 后没有核对连续偏导条件，也没有先处理区域内部的原点奇点。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到分式型闭曲线积分，先查分母零点和格林公式条件；写公式时固定按 dx 前为 P、dy 前为 Q，再写 Q_x-P_y。",
+          "opd_tag": [
+            "D细节"
+          ],
+          "related_method_card_id": "待匹配",
+          "repeat_count": 2,
+          "repeat_count_source": "2026-07-19 首次正式记录，加 2026-08-25 frozen recurrence 1 次。",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "f038b0d3486c5ce89a6350af927085fb555a65e46e5b65cfe76c346e051a6e21",
+        "source_version": "f038b0d3486c5ce89a6350af927085fb555a65e46e5b65cfe76c346e051a6e21",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "看到闭曲线且 \\(Q_x=P_y\\) 后就准备直接使用格林公式，没有先检查 P、Q 及其一阶偏导在整个内部区域是否连续；同时把格林公式的顺序写反，并忘记小椭圆面积为 \\(\\pi ab\\)。"
+      },
+      "anchor_evidence_source_version": "f038b0d3486c5ce89a6350af927085fb555a65e46e5b65cfe76c346e051a6e21",
+      "anchor_failure_date": "2026-08-25",
+      "anchor_gap_occurrence_id": "GAPO-43844e37d2b3e4c1ffbdf6ad",
+      "anchor_id": "GS-709",
+      "anchor_unit_id": "MATH1-GS-WQ-GS709",
+      "anchor_unit_source_version": "e297844d87fc60038f5a7f61fc233dfffe05c3496d5dfaae24afc06cfbe76906",
+      "anchor_wrong_event_id": "GS-709|2026-08-25|2",
+      "candidate_bundle_sha256": "3e63c5eed9135aa7e84ec8f0f1e294d5f6ab02e8c61bcf0dc19a338f37f99f11",
+      "card_source_version": "e985afea34f27d185449a948181bdc3b187c9b9fa2e066d0c37bf1fd3d00c29b",
+      "delivered_card_id": "GS-762",
+      "delivered_due_date": "2026-08-15",
+      "delivered_unit_id": "MATH1-GS-WQ-GS762",
+      "delivered_unit_source_version": "9e6bd3c6d9c73ddca626348089ddb5ec908ae04f51d73242bf53cd0049a3d111",
+      "due_date": "2026-08-29",
+      "dynamic_priority": 89,
+      "evidence": {
+        "card_id": "GS-762",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-27d5078948934c0e",
+        "gap_key": "GAP-52e17e4122ca34682a6b",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "第二型曲面积分",
+          "高斯公式",
+          "奇点",
+          "三重积分",
+          "曲面定向"
+        ],
+        "method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先确认原点是否在积分区域内部，再判断能否直接使用高斯公式。",
+          "expected_method": "先检查连续性与奇点；挖去原点小球，在无奇点壳层使用散度为零换面，再计算小球通量。",
+          "knowledge_gap_or_method_gap": "条件检查与方法触发",
+          "method_trigger": "闭曲面通量含 \\(r^{-3}\\) 且原点位于所围椭球内部",
+          "missed_action": "把 div F=0 当作一般前提，跳过奇点、壳层和方向检查。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-014"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先确认原点是否在积分区域内部，再判断能否直接使用高斯公式。",
+          "expected_method": "先检查连续性与奇点；挖去原点小球，在无奇点壳层使用散度为零换面，再计算小球通量。",
+          "knowledge_gap_or_method_gap": "条件检查与方法触发",
+          "method_trigger": "闭曲面通量含 \\(r^{-3}\\) 且原点位于所围椭球内部",
+          "missed_action": "把 div F=0 当作一般前提，跳过奇点、壳层和方向检查。",
+          "need_user_confirmation": false,
+          "next_reminder": "使用 Gauss 前固定检查闭合、外侧、连续性和内部奇点。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H18-014",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-08-14 frozen wrong capture",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "27d5078948934c0e5f54156643a1121b04782b9f5ecbfbc8bf55eeb6a3a8f3c4",
+        "source_version": "27d5078948934c0e5f54156643a1121b04782b9f5ecbfbc8bf55eeb6a3a8f3c4",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": false,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "首个条件断点是把散度为零误作高斯公式的一般前提，未先检查原点奇点导致向量场在椭球内部不连续。"
+      },
+      "evidence_source_version": "27d5078948934c0e5f54156643a1121b04782b9f5ecbfbc8bf55eeb6a3a8f3c4",
+      "formal_card_path": "错题知识网络/错题卡/GS-762_102592椭球面奇异向量场通量.md",
+      "id": "GS-762",
+      "luna_query_id": "/root/luna_curve_field",
+      "mastery": 3,
+      "match_mode": "exact_gap",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 16,
+      "queue_item_id": "QI-66b833da9298e680f80e",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS709",
+      "selection_mode": "luna_semantic_exact_gap",
+      "selection_reason": "正式到期单元的代理检查 GS-709；实际投递已入库旧题 GS-762；匹配层级 exact_gap",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-709_79076含奇点曲线积分与挖洞格林公式.md",
+          "role": "anchor",
+          "sha256": "b1e45e7ccd8ad4f5c3ca6f20afa3b2afa8ee77748316cc913d3ff7c6960716cd"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-762_102592椭球面奇异向量场通量.md",
+          "role": "candidate",
+          "sha256": "e985afea34f27d185449a948181bdc3b187c9b9fa2e066d0c37bf1fd3d00c29b"
+        }
+      ],
+      "semantic_match_level": "exact_gap",
+      "semantic_plan_sha256": "843f55ef8c3b485b3b414f350b56786c2d7dbde30366d4beaa8cb6e43313a6b0",
+      "semantic_private_reason": "GS-709 与 GS-762 的用户确认首断点都发生在使用积分定理前未先检查积分区域内部的奇点与适用条件；两题分别落在曲线积分与曲面积分，因而能检验同一 B5-CHECK 断点是否真正迁移。",
+      "semantic_public_value_reason": "与近期薄弱点处于同一知识范围，题面和对象均不同，适合检验独立迁移。",
+      "semantic_selection_v5": true,
+      "source": "错题编号 102592 / 用户题图、解析与对话 / 2026-08-14",
+      "unit_id": "MATH1-GS-WQ-GS709",
+      "unit_source_version": "e297844d87fc60038f5a7f61fc233dfffe05c3496d5dfaae24afc06cfbe76906"
+    },
+    {
+      "anchor_card_source_version": "f9af45a868777b98386bca79ea4e9150d142ce50f450e8ab20a95790b40a9175",
+      "anchor_due_date": "2026-08-31",
+      "anchor_evidence": {
+        "card_id": "GS-628",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-a513268c74a72675",
+        "gap_key": "GAP-c0614a2beb60d1f0a71c",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "向量代数与空间解析几何",
+          "空间直线与平面",
+          "空间直线投影",
+          "两平面交线",
+          "平面束方程",
+          "辅助平面",
+          "法向量"
+        ],
+        "method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先把目标写成 \\\\(L=\\\\Sigma'\\\\cap\\\\Sigma\\\\)，再立即列过 \\\\(L_0\\\\) 的平面束并用两平面垂直确定参数。",
+          "expected_method": "先写 \\(L=\\Sigma'\\cap\\Sigma\\)；由过 \\(L_0\\) 的平面束 \\(F_1+\\lambda F_2=0\\) 和 \\(n_{\\Sigma'}\\cdot n_\\Sigma=0\\) 筛出辅助平面，再与投影平面联立。方向向量法只作为等价备选。",
+          "knowledge_gap_or_method_gap": "方法入口与对象链混合",
+          "method_trigger": "题目出现“直线 \\(L_0\\) 在平面 \\(\\Sigma\\) 上的投影方程”。",
+          "missed_action": "已有原直线方向与投影平面法向量，但没有把这些局部量连接到辅助平面和最终交线；平面束入口在答案与完整讲解前未独立调出。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H00-007"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先把目标写成 \\\\(L=\\\\Sigma'\\\\cap\\\\Sigma\\\\)，再立即列过 \\\\(L_0\\\\) 的平面束并用两平面垂直确定参数。",
+          "expected_method": "先写 \\(L=\\Sigma'\\cap\\Sigma\\)；由过 \\(L_0\\) 的平面束 \\(F_1+\\lambda F_2=0\\) 和 \\(n_{\\Sigma'}\\cdot n_\\Sigma=0\\) 筛出辅助平面，再与投影平面联立。方向向量法只作为等价备选。",
+          "knowledge_gap_or_method_gap": "方法入口与对象链混合",
+          "method_trigger": "题目出现“直线 \\(L_0\\) 在平面 \\(\\Sigma\\) 上的投影方程”。",
+          "missed_action": "已有原直线方向与投影平面法向量，但没有把这些局部量连接到辅助平面和最终交线；平面束入口在答案与完整讲解前未独立调出。",
+          "need_user_confirmation": false,
+          "next_reminder": "直线投影到平面时，先写 \\(L=\\Sigma'\\cap\\Sigma\\)，再用过原直线的平面束和垂直条件求 \\(\\Sigma'\\)。",
+          "opd_tag": [
+            "O目标",
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H00-007",
+          "repeat_count": 4,
+          "repeat_count_source": "wrong_history",
+          "review_batch": "MATHWIKI-REVIEW-080",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "a513268c74a72675aa6ee7ab45057a142db8a8262bfddcbc0077c7a40d31cb84",
+        "source_version": "a513268c74a72675aa6ee7ab45057a142db8a8262bfddcbc0077c7a40d31cb84",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "当前首个断点是已经得到原直线方向和投影平面法向量，却把“投影线位于投影平面内”停留在平行条件，没有继续构造过 \\(L_0\\) 且垂直于 \\(\\Sigma\\) 的辅助平面 \\(\\Sigma'\\)，也没有形成 \\(L=\\Sigma'\\cap\\Sigma\\) 的对象链。本轮旧有叉乘符号错误没有复现；当前优先路线是直接用过 \\(L_0\\) 的平面束和法向量点积筛出 \\(\\Sigma'\\)。"
+      },
+      "anchor_evidence_source_version": "a513268c74a72675aa6ee7ab45057a142db8a8262bfddcbc0077c7a40d31cb84",
+      "anchor_failure_date": "2026-08-30",
+      "anchor_gap_occurrence_id": "GAPO-3272376e0335d5956a234291",
+      "anchor_id": "GS-628",
+      "anchor_unit_id": "MATH1-GS-WQ-GS628",
+      "anchor_unit_source_version": "50bc2de8d62c2dea3683f3af3576722cdae42e375a64d28a44c7d6ffe4cf522d",
+      "anchor_wrong_event_id": "GS-628|2026-08-30|4",
+      "candidate_bundle_sha256": "3e63c5eed9135aa7e84ec8f0f1e294d5f6ab02e8c61bcf0dc19a338f37f99f11",
+      "card_source_version": "0af05ba276aa22bf7b6fd7c7174be557ae475e13b9a4318ecd270eebca1381ae",
+      "delivered_card_id": "GS-645",
+      "delivered_due_date": "2026-07-27",
+      "delivered_unit_id": "MATH1-GS-WQ-GS645",
+      "delivered_unit_source_version": "a8f506f32c19a139bb69b3f1c2d1224eb0912bf7810a99d515ffad24454c3dc3",
+      "due_date": "2026-08-31",
+      "dynamic_priority": 152,
+      "evidence": {
+        "card_id": "GS-645",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-96cc1d8168f49070",
+        "gap_key": "GAP-9796eaf292d11945aa53",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "向量代数与空间解析几何",
+          "空间直线与平面",
+          "方向向量",
+          "空间曲线投影",
+          "坐标面投影",
+          "两曲面交线",
+          "旋转曲面",
+          "二次曲面"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先用 \\((0,0,0)-(0,-1,1)=(0,1,-1)\\) 得到方向向量，并写出 \\(L:x=0,\\ y=-z\\)。",
+          "expected_method": "先由两点之差取非零方向向量并确定直线 \\(L\\)；对直线上高度为 z 的点，用绕 z 轴旋转时高度与到轴距离不变求出 \\(\\Sigma_1\\)；随后联立 \\(\\Sigma_1,\\Sigma_2\\) 消去 z 得到投影的 x,y 关系，最后补 z=0，并用自由变量与独立约束数检查对象是曲面还是曲线。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "题目要求两曲面交线 \\(\\Gamma\\) 在 \\(xOy\\) 面上的投影曲线，且 \\(\\Sigma_1\\) 由过两点的直线绕 \\(z\\) 轴旋转得到。",
+          "missed_action": "没有把“方向向量 -> 直线 -> 各点旋转成圆并叠成曲面 -> 两曲面交线 -> 坐标面投影”分层；不熟悉点到 z 轴距离 \\(\\sqrt{x^2+y^2}\\)，并把无 z 的空间方程误当成 z=0 平面内曲线。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "待匹配"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先用 \\((0,0,0)-(0,-1,1)=(0,1,-1)\\) 得到方向向量，并写出 \\(L:x=0,\\ y=-z\\)。",
+          "expected_method": "先由两点之差取非零方向向量并确定直线 \\(L\\)；对直线上高度为 z 的点，用绕 z 轴旋转时高度与到轴距离不变求出 \\(\\Sigma_1\\)；随后联立 \\(\\Sigma_1,\\Sigma_2\\) 消去 z 得到投影的 x,y 关系，最后补 z=0，并用自由变量与独立约束数检查对象是曲面还是曲线。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "题目要求两曲面交线 \\(\\Gamma\\) 在 \\(xOy\\) 面上的投影曲线，且 \\(\\Sigma_1\\) 由过两点的直线绕 \\(z\\) 轴旋转得到。",
+          "missed_action": "没有把“方向向量 -> 直线 -> 各点旋转成圆并叠成曲面 -> 两曲面交线 -> 坐标面投影”分层；不熟悉点到 z 轴距离 \\(\\sqrt{x^2+y^2}\\)，并把无 z 的空间方程误当成 z=0 平面内曲线。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到直线旋转所得曲面，先取直线上高度为 z 的点，用“高度不变、到轴距离不变”写曲面；看到交线投影到 xOy，联立消 z 后必须再补 z=0，并检查未出现的变量是否仍自由。",
+          "opd_tag": [
+            "O目标",
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "待匹配",
+          "repeat_count": 3,
+          "repeat_count_source": "wrong_history 已记录 2026-07-01、2026-07-16 与 2026-07-26 三次同题失败，均复现“空间对象未分层，旋转曲面与投影消元链未独立建立”的断点。",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "96cc1d8168f4907003842d31917348147ca13c7f98d1e2229d60cb3b7badd858",
+        "source_version": "96cc1d8168f4907003842d31917348147ca13c7f98d1e2229d60cb3b7badd858",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "看到空间交线在 \\(xOy\\) 面上的投影时，仍不能独立按“由两点求直线 -> 用高度和到轴距离不变求 \\(\\Sigma_1\\) -> 联立 \\(\\Sigma_1,\\Sigma_2\\) 消去 \\(z\\) -> 补 \\(z=0\\)”执行；基础上混淆了方向向量与点、直线参数消元与旋转曲面生成、圆的参数化与极坐标换元，并在最后把三维空间中的单方程 \\(x^2+y^2=1\\) 误认为已经位于 xOy 面，未识别 z 未出现意味着 z 自由、该方程单独表示圆柱面。"
+      },
+      "evidence_source_version": "96cc1d8168f4907003842d31917348147ca13c7f98d1e2229d60cb3b7badd858",
+      "formal_card_path": "错题知识网络/错题卡/GS-645_84328旋转曲面投影.md",
+      "id": "GS-645",
+      "luna_query_id": "/root/luna_curve_field",
+      "mastery": 2,
+      "match_mode": "knowledge_fallback",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 3,
+      "overdue_days": 35,
+      "queue_item_id": "QI-4d0f0a19a151774aee60",
+      "recurrence_count": 2,
+      "score_target_unit_id": "MATH1-GS-WQ-GS628",
+      "selection_mode": "luna_semantic_fine_knowledge",
+      "selection_reason": "正式到期单元的代理检查 GS-628；实际投递已入库旧题 GS-645；匹配层级 knowledge_fallback",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-628_102423直线投影辅助平面.md",
+          "role": "anchor",
+          "sha256": "f9af45a868777b98386bca79ea4e9150d142ce50f450e8ab20a95790b40a9175"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-645_84328旋转曲面投影.md",
+          "role": "candidate",
+          "sha256": "0af05ba276aa22bf7b6fd7c7174be557ae475e13b9a4318ecd270eebca1381ae"
+        }
+      ],
+      "semantic_match_level": "fine_knowledge",
+      "semantic_plan_sha256": "843f55ef8c3b485b3b414f350b56786c2d7dbde30366d4beaa8cb6e43313a6b0",
+      "semantic_private_reason": "GS-628 最新断点是没有把原直线、辅助平面、投影平面与最终交线分层；GS-645 的多次原始证据同样显示空间对象、旋转曲面与投影曲线的层级混淆。具体构造方法不同，因此只认定为细粒度知识迁移。",
+      "semantic_public_value_reason": "把近期空间几何薄弱点换成不同对象与表达，适合检验是否脱离原题表述。",
+      "semantic_selection_v5": true,
+      "source": "ID:84328 / (518-5) / 用户截图与 Codex 讲解 / 2026-07-01",
+      "unit_id": "MATH1-GS-WQ-GS628",
+      "unit_source_version": "50bc2de8d62c2dea3683f3af3576722cdae42e375a64d28a44c7d6ffe4cf522d"
+    },
+    {
+      "anchor_card_source_version": "19b8113e3929f1fe23ef62d92f8f84a4d2fb92d54bba15ca4dea9bb8adcfd485",
+      "anchor_due_date": "2026-08-30",
+      "anchor_evidence": {
+        "card_id": "GS-698",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-885987bc2f5d1c80",
+        "gap_key": "GAP-2a5906ae89be420d8a68",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "曲面积分",
+          "坐标面投影",
+          "二重积分",
+          "定积分",
+          "反三角函数",
+          "曲面方程与区域不等式"
+        ],
+        "method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先标明 $\\Sigma$ 是二维柱面侧片、被积函数是 $z$，再检查 $xOy$ 投影是否保持二维一一对应；若压成圆弧，就改用 $xOz$ 或 $yOz$ 投影。",
+          "expected_method": "先区分积分曲面、被积函数与投影区域，再检验各坐标面投影是否一一对应；选取可将曲面写成单值函数的投影面，替换被积函数和 $dS$ 后化为二重积分。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "题目给出 $\\iint_\\Sigma z\\,dS$，其中 $\\Sigma$ 是第一卦限内被若干坐标面截出的竖直柱面侧片。",
+          "missed_action": "没有先列出曲面本体、被积函数和可选参数对；直接把 $xOy$ 投影当作二维区域，随后又未接受不显含 $z$ 的 $y(x,z)$，并在分支与偏导环节连续失去原条件。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-008"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先标明 $\\Sigma$ 是二维柱面侧片、被积函数是 $z$，再检查 $xOy$ 投影是否保持二维一一对应；若压成圆弧，就改用 $xOz$ 或 $yOz$ 投影。",
+          "expected_method": "先区分积分曲面、被积函数与投影区域，再检验各坐标面投影是否一一对应；选取可将曲面写成单值函数的投影面，替换被积函数和 $dS$ 后化为二重积分。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "题目给出 $\\iint_\\Sigma z\\,dS$，其中 $\\Sigma$ 是第一卦限内被若干坐标面截出的竖直柱面侧片。",
+          "missed_action": "没有先列出曲面本体、被积函数和可选参数对；直接把 $xOy$ 投影当作二维区域，随后又未接受不显含 $z$ 的 $y(x,z)$，并在分支与偏导环节连续失去原条件。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到第一型曲面积分，先圈出 $\\Sigma$、$f$、$dS$，再逐个检查哪两个坐标能唯一恢复曲面点；投影后保留原卦限条件，并在求导前完整抄写根式内层。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H18-008",
+          "repeat_count": 3,
+          "repeat_count_source": "2026-07-17、2026-07-30 与 2026-08-29 三次都未能独立分清曲面本体、投影参数域和单值表示条件。",
+          "review_priority": 4
+        },
+        "selection_value": 5,
+        "source_hash": "885987bc2f5d1c805d0ec227a9f1d654a9e499295eb8c9bbd802b156dd54932b",
+        "source_version": "885987bc2f5d1c805d0ec227a9f1d654a9e499295eb8c9bbd802b156dd54932b",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "2026-08-29 第三次复发时，仍未先区分柱面侧片、投影参数域与两个独立变量；把 $x^2+y^2=R^2$ 直接当作 $dx\\,dy$ 区域，并认为 $y(x,z)$ 必须显含 $z$。在提示后又暴露第一卦限分支、固定半径 $R$ 与变量 $r$、链式求导中保留 $R^2$ 的连续断点。"
+      },
+      "anchor_evidence_source_version": "885987bc2f5d1c805d0ec227a9f1d654a9e499295eb8c9bbd802b156dd54932b",
+      "anchor_failure_date": "2026-08-29",
+      "anchor_gap_occurrence_id": "GAPO-f32e9a7e020197d8aa4c7f2b",
+      "anchor_id": "GS-698",
+      "anchor_unit_id": "MATH1-GS-WQ-GS698",
+      "anchor_unit_source_version": "b9eec93f677b86924a130afb33cadf7b725efbbc4d65d3fac86c5cb1f7460aa0",
+      "anchor_wrong_event_id": "GS-698|2026-08-29|3",
+      "candidate_bundle_sha256": "3e63c5eed9135aa7e84ec8f0f1e294d5f6ab02e8c61bcf0dc19a338f37f99f11",
+      "card_source_version": "52284b71fcb01a6897334f073da14fcea21da4aac38666f8b370d8dceeef9249",
+      "delivered_card_id": "GS-755",
+      "delivered_due_date": "2026-08-20",
+      "delivered_unit_id": "MATH1-GS-WQ-GS755",
+      "delivered_unit_source_version": "bbc98965e3a0c25538d11ac62033d094c1b6c3ed9c7c8e1cb2b46b189bd64ba3",
+      "due_date": "2026-08-30",
+      "dynamic_priority": 74,
+      "evidence": {
+        "card_id": "GS-755",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-8807a390d8776914",
+        "gap_key": "GAP-ebab1e90c3181b80ad38",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "第一型曲面积分"
+        ],
+        "method_gap": {
+          "action_gap_type": "B1-GOAL",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先写 dS=√(1+z_x^2+z_y^2)dxdy",
+          "expected_method": "把三者都投影到同一 D，比较 1+z_x^2+z_y^2",
+          "knowledge_gap_or_method_gap": "概念混淆",
+          "method_trigger": "多个显式曲面在同一柱面内截取并比较面积",
+          "missed_action": "没有确认面积的真实比较对象",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-008"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B1-GOAL",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先写 dS=√(1+z_x^2+z_y^2)dxdy",
+          "expected_method": "把三者都投影到同一 D，比较 1+z_x^2+z_y^2",
+          "knowledge_gap_or_method_gap": "概念混淆",
+          "method_trigger": "多个显式曲面在同一柱面内截取并比较面积",
+          "missed_action": "没有确认面积的真实比较对象",
+          "need_user_confirmation": false,
+          "next_reminder": "看到曲面面积比较，先比较梯度平方，不比较函数高度。",
+          "opd_tag": [
+            "O目标"
+          ],
+          "related_method_card_id": "H18-008",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-08-19 首次正式记录该断点。",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "8807a390d87769148f838d79151e76d772cbcda9b578d3dc922d40cd242cbc90",
+        "source_version": "8807a390d87769148f838d79151e76d772cbcda9b578d3dc922d40cd242cbc90",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "把曲面高度 z 当成曲面面积大小的比较对象。"
+      },
+      "evidence_source_version": "8807a390d87769148f838d79151e76d772cbcda9b578d3dc922d40cd242cbc90",
+      "formal_card_path": "错题知识网络/错题卡/GS-755_171535同投影区域曲面面积比较.md",
+      "id": "GS-755",
+      "luna_query_id": "/root/luna_curve_field",
+      "mastery": 3,
+      "match_mode": "knowledge_fallback",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 11,
+      "queue_item_id": "QI-ef2c97c218f39b116970",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS698",
+      "selection_mode": "luna_semantic_fine_knowledge",
+      "selection_reason": "正式到期单元的代理检查 GS-698；实际投递已入库旧题 GS-755；匹配层级 knowledge_fallback",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-698_102318柱面曲面积分投影.md",
+          "role": "anchor",
+          "sha256": "19b8113e3929f1fe23ef62d92f8f84a4d2fb92d54bba15ca4dea9bb8adcfd485"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-755_171535同投影区域曲面面积比较.md",
+          "role": "candidate",
+          "sha256": "52284b71fcb01a6897334f073da14fcea21da4aac38666f8b370d8dceeef9249"
+        }
+      ],
+      "semantic_match_level": "fine_knowledge",
+      "semantic_plan_sha256": "843f55ef8c3b485b3b414f350b56786c2d7dbde30366d4beaa8cb6e43313a6b0",
+      "semantic_private_reason": "GS-698 三次都没有稳定区分实际曲面、投影参数域与面积微元；GS-755 的用户原始证据显示把曲面高度错当成面积比较对象。两题共同检验曲面对象与面积量的角色边界，且题面不重复。",
+      "semantic_public_value_reason": "同章但更换了题面与比较场景，适合检验跨题迁移。",
+      "semantic_selection_v5": true,
+      "source": "ID:171535 / 249-15 / ZIP完整对话与题图 / 2026-08-19",
+      "unit_id": "MATH1-GS-WQ-GS698",
+      "unit_source_version": "b9eec93f677b86924a130afb33cadf7b725efbbc4d65d3fac86c5cb1f7460aa0"
+    },
+    {
+      "anchor_card_source_version": "fd737ca65ed2053cd84372a69a9098ea84a16ca523a82472d9b1543d81c19854",
+      "anchor_due_date": "2026-06-08",
+      "anchor_evidence": {
+        "card_id": "GS-566",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-ff2771bb0760b291",
+        "gap_key": "GAP-501fe8466cfded7058e9",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "无穷级数",
+          "数项级数敛散性判别",
+          "级数收敛定义",
+          "部分和数列",
+          "望远镜级数",
+          "p级数",
+          "参数型p级数",
+          "拉格朗日中值定理",
+          "等价无穷小"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先写 \\(S_N=\\sum_{n=1}^N\\left(\\frac1{n^p}-\\frac1{(n+1)^p}\\right)=1-\\frac1{(N+1)^p}\\)",
+          "expected_method": "调用 H16-008，先写部分和做望远镜；若走通分路线，则用拉格朗日中值定理估 \\((n+1)^p-n^p\\) 的主阶",
+          "knowledge_gap_or_method_gap": "动作链断裂",
+          "method_trigger": "看到 \\(\\frac1{n^p}-\\frac1{(n+1)^p}\\) 这种 \\(f(n)-f(n+1)\\) 相邻差",
+          "missed_action": "通分后停在 \\((n+1)^p-n^p\\)，没有先望远镜，也没有把分子识别为函数值差；同时应写 \\(\\xi\\sim n\\)，不能写 \\(\\xi=n\\)",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H16-008"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先写 \\(S_N=\\sum_{n=1}^N\\left(\\frac1{n^p}-\\frac1{(n+1)^p}\\right)=1-\\frac1{(N+1)^p}\\)",
+          "expected_method": "调用 H16-008，先写部分和做望远镜；若走通分路线，则用拉格朗日中值定理估 \\((n+1)^p-n^p\\) 的主阶",
+          "knowledge_gap_or_method_gap": "动作链断裂",
+          "method_trigger": "看到 \\(\\frac1{n^p}-\\frac1{(n+1)^p}\\) 这种 \\(f(n)-f(n+1)\\) 相邻差",
+          "missed_action": "通分后停在 \\((n+1)^p-n^p\\)，没有先望远镜，也没有把分子识别为函数值差；同时应写 \\(\\xi\\sim n\\)，不能写 \\(\\xi=n\\)",
+          "need_user_confirmation": false,
+          "next_reminder": "看到相邻差，先望远镜；望远镜不顺再通分，用中值定理找主阶。",
+          "opd_tag": [
+            "P思路"
+          ],
+          "related_method_card_id": "H16-008",
+          "repeat_count": 1,
+          "repeat_count_source": "wrong_history",
+          "review_batch": "MATHWIKI-REVIEW-076",
+          "review_priority": 3
+        },
+        "selection_value": 5,
+        "source_hash": "ff2771bb0760b291f3f8ab0eeee09b749d6c7054edf9e32bd17f4af1d8372829",
+        "source_version": "ff2771bb0760b291f3f8ab0eeee09b749d6c7054edf9e32bd17f4af1d8372829",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "看到 \\(\\frac1{n^p}-\\frac1{(n+1)^p}\\) 时，应先把它识别为 \\(f(n)-f(n+1)\\) 并写部分和望远镜；若通分估阶，则把 \\((n+1)^p-n^p\\) 用拉格朗日中值定理处理且只写 \\(\\xi\\sim n\\)，不能把中间点 \\(\\xi\\) 直接当成 \\(n\\)。"
+      },
+      "anchor_evidence_source_version": "ff2771bb0760b291f3f8ab0eeee09b749d6c7054edf9e32bd17f4af1d8372829",
+      "anchor_failure_date": "2026-06-07",
+      "anchor_gap_occurrence_id": "GAPO-592981309d461cd516a7b4c9",
+      "anchor_id": "GS-566",
+      "anchor_unit_id": "MATH1-GS-WQ-GS566",
+      "anchor_unit_source_version": "c9398b5a5a12bdc1bc2e66d7d49d07bc2b93a14c6543e01399f2c3ac7f2d5a66",
+      "anchor_wrong_event_id": "GS-566:2026-06-07",
+      "candidate_bundle_sha256": "3e63c5eed9135aa7e84ec8f0f1e294d5f6ab02e8c61bcf0dc19a338f37f99f11",
+      "card_source_version": "cd095a1aa027e9b6f4f7960c204f38ad531730a9418fa785cd133268b4eca776",
+      "delivered_card_id": "GS-564",
+      "delivered_due_date": "2026-06-08",
+      "delivered_unit_id": "MATH1-GS-WQ-GS564",
+      "delivered_unit_source_version": "cbe92752da7a4ce860be5220b9295b17b4c90e2bdc187a6bf2bddd13207a3a6a",
+      "due_date": "2026-06-08",
+      "dynamic_priority": 265,
+      "evidence": {
+        "card_id": "GS-564",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-ea6dc37e8450e810",
+        "gap_key": "GAP-87f7adcbc8a30dffb8a3",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "无穷级数",
+          "数项级数敛散性判别",
+          "正项级数敛散性判别",
+          "正项级数比较判别法",
+          "级数收敛定义",
+          "中值定理",
+          "拉格朗日中值定理",
+          "凹凸性与拐点",
+          "导数单调性"
+        ],
+        "method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先在区间 \\([n-1,n]\\) 上写出 \\(f(n)-f(n-1)=f'(\\xi_n)\\)",
+          "expected_method": "调用 H16-007，把导数项通过拉格朗日中值定理转成相邻函数值差，再用望远镜结构控制部分和",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "看到 \\(\\sum f'(n)\\)，并且题目给出 \\(f(x)\\) 在 \\(+\\infty\\) 处有有限极限",
+          "missed_action": "只用 \\(f'(x)\\) 递减直接夹前 \\(n\\) 项和，没有把 \\(f'(n)\\) 放进 \\(f(n)-f(n-1)\\) 并形成望远镜上界",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H16-007"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先在区间 \\([n-1,n]\\) 上写出 \\(f(n)-f(n-1)=f'(\\xi_n)\\)",
+          "expected_method": "调用 H16-007，把导数项通过拉格朗日中值定理转成相邻函数值差，再用望远镜结构控制部分和",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "看到 \\(\\sum f'(n)\\)，并且题目给出 \\(f(x)\\) 在 \\(+\\infty\\) 处有有限极限",
+          "missed_action": "只用 \\(f'(x)\\) 递减直接夹前 \\(n\\) 项和，没有把 \\(f'(n)\\) 放进 \\(f(n)-f(n-1)\\) 并形成望远镜上界",
+          "need_user_confirmation": false,
+          "next_reminder": "看到 \\(\\sum f'(n)\\) 且 \\(f(x)\\) 有有限极限，先找 \\(f(n)-f(n-1)\\)，再用中值定理和望远镜控部分和。",
+          "opd_tag": [
+            "P思路"
+          ],
+          "related_method_card_id": "H16-007",
+          "repeat_count": 1,
+          "repeat_count_source": "wrong_history",
+          "review_batch": "MATHWIKI-REVIEW-076",
+          "review_priority": 4
+        },
+        "selection_value": 5,
+        "source_hash": "ea6dc37e8450e810c76314cd122b714204b1dc26f3e3bc9098d900546a068d33",
+        "source_version": "ea6dc37e8450e810c76314cd122b714204b1dc26f3e3bc9098d900546a068d33",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "看到 \\(\\sum f'(n)\\) 且题目给 \\(\\lim_{x\\to+\\infty}f(x)=a\\) 时，应先用拉格朗日中值定理把 \\(f'(n)\\) 控制到相邻差 \\(f(n)-f(n-1)\\) 里；本次只利用 \\(f'(x)\\) 递减直接估计部分和，漏掉了 \\(0<f'(n)<f(n)-f(n-1)\\) 这一可望远镜的比较关系。"
+      },
+      "evidence_source_version": "ea6dc37e8450e810c76314cd122b714204b1dc26f3e3bc9098d900546a068d33",
+      "formal_card_path": "错题知识网络/错题卡/GS-564_138677导数项差分判敛.md",
+      "id": "GS-564",
+      "luna_query_id": "/root/luna_curve_field",
+      "mastery": 2,
+      "match_mode": "knowledge_fallback",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 84,
+      "queue_item_id": "QI-c51afee200b609fd8bc5",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS566",
+      "selection_mode": "luna_semantic_fine_knowledge",
+      "selection_reason": "正式到期单元的代理检查 GS-566；实际投递已入库旧题 GS-564；匹配层级 knowledge_fallback",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-566_138692相邻差望远镜判敛.md",
+          "role": "anchor",
+          "sha256": "fd737ca65ed2053cd84372a69a9098ea84a16ca523a82472d9b1543d81c19854"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-564_138677导数项差分判敛.md",
+          "role": "candidate",
+          "sha256": "cd095a1aa027e9b6f4f7960c204f38ad531730a9418fa785cd133268b4eca776"
+        }
+      ],
+      "semantic_match_level": "fine_knowledge",
+      "semantic_plan_sha256": "843f55ef8c3b485b3b414f350b56786c2d7dbde30366d4beaa8cb6e43313a6b0",
+      "semantic_private_reason": "GS-566 未先识别显式相邻差的望远镜结构；GS-564 则需先把导数项经中值定理桥接为相邻函数值差。两题共享相邻差与部分和控制这一细粒度知识，但前置转换不同，所以不标为同一具体断点。",
+      "semantic_public_value_reason": "同一分析主题下采用不同结构，适合检验独立迁移。",
+      "semantic_selection_v5": true,
+      "source": "ID:138677 (198-17) / 用户手动入库 / 2026-06-07",
+      "unit_id": "MATH1-GS-WQ-GS566",
+      "unit_source_version": "c9398b5a5a12bdc1bc2e66d7d49d07bc2b93a14c6543e01399f2c3ac7f2d5a66"
+    },
+    {
+      "anchor_card_source_version": "69ab44fc5601b5dfe7afc4defeead77daf6383900ea90c23763b764e95d212d5",
+      "anchor_due_date": "2026-08-30",
+      "anchor_evidence": {
+        "card_id": "GS-695",
+        "declared_origin": "",
+        "evidence_id": "EV-12921fc89808ccdc",
+        "gap_key": "GAP-46af12b62c4fcf73cf9d",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "曲线积分",
+          "第一型曲线积分",
+          "弧长微元",
+          "曲线参数化"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "",
+          "expected_first_action": "先在积分号下写两个平方项积分相等；只在积分整体层面平均系数，不能先写被积函数点态等式。",
+          "expected_method": "先写 x^2 与 y^2 的曲线积分相等；只在积分整体层面平均 a、b 两个系数，凑出 x^2+y^2；随后检查能否代入曲线方程，并把 x、y 的一阶曲线矩转换为形心坐标乘曲线长度。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "闭曲线交换 x、y 后不变，而第一型曲线积分的被积函数含 a x^2+b y^2。",
+          "missed_action": "未把轮换对称写成两个曲线积分的整体等式；后续又把 \\(ds\\) 当成二维面积微元，未先确认曲线只有一个参数自由度。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-007"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "legacy_unclassified",
+        "origin_declared": false,
+        "origin_label": "历史结构化证据，来源未分类",
+        "personal_confirmed": false,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "expected_first_action": "先在积分号下写两个平方项积分相等；只在积分整体层面平均系数，不能先写被积函数点态等式。",
+          "expected_method": "先写 x^2 与 y^2 的曲线积分相等；只在积分整体层面平均 a、b 两个系数，凑出 x^2+y^2；随后检查能否代入曲线方程，并把 x、y 的一阶曲线矩转换为形心坐标乘曲线长度。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "闭曲线交换 x、y 后不变，而第一型曲线积分的被积函数含 a x^2+b y^2。",
+          "missed_action": "未把轮换对称写成两个曲线积分的整体等式；后续又把 \\(ds\\) 当成二维面积微元，未先确认曲线只有一个参数自由度。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到第一型曲线积分中的 a x^2+b y^2，先写“积分整体相等”而不是点态相等；若需直接计算，先用一个参数表示曲线并写 \\(ds=\\|r'(t)\\|dt\\)。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H18-007",
+          "repeat_count": 2,
+          "repeat_count_source": "2026-07-14 首次记录完整动作链；2026-08-29 再次暴露积分层级与弧长微元对象混淆。",
+          "review_priority": 4
+        },
+        "selection_value": 3,
+        "source_hash": "12921fc89808ccdc52b34a8d69bcb36d813fe7b2a4b0654371ce3f1fa7096f6c",
+        "source_version": "12921fc89808ccdc52b34a8d69bcb36d813fe7b2a4b0654371ce3f1fa7096f6c",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "2026-08-29 复发时把曲线轮换对称误写成点态等式 \\(x^2=y^2\\)，并把一维弧长微元 \\(ds\\) 与二维曲面面积微元 \\(dS\\)、\\(dx\\,dy\\) 混淆；正确边界是先证明两个曲线积分整体相等，再沿曲线使用约束或参数化计算。"
+      },
+      "anchor_evidence_source_version": "12921fc89808ccdc52b34a8d69bcb36d813fe7b2a4b0654371ce3f1fa7096f6c",
+      "anchor_failure_date": "2026-08-29",
+      "anchor_gap_occurrence_id": "GAPO-a5228cf71ce0a92e0bae7081",
+      "anchor_id": "GS-695",
+      "anchor_unit_id": "MATH1-GS-WQ-GS695",
+      "anchor_unit_source_version": "1bbba631b8253fe1f166812b9d115fbe801c6e3279917f241b2b86e7ca45cbac",
+      "anchor_wrong_event_id": "GS-695|2026-08-29|2",
+      "candidate_bundle_sha256": "3e63c5eed9135aa7e84ec8f0f1e294d5f6ab02e8c61bcf0dc19a338f37f99f11",
+      "card_source_version": "b4913a5f91d7e108f317044dbb329e9e1cd15a46313824c6ce4543cc52030e52",
+      "delivered_card_id": "GS-694",
+      "delivered_due_date": "2026-08-20",
+      "delivered_unit_id": "MATH1-GS-WQ-GS694",
+      "delivered_unit_source_version": "e8f2f577febc232dc7fe14df3d7617b5e3e219e4586c6115d52af9902d72ec58",
+      "due_date": "2026-08-30",
+      "dynamic_priority": 80,
+      "evidence": {
+        "card_id": "GS-694",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-dc819676d839b6ae",
+        "gap_key": "GAP-c1af360829d15d024e14",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "曲线积分",
+          "向量代数与空间解析几何"
+        ],
+        "method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先计算单位球球心到平面 $x+y+z=0$ 的距离 $d$。",
+          "expected_method": "把常数第一型曲线积分解释为截圆周长，再由球心到平面距离求截圆半径。",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "第一型曲线积分已化为常数乘 $\\oint_L1\\,ds$，且 $L$ 是球面与平面的交线。",
+          "missed_action": "没有从球面与平面交线触发截圆半径公式。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-007"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B3-METHOD",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先计算单位球球心到平面 $x+y+z=0$ 的距离 $d$。",
+          "expected_method": "把常数第一型曲线积分解释为截圆周长，再由球心到平面距离求截圆半径。",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "第一型曲线积分已化为常数乘 $\\oint_L1\\,ds$，且 $L$ 是球面与平面的交线。",
+          "missed_action": "没有从球面与平面交线触发截圆半径公式。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到球面被平面截出的圆，先算球心到平面距离，再求半径和周长。",
+          "opd_tag": [
+            "P思路"
+          ],
+          "related_method_card_id": "H18-007",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-08-19 首次确认这一精确截圆半径断点；前两次错误位于轮换系数和对象解释层，不合并计数。",
+          "review_priority": 4
+        },
+        "selection_value": 5,
+        "source_hash": "dc819676d839b6aeb78f038953a2ba01d8091d630cbaffb8fac9e8be637d2870",
+        "source_version": "dc819676d839b6aeb78f038953a2ba01d8091d630cbaffb8fac9e8be637d2870",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "第3次复发时已经独立化简到 $\\frac23\\oint_L1\\,ds$，但没有从“球面与平面的交线”触发球心到平面距离和截圆半径公式，只能依赖题图把原题截圆判成大圆。"
+      },
+      "evidence_source_version": "dc819676d839b6aeb78f038953a2ba01d8091d630cbaffb8fac9e8be637d2870",
+      "formal_card_path": "错题知识网络/错题卡/GS-694_84890第一型曲线积分轮换与大圆.md",
+      "id": "GS-694",
+      "luna_query_id": "/root/luna_curve_field",
+      "mastery": 2,
+      "match_mode": "knowledge_fallback",
+      "match_reasons": [
+        "原生 Luna Max 只读语义比较；主 Sol 同哈希复核"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 3,
+      "overdue_days": 11,
+      "queue_item_id": "QI-6dec8c2eee7fdc3de2b3",
+      "recurrence_count": 2,
+      "score_target_unit_id": "MATH1-GS-WQ-GS695",
+      "selection_mode": "luna_semantic_fine_knowledge",
+      "selection_reason": "正式到期单元的代理检查 GS-695；实际投递已入库旧题 GS-694；匹配层级 knowledge_fallback",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/错题卡/GS-695_84305第一型曲线积分对称与形心.md",
+          "role": "anchor",
+          "sha256": "69ab44fc5601b5dfe7afc4defeead77daf6383900ea90c23763b764e95d212d5"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-694_84890第一型曲线积分轮换与大圆.md",
+          "role": "candidate",
+          "sha256": "b4913a5f91d7e108f317044dbb329e9e1cd15a46313824c6ce4543cc52030e52"
+        }
+      ],
+      "semantic_match_level": "fine_knowledge",
+      "semantic_plan_sha256": "843f55ef8c3b485b3b414f350b56786c2d7dbde30366d4beaa8cb6e43313a6b0",
+      "semantic_private_reason": "GS-695 当前断点是把积分整体的对称等式误成点态等式，并混淆弧长微元角色；GS-694 仍要求在第一型曲线积分中处理轮换对称与曲线长度，但其最新断点已经转向截圆半径，因此仅保留细粒度知识匹配。",
+      "semantic_public_value_reason": "同章、题面独立且结构相邻，适合检验跨题迁移。",
+      "semantic_selection_v5": true,
+      "source": "ID:84890 / 基础30讲第18讲 p.552 / 用户题图、解析图与口述 / 2026-07-14",
+      "unit_id": "MATH1-GS-WQ-GS695",
+      "unit_source_version": "1bbba631b8253fe1f166812b9d115fbe801c6e3279917f241b2b86e7ca45cbac"
+    }
+  ],
+  "semantic_ordering_decided": true,
+  "semantic_plan_sha256": "843f55ef8c3b485b3b414f350b56786c2d7dbde30366d4beaa8cb6e43313a6b0",
+  "sol_verification": {
+    "sol_reopened": true,
+    "verified_at": "2026-08-31T09:46:43+08:00",
+    "verified_evidence": [
+      {
+        "path": "错题知识网络/错题卡/GS-709_79076含奇点曲线积分与挖洞格林公式.md",
+        "sha256": "b1e45e7ccd8ad4f5c3ca6f20afa3b2afa8ee77748316cc913d3ff7c6960716cd"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-762_102592椭球面奇异向量场通量.md",
+        "sha256": "e985afea34f27d185449a948181bdc3b187c9b9fa2e066d0c37bf1fd3d00c29b"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-628_102423直线投影辅助平面.md",
+        "sha256": "f9af45a868777b98386bca79ea4e9150d142ce50f450e8ab20a95790b40a9175"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-645_84328旋转曲面投影.md",
+        "sha256": "0af05ba276aa22bf7b6fd7c7174be557ae475e13b9a4318ecd270eebca1381ae"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-698_102318柱面曲面积分投影.md",
+        "sha256": "19b8113e3929f1fe23ef62d92f8f84a4d2fb92d54bba15ca4dea9bb8adcfd485"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-755_171535同投影区域曲面面积比较.md",
+        "sha256": "52284b71fcb01a6897334f073da14fcea21da4aac38666f8b370d8dceeef9249"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-566_138692相邻差望远镜判敛.md",
+        "sha256": "fd737ca65ed2053cd84372a69a9098ea84a16ca523a82472d9b1543d81c19854"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-564_138677导数项差分判敛.md",
+        "sha256": "cd095a1aa027e9b6f4f7960c204f38ad531730a9418fa785cd133268b4eca776"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-695_84305第一型曲线积分对称与形心.md",
+        "sha256": "69ab44fc5601b5dfe7afc4defeead77daf6383900ea90c23763b764e95d212d5"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-694_84890第一型曲线积分轮换与大圆.md",
+        "sha256": "b4913a5f91d7e108f317044dbb329e9e1cd15a46313824c6ce4543cc52030e52"
+      }
+    ]
+  },
+  "supersedes_queue_id": "WQ-b92d992b12bac928dff09964"
+}

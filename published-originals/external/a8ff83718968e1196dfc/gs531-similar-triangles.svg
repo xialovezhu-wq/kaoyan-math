@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="490" viewBox="0 0 1050 490">
+<rect width="1050" height="490" fill="#f8fafc"/>
+<g font-family="Arial, PingFang SC, sans-serif" fill="#1e293b">
+<text x="28" y="35" font-size="23">沿漏斗中心轴切开，看右半边的两个三角形</text>
+<path d="M110 95 L218 419 L326 95 Z" fill="#fff" stroke="#475569" stroke-width="2.5"/>
+<path d="M146 203 L218 419 L290 203 Z" fill="#bae6fd"/>
+<path d="M146 203 L290 203" stroke="#0284c7" stroke-width="3"/>
+<path d="M218 95 L218 419" stroke="#64748b" stroke-dasharray="5 4" stroke-width="1.5"/>
+<path d="M218 95 L326 95 L218 419 Z" fill="none" stroke="#c2410c" stroke-width="3"/>
+<path d="M218 203 L290 203 L218 419 Z" fill="none" stroke="#0284c7" stroke-width="3"/>
+<path d="M218 108 L231 108 L231 95 M218 216 L231 216 L231 203" stroke="#475569" fill="none" stroke-width="1.2"/>
+<path d="M77 95 L77 419 M70 95 L84 95 M70 419 L84 419" fill="none" stroke="#64748b" stroke-width="1.5"/>
+<text x="34" y="267" font-size="19">18 cm</text>
+<text x="242" y="78" font-size="19" fill="#c2410c">6 cm</text>
+<text x="248" y="192" font-size="22" fill="#0284c7">r</text>
+<text x="196" y="318" font-size="22" fill="#0284c7">h</text>
+<text x="204" y="447" font-size="20">O</text>
+<text x="302" y="211" font-size="17" fill="#0284c7">水平液面</text>
+<text x="442" y="130" font-size="21" fill="#c2410c">大直角三角形：整个漏斗的右半截面</text>
+<text x="442" y="170" font-size="19">水平边是顶部半径 6 cm，竖直边是 18 cm</text>
+<text x="442" y="243" font-size="21" fill="#0284c7">小直角三角形：液体的右半截面</text>
+<text x="442" y="282" font-size="19">水平边是液面半径 r，竖直边是液深 h</text>
+<text x="442" y="355" font-size="20">两者有共同的顶角 O，且各有一个直角</text>
+<text x="442" y="397" font-size="21">所以相似，对应边成比例</text>
+</g></svg>

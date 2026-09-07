@@ -1,0 +1,117 @@
+{
+  "created": "2026-06-06 11:06:03",
+  "scope": "高等数学 + 线性代数；概率论不在本项目内",
+  "package_rule": "v5 方法论增强：GPT 优先使用讲题方法论素材库、2分钟复习入口和禁忌误用清单；三本书逐页 Markdown 只做页码回查。",
+  "upload_order": [
+    "GPT项目指令_方法论优先版_v5.md -> Instructions",
+    "06_GPT讲题方法论素材_v5/考研数学讲题方法论素材库_v5.md / JSON",
+    "06_GPT讲题方法论素材_v5/考研数学2分钟复习入口_v5.md",
+    "06_GPT讲题方法论素材_v5/考研数学方法论禁忌误用清单_v5.md",
+    "05_三本书方法论精华_v4/考研数学方法论动作链矩阵_v4.md",
+    "高数18讲_方法论精华_v4.md、线性代数9讲_方法论精华_v4.md、临门一脚_方法论精华_v4.md",
+    "考研数学方法论卡片库_v3_合并检索版.md / JSON",
+    "触发词映射表、错因动作断点表、方法论优先入口",
+    "三份逐页 Markdown v2 作为回查资料",
+    "可选：HTML 文件用于人工浏览"
+  ],
+  "knowledge_files_copied": [
+    "01_放入GPT项目_Knowledge文件/考研数学方法论卡片库_v3_合并检索版.json",
+    "01_放入GPT项目_Knowledge文件/考研数学方法论卡片库_v3_合并检索版.md",
+    "01_放入GPT项目_Knowledge文件/考研数学三本书方法论融合索引_v3.md",
+    "01_放入GPT项目_Knowledge文件/考研数学临门一脚_高频方法卡_v3.md",
+    "01_放入GPT项目_Knowledge文件/考研数学方法论_快速索引_GPT优先.md",
+    "01_放入GPT项目_Knowledge文件/考研数学方法论卡片_极简检索版.md",
+    "01_放入GPT项目_Knowledge文件/考研数学方法论优先入口.md",
+    "01_放入GPT项目_Knowledge文件/Codex错题库更新协议.md",
+    "01_放入GPT项目_Knowledge文件/GPT项目完整编辑指令_SystemPrompt.md",
+    "01_放入GPT项目_Knowledge文件/考研数学方法卡片库_v2.md",
+    "01_放入GPT项目_Knowledge文件/考研数学方法论卡片库_v2.json",
+    "01_放入GPT项目_Knowledge文件/考研数学方法论卡片库_v2.md",
+    "01_放入GPT项目_Knowledge文件/考研数学触发词_方法论映射表.md",
+    "01_放入GPT项目_Knowledge文件/考研数学错因分类_动作断点表.md",
+    "01_放入GPT项目_Knowledge文件/GPT项目完整编辑指令_SystemPrompt_用户粘贴版.md"
+  ],
+  "books": {
+    "gaoshu18": {
+      "title": "2026 张宇高数 18 讲",
+      "subject": "高等数学",
+      "role": "高数主参考资料；高数题在方法论卡片之后回查本书。",
+      "pages": 291,
+      "text_chars": 267465,
+      "non_ok_pages": 0,
+      "headings_detected": 120,
+      "html": "02_三本书_GPT精读HTML/2026张宇高数18讲_GPT精读版.html",
+      "markdown": "03_三本书_GPT可读逐页Markdown_v2/2026张宇高数18讲_GPT可读逐页Markdown_v2.md",
+      "source_pdf": "/Users/xiazhibin/Documents/kaoyan-math/高数讲义/《2026 张宇高数 18讲》.pdf",
+      "extraction_method": "text"
+    },
+    "xiandai9": {
+      "title": "2026 张宇线性 9 讲",
+      "subject": "线性代数",
+      "role": "线代主参考资料；线代题在方法论卡片之后回查本书。",
+      "pages": 114,
+      "text_chars": 104446,
+      "non_ok_pages": 0,
+      "headings_detected": 83,
+      "html": "02_三本书_GPT精读HTML/2026张宇线性9讲_GPT精读版.html",
+      "markdown": "03_三本书_GPT可读逐页Markdown_v2/2026张宇线性代数9讲_GPT可读逐页Markdown_v2.md",
+      "source_pdf": "/Users/xiazhibin/Documents/kaoyan-math/线代讲义/《2026 张宇线性 9讲》.pdf",
+      "extraction_method": "text"
+    },
+    "limen": {
+      "title": "2026 考研数学临门一脚 张宇",
+      "subject": "高等数学 + 线性代数速记",
+      "role": "临门一脚辅助资料；只用于高频结论、速记提醒和 2 分钟复习思路。",
+      "pages": 112,
+      "text_chars": 80107,
+      "non_ok_pages": 2,
+      "headings_detected": 120,
+      "html": "02_三本书_GPT精读HTML/2026考研数学临门一脚张宇_GPT精读版.html",
+      "markdown": "03_三本书_GPT可读逐页Markdown_v2/2026考研数学临门一脚_GPT可读逐页Markdown_v2.md",
+      "source_pdf": "/Users/xiazhibin/Documents/kaoyan-math/线代讲义/《2026考研数学临门一脚--张宇》.pdf",
+      "extraction_method": "ocr"
+    }
+  },
+  "extra_artifacts": {
+    "methodology_app_optimized": {
+      "path": "04_方法论可视化HTML/methodology_app_optimized.html",
+      "purpose": "方法论卡片快速浏览、搜索筛选、章节完成度和已读进度跟踪",
+      "source": "/Users/xiazhibin/Downloads/methodology_app.html"
+    }
+  },
+  "guide_files": [
+    "00_上传说明与提示词/GPT项目指令_方法论优先版_v5.md",
+    "00_上传说明与提示词/GPT项目资料上传规划_v5.md",
+    "00_上传说明与提示词/GPT项目指令_方法论优先版_v4.md",
+    "00_上传说明与提示词/GPT项目资料上传规划_v4.md",
+    "00_上传说明与提示词/OCR质量与GPT使用策略.md"
+  ],
+  "methodology_v3_stats": {
+    "base_method_cards": 268,
+    "limen_high_frequency_cards": 52,
+    "merged_v3_total_cards": 320,
+    "limen_high_math_cards": 29,
+    "limen_linear_algebra_cards": 23,
+    "probability_cards_included": 0
+  },
+  "methodology_v4_files": {
+    "directory": "05_三本书方法论精华_v4",
+    "high_math_essence_cards": 182,
+    "linear_algebra_essence_cards": 86,
+    "limen_essence_cards": 52,
+    "action_matrix_rows": 320,
+    "purpose": "按书拆分方法论精华，让 GPT 优先检索触发信号、第一动作、动作链和断点提醒。"
+  },
+  "methodology_v5_files": {
+    "directory": "06_GPT讲题方法论素材_v5",
+    "teaching_material_md": "06_GPT讲题方法论素材_v5/考研数学讲题方法论素材库_v5.md",
+    "teaching_material_json": "06_GPT讲题方法论素材_v5/考研数学讲题方法论素材库_v5.json",
+    "two_minute_review": "06_GPT讲题方法论素材_v5/考研数学2分钟复习入口_v5.md",
+    "misuse_checklist": "06_GPT讲题方法论素材_v5/考研数学方法论禁忌误用清单_v5.md",
+    "total_cards": 320,
+    "high_math_cards": 211,
+    "linear_algebra_cards": 109,
+    "limen_cards": 52,
+    "purpose": "给 GPT 普通答疑、模式 A、错因诊断、2 分钟复习直接调用。每张卡包含题型识别、适用条件、禁忌误用和讲题句式。"
+  }
+}

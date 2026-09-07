@@ -1,0 +1,54 @@
+---
+wiki_id: MATHWIKI-HOME
+type: home
+title: 数学一 LLM Wiki
+subject: 数学一
+status: active
+last_updated: 2026-07-22
+---
+
+# 数学一 LLM Wiki
+
+本页是 Obsidian 入口页。它把数学系统从“错题卡 + 生成索引”补成 Karpathy 式 LLM Wiki：raw sources 保持只读，wiki 页面沉淀概念、方法、专题、错因模式和触发条件，schema 规定 AI 怎么写入和体检。
+
+如果从 Obsidian vault 根目录进入，先打开 [[00-数学一LLMWiki入口]]。
+
+## 三层
+
+- raw sources：[[SRC-RAW-SOURCES-MAP_原始资料映射]]、[[SRC-WRONGNET_正式错题卡源数据]]、[[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]、[[SRC-METHOD-LIB_方法论库]]、[[SRC-AI-RULES_数学AI维护规则]]、[[SRC-SCHEMA_数学Wiki规则层]]、[[SRC-KTREE-H16_无穷级数知识树]]、[[SRC-KTREE-H17_多元函数积分学预备知识树]]
+- wiki：[[MATHWIKI-OVERVIEW-001_数学错题知识库总览]]、[[MATHWIKI-MAP-001_Obsidian导航图]]、[[MATHWIKI-COVERAGE-001_错题卡全量覆盖索引]]、[[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]、[[MATHWIKI-KNOWLEDGE-INDEX_知识点簇索引]]、[[MATHWIKI-METHOD-INDEX_方法簇索引]]、[[MATHWIKI-ERROR-INDEX_错因簇索引]]、[[MATHWIKI-ACTION-GAP-INDEX_method_gap动作断点索引]]、[[MATHWIKI-SYNTHESIS-001_当前高价值错因与方法缺口]]、[[MATHWIKI-SYNTHESIS-002_知识点错因证据图谱]]、[[MATHWIKI-SYNTHESIS-003_逐题内容与视觉证据索引]]、[[MATHWIKI-GS-TOPIC-003_高频知识主线总览]]、[[MATHWIKI-GS-TOPIC-004_极限与连续错题总线]]、[[MATHWIKI-GS-TOPIC-005_一元函数微分学应用错题总线]]、[[MATHWIKI-GS-TOPIC-006_定积分错题总线]]、[[MATHWIKI-GS-TOPIC-007_数列极限错题总线]]、[[MATHWIKI-GS-TOPIC-008_高等数学综合待精分分流台]]、[[MATHWIKI-GS-TOPIC-009_微分方程错题总线]]、[[MATHWIKI-GS-TOPIC-010_多元函数与二重积分错题总线]]、[[MATHWIKI-GS-TOPIC-011_无穷级数与幂级数错题总线]]、[[MATHWIKI-GS-TOPIC-012_空间解析几何错题总线]]、[[MATHWIKI-GS-TOPIC-013_不定积分与三角有理式错题总线]]、[[MATHWIKI-LA-TOPIC-001_线代矩阵运算错题总线]]、[[MATHWIKI-LA-TOPIC-002_线代综合待精分分流台]]、[[MATHWIKI-LA-TOPIC-003_线性方程组与向量组错题总线]]、[[MATHWIKI-LA-TOPIC-004_二次型与特征结构错题总线]]、[[MATHWIKI-GS-TOPIC-001_条件边界与分类讨论]]、[[MATHWIKI-GS-TOPIC-002_一元积分近期错题簇]]、[[MATHWIKI-GS-CONCEPT-001_条件边界]]、[[MATHWIKI-GS-CONCEPT-002_积分结构中心]]、[[MATHWIKI-GS-METHOD-001_先做条件边界清单]]、[[MATHWIKI-GS-METHOD-002_换元合法性三件套]]、[[MATHWIKI-GS-METHOD-003_整体函数奇偶性检查]]、[[MATHWIKI-GS-METHOD-004_分段点与上限变量排序]]、[[MATHWIKI-GS-METHOD-005_凑微分后的整体变量链]]、[[MATHWIKI-GS-METHOD-006_先判型总流程]]、[[MATHWIKI-GS-METHOD-007_条件转化总流程]]、[[MATHWIKI-GS-METHOD-008_分类讨论闭环]]、[[MATHWIKI-GS-METHOD-009_B3-METHOD方法调取断点]]、[[MATHWIKI-GS-METHOD-010_B4-CHAIN动作链断点]]、[[MATHWIKI-GS-METHOD-011_B5-CHECK检查断点]]、[[MATHWIKI-GS-METHOD-012_等价无穷小使用条件]]、[[MATHWIKI-GS-METHOD-013_导数定义差商入口]]、[[MATHWIKI-GS-ERROR-001_边界条件遗漏]]、[[MATHWIKI-GS-ERROR-002_只看局部不看整体]]、[[MATHWIKI-GS-ERROR-003_方法选择错误]]、[[MATHWIKI-GS-ERROR-004_过程跳步]]、[[MATHWIKI-GS-ERROR-005_题型识别失败]]、[[MATHWIKI-GS-TRIGGER-001_参数端点定义域先停]]、[[MATHWIKI-GS-TRIGGER-002_积分先找中心与整体]]、[[MATHWIKI-GS-TRIGGER-003_整体平方差先设整体]]
+- schema：`错题知识网络/schema/karpathy_llm_wiki.md`、`错题知识网络/schema/ingest.md`、`错题知识网络/schema/query.md`、`错题知识网络/schema/lint.md`
+
+## 当前主线
+
+- 数学正式源数据仍是 `错题知识网络/错题卡/*.md`。
+- `错题知识网络/生成/` 只由 `wrongnet.py rebuild` 生成，不作为人工编辑源。
+- Karpathy 模式参考页是[[SRC-KARPATHY-LLM-WIKI_模式参考]]，本地落地规则是 `错题知识网络/schema/karpathy_llm_wiki.md`。
+- 当前总览从[[MATHWIKI-OVERVIEW-001_数学错题知识库总览]]进入，Obsidian 浏览从[[MATHWIKI-MAP-001_Obsidian导航图]]进入。
+- raw source 路径从[[SRC-RAW-SOURCES-MAP_原始资料映射]]进入，避免把讲义、正式错题卡和生成目录混成同一类资料。
+- 高频知识总线从[[MATHWIKI-GS-TOPIC-003_高频知识主线总览]]进入，按极限、微分、定积分、数列极限、微分方程、多元函数、级数、空间解析几何、不定积分与线代各总线继续展开。
+- 错题卡覆盖状态从[[MATHWIKI-COVERAGE-001_错题卡全量覆盖索引]]进入，再按科目打开覆盖表。
+- 每一道正式错题卡都必须进入[[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]，并拥有对应的轻量 source summary。
+- 每一道正式错题卡也要通过 `knowledge` 标签进入[[MATHWIKI-KNOWLEDGE-INDEX_知识点簇索引]]中的至少一个知识点簇。
+- 每一道正式错题卡还要进入[[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]，用 source、knowledge、method、error、method_gap 五个维度检查是否只停在原始卡片，还是已经开始被编译。
+- 方法维度从[[MATHWIKI-METHOD-INDEX_方法簇索引]]进入，错因维度从[[MATHWIKI-ERROR-INDEX_错因簇索引]]进入，动作断点维度从[[MATHWIKI-ACTION-GAP-INDEX_method_gap动作断点索引]]进入。
+- 高频方法缺口已从索引型簇页沉淀出[[MATHWIKI-GS-METHOD-006_先判型总流程]]、[[MATHWIKI-GS-METHOD-007_条件转化总流程]]、[[MATHWIKI-GS-METHOD-008_分类讨论闭环]]、[[MATHWIKI-GS-METHOD-009_B3-METHOD方法调取断点]]、[[MATHWIKI-GS-METHOD-010_B4-CHAIN动作链断点]]和[[MATHWIKI-GS-METHOD-011_B5-CHECK检查断点]]。
+- 极限和导数入口继续拆出[[MATHWIKI-GS-METHOD-012_等价无穷小使用条件]]和[[MATHWIKI-GS-METHOD-013_导数定义差商入口]]。
+- 高频错因模式已沉淀出[[MATHWIKI-GS-ERROR-003_方法选择错误]]、[[MATHWIKI-GS-ERROR-004_过程跳步]]和[[MATHWIKI-GS-ERROR-005_题型识别失败]]。
+- wiki 的第一批稳定专题是[[MATHWIKI-GS-TOPIC-001_条件边界与分类讨论]]。
+- 近期正在扩展的专题是[[MATHWIKI-GS-TOPIC-002_一元积分近期错题簇]]，其下已拆出[[MATHWIKI-GS-CONCEPT-002_积分结构中心]]、[[MATHWIKI-GS-METHOD-002_换元合法性三件套]]、[[MATHWIKI-GS-METHOD-003_整体函数奇偶性检查]]、[[MATHWIKI-GS-METHOD-004_分段点与上限变量排序]]、[[MATHWIKI-GS-METHOD-005_凑微分后的整体变量链]]、[[MATHWIKI-GS-ERROR-002_只看局部不看整体]]、[[MATHWIKI-GS-TRIGGER-002_积分先找中心与整体]]和[[MATHWIKI-GS-TRIGGER-003_整体平方差先设整体]]。
+- 当前跨题综合从[[MATHWIKI-SYNTHESIS-002_知识点错因证据图谱]]进入；每张卡的正文、视觉与错因证据覆盖从[[MATHWIKI-SYNTHESIS-003_逐题内容与视觉证据索引]]进入。[[MATHWIKI-SYNTHESIS-001_当前高价值错因与方法缺口]]保留为 2026-06-28 的历史综合快照。
+- 待继续编译的素材放在[[MATHWIKI-QUESTIONS-001_待调查问题与素材队列]]。
+
+## AI 操作入口
+
+- ingest：导入讲义、视频笔记、GPT/Codex 讨论和 NotebookLM 导出，默认写 wiki，不直接建错题卡。
+- query：基于 wiki、知识树、方法论库和 wrongnet 轻量信息回答问题，必要时沉淀高价值结论。
+- lint：检查孤立页、断链、重复方法、raw source 未处理和正式数据边界风险。
+- maintenance：按[[MATHWIKI-MAINT-001_维护节奏与完成标准]]检查是否真的在持续编译知识，而不是只生成一次性报告。
+
+## Dashboard
+
+- Agent Dashboard 摘要：`错题知识网络/wiki/operation_center/dashboard-summary.json`
+- 操作中心：`错题知识网络/wiki/operation_center/数学智能体操作中心.md`
+- Bases 看板：`错题知识网络/wiki/operation_center/数学学习看板.base`

@@ -1,0 +1,42 @@
+答案为 D：
+
+$$
+M^*=
+\begin{pmatrix}
+|B|A^*&-A^*B^*\\
+O&|A|B^*
+\end{pmatrix}.
+$$
+
+令
+
+$$
+M^*=
+\begin{pmatrix}
+X&Y\\
+Z&W
+\end{pmatrix}.
+$$
+
+由伴随矩阵定义，
+
+$$
+MM^*=|M|E_{2n}=|A||B|E_{2n}.
+$$
+
+分块相乘得
+
+$$
+\begin{cases}
+AX+Z=|A||B|E,\\
+AY+W=O,\\
+BZ=O,\\
+BW=|A||B|E.
+\end{cases}
+$$
+
+因为 \(A,B\) 可逆，所以
+
+$$
+Z=O,\quad X=|B|A^*,\quad W=|A|B^*,\quad Y=-A^*B^*.
+$$

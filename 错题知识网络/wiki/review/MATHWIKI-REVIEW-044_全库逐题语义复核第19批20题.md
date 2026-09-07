@@ -1,0 +1,505 @@
+---
+wiki_id: MATHWIKI-REVIEW-044
+type: target_level_semantic_review_batch
+title: 全库逐题语义复核第19批20题
+subject: 数学一
+knowledge:
+  - 全库逐题复核
+  - 题图解析图核对
+  - 知识点错因连线
+source_refs:
+  - 错题知识网络/错题卡/
+  - 错题知识网络/可视化错题详情/
+  - 错题知识网络/assets/visual_wrong_questions/
+  - 错题知识网络/wiki/review/MATHWIKI-REVIEW-044_全库逐题语义复核第19批20题.json
+status: active
+last_updated: 2026-07-23
+---
+
+# 全库逐题语义复核第19批20题
+
+## 本批结论
+
+本批共逐题核对 20 张正式卡，当前哈希仍有效的完整复核为 0 张；覆盖 22 个物理图片路径与 22 个唯一图片内容。全库当前共 882 张正式卡，本轮活动累计完成 119 张，剩余 763 张。
+
+本批有 1 张出现结构、身份、元数据或来源正文质量问题。证据充分且无歧义的修正已经正式收口；身份冲突、稳定 ID 合并或证据不足项仍保留为 needs_user，详见 `MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B19`。
+
+## 证据边界
+
+- `verified` 表示题面、所问对象、答案、解析路线和当前全部图片内容已经逐一核对，并由正式卡 SHA、详情页 SHA 与图片 SHA-256 绑定。
+- 个人错因仍按 `confirmed_personal`、`legacy_unclassified`、`pending_user_confirmation` 和重复占位分别处理；读懂解析不能反推用户为什么做错。
+- 同一哈希的重复物理图片只视觉核对一次，但所有物理路径都纳入数量和集合一致性检查。
+- 关系裁决中已正式应用的变更以正式收口回执为准；未应用项仍是 SHADOW 建议。
+
+## 批次总览
+
+| 错题 | 题目在问什么 | 知识点 | 答案 | 个人错因边界 | 质量发现 |
+|---|---|---|---|---|---|
+| [GS-209](http://127.0.0.1:8765/open/GS-209) | 选择必然成立的比值不等式 | 微分不等式、指数因子辅助函数、导数判单调、比值比较 | B | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先构造 f(x)e^{-2x} 并计算导数符号” | exponential_factor_verified |
+| [GS-212](http://127.0.0.1:8765/open/GS-212) | 证明 f(x) 不超过 e^x | 对数凹性、二阶导数判凹凸性、凹函数切线上界 | 令 F=ln f，由 F''<0 和零点处切线得到 F(x)≤x。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先令 F=ln f 并计算 F''” | logarithmic_concavity_formula_repaired |
+| [GS-213](http://127.0.0.1:8765/open/GS-213) | 选择必然成立的比值不等式 | 微分不等式、指数因子辅助函数、函数单调性、比值比较 | B | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先写 F(x)=f(x)e^{-x}” | visual_solution_and_identity_freeze |
+| [GS-214](http://127.0.0.1:8765/open/GS-214) | 证明存在满足比例式的内部点 | 罗尔定理、乘积辅助函数、拉格朗日中值定理、分母非零性 | 构造两端为零的乘积辅助函数后用 Rolle，并另证分母非零。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先把目标比例式交叉相乘并反推乘积辅助函数” | denominator_nonzero_repaired |
+| [GS-215](http://127.0.0.1:8765/open/GS-215) | 证明两个不同的内部零点存在 | 分部积分、正权积分保号、变上限积分、罗尔定理 | 分部积分换成正权后用保号反证得到变上限积分的内部零点，再两次 Rolle。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先构造变上限积分并把 cos 权分部换成 sin 正权” | invalid_integral_mvt_replaced |
+| [GS-216](http://127.0.0.1:8765/open/GS-216) | 证明存在内部函数零点 | 正权函数、变上限积分、罗尔定理 | 构造带权变上限积分，端点同值后用 Rolle。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先确认 cos x 在给定区间内部恒正” | positive_weight_verified |
+| [GS-217](http://127.0.0.1:8765/open/GS-217) | 证明点态误差和积分误差上界 | 一阶 Taylor 公式、二阶 Lagrange 余项、端点线性插值误差、积分放缩 | 点态上界为 x(1-x)/2，积分上界为 1/12。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先写双端点的一阶 Taylor 公式及二阶余项” | taylor_terminology_repaired |
+| [GS-218](http://127.0.0.1:8765/open/GS-218) | 完成两个导数存在性证明 | 积分中值定理、罗尔定理、辅助函数吸收常数、分段平均斜率比较 | 先由积分中值定理接 Rolle；再令 F=f+x^2 分段比较平均斜率。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先把积分条件变成某点函数值” | multistage_mvt_verified |
+| [GS-219](http://127.0.0.1:8765/open/GS-219) | 证明存在 f'>2 与 f''<-4 的点 | 费马定理、拉格朗日中值定理、一阶 Taylor 公式、二阶 Lagrange 余项、区间长度放缩 | 端点到最大值点用中值定理；最大值点到最小值点用带二阶余项的一阶 Taylor 公式。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先把内点最值落到具体点并写费马条件” | order_safe_taylor_point |
+| [GS-220](http://127.0.0.1:8765/open/GS-220) | 判断内部实根个数的必然结论 | 系数条件与积分矩、反向构造原函数、端点同值、罗尔定理 | B，至少有一个内部实根。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“看到 a_k/(k+1) 先反构原函数” | antiderivative_reconstruction_verified |
+| [GS-221](http://127.0.0.1:8765/open/GS-221) | 证明两部分存在唯一性与极限结论 | 严格凹性、导函数严格单调、指定导数水平集、单调有界准则、导数零点唯一 | 每个 x_n 唯一存在，且 x_n 趋于唯一最大值点，f(x_n) 趋于 M。 | confirmed_personal：第二问未先使用单调有界准则；并混淆导数值与函数值、误把 x_n 当极值点 | existence_and_limit_proof_repaired |
+| [GS-223](http://127.0.0.1:8765/open/GS-223) | 证明右导数等于 A | 单侧导数定义、移动中值点、拉格朗日中值定理、夹逼准则 | 右差商经拉格朗日中值定理化为移动中值点处导数，再夹逼取极限。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先把右差商改写成内部点导数” | half_open_domain_preserved |
+| [GS-224](http://127.0.0.1:8765/open/GS-224) | 证明商函数单调性 | 拉格朗日中值定理、商函数求导、导函数单调 | 中值定理给出 f(x)=f'(xi_x)x，再由 f' 递增判商函数导数非负。 | pending_user_confirmation：具体个人错因待确认；只确认端点未给导数时应优先使用中值定理 | mastery_and_error_evidence_conflict_resolved |
+| [GS-225](http://127.0.0.1:8765/open/GS-225) | 证明函数恒定 | Hölder 条件、差商估计、夹逼准则、拉格朗日中值定理 | Hölder 条件给连续性和差商趋零，故处处导数为零，再由中值定理得常数。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先固定内点，把 Hölder 条件除以距离” | holder_continuity_and_evidence_boundary |
+| [GS-226](http://127.0.0.1:8765/open/GS-226) | 证明函数的无穷极限 | 极限保号、拉格朗日中值定理、线性估计 | 先由极限保号给导数正下界，再用中值定理得到线性上界。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先把导数极限变成尾部统一正下界” | tail_derivative_linear_bound_verified |
+| [GS-227](http://127.0.0.1:8765/open/GS-227) | 证明两个最值与导数估计结论 | 闭区间最值、拉格朗日中值定理、积分取等条件、导数连续性 | 连接最大值点与较近端点；第二问由两侧积分等号链和导数连续性反证。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先把 M 落到绝对值最大值点并连接较近端点” | full_equality_case_proof_added |
+| [GS-228](http://127.0.0.1:8765/open/GS-228) | 证明凸性切线不等式与常值结论 | 凸函数、切线下界、拉格朗日中值定理、有界性反证 | 凸函数在切线上方；非常值产生非零斜率，按正负分别向右或向左推出无界。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先把 f''≥0 翻译成凸函数切线下界” | convexity_and_slope_cases_repaired |
+| [GS-229](http://127.0.0.1:8765/open/GS-229) | 证明参数存在唯一并求极限 | 中值点参数化、单调性判唯一、Taylor 展开、等价无穷小 | 参数唯一存在，且 theta(x) 趋于 1/√3。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先把中值点写成 x theta(x)” | theta_limit_verified |
+| [GS-230](http://127.0.0.1:8765/open/GS-230) | 选择有序对 | 变上限积分、积分方向、等长分段、拉格朗日中值定理 | A，即 (-2,1)。 | pending_user_confirmation：旧卡未记录用户作答过程；当前只确认复做第一动作是“先判两侧积分符号，再拆成等长区间” | equal_interval_comparison_verified |
+| [GS-231](http://127.0.0.1:8765/open/GS-231) | 证明广义积分不小于 4 | 严格凹性、广义积分、最大值放缩、拉格朗日中值定理、牛顿莱布尼茨公式 | 取内部最大值点，在两侧用中值定理制造导数差，再以 x0(1-x0)≤1/4 收口。 | pending_user_confirmation：具体个人错因待确认；旧生成解析中的第二人称错因叙述已撤销 | improper_integral_identity_hold_and_evidence_repaired |
+
+## 逐题复核
+
+### GS-209 1000题B组6.8
+
+- 题目：已知可导正函数满足一阶微分不等式，判断多个函数值比值。
+- 所问：选择必然成立的比值不等式
+- 知识点：微分不等式；指数因子辅助函数；导数判单调；比值比较
+- 第一动作：先构造 f(x)e^{-2x} 并计算导数符号
+- 答案：B
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先构造 f(x)e^{-2x} 并计算导数符号”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 构造指数因子辅助函数 f(x)e^{-2x}。
+  - 由导数为正判定辅助函数严格递增。
+  - 按自变量顺序比较辅助函数值并还原比值。
+- 质量发现：
+  - `exponential_factor_verified`：答案 B 与指数因子单调性比较完整一致。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-213：`add_specific_strong_edge_bidirectionally`；同为 f'-cf>0 经 f(x)e^{-cx} 转为单调性并比较比值。
+- 当前快照：`stale`；正式卡 `bddc6ee146e6f3e6a586499e692462cde3cdc6946eb3f134bd3a5bca00b33efe`；唯一图片 1 个；物理路径 1 个。
+
+### GS-212 1000题B组6.5
+
+- 题目：正函数满足平方导数不等式，且 f(x)-x 在零点取得给定极值，证明指数上界。
+- 所问：证明 f(x) 不超过 e^x
+- 知识点：对数凹性；二阶导数判凹凸性；凹函数切线上界
+- 第一动作：先令 F=ln f 并计算 F''
+- 答案：令 F=ln f，由 F''<0 和零点处切线得到 F(x)≤x。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先令 F=ln f 并计算 F''”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 由正性取对数。
+  - 把原不等式化为对数函数严格凹。
+  - 由极值条件求切点函数值和斜率，再用切线上界。
+- 质量发现：
+  - `logarithmic_concavity_formula_repaired`：损坏公式与来源记录中两处凹凸方向错误已修复。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 当前快照：`stale`；正式卡 `931151dc36f37e4cd6ee7659cb3b6a54593c5798a69ee75d4378b834995fbd69`；唯一图片 1 个；物理路径 1 个。
+
+### GS-213 2020年第六题：指数因子辅助函数比较
+
+- 题目：已知 f'(x)>f(x)>0，判断离散点函数值比值。
+- 所问：选择必然成立的比值不等式
+- 知识点：微分不等式；指数因子辅助函数；函数单调性；比值比较
+- 第一动作：先写 F(x)=f(x)e^{-x}
+- 答案：B
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先写 F(x)=f(x)e^{-x}”
+- 一致性：题图—解析 verified_consistent；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 构造 f(x)e^{-x}。
+  - 证明辅助函数严格递增。
+  - 比较 -1 与 0 对应取值并还原。
+- 质量发现：
+  - `visual_solution_and_identity_freeze`：题图和解析图一致；GS-208 身份冻结边未恢复。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-576：`verify_existing_strong_edge`；同为微分不等式经指数因子转成辅助函数单调性。
+  - GS-488：`verify_existing_strong_edge`；同为从一阶线性导数组合反推指数因子完整导数。
+  - GS-213：`add_specific_strong_edge_bidirectionally`；同为 f'-cf>0 经 f(x)e^{-cx} 转为单调性并比较比值。
+  - GS-213：`remove_broad_or_method_mismatched_edge`；身份链接冻结，禁止恢复聚合强边。
+- 当前快照：`stale`；正式卡 `7c8703429dbd1b53c0b30b96cca5434f17b65ec2409e8694c2080d85f2e7ee27`；唯一图片 2 个；物理路径 2 个。
+
+### GS-214 强化例题6.2（4恒等变形）
+
+- 题目：在连续可导及导数非零条件下证明函数值差与导数比的存在性等式。
+- 所问：证明存在满足比例式的内部点
+- 知识点：罗尔定理；乘积辅助函数；拉格朗日中值定理；分母非零性
+- 第一动作：先把目标比例式交叉相乘并反推乘积辅助函数
+- 答案：构造两端为零的乘积辅助函数后用 Rolle，并另证分母非零。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先把目标比例式交叉相乘并反推乘积辅助函数”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 交叉相乘反推两个因子。
+  - 构造乘积使两端为零并用 Rolle。
+  - 在中值点至右端点上再用中值定理验证分母非零。
+- 质量发现：
+  - `denominator_nonzero_repaired`：相除前缺失的分母非零证明已补齐。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-474：`add_specific_strong_edge_bidirectionally`；同为从目标式反推辅助函数并制造端点同值后用 Rolle。
+  - GS-477：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-215：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-220：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `329b576bfdeee3017306bb2757b1c8e42f84496176869efac91a10ed2aeee0cc`；唯一图片 1 个；物理路径 1 个。
+
+### GS-215 强化例题6.6
+
+- 题目：连续函数满足无权积分和余弦加权积分均为零，证明内部至少两个不同零点。
+- 所问：证明两个不同的内部零点存在
+- 知识点：分部积分；正权积分保号；变上限积分；罗尔定理
+- 第一动作：先构造变上限积分并把 cos 权分部换成 sin 正权
+- 答案：分部积分换成正权后用保号反证得到变上限积分的内部零点，再两次 Rolle。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先构造变上限积分并把 cos 权分部换成 sin 正权”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 构造 F(x)=∫_0^x f。
+  - 分部积分把 cos 权换成 sin 正权。
+  - 用连续函数保号反证得到内部 F(c)=0。
+  - 在两侧区间分别使用 Rolle。
+- 质量发现：
+  - `invalid_integral_mvt_replaced`：原无权积分中值定理可能取端点，已改为无端点漏洞的正权保号反证。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-216：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；共享正权积分零点机制，本题额外分部换权并两次 Rolle。
+  - GS-215：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-218：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-220：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-241：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-244：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-245：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `f36fe4f9052f4319cac4cf21203d04e367fd282e6a4ef179b59c28a1b82df598`；唯一图片 1 个；物理路径 1 个。
+
+### GS-216 强化例题6.5
+
+- 题目：连续函数乘正余弦权的积分为零，证明内部零点存在。
+- 所问：证明存在内部函数零点
+- 知识点：正权函数；变上限积分；罗尔定理
+- 第一动作：先确认 cos x 在给定区间内部恒正
+- 答案：构造带权变上限积分，端点同值后用 Rolle。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先确认 cos x 在给定区间内部恒正”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 检查 cos x 在区间内部恒正。
+  - 构造带权变上限积分。
+  - 用 Rolle 得乘积为零，再由正权推出 f 为零。
+- 质量发现：
+  - `positive_weight_verified`：正权条件、端点同值和 Rolle 收口均已核验。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-216：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；共享正权积分零点机制，本题额外分部换权并两次 Rolle。
+  - GS-220：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-241：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-244：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-571：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `8656d4b3b82194a296cc99714ec9df4dce4577f9d16a1992cd4642ba0943a46d`；唯一图片 1 个；物理路径 1 个。
+
+### GS-217 强化例题11.18
+
+- 题目：二阶导有界且两端导数相等，估计线性插值误差及梯形积分误差。
+- 所问：证明点态误差和积分误差上界
+- 知识点：一阶 Taylor 公式；二阶 Lagrange 余项；端点线性插值误差；积分放缩
+- 第一动作：先写双端点的一阶 Taylor 公式及二阶余项
+- 答案：点态上界为 x(1-x)/2，积分上界为 1/12。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先写双端点的一阶 Taylor 公式及二阶余项”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 在 0 和 1 两端写带二阶 Lagrange 余项的一阶 Taylor 公式。
+  - 用 1-x 与 x 加权消去一阶项。
+  - 取绝对值放缩并积分。
+- 质量发现：
+  - `taylor_terminology_repaired`：展开阶数与余项导数阶数的术语已统一，常数 1/12 已核对。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-535：`verify_existing_strong_edge`；共享 Taylor 余项的定量放缩机制。
+  - GS-450：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `d10048e94270e52ff91d8267b2f7e74751df409dce94682db42abfbc44f26aa6`；唯一图片 1 个；物理路径 1 个。
+
+### GS-218 2019年第21题：积分中值定理与多次中值定理
+
+- 题目：积分平均值与端点条件下证明一阶导零点和二阶导严格上界点存在。
+- 所问：完成两个导数存在性证明
+- 知识点：积分中值定理；罗尔定理；辅助函数吸收常数；分段平均斜率比较
+- 第一动作：先把积分条件变成某点函数值
+- 答案：先由积分中值定理接 Rolle；再令 F=f+x^2 分段比较平均斜率。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先把积分条件变成某点函数值”
+- 一致性：题图—解析 verified_consistent；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 把积分平均值变成内部函数值。
+  - 与端点同值后使用 Rolle。
+  - 构造 F=f+x^2，在两段取平均斜率。
+  - 对 F' 再用中值定理得到 F''<0。
+- 质量发现：
+  - `multistage_mvt_verified`：题图与解析图一致，多段中值定理链条完整。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-218：`remove_broad_or_method_mismatched_edge`；身份链接冻结，禁止恢复聚合强边。
+  - GS-218：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-220：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `6a3dbef77eb8f6c402641d745c120838062dcb7ef995db2edb336be87df296d0`；唯一图片 2 个；物理路径 2 个。
+
+### GS-219 强化例题6.7
+
+- 题目：函数在开区间取得最大值 2 与最小值，证明一阶导和二阶导的严格估计。
+- 所问：证明存在 f'>2 与 f''<-4 的点
+- 知识点：费马定理；拉格朗日中值定理；一阶 Taylor 公式；二阶 Lagrange 余项；区间长度放缩
+- 第一动作：先把内点最值落到具体点并写费马条件
+- 答案：端点到最大值点用中值定理；最大值点到最小值点用带二阶余项的一阶 Taylor 公式。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先把内点最值落到具体点并写费马条件”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 设最大值点和最小值点。
+  - 从零端点连接最大值点估计一阶导。
+  - 在最大值点展开至最小值点并用区间长度小于 1 放缩。
+- 质量发现：
+  - `order_safe_taylor_point`：章节已纠正，Taylor 中值点改为不预设两极值点先后顺序。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-227：`add_specific_strong_edge_bidirectionally`；同为最大值点连接零值端点，利用短区间放大导数估计。
+  - GS-476：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-537：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-229：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `3b46888107ef660579490258719945c4f1c5ae31c5c8bb0dd93ac971b451be43`；唯一图片 1 个；物理路径 1 个。
+
+### GS-220 1000题A组21
+
+- 题目：给定带 k+1 分母的系数和为零，判断多项式在单位区间的根。
+- 所问：判断内部实根个数的必然结论
+- 知识点：系数条件与积分矩；反向构造原函数；端点同值；罗尔定理
+- 第一动作：看到 a_k/(k+1) 先反构原函数
+- 答案：B，至少有一个内部实根。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“看到 a_k/(k+1) 先反构原函数”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 把目标多项式看成某个原函数的导数。
+  - 系数条件变成原函数两端同值。
+  - 用 Rolle 得内部根。
+- 质量发现：
+  - `antiderivative_reconstruction_verified`：答案 B 及存在性而非唯一性的边界已核验。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-220：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-220：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-220：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-220：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-245：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-321：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-334：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `84936650abcc5c7e73d949edcee901ddfaf3240fdfc85a8af4b841b1b1b69303`；唯一图片 1 个；物理路径 1 个。
+
+### GS-221 1000题B组6.14
+
+- 题目：严格凹函数上用指定导数值定义点列，证明解唯一、点列收敛及函数值趋于最大值。
+- 所问：证明两部分存在唯一性与极限结论
+- 知识点：严格凹性；导函数严格单调；指定导数水平集；单调有界准则；导数零点唯一
+- 第一动作：先比较相邻导数值并用 f' 严格递减反推点列单调
+- 答案：每个 x_n 唯一存在，且 x_n 趋于唯一最大值点，f(x_n) 趋于 M。
+- 个人错因边界：confirmed_personal；第二问未先使用单调有界准则；并混淆导数值与函数值、误把 x_n 当极值点
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 构造 f(x)-(M/n)x，把指定导数值化成零导数点。
+  - 用 f' 严格递减保证唯一。
+  - 把 M/n 的递减反向转为 x_n 单增并以最大值点为上界。
+  - 用反证锁定极限点，再由 f 连续传递函数值极限。
+- 质量发现：
+  - `existence_and_limit_proof_repaired`：n=1 正性漏洞、过强 C2 条件、未给出的 f' 连续性与无证据压缩映射归因均已修复。；建议：按两次 wrong_history 继续定向复做并保留用户事实。
+- 关系裁决：
+  - GS-534：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；都构造 f(x)-μx，把指定导数值化为零导数点。
+  - GS-490：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-506：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-514：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-476：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-525：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-537：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `2d7245d54f7cc99e16901def51c7299fbd6c5542caad74b1d55c0a89f22bcf4f`；唯一图片 1 个；物理路径 1 个。
+
+### GS-223 强化例题6.9
+
+- 题目：已知右侧导函数极限，证明端点右导数存在且等于该极限。
+- 所问：证明右导数等于 A
+- 知识点：单侧导数定义；移动中值点；拉格朗日中值定理；夹逼准则
+- 第一动作：先把右差商改写成内部点导数
+- 答案：右差商经拉格朗日中值定理化为移动中值点处导数，再夹逼取极限。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先把右差商改写成内部点导数”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 固定右侧点并在端点至该点使用中值定理。
+  - 把差商写成 f'(xi_x)。
+  - 由 xi_x 夹在端点与移动点之间取右极限。
+- 质量发现：
+  - `half_open_domain_preserved`：源题半开右邻域已恢复，未额外添加右端点连续条件。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-226：`verify_existing_strong_edge`；都把导数渐近信息经移动中值点转成函数层结论。
+  - GS-103：`add_specific_strong_edge_bidirectionally`；共享点处差商与去心导函数极限之间的中值定理桥接。
+  - GS-225：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-227：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-229：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `08ed226325ee473c85b5f310f2b5399eb806bb6ec0ceeee61145c12e1ae9e03c`；唯一图片 1 个；物理路径 1 个。
+
+### GS-224 1000题B组5.35
+
+- 题目：端点函数值为零且导函数递增，证明 f(x)/x 单调递增。
+- 所问：证明商函数单调性
+- 知识点：拉格朗日中值定理；商函数求导；导函数单调
+- 第一动作：先在 [0,x] 上写 f(x)=f'(xi_x)x
+- 答案：中值定理给出 f(x)=f'(xi_x)x，再由 f' 递增判商函数导数非负。
+- 个人错因边界：pending_user_confirmation；具体个人错因待确认；只确认端点未给导数时应优先使用中值定理
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 在 [0,x] 上用中值定理抽样导数。
+  - 求商函数导数。
+  - 用 xi_x<x 与 f' 单调判号。
+- 质量发现：
+  - `mastery_and_error_evidence_conflict_resolved`：保留 2026-05-20 复做正确与已掌握记录；撤销无用户作答支撑的 AI 2/5 和具体错因归因。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-506：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；都用中值定理抽样导数并由导函数单调性判商函数单调。
+- 当前快照：`stale`；正式卡 `a9226e17736581a2d4f083603d1474ec2ad77d614fa51fd8aeafeb84b7ee2098`；唯一图片 1 个；物理路径 1 个。
+
+### GS-225 强化例题6.10
+
+- 题目：指数大于 1 的 Hölder 条件下证明函数恒为常数。
+- 所问：证明函数恒定
+- 知识点：Hölder 条件；差商估计；夹逼准则；拉格朗日中值定理
+- 第一动作：先固定内点，把 Hölder 条件除以距离
+- 答案：Hölder 条件给连续性和差商趋零，故处处导数为零，再由中值定理得常数。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先固定内点，把 Hölder 条件除以距离”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 由 Hölder 条件确认连续性。
+  - 固定内点并除以距离得到差商上界。
+  - 由指数大于 1 夹逼导数为零。
+  - 用拉格朗日中值定理收口。
+- 质量发现：
+  - `holder_continuity_and_evidence_boundary`：已补连续性前提并把无用户作答支撑的高置信错因降为待确认。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-452：`verify_existing_strong_edge`；都从函数值差的局部估计制造导数信息。
+  - GS-225：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `cef3ab4307e9a2acbda6515ed18744ed090edecfa8206d11c84b7f9906d88834`；唯一图片 1 个；物理路径 1 个。
+
+### GS-226 强化例题6.11
+
+- 题目：导数在负无穷处趋于正数，证明函数在负无穷处趋于负无穷。
+- 所问：证明函数的无穷极限
+- 知识点：极限保号；拉格朗日中值定理；线性估计
+- 第一动作：先把导数极限变成尾部统一正下界
+- 答案：先由极限保号给导数正下界，再用中值定理得到线性上界。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先把导数极限变成尾部统一正下界”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 选取足够靠左的阈值使 f'>A/2。
+  - 在 [x,X0] 上使用中值定理。
+  - 整理函数值差并令 x 趋于负无穷。
+- 质量发现：
+  - `tail_derivative_linear_bound_verified`：区间方向、符号和负无穷收口均已核验。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-226：`verify_existing_strong_edge`；都把导数渐近信息经移动中值点转成函数层结论。
+  - GS-509：`add_specific_strong_edge_bidirectionally`；共享无穷远导数信息到函数极限的条件边界。
+  - GS-227：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `4f4d4e370e407a82721d3a0cdb0f01e59c8221ef960a987ad10933e43104fc3f`；唯一图片 1 个；物理路径 1 个。
+
+### GS-227 强化例题6.12
+
+- 题目：端点函数值为零，以 M 表示绝对值最大值，证明导数下界及附加条件下 M=0。
+- 所问：证明两个最值与导数估计结论
+- 知识点：闭区间最值；拉格朗日中值定理；积分取等条件；导数连续性
+- 第一动作：先把 M 落到绝对值最大值点并连接较近端点
+- 答案：连接最大值点与较近端点；第二问由两侧积分等号链和导数连续性反证。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先把 M 落到绝对值最大值点并连接较近端点”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 若 M>0 取内部绝对值最大值点并连接较近端点。
+  - 由中值定理得到 |f'|≥M。
+  - 附加 |f'|≤M 时，两侧估计迫使最大值点为 1。
+  - 积分取等迫使左右导数恒为相反常数，与连续性矛盾。
+- 质量发现：
+  - `full_equality_case_proof_added`：原页没有解析文字；本轮补入了包含 M=0 边界与完整等号链的规范证明。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-227：`add_specific_strong_edge_bidirectionally`；同为最大值点连接零值端点，利用短区间放大导数估计。
+  - GS-570：`add_specific_strong_edge_bidirectionally`；共享最值点、费马条件与 Taylor 导数估计链。
+  - GS-227：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-227：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-229：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-230：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `6013cc6c68d2b83c3f777f66aafd64ab5243e1d0257017dd725ab8cbfe25bfdc`；唯一图片 1 个；物理路径 1 个。
+
+### GS-228 1000题B组6.6
+
+- 题目：二阶导非负的整轴函数满足切线下界，证明若整轴有界则为常值。
+- 所问：证明凸性切线不等式与常值结论
+- 知识点：凸函数；切线下界；拉格朗日中值定理；有界性反证
+- 第一动作：先把 f''≥0 翻译成凸函数切线下界
+- 答案：凸函数在切线上方；非常值产生非零斜率，按正负分别向右或向左推出无界。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先把 f''≥0 翻译成凸函数切线下界”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 由 f''≥0 得 f' 单调及切线下界。
+  - 反设非常值并由中值定理得到非零斜率。
+  - 正斜率向右、负斜率向左使用切线下界。
+- 质量发现：
+  - `convexity_and_slope_cases_repaired`：凹凸术语、过强 C2 条件及不成立的不妨假设均已修复。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-450：`verify_existing_strong_edge_and_complete_bidirectional_declaration`；共享凸函数切线下界与 Taylor 余项非负机制。
+- 当前快照：`stale`；正式卡 `1b706fc8b1c283cc68cbdbb0db062668092ed1bec763c9fffbc9fe2cfeb67b6e`；唯一图片 1 个；物理路径 1 个。
+
+### GS-229 1000题B组6.10
+
+- 题目：变上限积分定义函数，用中值点参数 theta(x) 表示并求其零点附近极限。
+- 所问：证明参数存在唯一并求极限
+- 知识点：中值点参数化；单调性判唯一；Taylor 展开；等价无穷小
+- 第一动作：先把中值点写成 x theta(x)
+- 答案：参数唯一存在，且 theta(x) 趋于 1/√3。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先把中值点写成 x theta(x)”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 对原函数在 [0,x] 上使用中值定理。
+  - 把中值点写成 x theta(x)。
+  - 用导数严格递增得唯一。
+  - 以 Taylor 展开求 theta 极限。
+- 质量发现：
+  - `theta_limit_verified`：唯一性条件、正根分支和 1/√3 极限已核验。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-229：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-229：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-229：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-230：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `8f136fd60a10f764c950a91dfaabcb37836ffef3879b58ba52681ae9a5a6efb7`；唯一图片 1 个；物理路径 1 个。
+
+### GS-230 1000题A组8.5
+
+- 题目：正且递减函数的变上限积分在基点两侧取等距点，比较两个积分值。
+- 所问：选择有序对
+- 知识点：变上限积分；积分方向；等长分段；拉格朗日中值定理
+- 第一动作：先判两侧积分符号，再拆成等长区间
+- 答案：A，即 (-2,1)。
+- 个人错因边界：pending_user_confirmation；旧卡未记录用户作答过程；当前只确认复做第一动作是“先判两侧积分符号，再拆成等长区间”
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 由积分方向判左值为负、右值为正。
+  - 在两个等长区间分别使用中值定理。
+  - 利用中值点顺序和 f 递减比较绝对值。
+- 质量发现：
+  - `equal_interval_comparison_verified`：答案 A、有序对顺序与绝对值比较均已核验。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 关系裁决：
+  - GS-543：`add_specific_strong_edge_bidirectionally`；共享等长分段分别取中值点再依顺序比较的机制。
+  - GS-230：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-230：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-438：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-477：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+  - GS-509：`remove_broad_or_method_mismatched_edge`；仅共享宽泛章节、定理标签或局部步骤，未达到共同具体对象、条件和第一动作的强边门槛。
+- 当前快照：`stale`；正式卡 `c21a98f04ed0f3604b867a409f575f348457204d417790e3b14ce56795ac07a3`；唯一图片 1 个；物理路径 1 个。
+
+### GS-231 强化例题11.19 135804 2026.4.28
+
+- 题目：严格凹且端点同零的函数，证明二阶导与函数比值的非负广义积分下界。
+- 所问：证明广义积分不小于 4
+- 知识点：严格凹性；广义积分；最大值放缩；拉格朗日中值定理；牛顿莱布尼茨公式
+- 第一动作：先判内部正性并取最大值点
+- 答案：取内部最大值点，在两侧用中值定理制造导数差，再以 x0(1-x0)≤1/4 收口。
+- 个人错因边界：pending_user_confirmation；具体个人错因待确认；旧生成解析中的第二人称错因叙述已撤销
+- 一致性：题图—解析 question_only_no_independent_solution_asset；正式卡—图片 consistent_after_documented_repairs
+- 解析主线：
+  - 先判内部函数值为正并按非负广义积分理解端点。
+  - 取最大值 M=f(x0)。
+  - 两侧中值定理给出正负导数值。
+  - 在内部紧区间积分 |f''| 得 M/[x0(1-x0)]。
+  - 用 f≤M 与非负广义积分支配性得到下界 4。
+- 质量发现：
+  - `improper_integral_identity_hold_and_evidence_repaired`：补全广义积分边界和导数差等式；撤销生成解析造成的个人错因与 AI 评分，并保持 B11-ID-05 身份冻结。；建议：后续复做时采集用户第一动作；在此之前不升级个人错因。
+- 当前快照：`stale`；正式卡 `bf4c0d4f7d8dd8758f22f992ee38fa0273393729b2ea435ea7661032c3cd6818`；唯一图片 1 个；物理路径 1 个。
+
+## 重建与验收
+
+```bash
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py build
+python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py check
+python3 -m unittest tests.test_knowledge_error_evidence_graph
+```

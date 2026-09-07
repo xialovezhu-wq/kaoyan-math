@@ -1,0 +1,41 @@
+卷面写法
+
+由泰勒公式，对 \(x\in(0,1)\)，存在 \(\xi_1\in(0,x)\)、\(\xi_2\in(x,1)\)，使
+
+$$
+\begin{aligned}
+f(x)&=f(0)+xf'(0)+\frac{x^2}{2}f''(\xi_1),\\
+f(x)&=f(1)+(x-1)f'(1)+\frac{(x-1)^2}{2}f''(\xi_2).
+\end{aligned}
+$$
+
+两式分别乘 \(1-x\)、\(x\) 后相加，由 \(f'(0)=f'(1)\)，得
+
+$$
+\begin{aligned}
+E(x)
+&:=f(x)-(1-x)f(0)-xf(1)\\
+&=\frac{x^2(1-x)}2f''(\xi_1)
++\frac{x(1-x)^2}2f''(\xi_2).
+\end{aligned}
+$$
+
+由 \(|f''|\le1\) 及绝对值三角不等式，
+
+$$
+|E(x)|
+\le\frac{x^2(1-x)+x(1-x)^2}{2}
+=\frac{x(1-x)}2.
+$$
+
+进而，由积分三角不等式，
+
+$$
+\begin{aligned}
+\left|\int_0^1 f(x)\,dx-\frac{f(0)+f(1)}2\right|
+&=\left|\int_0^1 E(x)\,dx\right|\\
+&\le\int_0^1|E(x)|\,dx\\
+&\le\frac12\int_0^1x(1-x)\,dx\\
+&=\frac1{12}.
+\end{aligned}
+$$

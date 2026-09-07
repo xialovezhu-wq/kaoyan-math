@@ -1,0 +1,2351 @@
+{
+  "schema_version": "math_target_semantic_review_batch_v1",
+  "wiki_id": "MATHWIKI-REVIEW-018",
+  "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260722-B06",
+  "title": "全库逐题语义复核第6批20题",
+  "batch_number": 6,
+  "reviewed_on": "2026-07-22",
+  "campaign_formal_card_count": 831,
+  "frozen_source_state_sha256": "7bb33898be5af9cbf5f8c3d0d178ab80771e5d57433eadb19f76e68835542e0d",
+  "frozen_selection": {
+    "selection_order_sha256": "28de4944d7162a0e95d090a15b85c492d225abbf2162af6b821df92c8421efe6",
+    "selection_compact_json_sha256": "fc1f0419d76fd95c8197d72571f12e79fada9c229d506dd140b3729203d4b14e",
+    "canonical_snapshot_sha256": "04295c17ad20d7356426b6f5fd0ce3628eb0621180b0ac77a6a53cdfdc5bea4f",
+    "canonical_snapshot_bytes": 15312,
+    "visual_manifest_sha256": "1a095bcf946121ab3761a88c86f492373e10697c540a82c643e509f06a0b3ead",
+    "registered_cards": 20,
+    "registered_detail_files": 20,
+    "registered_physical_asset_paths": 43,
+    "pre_review_path_hash_drift_count": 0
+  },
+  "scope": {
+    "card_count": 20,
+    "physical_asset_path_count": 43,
+    "unique_visual_content_sha256_count": 37,
+    "canonical_detail_count": 20,
+    "reviewed_detail_file_count": 20,
+    "physical_asset_role_path_counts": {
+      "question": 20,
+      "solution": 23,
+      "reference": 0
+    },
+    "unique_visual_content_role_counts": {
+      "question": 18,
+      "solution": 19,
+      "reference": 0
+    }
+  },
+  "guardrails": {
+    "formal_related_write": true,
+    "formal_card_write": true,
+    "formal_visual_write": true,
+    "mode": "FORMAL_CLOSEOUT",
+    "review_origin_mode": "FULL_VISUAL_TARGET_REVIEW",
+    "formal_closeout_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260722-B06",
+    "personal_error_requires_explicit_evidence": true,
+    "duplicate_physical_assets_reviewed_once_per_sha256": true,
+    "identity_blocked_cards_participate_in_aggregate_edges": false,
+    "stable_id_merge_or_delete": false
+  },
+  "selection_groups": [
+    "remaining_full_visual_duplicate_identity_cluster",
+    "integration_rationalization_relation_cleanup",
+    "root_substitution_and_backsubstitution_relation_cleanup",
+    "trigonometric_rational_integral_relation_cleanup",
+    "integration_by_parts_cancellation_relation_cleanup"
+  ],
+  "cards": [
+    {
+      "card_id": "GS-405",
+      "pre_formal_closeout_card_sha256": "fd1c2eb760d564769d9adfd27115b44e7b51563f55f893cb85e9a922b5db3562",
+      "card_sha256": "6ef54191b2ae9aa2ddcb00b706acf99e69644719d7d08ad800db9e38a340a51e",
+      "reviewed_detail_sha256": [
+        "ab732be4dc2351536051755e7c62a394a3db0f2998be5757447017f4b07b4a63"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "085813109b282dfdf91146cb99c080a18c6eec62d5d1124f9fd1ce269f1151cd"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "a2d7d4d3e8cfb925d18d3d6972f092f8d8b19f815b9f1aa2786b4e5a3ed0fc3f",
+        "c5a70ef93f434cc796951fe5c7e9ef2d92c1729c253e5eaf71987d5d13ead962",
+        "eca843f87bc0ca58ed6ef0692dc6b2165fd6fdb02c08275907d2484ecea33604"
+      ],
+      "physical_asset_path_count": 3,
+      "content_review_status": "verified",
+      "question_summary": "第一象限内由 xy=1/3、xy=3、y=x/3、y=3x 围成区域，计算二重积分 ∬(1+x-y)dxdy。",
+      "asked_output": "计算二重积分",
+      "answer": "\\(\\frac{8}{3}\\ln 3\\)",
+      "solution_outline": [
+        "交换 x、y 后区域不变，配对积分使 x-y 相消。",
+        "把积分化为区域面积。",
+        "用极坐标或 u=xy、v=y/x 直化边界并计算面积。"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分对称性",
+        "二重积分轮换对称性",
+        "极坐标换元",
+        "二重积分变量换元",
+        "雅可比行列式"
+      ],
+      "first_action": "先写交换 \\(x,y\\) 后的配对积分，并检查两式相加是否消去 \\(x-y\\)。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡没有用户真实作答；轮换对称、极坐标和变量换元仅作为客观复做入口。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 0,
+        "repeat_count_source": "无已验证的独立复发事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "cross_id_byte_identical_question_and_two_solutions",
+          "severity": "high",
+          "finding": "GS-403、GS-405、GS-408、GS-414 的题图、两张解析图和 source_refid 完全相同。",
+          "recommended_action": "保留四个稳定 ID，禁止普通知识聚合，等待用户决定是否合并或删除。",
+          "resolution_status": "needs_user_decision"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-403",
+          "decision": "identity_candidate_blocked",
+          "reason": "题图、两张解析图和 source_refid 完全相同且无独立复发证据；不建立普通知识边。"
+        }
+      ],
+      "identity_hold": {
+        "duplicate_group": "QIMG-c5a70ef93f434cc7",
+        "card_ids": [
+          "GS-403",
+          "GS-405",
+          "GS-408",
+          "GS-414"
+        ],
+        "status": "needs_user_decision",
+        "reason": "题图、两张解析图和 source_refid 完全相同；无独立复发证据。"
+      }
+    },
+    {
+      "card_id": "GS-408",
+      "pre_formal_closeout_card_sha256": "05b8d6360087f87b46456a1036484db835ffc834677924c0585335302aaefa07",
+      "card_sha256": "1ad195158de46c164cce4aa954c6b04987eb87d73b5ce8d7791ba9bb7021f5e2",
+      "reviewed_detail_sha256": [
+        "a1941c31b84b1f66b63e569faff966a3ef81daaff91f2ef7b7ebb4cd45d2aa82"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "90902a78931e9bee49122debeccbe9529daaea9d253e75da89a6eceaec700fc0"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "a2d7d4d3e8cfb925d18d3d6972f092f8d8b19f815b9f1aa2786b4e5a3ed0fc3f",
+        "c5a70ef93f434cc796951fe5c7e9ef2d92c1729c253e5eaf71987d5d13ead962",
+        "eca843f87bc0ca58ed6ef0692dc6b2165fd6fdb02c08275907d2484ecea33604"
+      ],
+      "physical_asset_path_count": 3,
+      "content_review_status": "verified",
+      "question_summary": "第一象限内由 xy=1/3、xy=3、y=x/3、y=3x 围成区域，计算二重积分 ∬(1+x-y)dxdy。",
+      "asked_output": "计算二重积分",
+      "answer": "\\(\\frac{8}{3}\\ln 3\\)",
+      "solution_outline": [
+        "交换 x、y 后区域不变，配对积分使 x-y 相消。",
+        "把积分化为区域面积。",
+        "用极坐标或 u=xy、v=y/x 直化边界并计算面积。"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分对称性",
+        "二重积分轮换对称性",
+        "极坐标换元",
+        "二重积分变量换元",
+        "雅可比行列式"
+      ],
+      "first_action": "先写交换 \\(x,y\\) 后的配对积分，并检查两式相加是否消去 \\(x-y\\)。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡没有用户真实作答；轮换对称、极坐标和变量换元仅作为客观复做入口。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 0,
+        "repeat_count_source": "无已验证的独立复发事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "cross_id_byte_identical_question_and_two_solutions",
+          "severity": "high",
+          "finding": "GS-403、GS-405、GS-408、GS-414 的题图、两张解析图和 source_refid 完全相同。",
+          "recommended_action": "保留四个稳定 ID，禁止普通知识聚合，等待用户决定是否合并或删除。",
+          "resolution_status": "needs_user_decision"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-403",
+          "decision": "identity_candidate_blocked",
+          "reason": "题图、两张解析图和 source_refid 完全相同且无独立复发证据；不建立普通知识边。"
+        }
+      ],
+      "identity_hold": {
+        "duplicate_group": "QIMG-c5a70ef93f434cc7",
+        "card_ids": [
+          "GS-403",
+          "GS-405",
+          "GS-408",
+          "GS-414"
+        ],
+        "status": "needs_user_decision",
+        "reason": "题图、两张解析图和 source_refid 完全相同；无独立复发证据。"
+      }
+    },
+    {
+      "card_id": "GS-414",
+      "pre_formal_closeout_card_sha256": "05bb2652b2b7574fb8ceb1b436738e7b17a93f6e8ea43e57d035d27a2f5da678",
+      "card_sha256": "1600b6c33f97ea29410717315c6c6f40987e531b0eb3fce1026d3b2edaf6a521",
+      "reviewed_detail_sha256": [
+        "42842b886fcaf042785bb00963e600f1ea4fe70b99f1d3845e131f7b5deccc7f"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "70346e6fc19e24a1c99a34e7391e48a93b1b760f0759978a5a70e9b9bfb788d3"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "a2d7d4d3e8cfb925d18d3d6972f092f8d8b19f815b9f1aa2786b4e5a3ed0fc3f",
+        "c5a70ef93f434cc796951fe5c7e9ef2d92c1729c253e5eaf71987d5d13ead962",
+        "eca843f87bc0ca58ed6ef0692dc6b2165fd6fdb02c08275907d2484ecea33604"
+      ],
+      "physical_asset_path_count": 3,
+      "content_review_status": "verified",
+      "question_summary": "第一象限内由 xy=1/3、xy=3、y=x/3、y=3x 围成区域，计算二重积分 ∬(1+x-y)dxdy。",
+      "asked_output": "计算二重积分",
+      "answer": "\\(\\frac{8}{3}\\ln 3\\)",
+      "solution_outline": [
+        "交换 x、y 后区域不变，配对积分使 x-y 相消。",
+        "把积分化为区域面积。",
+        "用极坐标或 u=xy、v=y/x 直化边界并计算面积。"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分对称性",
+        "二重积分轮换对称性",
+        "极坐标换元",
+        "二重积分变量换元",
+        "雅可比行列式"
+      ],
+      "first_action": "先写交换 \\(x,y\\) 后的配对积分，并检查两式相加是否消去 \\(x-y\\)。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "旧卡没有用户真实作答；轮换对称、极坐标和变量换元仅作为客观复做入口。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 0,
+        "repeat_count_source": "无已验证的独立复发事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "cross_id_byte_identical_question_and_two_solutions",
+          "severity": "high",
+          "finding": "GS-403、GS-405、GS-408、GS-414 的题图、两张解析图和 source_refid 完全相同。",
+          "recommended_action": "保留四个稳定 ID，禁止普通知识聚合，等待用户决定是否合并或删除。",
+          "resolution_status": "needs_user_decision"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-403",
+          "decision": "identity_candidate_blocked",
+          "reason": "题图、两张解析图和 source_refid 完全相同且无独立复发证据；不建立普通知识边。"
+        }
+      ],
+      "identity_hold": {
+        "duplicate_group": "QIMG-c5a70ef93f434cc7",
+        "card_ids": [
+          "GS-403",
+          "GS-405",
+          "GS-408",
+          "GS-414"
+        ],
+        "status": "needs_user_decision",
+        "reason": "题图、两张解析图和 source_refid 完全相同；无独立复发证据。"
+      }
+    },
+    {
+      "card_id": "GS-600",
+      "pre_formal_closeout_card_sha256": "1eb12f0faf2335ecf8b1899d77b9f2a9b6e0dd133d09e05e9914a59f540188b5",
+      "card_sha256": "40cc572da1755d6b50eff49b76660968bda6267550d0fb1901935d16abc78f1e",
+      "later_batch_revalidation": {
+        "source_batch": 23,
+        "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260723-B23",
+        "status": "current_hash_revalidated_after_later_relation_write",
+        "current_card_sha256": "a0b7d415be5583a619d85fcd81752a5fca870de309de005f0d5ee7ca112b577b",
+        "current_aggregate_edge_policy": "allow",
+        "current_related": [
+          "GS-595",
+          "GS-303"
+        ],
+        "relation_delta": {
+          "added_edges": [
+            "GS-303"
+          ],
+          "removed_edges": []
+        },
+        "prior_relation_decisions_preserved": true,
+        "note": "第23批为变上限积分曲线定义域与全长结构新增 GS-303 强边；第6批内容结论与个人证据不改写。"
+      },
+      "reviewed_detail_sha256": [
+        "6c15887dc8be13ac20435cea52eb1e759053b44e7ab7e10479be44ee5600f270"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "3a596fe7a600083284ad27dcfc76cedec71c9367ff643e63cfd0e9245fb5c55a"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "50808ad5599fe5a99ec6356d34d6cdef53756852a1aa0231811e2d3030f9ed69",
+        "7b59e8171c44f9139cf2a8d7af184a602a1018f40918628d56c78f6ecc296b9f"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "求变上限积分函数 y=∫[-π/2,x]√(cos t)dt 所表示曲线的全长。",
+      "asked_output": "求曲线全长",
+      "answer": "\\(4\\)",
+      "solution_outline": [
+        "先由根式确定 x∈[-π/2,π/2]。",
+        "求 y′=√(cos x)，套直角坐标弧长公式。",
+        "用 1+cos x=2cos²(x/2) 并按区间去绝对值。"
+      ],
+      "knowledge_nodes": [
+        "定积分",
+        "变上限积分",
+        "定积分应用",
+        "曲线弧长",
+        "三角恒等变形",
+        "绝对值分类",
+        "定义域",
+        "曲线方程约束",
+        "定义域与固定弧长区间 \\(x\\in[-\\frac\\pi2,\\frac\\pi2]\\)"
+      ],
+      "first_action": "先由 \\(\\sqrt{\\cos t}\\) 要求 \\(\\cos t\\ge0\\)，并结合积分路径从 \\(-\\frac\\pi2\\) 到 \\(x\\)，确定 \\(-\\frac\\pi2\\le x\\le\\frac\\pi2\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先固定曲线全长的 \\(x\\) 区间；没有及时调用 \\(1+\\cos x=2\\cos^2\\frac x2\\)；去根号时没有先写绝对值。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-06-13 wrong_history 中 1 条有明确日期的独立错误事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-292",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-292"
+          ],
+          "evidence_code": "K4",
+          "reason": "根式化简必须保留绝对值并用区间判符号。"
+        },
+        {
+          "target_card_id": "GS-595",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-600"
+          ],
+          "evidence_code": "K5",
+          "reason": "曲线弧长对象识别及对应表示下公式选择。"
+        },
+        {
+          "target_card_id": "GS-635",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-635"
+          ],
+          "evidence_code": "K4",
+          "reason": "先固定积分路径和变量范围，再处理绝对值或分段。"
+        },
+        {
+          "target_card_id": "GS-644",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-644"
+          ],
+          "evidence_code": "K5",
+          "reason": "曲线完整描线范围、对称性与弧长区间。"
+        },
+        {
+          "target_card_id": "GS-621",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-621"
+          ],
+          "evidence_code": "R4",
+          "reason": "题目所问数学对象不同。"
+        },
+        {
+          "target_card_id": "GS-622",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-622"
+          ],
+          "evidence_code": "R4",
+          "reason": "题目所问数学对象不同。"
+        },
+        {
+          "target_card_id": "GS-624",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-624"
+          ],
+          "evidence_code": "R4",
+          "reason": "题目所问数学对象不同。"
+        },
+        {
+          "target_card_id": "GS-466",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-600"
+          ],
+          "evidence_code": "R4",
+          "reason": "题目所问数学对象不同。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "a0b7d415be5583a619d85fcd81752a5fca870de309de005f0d5ee7ca112b577b",
+        "current_card_sha256": "40cc572da1755d6b50eff49b76660968bda6267550d0fb1901935d16abc78f1e",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-303"
+        ],
+        "removed_edges": [
+          "GS-595--GS-600"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-600 的关系导航哈希；第6批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-603",
+      "pre_formal_closeout_card_sha256": "a99ce79e097aa95faa9a86b56d2689a5997c6316ec2bf79bf8f167027253964b",
+      "card_sha256": "2a31ea6a45c95511c85d67feb73e09e5503209b4a2f13c625fd7a0f5c4a7347d",
+      "reviewed_detail_sha256": [
+        "e97b2fd600b79b0b02bb637b883d4a873b4f7af882d5f1b4f13e939d340559ea"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "ba177ac0000bda3fc5c52ec561bf62a9813e40ab1e4490ffd859a53d577ddd64"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "9bfb5f7501dd5ea1d2302b48df587446939b5df53c18aa26e5911ae8e535f150",
+        "cfb4cced959a3cdcef1b48f820f034c8e79425f19a5942a5b24fa894f0f08de4"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫(2^x·3^x)/(9^x-4^x)dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle \\frac{1}{2\\ln\\frac32}\\ln\\left|\\frac{3^x-2^x}{3^x+2^x}\\right|+C\\)",
+      "solution_outline": [
+        "分子分母同除 4^x。",
+        "令 u=(3/2)^x 并整体吸收 u dx。",
+        "对 1/(u²-1) 做部分分式并回代。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "指数幂分式化简",
+        "指数对数互化",
+        "第一类换元",
+        "整体凑微分",
+        "有理函数积分",
+        "部分分式",
+        "原函数按定义域连通区间分别理解"
+      ],
+      "first_action": "先将分子分母同时除以 \\(4^x\\)，得到 \\(\\frac{(\\frac32)^x}{[(\\frac32)^x]^2-1}\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "换元后没有把 \\(du=\\ln\\frac32\\cdot u\\,dx\\) 中的 \\(u\\,dx\\) 整体吸收，误把积分变成 \\(\\int\\frac{u}{u^2-1}\\,du\\)，而不是 \\(\\frac1{\\ln(3/2)}\\int\\frac{du}{u^2-1}\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-06-13 wrong_history 中 1 条有明确日期的独立错误事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-620",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-620"
+          ],
+          "evidence_code": "K1",
+          "reason": "换元后都必须让新变量微分整体吸收原分子因子。"
+        },
+        {
+          "target_card_id": "GS-163",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-163",
+            "GS-603"
+          ],
+          "evidence_code": "K1",
+          "reason": "换元时必须整体吸收内层微分因子。"
+        },
+        {
+          "target_card_id": "GS-268",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-268",
+            "GS-603"
+          ],
+          "evidence_code": "K1",
+          "reason": "必须让内层幂的微分与原分子完整对齐。"
+        },
+        {
+          "target_card_id": "GS-270",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-270",
+            "GS-603"
+          ],
+          "evidence_code": "K2",
+          "reason": "完整整体换元、同步替换微分并转有理函数。"
+        },
+        {
+          "target_card_id": "GS-587",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-587",
+            "GS-603"
+          ],
+          "evidence_code": "K1",
+          "reason": "主动制造内层导数，再换元并做部分分式。"
+        },
+        {
+          "target_card_id": "GS-637",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-637"
+          ],
+          "evidence_code": "K2",
+          "reason": "指数结构先中心化或同除主因子，再换元为有理函数。"
+        },
+        {
+          "target_card_id": "GS-604",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-603",
+            "GS-604"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-605",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-603",
+            "GS-605"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-609",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-609"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-618",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-618"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-619",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-619"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-621",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-621"
+          ],
+          "evidence_code": "R1",
+          "reason": "只共享上位主题，不能支撑普通强边。"
+        },
+        {
+          "target_card_id": "GS-622",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-622"
+          ],
+          "evidence_code": "R1",
+          "reason": "只共享上位主题，不能支撑普通强边。"
+        },
+        {
+          "target_card_id": "GS-623",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-623"
+          ],
+          "evidence_code": "R1",
+          "reason": "只共享上位主题，不能支撑普通强边。"
+        },
+        {
+          "target_card_id": "GS-625",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-625"
+          ],
+          "evidence_code": "R1",
+          "reason": "只共享上位主题，不能支撑普通强边。"
+        }
+      ],
+      "later_batch_revalidation": {
+        "batch_number": 16,
+        "date": "2026-07-23",
+        "prior_card_sha256": "62b309fe2b9f3ea9bb4249a66da1ebacba0bbab2605e2d10cd5e3ddc03bcf8a7",
+        "current_card_sha256": "9b67baf03fba5918213730345920fffe3c2567cdf69e269a5506c589efefa59e",
+        "content_change_scope": "related_field_only",
+        "current_related": [
+          "GS-268",
+          "GS-270",
+          "GS-587"
+        ],
+        "removed_edges": [
+          "GS-163"
+        ],
+        "added_edges": [],
+        "historical_relation_decisions_preserved": true,
+        "note": "GS-163 已改用分母整体与导数线性拆分入口，本卡指数幂换元机制不再作为普通强边。"
+      },
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "9b67baf03fba5918213730345920fffe3c2567cdf69e269a5506c589efefa59e",
+        "current_card_sha256": "2a31ea6a45c95511c85d67feb73e09e5503209b4a2f13c625fd7a0f5c4a7347d",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-268",
+          "GS-270"
+        ],
+        "removed_edges": [
+          "GS-587--GS-603"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-603 的关系导航哈希；第6批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-604",
+      "pre_formal_closeout_card_sha256": "24a68a8d1b50923b7e6953396af4cdc993de997fd0ab3c0ab9f997b5df46d70c",
+      "card_sha256": "aca851f981a5c244cb5c7a423bffb15edf6ab5e35a8a32332427fe2b09ceb996",
+      "later_batch_revalidation": {
+        "batch_number": 17,
+        "date": "2026-07-23",
+        "prior_card_sha256": "12e3930e70875505bbe21cf5dbd07261f132dc9675346eede4281a841db81bb9",
+        "current_card_sha256": "083f4112799788091e666ef1759b02d3750b43a892e33aaf435dd029b17ca0f8",
+        "content_change_scope": "related_field_only",
+        "current_related": [
+          "GS-605",
+          "GS-266",
+          "GS-278"
+        ],
+        "removed_edges": [
+          "GS-168"
+        ],
+        "added_edges": [],
+        "historical_relation_decisions_preserved": true,
+        "note": "第17批复核确认 GS-168 的反常有理积分与本卡不定积分拆分虽共享部分分式工具，但积分对象、边界与收口链不同，删除旧宽泛边；第6批其他判断保持不变。"
+      },
+      "prior_lineage_revalidation": {
+        "batch_number": 21,
+        "date": "2026-07-23",
+        "prior_card_sha256": "083f4112799788091e666ef1759b02d3750b43a892e33aaf435dd029b17ca0f8",
+        "current_card_sha256": "18620ebc4e28104db29d8b4fe87dbf0515e02ce6ac1585bf105db3eea0a2b2c9",
+        "content_change_scope": "related_field_only",
+        "prior_later_batch_revalidation_preserved": true,
+        "current_related": [
+          "GS-605",
+          "GS-278"
+        ],
+        "removed_edges": [
+          "GS-266"
+        ],
+        "added_edges": [],
+        "historical_relation_decisions_preserved": true,
+        "note": "第21批删除 GS-604 与 GS-266 的宽泛边；第17批 later_batch_revalidation 与第6批历史 relation_decisions 均保留为不可改写的当时证据。"
+      },
+      "batch22_current_lineage_revalidation": {
+        "batch_number": 22,
+        "date": "2026-07-23",
+        "prior_card_sha256": "18620ebc4e28104db29d8b4fe87dbf0515e02ce6ac1585bf105db3eea0a2b2c9",
+        "current_card_sha256": "aca851f981a5c244cb5c7a423bffb15edf6ab5e35a8a32332427fe2b09ceb996",
+        "content_change_scope": "batch22_current_lineage_and_related_field_update",
+        "b22_edge_delta": {
+          "removed_edges": [
+            "GS-278"
+          ],
+          "added_edges": []
+        },
+        "current_related": [
+          "GS-605"
+        ],
+        "reviewed_detail_sha256_preserved": true,
+        "prior_later_batch_revalidations_preserved": true,
+        "historical_relation_decisions_preserved": true,
+        "note": "第22批删除 GS-604 与 GS-278 的宽泛边；第17批、第21批 lineage、第6批历史结论与详情哈希均保持不变。"
+      },
+      "reviewed_detail_sha256": [
+        "e692741f00de8630e5f96839c45013b0892000c2545100d5c7eaf3af12b0f4c8"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "993bc0e75f747947347fef02ff2662f21d5f5347726763dd1c3e9da1bc444b52"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "03899a023469986b763ed3d037c050ae22e7d563550130d3c7a1ae2a5c309f7c",
+        "19fa44e7555981b5b512f6f3b92b348296d710cfb5f3387957f0373a812b9728"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫dx/[x²(1-x⁴)]。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle -\\frac1x+\\frac14\\ln\\left|\\frac{1+x}{1-x}\\right|-\\frac12\\arctan x+C\\)",
+      "solution_outline": [
+        "分子分母同乘 x²并拆出 1/x⁴ 与 1/(1-x⁴)。",
+        "继续按平方差与不可约二次因式拆分。",
+        "分别收口为幂、对数和反正切项。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "有理函数积分",
+        "分式拆分",
+        "部分分式",
+        "原函数按定义域连通区间分别理解"
+      ],
+      "first_action": "先将分子分母同乘 \\(x^2\\)，制造 \\(x^4(1-x^4)\\)，再利用 \\(\\frac1{x^4(1-x^4)}=\\frac1{x^4}+\\frac1{1-x^4}\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "第1次入口先凑 \\(d(\\frac1x)\\) 没先拆分（B3-METHOD）；第2次入口已对但拆分链中途停下，没把 \\(\\frac1{1-x^4}\\) 拆成 \\(\\frac12(\\frac1{1-x^2}+\\frac1{1+x^2})\\)、没把 \\(\\int\\frac1{1-x^2}dx\\) 推到对数型（B4-CHAIN）。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "用户 2026-06-24 Codex 更新指令明确说明之前错过一次、这次又错（2026-06-13、2026-06-24）"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-605",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-604",
+            "GS-605"
+          ],
+          "evidence_code": "K1",
+          "reason": "第一动作均为先拆有理分式再决定后续积分。"
+        },
+        {
+          "target_card_id": "GS-168",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-168"
+          ],
+          "evidence_code": "K2",
+          "reason": "有理分式因式分解、部分分式及对数项收口。"
+        },
+        {
+          "target_card_id": "GS-266",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-266",
+            "GS-604"
+          ],
+          "evidence_code": "K1",
+          "reason": "拆出分母导数项后识别反正切标准型。"
+        },
+        {
+          "target_card_id": "GS-278",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-278",
+            "GS-604"
+          ],
+          "evidence_code": "K1",
+          "reason": "一次因子与不可约二次因子的部分分式拆分。"
+        },
+        {
+          "target_card_id": "GS-609",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-609"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-631",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-631"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-162",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-162"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-270",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-270",
+            "GS-604"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-581",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-604"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-605",
+      "pre_formal_closeout_card_sha256": "435dba461e829f7d44cfe988078907c2f6b5a296bcb278acb3fecd7a2147b569",
+      "card_sha256": "8408d320fc6acfcf199178af759c30857fe1d4daba9fc95bd3439a7c55788973",
+      "reviewed_detail_sha256": [
+        "105d935146ed19034abfd949068a4fca88415d1d68c892b87f1bd98e9a2224d5"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "fe9bbcc0a67e7f9f0398f1a56b53a0dc509b9ac050f76743a42a350c2abcc766"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "4f995a7f7c39ced3bf40f2028174ae6d3446810565005f152921e1c166d1ea41",
+        "db1fc6f769709f16e1146c288285a0da0aba99a03b126088d037b626ccbdb6e6"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫arctan(x)/[x²(1+x²)]dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle -\\frac{\\arctan x}{x}-\\frac12(\\arctan x)^2+\\frac12\\ln\\frac{x^2}{1+x^2}+C\\)",
+      "solution_outline": [
+        "先拆 1/[x²(1+x²)]。",
+        "分别以 d(-1/x) 与 d(arctan x) 做分部积分。",
+        "剩余有理函数继续拆分，避免恒等式绕圈。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "有理函数积分",
+        "分式拆分",
+        "部分分式",
+        "分部积分",
+        "反三角函数积分"
+      ],
+      "first_action": "先写 \\(\\frac1{x^2(1+x^2)}=\\frac1{x^2}-\\frac1{1+x^2}\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有优先拆分有理函数；对 \\(\\int\\frac{dx}{x(1+x^2)}\\) 继续分部积分导致绕回原式得到 \\(A=A\\)；并混淆 \\(\\arctan x\\) 与 \\(\\operatorname{arccot}x\\) 的导数符号。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "仅由 wrong_history 中 2026-06-13 的 1 次独立做错事件支持"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-609",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-609"
+          ],
+          "evidence_code": "K2",
+          "reason": "先拆式，再用倒数型微分做分部积分。"
+        },
+        {
+          "target_card_id": "GS-630",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-630"
+          ],
+          "evidence_code": "K2",
+          "reason": "把分母倒数的微分选作分部积分入口。"
+        },
+        {
+          "target_card_id": "GS-632",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-632"
+          ],
+          "evidence_code": "K3",
+          "reason": "构成无效恒等式绕圈与有效辅助项抵消的诊断对照。"
+        },
+        {
+          "target_card_id": "GS-631",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-631"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-266",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-605"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-270",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-605"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-601",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-605"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-609",
+      "pre_formal_closeout_card_sha256": "e44c499d27abd566bf22b2ba122218abafcd2f86d03c30e8524ad7ce456ebffc",
+      "card_sha256": "28bcfbff391f24e72291b91c03481b3396cfd5e465c979d2256a8a3855057640",
+      "reviewed_detail_sha256": [
+        "28bf5d00110760e2e93c3555097bcef0fa6a4884a38f6b9af5d8e45aca8e4dde"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "7277300764c11acd6980b8ec87037430714aacb6a606ec8cf457aeef167fbd2d"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "41fad36f666b0cb2e3798631081b1f694ab2f479bc5d89841d87e9e5f3bfbc77",
+        "617176915d01c7196a50aa45dd47761e9dc081d6588c10633cecd4c0207b9397"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫[x+ln(1-x)]/x² dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle \\left(1-\\frac1x\\right)\\ln(1-x)+C\\)",
+      "solution_outline": [
+        "先拆成 1/x 与 ln(1-x)/x²。",
+        "第二项用分部积分。",
+        "合并对数项；泰勒截断不用于精确原函数。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "分部积分",
+        "有理函数积分",
+        "分式拆分",
+        "部分分式",
+        "对数幂积分"
+      ],
+      "first_action": "先写出 \\(\\frac{x+\\ln(1-x)}{x^2}=\\frac1x+\\frac{\\ln(1-x)}{x^2}\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先判断题目目标是\"求精确原函数\"；没有优先寻找恒等拆分与分部积分入口，反而把有限阶泰勒截断当恒等替换。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "仅由 wrong_history 中 2026-06-16 的 1 次独立做错事件支持"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-610",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-610"
+          ],
+          "evidence_code": "K2",
+          "reason": "结构化归后出现对数因子，再触发分部积分。"
+        },
+        {
+          "target_card_id": "GS-630",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-630"
+          ],
+          "evidence_code": "K2",
+          "reason": "都需识别负倒数微分并用分部积分降复杂度。"
+        },
+        {
+          "target_card_id": "GS-632",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-632"
+          ],
+          "evidence_code": "K2",
+          "reason": "分部积分后必须检查残余项是否精确抵消。"
+        },
+        {
+          "target_card_id": "GS-686",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-686"
+          ],
+          "evidence_code": "K2",
+          "reason": "识别倒数型微分并用分部积分降低复杂度。"
+        },
+        {
+          "target_card_id": "GS-601",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-609"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-610",
+      "pre_formal_closeout_card_sha256": "a02074e87123405ffbbd679355241627dbb252f4614e87d0e691cb249f4bebfd",
+      "card_sha256": "27be846eacebaf6ba7c5b9e86c97bb568dbbf9ebb1d49f896faa9d467d52274a",
+      "later_batch_revalidation": {
+        "batch_number": 21,
+        "date": "2026-07-23",
+        "prior_card_sha256": "71b40e1c4530682e1512a954c337d9c08bf212b506df07b3a05137513a8ea19d",
+        "current_card_sha256": "e3e3b887e40535b0f42abaf4f394e9e318797df99226fdb308a1eb0d98692e94",
+        "content_change_scope": "related_field_only",
+        "current_related": [
+          "GS-270",
+          "GS-575",
+          "GS-609",
+          "GS-275"
+        ],
+        "removed_edges": [],
+        "added_edges": [
+          "GS-275"
+        ],
+        "historical_relation_decisions_preserved": true,
+        "note": "第21批新增 GS-610 与 GS-275 的双向具体强边；第6批历史 relation_decisions 保持不变。"
+      },
+      "reviewed_detail_sha256": [
+        "3f9f6494e5e6614ef8769847bab715d5a60b215d2b01118b28dbfe431bb428ca"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "2c20cf102d02dc3a128aac9bd6cccaead2d95e62df9821b44aa6bc37f4c72906"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "25b00f479a68698695dd82ca32ccd700de8834427c91de12170dcbde6a261b25",
+        "46959f2c5d1eeb6fc50a22783a8e925b87077fd894757d32c5d7400ed8b1297f"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫x e^x/√(e^x-1) dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle 2x\\sqrt{e^x-1}-4\\sqrt{e^x-1}+4\\arctan\\sqrt{e^x-1}+C\\)",
+      "solution_outline": [
+        "令 t=√(e^x-1)，同步反解 e^x、x 与 dx。",
+        "化为 2∫ln(1+t²)dt。",
+        "分部积分并把 t²/(1+t²) 补常数化简。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "根式积分",
+        "根式整体换元",
+        "第二类换元",
+        "根式换元",
+        "分部积分",
+        "有理函数积分",
+        "反正切型积分"
+      ],
+      "first_action": "先令 \\(t=\\sqrt{e^x-1}\\)，并同步写出 \\(e^x=t^2+1,\\ x=\\ln(1+t^2),\\ dx=\\frac{2t}{1+t^2}dt\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先抓根式整体，而是尝试拆分 \\(x\\)、\\(e^x\\) 或把根式分母拆成两项；对根式差式有非法拆分倾向。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "仅由 wrong_history 中 2026-06-16 的 1 次独立做错事件支持"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-631",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-631"
+          ],
+          "evidence_code": "K1",
+          "reason": "都要求把完整根式作为换元对象并同步反解原变量。"
+        },
+        {
+          "target_card_id": "GS-270",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-610"
+          ],
+          "evidence_code": "K1",
+          "reason": "都以指数根式整体为换元对象。"
+        },
+        {
+          "target_card_id": "GS-575",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-610"
+          ],
+          "evidence_code": "K2",
+          "reason": "根式整体换元后化成反正切型有理积分。"
+        },
+        {
+          "target_card_id": "GS-618",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-618"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-619",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-619"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-620",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-620"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-630",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-630"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-602",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-610"
+          ],
+          "evidence_code": "R4",
+          "reason": "题目所问数学对象不同。"
+        }
+      ],
+      "batch35_lineage_revalidation": {
+        "batch_number": 35,
+        "date": "2026-07-24",
+        "prior_card_sha256": "e3e3b887e40535b0f42abaf4f394e9e318797df99226fdb308a1eb0d98692e94",
+        "current_card_sha256": "27be846eacebaf6ba7c5b9e86c97bb568dbbf9ebb1d49f896faa9d467d52274a",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-270",
+          "GS-275",
+          "GS-609"
+        ],
+        "removed_edges": [
+          "GS-575--GS-610"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第35批重绑 GS-610 的关系导航哈希；第6批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-618",
+      "pre_formal_closeout_card_sha256": "737115ced1c299f77364bed02f6600808e85d7771be9ee10e84c33780a0a33e1",
+      "card_sha256": "44bea9ab0cb0e80611d29f59c257940bba28945c282924f2329b7fb140ef4a50",
+      "reviewed_detail_sha256": [
+        "9703e82f88c4b364f00fc29f505293df7ce4c281316a234f4a533ed7ef7af1e9"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "ca39f1b944e904b8900521365525486e84ce7c684c4cbeb2c91443ef830b36cf"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "384f34e08d1409959683274e0806e8292540472c0db5f9c6e8c7833dbb4abece",
+        "76b48f9cf7bca11f326cf71841ba2d40d408884b6b860884dc14366e8eaf12e9"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫x³/√(1+x²) dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle \\frac13(1+x^2)^{3/2}-(1+x^2)^{1/2}+C\\)",
+      "solution_outline": [
+        "图片路线直接令 u=1+x²。",
+        "把 x³dx 写成 (u-1)du/2。",
+        "积分后回代；另将用户三角路线的回代断点单独保留。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "根式积分",
+        "第一类换元",
+        "第二类换元",
+        "根式换元",
+        "三角换元",
+        "整体凑微分",
+        "回代化简",
+        "反三角回代"
+      ],
+      "first_action": "先写 \\(t=\\arctan x\\)，再由 \\(\\tan t=x\\) 推出 \\(\\sec t=\\sqrt{1+x^2}\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有把 \\(\\sec(\\arctan x)\\) 化简为 \\(\\sqrt{1+x^2}\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "仅由 wrong_history 中 2026-06-24 的 1 次独立做错事件支持"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "solution_route_and_user_route_separated",
+          "severity": "medium",
+          "finding": "解析图使用 u=1+x² 的直接路线；用户历史记录对应 x=tan t 的回代断点，二者已分层记录。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-619",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-618",
+            "GS-619"
+          ],
+          "evidence_code": "K2",
+          "reason": "共享三角代换局部路线中的中段化简与完整回代。"
+        },
+        {
+          "target_card_id": "GS-268",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-618"
+          ],
+          "evidence_code": "K2",
+          "reason": "优先检查内层整体微分的直接换元路线。"
+        },
+        {
+          "target_card_id": "GS-292",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-292"
+          ],
+          "evidence_code": "K4",
+          "reason": "三角代换的角度范围、根式符号和回代必须一致。"
+        },
+        {
+          "target_card_id": "GS-592",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-618"
+          ],
+          "evidence_code": "K2",
+          "reason": "根式积分中的三角换元与答案形式还原。"
+        },
+        {
+          "target_card_id": "GS-620",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-618",
+            "GS-620"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-631",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-631"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-546",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-618"
+          ],
+          "evidence_code": "R4",
+          "reason": "题目所问数学对象不同。"
+        },
+        {
+          "target_card_id": "GS-587",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-618"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "c5d8972bae1e502c1fc78a6ac6eddb6f39088cf79817ed5de90fff7b8b1686b5",
+        "current_card_sha256": "44bea9ab0cb0e80611d29f59c257940bba28945c282924f2329b7fb140ef4a50",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-268",
+          "GS-619"
+        ],
+        "removed_edges": [
+          "GS-592--GS-618"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-618 的关系导航哈希；第6批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-619",
+      "pre_formal_closeout_card_sha256": "f42701d5f513a161e583b49cf3d4e5b6bd3bac0332b9c7811472a76681327099",
+      "card_sha256": "27dc64d64c2939f0429873d1ace638551731914fd2f22a652aeb0824564e52b1",
+      "reviewed_detail_sha256": [
+        "80a7b677d4c41b059747c8e11b1485469b331dd2a36d48c2dc56027cad73bd01"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "e816c4a57ae3bc9e0d01f144c969eac082440a34f6a5a19dcdc457a58e584fd3"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "9e5eb757132a790cefa0c4daa0d110272d2ce8d189e0ba337a1fbc113a59874d",
+        "ea10269525d3b3f87d277d6ad39e6c1a06d021bad50a0daf7f8a4104033e9993"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫dx/[(2x²+1)√(1+x²)]。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle \\arctan\\frac{x}{\\sqrt{1+x^2}}+C\\)",
+      "solution_outline": [
+        "可令 u=x/√(1+x²) 直接化为反正切型。",
+        "用户三角路线中需把分母化成只含 sin t。",
+        "完成中段化简并回代。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "第二类换元",
+        "第一类换元",
+        "根式换元",
+        "三角换元",
+        "三角恒等变形",
+        "整体凑微分",
+        "回代化简",
+        "三角形回代",
+        "反正切型积分"
+      ],
+      "first_action": "先把 \\(\\sec t\\) 和 \\(\\tan t\\) 全部改写成 \\(\\sin t,\\cos t\\)，再检查能否凑出 \\(\\cos tdt=d(\\sin t)\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有想到分子分母同乘 \\(\\cos t\\)，没有把分母化成 \\(1+\\sin^2t\\)，没有把 \\(\\sin t\\) 看成整体，最后也没有主动通过直角三角形回代 \\(\\sin t\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "仅由 wrong_history 中 2026-06-24 的 1 次独立做错事件支持"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-269",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-269",
+            "GS-619"
+          ],
+          "evidence_code": "K2",
+          "reason": "三角代换后必须完成中段化简和回代。"
+        },
+        {
+          "target_card_id": "GS-292",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-292"
+          ],
+          "evidence_code": "K2",
+          "reason": "共享三角代换中段化简与完整回代。"
+        },
+        {
+          "target_card_id": "GS-592",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-619"
+          ],
+          "evidence_code": "K2",
+          "reason": "三角换元后统一三角函数并凑新变量微分。"
+        },
+        {
+          "target_card_id": "GS-620",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-619",
+            "GS-620"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-621",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-621"
+          ],
+          "evidence_code": "R1",
+          "reason": "只共享上位主题，不能支撑普通强边。"
+        },
+        {
+          "target_card_id": "GS-622",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-622"
+          ],
+          "evidence_code": "R1",
+          "reason": "只共享上位主题，不能支撑普通强边。"
+        },
+        {
+          "target_card_id": "GS-623",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-623"
+          ],
+          "evidence_code": "R1",
+          "reason": "只共享上位主题，不能支撑普通强边。"
+        },
+        {
+          "target_card_id": "GS-624",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-624"
+          ],
+          "evidence_code": "R1",
+          "reason": "只共享上位主题，不能支撑普通强边。"
+        },
+        {
+          "target_card_id": "GS-546",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-619"
+          ],
+          "evidence_code": "R4",
+          "reason": "题目所问数学对象不同。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "53327864ce6d2273b4999d3b10a97fcb28a330071cd9931c7339ebf7a3d6f2de",
+        "current_card_sha256": "27dc64d64c2939f0429873d1ace638551731914fd2f22a652aeb0824564e52b1",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-269",
+          "GS-618"
+        ],
+        "removed_edges": [
+          "GS-592--GS-619"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-619 的关系导航哈希；第6批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-620",
+      "pre_formal_closeout_card_sha256": "d14d8dbb86b366634d873295accfee97c76c1e775921d5cf9e0c7ea5891cacf4",
+      "card_sha256": "a290b8db5c45b2fa40469833265c5dec604c8c9b71a16da4c03947a2c49c5761",
+      "reviewed_detail_sha256": [
+        "7353ad5f810ceee7899c03def2bf4432b24d82afe63a43a9b7c8b851381bf8d7"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "d358e96ec82ec38d24df779c660e5a21762204e31d50a4bc1e5cbbee543f9da9"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "40ae3bbe63ca7d66acc09360fd5d46aade908b4f355b045e8d6dc51e260fe1b5",
+        "50b873e286cbcaf529e52ae5522dca28e092577ad7fcc9b1631a1d4b48e467b4"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫√[x/(1-x√x)] dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle -\\frac43\\sqrt{1-x^{3/2}}+C\\)",
+      "solution_outline": [
+        "把根式统一写成 x^(1/2)/√(1-x^(3/2))。",
+        "令 u=1-x^(3/2)。",
+        "积分并回代。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "根式积分",
+        "幂次统一",
+        "分数幂凑微分",
+        "第一类换元",
+        "第二类换元",
+        "根式换元",
+        "整体凑微分"
+      ],
+      "first_action": "先把原式改写成 \\(\\int\\frac{x^{1/2}}{\\sqrt{1-x^{3/2}}}\\,dx\\)，再凑 \\(d(x^{3/2})\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有把分子 \\(\\sqrt{x}\\,dx\\) 放到导数后面；令 \\(\\sqrt{x}=t\\) 后没有正确利用 \\(dx=2t\\,dt\\) 得到 \\(2t^2dt\\) 并凑 \\(d(1-t^3)\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "仅由 wrong_history 中 2026-06-24 的 1 次独立做错事件支持"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-268",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-620"
+          ],
+          "evidence_code": "K1",
+          "reason": "根式统一为幂后凑内层幂微分。"
+        },
+        {
+          "target_card_id": "GS-636",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-636"
+          ],
+          "evidence_code": "K1",
+          "reason": "统一幂次后把内层幂作为整体变量。"
+        },
+        {
+          "target_card_id": "GS-630",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-630"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-631",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-631"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-621",
+      "pre_formal_closeout_card_sha256": "cafd9c720d05d699cd53c927d6a3536018582dd3d99b2fca3e41634e933c5b9e",
+      "card_sha256": "0225df44761e29e71ac0884d46321f65157ec9730a018b899189c51ad67c056a",
+      "reviewed_detail_sha256": [
+        "3382812509ee5d740669a5b572291631e9e00b818160dff09fa99c6873b8d358"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "544cd0b707797c50a77c5b6b2fe96d142c168872fd77b4ebd06b7e05680022ca"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "464acd7051330e1e4bd8d26d2e5a8ebd52770412a88e728fa65875717a1a8636",
+        "b8968c2c6908e35287a4aee0753ddd51e43f8b9c6f93db21b934ac3ead19d049"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫dx/(sin²x cos⁴x)。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle \\frac13\\tan^3x+2\\tan x-\\cot x+C\\)",
+      "solution_outline": [
+        "用 (sin²x+cos²x)² 补分子。",
+        "按 sin²x cos⁴x 分项相除。",
+        "分别积分为 tan 与 cot 项。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "三角函数有理式",
+        "三角恒等变形",
+        "恒等式补分子",
+        "三角拆项积分",
+        "第一类换元",
+        "整体凑微分"
+      ],
+      "first_action": "先把分子 \\(1\\) 写成 \\((\\sin^2x+\\cos^2x)^2\\)，再展开并按 \\(\\sin^2x\\cos^4x\\) 分项相除。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有想到补分子；把 \\(\\sin^2x\\) 写成 \\(1-\\cos^2x\\) 后，没有继续转成 \\(\\tan x,\\sec x\\) 并拆出 \\(\\sec^2x\\,dx\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "仅由 wrong_history 中 2026-06-24 的 1 次独立做错事件支持"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-632",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-632"
+          ],
+          "evidence_code": "K2",
+          "reason": "都需先展开平方结构，再按积分线性性拆项。"
+        },
+        {
+          "target_card_id": "GS-622",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-621",
+            "GS-622"
+          ],
+          "evidence_code": "R3",
+          "reason": "关系只来自同来源或邻近编号。"
+        },
+        {
+          "target_card_id": "GS-623",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-621",
+            "GS-623"
+          ],
+          "evidence_code": "R3",
+          "reason": "关系只来自同来源或邻近编号。"
+        },
+        {
+          "target_card_id": "GS-624",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-621",
+            "GS-624"
+          ],
+          "evidence_code": "R3",
+          "reason": "关系只来自同来源或邻近编号。"
+        },
+        {
+          "target_card_id": "GS-625",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-621",
+            "GS-625"
+          ],
+          "evidence_code": "R3",
+          "reason": "关系只来自同来源或邻近编号。"
+        },
+        {
+          "target_card_id": "GS-162",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-162"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-622",
+      "pre_formal_closeout_card_sha256": "162fd842291de1115d7f5518913007526f49ad18eea920135c02a719a21974f3",
+      "card_sha256": "0745419c47598757398fbeda96598374981f1b1c3721813d5c3a04a76b2e5a94",
+      "reviewed_detail_sha256": [
+        "39ae17aa2d5d095a5aac3293904840572339e0a0eb7d7ca97ea432d86ad46741"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "3167e40101ab4cfcc1788540ae156c5d8a4b6aa83b8baf0101521559249ff7b5"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "57811d6988e8ba23a0b09b1b8fa2c9ed65b0fd6500ec217a4196555517f9aabf",
+        "62a7074b880af038f97d33e0a7ef71bcf3bdeb200001540b804cfdb427797340"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫dx/(1+sin x)。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle -\\frac{2}{1+\\tan\\frac{x}{2}}+C\\)",
+      "solution_outline": [
+        "把 1+sin x 半角化为平方。",
+        "同除 cos²(x/2) 并令 u=tan(x/2)。",
+        "在定义域连通区间内解释坐标表达式。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "三角函数有理式",
+        "三角恒等变形",
+        "半角公式",
+        "分母平方化",
+        "万能代换",
+        "第一类换元",
+        "整体凑微分"
+      ],
+      "first_action": "先把分母 \\(1+\\sin x\\) 改写成 \\((\\sin\\frac{x}{2}+\\cos\\frac{x}{2})^2\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有想到半角公式；没有想到把 \\(1\\) 写成半角平方和；没有想到分子分母同除 \\(\\cos^2\\frac{x}{2}\\)；没有凑出 \\(d(\\tan\\frac{x}{2})\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 仅记录 2026-06-24 这 1 次独立错误事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-624",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-622",
+            "GS-624"
+          ],
+          "evidence_code": "K2",
+          "reason": "共享半角平方化到正切半角换元的明确动作链。"
+        },
+        {
+          "target_card_id": "GS-623",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-622",
+            "GS-623"
+          ],
+          "evidence_code": "R3",
+          "reason": "关系只来自同来源或邻近编号。"
+        },
+        {
+          "target_card_id": "GS-625",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-622",
+            "GS-625"
+          ],
+          "evidence_code": "R3",
+          "reason": "关系只来自同来源或邻近编号。"
+        },
+        {
+          "target_card_id": "GS-630",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-630"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-632",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-632"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-681",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-681"
+          ],
+          "evidence_code": "R6",
+          "reason": "只共享单个恒等式，不能支撑普通强边。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-623",
+      "pre_formal_closeout_card_sha256": "6d4ba1d714f078a8d1cd02048bc58d4d1b3c9d9cfdbc8b48e88aac7bb116c982",
+      "card_sha256": "f79682d695f0ddc1133420218b29586be8f00aea3ac0a8eb53e7762c6dce877e",
+      "reviewed_detail_sha256": [
+        "194d10ee3c5cba689a11660d3db1caeca7dabe0967d8a91ffb7d0003b099eaad"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "8cb96fe6834178710248f2621344aaf5a85dcdae4f9bc4cae972c166c9775766"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "af500e42a5ef114fa86147f8325c7b8f2b7a85347cdcf46b87c4c0ea9a331b0a",
+        "ce54ee6cc5efea9cdb9e9a6f75cb0095eccb53bfdf8ba1167d2388331c0bdb64"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫sin x/(sin x+cos x) dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle \\frac12x-\\frac12\\ln|\\sin x+\\cos x|+C\\)",
+      "solution_outline": [
+        "令 F=sin x+cos x 并计算 F′。",
+        "把分子写成 AF′+BF。",
+        "分别积分为线性项与 ln|F|。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "三角函数有理式",
+        "分母整体法",
+        "分子线性拆分",
+        "第一类换元",
+        "整体凑微分",
+        "对数型积分"
+      ],
+      "first_action": "先算 \\(F'(x)=\\cos x-\\sin x\\)，再设 \\(\\sin x=A(\\cos x-\\sin x)+B(\\sin x+\\cos x)\\) 并比较系数。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有把分母看成整体；没有主动用分母导数参与拆分分子；因此没有触发 \\(\\int\\frac{F'(x)}{F(x)}dx=\\ln|F(x)|\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 仅记录 2026-06-24 这 1 次独立错误事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-266",
+          "decision": "add_verified_strong_edge",
+          "declaration_owners": [
+            "GS-623"
+          ],
+          "evidence_code": "K1",
+          "reason": "分母整体、分母导数与分子线性拆分为同一首动作。"
+        },
+        {
+          "target_card_id": "GS-624",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-623",
+            "GS-624"
+          ],
+          "evidence_code": "R3",
+          "reason": "关系只来自同来源或邻近编号。"
+        },
+        {
+          "target_card_id": "GS-625",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-623",
+            "GS-625"
+          ],
+          "evidence_code": "R3",
+          "reason": "关系只来自同来源或邻近编号。"
+        },
+        {
+          "target_card_id": "GS-630",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-630"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-632",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-632"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-162",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-162"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ],
+      "later_batch_revalidation": {
+        "batch_number": 16,
+        "date": "2026-07-23",
+        "prior_card_sha256": "ec722f402af34ff899c2776257ebad86aba7e244581c36c0e768c579251001da",
+        "current_card_sha256": "f79682d695f0ddc1133420218b29586be8f00aea3ac0a8eb53e7762c6dce877e",
+        "content_change_scope": "related_field_only",
+        "current_related": [
+          "GS-266",
+          "GS-163"
+        ],
+        "removed_edges": [],
+        "added_edges": [
+          "GS-163"
+        ],
+        "historical_relation_decisions_preserved": true,
+        "note": "GS-163 与本卡共享分母整体、分母导数和分子线性拆分入口，新增为普通强边。"
+      }
+    },
+    {
+      "card_id": "GS-624",
+      "pre_formal_closeout_card_sha256": "ccf590d0ee16e324f6e929dd7eab6cf6794405d15dd49167be3f0f6f2d43fcd6",
+      "card_sha256": "63c642271ddfc95ebfaf40f9603250884e8a1643d5a8904fbc5bdcee584df631",
+      "reviewed_detail_sha256": [
+        "a0be93f5d5d7614fa98dc7311fb8b211fa597436df89c1fb1d1cb078e33d7265"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "1cb535ff8bc14761c22aa10b0ab046ff2d5a9e2ea19dead828e65956c31aeff0"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "05e66d80be765b7a81366d4db22371760bddeb4cc93da76865fd0099d6177578",
+        "6384810e40f3b175b97abd9013fd89643758562645dff53f1682ef7859ba0a54"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫dx/(sin 2x+2sin x)。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle \\frac14\\ln\\left|\\tan\\frac{x}{2}\\right|+\\frac18\\tan^2\\frac{x}{2}+C\\)",
+      "solution_outline": [
+        "先展开 sin 2x 并提取 2sin x。",
+        "对 1+cos x 使用半角公式。",
+        "令 t=tan(x/2) 化为有理积分。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "三角函数有理式",
+        "三角恒等变形",
+        "二倍角公式",
+        "半角公式",
+        "万能代换",
+        "第一类换元",
+        "整体凑微分"
+      ],
+      "first_action": "先将 \\(\\sin2x\\) 写成 \\(2\\sin x\\cos x\\)，把分母化为 \\(2\\sin x(1+\\cos x)\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有想到倍角展开；没有提公因式；没有把 \\(1+\\cos x\\) 半角化；没有触发 \\(t=\\tan\\frac{x}{2}\\) 的万能代换。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 仅记录 2026-06-24 这 1 次独立错误事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-625",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-624",
+            "GS-625"
+          ],
+          "evidence_code": "R3",
+          "reason": "关系只来自同来源或邻近编号。"
+        },
+        {
+          "target_card_id": "GS-162",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-162"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-681",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-681"
+          ],
+          "evidence_code": "R6",
+          "reason": "只共享单个恒等式，不能支撑普通强边。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-625",
+      "pre_formal_closeout_card_sha256": "5582631ad9aed47618679181670579e58aab803d48f14ea2e0fde423211e1641",
+      "card_sha256": "ad7a9bcad2ea3bfc70bb8def9d2818d778b9ea3d565f1071e3839453a5cb2cb1",
+      "reviewed_detail_sha256": [
+        "92d410244430d36b7ce1db0ad096734c880af964fe7c762042e41cc4f4b64c2b"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "65edfaf510299ec85837779d6c3062ad3c3d208609a7b859776d22da01139853"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "b4a941f3d2ec8a8545f96c51165dedba1e7bd0520aab002272b7819118397c99",
+        "ee1f1c2314adb51e0dc9da05d60057a6775001b995cf9f4106ed53ba81013386"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "在 a²+b²>0 下计算 ∫dx/(a²sin²x+b²cos²x)。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle \\begin{cases}\\frac{1}{b^2}\\tan x+C, & a=0,\\ b\\ne0,\\\\ -\\frac{1}{a^2}\\cot x+C, & a\\ne0,\\ b=0,\\\\ \\frac{1}{ab}\\arctan\\!\\left(\\frac{a}{b}\\tan x\\right)+C, & a\\ne0,\\ b\\ne0.\\end{cases}\\)",
+      "solution_outline": [
+        "先按 a、b 是否为零分三支。",
+        "非零支提取 b²cos²x。",
+        "令 u=(a/b)tan x，并按图册区间调整常数。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "三角函数有理式",
+        "参数分类讨论",
+        "参数退化讨论",
+        "第一类换元",
+        "整体凑微分",
+        "提公因式凑微分",
+        "反正切型积分"
+      ],
+      "first_action": "先由 \\(a^2+b^2>0\\) 判断 \\((a,b)\\ne(0,0)\\)，再列出 \\(a=0,b\\ne0\\)、\\(a\\ne0,b=0\\)、\\(a\\ne0,b\\ne0\\) 三种情况。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "默认 \\(a,b\\ne0\\)，没有分情况；非零情况没有提取 \\(b^2\\cos^2x\\) 来制造 \\(\\sec^2x\\,dx=d(\\tan x)\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 仅记录 2026-06-24 这 1 次独立错误事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-630",
+      "pre_formal_closeout_card_sha256": "274abbe748b991aea3ac2c167c678d528c7e47ce30de231a7a052bad2ca402f9",
+      "card_sha256": "ed2ce2cc54ac8681b96c0e4b95fe0a00c9865cd0135eb4b7d56c8d7d47a1be45",
+      "reviewed_detail_sha256": [
+        "a5867a3acd6eabb900396bcdb5beaa3753c8fbef7a5e642a4db49514366e6728"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "409f0dcb737a58a5f6b4814b36d39d761bd555ccadde37027d617794a67802b2"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "37ef5fc699ebb3ef10d0d57b234e9f29b598a529ff05c364a5ef10d1e0a98050",
+        "6da5136813d8f1f13b508d9f5a0e54667aece51c6ca00871a4ec607222f39227"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫x²e^x/(x+2)² dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle -\\frac{x^2e^x}{x+2}+xe^x-e^x+C\\)",
+      "solution_outline": [
+        "识别 dx/(x+2)²=-d(1/(x+2))。",
+        "分部积分并利用 (x²e^x)′ 含 x+2。",
+        "约去一次分母并收口。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "分部积分",
+        "第一类换元",
+        "整体凑微分",
+        "分母平方凑微分",
+        "分部积分降幂"
+      ],
+      "first_action": "先计算 \\((x^2e^x)'\\)，观察结果是否含有 \\((x+2)\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有先检查分子求导后的结构，导致没发现分部积分后可以约掉一个 \\((x+2)\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 仅记录 2026-06-26 这 1 次独立错误事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-686",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-686"
+          ],
+          "evidence_code": "K1",
+          "reason": "分母平方对应负倒数微分，再用分部积分降幂。"
+        },
+        {
+          "target_card_id": "GS-631",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-631"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-632",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-632"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-684",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-684"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-631",
+      "pre_formal_closeout_card_sha256": "6cbc6ad4872e2b6fe9aae946e93d8ecee198095bcba18bef01d121f297c9fd52",
+      "card_sha256": "474f491d78549155819ac83ecbf8f59163bb4003b81d4924a40c8471e752a53a",
+      "reviewed_detail_sha256": [
+        "6a88c0bf5d6e9f4cfa7930d1df33c839a40d3ccdfc56679870be2ebe956a8156"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "ebc2791819f29dfe40722683d3ec83fa8c222da485fc2153f57c6d6ddeef100a"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "1b5aaa1b0de4710040e00420d3e0e8a9ef97912021fcf40f719f27e9f2671a6b",
+        "e6ea475720ea7a4ca53f24f91416ea9a96332ca58f1c2f7143004ebe65fcfde6"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫x⁻²√[(1-x)/(1+x)] dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle -\\frac{\\sqrt{1-x^2}}{x}+\\ln\\left|\\frac{\\sqrt{1+x}+\\sqrt{1-x}}{\\sqrt{1+x}-\\sqrt{1-x}}\\right|+C\\)",
+      "solution_outline": [
+        "令 t=√[(1-x)/(1+x)]。",
+        "平方后反解 x 并求 dx。",
+        "化为有理函数、部分分式并回代。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "根式积分",
+        "第二类换元",
+        "根式换元",
+        "根式整体换元",
+        "换元后反解原变量",
+        "有理函数积分",
+        "部分分式",
+        "复合函数求导",
+        "对数型积分"
+      ],
+      "first_action": "先令 \\(t=\\sqrt{\\frac{1-x}{1+x}}\\)，平方后写 \\(t^2(1+x)=1-x\\) 并反解 \\(x\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有稳定触发根式整体换元；根号套分式求导漏外层根号因子；从 \\(t^2(1+x)=1-x\\) 反解 \\(x\\) 时没有把含 \\(x\\) 项集中并提取 \\(x\\)；部分分式中混淆不可约二次因式和重复一次因式；对 \\(\\arctan x\\) 的导数与积分方向曾混淆。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 仅记录 2026-06-26 这 1 次独立题目事件；同一事件中的四个动作断点不重复计数"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "same_event_action_gaps_not_counted_as_recurrences",
+          "severity": "high",
+          "finding": "同一 2026-06-26 事件中的四个动作断点不能计为四次复发；repeat_count 已归一为 1。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-270",
+          "decision": "add_verified_strong_edge",
+          "declaration_owners": [
+            "GS-631"
+          ],
+          "evidence_code": "K1",
+          "reason": "共享完整根式换元、反解原变量和转部分分式。"
+        },
+        {
+          "target_card_id": "GS-632",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-632"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        },
+        {
+          "target_card_id": "GS-162",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-162"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-632",
+      "pre_formal_closeout_card_sha256": "83025a18f9f58668bfd9335393b728a925e4a0cd5effcf64952422a85ddf4734",
+      "card_sha256": "1253acbb919d4d142684b3b742527ce5039b55c55bd2823b536030a9d597547a",
+      "reviewed_detail_sha256": [
+        "175fa1752b0b52788551029de39e6b0baaa6775821ff3f8f6011b50536316ab6"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "95fb3a468d0af7a674896ea1e686f4a5ea88f1d196d3db12cf14eae9cee4bcf9"
+      ],
+      "reviewed_unique_asset_sha256": [
+        "21ee9341caef907943a0391119c91e4bacb36ee31e76a1c047a2b9effdce40f3",
+        "df2734b67e2e28ad04f8c8d70b7b12fcb1b85bbdb0b49ad3fbf8a52dd25319ea"
+      ],
+      "physical_asset_path_count": 2,
+      "content_review_status": "verified",
+      "question_summary": "计算 ∫e^(2x)(1+tan x)² dx。",
+      "asked_output": "求不定积分",
+      "answer": "\\(\\displaystyle e^{2x}\\tan x+C\\)",
+      "solution_outline": [
+        "展开平方并用 1+tan²x=sec²x。",
+        "把 sec²x 项写成 d(tan x) 做分部积分。",
+        "与剩余 tan x 项精确抵消。"
+      ],
+      "knowledge_nodes": [
+        "不定积分",
+        "一元函数积分学的计算",
+        "三角函数有理式",
+        "三角恒等变形",
+        "三角拆项积分",
+        "第一类换元",
+        "整体凑微分",
+        "分部积分"
+      ],
+      "first_action": "先展开 \\((1+\\tan x)^2\\)，并用 \\(1+\\tan^2x=\\sec^2x\\) 整理成 \\(e^{2x}\\sec^2x+2e^{2x}\\tan x\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "没有把整理后的两项拆成两个积分分别处理，也没有继续把 \\(\\int e^{2x}\\sec^2x\\,dx\\) 写成 \\(\\int e^{2x}\\,d(\\tan x)\\) 做分部积分观察抵消。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 仅记录 2026-06-27 这 1 次独立错误事件"
+      },
+      "consistency": {
+        "question_solution": "consistent",
+        "formal_visual": "consistent"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-710",
+          "decision": "verify_existing_strong_edge",
+          "declaration_owners": [
+            "GS-710"
+          ],
+          "evidence_code": "KP",
+          "reason": "B2 已验证保护边：拆项、并排分部积分和残余项精确抵消。"
+        },
+        {
+          "target_card_id": "GS-076",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-076"
+          ],
+          "evidence_code": "R1",
+          "reason": "只共享上位主题，不能支撑普通强边。"
+        },
+        {
+          "target_card_id": "GS-684",
+          "decision": "remove_broad_or_stale_edge",
+          "removed_declaration_owners": [
+            "GS-684"
+          ],
+          "evidence_code": "R2",
+          "reason": "只共享方法名称，具体对象、第一动作或收口目标不同。"
+        }
+      ]
+    }
+  ]
+}

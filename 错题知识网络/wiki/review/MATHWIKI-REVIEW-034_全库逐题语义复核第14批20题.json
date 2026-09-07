@@ -1,0 +1,2388 @@
+{
+  "schema_version": "math_target_semantic_review_batch_v1",
+  "wiki_id": "MATHWIKI-REVIEW-034",
+  "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260723-B14",
+  "title": "全库逐题语义复核第14批20题",
+  "reviewed_on": "2026-07-23",
+  "batch_number": 14,
+  "campaign_formal_card_count": 831,
+  "scope": {
+    "card_count": 20,
+    "physical_asset_path_count": 22,
+    "unique_visual_content_sha256_count": 20,
+    "canonical_detail_count": 20,
+    "reviewed_detail_file_count": 21,
+    "physical_asset_role_path_counts": {
+      "question": 21,
+      "solution": 1,
+      "reference": 0
+    },
+    "unique_visual_content_role_counts": {
+      "question": 19,
+      "solution": 1,
+      "reference": 0
+    }
+  },
+  "frozen_source_state_sha256": "694530e732bcb2f4381b996ea1f54a888958bcb323b8c33e55acb6fe78c91f74",
+  "frozen_selection": {
+    "selection_order_sha256": "86531a8cb3bc4850d5bdf52e1925357000fd9961e6eb136d462c5f1a99a52cfc",
+    "selection_compact_json_sha256": "2490b22c509778595b735fe3404d72f8aea8b8fcb4addf44dab2a4c12e54a75d",
+    "canonical_snapshot_sha256": "e3ae76b55d7326b729bdd02e0faf2b16eb721e0bc4ec2fad2717f36458da5c9b",
+    "visual_manifest_sha256": "704faf54251185632570ff30cfbef8ccf16ccf043d05868ed034ff685cb1acc3",
+    "record_write_manifest_sha256": "1e4ed35830ca4717470f4b8183d8a289ca4dc5e918364e401599fbcbee943790",
+    "registered_cards": 20,
+    "registered_detail_files": 21,
+    "registered_physical_asset_paths": 22,
+    "pre_review_path_hash_drift_count": 0
+  },
+  "guardrails": {
+    "formal_related_write": true,
+    "formal_card_write": true,
+    "formal_visual_write": true,
+    "mode": "FORMAL_CLOSEOUT",
+    "review_origin_mode": "FULL_VISUAL_TARGET_REVIEW",
+    "formal_closeout_ref": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B14",
+    "personal_error_requires_explicit_evidence": true,
+    "duplicate_physical_assets_reviewed_once_per_sha256": true,
+    "stable_id_merge_or_delete": false,
+    "wrongnet_rebuild_policy": "exactly_once_after_all_formal_source_edits"
+  },
+  "evidence_distribution": {
+    "user_confirmed": 7,
+    "pending_user_confirmation": 13,
+    "legacy_unclassified": 0
+  },
+  "evidence_card_ids": {
+    "user_confirmed": [
+      "GS-104",
+      "GS-107",
+      "GS-109",
+      "GS-114",
+      "GS-115",
+      "GS-120",
+      "GS-121"
+    ],
+    "pending_user_confirmation": [
+      "GS-103",
+      "GS-105",
+      "GS-106",
+      "GS-108",
+      "GS-110",
+      "GS-111",
+      "GS-112",
+      "GS-113",
+      "GS-116",
+      "GS-117",
+      "GS-118",
+      "GS-119",
+      "GS-122"
+    ]
+  },
+  "repeat_count_vector": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1
+  ],
+  "asset_boundary": {
+    "solution_image_card_ids": [
+      "GS-115"
+    ],
+    "question_only_card_ids": [
+      "GS-103",
+      "GS-104",
+      "GS-105",
+      "GS-106",
+      "GS-107",
+      "GS-108",
+      "GS-109",
+      "GS-110",
+      "GS-111",
+      "GS-112",
+      "GS-113",
+      "GS-114",
+      "GS-116",
+      "GS-117",
+      "GS-118",
+      "GS-119",
+      "GS-120",
+      "GS-121",
+      "GS-122"
+    ],
+    "visual_gap_card_ids": [],
+    "same_card_alias_groups": [
+      {
+        "group_id": "B14-ALIAS-01",
+        "card_id": "GS-121",
+        "visual_ids": [
+          "VIS-GS-121",
+          "MN4-GS-CH01-169"
+        ],
+        "evidence": "byte_identical_question_image"
+      }
+    ],
+    "identity_hold_groups": [
+      {
+        "group_id": "B14-ID-01",
+        "selected_card_id": "GS-107",
+        "member_ids": [
+          "GS-092",
+          "GS-107"
+        ],
+        "evidence": "same_source_refid_same_question_and_byte_identical_question_image"
+      },
+      {
+        "group_id": "B14-ID-02",
+        "selected_card_id": "GS-108",
+        "member_ids": [
+          "GS-093",
+          "GS-108"
+        ],
+        "evidence": "same_source_refid_same_question_and_byte_identical_question_image"
+      },
+      {
+        "group_id": "B14-ID-03",
+        "selected_card_id": "GS-112",
+        "member_ids": [
+          "GS-112",
+          "GS-117"
+        ],
+        "evidence": "same_source_refid_same_question_and_byte_identical_question_image"
+      }
+    ]
+  },
+  "relation_audit": {
+    "existing_verified": [
+      {
+        "source_card_id": "GS-103",
+        "target_card_id": "GS-509",
+        "declaration_owners": [
+          "GS-103",
+          "GS-509"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同为点处导数与去心导函数极限的对象边界及推出方向判定。"
+      },
+      {
+        "source_card_id": "GS-104",
+        "target_card_id": "GS-452",
+        "declaration_owners": [
+          "GS-104",
+          "GS-452"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同为一点导数条件只能通过差商保号给出局部值比较，不能直接推出邻域单调。"
+      },
+      {
+        "source_card_id": "GS-106",
+        "target_card_id": "GS-447",
+        "declaration_owners": [
+          "GS-106",
+          "GS-447"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同为绝对值零点只提供不可导候选，必须结合外部零因子阶数和点处差商闭合。"
+      },
+      {
+        "source_card_id": "GS-109",
+        "target_card_id": "GS-448",
+        "declaration_owners": [
+          "GS-109",
+          "GS-448"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同为含绝对值的分段可导性判定，需先分段统一自变量再逐阶检查。"
+      },
+      {
+        "source_card_id": "GS-113",
+        "target_card_id": "GS-455",
+        "declaration_owners": [
+          "GS-113",
+          "GS-455"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同为 Peano 余项和指定阶高阶无穷小下的系数匹配。"
+      },
+      {
+        "source_card_id": "GS-114",
+        "target_card_id": "GS-115",
+        "declaration_owners": [
+          "GS-114",
+          "GS-115"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同为乘积在特殊点存在唯一零因子时，只保留导零因子的贡献。"
+      },
+      {
+        "source_card_id": "GS-114",
+        "target_card_id": "GS-528",
+        "declaration_owners": [
+          "GS-114",
+          "GS-528"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同为根点高阶导数先提出根因子，再用莱布尼茨公式筛选唯一贡献项。"
+      },
+      {
+        "source_card_id": "GS-120",
+        "target_card_id": "GS-549",
+        "declaration_owners": [
+          "GS-120",
+          "GS-549"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同由 arctan 的导函数几何级数或泰勒展开读取 0 点高阶导系数。"
+      },
+      {
+        "source_card_id": "GS-121",
+        "target_card_id": "GS-307",
+        "declaration_owners": [
+          "GS-121",
+          "GS-307"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同为先识别函数奇偶结构，再用高阶导数奇偶性确定 0 点导数。"
+      },
+      {
+        "source_card_id": "GS-121",
+        "target_card_id": "GS-449",
+        "declaration_owners": [
+          "GS-121",
+          "GS-449"
+        ],
+        "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+        "rationale": "同为奇函数与其导函数奇偶性、零点取值之间的具体判定。"
+      }
+    ],
+    "removed": [
+      {
+        "source_card_id": "GS-104",
+        "target_card_id": "GS-127",
+        "declaration_owners": [
+          "GS-127"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-104",
+        "target_card_id": "GS-530",
+        "declaration_owners": [
+          "GS-530"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-104",
+        "target_card_id": "GS-540",
+        "declaration_owners": [
+          "GS-540"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-112",
+        "target_card_id": "GS-117",
+        "declaration_owners": [
+          "GS-112",
+          "GS-117"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-113",
+        "target_card_id": "GS-005",
+        "declaration_owners": [
+          "GS-113"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-113",
+        "target_card_id": "GS-287",
+        "declaration_owners": [
+          "GS-113"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-113",
+        "target_card_id": "GS-349",
+        "declaration_owners": [
+          "GS-113"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-114",
+        "target_card_id": "GS-116",
+        "declaration_owners": [
+          "GS-114",
+          "GS-116"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-115",
+        "target_card_id": "GS-116",
+        "declaration_owners": [
+          "GS-116"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-115",
+        "target_card_id": "GS-120",
+        "declaration_owners": [
+          "GS-115",
+          "GS-120"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-115",
+        "target_card_id": "GS-123",
+        "declaration_owners": [
+          "GS-115"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-115",
+        "target_card_id": "GS-307",
+        "declaration_owners": [
+          "GS-115"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-116",
+        "target_card_id": "GS-528",
+        "declaration_owners": [
+          "GS-116",
+          "GS-528"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-121",
+        "target_card_id": "GS-457",
+        "declaration_owners": [
+          "GS-457"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      },
+      {
+        "source_card_id": "GS-121",
+        "target_card_id": "GS-472",
+        "declaration_owners": [
+          "GS-472"
+        ],
+        "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+      }
+    ],
+    "added": [
+      {
+        "source_card_id": "GS-105",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-105",
+          "GS-458"
+        ],
+        "decision": "add_strong_edge",
+        "rationale": "同为复合自变量导数定义题，必须先还原真实增量并补偿比例或负号。"
+      },
+      {
+        "source_card_id": "GS-113",
+        "target_card_id": "GS-533",
+        "declaration_owners": [
+          "GS-113",
+          "GS-533"
+        ],
+        "decision": "add_strong_edge",
+        "rationale": "同为由 o(x^3) 强制三阶及以下展开系数全部消失。"
+      },
+      {
+        "source_card_id": "GS-116",
+        "target_card_id": "GS-118",
+        "declaration_owners": [
+          "GS-116",
+          "GS-118"
+        ],
+        "decision": "add_strong_edge",
+        "rationale": "同为低次多项式乘指数函数的高阶导数，利用莱布尼茨公式有限截断。"
+      },
+      {
+        "source_card_id": "GS-118",
+        "target_card_id": "GS-119",
+        "declaration_owners": [
+          "GS-118",
+          "GS-119"
+        ],
+        "decision": "add_strong_edge",
+        "rationale": "同为二次多项式参与的高阶乘积求导，共享三项截断和组合系数骨架。"
+      },
+      {
+        "source_card_id": "GS-119",
+        "target_card_id": "GS-120",
+        "declaration_owners": [
+          "GS-119",
+          "GS-120"
+        ],
+        "decision": "add_strong_edge",
+        "rationale": "同先建立含 1+x^2 的乘积恒等式，再高阶求导并在 0 点形成两阶递推。"
+      },
+      {
+        "source_card_id": "GS-122",
+        "target_card_id": "GS-297",
+        "declaration_owners": [
+          "GS-122",
+          "GS-297"
+        ],
+        "decision": "add_strong_edge",
+        "rationale": "同为函数方程中同时出现 x 与 1/x，需先构造互逆替换方程组再消元。"
+      }
+    ],
+    "existing_verified_count": 10,
+    "existing_verified_owner_count": 20,
+    "removed_count": 15,
+    "removed_owner_count": 19,
+    "added_count": 6,
+    "added_owner_count": 12,
+    "bidirectional_owner_declarations_added_count": 16,
+    "combined_strong_logical_edge_count": 16,
+    "combined_owner_declaration_count": 32,
+    "zero_degree_card_ids": [
+      "GS-107",
+      "GS-108",
+      "GS-110",
+      "GS-111",
+      "GS-112",
+      "GS-117"
+    ]
+  },
+  "campaign_progress": {
+    "batch_number": 14,
+    "batch_reviewed_cards": 20,
+    "cumulative_reviewed_cards": 280,
+    "remaining_cards": 551,
+    "cumulative_physical_asset_paths_reviewed": 572,
+    "cumulative_unique_asset_count": 445,
+    "cumulative_unique_asset_role_counts": {
+      "question": 260,
+      "solution": 183,
+      "reference": 2
+    }
+  },
+  "cards": [
+    {
+      "card_id": "GS-103",
+      "card_path": "错题知识网络/错题卡/GS-103_1000题强化3.17.md",
+      "card_sha256": "2d78fe407f835a30d34e766ce34d1503cf80b2e77295b65d6c3180a8601c9ea3",
+      "later_batch_revalidation": {
+        "batch_number": 19,
+        "date": "2026-07-23",
+        "prior_card_sha256": "716cf84cf9a7b2dc7d1fe118f3c7d177f8a737dbbb1da194583e62af91e89bd5",
+        "current_card_sha256": "b10feb06789155d88066ef01d00005b73a9effbaee04ac0a895a136a461c4166",
+        "content_change_scope": "related_field_only",
+        "current_related": [
+          "GS-509",
+          "GS-223"
+        ],
+        "removed_edges": [],
+        "added_edges": [
+          "GS-223"
+        ],
+        "historical_relation_decisions_preserved": true,
+        "note": "第19批仅新增 GS-103 与 GS-223 的双向具体强边；第14批题面、答案、解析、知识点修复与 pending_user_confirmation 证据边界保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-103_1000题强化3.17.md"
+      ],
+      "reviewed_detail_sha256": [
+        "203ac01f2026e086d3725cafe18c88f38b6ac53cddc456be6cb2c8766aedd45c"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-103/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "a354426ac8b5d20553e5a99289a64735658f46bdabd2a3f15be5f9e93f17e9ae"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设函数在点 a 附近有定义并在去心邻域可导，判断点处导数与去心导函数极限之间的命题。",
+      "asked_output": "判断正确命题并说明依据",
+      "answer": "选 C；若 $\\lim_{x\\to a} f'(x)=\\infty$，则 $f'(a)$ 不存在。",
+      "solution_outline": [
+        "先区分点处差商定义与去心邻域导函数极限。",
+        "对错误方向分别构造反例。",
+        "对无穷导函数极限与点处可导的冲突，用拉格朗日中值定理连接差商与导数值。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "可导性判定",
+        "导函数极限",
+        "拉格朗日中值定理"
+      ],
+      "first_action": "先标出每个选项是在讨论点处导数还是去心邻域导函数极限，再判断推理方向是否可逆。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；题图与解析只能确认复做入口是区分点处导数 $f'(a)$ 与去心邻域导函数极限 $\\lim_{x\\to a}f'(x)$，该入口是否为当时第一断点仍待用户复做确认。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "仅有 2026-05-07 一条失败记录；个人作答步骤未留存。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "point_derivative_limit_boundary_and_mvt_repaired",
+          "severity": "medium",
+          "finding": "已区分点处导数与去心导函数极限，修正导函数连续性表述，并用拉格朗日中值定理补齐正确命题证明。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-103",
+          "target_card_id": "GS-509",
+          "declaration_owners": [
+            "GS-103",
+            "GS-509"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为点处导数与去心导函数极限的对象边界及推出方向判定。"
+        }
+      ],
+      "batch32_lineage_revalidation": {
+        "batch_number": 32,
+        "date": "2026-07-24",
+        "prior_card_sha256": "b10feb06789155d88066ef01d00005b73a9effbaee04ac0a895a136a461c4166",
+        "current_card_sha256": "2d78fe407f835a30d34e766ce34d1503cf80b2e77295b65d6c3180a8601c9ea3",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-223"
+        ],
+        "removed_edges": [
+          "GS-103--GS-509"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第32批重绑 GS-103 的当前关系导航哈希；第14批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-104",
+      "card_path": "错题知识网络/错题卡/GS-104_1000题强化3.23.md",
+      "card_sha256": "ccc9816a1d4603eb805a64833e52b368c136596d8891a8135e307b944173cfda",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-104_1000题强化3.23-168035-2026.5.15.md"
+      ],
+      "reviewed_detail_sha256": [
+        "b79a5322145098f4e9b63dd1143016f157a64d0cf8341aa010455f33140461b6"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-104/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "76bca415793c09c2e05d133cc75976d7ca74e542c2770d85c26f15de45def7bb"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f 在 x0 处可导，且 f(x0)=x0^2、f'(x0)>2x0，判断 f(x)-x^2 在左右邻域的符号及单调性命题。",
+      "asked_output": "判断四个局部结论中哪些成立",
+      "answer": "③④。",
+      "solution_outline": [
+        "构造 g(x)=f(x)-x^2。",
+        "由 g'(x0)>0 得差商在充分小邻域内保正。",
+        "结合 x-x0 的左右符号判断 g(x)-g(x0)，但不把一点导数误写成区间单调。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "极限保号性",
+        "一点导数与局部值比较"
+      ],
+      "first_action": "先设 \\(g(x)=f(x)-x^2\\)，计算 \\(g'(x_0)=f'(x_0)-2x_0>0\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "再次把“一点处导数 \\(f'(x_0)>0\\)”误用成“邻域内函数单调增加”；实际应回到导数定义，只能由差商极限保号推出 \\(x\\) 靠近 \\(x_0\\) 时 \\(f(x)-f(x_0)\\) 与 \\(x-x_0\\) 同号，不能推出整个邻域任意两点之间单调。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "wrong_history 已记录日期未归档的首次失败与 2026-05-15 的同一方法复发。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "local_sign_not_neighborhood_monotonicity_verified",
+          "severity": "medium",
+          "finding": "已保留两次同方法失败证据，明确一点导数只支持局部差商保号而不能推出整个邻域单调，并清理宽泛旧边。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-104",
+          "target_card_id": "GS-127",
+          "declaration_owners": [
+            "GS-127"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-104",
+          "target_card_id": "GS-530",
+          "declaration_owners": [
+            "GS-530"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-104",
+          "target_card_id": "GS-540",
+          "declaration_owners": [
+            "GS-540"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-104",
+          "target_card_id": "GS-452",
+          "declaration_owners": [
+            "GS-104",
+            "GS-452"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为一点导数条件只能通过差商保号给出局部值比较，不能直接推出邻域单调。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-105",
+      "card_path": "错题知识网络/错题卡/GS-105_1000题A组3.3.md",
+      "card_sha256": "beae931c3caa76457379223696d9edaa78fb946f43f3da9f65b7d850593cf0d2",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-105_1000题A组3.3.md"
+      ],
+      "reviewed_detail_sha256": [
+        "1f22b245658b7cce348b582987b0375625069428aaf4c5a4778381affaccb320"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-105/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "9775a79495877f056c7b58e82f0150af4be2bfe59a1c425bb25bacffcb252266"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知 f(1)=0 且 x 趋于 2 时 ln(x-1)/f(3-x) 趋于 2，求 f'(1)。",
+      "asked_output": "求 f'(1)",
+      "answer": "f'(1)=-1/2。",
+      "solution_outline": [
+        "先用 ln(x-1) 与 x-2 的等价关系。",
+        "令 u=3-x，把函数自变量对齐到 1。",
+        "保留 u-1=-(x-2) 的负号并还原导数定义。"
+      ],
+      "knowledge_nodes": [
+        "导数定义",
+        "等价无穷小",
+        "复合自变量真实增量",
+        "换元比例与符号补偿"
+      ],
+      "first_action": "先令 u=3-x，写出 u-1=2-x=-(x-2)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：先把 ln(x-1) 等价为 x-2，再把 f(3-x) 的自变量换到 1 附近，负号来自 3-x-1=2-x。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "true_increment_sign_and_strong_edge_repaired",
+          "severity": "medium",
+          "finding": "已把复合自变量还原到真实增量，保留负号，并新增与 GS-458 的双向强关系；个人第一断点仍待确认。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-105",
+          "target_card_id": "GS-458",
+          "declaration_owners": [
+            "GS-105",
+            "GS-458"
+          ],
+          "decision": "add_strong_edge",
+          "rationale": "同为复合自变量导数定义题，必须先还原真实增量并补偿比例或负号。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-106",
+      "card_path": "错题知识网络/错题卡/GS-106_1000题B组3.1.md",
+      "card_sha256": "0d4a1af8779ca32a1a19b713ab7e3121b1c152a8ef4cc57eb3ff5f6c084cc9fa",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-106_1000题B组3.1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "50dfc97829124f01de50945b3b9b9083ba36e00528cfd0db53dd85f95e8df078"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-106/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "70b514fd3668b330374788ee28b57b06e06c9c3425c2ecccca49d9c8b9db8489"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f(x)=(e^x-1)|x^3-x^2+x|，判断不可导点个数。",
+      "asked_output": "求不可导点个数",
+      "answer": "不可导点个数为 0。",
+      "solution_outline": [
+        "分解绝对值内部并确认唯一实零点为 0。",
+        "把绝对值内部零点只列为不可导候选点。",
+        "在 0 处用导数定义检查外部零因子是否消掉尖点。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "可导性判定",
+        "绝对值函数",
+        "零点阶数与尖点消除"
+      ],
+      "first_action": "先分解绝对值内部表达式并列出内部为零的候选点",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：先找绝对值内部零点，再检查外部因子 e^x-1 是否把尖点阶数抬高；本题 x=0 处尖点被高阶小量消掉。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "absolute_value_candidate_point_check_repaired",
+          "severity": "medium",
+          "finding": "已将绝对值内部零点改为候选点，并用导数定义验证外部零因子消掉尖点，同时清除无关知识标签。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-106",
+          "target_card_id": "GS-447",
+          "declaration_owners": [
+            "GS-106",
+            "GS-447"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为绝对值零点只提供不可导候选，必须结合外部零因子阶数和点处差商闭合。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-107",
+      "card_path": "错题知识网络/错题卡/GS-107_1000题B组3.5-2.md",
+      "card_sha256": "1ae77b59e6219fd0b2d4cc95fc346ff2f341186d7cd7802cb0c4bbb3977b4d59",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-107_1000题B组3.5.md"
+      ],
+      "reviewed_detail_sha256": [
+        "50c6612cf6b20612d14f9bcd09fb5354665346ae0c0e062b213764fb45182fd7"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-107/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "8a80517ac557a9bd1136782ff70304d98eea9709481043d1631f2d4bd184d39b"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f(x)=x^2 sin(1/x)（x 不等于 0）并补 f(0)=0，令 F(x)=g(f(x)) 且 g 可导，判断 F 在 0 处的可导性。",
+      "asked_output": "判断 F 在 0 处的性质",
+      "answer": "B；$F$ 在 $x=0$ 处可导，且 $F'(0)=0$。",
+      "solution_outline": [
+        "先由导数定义求 f'(0)=0。",
+        "对外层可导函数使用可导余项表示，避免除以可能为零的内层增量。",
+        "得到 F'(0)=0，并保持与 GS-092 的身份待裁决边界。"
+      ],
+      "knowledge_nodes": [
+        "导数定义",
+        "复合函数可导性",
+        "链式法则",
+        "可导展开"
+      ],
+      "first_action": "先算 \\(f'(0)=\\lim_{x\\to0}\\frac{f(x)-f(0)}{x}=0\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "既有记录指出未调取复合函数在点处可导的链式法则入口。现有旧解析曾无条件除以 $f(x)-f(0)$；本题该量会反复为 0，故已改用可导余项表示。用户已确认本卡与 GS-092 同题并复做正确。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 记录 1 次方法入口失败；2026-05-15 用户确认同题并复做正确。"
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold_with_GS_092",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "illegal_inner_increment_division_removed_and_identity_held",
+          "severity": "medium",
+          "finding": "已删除对可能为零的内层增量进行除法的旧证明，改用可导余项，并与 GS-092 保持同题身份待裁决。",
+          "resolution_status": "held_for_identity_resolution"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "card_id": "GS-107",
+          "identity_group_id": "B14-ID-01",
+          "member_ids": [
+            "GS-092",
+            "GS-107"
+          ],
+          "decision": "hold_without_merge_delete_or_aggregate_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-108",
+      "card_path": "错题知识网络/错题卡/GS-108_1000题B组3.11-2.md",
+      "card_sha256": "0ed8c22ef807aacf5f4bceb3a29161db583365c23dc5ff98f9e684639fd5dedd",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-108_1000题B组3.11-159414.md"
+      ],
+      "reviewed_detail_sha256": [
+        "8696d5f7043f806a199628b04d4ee06c673dcef811dfdc2c0809d9d9c90f8b70"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-108/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "92edf2ee985c88800958aa10cca8e5c83960e87a53ab0ac9969013d0485c909b"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f 二阶连续可导且 f(0)=0，定义 g(x)=f(x)/x（x 不等于 0）并补 g(0)=f'(0)，求 g' 并判断其在 0 处的连续性。",
+      "asked_output": "求 g'(x) 并讨论 g' 在 0 处的连续性",
+      "answer": "$g'(x)=\\begin{cases}\\dfrac{x f'(x)-f(x)}{x^2},&x\\ne0,\\\\[4pt]\\dfrac12f''(0),&x=0,\\end{cases}$ 且 $g'$ 在 $x=0$ 处连续。",
+      "solution_outline": [
+        "把 x 不等于 0 与 x=0 两种情形分开。",
+        "去心处用商法则，补点处用导数定义或二阶展开。",
+        "比较 g'(0) 与去心极限，得到 g' 在 0 处连续，并保持与 GS-093 的身份待裁决边界。"
+      ],
+      "knowledge_nodes": [
+        "分段函数",
+        "导数定义",
+        "二阶连续可导",
+        "导函数连续性"
+      ],
+      "first_action": "先把 x≠0 与 x=0 两种情形分开求导",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始作答未独立留存；当前只确认复做入口是区分 $x\\ne0$ 的去心求导公式与 $x=0$ 的补点导数定义。该入口是否为本卡当时第一断点待复做确认。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "仅有 2026-05-07 一条失败日期记录；个人作答步骤未独立留存。"
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold_with_GS_093",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "piecewise_point_derivative_boundary_and_identity_held",
+          "severity": "medium",
+          "finding": "已严格分开去心商法则与补点导数定义，保留二分之一系数，并与 GS-093 保持同题身份待裁决。",
+          "resolution_status": "held_for_identity_resolution"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "card_id": "GS-108",
+          "identity_group_id": "B14-ID-02",
+          "member_ids": [
+            "GS-093",
+            "GS-108"
+          ],
+          "decision": "hold_without_merge_delete_or_aggregate_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-109",
+      "card_path": "错题知识网络/错题卡/GS-109_2023年真题第五题.md",
+      "card_sha256": "9ce5da74d4fa64b691b7a757f14a1bb52fe018bdbea4e0f4bb8b9bdc7499ae4c",
+      "later_batch_revalidation": {
+        "batch_number": 29,
+        "date": "2026-07-24",
+        "prior_card_sha256": "81cccbb39aea31b668cf7acbcab7d594ec50a7099c1bef45f2ae13a1b7f6a2ee",
+        "current_card_sha256": "9ce5da74d4fa64b691b7a757f14a1bb52fe018bdbea4e0f4bb8b9bdc7499ae4c",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "暂无强边"
+        ],
+        "removed_edges": [
+          "GS-448"
+        ],
+        "added_edges": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第29批删除 GS-109 对 GS-448 的旧所有者声明；仅同步关系元数据与导航引用，原逐题语义判断保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-109_2023年真题第五题.md"
+      ],
+      "reviewed_detail_sha256": [
+        "3d137eb53f8def89ec9a4911ff23b7250c72dfbc85399f1ecb167768f32785da"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-109/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "11cf257be85aeb7de122c5d338781d70ddd7a9ee75057439de8b233c451256fe"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "参数方程 x=2t+|t|、y=|t|sin t 确定 y=f(x)，判断 f 在 0 附近的一阶与二阶可导性。",
+      "asked_output": "判断 f' 的连续性和 f''(0) 是否存在",
+      "answer": "选 C；f'(x) 连续，但 f''(0) 不存在。",
+      "solution_outline": [
+        "按 t 大于等于 0 与 t 小于 0 分段消去绝对值。",
+        "分别消去参数，写成同一自变量 x 的分段函数。",
+        "依次区分 f'(0)、f' 的连续性和 f''(0) 的定义差商。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "参数方程求导",
+        "可导性判定",
+        "分段函数",
+        "导数定义",
+        "导函数连续性",
+        "二阶导数存在性"
+      ],
+      "first_action": "先分别写出 t≥0 与 t<0 时的 x(t), y(t)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "看到参数方程含 |t| 时没有先按 t≥0 与 t<0 分段、消去参数并写成 f(x)；又把 f'(0) 的差商、f' 在 0 处连续性的极限和 f''(0) 的差商混为一层。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-07-19 首次获得用户确认的具体断点；2026-05-07 个人过程未记录，不能认定为同方法复发。"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "parameter_absolute_value_and_derivative_layers_repaired",
+          "severity": "medium",
+          "finding": "已按参数正负重建分段函数，区分一阶导数、导函数连续性与二阶导数定义，并补齐 GS-448 双向声明。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-109",
+          "target_card_id": "GS-448",
+          "declaration_owners": [
+            "GS-109",
+            "GS-448"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为含绝对值的分段可导性判定，需先分段统一自变量再逐阶检查。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-110",
+      "card_path": "错题知识网络/错题卡/GS-110_强化例题4.12026.4.1.md",
+      "card_sha256": "237f510674b510544b8103c9c6951f2956e2eff5d8ddceaf3b79389087c1187f",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-110_强化例题4.1-2026.4.1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "cca8a4c61b96154a44c156f9665a40a8c49c010afc23ced55808616d55d40096"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-110/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "cf48690ee6e2c66c7fb30ee1e93725945f2e9e35a9fa5857396e0238827c90d1"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知 x^2 f'(x)=f^2(x)、f(1)=1/3，求 f 在 0 点的 n 阶导数。",
+      "asked_output": "求 f^(n)(0)",
+      "answer": "选 D；对 n≥1，f^(n)(0)=(-2)^(n-1)n!。",
+      "solution_outline": [
+        "先由初值排除零解支，并写清分离变量的非零条件。",
+        "求出显式函数 f(x)=x/(1+2x)。",
+        "在 0 附近作幂级数展开并用 n! 读取系数，指标为 n 大于等于 1。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "高阶导数",
+        "幂级数展开",
+        "微分方程"
+      ],
+      "first_action": "先确认 f(1)=1/3 选中非零解支，再在 x≠0、f≠0 的区间上分离变量",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮仅由题图与解析确认安全复做入口：先在非零解支上把微分方程解成显式函数 f(x)=x/(1+2x)，再用幂级数系数读取 n≥1 时的 f^(n)(0)。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "ode_solution_branch_division_and_index_range_repaired",
+          "severity": "medium",
+          "finding": "已补齐零解支排除、分离变量可除条件和 n 大于等于 1 的指标范围，避免把安全解题链写成已确认个人错因。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-111",
+      "card_path": "错题知识网络/错题卡/GS-111_强化例题4.22026.4.1.md",
+      "card_sha256": "87a7845f66fe47a46e6f226e5ffe8f6152924aba85a997f73aa36f51750721d7",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-111_强化例题4.2-2026.4.1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "419e07d33ec7da70c824fcbcfc9e1e981ae8f3016abacb33685e6c98fae8f1ad"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-111/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "8a79d1d4ac889d6dea2f11f351407bcf451c9e9f8999722255d2cd54f605139b"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "求 1/[x(1-x)] 的 n 阶导数，并求 z=y^2/[x(1-x)] 关于 x 的 n 阶偏导。",
+      "asked_output": "求一元函数 n 阶导数及关于 x 的 n 阶偏导",
+      "answer": "d^n/dx^n[1/(x(1-x))]=n![(-1)^n/x^(n+1)+1/(1-x)^(n+1)]；∂^n z/∂x^n=y^2 n![(-1)^n/x^(n+1)+1/(1-x)^(n+1)]。",
+      "solution_outline": [
+        "先将 1/[x(1-x)] 拆为 1/x+1/(1-x)。",
+        "分别套用两个基本分式的高阶导公式并处理符号。",
+        "第二问关于 x 求偏导时把 y^2 作为常数。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "高阶导数",
+        "部分分式",
+        "多元函数偏导"
+      ],
+      "first_action": "先把 1/[x(1-x)] 拆成 1/x+1/(1-x)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与解析确认复做入口：先把 1/[x(1-x)] 拆成 1/x+1/(1-x)，再分别套高阶导公式；对 x 求偏导时把 y^2 当常数。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "partial_fraction_formula_and_variable_roles_repaired",
+          "severity": "medium",
+          "finding": "已清除 OCR 公式污染，恢复部分分式高阶导公式，并明确关于 x 求偏导时 y 为常量。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-112",
+      "card_path": "错题知识网络/错题卡/GS-112_1000讲B组4.152026.4.1.md",
+      "card_sha256": "692f3fc8cdd8048e9ccd1eff746f4c1b1a525fb0bf7b2a382f23450bef5d0ac1",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-112_1000讲B组4.15-2026.4.1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "fd793d2c76e8ed29d5cadcb8d386fc29494ce9dc9a42759a87f94179202b68f3"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-112/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "832b54f25a37fd5d4e8fd660333330325df6db95d73c9328455840c25add6fb3"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知 f(x)=x^2/(1-x^2)，求 f^(2n)(0)。",
+      "asked_output": "求 f^(2n)(0)",
+      "answer": "$f^{(2n)}(0)=(2n)!$。",
+      "solution_outline": [
+        "把 x^2/(1-x^2) 展开成只含偶次幂的几何级数。",
+        "读取 x^(2n) 的系数并乘 (2n)!。",
+        "与 GS-117 保持同题身份组，不重复累计失败事件。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "高阶导数",
+        "泰勒公式"
+      ],
+      "first_action": "先写出 $f(x)=x^2/(1-x^2)=x^2+x^4+x^6+\\\\cdots$",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与折叠解析确认复做入口：看到在 0 点求偶阶高阶导数，应先展开为几何级数并对照系数，不要硬做 2n 次求导。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计"
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold_with_GS_117",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "duplicate_identity_hold_with_GS_117",
+          "severity": "medium",
+          "finding": "已确认与 GS-117 的 source_refid 和题图字节相同，保持稳定 ID 与身份待裁决，不建立普通强边或重复计错。",
+          "resolution_status": "held_for_identity_resolution"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-112",
+          "target_card_id": "GS-117",
+          "declaration_owners": [
+            "GS-112",
+            "GS-117"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "card_id": "GS-112",
+          "identity_group_id": "B14-ID-03",
+          "member_ids": [
+            "GS-112",
+            "GS-117"
+          ],
+          "decision": "hold_without_merge_delete_or_aggregate_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-113",
+      "card_path": "错题知识网络/错题卡/GS-113_580682026.4.1.md",
+      "card_sha256": "714dd22dc7c7876409837b81224936900f6c385a48e4c193c55b276720764707",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-113_58068-2026.4.1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "8876320f3d1aa55926b6912eb242201b4469efb6036d1aa40b34a2fe83ecbb76"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-113/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "3d0ac63d6a4aa2da44bfb42543d900885e69e596c6e6081558500f28831da0c5"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f(x)=a+bx+cx^2+dx^3-tan x，且 f(x)=o(x^3)，求 a+b+c+d。",
+      "asked_output": "求 a+b+c+d",
+      "answer": "$a=0,b=1,c=0,d=\\frac13$，所以 $a+b+c+d=\\frac43$。",
+      "solution_outline": [
+        "将 tan x 展开到三阶。",
+        "由 o(x^3) 要求常数项到三阶项全部消失。",
+        "逐项比较系数后计算 a+b+c+d。"
+      ],
+      "knowledge_nodes": [
+        "高阶无穷小",
+        "Peano 余项",
+        "泰勒公式",
+        "无穷小阶数比较"
+      ],
+      "first_action": "先写 $\\tan x=x+x^3/3+o(x^3)$",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与折叠解析确认复做入口：看到 $f(x)=o(x^3)$，必须把 $\\tan x$ 展开到三阶，并令常数项、一阶项、二阶项和三阶项系数全部消失。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "little_o_third_order_coefficients_and_edges_repaired",
+          "severity": "medium",
+          "finding": "已明确 o(x^3) 要求三阶及以下系数全部消失，删除三条宽泛边，并核验 GS-455、GS-533 两条强关系。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-113",
+          "target_card_id": "GS-005",
+          "declaration_owners": [
+            "GS-113"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-113",
+          "target_card_id": "GS-287",
+          "declaration_owners": [
+            "GS-113"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-113",
+          "target_card_id": "GS-349",
+          "declaration_owners": [
+            "GS-113"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-113",
+          "target_card_id": "GS-455",
+          "declaration_owners": [
+            "GS-113",
+            "GS-455"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为 Peano 余项和指定阶高阶无穷小下的系数匹配。"
+        },
+        {
+          "source_card_id": "GS-113",
+          "target_card_id": "GS-533",
+          "declaration_owners": [
+            "GS-113",
+            "GS-533"
+          ],
+          "decision": "add_strong_edge",
+          "rationale": "同为由 o(x^3) 强制三阶及以下展开系数全部消失。"
+        }
+      ],
+      "batch33_lineage_revalidation": {
+        "batch_number": 33,
+        "date": "2026-07-24",
+        "prior_card_sha256": "35365f16d996ce25648e0cea770de6a4389bd7553894a62100af0d2d89f67409",
+        "current_card_sha256": "714dd22dc7c7876409837b81224936900f6c385a48e4c193c55b276720764707",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-455"
+        ],
+        "removed_edges": [
+          "GS-113--GS-533"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第33批重绑 GS-113 的当前关系导航哈希；第14批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-114",
+      "card_path": "错题知识网络/错题卡/GS-114_强化例题4.3.md",
+      "card_sha256": "a0480a8ac6ae7a52448f6847f16c1aa8dba1aea49466dd1775f7803e053da820",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-114_强化例题4.3.md"
+      ],
+      "reviewed_detail_sha256": [
+        "6ea134d4d6a0010c5dfda5f34ed0982aa8dc9f8a79979662e0d586ab83e06664"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-114/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "04a7a6a52dccb6fcc5d35efc5f643ecc4b11b5842dca7b29c5bf5d48c906b034"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f(x)=(x^3-1)^n，求 f^(n)(1)。",
+      "asked_output": "求 f^(n)(1)",
+      "answer": "$f^{(n)}(1)=n!\\,3^n$。",
+      "solution_outline": [
+        "先将 x^3-1 因式分解并提出 (x-1)^n。",
+        "把函数写成 (x-1)^n(x^2+x+1)^n。",
+        "用莱布尼茨公式筛出 x=1 处唯一有贡献的项。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "高阶导数"
+      ],
+      "first_action": "先把 $x^3-1$ 分解为 $(x-1)(x^2+x+1)$，写成 $(x-1)^n(x^2+x+1)^n$。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "已有视觉详情记录的错点：卡在高次展开，没有先把 $x^3-1$ 因式分解为 $(x-1)(x^2+x+1)$，导致 $x=1$ 处的 $n$ 阶导数无法快速收口。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "视觉详情记录的单次错点，未全局统计"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "factorization_leibniz_content_and_relations_repaired",
+          "severity": "medium",
+          "finding": "已修正章节和数学文本污染，恢复因式分解与根点莱布尼茨主链，并保留 GS-528、GS-115 两条强关系。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-114",
+          "target_card_id": "GS-116",
+          "declaration_owners": [
+            "GS-114",
+            "GS-116"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-114",
+          "target_card_id": "GS-115",
+          "declaration_owners": [
+            "GS-114",
+            "GS-115"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为乘积在特殊点存在唯一零因子时，只保留导零因子的贡献。"
+        },
+        {
+          "source_card_id": "GS-114",
+          "target_card_id": "GS-528",
+          "declaration_owners": [
+            "GS-114",
+            "GS-528"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为根点高阶导数先提出根因子，再用莱布尼茨公式筛选唯一贡献项。"
+        }
+      ],
+      "batch33_lineage_revalidation": {
+        "batch_number": 33,
+        "date": "2026-07-24",
+        "prior_card_sha256": "a29ec292889f851a2a6d4cbb80278eb8b83c4c36e25d6406531d82ee9cf2fed3",
+        "current_card_sha256": "a0480a8ac6ae7a52448f6847f16c1aa8dba1aea49466dd1775f7803e053da820",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-115"
+        ],
+        "removed_edges": [
+          "GS-114--GS-528"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第33批重绑 GS-114 的当前关系导航哈希；第14批原逐题语义载荷与既有谱系保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-115",
+      "card_path": "错题知识网络/错题卡/GS-115_1000题基础篇4.2.md",
+      "card_sha256": "ca935b63c76281b874705a580c81fde30c59af6f42e7139c2cbfa317433b9c73",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-115_1000题基础篇4.2.md"
+      ],
+      "reviewed_detail_sha256": [
+        "9580ddd10d58d5dbf34a99262014a6afa5ba6add2ffca33ccc989626dc6ac809"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-115/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-115/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "2c028902588889ff170c04bd2490d53bf13436a6050eb57294beb8c062457204",
+        "587609c956f2bfec3412069dc720233082f32d678349a5ac4c8f5b95bf5d8fe5"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f(x) 为若干因子 ((ln x)^k-k) 的乘积，求 f'(e)。",
+      "asked_output": "求 f'(e)",
+      "answer": "\\(\\displaystyle \\frac1e(-1)^{n-1}(n-1)!\\)",
+      "solution_outline": [
+        "先在 x=e 处判断每个因子是否为零。",
+        "确认只有 ln x-1 是简单零因子。",
+        "乘积求导只保留导零因子的项，并保留外层导数系数 1/e。"
+      ],
+      "knowledge_nodes": [
+        "对数幂与对数法则辨析",
+        "乘积求导",
+        "乘积在简单零点处求导",
+        "零因子筛选"
+      ],
+      "first_action": "先写 \\(f(x)=(\\ln x-1)g(x)\\)，其中 \\(g(x)=\\prod_{k=2}^{n}((\\ln x)^k-k)\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "把 \\((\\ln x)^k\\) 误当成 \\(\\ln(x^k)\\)，没有识别乘积在 \\(x=e\\) 处只有第一个因子 \\(\\ln x-1\\) 为零；求导后应只保留 \\((\\ln x-1)'\\prod_{k=2}^{n}((\\ln x)^k-k)\\) 这一项，并且不能漏掉 \\((\\ln x-1)'|_{x=e}=\\frac1e\\)。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "视觉解析明确记录本题错误原因"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": true,
+        "solution_review": "question_and_solution_images_cross_checked",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "log_power_zero_factor_and_outer_derivative_repaired",
+          "severity": "medium",
+          "finding": "已区分 (ln x)^k 与 ln(x^k)，确认唯一零因子并恢复外层导数系数 1/e，同时删除宽泛旧边。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-115",
+          "target_card_id": "GS-116",
+          "declaration_owners": [
+            "GS-116"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-115",
+          "target_card_id": "GS-120",
+          "declaration_owners": [
+            "GS-115",
+            "GS-120"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-115",
+          "target_card_id": "GS-123",
+          "declaration_owners": [
+            "GS-115"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-115",
+          "target_card_id": "GS-307",
+          "declaration_owners": [
+            "GS-115"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-114",
+          "target_card_id": "GS-115",
+          "declaration_owners": [
+            "GS-114",
+            "GS-115"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为乘积在特殊点存在唯一零因子时，只保留导零因子的贡献。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-116",
+      "card_path": "错题知识网络/错题卡/GS-116_1000题强化4.12.md",
+      "card_sha256": "51f83a0072850f4d613d3d0c03c647efb7d382af785bcd701f9fb4f599614c3a",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-116_1000题强化4.12.md"
+      ],
+      "reviewed_detail_sha256": [
+        "c4f935d93b26d2d16b2401a9cc89977cfabcaf359d2984eb4199258b2b56e917"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-116/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "e2afdf78a667ba0a540dd0f6a4ff434e09b992d646f60030189dd8b4757b3796"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知 f'(ln x)=x ln x，求 f^(n)(x)。",
+      "asked_output": "求 f^(n)(x)",
+      "answer": "$f^{(n)}(x)=(x+n-1)e^x\\quad(n\\ge1)$。",
+      "solution_outline": [
+        "令 t=ln x，把题设还原为 f'(t)=te^t。",
+        "积分得到 f(t)=(t-1)e^t+C。",
+        "将自由变量重命名后按低次多项式乘指数函数求高阶导。"
+      ],
+      "knowledge_nodes": [
+        "导函数自变量还原",
+        "函数自变量角色",
+        "高阶导数",
+        "多项式乘指数函数的高阶导数"
+      ],
+      "first_action": "先令 $t=\\\\ln x$，把 $x=e^t$ 代回得到 $f'(t)=te^t$",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；可确认的安全复做入口是看到 $f^{\\prime}(\\ln x)$ 先令 $t=\\ln x$，把已知式转成 $f^{\\prime}(t)=te^t$。是否曾混用题设变量与函数自变量仍待用户复做确认。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 仅记录1条旧失败事件；个人原始步骤未留存"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "derivative_argument_restoration_and_high_order_chain_repaired",
+          "severity": "medium",
+          "finding": "已区分题设变量与函数自变量，修正换元后再次代回 ln x 的风险，并新增与 GS-118 的双向强关系。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-114",
+          "target_card_id": "GS-116",
+          "declaration_owners": [
+            "GS-114",
+            "GS-116"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-115",
+          "target_card_id": "GS-116",
+          "declaration_owners": [
+            "GS-116"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-116",
+          "target_card_id": "GS-528",
+          "declaration_owners": [
+            "GS-116",
+            "GS-528"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-116",
+          "target_card_id": "GS-118",
+          "declaration_owners": [
+            "GS-116",
+            "GS-118"
+          ],
+          "decision": "add_strong_edge",
+          "rationale": "同为低次多项式乘指数函数的高阶导数，利用莱布尼茨公式有限截断。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-117",
+      "card_path": "错题知识网络/错题卡/GS-117_1000讲B组4.152026.4.1-2.md",
+      "card_sha256": "de7ae931ba54df1dad957d1a136e83177b44a4aed3fda2b598a48d12f947ba74",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-117_1000讲B组4.15-2026.4.1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "6fa2cb70ded72a35333664829c2071f4122085c36f365f30fac8bee0df03661c"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-117/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "832b54f25a37fd5d4e8fd660333330325df6db95d73c9328455840c25add6fb3"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知 f(x)=x^2/(1-x^2)，求 f^(2n)(0)；该题与 GS-112 为同一来源身份组。",
+      "asked_output": "求 f^(2n)(0)",
+      "answer": "$f^{(2n)}(0)=(2n)!$。",
+      "solution_outline": [
+        "按 GS-112 的同一入口展开几何级数。",
+        "读取 x^(2n) 系数并乘 (2n)!。",
+        "身份裁决前不把两张卡当成独立错题或普通关系题。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "高阶导数",
+        "泰勒公式"
+      ],
+      "first_action": "先写出 $f(x)=x^2/(1-x^2)=x^2+x^4+x^6+\\\\cdots$",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；可确认的安全复做入口是先展开几何级数并读取 $x^{2n}$ 系数。本题与 GS-112 具有相同 source_refid 和字节相同的题图，当前进入重复身份待裁决状态，不把同一来源事件重复计错。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 记录1条旧失败事件；与 GS-112 为同一来源身份组，不重复累计"
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold_with_GS_112",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "duplicate_identity_hold_with_GS_112",
+          "severity": "medium",
+          "finding": "已确认与 GS-112 的 source_refid 和题图字节相同，保持稳定 ID 与身份待裁决，不建立普通强边或重复计错。",
+          "resolution_status": "held_for_identity_resolution"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-112",
+          "target_card_id": "GS-117",
+          "declaration_owners": [
+            "GS-112",
+            "GS-117"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "card_id": "GS-117",
+          "identity_group_id": "B14-ID-03",
+          "member_ids": [
+            "GS-112",
+            "GS-117"
+          ],
+          "decision": "hold_without_merge_delete_or_aggregate_edge"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-118",
+      "card_path": "错题知识网络/错题卡/GS-118_2024年真题14.md",
+      "card_sha256": "6ec94d05f386cb7b74c839ec8df8e450b083236e52af9ad01a794dee9af38c49",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-118_2024年真题14.md"
+      ],
+      "reviewed_detail_sha256": [
+        "cdf1a87dd5d71869b34737010b53c39b128990ee8e38144429263fe0a0e2e879"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-118/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "2af6e194cff872185fde377f5da62c49a9d2fd03b5f326d3043eee6551c0996e"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f(x)=x^2(e^x+1)，求 f^(5)(1)。",
+      "asked_output": "求 f^(5)(1)",
+      "answer": "$f^{(5)}(1)=31e$。",
+      "solution_outline": [
+        "识别为二次多项式乘指数函数。",
+        "用莱布尼茨公式并利用多项式三阶后为零截断。",
+        "保留有限项后代入 n=5、x=1。"
+      ],
+      "knowledge_nodes": [
+        "高阶导数",
+        "乘积高阶导数",
+        "多项式导数截断",
+        "莱布尼茨公式中的组合系数"
+      ],
+      "first_action": "先把函数识别为多项式乘基本函数，写出莱布尼茨公式并利用多项式三阶后为 0 截断。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "2026-06-01 用户复做正确并标记掌握；该事实只证明后续复做结果。个人原始错因未记录，当前只能确认安全复做入口是把 $x^2(e^x+1)$ 识别为多项式乘指数函数，用莱布尼茨公式并按多项式次数截断。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 记录2026-05-07一条旧失败事件；具体个人错因未留存"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "leibniz_truncation_and_evidence_boundary_verified",
+          "severity": "medium",
+          "finding": "已将后续复做正确与个人原始错因分开，保留 pending 证据边界，并核验 GS-116、GS-119 两条高阶导强关系。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-116",
+          "target_card_id": "GS-118",
+          "declaration_owners": [
+            "GS-116",
+            "GS-118"
+          ],
+          "decision": "add_strong_edge",
+          "rationale": "同为低次多项式乘指数函数的高阶导数，利用莱布尼茨公式有限截断。"
+        },
+        {
+          "source_card_id": "GS-118",
+          "target_card_id": "GS-119",
+          "declaration_owners": [
+            "GS-118",
+            "GS-119"
+          ],
+          "decision": "add_strong_edge",
+          "rationale": "同为二次多项式参与的高阶乘积求导，共享三项截断和组合系数骨架。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-119",
+      "card_path": "错题知识网络/错题卡/GS-119_强化例题4.4.md",
+      "card_sha256": "9ea05f165054f5462c4c79226a8a5f5d0a60a11ffe059bb863335e25aaa7ff3c",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-119_强化例题4.4.md"
+      ],
+      "reviewed_detail_sha256": [
+        "4d2fcf87fcc8141fd209ed7536bdf82b53b9febbd764c1daa37bf7128672f76a"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-119/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "34aef47c2e716356ad196e9c82fbc2d8344154f208fbd979090050ea242f3077"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 y=x/(1+x^2)，求高阶导数递推关系及 y^(2n+1)(0)。",
+      "asked_output": "求递推关系及 y^(2n+1)(0)",
+      "answer": "递推关系：当 $n\\ge2$ 时，$(1+x^2)y^{(n)}+2nx y^{(n-1)}+n(n-1)y^{(n-2)}=0$；且 $y^{(2n+1)}(0)=(-1)^n(2n+1)!$。",
+      "solution_outline": [
+        "先乘去分母得到 (1+x^2)y=x。",
+        "对恒等式求 n 阶导并用二次多项式截断。",
+        "令 x=0 得到两阶递推，再求奇数阶导数通式。"
+      ],
+      "knowledge_nodes": [
+        "高阶导数",
+        "乘积恒等式高阶求导",
+        "二次多项式导数截断",
+        "特殊点两阶递推"
+      ],
+      "first_action": "先把 $y=\\frac{x}{1+x^2}$ 改写为 $(1+x^2)y=x$，再对恒等式求 n 阶导。",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "2026-06-01 用户复做正确并标记掌握；该事实只确认后续复做结果。个人原始错因未记录，当前只能确认安全复做入口是先把 $y=\\frac{x}{1+x^2}$ 改写为 $(1+x^2)y=x$，再对恒等式求 n 阶导得到递推关系。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history 记录2026-05-07一条旧失败事件；具体个人错因未留存"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "higher_derivative_recurrence_coefficients_repaired",
+          "severity": "medium",
+          "finding": "已补齐递推适用范围和 2nx、n(n-1) 组合系数，将后续掌握状态与待确认个人错因分开。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-118",
+          "target_card_id": "GS-119",
+          "declaration_owners": [
+            "GS-118",
+            "GS-119"
+          ],
+          "decision": "add_strong_edge",
+          "rationale": "同为二次多项式参与的高阶乘积求导，共享三项截断和组合系数骨架。"
+        },
+        {
+          "source_card_id": "GS-119",
+          "target_card_id": "GS-120",
+          "declaration_owners": [
+            "GS-119",
+            "GS-120"
+          ],
+          "decision": "add_strong_edge",
+          "rationale": "同先建立含 1+x^2 的乘积恒等式，再高阶求导并在 0 点形成两阶递推。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-120",
+      "card_path": "错题知识网络/错题卡/GS-120_105760反三角高阶导.md",
+      "card_sha256": "91c95cd90f44acae2aeb34373c1da6c19e91ab9783a215a60bedfdd66dbc8c0a",
+      "later_batch_revalidation": {
+        "batch_number": 29,
+        "date": "2026-07-24",
+        "prior_card_sha256": "26e7cf5cde5fb47cb4c6c9b6d422719d5ca2cecdb0b1b627b3bfb29929aa270e",
+        "current_card_sha256": "6edc7b98d75ec17d4b7d7ef378ea8b5545b32e51aa8c1f78ff8d281921c6e1f0",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-119",
+          "GS-549",
+          "GS-457"
+        ],
+        "removed_edges": [],
+        "added_edges": [
+          "GS-457"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第29批确认 GS-120 与 GS-457 共享同一高阶导数系数提取对象、同一先求导再展开动作和同一断点，补齐双向所有者声明；原题目和证据判断保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-120_1000题B组4.14-105760.md"
+      ],
+      "reviewed_detail_sha256": [
+        "8adb15afed3361ae5013d5352279d0a14bf0cbb8836938bcebab4e41e5ede4ff"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-120/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "0f1481aba82e78a9f855dea3bcc8d43891ddf28185cf72a96b30bfce64a5aae1"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f(x)=arctan((1+x)/(1-x))，求 f^(2n+1)(0)。",
+      "asked_output": "求 f^(2n+1)(0)",
+      "answer": "\\(f^{(2n+1)}(0)=(-1)^n(2n)!\\quad(n\\ge0)\\)",
+      "solution_outline": [
+        "先求 f'(x)=1/(1+x^2)，不沿用外层 arctan 的奇偶性。",
+        "写成 (1+x^2)f'(x)=1 后高阶求导，或展开 f' 再积分。",
+        "由递推或系数读取求得 0 点奇数阶导数。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "高阶导数",
+        "泰勒公式"
+      ],
+      "first_action": "先求 \\(f'(x)=\\frac{1}{1+x^2}\\)，并写成 \\((1+x^2)f'(x)=1\\)。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "把 \\(\\arctan x\\) 本身是奇函数误推广到 \\(f(x)=\\arctan\\frac{1+x}{1-x}\\)，但复合自变量 \\(\\frac{1+x}{1-x}\\) 不是奇函数且 \\(f(0)=\\frac{\\pi}{4}\\ne0\\)；本题应先求 \\(f'(x)=\\frac{1}{1+x^2}\\)，再展开并积分还原 \\(f(x)\\) 后读系数。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-06-01 一条明确绑定本方法断点的失败记录；2026-05-07 仅为旧题导入，未保存可归因到同一断点的作答过程"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "composite_arctangent_parity_and_recurrence_repaired",
+          "severity": "medium",
+          "finding": "已撤销对复合函数整体奇偶性的误用，恢复先求一阶导再递推或读系数的主链，并保留 GS-119、GS-549 强关系。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-115",
+          "target_card_id": "GS-120",
+          "declaration_owners": [
+            "GS-115",
+            "GS-120"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-120",
+          "target_card_id": "GS-549",
+          "declaration_owners": [
+            "GS-120",
+            "GS-549"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同由 arctan 的导函数几何级数或泰勒展开读取 0 点高阶导系数。"
+        },
+        {
+          "source_card_id": "GS-119",
+          "target_card_id": "GS-120",
+          "declaration_owners": [
+            "GS-119",
+            "GS-120"
+          ],
+          "decision": "add_strong_edge",
+          "rationale": "同先建立含 1+x^2 的乘积恒等式，再高阶求导并在 0 点形成两阶递推。"
+        }
+      ],
+      "batch34_lineage_revalidation": {
+        "batch_number": 34,
+        "date": "2026-07-24",
+        "prior_card_sha256": "6edc7b98d75ec17d4b7d7ef378ea8b5545b32e51aa8c1f78ff8d281921c6e1f0",
+        "current_card_sha256": "91c95cd90f44acae2aeb34373c1da6c19e91ab9783a215a60bedfdd66dbc8c0a",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-119",
+          "GS-457"
+        ],
+        "removed_edges": [
+          "GS-120--GS-549"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [
+          "later_batch_revalidation"
+        ],
+        "historical_semantic_payload_preserved": true,
+        "note": "第34批重绑 GS-120 的关系导航哈希；第14批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-121",
+      "card_path": "错题知识网络/错题卡/GS-121_强化例题4.6.md",
+      "card_sha256": "5d8a5bd78c88e61c413efdb04d0a8f9b3cd49703d8ebc6a7d96e387b681bacba",
+      "later_batch_revalidation": {
+        "batch_number": 29,
+        "date": "2026-07-24",
+        "prior_card_sha256": "829220973dbf465ea2ea22d4179a425a606d23b45ad8862821051a993389c2ec",
+        "current_card_sha256": "5d8a5bd78c88e61c413efdb04d0a8f9b3cd49703d8ebc6a7d96e387b681bacba",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-307"
+        ],
+        "removed_edges": [
+          "GS-449"
+        ],
+        "added_edges": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第29批删除 GS-121 对 GS-449 的旧所有者声明；仅同步关系元数据与导航引用，原逐题语义判断保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-121_强化例题4.6.md",
+        "错题知识网络/可视化错题详情/高等数学/MN4-GS-CH01-169_强化例题4.6-2026.5.15.md"
+      ],
+      "reviewed_detail_sha256": [
+        "a340980173700c0d11ced60d6712b8d935ebb9fbfd843edb679085f48bdfb4c3",
+        "3437b041d5998bbf30b5ee6abcc2fe1282e93090ea8aeea72c8ec3d70c30d933"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-121/question_01.png",
+          "错题知识网络/assets/visual_wrong_questions/MN4-GS-CH01-169/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "1a199956bb2447d02ea0da9b396a8d945e161f64e32c72e0a7de2732ac95f46b"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 2,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 f(x)=1/(2^x+1)，求 f^(4)(0)。",
+      "asked_output": "求 f^(4)(0)",
+      "answer": "\\(f^{(4)}(0)=0\\)",
+      "solution_outline": [
+        "先减去常数 1/2，令 h(x)=1/(2^x+1)-1/2。",
+        "验证 h(-x)=-h(x)。",
+        "用奇函数偶阶导数在 0 处为零，并同时核验 canonical 与 MN4 alias 两条视觉证据。"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "高阶导数",
+        "函数奇偶性与导数性质"
+      ],
+      "first_action": "先把 \\(\\frac1{2^x+1}\\) 写成 \\(\\left(\\frac1{2^x+1}-\\frac12\\right)+\\frac12\\)，并验证括号内是奇函数。",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "first_breakpoint": "忽略冷门结构 \\(\\frac1{a^x+1}-\\frac12\\ (a>0,a\\ne1)\\) 是关于 \\(x\\) 的奇函数；没有识别出本题 \\(g(x)=\\frac{1}{2^x+1}-\\frac12\\) 是奇函数，导致漏掉“奇函数的偶阶导数在 0 处为 0”。",
+        "evidence_origin": "user_confirmed",
+        "repeat_count": 2,
+        "repeat_count_source": "wrong_history 保存两条可区分的同断点失败记录，其中第 2 次为 2026-05-15"
+      },
+      "consistency": {
+        "question_identity": "verified_same_card_alias_preserved",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "same_card_visual_alias_and_odd_function_chain_verified",
+          "severity": "medium",
+          "finding": "已同时复核 VIS-GS-121 与 MN4-GS-CH01-169 的两份详情和字节相同题图，保留同卡 alias，并核验奇函数高阶导主链与两条强关系。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-121",
+          "target_card_id": "GS-457",
+          "declaration_owners": [
+            "GS-457"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-121",
+          "target_card_id": "GS-472",
+          "declaration_owners": [
+            "GS-472"
+          ],
+          "decision": "remove_broad_stale_or_identity_ambiguous_edge"
+        },
+        {
+          "source_card_id": "GS-121",
+          "target_card_id": "GS-307",
+          "declaration_owners": [
+            "GS-121",
+            "GS-307"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为先识别函数奇偶结构，再用高阶导数奇偶性确定 0 点导数。"
+        },
+        {
+          "source_card_id": "GS-121",
+          "target_card_id": "GS-449",
+          "declaration_owners": [
+            "GS-121",
+            "GS-449"
+          ],
+          "decision": "verify_existing_strong_edge_and_complete_bidirectional_declaration",
+          "rationale": "同为奇函数与其导函数奇偶性、零点取值之间的具体判定。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-122",
+      "card_path": "错题知识网络/错题卡/GS-122_578742026.4.1.md",
+      "card_sha256": "8c27190d88ac0ea9188a67e1c78ad14233b53577eb1baccea8150dda29a62706",
+      "later_batch_revalidation": {
+        "batch_number": 21,
+        "date": "2026-07-23",
+        "prior_card_sha256": "67a70e0e6bd7322c3b5fb389c02646006244bdb84f3a176f9a503199ddc32698",
+        "current_card_sha256": "8c27190d88ac0ea9188a67e1c78ad14233b53577eb1baccea8150dda29a62706",
+        "content_change_scope": "related_field_only",
+        "current_related": [
+          "GS-297",
+          "GS-277"
+        ],
+        "removed_edges": [],
+        "added_edges": [
+          "GS-277"
+        ],
+        "historical_relation_decisions_preserved": true,
+        "note": "第21批新增 GS-122 与 GS-277 的双向具体强边；第14批历史 relation_decisions 与个人证据边界保持不变。"
+      },
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-122_57874-2026.4.1.md"
+      ],
+      "reviewed_detail_sha256": [
+        "4eded00afc76958ebb2b04b6abe0abaeff6baff92391f0448ae8cd6a6ad0a471"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-122/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "1740911309b6b91986a348a5826c9fce8210d158c98ea62e5b110745a711c35c"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "在 x 不等于 0 上，已知 af(x)+bf(1/x)=c/x 且 |a| 不等于 |b|，求 f(x) 并证明其为奇函数。",
+      "asked_output": "求函数解析式并验证奇偶性",
+      "answer": "$f(x)=\\dfrac{c}{a^2-b^2}\\left(\\dfrac{a}{x}-bx\\right)$；在 $\\mathbb R\\setminus\\{0\\}$ 上为奇函数。",
+      "solution_outline": [
+        "把 x 替换为 1/x 构造第二个函数方程。",
+        "把 f(x) 与 f(1/x) 视为两个未知量联立消元。",
+        "在关于原点对称的自然定义域上验证 f(-x)=-f(x)。"
+      ],
+      "knowledge_nodes": [
+        "函数方程",
+        "函数奇偶性",
+        "定义域"
+      ],
+      "first_action": "先把原方程中的 $x$ 替换成 $1/x$ 写出第二个方程",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "first_breakpoint": "个人原始错因未记录；本轮依据题图与折叠解析确认复做入口：看到同时含 $f(x)$ 与 $f(1/x)$，应先令 $x\\mapsto1/x$ 构造第二个方程，再联立消元求 $f(x)$。",
+        "evidence_origin": "pending_user_confirmation",
+        "repeat_count": 1,
+        "repeat_count_source": "2026-04-01 一条错题记录；个人作答步骤未保存，本轮维护不计作答"
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "independent_solution_asset": false,
+        "solution_review": "question_image_and_normalized_detail_text_reviewed",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "reciprocal_function_equation_domain_and_parity_repaired",
+          "severity": "medium",
+          "finding": "已补齐 x 替换为 1/x 的联立消元、a^2-b^2 非零条件、自然定义域与奇函数验证，并新增 GS-297 双向强关系。",
+          "resolution_status": "applied_to_formal_source"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "source_card_id": "GS-122",
+          "target_card_id": "GS-297",
+          "declaration_owners": [
+            "GS-122",
+            "GS-297"
+          ],
+          "decision": "add_strong_edge",
+          "rationale": "同为函数方程中同时出现 x 与 1/x，需先构造互逆替换方程组再消元。"
+        }
+      ]
+    }
+  ]
+}

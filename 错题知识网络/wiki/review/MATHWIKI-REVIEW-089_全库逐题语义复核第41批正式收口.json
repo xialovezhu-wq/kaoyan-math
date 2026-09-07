@@ -1,0 +1,3606 @@
+{
+  "asset_summary": {
+    "aggregate_blocked_selected_card_ids": [
+      "LA-086",
+      "LA-087",
+      "LA-088",
+      "LA-089",
+      "LA-090",
+      "LA-091",
+      "LA-092",
+      "LA-093",
+      "LA-097",
+      "LA-098",
+      "LA-100",
+      "LA-101",
+      "LA-102",
+      "LA-103",
+      "LA-104",
+      "LA-105",
+      "LA-106",
+      "LA-107",
+      "LA-108",
+      "LA-109"
+    ],
+    "asset_hash_drift_count": 0,
+    "assetless_card_ids": [
+      "LA-086",
+      "LA-101",
+      "LA-102",
+      "LA-107",
+      "LA-108"
+    ],
+    "campaign_union_derivation": {
+      "algorithm": "union cards[].reviewed_unique_asset_sha256 from installed batches 1..40, then union B41 frozen asset SHA by role",
+      "batch_unique_asset_count": 28,
+      "batch_unique_asset_union_sha256": "63da49e0864f5154c94752d1c851fddd2b6657bc2aa925b8bd4fdf33be11101f",
+      "new_unique_asset_count": 28,
+      "new_unique_asset_role_counts": {
+        "question": 15,
+        "reference": 0,
+        "solution": 13
+      },
+      "overlap_with_prior_count": 0,
+      "post_batch_unique_asset_count": 1076,
+      "post_batch_unique_asset_union_sha256": "df0caf0048c37cce2617eb7a6cea8c0a1bb2b811c2d7b6f61071fdd4a365a12a",
+      "prior_closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-087_全库逐题语义复核第40批正式收口.json",
+      "prior_closeout_sha256": "086ec0124de01c47a43b1304cc35479677aaeb0263b8c843e3d0f42c5cb34916",
+      "prior_review_binding_set_sha256": "7d4988f8df567decb498b352c250c52b8b386e5c7d0a2336d3549350c7504da3",
+      "prior_review_receipt_count": 40,
+      "prior_unique_asset_count": 1048,
+      "prior_unique_asset_union_sha256": "dbef13d25a714f65e3accb57f374654625acf8d2fb660f0e109a86913981ff16"
+    },
+    "global_unique_asset_increment": 28,
+    "physical_asset_path_count": 56,
+    "physical_asset_role_path_counts": {
+      "question": 30,
+      "reference": 0,
+      "solution": 26
+    },
+    "question_asset_write_count": 0,
+    "unique_asset_role_counts": {
+      "question": 15,
+      "reference": 0,
+      "solution": 13
+    },
+    "unique_asset_sha256_count": 28
+  },
+  "batch_number": 41,
+  "blocked_candidates": [],
+  "boundary_receipt_writes": [],
+  "campaign_progress": {
+    "batch_number": 41,
+    "batch_reviewed_cards": 20,
+    "cumulative_physical_asset_paths_reviewed": 1325,
+    "cumulative_reviewed_cards": 820,
+    "cumulative_unique_asset_count": 1076,
+    "cumulative_unique_asset_role_counts": {
+      "question": 746,
+      "reference": 4,
+      "solution": 326
+    },
+    "formal_card_count": 831,
+    "remaining_cards": 11,
+    "unique_asset_increment_note": "第41批核验56个物理图片路径与28个唯一图片SHA；与前40批实际SHA并集比较后新增28个。"
+  },
+  "canonical_owner_declarations_retained": [],
+  "card_writes": [
+    {
+      "card_id": "LA-086",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence",
+        "content_hold",
+        "answer",
+        "methods",
+        "traps",
+        "review",
+        "wiki_refs",
+        "scheduler"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-086_强化例题5.2-3.md",
+      "post_sha256": "6fed0bb32c6afdcf7a4fd5d46666c6f1267bd94b56a73e2700b563d69e371a12",
+      "postimage": {
+        "bytes": 2821,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "6fed0bb32c6afdcf7a4fd5d46666c6f1267bd94b56a73e2700b563d69e371a12"
+      },
+      "pre_sha256": "fc21722e2483f5d55c6f267dfa0d007fa64b0e366e10ac087290465f30903bc0"
+    },
+    {
+      "card_id": "LA-087",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-087_强化例题5、4.md",
+      "post_sha256": "acbf511a32fe237d3e2e0e78c592e39a0c9dbd7f42423f3f70dca9788f3a587a",
+      "postimage": {
+        "bytes": 7031,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "acbf511a32fe237d3e2e0e78c592e39a0c9dbd7f42423f3f70dca9788f3a587a"
+      },
+      "pre_sha256": "98b5b214cec963d1b93ea4488fb08bc360558518abbdc01667404e6e6579c616"
+    },
+    {
+      "card_id": "LA-088",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-088_强化例题5.5（2025年数2真题选择题第十题）.md",
+      "post_sha256": "e5244202fa015b1ec52ec42a9e156923873246135f8f85ef493878e00cfa6830",
+      "postimage": {
+        "bytes": 7047,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "e5244202fa015b1ec52ec42a9e156923873246135f8f85ef493878e00cfa6830"
+      },
+      "pre_sha256": "b5991f0f5ac9c102e3cadeb18d7854dd5a9850917b9eac24a64fcee651914255"
+    },
+    {
+      "card_id": "LA-089",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-089_强化例题5.6.md",
+      "post_sha256": "b8fa761d1a6c41f94a6da23cd2ff0b4a4347c7405d54c1fe2ec5496fa2713dbb",
+      "postimage": {
+        "bytes": 6753,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "b8fa761d1a6c41f94a6da23cd2ff0b4a4347c7405d54c1fe2ec5496fa2713dbb"
+      },
+      "pre_sha256": "2c5b71dbd64083e5e548b5d8718bf8f137055baa5866e449788de6eaa303c808"
+    },
+    {
+      "card_id": "LA-090",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-090_强化例题5.7-2.md",
+      "post_sha256": "1763cf6aac1c8b92cb4213b186919d06a71823005769562105d7a8cffa456a42",
+      "postimage": {
+        "bytes": 6234,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "1763cf6aac1c8b92cb4213b186919d06a71823005769562105d7a8cffa456a42"
+      },
+      "pre_sha256": "2b622bdb9ef96ea4406498f8b848df18d2d3a880c31e9c22d0d0bdca3327865e"
+    },
+    {
+      "card_id": "LA-091",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-091_强化例题5.8.md",
+      "post_sha256": "6dbccd68440e413c805666827108673b0257712302ba6ebc83d47f3b4f2d50c0",
+      "postimage": {
+        "bytes": 6207,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "6dbccd68440e413c805666827108673b0257712302ba6ebc83d47f3b4f2d50c0"
+      },
+      "pre_sha256": "aa4d8972708be1728392887ac33ba0748ee194bc77ece268860632ae96a1d262"
+    },
+    {
+      "card_id": "LA-092",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-092_强化例题6.1.md",
+      "post_sha256": "6307650b3a1c2a9a8497b46063509345f2d7f61a0e05fb9c7e4a6dfa6bf1851c",
+      "postimage": {
+        "bytes": 6188,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "6307650b3a1c2a9a8497b46063509345f2d7f61a0e05fb9c7e4a6dfa6bf1851c"
+      },
+      "pre_sha256": "5083aed533ae560227f56f4826a81f453c1c1282f26ec5530498b126954b6736"
+    },
+    {
+      "card_id": "LA-093",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-093_强化例题6.2.md",
+      "post_sha256": "d168cfa49a265c59370c391b2a464bee3089e977c5cec6e54a6b38a32632e9e6",
+      "postimage": {
+        "bytes": 6189,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "d168cfa49a265c59370c391b2a464bee3089e977c5cec6e54a6b38a32632e9e6"
+      },
+      "pre_sha256": "3c608dc4620555b9768f3b242a922f354562d0736ad2feb21f548fc1758cf679"
+    },
+    {
+      "card_id": "LA-097",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-097_2021年第九题.md",
+      "post_sha256": "ce9c3a79def99a54ef53a857ef37c04ab1754b75d29481143252de6b1190f114",
+      "postimage": {
+        "bytes": 6083,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "ce9c3a79def99a54ef53a857ef37c04ab1754b75d29481143252de6b1190f114"
+      },
+      "pre_sha256": "361bff12ab98acba19be0ab50176142fe2983263021049b11420c48855a5df82"
+    },
+    {
+      "card_id": "LA-098",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-098_强化例题6.5-2.md",
+      "post_sha256": "9a92dd7fb99cbb917e332faa6a16637ceea3fe7ca6688aa804edfa81f5b522a1",
+      "postimage": {
+        "bytes": 5945,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "9a92dd7fb99cbb917e332faa6a16637ceea3fe7ca6688aa804edfa81f5b522a1"
+      },
+      "pre_sha256": "bc830cd766ba3c89bafaae599b6b05ab7dbe60e1fad3aca2d8f2bf1fa120d7fa"
+    },
+    {
+      "card_id": "LA-100",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-100_2019年第23题.md",
+      "post_sha256": "c4e8a80974eb733193e8642510d4b6353b8eb5276511a5830d05d185628f3ebc",
+      "postimage": {
+        "bytes": 6093,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "c4e8a80974eb733193e8642510d4b6353b8eb5276511a5830d05d185628f3ebc"
+      },
+      "pre_sha256": "20b24c3f970d3313672c816ba9b1c9578154e734e906771da30c686824c4dda6"
+    },
+    {
+      "card_id": "LA-101",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence",
+        "identity",
+        "answer",
+        "methods",
+        "traps",
+        "review",
+        "wiki_refs",
+        "scheduler"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-101_强化例题7.1-4.md",
+      "post_sha256": "91a7abe98aa7f9b094985e4fce78e8c514d3c0a524972817fb796a0f8b036cbf",
+      "postimage": {
+        "bytes": 2970,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "91a7abe98aa7f9b094985e4fce78e8c514d3c0a524972817fb796a0f8b036cbf"
+      },
+      "pre_sha256": "c0f11de424b5f25b72a43897cd43e1eb6cde78c97cfc8b32ddfe90ca64cdcc08"
+    },
+    {
+      "card_id": "LA-102",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence",
+        "identity",
+        "answer",
+        "methods",
+        "traps",
+        "review",
+        "wiki_refs",
+        "scheduler"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-102_强化例题7.1-5.md",
+      "post_sha256": "ce85973286d1e812669143aa9cfb0f9762cc23a6e38e1d080afbf62b426caebd",
+      "postimage": {
+        "bytes": 2970,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "ce85973286d1e812669143aa9cfb0f9762cc23a6e38e1d080afbf62b426caebd"
+      },
+      "pre_sha256": "2da4394d57632e4dc2ccebf192918fa3e9515f7444055165ac97226b5c42de38"
+    },
+    {
+      "card_id": "LA-103",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-103_强化例题7.2-2.md",
+      "post_sha256": "4481036a42973fa504b60d3f79f2a01ffb3e082b71fcebcc7d3f9c8b212e30ad",
+      "postimage": {
+        "bytes": 5435,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "4481036a42973fa504b60d3f79f2a01ffb3e082b71fcebcc7d3f9c8b212e30ad"
+      },
+      "pre_sha256": "ce4eb6def5261009392ba9bc4ac0276e0d65963ad7fa0b767ba4af6b7219eb9a"
+    },
+    {
+      "card_id": "LA-104",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-104_数学2的2019年第8题.md",
+      "post_sha256": "5eb45f5a1af6d608eb022ded64dd824652c4037ae9f1f842f04bc2c7c7d8db31",
+      "postimage": {
+        "bytes": 5514,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "5eb45f5a1af6d608eb022ded64dd824652c4037ae9f1f842f04bc2c7c7d8db31"
+      },
+      "pre_sha256": "57a431988d3a43496afa86312e235181b973ba99106c1ed194224a8497574a29"
+    },
+    {
+      "card_id": "LA-105",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-105_强化例题7.3.md",
+      "post_sha256": "d4bd20ad298fdc53c5d43ea940c345e9fb6f131f68e410b9ce110de21f9815ad",
+      "postimage": {
+        "bytes": 5839,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "d4bd20ad298fdc53c5d43ea940c345e9fb6f131f68e410b9ce110de21f9815ad"
+      },
+      "pre_sha256": "b02655288ab00606cc456876a5aa47f16be1ad94835c1f558378481d6ff7dd7f"
+    },
+    {
+      "card_id": "LA-106",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-106_强化例题7.4.md",
+      "post_sha256": "1ceb84218a8021f197384f3dfdfbbf6f788cb2e66afbebf84cb06ee2e985a3f6",
+      "postimage": {
+        "bytes": 6773,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "1ceb84218a8021f197384f3dfdfbbf6f788cb2e66afbebf84cb06ee2e985a3f6"
+      },
+      "pre_sha256": "091172461ed1c70152b395be71b1233233af15ef4f143e225b1afb9403ffde17"
+    },
+    {
+      "card_id": "LA-107",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence",
+        "content_hold",
+        "answer",
+        "methods",
+        "traps",
+        "review",
+        "wiki_refs",
+        "scheduler"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-107_线代强化-第八讲-相似理论.md",
+      "post_sha256": "3f07f78d91341a4a474606c51e4809f386303a10726d232e39a2d757f30a8873",
+      "postimage": {
+        "bytes": 2874,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "3f07f78d91341a4a474606c51e4809f386303a10726d232e39a2d757f30a8873"
+      },
+      "pre_sha256": "d2e29bf89c611e935adcabb77411f56d52e7db0d0be38d1b4165c06d74ab8246"
+    },
+    {
+      "card_id": "LA-108",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence",
+        "content_hold",
+        "answer",
+        "methods",
+        "traps",
+        "review",
+        "wiki_refs",
+        "scheduler"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-108_线代强化第八讲-相似理论.md",
+      "post_sha256": "574509485f6da13d40b9c15426095f1f1a96f8ec4a5f9969674c6fe240b65e4e",
+      "postimage": {
+        "bytes": 2871,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "574509485f6da13d40b9c15426095f1f1a96f8ec4a5f9969674c6fe240b65e4e"
+      },
+      "pre_sha256": "48749182cdc20a9c613fde3045e9c23f058d9c4cc67fa4d18776453d00ec840a"
+    },
+    {
+      "card_id": "LA-109",
+      "changed_fields": [
+        "lecture_refs",
+        "related",
+        "method_gap",
+        "semantic_review_trace",
+        "body_evidence"
+      ],
+      "kind": "selected_card",
+      "path": "错题知识网络/错题卡/LA-109_强化例题8.1-2.md",
+      "post_sha256": "6c0692aee800f6ddfba68ebe6756b8eaafab736f47dbc18841b8eb795011d139",
+      "postimage": {
+        "bytes": 5487,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "6c0692aee800f6ddfba68ebe6756b8eaafab736f47dbc18841b8eb795011d139"
+      },
+      "pre_sha256": "09a1b22eb0707c3631cb4f2f162e6ed5cf493a08c4b87fcd57a7b4804297bdf2"
+    },
+    {
+      "card_id": "LA-044",
+      "changed_fields": [
+        "related",
+        "relation_successor_trace",
+        "body_relation_section"
+      ],
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/LA-044_强化例题9.14.md",
+      "post_sha256": "c50f6655bc364acca5aa5a5560058b763603777756496e4278503380e0c40d6f",
+      "postimage": {
+        "bytes": 6385,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "c50f6655bc364acca5aa5a5560058b763603777756496e4278503380e0c40d6f"
+      },
+      "pre_sha256": "ca9567e81e225b8542cee1e935a5b651ad41e3069461b5eab7e2b9cbbc806ae0"
+    },
+    {
+      "card_id": "LA-095",
+      "changed_fields": [
+        "related",
+        "relation_successor_trace",
+        "body_relation_section"
+      ],
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/LA-095_强化例题6.3-2.md",
+      "post_sha256": "c30fae15795e9170d8e82c0dddc98b25f590e1facb8b3b319a28e60f7cb7a800",
+      "postimage": {
+        "bytes": 4141,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "c30fae15795e9170d8e82c0dddc98b25f590e1facb8b3b319a28e60f7cb7a800"
+      },
+      "pre_sha256": "30499c4711883c8059cdfc601b216fc90da2594166ee523b976b6cbaf0410b98"
+    },
+    {
+      "card_id": "LA-110",
+      "changed_fields": [
+        "related",
+        "relation_successor_trace",
+        "body_relation_section"
+      ],
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/LA-110_强化例题8.2-2.md",
+      "post_sha256": "9b3172de61f3eccc00c410df30b07a4a3ba5daded29ed07a917a5130d7fee891",
+      "postimage": {
+        "bytes": 4740,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "9b3172de61f3eccc00c410df30b07a4a3ba5daded29ed07a917a5130d7fee891"
+      },
+      "pre_sha256": "9a0e5951115391fc68741b3aa2f71e4b0e2e9e5b3952805c0f957f27c513ac1f"
+    },
+    {
+      "card_id": "LA-111",
+      "changed_fields": [
+        "related",
+        "relation_successor_trace",
+        "body_relation_section"
+      ],
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/LA-111_2022年真题第8题.md",
+      "post_sha256": "37bc387c8a4a4a2bb3b459a39538152861ee5cf80d8d4fbfd911901f4398379d",
+      "postimage": {
+        "bytes": 4872,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "37bc387c8a4a4a2bb3b459a39538152861ee5cf80d8d4fbfd911901f4398379d"
+      },
+      "pre_sha256": "0f7ed73445852e911400ee8a795b08c3ade7a986b52735ecd6331d46977c536f"
+    },
+    {
+      "card_id": "LA-113",
+      "changed_fields": [
+        "related",
+        "relation_successor_trace",
+        "body_relation_section"
+      ],
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/LA-113_强化例题8.5（84080）.md",
+      "post_sha256": "288cb03851cdf320500ec2bdbb67fd326537eb67409e9b8f2cd23c271c110711",
+      "postimage": {
+        "bytes": 5530,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "288cb03851cdf320500ec2bdbb67fd326537eb67409e9b8f2cd23c271c110711"
+      },
+      "pre_sha256": "b19e728291bc6d8ba516398b3ba27b42c0e32216dc7978b99f09d1e2e2db4d05"
+    },
+    {
+      "card_id": "LA-118",
+      "changed_fields": [
+        "related",
+        "relation_successor_trace",
+        "body_relation_section"
+      ],
+      "kind": "external_card",
+      "path": "错题知识网络/错题卡/LA-118_强化例题8.8（102152）.md",
+      "post_sha256": "6bc3595afbaa74285186a894b54b8f8df5ccc5e88296d8f27ecb4e59fab545c2",
+      "postimage": {
+        "bytes": 5375,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "6bc3595afbaa74285186a894b54b8f8df5ccc5e88296d8f27ecb4e59fab545c2"
+      },
+      "pre_sha256": "f80d15c7f2aeee7e98f2be3f96cde042f392027234fc5b629152c39a47823717"
+    }
+  ],
+  "closed_on": "2026-07-25",
+  "closeout_id": "MATH-TARGET-SEMANTIC-CLOSEOUT-20260725-B41",
+  "content_holds": [
+    "LA-086",
+    "LA-107",
+    "LA-108"
+  ],
+  "core_payload_sha256": "73087f4caae42c81c02dec73c7de687055f6f5c6927fefc00b083a2bc4d00508",
+  "derived_evidence_graph": {
+    "attempts_this_batch": 1,
+    "batch_number": 41,
+    "command": "python3 错题知识网络/scripts/build_knowledge_error_evidence_graph.py build",
+    "completion_evidence": "started ledger installed before command; one observed successful process; all 44 outputs bind prebuild before, execution-ledger after and current renderer bytes",
+    "core_payload_sha256": "62c72f2f1f637a437f4c75b138394660bebe86baf1284e3995f1468c927086e1",
+    "execution_ledger": {
+      "path": ".codex_tmp/B41_graph_execution_ledger.json",
+      "sha256": "d5604551ab94d335ffdd4e2c5ad0ea04f8af0109bd06d8680ebc747339821d56"
+    },
+    "execution_observation": {
+      "completed_at": "2026-07-25T06:49:17.612355+00:00",
+      "duration_seconds": 3.5389,
+      "observation_path": ".codex_tmp/B41_graph_execution_observation.json",
+      "observation_sha256": "faedc5e280772e1f0e3a45fc2102c6f1d68153f53a88ed9e35f3f1ed299aecf8",
+      "returncode": 0,
+      "started_at": "2026-07-25T06:48:06.505459+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_bytes": 31129,
+      "stdout_sha256": "5923165ff51a92f60944a3029266d5912eb8664af879a9db08b43fc5b201aeb6",
+      "stdout_tail": "ntic_review_campaign_unique_asset_role_counts\": {\"question\": 746, \"reference\": 4, \"solution\": 326}, \"semantic_review_campaign_verified_card_count\": 820, \"semantic_review_current_historical_gap_remaining_count\": 3, \"semantic_review_receipt_sha256\": \"f444a432f2f6f1083f1872465ed349665ca0c1c0b72d026847f5f335903b4924\", \"semantic_review_relation_decision_count\": 2009, \"semantic_visual_detail_card_count\": 799, \"solution_image_card_count\": 314, \"structured_targetable_card_count\": 323, \"subject_counts\": {\"线性代数\": 118, \"高等数学\": 713}, \"target_level_review_exact_sha_carry_forward_count\": 308, \"target_level_review_field_level_carry_forward_candidate_count\": 357, \"target_level_review_first_batch_count\": 30, \"target_level_semantic_review_gap_count\": 474, \"taxonomy_edge_count\": 5805, \"unbound_physical_image_asset_count\": 25, \"unique_image_asset_count\": 1385, \"unique_image_asset_role_counts\": {\"question\": 944, \"reference\": 2, \"solution\": 439}, \"visual_asset_coverage_counts\": {\"none\": 23, \"question_and_solution\": 314, \"question_only\": 494}, \"visual_registration_counts\": {\"registered\": 798, \"registered_with_drift\": 2, \"unregistered_discovery\": 1, \"warning\": 30}, \"visual_solution_evidence_count\": 786}}\n"
+    },
+    "final_successful_builds": 1,
+    "formal_review_sha256": "4ae00a2a3e30827c1f021bc7acdf46d5ac90b297d46281501fd930732b3b14a9",
+    "output_inventory_derivation": {
+      "current_rendered_output_count": 44,
+      "missing_output_count": 1,
+      "new_output_paths": [
+        "错题知识网络/wiki/review/MATHWIKI-REVIEW-088_全库逐题语义复核第41批20题.md"
+      ],
+      "preexisting_output_count": 43,
+      "prior_b40_output_count": 43,
+      "prior_paths_are_strict_subset": true
+    },
+    "outputs": [
+      {
+        "bytes": 19379365,
+        "changed": true,
+        "path": "错题知识网络/wiki/synthesis/MATHWIKI-SYNTHESIS-002_知识点错因证据图谱.json",
+        "post_sha256": "7998bed116dc1b386a6356b2bc477c0f649067ebfc00d744353bbcfead2c7b94",
+        "pre_sha256": "ff12898623d59b752475c8b8d15106d46e56aa997c3424ba2148d4c9d96636e6"
+      },
+      {
+        "bytes": 226014,
+        "changed": true,
+        "path": "错题知识网络/wiki/synthesis/MATHWIKI-SYNTHESIS-002_知识点错因证据图谱.md",
+        "post_sha256": "0765fe9a22044d49b30746ba9106511b1bc7f6ee6312d1a630e597fe553949db",
+        "pre_sha256": "f635fec5e513d1e48fdb45f6716532a6f1dabddd6f68d265b50c580c498b394e"
+      },
+      {
+        "bytes": 585827,
+        "changed": true,
+        "path": "错题知识网络/wiki/synthesis/MATHWIKI-SYNTHESIS-003_逐题内容与视觉证据索引.md",
+        "post_sha256": "51b333152903baf573135d4b0b7246ac0594b3873b591c1458a8c8011ccff4f8",
+        "pre_sha256": "daacc101816a919c4ab9b8c7420c642e201f8247167d89fb0c277736b6c741b8"
+      },
+      {
+        "bytes": 32922,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-008_全库逐题语义复核第1批20题.md",
+        "post_sha256": "3507c7353365aaf77354b010def1942686cb4cf44e638bed654fdda586fafdb0",
+        "pre_sha256": "ef1504cc729632b7ac3e28837151a52e262c4084efd1139a8b3ff5b0d3d7a5ea"
+      },
+      {
+        "bytes": 32511,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-010_全库逐题语义复核第2批20题.md",
+        "post_sha256": "2337f198627aae1165d8baba083f3c4e88ef6b04c897a176e95083e9f6acd0b2",
+        "pre_sha256": "6eb3381515c52f73bfac4f9c2adf8bcd84fdb5f8de50b7ed0ba4bec1c9825efe"
+      },
+      {
+        "bytes": 34983,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-012_全库逐题语义复核第3批20题.md",
+        "post_sha256": "35e915765fa86a06c058b7991e43a5b1560ff59514fd79620f10f0cff89a3141",
+        "pre_sha256": "165efe81bd52b75d79150bc20216207700ef2e6ea6ded0745738a9c2d1457146"
+      },
+      {
+        "bytes": 38121,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-014_全库逐题语义复核第4批20题.md",
+        "post_sha256": "687d66eefa2ad9eecbf6a01786fb663d352cf88ebd39532d91c44634d11e16f3",
+        "pre_sha256": "94038d014803d96da7af6dab050596d31dad886072bc9da5aebdc24fab7cf6b7"
+      },
+      {
+        "bytes": 37849,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-016_全库逐题语义复核第5批20题.md",
+        "post_sha256": "2f01293216b38dc33494ca4b033eee95724f94295ffa44a4b9c3fa7cd17554cd",
+        "pre_sha256": "9eadf39309e67ce0ec8881b0ef8860d5877c439ffdfab95f566ac4e41cdb3945"
+      },
+      {
+        "bytes": 45956,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-018_全库逐题语义复核第6批20题.md",
+        "post_sha256": "1db251a2247e0dbdcb055a3ff3fba39bdd406c287b809781709a82f764569123",
+        "pre_sha256": "af8fe4d87d3d47d7fdaf816304e83b7142c8516e1630e0ea02ffca5f9c043309"
+      },
+      {
+        "bytes": 52150,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-020_全库逐题语义复核第7批20题.md",
+        "post_sha256": "22ce5f6ef16f613d10ee2d7b4d80d391558c1f0948f348a2644e64c785dee74d",
+        "pre_sha256": "87be3eea0acf900aceb75737b174ab574c3a76a762db7f864cbab3ff22675461"
+      },
+      {
+        "bytes": 47428,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-022_全库逐题语义复核第8批20题.md",
+        "post_sha256": "6ce77a1e168f1b082bac27babca4df63cb5c2651bf55f3c842e1e38c9995d0dd",
+        "pre_sha256": "be003cddfb60d2736689229602797d117ac77c0d883e9a6aaf2424bb527e26e5"
+      },
+      {
+        "bytes": 40090,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-024_全库逐题语义复核第9批20题.md",
+        "post_sha256": "840e7cf343f04f7d9d98beb8a9d3a9b68e0fb174b64b2fb95e77f9ac64c1ff40",
+        "pre_sha256": "977303033c4cfae9c1e8ed4a18821eb50f490e9a20cf70c0c07e19db8d312780"
+      },
+      {
+        "bytes": 38471,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-026_全库逐题语义复核第10批20题.md",
+        "post_sha256": "a547c58e421e6092f297454e65a38c0fb610adec5e7126f7a3a2b1f73c5d75ce",
+        "pre_sha256": "a9ef1d324e7b07c939af531b84a43ec4245288ddfc054b3613e0391add520262"
+      },
+      {
+        "bytes": 37886,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-028_全库逐题语义复核第11批20题.md",
+        "post_sha256": "f7696548c8a5b550a4bd96b799b08cfe9ca3814a857e4804332f521bb29e5b26",
+        "pre_sha256": "5d49dcf4d735080969469a3b6dbfe2461099fb5bf713ac8d2cc989338b10548b"
+      },
+      {
+        "bytes": 40738,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-030_全库逐题语义复核第12批20题.md",
+        "post_sha256": "7b8a52a137de759fc3cbd5b362a983de9c0d6411a78f3ed54627122282113a96",
+        "pre_sha256": "dfd8dccaede256a92e22246e1a7586be403f7ed6fea2bff67c5ae281a9d1021f"
+      },
+      {
+        "bytes": 42195,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-032_全库逐题语义复核第13批20题.md",
+        "post_sha256": "2621186110ecf23e6313c823dcf166204b1ebb237eae074006e76dec162f4b5d",
+        "pre_sha256": "89bd6502f9eeb700909c7dd14dfe77d824814660921b8e3472356e1771e38c94"
+      },
+      {
+        "bytes": 41881,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-034_全库逐题语义复核第14批20题.md",
+        "post_sha256": "763dffaa647e11074a634e5115bf78f0fc9bb44d58f75c3a7aaeef52fff76810",
+        "pre_sha256": "a3d05cb3393b485b3aa88a2ca62d0b4529cac5ec53ff43990543d4da475240c0"
+      },
+      {
+        "bytes": 44760,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-036_全库逐题语义复核第15批20题.md",
+        "post_sha256": "3372538ea86db9dc485ff6cf41db1faff0385e2d0c5e0a75ed7755c5978a866c",
+        "pre_sha256": "1286cc584132a507e8c935f12d7e8f365da98af8ffae675fc3ab5f64ea6c62bc"
+      },
+      {
+        "bytes": 44892,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-038_全库逐题语义复核第16批20题.md",
+        "post_sha256": "0f22aaef7e0583b6dcf1987d07c59be1b2e6e8cc98288e5d449e60651aba0a20",
+        "pre_sha256": "144893496f4f72d6e63ad190e92111b1a49129f8b1ebae75d74933400ce428d8"
+      },
+      {
+        "bytes": 38229,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-040_全库逐题语义复核第17批20题.md",
+        "post_sha256": "762be04969b582576effb1a0a161bca75191d28e83853482e153f73079c2fd68",
+        "pre_sha256": "ef9c7ea16a0829d926c2f91c1a1d4c79b98e98c78f60c72d3061adc3863d66bd"
+      },
+      {
+        "bytes": 36524,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-042_全库逐题语义复核第18批20题.md",
+        "post_sha256": "49f728104dd957b96ed85db4790f631392c6c615bb73be04874076e957371c33",
+        "pre_sha256": "896940d813f8eaabf1edd1c6e2ecf24b2e5977b0b104b62a0c931d5cda6db6d9"
+      },
+      {
+        "bytes": 47862,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-044_全库逐题语义复核第19批20题.md",
+        "post_sha256": "819f0feb2643a434c87cb73ae977b8e7bd24f9ecd69122277921d9b7c879c406",
+        "pre_sha256": "b8d496c3def8a2b36a523b911368934e521a62a844e94a664a8efe2be4457e10"
+      },
+      {
+        "bytes": 54356,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-046_全库逐题语义复核第20批20题.md",
+        "post_sha256": "7c3928024dbf1fb72aab7074ce239043b1cd412446b82340c1a50cc6ca310dd3",
+        "pre_sha256": "14005edca0f4bdf66c9903eefd9c978790a8da03e2a2f51a18b184c859d98283"
+      },
+      {
+        "bytes": 45764,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-048_全库逐题语义复核第21批20题.md",
+        "post_sha256": "20d7863783443c058f542d8fc5ee605e600c54aeae505a9f90f3d6c1e7a75e75",
+        "pre_sha256": "131a1a087005e073574d420089423a5bbec07bb37c61cfa8a675177097b6967b"
+      },
+      {
+        "bytes": 46336,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-050_全库逐题语义复核第22批20题.md",
+        "post_sha256": "dd33be4d5d8f1105a88d4b044bdd4fc6d7b8de2ab08e80077190e04cc1b106a5",
+        "pre_sha256": "4a50c66e1a1b14eb21db8f806ded0a0c2960fa2aff68df25e155739ab42e9596"
+      },
+      {
+        "bytes": 42711,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-052_全库逐题语义复核第23批20题.md",
+        "post_sha256": "5be14077d9978e66c622dfedc06421a1ab269c5111d294174f873fddc887ec0c",
+        "pre_sha256": "ae9cc142daf147112b21d9b53b7f9741a8ca1f1ea5e68a2af80a5e603e0e26ad"
+      },
+      {
+        "bytes": 37375,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-054_全库逐题语义复核第24批20题.md",
+        "post_sha256": "af4f65bb3878753130b3ff72d275b8e80cb607913ab6d1e2410564c18776bfac",
+        "pre_sha256": "b7c345a6d2859ac5a362636153a8df5c7d552b885053e8da57bc99ec32cb2c7d"
+      },
+      {
+        "bytes": 34281,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-056_全库逐题语义复核第25批20题.md",
+        "post_sha256": "3fbf6c69372b2a89e44dc5a4cfdd01e7d49f2f7b237d707c6f40cffb593dfcbb",
+        "pre_sha256": "479de07871838a089da7cde5e2bd7bcb1bee3b6f0c0dccff8092b8ec83c6d77d"
+      },
+      {
+        "bytes": 36198,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-058_全库逐题语义复核第26批20题.md",
+        "post_sha256": "d782a575c6281868918a407861de9c65c000a1a63c1593af9f4b691053aedb03",
+        "pre_sha256": "eaead69926733a4f1d1cd79673bacc439cf4c01edd56e8e8e5017704cc72938b"
+      },
+      {
+        "bytes": 36421,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-060_全库逐题语义复核第27批20题.md",
+        "post_sha256": "e0e173c8a716318efb029b45a409123531c11977686c15c7b91c56a7aa8e91df",
+        "pre_sha256": "3fde39c3dbcfd4f4a29658421741cd2426db266a6e685751e9ecac2c6da5a3d6"
+      },
+      {
+        "bytes": 36343,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-062_全库逐题语义复核第28批20题.md",
+        "post_sha256": "9770dc083567baf4a49f05900ca4a96d65b9662e989eb09d0bc3f860f481079b",
+        "pre_sha256": "9eb197d2d079d0067052a77f7f7c06f7a686b0e98f75e405c7c51db0f14df789"
+      },
+      {
+        "bytes": 45531,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-064_全库逐题语义复核第29批20题.md",
+        "post_sha256": "3f90d90d3859d0d0e09784193a29cac2bd73a83a37b51a2707d1e7712d7d06f8",
+        "pre_sha256": "ab458aa36b38300287a080432c68d75436c185387fe9ae90ce9b2386d659d1ee"
+      },
+      {
+        "bytes": 51198,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-066_全库逐题语义复核第30批20题.md",
+        "post_sha256": "2965b11e6e353066b94cf53a67ecbde63529d6ae99a89cb1964e25cfc08ccc16",
+        "pre_sha256": "98e9defe8471f5963689d4ff263039f5082ad26b6b0d149be11659437a20d2a0"
+      },
+      {
+        "bytes": 62091,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-068_全库逐题语义复核第31批20题.md",
+        "post_sha256": "8af8cb41c08f05e4f446445e506a3c1c2c39395173ef2dab79a1b38a530e2e17",
+        "pre_sha256": "8c9178ab7df17740714eeab3b7c834b4c4978d22e692b30ae092e7bffdaf56ce"
+      },
+      {
+        "bytes": 60280,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-070_全库逐题语义复核第32批20题.md",
+        "post_sha256": "c4c4e9d4b966c79942cd962b1d4f0989268866b547c82f7b6c02f83d0e205693",
+        "pre_sha256": "68583a4aec520b5b4644be5b4d06fc2aafa0eb4a10edc6d5f8d11c8314108333"
+      },
+      {
+        "bytes": 27592,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-072_全库逐题语义复核第33批20题.md",
+        "post_sha256": "20e7d82933e121c5f41a686b09f5c6235e0b7faa0163303b23cae8d95983b595",
+        "pre_sha256": "d1a7753a4dbae2990840c3edc326993c72ec35702a6735219cbf452ccfd99e3d"
+      },
+      {
+        "bytes": 33615,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-074_全库逐题语义复核第34批20题.md",
+        "post_sha256": "2e092c6bc71493ea9e5c0d4d2a1a6b51b7d3604e0c512f2a0a82bb42297555bc",
+        "pre_sha256": "afa28a4156a0ae35333c552198b121c53cc3031e14d212700374aa9c09d1e2ec"
+      },
+      {
+        "bytes": 38557,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-076_全库逐题语义复核第35批20题.md",
+        "post_sha256": "b9f82ef8c6ef90b3b69d6d392a09598f7641b7648e21de70d3ef89cc8702a3ef",
+        "pre_sha256": "7e83496361b22d2a438fe4360c727aeddcfac80a92d4e07c65e16b8a59ca31b0"
+      },
+      {
+        "bytes": 37292,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-078_全库逐题语义复核第36批20题.md",
+        "post_sha256": "eea9dfcafa0dd9ca02c0d011a9bbf6f500c3fdf21a0ae2c367edaf2b531bed88",
+        "pre_sha256": "979e8261bdd137fb18b2537847adfc12c98e7188f265e433cf46b8da783822c4"
+      },
+      {
+        "bytes": 38798,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-080_全库逐题语义复核第37批20题.md",
+        "post_sha256": "8e74f11b95ba7ad7f70efbe90e8d8a5890f6ccffd1e04ffe202c9d2abc7f7ebd",
+        "pre_sha256": "7e07b24aadccb9d31eb08174f331ed12059e2e10801725db691c5755d74da271"
+      },
+      {
+        "bytes": 29163,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-082_全库逐题语义复核第38批20题.md",
+        "post_sha256": "e011347d3a6658f9ab6507ca04c7802d4367fc5f3279347f2b859d6906c1b348",
+        "pre_sha256": "5e12d7783c789da69d41b1f5b364c117a008ead1e1a3b7c5cce6b9503f5240ab"
+      },
+      {
+        "bytes": 38329,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-084_全库逐题语义复核第39批20题.md",
+        "post_sha256": "3f4417f3316308db14420ae3df8f71317f95d2233c7f9e2fee0f58cfe6d17943",
+        "pre_sha256": "110b2823db30536debd3633cdff0ffbe0d7a1b6b307e6af9866510a8aac96424"
+      },
+      {
+        "bytes": 38778,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-086_全库逐题语义复核第40批20题.md",
+        "post_sha256": "0b35f95164877259e8fcfcc52e422696c7c2cc7e52fd03eb3051ab1d5f066f9d",
+        "pre_sha256": "c3ca8ec69b554209685ebcd7d75ea2636e44cd8b25c675492ea3a8a2abcd919e"
+      },
+      {
+        "bytes": 33761,
+        "changed": true,
+        "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-088_全库逐题语义复核第41批20题.md",
+        "post_sha256": "a9acd86703a868778ad2c2978e87dc1829aef92d029754b846a8a36459b5249e",
+        "pre_sha256": null
+      }
+    ],
+    "prebuild_binding": {
+      "path": ".codex_tmp/B41_prebuild_output_state.json",
+      "sha256": "db3a81506de90a46c04ed2ab9dcb1ca58a003778104b71169857d962f020dc96"
+    },
+    "schema_version": "b41_graph_build_manifest_v1",
+    "semantic_state_validation": {
+      "campaign_summary": {
+        "semantic_review_batch_count": 41,
+        "semantic_review_campaign_current_card_count": 820,
+        "semantic_review_campaign_physical_asset_path_count": 1325,
+        "semantic_review_campaign_remaining_card_count": 11,
+        "semantic_review_campaign_stale_card_count": 0,
+        "semantic_review_campaign_unique_asset_count": 1076,
+        "semantic_review_campaign_unique_asset_role_counts": {
+          "question": 746,
+          "reference": 4,
+          "solution": 326
+        },
+        "semantic_review_campaign_verified_card_count": 820
+      },
+      "historical_lineage": [
+        {
+          "aggregate_edge_policy": "block_until_relinked",
+          "card_sha256": "c50f6655bc364acca5aa5a5560058b763603777756496e4278503380e0c40d6f",
+          "lineage_assertion": "current_or_superseded",
+          "review_batch_number": 5,
+          "reviewed_card_id": "LA-044",
+          "selected_peer_id": "LA-109",
+          "semantic_edge_blocked": true,
+          "snapshot_status": "current"
+        },
+        {
+          "aggregate_edge_policy": "block_until_relinked",
+          "card_sha256": "c30fae15795e9170d8e82c0dddc98b25f590e1facb8b3b319a28e60f7cb7a800",
+          "lineage_assertion": "current_or_superseded",
+          "review_batch_number": 2,
+          "reviewed_card_id": "LA-095",
+          "selected_peer_id": "LA-100",
+          "semantic_edge_blocked": true,
+          "snapshot_status": "current"
+        }
+      ],
+      "historical_lineage_aggregate_blocked_count": 2,
+      "historical_lineage_current_count": 2,
+      "selected_aggregate_blocked_count": 20,
+      "selected_current_snapshot_count": 20,
+      "status": "passed"
+    },
+    "source_state_sha256": "7c3b30230c5651164a85a86ea177cec84bbc722955dd3715f9ba62d18fa0cadc",
+    "started_ledger_binding": {
+      "core_payload_sha256": "b2b4d50997e946f38dc2780e4b04b369cbd9c3018764e8fa6a8f70e8e28a2347",
+      "path": ".codex_tmp/B41_graph_execution_ledger.json",
+      "sha256": "6ae4b1092afc73288f60c57950a6e55912e3c54155f35e38a99737c1b29c48cc"
+    },
+    "successful_builds": 1,
+    "superseded_successful_builds": 0
+  },
+  "final_validation_result": {
+    "batch_number": 41,
+    "build_receipts_check": "passed",
+    "closeout_pre_validation_binding_sha256": "9671e912297e1e6b7256f3fe42eaaf214732f40840ed4864dd2d6c9eabc763ca",
+    "full_test_suite": "passed_393_of_393",
+    "git_diff_check": "passed",
+    "graph_check": "passed",
+    "path": ".codex_tmp/B41_validation_result.json",
+    "postapply_manifest_check": "passed",
+    "projection_correction_check": "passed",
+    "provisional_closeout_check": "passed",
+    "review_installed_check": "passed",
+    "schema_version": "b41_final_validation_result_v1",
+    "sha256": "5f423f29f5a9ae92e6cf6c3283efa056c442f9d44d49d58b47ff66ae294b0ee9",
+    "targeted_tests": "passed_4_of_4",
+    "test_patch_installed_check": "passed",
+    "wrongnet_completion_status": "completed_recovered_after_observation_loss",
+    "wrongnet_process_returncode": "unknown"
+  },
+  "generator_guardrails": {
+    "draft_only_path": ".codex_tmp/B41_closeout_draft.json",
+    "formal_writes_by_generator": 0,
+    "graph_builds_by_generator": 0,
+    "tests_run_by_generator": 0,
+    "wrongnet_rebuilds_by_generator": 0
+  },
+  "historical_lineage_revalidation": [
+    {
+      "affected_card_ids": [
+        "LA-044",
+        "LA-109"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-017_全库逐题语义复核第5批正式收口.json",
+      "closeout_post_sha256": "892e9787f8998d2d10d45752ff20dcc43170f8ae89bc801c76f0d572367daa5c",
+      "closeout_pre_sha256": "8607e17752c798afd85491fba57b5c762114955f725bce825804e8224921f45e",
+      "current_aggregate_edge_policy": "block_until_relinked",
+      "historical_relation_decisions_preserved": true,
+      "peer_card_sha256": "6c0692aee800f6ddfba68ebe6756b8eaafab736f47dbc18841b8eb795011d139",
+      "prior_batch40_lineage_preserved_when_present": true,
+      "removed_edge": [
+        "LA-044",
+        "LA-109"
+      ],
+      "review_batch_number": 5,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-016_全库逐题语义复核第5批20题.json",
+      "review_post_sha256": "f2c94d5f0f29883db81ed59ca4e0a4d2141e756cfbf02dc231c0673f196e6976",
+      "review_pre_sha256": "575bfb05ae5ba8c8b71ffb8c6b63de13f956b51d07d1ead529955a26363e4bfa",
+      "reviewed_card_id": "LA-044",
+      "reviewed_card_sha256": "c50f6655bc364acca5aa5a5560058b763603777756496e4278503380e0c40d6f",
+      "selected_peer_id": "LA-109",
+      "source_write_lineage": "current_or_superseded"
+    },
+    {
+      "affected_card_ids": [
+        "LA-095",
+        "LA-100"
+      ],
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-011_全库逐题语义复核第2批正式收口.json",
+      "closeout_post_sha256": "07bfcb81c98140a7dfcff89f270ed121df8f8043c45c303fa1edcc668618a263",
+      "closeout_pre_sha256": "8826729b9bf6f79b30c13523b0eda25bfd3aebe9effb97a299bca631460f91c0",
+      "current_aggregate_edge_policy": "block_until_relinked",
+      "historical_relation_decisions_preserved": true,
+      "peer_card_sha256": "c4e8a80974eb733193e8642510d4b6353b8eb5276511a5830d05d185628f3ebc",
+      "prior_batch40_lineage_preserved_when_present": true,
+      "removed_edge": [
+        "LA-095",
+        "LA-100"
+      ],
+      "review_batch_number": 2,
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-010_全库逐题语义复核第2批20题.json",
+      "review_post_sha256": "a6dc045bf2da8571101196ede41e9379c7a27bb8adcbe479d9cd78859e194805",
+      "review_pre_sha256": "434d892e1fe9213aab8009a0592fd1ed54a7549313f3fb3ad42faf016f1c2c22",
+      "reviewed_card_id": "LA-095",
+      "reviewed_card_sha256": "c30fae15795e9170d8e82c0dddc98b25f590e1facb8b3b319a28e60f7cb7a800",
+      "selected_peer_id": "LA-100",
+      "source_write_lineage": "current_or_superseded"
+    }
+  ],
+  "identity_pairs": [
+    {
+      "canonical_id": "LA-021",
+      "formal_edges": [],
+      "hold_ids": [
+        "LA-101",
+        "LA-102"
+      ]
+    }
+  ],
+  "input_bindings": {
+    "actual_content_visual_review": {
+      "path": ".codex_tmp/B41_actual_content_visual_review.json",
+      "role": "completed_visual_audit",
+      "sha256": "032e0ea29a5f1f076cf134320c3cf4a108e010ca7cb84e281afbeceabaecd15a"
+    },
+    "b40_closeout": {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-087_全库逐题语义复核第40批正式收口.json",
+      "role": "validated_predecessor_CLOSEOUT_087",
+      "sha256": "086ec0124de01c47a43b1304cc35479677aaeb0263b8c843e3d0f42c5cb34916"
+    },
+    "b40_validation": {
+      "path": ".codex_tmp/B40_validation_result.json",
+      "role": "validated_predecessor_full_suite",
+      "sha256": "eead8ace1c63cb13ce61c77a3bfc439f74a8b935047285791250bc6602242db8"
+    },
+    "final_validation_result": {
+      "path": ".codex_tmp/B41_validation_result.json",
+      "role": "post_suite_validation_receipt",
+      "sha256": "5f423f29f5a9ae92e6cf6c3283efa056c442f9d44d49d58b47ff66ae294b0ee9"
+    },
+    "formal_semantic_review": {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-088_全库逐题语义复核第41批20题.json",
+      "role": "installed_REVIEW_088",
+      "sha256": "4ae00a2a3e30827c1f021bc7acdf46d5ac90b297d46281501fd930732b3b14a9"
+    },
+    "fresh_freeze": {
+      "path": ".codex_tmp/B41_fresh_freeze_final.json",
+      "role": "fixed_final_freeze",
+      "sha256": "2621b339eb95b66ff319c2e32b9884e9bc161c45a86562ed8271f7b1b3bf87d1"
+    },
+    "fresh_relation_spec": {
+      "path": ".codex_tmp/B41_fresh_relation_final.json",
+      "role": "fixed_relation_spec",
+      "sha256": "79dde91b79e998a244f2519b32c1bc25831befa16aabac0bdf859652f98deb2d"
+    },
+    "fresh_remediation": {
+      "path": ".codex_tmp/B41_remediation_spec.json",
+      "role": "fixed_remediation",
+      "sha256": "3de30c4f0f013664e998986b5ceb9f3a2a017f833bbf3789781a01cee81c70c1"
+    },
+    "graph_build_manifest": {
+      "path": ".codex_tmp/B41_graph_build_manifest.json",
+      "role": "single_graph_build_receipt",
+      "sha256": "2143d7bab7d55581e91f2fd68113d2b3289a32ff7fd6f2591d2095db12de7f84"
+    },
+    "original_postimage_manifest": {
+      "path": ".codex_tmp/B41_postimage_manifest_final.json",
+      "role": "91_path_original_postimage_manifest",
+      "sha256": "8925f3714514d45c96d3b99e392792b65e862f76ff8a47877f298b319cb32954"
+    },
+    "postapply_write_manifest": {
+      "path": ".codex_tmp/B41_write_manifest_final.json",
+      "role": "91_unique_path_effective_final_postapply_receipt",
+      "sha256": "0f151835ebefab0b139eb78efc5920f56ea032f4ed07d13e7da112d1ef0a226e"
+    },
+    "prebuild_output_state": {
+      "path": ".codex_tmp/B41_prebuild_output_state.json",
+      "role": "derived_output_preimage_receipt",
+      "sha256": "db3a81506de90a46c04ed2ab9dcb1ca58a003778104b71169857d962f020dc96"
+    },
+    "prewrite_plan": {
+      "path": ".codex_tmp/B41_prewrite_design.json",
+      "role": "fixed_prewrite_plan",
+      "sha256": "3f0b6a5e386fdf9eafcedb5f8e458fb55e849ca3612454cc48a32b4b21f659df"
+    },
+    "projection_correction_manifest": {
+      "path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+      "role": "26_path_supplemental_source_projection_correction",
+      "sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1"
+    },
+    "provisional_closeout": {
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-089_全库逐题语义复核第41批正式收口.json",
+      "role": "actual_provisional_CLOSEOUT_089_validated_before_final_binding",
+      "sha256": "9671e912297e1e6b7256f3fe42eaaf214732f40840ed4864dd2d6c9eabc763ca"
+    },
+    "semantic_review_draft": {
+      "path": ".codex_tmp/B41_review_draft.json",
+      "role": "validated_review_draft",
+      "sha256": "4ae00a2a3e30827c1f021bc7acdf46d5ac90b297d46281501fd930732b3b14a9"
+    },
+    "wrongnet_build_manifest": {
+      "path": ".codex_tmp/B41_wrongnet_rebuild_manifest.json",
+      "role": "single_wrongnet_build_receipt",
+      "sha256": "0e3d70c37719b6160896fc4ebfb34ae0fed8437dcf62ce57c775ae31b5a7f466"
+    }
+  },
+  "mode": "authorized_full_library_semantic_review",
+  "no_strong_edge_sentinel_card_ids": [
+    "LA-086",
+    "LA-087",
+    "LA-088",
+    "LA-089",
+    "LA-090",
+    "LA-091",
+    "LA-092",
+    "LA-093",
+    "LA-097",
+    "LA-098",
+    "LA-100",
+    "LA-101",
+    "LA-102",
+    "LA-103",
+    "LA-104",
+    "LA-105",
+    "LA-106",
+    "LA-107",
+    "LA-108",
+    "LA-109"
+  ],
+  "policy": {
+    "blocked_candidates_are_not_formal_relations": true,
+    "build_policy": "one_wrongnet_rebuild_and_one_final_graph_build",
+    "canonical_relation_storage": "one_canonical_edge_record",
+    "no_stable_id_merge_or_delete_without_separate_confirmation": true,
+    "personal_error_requires_existing_user_evidence": true,
+    "question_solution_and_visual_evidence_required_for_every_relation": true,
+    "reverse_declaration_not_manufactured": true,
+    "source_solution_not_treated_as_personal_error": true,
+    "strong_edges_require_both_personal_breakpoints_user_confirmed": true
+  },
+  "projection_contract": {
+    "detail_exact_formal_card_file_sha_paths": 35,
+    "lineage": "91-path original transaction plus 26-path supplemental in-place projection correction",
+    "original_postimage_manifest": {
+      "path": ".codex_tmp/B41_postimage_manifest_final.json",
+      "sha256": "8925f3714514d45c96d3b99e392792b65e862f76ff8a47877f298b319cb32954"
+    },
+    "source_structured_projection_sha_paths": 26,
+    "supplemental_correction_manifest": {
+      "path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+      "sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1"
+    },
+    "supplemental_source_corrections": 26,
+    "unique_source_paths_before_and_after": 91
+  },
+  "registry_writes": [
+    {
+      "card_id": "LA-086",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 1478,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "83a3f2fae02109715a2dab6566f5592318779dbc7122954d46c2f87900a6c9ec"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-086.md",
+      "post_sha256": "c2d2e1e681bcfb7342489926904271c56723a2b59621efa5cbcdbb9d6da789ac",
+      "postimage": {
+        "bytes": 1478,
+        "encoding": "utf-8",
+        "sha256": "c2d2e1e681bcfb7342489926904271c56723a2b59621efa5cbcdbb9d6da789ac"
+      },
+      "pre_sha256": "cd1dc24bc1b3b8d16482f5a12420532871b2dbabe8e37079b5f9eb6bd79cdbcd",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "c2d2e1e681bcfb7342489926904271c56723a2b59621efa5cbcdbb9d6da789ac",
+        "intermediate_post_sha256": "83a3f2fae02109715a2dab6566f5592318779dbc7122954d46c2f87900a6c9ec",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "fc0feb1a02040ae12679bc1f025656c39dec1741d8a8fec71d15de91e2d69b44"
+      }
+    },
+    {
+      "card_id": "LA-087",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 6263,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "8c405a33d190142fd4d78771e2d8f1dcfb0f0e686c6000a9e6149e6c32024a4a"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-087.md",
+      "post_sha256": "52c6f7e191395267f3d2029fc34d187b7b9595c0c0e9f4d2140a9ee58ba1f75f",
+      "postimage": {
+        "bytes": 6263,
+        "encoding": "utf-8",
+        "sha256": "52c6f7e191395267f3d2029fc34d187b7b9595c0c0e9f4d2140a9ee58ba1f75f"
+      },
+      "pre_sha256": "c21f536dcc8a0ae359d9c8ad070bca16cfd04a248f1ef29edb198f0d2a359a56",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "52c6f7e191395267f3d2029fc34d187b7b9595c0c0e9f4d2140a9ee58ba1f75f",
+        "intermediate_post_sha256": "8c405a33d190142fd4d78771e2d8f1dcfb0f0e686c6000a9e6149e6c32024a4a",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "9f535a72a51140f9460edc522fbc35cb62c10dbdcf3df1c7fb361cdef311150b"
+      }
+    },
+    {
+      "card_id": "LA-088",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 6255,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "240beb1cb8ec1f803c029a39275b43c68dec37772458f0a52f42e5593938353d"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-088.md",
+      "post_sha256": "729e62cf76c685c06650cdc205a3777da6368c9c0c8373a71038c1cf7a7f13f2",
+      "postimage": {
+        "bytes": 6255,
+        "encoding": "utf-8",
+        "sha256": "729e62cf76c685c06650cdc205a3777da6368c9c0c8373a71038c1cf7a7f13f2"
+      },
+      "pre_sha256": "eab09ed05e4dab508b63c5b937bd99fe95ed095663239b81eb84a69c84f7540e",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "729e62cf76c685c06650cdc205a3777da6368c9c0c8373a71038c1cf7a7f13f2",
+        "intermediate_post_sha256": "240beb1cb8ec1f803c029a39275b43c68dec37772458f0a52f42e5593938353d",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "b11567cb14b12e857938c2e7b87df05bfea59a4c5ba883ec36917e34ee90bfcb"
+      }
+    },
+    {
+      "card_id": "LA-089",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5903,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "650907bfa4d99cec1d36566318ba1cbe2f8820651113fd2017e607264bccc82d"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-089.md",
+      "post_sha256": "5afeb79df4160a496330ebcdf50cb72f432b7877cee64a21db5d1948429a088f",
+      "postimage": {
+        "bytes": 5903,
+        "encoding": "utf-8",
+        "sha256": "5afeb79df4160a496330ebcdf50cb72f432b7877cee64a21db5d1948429a088f"
+      },
+      "pre_sha256": "b87d3b9029c45487f09027a56164fecf2aae77f0490b34be87bf9ccec0b8866a",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "5afeb79df4160a496330ebcdf50cb72f432b7877cee64a21db5d1948429a088f",
+        "intermediate_post_sha256": "650907bfa4d99cec1d36566318ba1cbe2f8820651113fd2017e607264bccc82d",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "30e9ebdf5aeb73d982c89a0ffae97b0f972d5e59fcf02ebefddbbacb3bb954fc"
+      }
+    },
+    {
+      "card_id": "LA-090",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5693,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "1fd796fa538d8563f00c5cb981473058fa6324706a767bd3281ebd699b6ac6d4"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-090.md",
+      "post_sha256": "fe567649ccbc9c9e4cca49371ec7acd7a9b0b47debbb3a7d19c2e088dc03a688",
+      "postimage": {
+        "bytes": 5693,
+        "encoding": "utf-8",
+        "sha256": "fe567649ccbc9c9e4cca49371ec7acd7a9b0b47debbb3a7d19c2e088dc03a688"
+      },
+      "pre_sha256": "2d8560eb008041f8467f12bd869249b3fce6bfb74bea530254cc2b98b9324afd",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "fe567649ccbc9c9e4cca49371ec7acd7a9b0b47debbb3a7d19c2e088dc03a688",
+        "intermediate_post_sha256": "1fd796fa538d8563f00c5cb981473058fa6324706a767bd3281ebd699b6ac6d4",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "b1785b6ac6eaaefe6ad8ee497521a9396f1a78dfde9a41834030e3f66548302d"
+      }
+    },
+    {
+      "card_id": "LA-091",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5660,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "0712af1f337aa145fc21229bdfc568370305db82ea636f3f1383c944696eb090"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-091.md",
+      "post_sha256": "7093ef31f9c184263b1002617d9a19b2a87cbf07a20f3d161336dad22280e99d",
+      "postimage": {
+        "bytes": 5660,
+        "encoding": "utf-8",
+        "sha256": "7093ef31f9c184263b1002617d9a19b2a87cbf07a20f3d161336dad22280e99d"
+      },
+      "pre_sha256": "9aeedee3a6ae260a4a21d9d181b1a979bfba43baaeb1bca2e699f8149976a39a",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "7093ef31f9c184263b1002617d9a19b2a87cbf07a20f3d161336dad22280e99d",
+        "intermediate_post_sha256": "0712af1f337aa145fc21229bdfc568370305db82ea636f3f1383c944696eb090",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "958832c58bf2e107a0cb76da8732973d506b53d6135822e29b6419601b1a73ec"
+      }
+    },
+    {
+      "card_id": "LA-092",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5332,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "ee54d295c6a27dd3ef9380e84c23aa29250a0356c77517a7323d86d57d954fa3"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-092.md",
+      "post_sha256": "4006e6671e0b12f4c75f3c2dc0a76010435a13eeafe8ef6ec2c695ba2b6fb5af",
+      "postimage": {
+        "bytes": 5332,
+        "encoding": "utf-8",
+        "sha256": "4006e6671e0b12f4c75f3c2dc0a76010435a13eeafe8ef6ec2c695ba2b6fb5af"
+      },
+      "pre_sha256": "da406099fb5d3f8cd1af4f540030b47fc72604286c93fdb12514e3bd0bf1df6f",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "4006e6671e0b12f4c75f3c2dc0a76010435a13eeafe8ef6ec2c695ba2b6fb5af",
+        "intermediate_post_sha256": "ee54d295c6a27dd3ef9380e84c23aa29250a0356c77517a7323d86d57d954fa3",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "410d3b4ce8153ceb6a938c1e7ba761641c1fc73753899a8ac38a5959f6a22a6b"
+      }
+    },
+    {
+      "card_id": "LA-093",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5435,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "bd4e8ac0939d948580aef42c75dc6daaf3d4e86cfdab8b51920d29c9601bbd4b"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-093.md",
+      "post_sha256": "f4d91a8faf8dbecaea46f3080c54bf9a3cf7bdfbe18d96899aabbb392f0185f2",
+      "postimage": {
+        "bytes": 5435,
+        "encoding": "utf-8",
+        "sha256": "f4d91a8faf8dbecaea46f3080c54bf9a3cf7bdfbe18d96899aabbb392f0185f2"
+      },
+      "pre_sha256": "949ff56e618f16ab227e075c24ccf62b82cdc27307cbb48d44e4e9229f043b0e",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "f4d91a8faf8dbecaea46f3080c54bf9a3cf7bdfbe18d96899aabbb392f0185f2",
+        "intermediate_post_sha256": "bd4e8ac0939d948580aef42c75dc6daaf3d4e86cfdab8b51920d29c9601bbd4b",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "652b199057c878d88faa16edc597aa3e4b528e893f3d5a83373bc65d22b670e5"
+      }
+    },
+    {
+      "card_id": "LA-097",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5749,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "0ad792f892876a99cd55672ac5f77dce0381a04713c2a464cc85e66c6ef78df1"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-097.md",
+      "post_sha256": "a86d73575c700d672246e367a0638ea4ccad4a5c23778b682c6b705db4638506",
+      "postimage": {
+        "bytes": 5749,
+        "encoding": "utf-8",
+        "sha256": "a86d73575c700d672246e367a0638ea4ccad4a5c23778b682c6b705db4638506"
+      },
+      "pre_sha256": "31960cd399ab97221dd2fdf2d11bd16b38c838afd4ff86b07caa4df81ffd5aba",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "a86d73575c700d672246e367a0638ea4ccad4a5c23778b682c6b705db4638506",
+        "intermediate_post_sha256": "0ad792f892876a99cd55672ac5f77dce0381a04713c2a464cc85e66c6ef78df1",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "914046132835fc41b07a508d4db2740856451d647c2e6bce5fff7bef0cb26031"
+      }
+    },
+    {
+      "card_id": "LA-098",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5957,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "46ec42276a57bf49d4d3a5a4d4272f1c95428e9eb8725917c43c1832fa89986b"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-098.md",
+      "post_sha256": "7a7ae8a7a3843dd47555fb4209986c5af7ce65dbb72a8819231bc3caeca93637",
+      "postimage": {
+        "bytes": 5957,
+        "encoding": "utf-8",
+        "sha256": "7a7ae8a7a3843dd47555fb4209986c5af7ce65dbb72a8819231bc3caeca93637"
+      },
+      "pre_sha256": "8f301d24dfb3463c41bf53699760a54f3d10a893e93f090fd9bcaa4ac86c2eac",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "7a7ae8a7a3843dd47555fb4209986c5af7ce65dbb72a8819231bc3caeca93637",
+        "intermediate_post_sha256": "46ec42276a57bf49d4d3a5a4d4272f1c95428e9eb8725917c43c1832fa89986b",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "bf06d9af3a204f73a64749e26846694613352a9e9da7218cb9eeb751f08c3be6"
+      }
+    },
+    {
+      "card_id": "LA-100",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5746,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "cea1dd4ce70350992e9ee3be6904b8e9ec74b59f5175858d9c6daad5c7fbab78"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-100.md",
+      "post_sha256": "84e7ea5a780fb887fbebcead2e03a3d992f3783d6b1b37c1999e2303b10b8dd3",
+      "postimage": {
+        "bytes": 5746,
+        "encoding": "utf-8",
+        "sha256": "84e7ea5a780fb887fbebcead2e03a3d992f3783d6b1b37c1999e2303b10b8dd3"
+      },
+      "pre_sha256": "a06c93e3d9649258418828398e94493d99d55338a19cf3cc2854879d4ada2f1a",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "84e7ea5a780fb887fbebcead2e03a3d992f3783d6b1b37c1999e2303b10b8dd3",
+        "intermediate_post_sha256": "cea1dd4ce70350992e9ee3be6904b8e9ec74b59f5175858d9c6daad5c7fbab78",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "ac9296b4b9a754bc5f8691a01eef822c3a74b1a7b0df2a256d26ab5e5fc6cb75"
+      }
+    },
+    {
+      "card_id": "LA-101",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 1705,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "7d08be7c595da0bfe876adcb4b272c88b5cd47a0c12aa27b5aa38c05542531a8"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-101.md",
+      "post_sha256": "9121f9999851a34c5c546e12d4e097dcd1116bfd14b8fea0caae194f88578030",
+      "postimage": {
+        "bytes": 1705,
+        "encoding": "utf-8",
+        "sha256": "9121f9999851a34c5c546e12d4e097dcd1116bfd14b8fea0caae194f88578030"
+      },
+      "pre_sha256": "cf417675430ef1b61f1ed95fbd589df9a2b86b75bce4614edc0e19cb0ae56c60",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "9121f9999851a34c5c546e12d4e097dcd1116bfd14b8fea0caae194f88578030",
+        "intermediate_post_sha256": "7d08be7c595da0bfe876adcb4b272c88b5cd47a0c12aa27b5aa38c05542531a8",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "fbdc8c16b6ea253af284f58736af7151e13079f1aecf92cca82d863ef3def58d"
+      }
+    },
+    {
+      "card_id": "LA-102",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 1705,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "765a77b985a0fb8057e05d88912cb6313a336d499e4d6855d726aa9908277d74"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-102.md",
+      "post_sha256": "37a578034d05bfa7a5b1f982074beb21eee889c892590fc0ebb927df5164a3f7",
+      "postimage": {
+        "bytes": 1705,
+        "encoding": "utf-8",
+        "sha256": "37a578034d05bfa7a5b1f982074beb21eee889c892590fc0ebb927df5164a3f7"
+      },
+      "pre_sha256": "a2aff8e2e94ab8fb8d2fa213de468e60e26c47ba5872d0812d98738641b91440",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "37a578034d05bfa7a5b1f982074beb21eee889c892590fc0ebb927df5164a3f7",
+        "intermediate_post_sha256": "765a77b985a0fb8057e05d88912cb6313a336d499e4d6855d726aa9908277d74",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "7163bfdd3cb49b38c25f56162ca4556c0a8021775217175d649c180d6d461022"
+      }
+    },
+    {
+      "card_id": "LA-103",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5433,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "c48af8bb5a674f6a1df8e5d557dea34de822e0811a495d3157a4132f8a4128eb"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-103.md",
+      "post_sha256": "99364f559ad0cc4f33002e31e87fe6caa6b7dd3d4d1fcd6fcf48e5a4d278994e",
+      "postimage": {
+        "bytes": 5433,
+        "encoding": "utf-8",
+        "sha256": "99364f559ad0cc4f33002e31e87fe6caa6b7dd3d4d1fcd6fcf48e5a4d278994e"
+      },
+      "pre_sha256": "a81e490028abaff7c45d2dc9672618e6194f2093a7ec4ccec2eb020c08b5c6fc",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "99364f559ad0cc4f33002e31e87fe6caa6b7dd3d4d1fcd6fcf48e5a4d278994e",
+        "intermediate_post_sha256": "c48af8bb5a674f6a1df8e5d557dea34de822e0811a495d3157a4132f8a4128eb",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "1898d5a3e83d6301abee2b12ba8b9aa3e62440d181f53938ecb9c83b837913e1"
+      }
+    },
+    {
+      "card_id": "LA-104",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5545,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "46e95bf90dfed0124ab01a08dee1ce6869240582997d597ef1492b8b6902939c"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-104.md",
+      "post_sha256": "1afdbe21b75e855db1e4948ec9115d0c8ed20d225b4c162f91e668bcf1f9851b",
+      "postimage": {
+        "bytes": 5545,
+        "encoding": "utf-8",
+        "sha256": "1afdbe21b75e855db1e4948ec9115d0c8ed20d225b4c162f91e668bcf1f9851b"
+      },
+      "pre_sha256": "f4d0f7d4a44c155e679826a93e76ae5fc2c3b2384496b102d9e1f52736f65e55",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "1afdbe21b75e855db1e4948ec9115d0c8ed20d225b4c162f91e668bcf1f9851b",
+        "intermediate_post_sha256": "46e95bf90dfed0124ab01a08dee1ce6869240582997d597ef1492b8b6902939c",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "6858b4680901f55e6bdeb05b9016a08f10f842c72d2319df2d66a0ca3ab996b0"
+      }
+    },
+    {
+      "card_id": "LA-105",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5466,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "271c57900f7dba7bfd0b74af7c8f375906266bb28fd930e9c2d466a432104a5f"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-105.md",
+      "post_sha256": "30421b7c712622ad67cd13ce32ea7d4d269f03d57c1beed8ad2c7f800c5e47b6",
+      "postimage": {
+        "bytes": 5466,
+        "encoding": "utf-8",
+        "sha256": "30421b7c712622ad67cd13ce32ea7d4d269f03d57c1beed8ad2c7f800c5e47b6"
+      },
+      "pre_sha256": "5256219be19f59d53b78152686667ea1abd4a3a949aac34b56a149371038dfa2",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "30421b7c712622ad67cd13ce32ea7d4d269f03d57c1beed8ad2c7f800c5e47b6",
+        "intermediate_post_sha256": "271c57900f7dba7bfd0b74af7c8f375906266bb28fd930e9c2d466a432104a5f",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "5a63b80dc3ce1f4b5c0595efb039752386358cb424f2ceedd86b4d1d01c2cc55"
+      }
+    },
+    {
+      "card_id": "LA-106",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 6414,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "0f72f10dfc6d2e93c6d505cebeacef5f31c9a786aac2882f62e0d95501ef5fde"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-106.md",
+      "post_sha256": "07670ad417ca5c4341f44b2c2fa88579ed27f5fb7920835ddb06e1b561a12522",
+      "postimage": {
+        "bytes": 6414,
+        "encoding": "utf-8",
+        "sha256": "07670ad417ca5c4341f44b2c2fa88579ed27f5fb7920835ddb06e1b561a12522"
+      },
+      "pre_sha256": "5b1cea55f6fa273b54c2d72ce8c62df4d2b339430bcee514d1976b65c84f9297",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "07670ad417ca5c4341f44b2c2fa88579ed27f5fb7920835ddb06e1b561a12522",
+        "intermediate_post_sha256": "0f72f10dfc6d2e93c6d505cebeacef5f31c9a786aac2882f62e0d95501ef5fde",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "65cdc1fc849c7d300d4db0de84b08f7726113df81f65e5089df85e7e6e1c01b1"
+      }
+    },
+    {
+      "card_id": "LA-107",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 1550,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "a9ecebad7cc2e4ffc577aa0475fbd66255f4cc07ae90f077f4c92192214964c0"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-107.md",
+      "post_sha256": "2a587c91389de82355aade196777c03ae030d7d66be5f6c2206341a804ecf00e",
+      "postimage": {
+        "bytes": 1550,
+        "encoding": "utf-8",
+        "sha256": "2a587c91389de82355aade196777c03ae030d7d66be5f6c2206341a804ecf00e"
+      },
+      "pre_sha256": "eb016c759f5c55567e924539685f62be1641d1693642acfe8cf388a1d02890e6",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "2a587c91389de82355aade196777c03ae030d7d66be5f6c2206341a804ecf00e",
+        "intermediate_post_sha256": "a9ecebad7cc2e4ffc577aa0475fbd66255f4cc07ae90f077f4c92192214964c0",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "ca1c91579bb82c6cd70798c73ad9f4c70c9d16f537c666d166c4c1fbc151afb5"
+      }
+    },
+    {
+      "card_id": "LA-108",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 1546,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "fe590874bd7ef37d7cd8312801123ea90aae550d009fde501b0198b822910d39"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-108.md",
+      "post_sha256": "9bf3730ded0602419413be5875ca17bc155a91af4fb7694c7898fee586e14e89",
+      "postimage": {
+        "bytes": 1546,
+        "encoding": "utf-8",
+        "sha256": "9bf3730ded0602419413be5875ca17bc155a91af4fb7694c7898fee586e14e89"
+      },
+      "pre_sha256": "b4700517708022baa04ef64837c12336212c9c3535d9bcb15c81876babf8d4bd",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "9bf3730ded0602419413be5875ca17bc155a91af4fb7694c7898fee586e14e89",
+        "intermediate_post_sha256": "fe590874bd7ef37d7cd8312801123ea90aae550d009fde501b0198b822910d39",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "3b5249cfae49151d269010ebd2b46b9915d14f886f972074ea67bcd589de4769"
+      }
+    },
+    {
+      "card_id": "LA-109",
+      "changed_fields": [
+        "visual_bindings",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_source",
+      "original_intermediate_postimage": {
+        "bytes": 5407,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "a62404b081ab23fb86565a3e8eb00ee5670847583869ae4cae0d08e162191454"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-109.md",
+      "post_sha256": "c60a688a021d2615db1048f719b389696428fa1a295d09750907390340385075",
+      "postimage": {
+        "bytes": 5407,
+        "encoding": "utf-8",
+        "sha256": "c60a688a021d2615db1048f719b389696428fa1a295d09750907390340385075"
+      },
+      "pre_sha256": "c1c1146256f356e20f5144a3924faa64560aa8109168f530e36a8e268c4ca79b",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "c60a688a021d2615db1048f719b389696428fa1a295d09750907390340385075",
+        "intermediate_post_sha256": "a62404b081ab23fb86565a3e8eb00ee5670847583869ae4cae0d08e162191454",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "59cbda63061fd4cfec11b4dfa1dbce89d19994aecaef83a261319f01b1ed7d0c"
+      }
+    },
+    {
+      "card_id": "LA-044",
+      "changed_fields": [
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "body_relation_section"
+      ],
+      "kind": "external_source",
+      "original_intermediate_postimage": {
+        "bytes": 4884,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "17a0e2c612fa93e89bffa475221881d0fda639ab4eb6fe69d4a322303d9b410f"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-044.md",
+      "post_sha256": "b8f9d8225494a38616bac5f3893b40b21b06eb960ea95ff5e2bca293d8670106",
+      "postimage": {
+        "bytes": 4884,
+        "encoding": "utf-8",
+        "sha256": "b8f9d8225494a38616bac5f3893b40b21b06eb960ea95ff5e2bca293d8670106"
+      },
+      "pre_sha256": "90c1931a6db09fd8a1cd1de54a46bd1a483ba45517eba9017e35586a4acd7ccc",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "b8f9d8225494a38616bac5f3893b40b21b06eb960ea95ff5e2bca293d8670106",
+        "intermediate_post_sha256": "17a0e2c612fa93e89bffa475221881d0fda639ab4eb6fe69d4a322303d9b410f",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "667916ffe557b9b2ed174587777201064d3e3a9d74b9a1497fea33f9903ee6a5"
+      }
+    },
+    {
+      "card_id": "LA-095",
+      "changed_fields": [
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "body_relation_section"
+      ],
+      "kind": "external_source",
+      "original_intermediate_postimage": {
+        "bytes": 3367,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "1540a54d2deb1b0badb791028177c86192a12cfaa1ef5ddb628a6bccfd8f2e2c"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-095.md",
+      "post_sha256": "44196cf8c0437c851580f4eca330f72a28bef00ebdb2277d96cdc143312349ae",
+      "postimage": {
+        "bytes": 3367,
+        "encoding": "utf-8",
+        "sha256": "44196cf8c0437c851580f4eca330f72a28bef00ebdb2277d96cdc143312349ae"
+      },
+      "pre_sha256": "74f64802abe21227d10069b66424aeb8751dd7cc7875a234d0eab0b10ef69f3f",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "44196cf8c0437c851580f4eca330f72a28bef00ebdb2277d96cdc143312349ae",
+        "intermediate_post_sha256": "1540a54d2deb1b0badb791028177c86192a12cfaa1ef5ddb628a6bccfd8f2e2c",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "99d9d5fc7e9dd4b9d4d87e095f10260c50ae28182d18951188c41fe169a9a892"
+      }
+    },
+    {
+      "card_id": "LA-110",
+      "changed_fields": [
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "body_relation_section"
+      ],
+      "kind": "external_source",
+      "original_intermediate_postimage": {
+        "bytes": 4466,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "ea1c38202094f2c0db771c0c08b93fbab2c22ce7058bc014320f2457a7d1283c"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-110.md",
+      "post_sha256": "16a14de6b86a70a148ba51942173ad98b9ed4931d2f0b120c78aeb76530fcea5",
+      "postimage": {
+        "bytes": 4466,
+        "encoding": "utf-8",
+        "sha256": "16a14de6b86a70a148ba51942173ad98b9ed4931d2f0b120c78aeb76530fcea5"
+      },
+      "pre_sha256": "8ac8f829fedcec37c1a6fd24c937c2ea19eefea2797b1df881ab3e98d7126a4c",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "16a14de6b86a70a148ba51942173ad98b9ed4931d2f0b120c78aeb76530fcea5",
+        "intermediate_post_sha256": "ea1c38202094f2c0db771c0c08b93fbab2c22ce7058bc014320f2457a7d1283c",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "0476d71d82059c15aa7947ec390863a1acb2304e39aa19d349b6e49e5a56517d"
+      }
+    },
+    {
+      "card_id": "LA-111",
+      "changed_fields": [
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "body_relation_section"
+      ],
+      "kind": "external_source",
+      "original_intermediate_postimage": {
+        "bytes": 4940,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "e409cd567b39edac66a25aa5d6407c2f7f2a1af4025e11ed74e26ddcafbeb60f"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-111.md",
+      "post_sha256": "07cba8e9e9074c41d1a28d2bd6547dc6810d86c4f565b13e4dd2eb048948bf2e",
+      "postimage": {
+        "bytes": 4940,
+        "encoding": "utf-8",
+        "sha256": "07cba8e9e9074c41d1a28d2bd6547dc6810d86c4f565b13e4dd2eb048948bf2e"
+      },
+      "pre_sha256": "e64ab4339cf9246a166777b1ef66fcfe7c721d506e11595fe121be92f379116b",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "07cba8e9e9074c41d1a28d2bd6547dc6810d86c4f565b13e4dd2eb048948bf2e",
+        "intermediate_post_sha256": "e409cd567b39edac66a25aa5d6407c2f7f2a1af4025e11ed74e26ddcafbeb60f",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "efed534375d53e9b8231b61decc350641358a0b811df7792303bb7ad5e913f3e"
+      }
+    },
+    {
+      "card_id": "LA-113",
+      "changed_fields": [
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "body_relation_section"
+      ],
+      "kind": "external_source",
+      "original_intermediate_postimage": {
+        "bytes": 4639,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "9a75677af8955a3757f240f35e1690508f4a2f971f998a0f73c829d5b9c17492"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-113.md",
+      "post_sha256": "a9ddcae7809f69d430c8543969da10e4842dd919a5c48819cd21175499c83420",
+      "postimage": {
+        "bytes": 4639,
+        "encoding": "utf-8",
+        "sha256": "a9ddcae7809f69d430c8543969da10e4842dd919a5c48819cd21175499c83420"
+      },
+      "pre_sha256": "77ca5b2b2c044e7c897a2ffa9761ac00d843ab3fd0e6cda1d2dec4b957f29ee4",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "a9ddcae7809f69d430c8543969da10e4842dd919a5c48819cd21175499c83420",
+        "intermediate_post_sha256": "9a75677af8955a3757f240f35e1690508f4a2f971f998a0f73c829d5b9c17492",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "2dfa2f2a712b36f69e7a133f339f42582ae26185952182b4e5e4dba80d4b4d43"
+      }
+    },
+    {
+      "card_id": "LA-118",
+      "changed_fields": [
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "body_relation_section"
+      ],
+      "kind": "external_source",
+      "original_intermediate_postimage": {
+        "bytes": 4896,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "561c42656effe83d7b5a55cdfb090e70852936275359c6b6825cbfa959d7b0e1"
+      },
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-118.md",
+      "post_sha256": "f8e9c6565a82d059e85e098995f95592d263eb78acab111d51479e01e423fe84",
+      "postimage": {
+        "bytes": 4896,
+        "encoding": "utf-8",
+        "sha256": "f8e9c6565a82d059e85e098995f95592d263eb78acab111d51479e01e423fe84"
+      },
+      "pre_sha256": "4152f2889d70d4d19dcf048f279065567205820d12004e4f4aec1a7583d6d144",
+      "supplemental_projection_correction": {
+        "changed_fields": [
+          "formal_projection_sha256"
+        ],
+        "final_post_sha256": "f8e9c6565a82d059e85e098995f95592d263eb78acab111d51479e01e423fe84",
+        "intermediate_post_sha256": "561c42656effe83d7b5a55cdfb090e70852936275359c6b6825cbfa959d7b0e1",
+        "manifest_path": ".codex_tmp/B41_projection_correction_manifest_final.json",
+        "manifest_sha256": "bbf14661afc6e043dfb464681e59413f9820135428e7d123362958109a4aa7e1",
+        "structured_projection_sha256": "b110859a691a73b732c5a604149f30d9ce600d930ca2568c614ac07a9a743eb0"
+      }
+    }
+  ],
+  "relation_removals": [
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-104"
+      ],
+      "endpoints": [
+        "LA-040",
+        "LA-104"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-044"
+      ],
+      "endpoints": [
+        "LA-044",
+        "LA-109"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-087"
+      ],
+      "endpoints": [
+        "LA-087",
+        "LA-116"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-088",
+        "LA-089"
+      ],
+      "endpoints": [
+        "LA-088",
+        "LA-089"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-088"
+      ],
+      "endpoints": [
+        "LA-088",
+        "LA-090"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-091"
+      ],
+      "endpoints": [
+        "LA-088",
+        "LA-091"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-089"
+      ],
+      "endpoints": [
+        "LA-089",
+        "LA-090"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-091"
+      ],
+      "endpoints": [
+        "LA-089",
+        "LA-091"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-091"
+      ],
+      "endpoints": [
+        "LA-090",
+        "LA-091"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-092",
+        "LA-093"
+      ],
+      "endpoints": [
+        "LA-092",
+        "LA-093"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-092",
+        "LA-097"
+      ],
+      "endpoints": [
+        "LA-092",
+        "LA-097"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-098"
+      ],
+      "endpoints": [
+        "LA-092",
+        "LA-098"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-092",
+        "LA-100"
+      ],
+      "endpoints": [
+        "LA-092",
+        "LA-100"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-098"
+      ],
+      "endpoints": [
+        "LA-093",
+        "LA-098"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-093",
+        "LA-100"
+      ],
+      "endpoints": [
+        "LA-093",
+        "LA-100"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-095"
+      ],
+      "endpoints": [
+        "LA-095",
+        "LA-100"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-100"
+      ],
+      "endpoints": [
+        "LA-099",
+        "LA-100"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-118"
+      ],
+      "endpoints": [
+        "LA-103",
+        "LA-118"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-113"
+      ],
+      "endpoints": [
+        "LA-104",
+        "LA-113"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-106"
+      ],
+      "endpoints": [
+        "LA-105",
+        "LA-106"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-105"
+      ],
+      "endpoints": [
+        "LA-105",
+        "LA-109"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-105"
+      ],
+      "endpoints": [
+        "LA-105",
+        "LA-111"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-106"
+      ],
+      "endpoints": [
+        "LA-106",
+        "LA-116"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-107",
+        "LA-108"
+      ],
+      "endpoints": [
+        "LA-107",
+        "LA-108"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-109",
+        "LA-110"
+      ],
+      "endpoints": [
+        "LA-109",
+        "LA-110"
+      ],
+      "final_related": []
+    },
+    {
+      "action": "remove_all_formal_declarations",
+      "aggregate_edge_policy": "block_until_relinked",
+      "declaration_owners": [
+        "LA-111"
+      ],
+      "endpoints": [
+        "LA-109",
+        "LA-111"
+      ],
+      "final_related": []
+    }
+  ],
+  "review_receipt_writes": [
+    {
+      "card_id": "",
+      "kind": "current_semantic_review_receipt",
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-088_全库逐题语义复核第41批20题.json",
+      "post_sha256": "4ae00a2a3e30827c1f021bc7acdf46d5ac90b297d46281501fd930732b3b14a9",
+      "pre_sha256": null,
+      "reason": "batch41_semantic_review_receipt"
+    },
+    {
+      "card_id": "LA-044--LA-109",
+      "changed_fields": [
+        "cards[].card_sha256",
+        "cards[].later_batch_revalidation",
+        "batch41_lineage_revalidation"
+      ],
+      "kind": "historical_review_receipt",
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-016_全库逐题语义复核第5批20题.json",
+      "post_sha256": "f2c94d5f0f29883db81ed59ca4e0a4d2141e756cfbf02dc231c0673f196e6976",
+      "postimage": {
+        "bytes": 56151,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "f2c94d5f0f29883db81ed59ca4e0a4d2141e756cfbf02dc231c0673f196e6976"
+      },
+      "pre_sha256": "575bfb05ae5ba8c8b71ffb8c6b63de13f956b51d07d1ead529955a26363e4bfa"
+    },
+    {
+      "card_id": "LA-044--LA-109",
+      "changed_fields": [
+        "source_review.sha256",
+        "batch41_lineage_revalidation"
+      ],
+      "kind": "historical_closeout_receipt",
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-017_全库逐题语义复核第5批正式收口.json",
+      "post_sha256": "892e9787f8998d2d10d45752ff20dcc43170f8ae89bc801c76f0d572367daa5c",
+      "postimage": {
+        "bytes": 66041,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "892e9787f8998d2d10d45752ff20dcc43170f8ae89bc801c76f0d572367daa5c"
+      },
+      "pre_sha256": "8607e17752c798afd85491fba57b5c762114955f725bce825804e8224921f45e"
+    },
+    {
+      "card_id": "LA-095--LA-100",
+      "changed_fields": [
+        "cards[].card_sha256",
+        "cards[].later_batch_revalidation",
+        "batch41_lineage_revalidation"
+      ],
+      "kind": "historical_review_receipt",
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-010_全库逐题语义复核第2批20题.json",
+      "post_sha256": "a6dc045bf2da8571101196ede41e9379c7a27bb8adcbe479d9cd78859e194805",
+      "postimage": {
+        "bytes": 64888,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "a6dc045bf2da8571101196ede41e9379c7a27bb8adcbe479d9cd78859e194805"
+      },
+      "pre_sha256": "434d892e1fe9213aab8009a0592fd1ed54a7549313f3fb3ad42faf016f1c2c22"
+    },
+    {
+      "card_id": "LA-095--LA-100",
+      "changed_fields": [
+        "source_review.sha256",
+        "batch41_lineage_revalidation"
+      ],
+      "kind": "historical_closeout_receipt",
+      "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-011_全库逐题语义复核第2批正式收口.json",
+      "post_sha256": "07bfcb81c98140a7dfcff89f270ed121df8f8043c45c303fa1edcc668618a263",
+      "postimage": {
+        "bytes": 39194,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "07bfcb81c98140a7dfcff89f270ed121df8f8043c45c303fa1edcc668618a263"
+      },
+      "pre_sha256": "8826729b9bf6f79b30c13523b0eda25bfd3aebe9effb97a299bca631460f91c0"
+    }
+  ],
+  "schema_version": "math_target_semantic_closeout_v1",
+  "scope": {
+    "canonical_owner_declarations_retained": 0,
+    "card_files_written": 26,
+    "content_hold_cards": 3,
+    "derived_output_files_written": 53,
+    "final_strong_edge_owner_declarations": 0,
+    "final_strong_logical_edges": 0,
+    "formal_card_detail_and_source_summary_writes": 87,
+    "graph_output_files_written": 44,
+    "historical_receipt_files_written": 4,
+    "historical_review_cards_revalidated": 2,
+    "historical_review_snapshots_revalidated": 2,
+    "identity_alias_cards": 2,
+    "internal_projection_corrections_on_existing_paths": 26,
+    "new_personal_fact_writes": 0,
+    "pending_user_confirmation_cards": 15,
+    "relation_removals": 26,
+    "removed_owner_declarations": 33,
+    "repeat_event_one_cards": 14,
+    "repeat_event_zero_cards": 6,
+    "selected_card_count": 20,
+    "semantic_review_receipt_files_written": 5,
+    "source_files_written": 92,
+    "source_summary_files_written": 26,
+    "source_writes_before_current_review_receipt": 91,
+    "visual_detail_files_written": 35,
+    "wrongnet_output_files_written": 9
+  },
+  "script_writes": [],
+  "source_review": {
+    "canonical_snapshot_sha256": "b654ca8975e066ce87b6d943fc113817993ef3bdbaebec1b0f8f847e0b637d84",
+    "frozen_source_state_sha256": "b654ca8975e066ce87b6d943fc113817993ef3bdbaebec1b0f8f847e0b637d84",
+    "path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-088_全库逐题语义复核第41批20题.json",
+    "prior_closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-087_全库逐题语义复核第40批正式收口.json",
+    "prior_closeout_sha256": "086ec0124de01c47a43b1304cc35479677aaeb0263b8c843e3d0f42c5cb34916",
+    "record_write_manifest_sha256": "468b5c2e552b70d79aab6e46b5f859a9875694f928af2df3daa5f4633deff5d9",
+    "review_id": "MATHWIKI-REVIEW-088",
+    "selection_order_sha256": "ffd9ae40d4f6581bc4853e2673eaa3273806522cb208c355c271f5bc8fb51d8f",
+    "sha256": "4ae00a2a3e30827c1f021bc7acdf46d5ac90b297d46281501fd930732b3b14a9",
+    "source_freeze_sha256": "2621b339eb95b66ff319c2e32b9884e9bc161c45a86562ed8271f7b1b3bf87d1"
+  },
+  "strict_edge_convergence": {
+    "canonical_owner_declarations_retained": 0,
+    "final_graph_build_status": "completed_exactly_once",
+    "final_rebuild_status": "completed_output_exactly_once_recovered_after_observation_loss",
+    "four_gate_policy": [
+      "same_specific_object",
+      "same_concrete_first_action",
+      "same_personal_breakpoint",
+      "both_endpoints_user_confirmed"
+    ],
+    "graph_build_history": [
+      {
+        "path": ".codex_tmp/B41_graph_build_manifest.json",
+        "role": "single_final_graph_build_receipt",
+        "sha256": "2143d7bab7d55581e91f2fd68113d2b3289a32ff7fd6f2591d2095db12de7f84"
+      }
+    ],
+    "new_strong_edges": 0,
+    "selected_incident_edges_after": 0,
+    "selected_incident_edges_before": 26,
+    "selected_incident_owner_declarations_after": 0,
+    "selected_incident_owner_declarations_before": 33,
+    "wrongnet_build_history": [
+      {
+        "path": ".codex_tmp/B41_wrongnet_rebuild_manifest.json",
+        "role": "single_wrongnet_rebuild_receipt",
+        "sha256": "0e3d70c37719b6160896fc4ebfb34ae0fed8437dcf62ce57c775ae31b5a7f466"
+      }
+    ]
+  },
+  "strong_edges_added": [],
+  "strong_edges_verified": [],
+  "strong_edges_verified_existing": [],
+  "support_code_repairs": [],
+  "title": "全库逐题语义复核第41批正式收口",
+  "validation": {
+    "closeout_pre_validation_check": "passed",
+    "derived_output_hash_parity": "passed_53_of_53",
+    "deterministic_relation_preflight": "passed_0_edges_0_owners_26_removals_33_owner_declarations_2_identity_aliases_3_content_holds",
+    "final_validation_binding_status": "passed",
+    "final_validation_result_sha256": "5f423f29f5a9ae92e6cf6c3283efa056c442f9d44d49d58b47ff66ae294b0ee9",
+    "formal_source_write_hash_parity": "passed_87_of_87",
+    "full_test_suite": "passed_393_of_393",
+    "git_diff_check": "passed",
+    "graph_build_reinvoked_during_generation": false,
+    "graph_check": "passed",
+    "graph_source_state_parity": "passed_7c3b30230c5651164a85a86ea177cec84bbc722955dd3715f9ba62d18fa0cadc",
+    "historical_receipt_hash_parity": "passed_4_of_4",
+    "historical_snapshot_revalidation": "passed_2_review_closeout_pairs_2_cards_4_writes_current_or_superseded",
+    "json_parse": "passed_draft_generation",
+    "projection_contract": "passed_35_detail_exact_card_sha_26_source_structured_projection_sha_26_supplemental_corrections",
+    "review_binding": "passed_REVIEW_088_sha256_4ae00a2a3e30827c1f021bc7acdf46d5ac90b297d46281501fd930732b3b14a9",
+    "review_installed_check": "passed",
+    "review_receipt_hash_parity": "passed_5_of_5",
+    "source_write_hash_parity": "passed_92_of_92",
+    "status": "passed",
+    "targeted_tests": "passed_4_of_4",
+    "wrongnet_rebuild_reinvoked_during_generation": false,
+    "wrongnet_summary": {
+      "medium": 682,
+      "strong": 2045,
+      "weak_audit": 21
+    }
+  },
+  "visual_writes": [
+    {
+      "card_id": "LA-086",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-086_缺图登记-强化例题5.2-3.md",
+      "post_sha256": "fbf5a81f38e89b326c8e9085a04358cada23d102089632ddc58acf4940289313",
+      "postimage": {
+        "bytes": 1442,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "fbf5a81f38e89b326c8e9085a04358cada23d102089632ddc58acf4940289313"
+      },
+      "pre_sha256": "5808dde66450809a9cbebdeea2e8ddd6b494e7cb4c23f441fa215629fd20e0f4"
+    },
+    {
+      "card_id": "LA-087",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-726_强化例题5、4.md",
+      "post_sha256": "dcaa1147b8823d9ad70a6375a4aefa6f8832a0fdf510b5f287ece91cd3a5f9a5",
+      "postimage": {
+        "bytes": 3819,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "dcaa1147b8823d9ad70a6375a4aefa6f8832a0fdf510b5f287ece91cd3a5f9a5"
+      },
+      "pre_sha256": "4b1f8290ebfa75b999b49dabbbc95fbcc4d7936adcbb154e92dcf2cdee0ee74a"
+    },
+    {
+      "card_id": "LA-087",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-087_强化例题5、4.md",
+      "post_sha256": "5e03446a10f6d4c70e2b4c1348b20f73c6f26699af58b39c34677e16ccdf4bfc",
+      "postimage": {
+        "bytes": 3921,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "5e03446a10f6d4c70e2b4c1348b20f73c6f26699af58b39c34677e16ccdf4bfc"
+      },
+      "pre_sha256": "4bef290dfdca688f88d22c6d5e73ca814ff80ea8b5a929e0543fe0babed0e2de"
+    },
+    {
+      "card_id": "LA-088",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-727_强化例题5.5（2025年数2真题选择题第十题）.md",
+      "post_sha256": "206cd2251f9d3f42593ed8f1ca16f1559371f7b79cf2e4286233c6d138da8e8e",
+      "postimage": {
+        "bytes": 4370,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "206cd2251f9d3f42593ed8f1ca16f1559371f7b79cf2e4286233c6d138da8e8e"
+      },
+      "pre_sha256": "06c9e068b721592276e0d41f300599d0812d7e89941f21072c22685c9c3f64e8"
+    },
+    {
+      "card_id": "LA-088",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-088_强化例题5.5（2025年数2真题选择题第十题）.md",
+      "post_sha256": "b92179423392fded88bb913c2368eeaae9bfe0b56892ed47ea8c1a76b5fa096a",
+      "postimage": {
+        "bytes": 4136,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "b92179423392fded88bb913c2368eeaae9bfe0b56892ed47ea8c1a76b5fa096a"
+      },
+      "pre_sha256": "d77838560feb919b8f2f8dd9613199c2bf792273f16cbbb59fde16ba3c0e8b4c"
+    },
+    {
+      "card_id": "LA-089",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-728_强化例题5.6.md",
+      "post_sha256": "c798e214a52ad2e8c35640b68d7edf60cc603d90a48ed8df6466700602aa7f89",
+      "postimage": {
+        "bytes": 3573,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "c798e214a52ad2e8c35640b68d7edf60cc603d90a48ed8df6466700602aa7f89"
+      },
+      "pre_sha256": "0fce24325e0c5c853814ce17f39b43f8149059972822eb4d56c00f0b8faf8b83"
+    },
+    {
+      "card_id": "LA-089",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-089_强化例题5.6.md",
+      "post_sha256": "3b71dd4fead42da38d62e22bf62f3f04a8be42bcf79f23e80ec258c967e775ed",
+      "postimage": {
+        "bytes": 3505,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "3b71dd4fead42da38d62e22bf62f3f04a8be42bcf79f23e80ec258c967e775ed"
+      },
+      "pre_sha256": "01e680c2f87c5c2a6b6f982f55ac51f85925d964bc7455f43782a1b5edcdd2dd"
+    },
+    {
+      "card_id": "LA-090",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-729_强化例题5.7.md",
+      "post_sha256": "092124b6c6a711ca81978309e791a134d82988016edea532ce1b09d49a0006d5",
+      "postimage": {
+        "bytes": 4708,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "092124b6c6a711ca81978309e791a134d82988016edea532ce1b09d49a0006d5"
+      },
+      "pre_sha256": "6d271c54f56a34c51ca274305b9f97a52c84441a27f6570b409fb5dfd9e8ae61"
+    },
+    {
+      "card_id": "LA-090",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-090_强化例题5.7-2.md",
+      "post_sha256": "ba5f1ee69fee57fe3d261d7983f3f153f1415cb2b2a4cb7f879ffe5db8a751b3",
+      "postimage": {
+        "bytes": 3762,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "ba5f1ee69fee57fe3d261d7983f3f153f1415cb2b2a4cb7f879ffe5db8a751b3"
+      },
+      "pre_sha256": "0fb99fc35d389e0b7d3beb1f850884ad0e343d1e332c4a7e7ff3cce7428e78ad"
+    },
+    {
+      "card_id": "LA-091",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-730_强化例题5.8.md",
+      "post_sha256": "7e10d37ecfa8e55a01f15506580262c1df0f1d5669c56bbf8644e9c944dd8a58",
+      "postimage": {
+        "bytes": 3391,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "7e10d37ecfa8e55a01f15506580262c1df0f1d5669c56bbf8644e9c944dd8a58"
+      },
+      "pre_sha256": "1f74ad790a4b6ab3695406774687126b98d5aba48a8e5932b28216f4c53d6671"
+    },
+    {
+      "card_id": "LA-091",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-091_强化例题5.8.md",
+      "post_sha256": "49bb76e130cc24117f09fa7c224e517d617240e4f0be315c5c1593ed7e204c93",
+      "postimage": {
+        "bytes": 3356,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "49bb76e130cc24117f09fa7c224e517d617240e4f0be315c5c1593ed7e204c93"
+      },
+      "pre_sha256": "72dfab8963c1640a31a47f10b9bc6ad896034d8541be8ac5e1aa8b96da4e39b5"
+    },
+    {
+      "card_id": "LA-092",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-731_强化例题6.1.md",
+      "post_sha256": "beaab8e94d528e425c2e8e2b01139a21728a91d06dbd1a244ad1ba7a15b45226",
+      "postimage": {
+        "bytes": 3362,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "beaab8e94d528e425c2e8e2b01139a21728a91d06dbd1a244ad1ba7a15b45226"
+      },
+      "pre_sha256": "40eaaa393dc13fb3a97f17f8dc6c65bbc7fc7e1bb3ddcf34db288344d4f117a4"
+    },
+    {
+      "card_id": "LA-092",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-092_强化例题6.1.md",
+      "post_sha256": "e172ea43a34fdfb4d8a7796e361107f9c1f486ca552138e90cb1439051089347",
+      "postimage": {
+        "bytes": 3210,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "e172ea43a34fdfb4d8a7796e361107f9c1f486ca552138e90cb1439051089347"
+      },
+      "pre_sha256": "266b1dc5544026256e6439989890f29ee53993ccc78c1a91b3d6ba7025e80f51"
+    },
+    {
+      "card_id": "LA-093",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-732_强化例题6.2.md",
+      "post_sha256": "d3d7dd03933847aa1acac38ce324765ddee490c93f3e13a3766e124bfb6de141",
+      "postimage": {
+        "bytes": 3362,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "d3d7dd03933847aa1acac38ce324765ddee490c93f3e13a3766e124bfb6de141"
+      },
+      "pre_sha256": "41dc80466542018324ea7248a76fc1c2950c0df1b493a4327e0766fe0b160872"
+    },
+    {
+      "card_id": "LA-093",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-093_强化例题6.2.md",
+      "post_sha256": "e8a2b8406f6dba562d647f98e21cc9d446ec19badea68499fb8e5b9f2de9ee40",
+      "postimage": {
+        "bytes": 3257,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "e8a2b8406f6dba562d647f98e21cc9d446ec19badea68499fb8e5b9f2de9ee40"
+      },
+      "pre_sha256": "d3b0b1f0e6c8523432eb29d0ebe1a355aa7ef11df45485c8dde5b318148c9841"
+    },
+    {
+      "card_id": "LA-097",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-736_2021年第九题.md",
+      "post_sha256": "17bde5d20f436ebe553e69efd35149a3e652aa020fab055284ad159d75675155",
+      "postimage": {
+        "bytes": 3602,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "17bde5d20f436ebe553e69efd35149a3e652aa020fab055284ad159d75675155"
+      },
+      "pre_sha256": "eb14fb868b3c7f30d2532000cd088c52c5922f40920204d01de2d9cbff8265aa"
+    },
+    {
+      "card_id": "LA-097",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-097_2021年第九题.md",
+      "post_sha256": "f3602facaa2cccb84039498be8f562d8d1df28d096933ae01d4bc5679cedfc6d",
+      "postimage": {
+        "bytes": 3555,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "f3602facaa2cccb84039498be8f562d8d1df28d096933ae01d4bc5679cedfc6d"
+      },
+      "pre_sha256": "dcca3837470b45cfe43e51504db0cb69384554465be5ee5d1c70983e3e98a197"
+    },
+    {
+      "card_id": "LA-098",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-737_强化例题6.5.md",
+      "post_sha256": "6fb60910ba948e198ce9aa4b7c98e6bdeab30e1cc14331ac4c672b888da7cd2d",
+      "postimage": {
+        "bytes": 6592,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "6fb60910ba948e198ce9aa4b7c98e6bdeab30e1cc14331ac4c672b888da7cd2d"
+      },
+      "pre_sha256": "428209191e5f38966824b0eb0d83f0ed4eaf6cb0398ae742b005549b7acbdfd5"
+    },
+    {
+      "card_id": "LA-098",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-098_强化例题6.5-2.md",
+      "post_sha256": "c8c2d62af90f1598d09e62b1ae938c10702e1cc5d6956a8ecd5783bc3e46e1e5",
+      "postimage": {
+        "bytes": 4151,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "c8c2d62af90f1598d09e62b1ae938c10702e1cc5d6956a8ecd5783bc3e46e1e5"
+      },
+      "pre_sha256": "be9de14ebac791234223d034744a133b2f0b10f4997621a8555a5a45f491f9ae"
+    },
+    {
+      "card_id": "LA-100",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-739_2019年第23题.md",
+      "post_sha256": "8152caab3d902dc88f0d7469a82f13234674aa82ae6ae1acf0f10be3882485bc",
+      "postimage": {
+        "bytes": 3391,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "8152caab3d902dc88f0d7469a82f13234674aa82ae6ae1acf0f10be3882485bc"
+      },
+      "pre_sha256": "4721b6623387b175246f2affb8ed8e720c07c83f86ed88a8f127fee5a96602e8"
+    },
+    {
+      "card_id": "LA-100",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-100_2019年第23题.md",
+      "post_sha256": "329d85d6e66b10224ed0e330c493392bcc5fe565a751220a1e5047af6b8df6d9",
+      "postimage": {
+        "bytes": 3288,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "329d85d6e66b10224ed0e330c493392bcc5fe565a751220a1e5047af6b8df6d9"
+      },
+      "pre_sha256": "f3fde76fcf928e5d11e93e33a413b8ddf57355fd6d13931d891c2b58b52465c1"
+    },
+    {
+      "card_id": "LA-101",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-101_缺图登记-强化例题7.1-4.md",
+      "post_sha256": "eb1bb8f24cd30aef4b04f25f01e13193edbb69b9e1ad92be873c5035fe82091f",
+      "postimage": {
+        "bytes": 1593,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "eb1bb8f24cd30aef4b04f25f01e13193edbb69b9e1ad92be873c5035fe82091f"
+      },
+      "pre_sha256": "a4feb1663a76b3623841a3839d2cd0801e4be341b9a9a4dd16cd24812d2256e7"
+    },
+    {
+      "card_id": "LA-102",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-102_缺图登记-强化例题7.1-5.md",
+      "post_sha256": "e57ff59379ec604e12f487b2e47e0ddf68d5abe452d79f5e435bdf0094a608f4",
+      "postimage": {
+        "bytes": 1593,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "e57ff59379ec604e12f487b2e47e0ddf68d5abe452d79f5e435bdf0094a608f4"
+      },
+      "pre_sha256": "6c5c048c0433d862e3d31af4e0b49294b2f7e6e739c5cc9ce034c69347edb84f"
+    },
+    {
+      "card_id": "LA-103",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-742_强化例题7.2.md",
+      "post_sha256": "e450a82c6222c0fe9a8b3960e73f5451aebb728b39cbc913ceb607c922df1d70",
+      "postimage": {
+        "bytes": 3956,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "e450a82c6222c0fe9a8b3960e73f5451aebb728b39cbc913ceb607c922df1d70"
+      },
+      "pre_sha256": "705a8e00308faa6d1dfae9eb1381dc4c232b85a5a4474202ae06d540eea61340"
+    },
+    {
+      "card_id": "LA-103",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-103_强化例题7.2-2.md",
+      "post_sha256": "21e8042c5834ee07f6670f6a1707f2017ebad9daad7f28997f9631ad30215cc5",
+      "postimage": {
+        "bytes": 3365,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "21e8042c5834ee07f6670f6a1707f2017ebad9daad7f28997f9631ad30215cc5"
+      },
+      "pre_sha256": "4740eee034cce3d63d4119c52c3d536a7e9526978fb80bf443f5ac0bf618df51"
+    },
+    {
+      "card_id": "LA-104",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-743_数学2的2019年第8题.md",
+      "post_sha256": "75b8360b3910d02032e48d968ee08f51ab0d3c84829201d4addc508f7af384a8",
+      "postimage": {
+        "bytes": 3508,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "75b8360b3910d02032e48d968ee08f51ab0d3c84829201d4addc508f7af384a8"
+      },
+      "pre_sha256": "6606c98562c2b87bde32e757e727c50323a1b6108bb32601e4b7fca9344d2b10"
+    },
+    {
+      "card_id": "LA-104",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-104_数学2的2019年第8题.md",
+      "post_sha256": "1ca697931e93b6effe3c832cab23472cd3534c3f427e0a2b597914e555de2dde",
+      "postimage": {
+        "bytes": 3537,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "1ca697931e93b6effe3c832cab23472cd3534c3f427e0a2b597914e555de2dde"
+      },
+      "pre_sha256": "0e15b855de86a9a78b6eefa4e077189276d99106e04a55a9992789951e56215e"
+    },
+    {
+      "card_id": "LA-105",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-744_强化例题7.3.md",
+      "post_sha256": "af12f9a7f79cd30bfa1a3f68bb2542a5b3e1fc3d625a560287dd7cbdafbccdc5",
+      "postimage": {
+        "bytes": 3655,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "af12f9a7f79cd30bfa1a3f68bb2542a5b3e1fc3d625a560287dd7cbdafbccdc5"
+      },
+      "pre_sha256": "211b0ad1701a777465ceaaa32acf9ee12e8ed70f417d5f2074e9296189354a47"
+    },
+    {
+      "card_id": "LA-105",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-105_强化例题7.3.md",
+      "post_sha256": "4445e367b14a3d9251714806d9c95f663275a31c74b8cd225e4507ef9f03a89c",
+      "postimage": {
+        "bytes": 3696,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "4445e367b14a3d9251714806d9c95f663275a31c74b8cd225e4507ef9f03a89c"
+      },
+      "pre_sha256": "e02ab25744b85f35b1b41470cbbd873f19856453d9b2c9d4cb705d6c1001d7e6"
+    },
+    {
+      "card_id": "LA-106",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-745_强化例题7.4.md",
+      "post_sha256": "4dcac13bdf4d8fee04ac14af2d3d9a6556f308874d03d44f00c56b9a6c58bef8",
+      "postimage": {
+        "bytes": 6736,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "4dcac13bdf4d8fee04ac14af2d3d9a6556f308874d03d44f00c56b9a6c58bef8"
+      },
+      "pre_sha256": "cb70e64235dca2ff4d3160e33d8597b5b7d84130f001987f5b203a9f40cdb8cb"
+    },
+    {
+      "card_id": "LA-106",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-106_强化例题7.4.md",
+      "post_sha256": "e098739d7a1c0a82394c8416b8e8283951e4ba9ade50c050e2a3eb3f701ec0ad",
+      "postimage": {
+        "bytes": 4021,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "e098739d7a1c0a82394c8416b8e8283951e4ba9ade50c050e2a3eb3f701ec0ad"
+      },
+      "pre_sha256": "f9c97fb4f8f1e850de94280173af3aaa98dbb77f4f7bc218aef4764be57c8b18"
+    },
+    {
+      "card_id": "LA-107",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-107_缺图登记-线代强化-第八讲-相似理论.md",
+      "post_sha256": "0df9a7f5ba62d5ba637da01c394152b279103d4ec80182d8465b84940ab282aa",
+      "postimage": {
+        "bytes": 1459,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "0df9a7f5ba62d5ba637da01c394152b279103d4ec80182d8465b84940ab282aa"
+      },
+      "pre_sha256": "1d97c051d08d1c2612aef0ade29e309ddc872e47ee302643c4f8b283c569db93"
+    },
+    {
+      "card_id": "LA-108",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-108_缺图登记-线代强化第八讲-相似理论.md",
+      "post_sha256": "a432636eb8d0e3912b5d4a3bef40729fbc0355fd5cd9eee224b259b145f82bc2",
+      "postimage": {
+        "bytes": 1458,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "a432636eb8d0e3912b5d4a3bef40729fbc0355fd5cd9eee224b259b145f82bc2"
+      },
+      "pre_sha256": "b29e8314c003bb3b5487018bb7b8b2e0befb4a357547b956c6a911b96ca70ea9"
+    },
+    {
+      "card_id": "LA-109",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/MN4-GS-CH01-746_线代强化例题8.1.md",
+      "post_sha256": "07d25bc076cb17bf8e101fdd709ac28d335266864987f3d927b337a0be409ab4",
+      "postimage": {
+        "bytes": 3697,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "07d25bc076cb17bf8e101fdd709ac28d335266864987f3d927b337a0be409ab4"
+      },
+      "pre_sha256": "f1d8c4104882435c22339cc6c91115fd0b4ea4d83dae1343bd9af719c7e1cc18"
+    },
+    {
+      "card_id": "LA-109",
+      "changed_fields": [
+        "wrongnet_refs",
+        "related_wrongnet_refs",
+        "formal_projection_sha256",
+        "objective_correction",
+        "evidence_boundary"
+      ],
+      "kind": "selected_detail",
+      "path": "错题知识网络/可视化错题详情/线性代数/LA-109_强化例题8.1-2.md",
+      "post_sha256": "cd059468f26b6b9443eeac77b338d45455c2163ffc9506dfb3f6fb299832d225",
+      "postimage": {
+        "bytes": 3546,
+        "encoding": "utf-8",
+        "replay": "B41_prewrite_transforms.py deterministic transform",
+        "sha256": "cd059468f26b6b9443eeac77b338d45455c2163ffc9506dfb3f6fb299832d225"
+      },
+      "pre_sha256": "e89b26df73144484c129d36312ac56c850a19a25fa507a35219393285be19d31"
+    }
+  ],
+  "warnings": [
+    "15张原子题卡保持 pending_user_confirmation；客观题面、答案与解析没有被反推为个人错因。",
+    "LA-101、LA-102 仅作为 LA-021 的 stable-ID identity aliases，不承载独立学习事件或题间强边。",
+    "LA-086、LA-107、LA-108 保持 content_hold，直到取得完整原子题面。",
+    "LA-104 保持 repeat event 0；没有可核验的独立复发事件。",
+    "第41批26条入射逻辑边与33个 owner declarations 全部撤除，最终入射强边为0。",
+    "L05-004、L05-006 方法注册表文字修复仍需单独授权；本批未写方法注册表。"
+  ],
+  "wiki_id": "MATHWIKI-REVIEW-089",
+  "wrongnet_rebuild": {
+    "batch_number": 41,
+    "command": "python3 错题知识网络/scripts/wrongnet.py rebuild",
+    "completion_evidence": "started ledger installed before the one-shot command; original returncode/stdout/stderr observation was lost; output completeness was recovered from external process-absence evidence plus exact pure-memory rerender equality for all 9 outputs",
+    "core_payload_sha256": "d3d7440d704406c76fccf3185fa9926611ac8fca271e400298e2708eb71753f4",
+    "execution_completion_status": "completed_recovered_after_observation_loss",
+    "execution_ledger": {
+      "path": ".codex_tmp/B41_wrongnet_execution_ledger.json",
+      "sha256": "73c5e89ae8321410f32cf8af5dd813642c508a88a795403ec5611ff9b19900b2"
+    },
+    "execution_observation": null,
+    "final_output_complete_rebuilds": 1,
+    "final_successful_rebuilds": 0,
+    "invocations_this_batch": 1,
+    "outputs": [
+      {
+        "bytes": 4852054,
+        "changed": true,
+        "path": "错题知识网络/生成/wrong_questions.json",
+        "post_sha256": "c890a1d4f4512b4825f827b7e25c80229582cacabf01095306747df25df19423",
+        "pre_sha256": "77a3f03e78a9946f6b5c6d71081b7e5a8ea13dba2b5565732db5448bb43aff8e"
+      },
+      {
+        "bytes": 543807,
+        "changed": true,
+        "path": "错题知识网络/生成/错题索引.md",
+        "post_sha256": "508e7190cb090e2ad819bcc1a11b90881ba20ec4824e8eddd0fa67097efb474f",
+        "pre_sha256": "e324af2be3c6f64ca0e5729014f66869871f6dc1c2a10774b3dff8fd1a43d5ae"
+      },
+      {
+        "bytes": 1663138,
+        "changed": true,
+        "path": "错题知识网络/生成/相似题清单.md",
+        "post_sha256": "9bd3641b986868d5f909a5820d5059b10aabc58d5690658039172d2c9aef4666",
+        "pre_sha256": "ef26c813e8c58f7f42d9c7f8820cccf74ff960efa809751b6a15225a10af909f"
+      },
+      {
+        "bytes": 847822,
+        "changed": true,
+        "path": "错题知识网络/生成/强关联清单.md",
+        "post_sha256": "981af5333a8339f053dd7a6abf458206b467679eba4bae441cb5c6b269e6998f",
+        "pre_sha256": "094583cde5864b2ee04cfc507438caa544d9ec25ffecf48b91f16891dcd5d77a"
+      },
+      {
+        "bytes": 8186,
+        "changed": true,
+        "path": "错题知识网络/生成/弱边审计清单.md",
+        "post_sha256": "fb9ea407c5726bb179ac20fb760d7f1248884ca85975352ea489acbb9fee0774",
+        "pre_sha256": "6a50ce4c215a27037157b030d77f2bb8a0355ec1bb0504828ba08590efc1dce1"
+      },
+      {
+        "bytes": 98905,
+        "changed": false,
+        "path": "错题知识网络/生成/专题链关联清单.md",
+        "post_sha256": "54147dc6498076e794ee7c600320ee8aafcd8083ae1470446cf946b694f70ce4",
+        "pre_sha256": "54147dc6498076e794ee7c600320ee8aafcd8083ae1470446cf946b694f70ce4"
+      },
+      {
+        "bytes": 14808,
+        "changed": true,
+        "path": "错题知识网络/生成/错题网络概览.md",
+        "post_sha256": "47148b3ab3c2fe6280ff87cdeac50e6f43c3b820606707ddeaf8ad4f2b3ea986",
+        "pre_sha256": "aae77aa34a801a13886503ffddb2f8562e5e8714b0d0e9b1c881d2b573cb99bb"
+      },
+      {
+        "bytes": 1063084,
+        "changed": true,
+        "path": "错题知识网络/生成/按知识点复做清单.md",
+        "post_sha256": "4f2b7291befcb863055df2c9b200d39475057091ba2892a71aaac1f8aac8b765",
+        "pre_sha256": "5f0bec882413317cb8ced3317be62baa39d728d83dcb1b3b0ae22af4226d4673"
+      },
+      {
+        "bytes": 660114,
+        "changed": true,
+        "path": "错题知识网络/生成/知识网络图.mmd",
+        "post_sha256": "ed28a69235817da5fdc4c1dac3815024f4f6e1aa546fbcb38ba3f267fdc9dcbb",
+        "pre_sha256": "31cb8bd94119a51c6ed2a08eeb50f568d1d4dfb4fdd4e2b15326871fcd2a3ae9"
+      }
+    ],
+    "prebuild_binding": {
+      "path": ".codex_tmp/B41_prebuild_output_state.json",
+      "sha256": "db3a81506de90a46c04ed2ab9dcb1ca58a003778104b71169857d962f020dc96"
+    },
+    "process_returncode": "unknown",
+    "recovered_output_complete_rebuilds": 1,
+    "recovery_evidence": {
+      "adjudication": "output_complete",
+      "adjudication_scope": "derived_output_completeness_only_not_process_returncode_success",
+      "deterministic_read_only_audit": {
+        "active_card_count": 766,
+        "card_count": 831,
+        "derived_output_writes_performed": 0,
+        "exact_output_count": 9,
+        "expected_stdout_is_not_observed_stdout": true,
+        "expected_success_stdout_if_it_had_been_observed": "cards=831 strong=2045 medium=682 weak_audit=21 output=/Users/xiazhibin/Documents/kaoyan-math/错题知识网络/生成",
+        "formal_source_state_sha256": "7c3b30230c5651164a85a86ea177cec84bbc722955dd3715f9ba62d18fa0cadc",
+        "formal_writes_performed": 0,
+        "last_writer_call": "错题知识网络/生成/wrong_questions.json",
+        "last_writer_call_is_wrong_questions": true,
+        "output_count": 9,
+        "outputs": [
+          {
+            "bytes": 4852054,
+            "exact_read_only_rerender_match": true,
+            "path": "错题知识网络/生成/wrong_questions.json",
+            "sha256": "c890a1d4f4512b4825f827b7e25c80229582cacabf01095306747df25df19423"
+          },
+          {
+            "bytes": 543807,
+            "exact_read_only_rerender_match": true,
+            "path": "错题知识网络/生成/错题索引.md",
+            "sha256": "508e7190cb090e2ad819bcc1a11b90881ba20ec4824e8eddd0fa67097efb474f"
+          },
+          {
+            "bytes": 1663138,
+            "exact_read_only_rerender_match": true,
+            "path": "错题知识网络/生成/相似题清单.md",
+            "sha256": "9bd3641b986868d5f909a5820d5059b10aabc58d5690658039172d2c9aef4666"
+          },
+          {
+            "bytes": 847822,
+            "exact_read_only_rerender_match": true,
+            "path": "错题知识网络/生成/强关联清单.md",
+            "sha256": "981af5333a8339f053dd7a6abf458206b467679eba4bae441cb5c6b269e6998f"
+          },
+          {
+            "bytes": 8186,
+            "exact_read_only_rerender_match": true,
+            "path": "错题知识网络/生成/弱边审计清单.md",
+            "sha256": "fb9ea407c5726bb179ac20fb760d7f1248884ca85975352ea489acbb9fee0774"
+          },
+          {
+            "bytes": 98905,
+            "exact_read_only_rerender_match": true,
+            "path": "错题知识网络/生成/专题链关联清单.md",
+            "sha256": "54147dc6498076e794ee7c600320ee8aafcd8083ae1470446cf946b694f70ce4"
+          },
+          {
+            "bytes": 14808,
+            "exact_read_only_rerender_match": true,
+            "path": "错题知识网络/生成/错题网络概览.md",
+            "sha256": "47148b3ab3c2fe6280ff87cdeac50e6f43c3b820606707ddeaf8ad4f2b3ea986"
+          },
+          {
+            "bytes": 1063084,
+            "exact_read_only_rerender_match": true,
+            "path": "错题知识网络/生成/按知识点复做清单.md",
+            "sha256": "4f2b7291befcb863055df2c9b200d39475057091ba2892a71aaac1f8aac8b765"
+          },
+          {
+            "bytes": 660114,
+            "exact_read_only_rerender_match": true,
+            "path": "错题知识网络/生成/知识网络图.mmd",
+            "sha256": "ed28a69235817da5fdc4c1dac3815024f4f6e1aa546fbcb38ba3f267fdc9dcbb"
+          }
+        ],
+        "relation_summary": {
+          "medium": 682,
+          "strong": 2045,
+          "weak_audit": 21
+        },
+        "status": "passed_exact_read_only_rerender",
+        "unique_card_id_count": 831,
+        "writer_call_order": [
+          "错题知识网络/生成/错题索引.md",
+          "错题知识网络/生成/相似题清单.md",
+          "错题知识网络/生成/强关联清单.md",
+          "错题知识网络/生成/弱边审计清单.md",
+          "错题知识网络/生成/专题链关联清单.md",
+          "错题知识网络/生成/错题网络概览.md",
+          "错题知识网络/生成/按知识点复做清单.md",
+          "错题知识网络/生成/知识网络图.mmd",
+          "错题知识网络/生成/wrong_questions.json"
+        ]
+      },
+      "existing_wrongnet_read_only_test_contract": {
+        "class": "WrongnetRelationshipRenderingTests",
+        "contract_present": true,
+        "path": "tests/test_wrongnet_relationships.py",
+        "reason_not_executed_here": "recovery turn explicitly prohibited command and test execution; later B41 validation remains mandatory",
+        "sha256": "98a3931e1eef6a9d8aa2b3b482d0b197e01e568f5d942d31bbae73b171e25fae",
+        "tests_executed_by_this_adjudication": false
+      },
+      "external_process_exit_fact": {
+        "check_kind": "pgrep_read_only_process_presence_check",
+        "evidence_origin": "operator_reported_read_only_pgrep_audit",
+        "process_absent": true,
+        "raw_pgrep_stdout_stderr_not_embedded": true
+      },
+      "observation_loss_incident": {
+        "child_was_started_once": true,
+        "original_observation_json_present": false,
+        "outer_wait_returned_after_seconds": 30,
+        "rerun_permitted": false,
+        "session_id_lost_in_outer_js_branch": true
+      },
+      "output_complete_basis": [
+        "started ledger byte hash and full snapshot preserved",
+        "external read-only pgrep audit reports the one-shot process absent",
+        "all nine declared outputs are present",
+        "exactly eight declared outputs changed and terminal wrong_questions changed",
+        "all nine current outputs exactly equal production writer pure-memory rerendering from the unchanged prebuild-bound formal source state",
+        "831 cards, 831 unique IDs, 766 active cards and relation summary 2045/682/21 match the incident recovery audit",
+        "production rebuild writer order ends with wrong_questions.json"
+      ]
+    },
+    "schema_version": "b41_wrongnet_rebuild_manifest_v1",
+    "started_ledger_binding": {
+      "core_payload_sha256": "c17896edb7dd5529d90c598462870fc1a39c3277448503a77970bec995ab329a",
+      "path": ".codex_tmp/B41_wrongnet_execution_ledger.json",
+      "sha256": "948680d7a466886e0072cb80fba228801c3fddc5f3cc36545d7c3d0fa4a0fdec"
+    },
+    "successful_rebuild_basis": "one output-complete rebuild adjudicated after observation loss; not an observed zero returncode",
+    "successful_rebuilds": 0,
+    "summary": {
+      "medium": 682,
+      "strong": 2045,
+      "weak_audit": 21
+    },
+    "superseded_successful_rebuilds": 0
+  }
+}

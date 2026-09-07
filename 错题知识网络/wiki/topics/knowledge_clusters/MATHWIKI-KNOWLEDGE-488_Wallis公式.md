@@ -1,0 +1,42 @@
+---
+wiki_id: MATHWIKI-KNOWLEDGE-488
+type: knowledge_cluster
+title: "Wallis公式"
+subject: "高等数学"
+source_refs:
+- "错题知识网络/错题卡/"
+wiki_refs:
+- "SRC-WRONGCARDS-INDEX"
+- "MATHWIKI-COVERAGE-MATRIX"
+status: active
+last_updated: "2026-08-01"
+---
+# Wallis公式
+
+## 定位
+
+本页是按正式错题卡 `knowledge` 标签维护的知识点簇页面，用于把相关正式错题接入 LLM Wiki。它只列轻量元数据，不复制完整题干或长解析。
+
+## 覆盖统计
+
+- 相关错题数：2
+- 涉及科目：高等数学
+- 代表错题：GS-406；GS-735
+
+## 错题清单
+
+| id | source summary | subject | chapter | error_causes | methods / gap | status | formal card |
+|---|---|---|---|---|---|---|---|
+
+| GS-406 | [[SRC-WQ-GS-406]] | 高等数学 | 二重积分 | 方法调取失败；动作链断裂；坐标系选择错误；区间再现触发失败；中心对称与普通偶性混淆；换元积分限不同步 | 参数方程求导；换元；定积分计算；竖条型区域累次积分；区间再现；半角公式；Wallis公式；method_gap:B3-METHOD | 待复做 | `错题知识网络/错题卡/GS-406_2018年第17题.md` |
+| GS-735 | [[SRC-WQ-GS-735]] | 高等数学 | 多元函数积分学 | 公式记忆缺失；方法入口未触发；对称性使用条件不清；二项式展开不熟；平方交叉项遗漏；周期对称性依据不稳 | 第二型曲面积分投影法；坐标反射奇偶性；变量交换对称性；极坐标；Wallis公式；method_gap:A-KG | 待复做 | `错题知识网络/错题卡/GS-735_78202第二型曲面积分投影对称.md` |
+
+## 后续编译动作
+
+- 若本标签形成稳定第一动作或反复错因，再升级为深度概念、方法、错因或触发页。
+- 缺少个人作答证据时只保留索引关系，不反推用户错因。
+
+## 入口
+
+- [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
+- [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]

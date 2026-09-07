@@ -1,0 +1,3744 @@
+{
+  "schema_version": "math_target_semantic_review_batch_v1",
+  "wiki_id": "MATHWIKI-REVIEW-060",
+  "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260723-B27",
+  "title": "全库逐题语义复核第27批20题",
+  "reviewed_on": "2026-07-23",
+  "batch_number": 27,
+  "campaign_formal_card_count": 831,
+  "scope": {
+    "card_count": 20,
+    "physical_asset_path_count": 32,
+    "unique_visual_content_sha256_count": 32,
+    "canonical_detail_count": 20,
+    "reviewed_detail_file_count": 20,
+    "physical_asset_role_path_counts": {
+      "question": 20,
+      "solution": 12,
+      "reference": 0
+    },
+    "unique_visual_content_role_counts": {
+      "question": 20,
+      "solution": 12,
+      "reference": 0
+    },
+    "selected_card_files_written": 20,
+    "selected_visual_detail_files_written": 1,
+    "external_card_files_written": 9,
+    "external_visual_detail_files_written": 3,
+    "external_source_summary_files_written": 2,
+    "semantic_review_receipt_files_written": 11,
+    "final_strong_logical_edges": 21,
+    "final_strong_edge_owner_declarations": 42,
+    "removed_logical_edges": 17,
+    "removed_owner_declarations": 25
+  },
+  "frozen_source_state_sha256": "6f9b35fe4fedfdd021bf7270f275a0acd80e50001222fb8c0690b3defbb52457",
+  "source_freeze": {
+    "storage": "embedded_snapshot_only",
+    "sha256": "418b2218f1ae31583e41f6e6c132b66956b9626547faf164267718fc061b7ae4",
+    "snapshot": {
+      "schema_version": "math_target_semantic_freeze_v1",
+      "batch_number": 27,
+      "frozen_on": "2026-07-23",
+      "selected_card_ids": [
+        "GS-388",
+        "GS-389",
+        "GS-390",
+        "GS-391",
+        "GS-392",
+        "GS-393",
+        "GS-394",
+        "GS-395",
+        "GS-396",
+        "GS-397",
+        "GS-398",
+        "GS-399",
+        "GS-400",
+        "GS-402",
+        "GS-404",
+        "GS-406",
+        "GS-407",
+        "GS-410",
+        "GS-413",
+        "GS-415"
+      ],
+      "selection_order_sha256": "4469f40b34f2b87d3f962031497a60436212cdd1de564c00c861da4198027ab0",
+      "selection_compact_json_sha256": "3d2e29218c2c3b18f7bfe6aa00821398b8c6d8fb9f65699b1cb66f2b1db69c97",
+      "frozen_source_state_sha256": "6f9b35fe4fedfdd021bf7270f275a0acd80e50001222fb8c0690b3defbb52457",
+      "canonical_snapshot_sha256": "baf38e16e4371159ac688e5b53cf25f1ad1dca23c9043bff935abf4d184231ea",
+      "canonical_snapshot_algorithm": "sha256 of sort_keys compact JSON for the 20 pre-review build_graph card records",
+      "record_write_manifest_sha256": "b4aeae78e3bfd4b5109a1de843996898639d8d27a6a4051e2c796e9de8ffc119",
+      "prior_closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-059_全库逐题语义复核第26批正式收口.json",
+      "prior_closeout_sha256": "a526f73156218831fe9b9f1045495f7b38e684e7be26d27ef8f19a5cceef73f5",
+      "scope": {
+        "card_count": 20,
+        "detail_path_count": 20,
+        "physical_asset_path_count": 32,
+        "unique_asset_sha256_count": 32,
+        "physical_asset_role_path_counts": {
+          "question": 20,
+          "solution": 12,
+          "reference": 0
+        },
+        "unique_asset_role_counts": {
+          "question": 20,
+          "solution": 12,
+          "reference": 0
+        }
+      },
+      "records": [
+        {
+          "card_id": "GS-388",
+          "card_path": "错题知识网络/错题卡/GS-388_2023年数一真题第18题.md",
+          "card_sha256": "24b371d5a53f933aa61dc6c0c80f408ff9cadf8e6b1f5117d2b53d52922fa4a5",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-388_2023年数一真题第18题.md",
+              "sha256": "94a3cd2d4f7d21ee8b13b2645beefdbd264c952e96f814eb3404e56080cca71d"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-388/question_01.png",
+              "sha256": "c55eb3943f01e12c8638f03c2ff9374c2dbb59e4a847ebcc1f913e9d121809b0"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-388/solution_01.png",
+              "sha256": "e72455bdb3f14470cf6909381e7f1cfc23a02d523aa524c0b5c135e96e059a44"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-389",
+          "card_path": "错题知识网络/错题卡/GS-389_2020年第17题.md",
+          "card_sha256": "12ba0a170d945f0d5eacffe9776429960784fe6778bc61243052718b51fd41c5",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-389_2020年第17题.md",
+              "sha256": "0db13a9e0bf0b3b63bade21103fd30c1da042bc0e9479ead8f93e79c108e4dff"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-389/question_01.png",
+              "sha256": "08eff2e20bd7533472492137d891a3405ab399d8a1be631e50c14f9082e6422e"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-389/solution_01.png",
+              "sha256": "183df8d4a4a5f98727a479c2ab0b5da840e48dee0e65a497e24a9fff9a2a44ce"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-390",
+          "card_path": "错题知识网络/错题卡/GS-390_强化例题13.26.md",
+          "card_sha256": "58979d9fb4ca562e74e72345b31b4e7deb0f062791d9544b133bd56d4c5d220b",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-390_强化例题13.26.md",
+              "sha256": "4b1887acc22d025077536cbbb52438255b0ce767b586d59b2f071971b46880b6"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-390/question_01.png",
+              "sha256": "22114e3a4a148c7c583eeb34ca51cac78b30e30d7fb9eb120f04e6b1122808e1"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-391",
+          "card_path": "错题知识网络/错题卡/GS-391_强化例题13.27.md",
+          "card_sha256": "34b6cbc9420bedd7411cd936f9c3dfdbd517cf1926626721e6ee0c183bb6f2be",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-391_强化例题13.27.md",
+              "sha256": "ac7e71b764ecc5378cea36fe5c45d6d1c6adf88a9d96a74fec39f5ccc34c6af7"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-391/question_01.png",
+              "sha256": "7265a965f44e6413e58704960fd8216c0f5763aea959570b353d4c3437622e6f"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-391/solution_01.png",
+              "sha256": "08a22217d5e4706af9bea7879c75f2e906c5b2bc3aa16072723060ef1b55b34f"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-392",
+          "card_path": "错题知识网络/错题卡/GS-392_强化例题13.28.md",
+          "card_sha256": "d3c1ebb3251e85b56044b3081472784d0663d6e25e7abc81de70bef7d8bb68e0",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-392_强化例题13.28.md",
+              "sha256": "9813284601d2289b62549a5e55b77294f8b73e74186f73e5b00404648a3c4c78"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-392/question_01.png",
+              "sha256": "537c6b053ca2ac73a1ed3c9fdc9a080065c05f62676f494527f637cf8c839265"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-392/solution_01.png",
+              "sha256": "0aaecf02b2ce91e5e00462714703f0469b014a30b28673652fe2b4ecd90e99da"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-393",
+          "card_path": "错题知识网络/错题卡/GS-393_强化例题13.30.md",
+          "card_sha256": "3f6a5c5a6ee4080b06c0e0c9136f2e583f9eadd9c91a6a571a065fd4f4752e14",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-393_强化例题13.30.md",
+              "sha256": "d88c914ef7d3f3fa4ac1696040227b6009af02a76dab5379dd9ae0467f12a27d"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-393/question_01.png",
+              "sha256": "64ce45744d6d9ff2a480808091d62ceb8e9d94b535fa85fe0440f053d63c7c2d"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-394",
+          "card_path": "错题知识网络/错题卡/GS-394_强化例题13.29.md",
+          "card_sha256": "53088698d902a1a54ca3a0399237e2f048c2b8ce96540a2fa62b081f45fc8c2a",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-394_强化例题13.29.md",
+              "sha256": "9dde549dce33cdf38bcaea305da8f7664e226d902da75b6f9432566a7b066f54"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-394/question_01.png",
+              "sha256": "45dca442c7bc13d5349836575c55b3a9a7bfcb09a8c3d536d3db52289ebfc1d4"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-394/solution_01.png",
+              "sha256": "5f5a4c0af18116138684ccf2d61708af40293b4dff12e138e150b2628fa8e534"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-395",
+          "card_path": "错题知识网络/错题卡/GS-395_2018年第19题.md",
+          "card_sha256": "864c0aef8ba2ef6d4c3c0a4537aae96838b66efedf154c5d342a0b548e4536e5",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-395_2018年第19题.md",
+              "sha256": "f4e89f27c5a359d17c0faa9716976bd7b735725f791fafc843c3fc0b1f92c576"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-395/question_01.png",
+              "sha256": "05393104b6f7457d603a00df4fedbb799609c9bea1348525df700be713e20c2b"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-395/solution_01.png",
+              "sha256": "26bab7fd9b5eeffd1dd3e7fe573c9e5e69cead2bdacd304ed3de4707ebe65fb8"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-396",
+          "card_path": "错题知识网络/错题卡/GS-396_强化例题13.31.md",
+          "card_sha256": "e9deffa2ed93d3966495e01fd2a32e43b4f33ba02d3451a645746107af090af9",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-396_强化例题13.31.md",
+              "sha256": "3d4a27885fc1b04ad64730d4e46187279087bfe1b8bb2dc4a7e9081ac2087ed5"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-396/question_01.png",
+              "sha256": "1087fa95727220aa61e5f40a3b838cc69a64ec0ba2396aacf228cb2c4f4e8f8f"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-397",
+          "card_path": "错题知识网络/错题卡/GS-397_强化例题14.1.md",
+          "card_sha256": "b56a90114fa5fccf596e5fed36187ed9f8cdac56f4d65856f4ff42cd94905e15",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-397_强化例题14.1.md",
+              "sha256": "845408d1faed016d3626d7a9fb0aef4b62de1324d674623beb9b517e3d5fe0e5"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-397/question_01.png",
+              "sha256": "660caf6f5d9679245d5cbc0a0670bad2df56bc1ac554e9cdbf6b72d578735b64"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-398",
+          "card_path": "错题知识网络/错题卡/GS-398_2021年第14题.md",
+          "card_sha256": "331ed497d94b8892ca5de4918b5ebff0e813c492fdde25b6c9546c7f2ec09eac",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-398_2021年第14题.md",
+              "sha256": "97990a4c3b7512a6525c56e337943a316436bd82204bce7eb2ec749cd4d6c65f"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-398/question_01.png",
+              "sha256": "11448a0bc5849c940ebda5c87aed22305cc162dc6c886d30adf5aa8e6eb49cb6"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-398/solution_01.png",
+              "sha256": "caf591b167f1071a797b9f58e584227efb386a3505ec83ec17546c2c6eb8a2b0"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-399",
+          "card_path": "错题知识网络/错题卡/GS-399_强化例题14.4.md",
+          "card_sha256": "7c5fe4a2ccd78d74920a1d494249aa4d56696781b83b5228b59e6a5c3e266ab3",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-399_强化例题14.4.md",
+              "sha256": "01d7e941062a7f8299b75615f8b7ebf39656ae70a2fd1f82258d83596c1d5ee5"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-399/question_01.png",
+              "sha256": "86d8f0294b29cfc70cf6ebbb09ec0b517347bafc7d93e63818b1c92c2dbad1c1"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-399/solution_01.png",
+              "sha256": "b60c3cfc2c768c75a0b0fcdbbbe80540f7aa6760b3924c0d3d6ea1a2860b0647"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-400",
+          "card_path": "错题知识网络/错题卡/GS-400_2025年真题20题.md",
+          "card_sha256": "ef99789ed7335cb021543c5f1ac899352be618f72f7ad702deef56472ab864d0",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-400_2025年真题20题.md",
+              "sha256": "358d6883bc0659141625f2fa9ff2d1df094ec061ebfc5bedbb61f777ede97c8e"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-400/question_01.png",
+              "sha256": "5e02ee0aa1f029fc1a6436b5e0338e735357220a549c1b97dac148da1fd8b597"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-402",
+          "card_path": "错题知识网络/错题卡/GS-402_2018年第6题.md",
+          "card_sha256": "f797d62ba9279c092294c781b99eba8f401218735d0623e4d03ec3e519f521e2",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-402_2018年第6题.md",
+              "sha256": "1f0c60a18923e20fc6dc691f8b6ed9358f0884ef49b6fcced2fe9b65d2817a7f"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-402/question_01.png",
+              "sha256": "0b120ad94487fd297de79ceff94a2649bfe8c9dabc8035c5423de6c58a05f28e"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-402/solution_01.png",
+              "sha256": "a3ad5ced5338820575963856113f44a3dd8abd3b44828bb5c4e8f3a7e81b0bf7"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-404",
+          "card_path": "错题知识网络/错题卡/GS-404_强化例题14.6.md",
+          "card_sha256": "0602a762b2969e518860af4b12cd425818366605f9830782208c8c1eaf1bdf31",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-404_强化例题14.6.md",
+              "sha256": "bd64b013f0b53afb96be3a04c0a5ef5a0c8e786af3f042397ddd2c74bda3f902"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-404/question_01.png",
+              "sha256": "27a1bcc0569bcf7b09a1bc086a054d1d1bcdac21c9d59737511c8ab9610b5c93"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-406",
+          "card_path": "错题知识网络/错题卡/GS-406_2018年第17题.md",
+          "card_sha256": "671a21d551f1eced993219b4166326ad13b976557f4b7978a4cd1268178c4530",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-406_2018年第17题.md",
+              "sha256": "947e90c40ca5338c0a018a9fc3d53107f545039ed66b4cc1968c7da2cf120244"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-406/question_01.png",
+              "sha256": "247d2b00bb795cb87e8ba196f737a4bd6cefb24684cf4b6a2f33ab5bd387e202"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-406/solution_01.png",
+              "sha256": "db60dc24e7156bd6689e927cd170f763211c4a3042d0b4c4a86048411fda0f65"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-407",
+          "card_path": "错题知识网络/错题卡/GS-407_强化例题14.7.md",
+          "card_sha256": "a8605882fdd1e019a4c6a787369928fe0ea212ec388c879c3dc68afceb75e5c2",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-407_强化例题14.7.md",
+              "sha256": "4886802cb2ff45444f4290f7e1e03eb9a6676e1ff795498d1ab1537c51ad3cd1"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-407/question_01.png",
+              "sha256": "0492635bc830695181043b43fe5eacad92caa90a7c347970d6fff4cf9eac13c1"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-410",
+          "card_path": "错题知识网络/错题卡/GS-410_2021年真题第21题.md",
+          "card_sha256": "08b1bfa4a5787b71e4eb7db999794377d3b1b221132523878b8481cc4867f5cb",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-410_2021年真题第21题.md",
+              "sha256": "004837ff3b520f56d92351c36842f5b0a877b094d37bc370dffb173c48a38cf6"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-410/question_01.png",
+              "sha256": "e0dbc90dde4288a7cafa20eb8d6db740a806055da0979beb46552b18cf97d757"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-410/solution_01.png",
+              "sha256": "b43cce3d7250fca467a8240f6bad65038de3edd45becb9223c6e44c84ee9f118"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-413",
+          "card_path": "错题知识网络/错题卡/GS-413_强化例题14.8.md",
+          "card_sha256": "102e61a320f37f7be0415c1c2d79f6a4944f53012047fd9336640dd7103c01a4",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-413_强化例题14.8.md",
+              "sha256": "c604148db84e1cbbe6c7980ac53a3757b83b1a1fc03f0014abdcb14f4503e4bb"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-413/question_01.png",
+              "sha256": "5dc02297e4034a8f005edc69c4c7fd9bca6886001f76447d5a1ce41e0ca6e309"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-415",
+          "card_path": "错题知识网络/错题卡/GS-415_强化例题12.1.md",
+          "card_sha256": "27a7ad6b6f22cab45a2bf1e6eed046197db414b35219a052ef26eb63f9c3abdc",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-415_强化例题12.1.md",
+              "sha256": "00197d5ba50176c107278253675d5513b2f2bb9637f3081832dbb3c9fcd96157"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-415/question_01.png",
+              "sha256": "3c126a60b8bd1ccc77b89becbcdf0818051521ba620e6055978a26ac6748d4ab"
+            },
+            {
+              "role": "solution",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-415/solution_01.png",
+              "sha256": "d0c5a3b4671c9e9d5038f82e600859f4d1bcbf7e591eb9f80bcae348fd45fbc9"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "guardrails": {
+    "formal_related_write": true,
+    "formal_card_write": true,
+    "formal_visual_write": true,
+    "mode": "authorized_full_library_semantic_review",
+    "review_origin_mode": "question_solution_visual_and_formal_card_semantic_review",
+    "formal_closeout_ref": "pending_MATH-TARGET-SEMANTIC-CLOSEOUT-20260723-B27",
+    "closeout_receipt_created_in_this_task": false,
+    "personal_error_requires_explicit_evidence": true,
+    "duplicate_physical_assets_reviewed_once_per_sha256": true,
+    "identity_blocked_cards_participate_in_aggregate_edges": false,
+    "bidirectional_owner_declarations_required": true,
+    "stable_id_merge_or_delete": false,
+    "wrongnet_rebuild_policy": "exactly_one_after_source_review_freeze",
+    "generated_output_write": false,
+    "tests_run": false
+  },
+  "evidence_distribution": {
+    "user_confirmed": 0,
+    "pending_user_confirmation": 20,
+    "not_assessable_missing_question_surface": 0,
+    "legacy_unclassified": 0
+  },
+  "evidence_card_ids": {
+    "user_confirmed": [],
+    "pending_user_confirmation": [
+      "GS-388",
+      "GS-389",
+      "GS-390",
+      "GS-391",
+      "GS-392",
+      "GS-393",
+      "GS-394",
+      "GS-395",
+      "GS-396",
+      "GS-397",
+      "GS-398",
+      "GS-399",
+      "GS-400",
+      "GS-402",
+      "GS-404",
+      "GS-406",
+      "GS-407",
+      "GS-410",
+      "GS-413",
+      "GS-415"
+    ],
+    "not_assessable_missing_question_surface": [],
+    "legacy_unclassified": []
+  },
+  "repeat_count_vector": [
+    {
+      "card_id": "GS-388",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-389",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-390",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-391",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-392",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-393",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-394",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-395",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-396",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-397",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-398",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-399",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-400",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-402",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-404",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-406",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-407",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-410",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-413",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-415",
+      "repeat_count": 1
+    }
+  ],
+  "asset_boundary": {
+    "physical_asset_records": [
+      {
+        "card_id": "GS-388",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-388/question_01.png",
+        "sha256": "c55eb3943f01e12c8638f03c2ff9374c2dbb59e4a847ebcc1f913e9d121809b0"
+      },
+      {
+        "card_id": "GS-388",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-388/solution_01.png",
+        "sha256": "e72455bdb3f14470cf6909381e7f1cfc23a02d523aa524c0b5c135e96e059a44"
+      },
+      {
+        "card_id": "GS-389",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-389/question_01.png",
+        "sha256": "08eff2e20bd7533472492137d891a3405ab399d8a1be631e50c14f9082e6422e"
+      },
+      {
+        "card_id": "GS-389",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-389/solution_01.png",
+        "sha256": "183df8d4a4a5f98727a479c2ab0b5da840e48dee0e65a497e24a9fff9a2a44ce"
+      },
+      {
+        "card_id": "GS-390",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-390/question_01.png",
+        "sha256": "22114e3a4a148c7c583eeb34ca51cac78b30e30d7fb9eb120f04e6b1122808e1"
+      },
+      {
+        "card_id": "GS-391",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-391/question_01.png",
+        "sha256": "7265a965f44e6413e58704960fd8216c0f5763aea959570b353d4c3437622e6f"
+      },
+      {
+        "card_id": "GS-391",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-391/solution_01.png",
+        "sha256": "08a22217d5e4706af9bea7879c75f2e906c5b2bc3aa16072723060ef1b55b34f"
+      },
+      {
+        "card_id": "GS-392",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-392/question_01.png",
+        "sha256": "537c6b053ca2ac73a1ed3c9fdc9a080065c05f62676f494527f637cf8c839265"
+      },
+      {
+        "card_id": "GS-392",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-392/solution_01.png",
+        "sha256": "0aaecf02b2ce91e5e00462714703f0469b014a30b28673652fe2b4ecd90e99da"
+      },
+      {
+        "card_id": "GS-393",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-393/question_01.png",
+        "sha256": "64ce45744d6d9ff2a480808091d62ceb8e9d94b535fa85fe0440f053d63c7c2d"
+      },
+      {
+        "card_id": "GS-394",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-394/question_01.png",
+        "sha256": "45dca442c7bc13d5349836575c55b3a9a7bfcb09a8c3d536d3db52289ebfc1d4"
+      },
+      {
+        "card_id": "GS-394",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-394/solution_01.png",
+        "sha256": "5f5a4c0af18116138684ccf2d61708af40293b4dff12e138e150b2628fa8e534"
+      },
+      {
+        "card_id": "GS-395",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-395/question_01.png",
+        "sha256": "05393104b6f7457d603a00df4fedbb799609c9bea1348525df700be713e20c2b"
+      },
+      {
+        "card_id": "GS-395",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-395/solution_01.png",
+        "sha256": "26bab7fd9b5eeffd1dd3e7fe573c9e5e69cead2bdacd304ed3de4707ebe65fb8"
+      },
+      {
+        "card_id": "GS-396",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-396/question_01.png",
+        "sha256": "1087fa95727220aa61e5f40a3b838cc69a64ec0ba2396aacf228cb2c4f4e8f8f"
+      },
+      {
+        "card_id": "GS-397",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-397/question_01.png",
+        "sha256": "660caf6f5d9679245d5cbc0a0670bad2df56bc1ac554e9cdbf6b72d578735b64"
+      },
+      {
+        "card_id": "GS-398",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-398/question_01.png",
+        "sha256": "11448a0bc5849c940ebda5c87aed22305cc162dc6c886d30adf5aa8e6eb49cb6"
+      },
+      {
+        "card_id": "GS-398",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-398/solution_01.png",
+        "sha256": "caf591b167f1071a797b9f58e584227efb386a3505ec83ec17546c2c6eb8a2b0"
+      },
+      {
+        "card_id": "GS-399",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-399/question_01.png",
+        "sha256": "86d8f0294b29cfc70cf6ebbb09ec0b517347bafc7d93e63818b1c92c2dbad1c1"
+      },
+      {
+        "card_id": "GS-399",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-399/solution_01.png",
+        "sha256": "b60c3cfc2c768c75a0b0fcdbbbe80540f7aa6760b3924c0d3d6ea1a2860b0647"
+      },
+      {
+        "card_id": "GS-400",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-400/question_01.png",
+        "sha256": "5e02ee0aa1f029fc1a6436b5e0338e735357220a549c1b97dac148da1fd8b597"
+      },
+      {
+        "card_id": "GS-402",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-402/question_01.png",
+        "sha256": "0b120ad94487fd297de79ceff94a2649bfe8c9dabc8035c5423de6c58a05f28e"
+      },
+      {
+        "card_id": "GS-402",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-402/solution_01.png",
+        "sha256": "a3ad5ced5338820575963856113f44a3dd8abd3b44828bb5c4e8f3a7e81b0bf7"
+      },
+      {
+        "card_id": "GS-404",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-404/question_01.png",
+        "sha256": "27a1bcc0569bcf7b09a1bc086a054d1d1bcdac21c9d59737511c8ab9610b5c93"
+      },
+      {
+        "card_id": "GS-406",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-406/question_01.png",
+        "sha256": "247d2b00bb795cb87e8ba196f737a4bd6cefb24684cf4b6a2f33ab5bd387e202"
+      },
+      {
+        "card_id": "GS-406",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-406/solution_01.png",
+        "sha256": "db60dc24e7156bd6689e927cd170f763211c4a3042d0b4c4a86048411fda0f65"
+      },
+      {
+        "card_id": "GS-407",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-407/question_01.png",
+        "sha256": "0492635bc830695181043b43fe5eacad92caa90a7c347970d6fff4cf9eac13c1"
+      },
+      {
+        "card_id": "GS-410",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-410/question_01.png",
+        "sha256": "e0dbc90dde4288a7cafa20eb8d6db740a806055da0979beb46552b18cf97d757"
+      },
+      {
+        "card_id": "GS-410",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-410/solution_01.png",
+        "sha256": "b43cce3d7250fca467a8240f6bad65038de3edd45becb9223c6e44c84ee9f118"
+      },
+      {
+        "card_id": "GS-413",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-413/question_01.png",
+        "sha256": "5dc02297e4034a8f005edc69c4c7fd9bca6886001f76447d5a1ce41e0ca6e309"
+      },
+      {
+        "card_id": "GS-415",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-415/question_01.png",
+        "sha256": "3c126a60b8bd1ccc77b89becbcdf0818051521ba620e6055978a26ac6748d4ab"
+      },
+      {
+        "card_id": "GS-415",
+        "role": "solution",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-415/solution_01.png",
+        "sha256": "d0c5a3b4671c9e9d5038f82e600859f4d1bcbf7e591eb9f80bcae348fd45fbc9"
+      }
+    ],
+    "physical_asset_path_count": 32,
+    "unique_asset_sha256_count": 32,
+    "solution_image_card_ids": [
+      "GS-388",
+      "GS-389",
+      "GS-391",
+      "GS-392",
+      "GS-394",
+      "GS-395",
+      "GS-398",
+      "GS-399",
+      "GS-402",
+      "GS-406",
+      "GS-410",
+      "GS-415"
+    ],
+    "reference_image_card_ids": [],
+    "question_only_card_ids": [
+      "GS-390",
+      "GS-393",
+      "GS-396",
+      "GS-397",
+      "GS-400",
+      "GS-404",
+      "GS-407",
+      "GS-413"
+    ],
+    "formal_question_evidence_excluded_card_ids": [],
+    "visual_gap_card_ids": [],
+    "same_card_alias_groups": [],
+    "identity_hold_groups": [
+      {
+        "group_id": "B27-ID-01",
+        "member_ids": [
+          "GS-393",
+          "GS-424"
+        ],
+        "selected_card_ids": [
+          "GS-393"
+        ],
+        "question_asset_sha256": "64ce45744d6d9ff2a480808091d62ceb8e9d94b535fa85fe0440f053d63c7c2d",
+        "decision": "stable_ids_retained_ordinary_edges_blocked_no_recurrence_increment"
+      }
+    ],
+    "identity_blocked_selected_card_ids": [
+      "GS-393"
+    ],
+    "duplicate_question_asset_groups": [
+      {
+        "group_id": "B27-ID-01",
+        "member_ids": [
+          "GS-393",
+          "GS-424"
+        ],
+        "selected_card_ids": [
+          "GS-393"
+        ],
+        "question_asset_sha256": "64ce45744d6d9ff2a480808091d62ceb8e9d94b535fa85fe0440f053d63c7c2d",
+        "decision": "stable_ids_retained_ordinary_edges_blocked_no_recurrence_increment"
+      }
+    ],
+    "visual_mismatch_groups": [],
+    "asset_hash_drift_count": 0
+  },
+  "relation_audit": {
+    "existing_verified": [
+      {
+        "source_card_id": "GS-386",
+        "target_card_id": "GS-388",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-386",
+          "GS-388"
+        ],
+        "reason": "两题都要求在 Hessian 判别退化时改用路径或邻域符号检查，首个检查动作相同。"
+      },
+      {
+        "source_card_id": "GS-387",
+        "target_card_id": "GS-388",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-387",
+          "GS-388"
+        ],
+        "reason": "同属多元无条件极值全流程，先求全部驻点，再逐点做 Hessian 判别和退化复核。"
+      },
+      {
+        "source_card_id": "GS-387",
+        "target_card_id": "GS-389",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-387",
+          "GS-389"
+        ],
+        "reason": "两题共享联立一阶偏导求全驻点、Hessian 分类和函数值回代的完整动作链。"
+      },
+      {
+        "source_card_id": "GS-387",
+        "target_card_id": "GS-390",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-387",
+          "GS-390"
+        ],
+        "reason": "两题共同训练驻点不等于极值点，必须逐点完成二阶判别。"
+      },
+      {
+        "source_card_id": "GS-388",
+        "target_card_id": "GS-389",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-388",
+          "GS-389"
+        ],
+        "reason": "两题都包含多个驻点，要求逐点 Hessian 分类并排除非极值驻点。"
+      },
+      {
+        "source_card_id": "GS-389",
+        "target_card_id": "GS-390",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-389",
+          "GS-390"
+        ],
+        "reason": "两题首动作为求全驻点，核心陷阱均是不能把驻点直接判作极值点。"
+      },
+      {
+        "source_card_id": "GS-390",
+        "target_card_id": "GS-396",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-390",
+          "GS-396"
+        ],
+        "reason": "同一函数在全平面与闭圆盘上的最值对照，形成内部驻点到边界候选的递进链。"
+      },
+      {
+        "source_card_id": "GS-391",
+        "target_card_id": "GS-392",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-391",
+          "GS-392"
+        ],
+        "reason": "两题都要求区分极值存在、驻点条件与 Hessian 充分条件的逻辑层级。"
+      },
+      {
+        "source_card_id": "GS-391",
+        "target_card_id": "GS-396",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-391",
+          "GS-396"
+        ],
+        "reason": "闭区域全局最值都需把内部局部判别与边界候选分开处理。"
+      },
+      {
+        "source_card_id": "GS-395",
+        "target_card_id": "GS-396",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-395",
+          "GS-396"
+        ],
+        "reason": "两题都需先列目标、约束和边界，再闭合内部候选与边界候选比较。"
+      },
+      {
+        "source_card_id": "GS-398",
+        "target_card_id": "GS-404",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-398",
+          "GS-404"
+        ],
+        "reason": "两题均先翻译积分区域，再按被积函数结构选择换序或坐标路线。"
+      },
+      {
+        "source_card_id": "GS-400",
+        "target_card_id": "GS-413",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-400",
+          "GS-413"
+        ],
+        "reason": "都需把平移圆域和附加半平面条件同步转为极坐标边界，不能只换被积函数。"
+      },
+      {
+        "source_card_id": "GS-404",
+        "target_card_id": "GS-593",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-404",
+          "GS-593"
+        ],
+        "reason": "都把曲线或极坐标条件翻译成三角形型直角坐标区域，再决定积分次序。"
+      },
+      {
+        "source_card_id": "GS-407",
+        "target_card_id": "GS-409",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-407",
+          "GS-409"
+        ],
+        "reason": "二次型曲线配射线边界时，都先极坐标化边界并分清径向上下界。"
+      },
+      {
+        "source_card_id": "GS-407",
+        "target_card_id": "GS-410",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-407",
+          "GS-410"
+        ],
+        "reason": "都先把二次曲线化为 r 与角度的关系，再由非负条件锁定合法角域。"
+      },
+      {
+        "source_card_id": "GS-409",
+        "target_card_id": "GS-410",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-409",
+          "GS-410"
+        ],
+        "reason": "两题共享极坐标分块、角域合法性和径向边界比较的完整流程。"
+      },
+      {
+        "source_card_id": "GS-410",
+        "target_card_id": "GS-680",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-410",
+          "GS-680"
+        ],
+        "reason": "题面使用同一双纽线方程，首动作均为写出 r^2=cos2θ 并检查第一象限角域。"
+      },
+      {
+        "source_card_id": "GS-415",
+        "target_card_id": "GS-418",
+        "decision": "keep",
+        "declaration_owners": [
+          "GS-415",
+          "GS-418"
+        ],
+        "reason": "定积分物理应用中都需先选微元位置，再同时写随位置变化的力和位移距离。"
+      }
+    ],
+    "existing_verified_count": 18,
+    "existing_verified_owner_count": 36,
+    "added": [
+      {
+        "source_card_id": "GS-397",
+        "target_card_id": "GS-702",
+        "decision": "add",
+        "declaration_owners": [
+          "GS-397",
+          "GS-702"
+        ],
+        "reason": "都从离散双指标或含参和式中识别面积微元、采样点与真实积分区间。"
+      },
+      {
+        "source_card_id": "GS-400",
+        "target_card_id": "GS-667",
+        "decision": "add",
+        "declaration_owners": [
+          "GS-400",
+          "GS-667"
+        ],
+        "reason": "都含偏心圆盘的极坐标边界，且必须区分固定圆半径与极径变量。"
+      },
+      {
+        "source_card_id": "GS-404",
+        "target_card_id": "GS-411",
+        "decision": "add",
+        "declaration_owners": [
+          "GS-404",
+          "GS-411"
+        ],
+        "reason": "同为第一象限楔形区域，需准确翻译射线与 x=c 边界后再选直角坐标或极坐标。"
+      }
+    ],
+    "added_count": 3,
+    "added_owner_count": 6,
+    "reciprocal_owner_repairs": [
+      {
+        "source_card_id": "GS-386",
+        "target_card_id": "GS-388",
+        "added_declaration_owners": [
+          "GS-388"
+        ],
+        "reason": "formal_strong_edge_bidirectional_owner_repair"
+      },
+      {
+        "source_card_id": "GS-388",
+        "target_card_id": "GS-389",
+        "added_declaration_owners": [
+          "GS-389"
+        ],
+        "reason": "formal_strong_edge_bidirectional_owner_repair"
+      },
+      {
+        "source_card_id": "GS-391",
+        "target_card_id": "GS-396",
+        "added_declaration_owners": [
+          "GS-396"
+        ],
+        "reason": "formal_strong_edge_bidirectional_owner_repair"
+      },
+      {
+        "source_card_id": "GS-400",
+        "target_card_id": "GS-413",
+        "added_declaration_owners": [
+          "GS-400"
+        ],
+        "reason": "formal_strong_edge_bidirectional_owner_repair"
+      },
+      {
+        "source_card_id": "GS-404",
+        "target_card_id": "GS-593",
+        "added_declaration_owners": [
+          "GS-404"
+        ],
+        "reason": "formal_strong_edge_bidirectional_owner_repair"
+      },
+      {
+        "source_card_id": "GS-410",
+        "target_card_id": "GS-680",
+        "added_declaration_owners": [
+          "GS-410"
+        ],
+        "reason": "formal_strong_edge_bidirectional_owner_repair"
+      }
+    ],
+    "reciprocal_owner_repair_count": 6,
+    "reciprocal_owner_declarations_added": 6,
+    "removed": [
+      {
+        "source_card_id": "GS-390",
+        "target_card_id": "GS-392",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-392"
+        ],
+        "reason": "只共享多元极值上位主题；无条件驻点分类与乘积型 Hessian 充分条件的具体入口不同。"
+      },
+      {
+        "source_card_id": "GS-393",
+        "target_card_id": "GS-394",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-393",
+          "GS-394"
+        ],
+        "reason": "GS-393 属于同题身份冻结组，且二次型约束最值与隐函数条件极值判断不构成强边。"
+      },
+      {
+        "source_card_id": "GS-393",
+        "target_card_id": "GS-395",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-393",
+          "GS-395"
+        ],
+        "reason": "GS-393 属于同题身份冻结组；二次型 Rayleigh 商与实际问题建模没有共同首动作。"
+      },
+      {
+        "source_card_id": "GS-393",
+        "target_card_id": "GS-424",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-424"
+        ],
+        "reason": "两卡为同题身份候选，稳定 ID 保留但普通 related 必须清空，不能把身份重复当强关系或复发。"
+      },
+      {
+        "source_card_id": "GS-394",
+        "target_card_id": "GS-395",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-394",
+          "GS-395"
+        ],
+        "reason": "约束极值必要条件的逻辑判断与物理量建模求最小值只属同章相似。"
+      },
+      {
+        "source_card_id": "GS-397",
+        "target_card_id": "GS-406",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-397",
+          "GS-406"
+        ],
+        "reason": "Riemann 和识别与参数曲线二重积分没有共同具体触发或第一动作。"
+      },
+      {
+        "source_card_id": "GS-404",
+        "target_card_id": "GS-406",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-406"
+        ],
+        "reason": "三角形区域转换与参数曲线外层换元仅共享二重积分章节。"
+      },
+      {
+        "source_card_id": "GS-404",
+        "target_card_id": "GS-413",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-413"
+        ],
+        "reason": "虽都涉及区域变换，但前者核心是极坐标区域转直角坐标，后者是平移圆心与半平面同步换元。"
+      },
+      {
+        "source_card_id": "GS-406",
+        "target_card_id": "GS-409",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-406"
+        ],
+        "reason": "参数曲线换元与极坐标分块不共享具体边界翻译模板。"
+      },
+      {
+        "source_card_id": "GS-407",
+        "target_card_id": "GS-411",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-407"
+        ],
+        "reason": "旧边来自 GS-411 的错位正文；恢复后的楔形齐次积分与二次型环带题不构成强边。"
+      },
+      {
+        "source_card_id": "GS-407",
+        "target_card_id": "GS-413",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-413"
+        ],
+        "reason": "二次型环带极坐标与平移半圆换元只有宽泛坐标法共同点。"
+      },
+      {
+        "source_card_id": "GS-409",
+        "target_card_id": "GS-411",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-409",
+          "GS-411"
+        ],
+        "reason": "旧边来自 GS-411 的错位正文；当前楔形齐次结构与分块圆域没有同一首动作。"
+      },
+      {
+        "source_card_id": "GS-410",
+        "target_card_id": "GS-411",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-410",
+          "GS-411"
+        ],
+        "reason": "旧边来自 GS-411 的错位正文；双纽线角域与 x=c 楔形边界不构成强关系。"
+      },
+      {
+        "source_card_id": "GS-415",
+        "target_card_id": "GS-420",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-415"
+        ],
+        "reason": "井绳提升做功与另一物理积分只共享宽泛定积分应用标签，微元对象和检查链不同。"
+      },
+      {
+        "source_card_id": "GS-421",
+        "target_card_id": "GS-422",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-421",
+          "GS-422"
+        ],
+        "reason": "GS-421 是固定质点受细杆引力分量，GS-422 是移动质点引力做功；旧边由错位正文产生。"
+      },
+      {
+        "source_card_id": "GS-424",
+        "target_card_id": "GS-425",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-424",
+          "GS-425"
+        ],
+        "reason": "GS-424 已进入同题身份冻结组；与 GS-425 不保留普通聚合边。"
+      },
+      {
+        "source_card_id": "GS-667",
+        "target_card_id": "GS-668",
+        "decision": "remove",
+        "declaration_owners": [
+          "GS-668"
+        ],
+        "reason": "偏心圆盘柱面高度积分与球体球面坐标混淆只属坐标法章节邻接，具体对象断点不同。"
+      }
+    ],
+    "removed_count": 17,
+    "removed_owner_count": 25,
+    "combined_strong_logical_edge_count": 21,
+    "combined_owner_declaration_count": 42,
+    "all_final_edges_bidirectional": true,
+    "aggregate_blocked_card_ids": [
+      "GS-393"
+    ],
+    "aggregate_allowed_card_ids": [
+      "GS-388",
+      "GS-389",
+      "GS-390",
+      "GS-391",
+      "GS-392",
+      "GS-394",
+      "GS-395",
+      "GS-396",
+      "GS-397",
+      "GS-398",
+      "GS-399",
+      "GS-400",
+      "GS-402",
+      "GS-404",
+      "GS-406",
+      "GS-407",
+      "GS-410",
+      "GS-413",
+      "GS-415"
+    ],
+    "invalid_placeholder_declarations_removed": [],
+    "invalid_placeholder_declarations_removed_count": 0
+  },
+  "historical_lineage_revalidation": [
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-008_全库逐题语义复核第1批20题.json",
+      "review_pre_sha256": "8ff94ea41911ea268af5a98261bf2d5c6974476b18bdc0437e70a2fb205d8621",
+      "review_post_sha256": "98df32182f608aef69a01b484e21ecb449e200cf6e18be1932f08ddf423bd26a",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-009_全库逐题语义复核第1批正式收口.json",
+      "closeout_pre_sha256": "4cf5a1ab41e651827267901718307263177b481f861140f6563f11ec6c3b8497",
+      "closeout_post_sha256": "dd0413e5f394e9a9dd95ef3f3c92c22494b26337aa0caae6fedfae5ef3e2e2b4",
+      "affected_card_ids": [
+        "GS-409",
+        "GS-425"
+      ],
+      "removed_edges": [
+        "GS-409--GS-411",
+        "GS-424--GS-425"
+      ],
+      "added_edges": [],
+      "reason": "第27批清除了 GS-409--GS-411 与 GS-424--GS-425 的旧关系；第1批卡片快照同步到当前哈希，历史判断和验证结果继续保留。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-010_全库逐题语义复核第2批20题.json",
+      "review_pre_sha256": "2100961f469ee62f762ac10cc05ba29489acf393c71c241f20a18a51abda8300",
+      "review_post_sha256": "dbacb2c97935f48a69d8b7d2b4060e389c7c10636188a9ef1b3dd582125f0629",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-011_全库逐题语义复核第2批正式收口.json",
+      "closeout_pre_sha256": "833e2f0d30630642d83273bfb38b11a09de01f1909f1801b9f3f650fb1430943",
+      "closeout_post_sha256": "85a4d39a17036bd5a9dbf05679169fdbe810e5deec362a374da27f020d554f01",
+      "affected_card_ids": [
+        "GS-411",
+        "GS-421"
+      ],
+      "source_repairs": [
+        {
+          "path": "错题知识网络/错题卡/GS-411_2020年第19题.md",
+          "pre_sha256": "1d96e9b8a4cf847452f4813c1b467fabb8dcd252ab6a30e29d9be31d13b20224",
+          "post_sha256": "7b0521219f35754260c01f5fa2ae363a31713816563f0a8f6b8befecf4f5b41d"
+        },
+        {
+          "path": "错题知识网络/可视化错题详情/高等数学/GS-411_2020年第19题.md",
+          "pre_sha256": "11cfe04ac99421a59cc14e0e63dce654a07e29047017d195f2ffb2cb3a3cac04",
+          "post_sha256": "0bfe523c3ed54806920407623911987efe742c0f9c5c00cb5944ab0324f52ad1"
+        },
+        {
+          "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-411.md",
+          "pre_sha256": "0dd22e0b151b69b297cd8a07b8d0798f51ace98862de682b6e3f11d3c388e653",
+          "post_sha256": "b1e9d566f882ac76631a741a38fa6f7f04c4a49dd5cdd05aa9ac27c29c77cc1a"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-421_强化例题12.5.md",
+          "pre_sha256": "10bbd89201ef4cd4a6b7c45b5492101a19ed6a903fe497838468ae2c3fe0e245",
+          "post_sha256": "48da2fb6c74daffe04367a0aa0e3e6e305db132cd4f0ec872841759692cb9b4e"
+        },
+        {
+          "path": "错题知识网络/可视化错题详情/高等数学/GS-421_强化例题12.5.md",
+          "pre_sha256": "d2b30a8464ad04fab4973a483548b38348bc9efa42442f6e594aa8c7ca3ec709",
+          "post_sha256": "a0576a00dd80e74f65ce4fb57dbf7462086e96b85e6fcb893c496909cdc0d0ac"
+        },
+        {
+          "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-421.md",
+          "pre_sha256": "d4dd0400c9d77af10b4215c862f7bbabeb17ac1f766a9f28cf7889c4647c2b42",
+          "post_sha256": "c344280dc831a8cabe06fc1aaca17d99c5f3349af204808c5c4fbe80b00d898f"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-422_2025年真题选择题第六题.md",
+          "pre_sha256": "c9175b9b1d695bc3e609c8e4274d4e57ccf34cc27b5e0ce222a09dbea4cc48a9",
+          "post_sha256": "5c5df9e5725642462a910aac224c97ed0c7e8bc8a2153de89a645513dbfde4f0"
+        }
+      ],
+      "reason": "第2批冻结的 GS-411 与 GS-421 正式正文错位已按题图和解析图完成源层重联；旧个人错因不迁移，并删除 GS-421--GS-422 等由错位正文产生的关系。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-012_全库逐题语义复核第3批20题.json",
+      "review_pre_sha256": "280a4bde28e16df60ce547977cdc696547a9585c61fc0bcda370b56fe07d9a2a",
+      "review_post_sha256": "9549548451e54698e7ea5b34c6db86ae999ef0c20d5adb02daf18947382e87b1",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-013_全库逐题语义复核第3批正式收口.json",
+      "closeout_pre_sha256": "d23b9cbf66d06639ccc494810bebbe808722f377ea09ec7fec742842d9fc57ff",
+      "closeout_post_sha256": "8fae6ca9f60c0370de59b79abbb54637931c477d324eb7c865be225c4d8b902b",
+      "affected_card_ids": [
+        "GS-702"
+      ],
+      "removed_edges": [],
+      "added_edges": [
+        "GS-397--GS-702"
+      ],
+      "reason": "第27批增加 GS-397--GS-702 的同一母换元强关系，并同步第3批 GS-702 当前哈希；原批次历史证据不改写。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-020_全库逐题语义复核第7批20题.json",
+      "review_pre_sha256": "19c31f1f688daaec2c4e0df0d4f0771f502a5e5dc992ca4037acbd6a61dfc9c6",
+      "review_post_sha256": "b547e1d3af675922bfa60d9c3b63f650f26854d85f3d77b90c685fce54d27dae",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-021_全库逐题语义复核第7批正式收口.json",
+      "closeout_pre_sha256": "0612b8c3077ddb60b80dd2f9aa1a94299dccc5a4ea5de07861a76f35859c8c05",
+      "closeout_post_sha256": "942304dca0539b6508b58e7d03e960dec05324b8e65d44171b5a98e213e9bedf",
+      "affected_card_ids": [
+        "GS-667"
+      ],
+      "removed_edges": [
+        "GS-667--GS-668"
+      ],
+      "added_edges": [
+        "GS-400--GS-667"
+      ],
+      "reason": "第27批删除相邻编号弱关系 GS-667--GS-668，并增加 GS-400--GS-667 的同型球面积分强关系；第7批快照同步到当前哈希。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-022_全库逐题语义复核第8批20题.json",
+      "review_pre_sha256": "3473e75ab168f4a7386fe1b36da56cbaa2b6862ef96fa91a6f23ba1faf998935",
+      "review_post_sha256": "0cefaa99f04d09e2f2535b55f6bdd88b5b35447ae2d24e853bc03d6d283f8639",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-023_全库逐题语义复核第8批正式收口.json",
+      "closeout_pre_sha256": "9f7d68ee6b75bcc5e9120bb10f7011c96a6fa94d8a357e70c26066af6b248729",
+      "closeout_post_sha256": "a7ff60c89d6a160d6969b064485e5fe464f34630906910787c10faa07d4b42b0",
+      "affected_card_ids": [
+        "GS-668"
+      ],
+      "removed_edges": [
+        "GS-667--GS-668"
+      ],
+      "added_edges": [],
+      "reason": "第27批同步删除 GS-668 对 GS-667 的旧相邻编号声明并回填当前卡片哈希；第8批逐题判断、验证和派生快照保持为历史证据。"
+    }
+  ],
+  "source_writes": [
+    {
+      "kind": "selected_card",
+      "card_id": "GS-388",
+      "path": "错题知识网络/错题卡/GS-388_2023年数一真题第18题.md",
+      "pre_sha256": "24b371d5a53f933aa61dc6c0c80f408ff9cadf8e6b1f5117d2b53d52922fa4a5",
+      "post_sha256": "d1ceea228ce139d9831bcbf341c1c3ee8a1fcededafb801b21ac8f5296b50bca",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-389",
+      "path": "错题知识网络/错题卡/GS-389_2020年第17题.md",
+      "pre_sha256": "12ba0a170d945f0d5eacffe9776429960784fe6778bc61243052718b51fd41c5",
+      "post_sha256": "44b6e08afcc6b2c42cc616274a774e87389e00e882d993f313de184c5caaf1e0",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-390",
+      "path": "错题知识网络/错题卡/GS-390_强化例题13.26.md",
+      "pre_sha256": "58979d9fb4ca562e74e72345b31b4e7deb0f062791d9544b133bd56d4c5d220b",
+      "post_sha256": "a5c408a9775268397cc4a7fadf94ff24c91c1bf857a26e3002862597ba640207",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-391",
+      "path": "错题知识网络/错题卡/GS-391_强化例题13.27.md",
+      "pre_sha256": "34b6cbc9420bedd7411cd936f9c3dfdbd517cf1926626721e6ee0c183bb6f2be",
+      "post_sha256": "cb6f7f98eee0e123cddd08316a7024c1e6a5cd9047d2d714792feb22487fc9a5",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-392",
+      "path": "错题知识网络/错题卡/GS-392_强化例题13.28.md",
+      "pre_sha256": "d3c1ebb3251e85b56044b3081472784d0663d6e25e7abc81de70bef7d8bb68e0",
+      "post_sha256": "00a978b56f2b822c160ea2e0671b45c326538f35efdd63facfa94f3bc0ce8db9",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-393",
+      "path": "错题知识网络/错题卡/GS-393_强化例题13.30.md",
+      "pre_sha256": "3f6a5c5a6ee4080b06c0e0c9136f2e583f9eadd9c91a6a571a065fd4f4752e14",
+      "post_sha256": "9ffac42c1309af307db47be258d9f1c8a653a71fdfdd67c00d3dfabb6693ad1a",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-394",
+      "path": "错题知识网络/错题卡/GS-394_强化例题13.29.md",
+      "pre_sha256": "53088698d902a1a54ca3a0399237e2f048c2b8ce96540a2fa62b081f45fc8c2a",
+      "post_sha256": "51986969445ae6ca04ae47d49f5dc28fbd636ad3169bfd90f21dbf68d036047c",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-395",
+      "path": "错题知识网络/错题卡/GS-395_2018年第19题.md",
+      "pre_sha256": "864c0aef8ba2ef6d4c3c0a4537aae96838b66efedf154c5d342a0b548e4536e5",
+      "post_sha256": "945aa0108a074fee961326f439e2da12b5ed2c2e9b8f00cb70a81c1770ce03e2",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-396",
+      "path": "错题知识网络/错题卡/GS-396_强化例题13.31.md",
+      "pre_sha256": "e9deffa2ed93d3966495e01fd2a32e43b4f33ba02d3451a645746107af090af9",
+      "post_sha256": "28f3041ab78fd4c5507d30241feaed89d626c612ee3578fecd4a1105be3acc3a",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-397",
+      "path": "错题知识网络/错题卡/GS-397_强化例题14.1.md",
+      "pre_sha256": "b56a90114fa5fccf596e5fed36187ed9f8cdac56f4d65856f4ff42cd94905e15",
+      "post_sha256": "d8c66eee8a3c4bd9d8adaab75c69345f93c1bb0a3ea2631729d8313a877c1fab",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-398",
+      "path": "错题知识网络/错题卡/GS-398_2021年第14题.md",
+      "pre_sha256": "331ed497d94b8892ca5de4918b5ebff0e813c492fdde25b6c9546c7f2ec09eac",
+      "post_sha256": "aeb225f0596ae958bf1baf8fdc9ba76041bc94e4963d466824ab068a16d3a3d0",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-399",
+      "path": "错题知识网络/错题卡/GS-399_强化例题14.4.md",
+      "pre_sha256": "7c5fe4a2ccd78d74920a1d494249aa4d56696781b83b5228b59e6a5c3e266ab3",
+      "post_sha256": "2b7a9949cb22db4b3d1105dd16efad0e68dde40aab3ac9c9dc84f6684beb7994",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-400",
+      "path": "错题知识网络/错题卡/GS-400_2025年真题20题.md",
+      "pre_sha256": "ef99789ed7335cb021543c5f1ac899352be618f72f7ad702deef56472ab864d0",
+      "post_sha256": "056bc432e6efade582b08a5175fe4219ea2a14e2ec9e2f5a988703c903eca1b9",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-402",
+      "path": "错题知识网络/错题卡/GS-402_2018年第6题.md",
+      "pre_sha256": "f797d62ba9279c092294c781b99eba8f401218735d0623e4d03ec3e519f521e2",
+      "post_sha256": "e26ddf9fb803def32322789aa97311b5f919743da1f1f2ad007159c2f1994d58",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-404",
+      "path": "错题知识网络/错题卡/GS-404_强化例题14.6.md",
+      "pre_sha256": "0602a762b2969e518860af4b12cd425818366605f9830782208c8c1eaf1bdf31",
+      "post_sha256": "1687b64f85f0c058f5b600543126fddd45f95522615de89ddf8ca0d745c50d9e",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-406",
+      "path": "错题知识网络/错题卡/GS-406_2018年第17题.md",
+      "pre_sha256": "671a21d551f1eced993219b4166326ad13b976557f4b7978a4cd1268178c4530",
+      "post_sha256": "559241d8f26e5a9879f181301ba0b14891fba12caeba2fb9f5cde93e4d096b7a",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-407",
+      "path": "错题知识网络/错题卡/GS-407_强化例题14.7.md",
+      "pre_sha256": "a8605882fdd1e019a4c6a787369928fe0ea212ec388c879c3dc68afceb75e5c2",
+      "post_sha256": "7c146aa6e993dbdd332094596cbbce236b36f5a6cddbf05c800ce37dc06c9da2",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-410",
+      "path": "错题知识网络/错题卡/GS-410_2021年真题第21题.md",
+      "pre_sha256": "08b1bfa4a5787b71e4eb7db999794377d3b1b221132523878b8481cc4867f5cb",
+      "post_sha256": "3d7cb67ca4e7bb08592d4dba56843b5591d1e8606ced140a479ed2ba8edddb9f",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-413",
+      "path": "错题知识网络/错题卡/GS-413_强化例题14.8.md",
+      "pre_sha256": "102e61a320f37f7be0415c1c2d79f6a4944f53012047fd9336640dd7103c01a4",
+      "post_sha256": "937221ddd56bfe516d1cf5624866211b78b83641feeb6ac3a4d43b37e919720a",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-415",
+      "path": "错题知识网络/错题卡/GS-415_强化例题12.1.md",
+      "pre_sha256": "27a7ad6b6f22cab45a2bf1e6eed046197db414b35219a052ef26eb63f9c3abdc",
+      "post_sha256": "ca3d13641acd5f0fe18bd42de8c45ffec828e9f15ff0d3c151c0a3b36fbafaea",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "selected_visual_detail",
+      "card_id": "GS-393",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-393_强化例题13.30.md",
+      "pre_sha256": "d88c914ef7d3f3fa4ac1696040227b6009af02a76dab5379dd9ae0467f12a27d",
+      "post_sha256": "b8ce60402c480dd97b0263b11229727f0c617fbf7185d0f6fd0a5bfc7785cec8",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-409",
+      "path": "错题知识网络/错题卡/GS-409_2022年真题第19题.md",
+      "pre_sha256": "66a7292e04720d3cd84dde6543336442e025b6627b3355565ae4ce442897d03b",
+      "post_sha256": "d0f749a469581b3471e01711663c5c19eb641fc4d527dd5e10e677806a1f4bea",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-411",
+      "path": "错题知识网络/错题卡/GS-411_2020年第19题.md",
+      "pre_sha256": "1d96e9b8a4cf847452f4813c1b467fabb8dcd252ab6a30e29d9be31d13b20224",
+      "post_sha256": "7b0521219f35754260c01f5fa2ae363a31713816563f0a8f6b8befecf4f5b41d",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-421",
+      "path": "错题知识网络/错题卡/GS-421_强化例题12.5.md",
+      "pre_sha256": "10bbd89201ef4cd4a6b7c45b5492101a19ed6a903fe497838468ae2c3fe0e245",
+      "post_sha256": "48da2fb6c74daffe04367a0aa0e3e6e305db132cd4f0ec872841759692cb9b4e",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-422",
+      "path": "错题知识网络/错题卡/GS-422_2025年真题选择题第六题.md",
+      "pre_sha256": "c9175b9b1d695bc3e609c8e4274d4e57ccf34cc27b5e0ce222a09dbea4cc48a9",
+      "post_sha256": "5c5df9e5725642462a910aac224c97ed0c7e8bc8a2153de89a645513dbfde4f0",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-424",
+      "path": "错题知识网络/错题卡/GS-424_强化例题13.30-2.md",
+      "pre_sha256": "82fb1bebba907eaad318360aa81c101b7f1ed55d25887a0e3154eb78189b3e93",
+      "post_sha256": "23504f8a2a43d48fd1c5f3aba85bf3adaa4161b04cef2ba9c40f45f6109d83cf",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-425",
+      "path": "错题知识网络/错题卡/GS-425_强化例题9.15.md",
+      "pre_sha256": "13976487d9ae5be30f24ffae2b5adb8df23ba0649c3cef0c2778bb54fed06271",
+      "post_sha256": "39d105d91a131fca08fb56c1a2160230d3ab56640fd092e631aa67b64d32a95d",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-667",
+      "path": "错题知识网络/错题卡/GS-667_102412圆柱抛物面极坐标.md",
+      "pre_sha256": "e751ab12bed15a68e05232a117322bd564aaef73cc5c63e8917c44142b3d74f0",
+      "post_sha256": "e553837189c19049a57dfe37756c36c1f0bf2343548e373e919b0b34399aac4d",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-668",
+      "path": "错题知识网络/错题卡/GS-668_102610球体截面球面坐标.md",
+      "pre_sha256": "a16d683a1789b82524b515ab24dd32bd60c33d0830194c99a70ad564cea516d0",
+      "post_sha256": "491c2cc756b168155d00332dbc2972d96edce5861fc6f31b5a1e1b127828f29a",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-702",
+      "path": "错题知识网络/错题卡/GS-702_193317黎曼和区间识别.md",
+      "pre_sha256": "4e713d231c4ece204f3a6e970f4b9abe536cddd950320c05cce65fda18d414bf",
+      "post_sha256": "34b039cf7859ea9b062f73132d517f1ee9e96a3d67f5840559c1494548fa88ea",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_visual_detail",
+      "card_id": "GS-411",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-411_2020年第19题.md",
+      "pre_sha256": "11cfe04ac99421a59cc14e0e63dce654a07e29047017d195f2ffb2cb3a3cac04",
+      "post_sha256": "0bfe523c3ed54806920407623911987efe742c0f9c5c00cb5944ab0324f52ad1",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_visual_detail",
+      "card_id": "GS-421",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-421_强化例题12.5.md",
+      "pre_sha256": "d2b30a8464ad04fab4973a483548b38348bc9efa42442f6e594aa8c7ca3ec709",
+      "post_sha256": "a0576a00dd80e74f65ce4fb57dbf7462086e96b85e6fcb893c496909cdc0d0ac",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_visual_detail",
+      "card_id": "GS-424",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-424_强化例题13.30.md",
+      "pre_sha256": "3cc216b38cea490d2979bb99029ecf195332db602fd41eb6007e4dda1961727a",
+      "post_sha256": "9ecc98e3b2b023b5b1b841f085f5c5c59dd1bd11831cc7c28809963e85a0289f",
+      "reason": "batch27_semantic_evidence_identity_content_and_relation_review"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-411",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-411.md",
+      "pre_sha256": "0dd22e0b151b69b297cd8a07b8d0798f51ace98862de682b6e3f11d3c388e653",
+      "post_sha256": "b1e9d566f882ac76631a741a38fa6f7f04c4a49dd5cdd05aa9ac27c29c77cc1a",
+      "reason": "historical_visual_identity_relink_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-421",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-421.md",
+      "pre_sha256": "d4dd0400c9d77af10b4215c862f7bbabeb17ac1f766a9f28cf7889c4647c2b42",
+      "post_sha256": "c344280dc831a8cabe06fc1aaca17d99c5f3349af204808c5c4fbe80b00d898f",
+      "reason": "historical_visual_identity_relink_projection_sync"
+    }
+  ],
+  "content_repairs": [
+    {
+      "card_id": "GS-388",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-389",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-390",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-391",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-392",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-393",
+      "status": "identity_hold_and_relation_repaired"
+    },
+    {
+      "card_id": "GS-394",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-395",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-396",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-397",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-398",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-399",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-400",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-402",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-404",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-406",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-407",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-410",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-413",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-415",
+      "status": "evidence_boundary_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-411",
+      "status": "historical_visual_identity_relinked"
+    },
+    {
+      "card_id": "GS-421",
+      "status": "historical_visual_identity_relinked"
+    },
+    {
+      "card_id": "GS-422",
+      "status": "stale_relation_owner_removed"
+    },
+    {
+      "card_id": "GS-424",
+      "status": "cross_batch_identity_hold_and_evidence_repaired"
+    },
+    {
+      "card_id": "GS-409",
+      "status": "stale_relation_owner_removed"
+    },
+    {
+      "card_id": "GS-425",
+      "status": "stale_relation_owner_removed"
+    },
+    {
+      "card_id": "GS-667",
+      "status": "relation_rewired"
+    },
+    {
+      "card_id": "GS-668",
+      "status": "weak_relation_owner_removed"
+    },
+    {
+      "card_id": "GS-702",
+      "status": "strong_relation_owner_added"
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "GS-388",
+      "card_path": "错题知识网络/错题卡/GS-388_2023年数一真题第18题.md",
+      "pre_review_card_sha256": "24b371d5a53f933aa61dc6c0c80f408ff9cadf8e6b1f5117d2b53d52922fa4a5",
+      "card_sha256": "d1ceea228ce139d9831bcbf341c1c3ee8a1fcededafb801b21ac8f5296b50bca",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-388_2023年数一真题第18题.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "94a3cd2d4f7d21ee8b13b2645beefdbd264c952e96f814eb3404e56080cca71d"
+      ],
+      "reviewed_detail_sha256": [
+        "94a3cd2d4f7d21ee8b13b2645beefdbd264c952e96f814eb3404e56080cca71d"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-388/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-388/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "c55eb3943f01e12c8638f03c2ff9374c2dbb59e4a847ebcc1f913e9d121809b0",
+        "e72455bdb3f14470cf6909381e7f1cfc23a02d523aa524c0b5c135e96e059a44"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "求 $$ f(x,y)=(y-x^2)(y-x^3) $$ 的极值。",
+      "asked_output": "多元函数极值最值",
+      "answer": "唯一极小值为 \\(-4/729\\)，在 \\((2/3,10/27)\\) 处取得；\\((0,0)\\) 与 \\((1,1)\\) 均不是极值点。",
+      "solution_outline": [
+        "判别式失效时切换到定义或路径法验证",
+        "第一动作：先求全驻点并计算每个驻点的 Hessian 判别式",
+        "核对结果：唯一极小值为 \\(-4/729\\)，在 \\((2/3,10/27)\\) 处取得；\\((0,0)\\) 与 \\((1,1)\\) 均不是极值点。"
+      ],
+      "knowledge_nodes": [
+        "多元函数极值",
+        "多元函数偏导"
+      ],
+      "first_action": "先求全驻点并计算每个驻点的 Hessian 判别式",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能在 \\(D=0\\) 时没有立刻改用路径或定义验证函数值正负",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-386",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-386",
+            "GS-388"
+          ],
+          "reason": "两题都要求在 Hessian 判别退化时改用路径或邻域符号检查，首个检查动作相同。"
+        },
+        {
+          "target_card_id": "GS-387",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-387",
+            "GS-388"
+          ],
+          "reason": "同属多元无条件极值全流程，先求全部驻点，再逐点做 Hessian 判别和退化复核。"
+        },
+        {
+          "target_card_id": "GS-389",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-388",
+            "GS-389"
+          ],
+          "reason": "两题都包含多个驻点，要求逐点 Hessian 分类并排除非极值驻点。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-389",
+      "card_path": "错题知识网络/错题卡/GS-389_2020年第17题.md",
+      "pre_review_card_sha256": "12ba0a170d945f0d5eacffe9776429960784fe6778bc61243052718b51fd41c5",
+      "card_sha256": "44b6e08afcc6b2c42cc616274a774e87389e00e882d993f313de184c5caaf1e0",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-389_2020年第17题.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "0db13a9e0bf0b3b63bade21103fd30c1da042bc0e9479ead8f93e79c108e4dff"
+      ],
+      "reviewed_detail_sha256": [
+        "0db13a9e0bf0b3b63bade21103fd30c1da042bc0e9479ead8f93e79c108e4dff"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-389/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-389/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "08eff2e20bd7533472492137d891a3405ab399d8a1be631e50c14f9082e6422e",
+        "183df8d4a4a5f98727a479c2ab0b5da840e48dee0e65a497e24a9fff9a2a44ce"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "求 $$ f(x,y)=x^3+8y^3-xy $$ 的极值。",
+      "asked_output": "多元函数极值最值",
+      "answer": "极小值为 \\(-1/216\\)，在 \\((1/6,1/12)\\) 处取得；\\((0,0)\\) 不是极值点。",
+      "solution_outline": [
+        "按多元极值流程求驻点、Hessian 判别并代回函数值",
+        "第一动作：先联立一阶偏导为零求全体驻点",
+        "核对结果：极小值为 \\(-1/216\\)，在 \\((1/6,1/12)\\) 处取得；\\((0,0)\\) 不是极值点。"
+      ],
+      "knowledge_nodes": [
+        "多元函数极值",
+        "多元函数偏导"
+      ],
+      "first_action": "先联立一阶偏导为零求全体驻点",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有把驻点求解、二阶判别和代回函数值连成闭环",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-387",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-387",
+            "GS-389"
+          ],
+          "reason": "两题共享联立一阶偏导求全驻点、Hessian 分类和函数值回代的完整动作链。"
+        },
+        {
+          "target_card_id": "GS-388",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-388",
+            "GS-389"
+          ],
+          "reason": "两题都包含多个驻点，要求逐点 Hessian 分类并排除非极值驻点。"
+        },
+        {
+          "target_card_id": "GS-390",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-389",
+            "GS-390"
+          ],
+          "reason": "两题首动作为求全驻点，核心陷阱均是不能把驻点直接判作极值点。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-390",
+      "card_path": "错题知识网络/错题卡/GS-390_强化例题13.26.md",
+      "pre_review_card_sha256": "58979d9fb4ca562e74e72345b31b4e7deb0f062791d9544b133bd56d4c5d220b",
+      "card_sha256": "a5c408a9775268397cc4a7fadf94ff24c91c1bf857a26e3002862597ba640207",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-390_强化例题13.26.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "4b1887acc22d025077536cbbb52438255b0ce767b586d59b2f071971b46880b6"
+      ],
+      "reviewed_detail_sha256": [
+        "4b1887acc22d025077536cbbb52438255b0ce767b586d59b2f071971b46880b6"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-390/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "22114e3a4a148c7c583eeb34ca51cac78b30e30d7fb9eb120f04e6b1122808e1"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "求函数 \\(f(x,y)=3(x^2+y^2)-x^3\\) 的极值。",
+      "asked_output": "多元函数无条件极值",
+      "answer": "函数只有局部极小值 f(0,0)=0；(2,0) 为鞍点，非极值点。",
+      "solution_outline": [
+        "先求全体驻点，再用 Hessian 判别区分极值点和鞍点",
+        "第一动作：先联立 \\(f_x=0,\\ f_y=0\\) 求出所有驻点",
+        "核对结果：函数只有局部极小值 f(0,0)=0；(2,0) 为鞍点，非极值点。"
+      ],
+      "knowledge_nodes": [
+        "多元函数极值",
+        "多元函数偏导"
+      ],
+      "first_action": "先联立 \\(f_x=0,\\ f_y=0\\) 求出所有驻点",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有逐点做 Hessian 判别，容易把驻点直接当成极值点",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-387",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-387",
+            "GS-390"
+          ],
+          "reason": "两题共同训练驻点不等于极值点，必须逐点完成二阶判别。"
+        },
+        {
+          "target_card_id": "GS-389",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-389",
+            "GS-390"
+          ],
+          "reason": "两题首动作为求全驻点，核心陷阱均是不能把驻点直接判作极值点。"
+        },
+        {
+          "target_card_id": "GS-396",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-390",
+            "GS-396"
+          ],
+          "reason": "同一函数在全平面与闭圆盘上的最值对照，形成内部驻点到边界候选的递进链。"
+        },
+        {
+          "target_card_id": "GS-392",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-392"
+          ],
+          "reason": "只共享多元极值上位主题；无条件驻点分类与乘积型 Hessian 充分条件的具体入口不同。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-391",
+      "card_path": "错题知识网络/错题卡/GS-391_强化例题13.27.md",
+      "pre_review_card_sha256": "34b6cbc9420bedd7411cd936f9c3dfdbd517cf1926626721e6ee0c183bb6f2be",
+      "card_sha256": "cb6f7f98eee0e123cddd08316a7024c1e6a5cd9047d2d714792feb22487fc9a5",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-391_强化例题13.27.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "ac7e71b764ecc5378cea36fe5c45d6d1c6adf88a9d96a74fec39f5ccc34c6af7"
+      ],
+      "reviewed_detail_sha256": [
+        "ac7e71b764ecc5378cea36fe5c45d6d1c6adf88a9d96a74fec39f5ccc34c6af7"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-391/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-391/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "7265a965f44e6413e58704960fd8216c0f5763aea959570b353d4c3437622e6f",
+        "08a22217d5e4706af9bea7879c75f2e906c5b2bc3aa16072723060ef1b55b34f"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 \\(u(x,y)\\) 在平面有界闭区域 \\(D\\) 上有二阶连续偏导数，且 \\(u_{xy}\\ne0,\\ u_{xx}u_{yy}=0\\)，判断最大值点与最小值点的位置。",
+      "asked_output": "闭区域最值概念题",
+      "answer": "B。最大值点和最小值点必定都在 D 的边界上。",
+      "solution_outline": [
+        "先用最值定理确认最值存在，再用 Hessian 判别排除内部极值",
+        "第一动作：先区分全局最值存在性和内部局部极值判别",
+        "核对结果：B。最大值点和最小值点必定都在 D 的边界上。"
+      ],
+      "knowledge_nodes": [
+        "多元函数极值",
+        "多元函数偏导"
+      ],
+      "first_action": "先区分全局最值存在性和内部局部极值判别",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有把闭区域最值定理与内部 Hessian 排除条件分层处理",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-392",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-391",
+            "GS-392"
+          ],
+          "reason": "两题都要求区分极值存在、驻点条件与 Hessian 充分条件的逻辑层级。"
+        },
+        {
+          "target_card_id": "GS-396",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-391",
+            "GS-396"
+          ],
+          "reason": "闭区域全局最值都需把内部局部判别与边界候选分开处理。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-392",
+      "card_path": "错题知识网络/错题卡/GS-392_强化例题13.28.md",
+      "pre_review_card_sha256": "d3c1ebb3251e85b56044b3081472784d0663d6e25e7abc81de70bef7d8bb68e0",
+      "card_sha256": "00a978b56f2b822c160ea2e0671b45c326538f35efdd63facfa94f3bc0ce8db9",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-392_强化例题13.28.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "9813284601d2289b62549a5e55b77294f8b73e74186f73e5b00404648a3c4c78"
+      ],
+      "reviewed_detail_sha256": [
+        "9813284601d2289b62549a5e55b77294f8b73e74186f73e5b00404648a3c4c78"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-392/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-392/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "537c6b053ca2ac73a1ed3c9fdc9a080065c05f62676f494527f637cf8c839265",
+        "0aaecf02b2ce91e5e00462714703f0469b014a30b28673652fe2b4ecd90e99da"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 \\(f(x)\\) 二阶可导，且 \\(x=0\\) 是 \\(f(x)\\) 的驻点，判断二元函数 \\(z=f(x)f(y)\\) 在 \\((0,0)\\) 处取得极大值的一个充分条件。",
+      "asked_output": "乘积型二元函数极值判别",
+      "answer": "A。充分条件是 f(0)<0 且 f''(0)>0。",
+      "solution_outline": [
+        "对乘积型二元函数求一、二阶偏导并套 Hessian 判别",
+        "第一动作：先分别求 \\(z_x,z_y,z_{xx},z_{yy},z_{xy}\\)",
+        "核对结果：A。充分条件是 f(0)<0 且 f''(0)>0。"
+      ],
+      "knowledge_nodes": [
+        "多元函数极值",
+        "多元函数偏导"
+      ],
+      "first_action": "先分别求 \\(z_x,z_y,z_{xx},z_{yy},z_{xy}\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有把一元驻点信息转成二元 Hessian 判别条件",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-391",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-391",
+            "GS-392"
+          ],
+          "reason": "两题都要求区分极值存在、驻点条件与 Hessian 充分条件的逻辑层级。"
+        },
+        {
+          "target_card_id": "GS-390",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-392"
+          ],
+          "reason": "只共享多元极值上位主题；无条件驻点分类与乘积型 Hessian 充分条件的具体入口不同。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-393",
+      "card_path": "错题知识网络/错题卡/GS-393_强化例题13.30.md",
+      "pre_review_card_sha256": "3f6a5c5a6ee4080b06c0e0c9136f2e583f9eadd9c91a6a571a065fd4f4752e14",
+      "card_sha256": "9ffac42c1309af307db47be258d9f1c8a653a71fdfdd67c00d3dfabb6693ad1a",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-393_强化例题13.30.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "d88c914ef7d3f3fa4ac1696040227b6009af02a76dab5379dd9ae0467f12a27d"
+      ],
+      "reviewed_detail_sha256": [
+        "b8ce60402c480dd97b0263b11229727f0c617fbf7185d0f6fd0a5bfc7785cec8"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-393/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "64ce45744d6d9ff2a480808091d62ceb8e9d94b535fa85fe0440f053d63c7c2d"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "求 \\(u=\\sqrt{x^2+y^2}\\) 在约束 \\(5x^2+4xy+2y^2=1\\) 下的最大值与最小值。",
+      "asked_output": "二次型约束最值",
+      "answer": "最大值为 1，最小值为 1/sqrt(6)。",
+      "solution_outline": [
+        "先平方化目标，再把二次型约束转为特征值或拉格朗日最值问题",
+        "第一动作：先令 \\(S=x^2+y^2\\)，把求 \\(u\\) 的最值转成求 \\(S\\) 的最值",
+        "核对结果：最大值为 1，最小值为 1/sqrt(6)。"
+      ],
+      "knowledge_nodes": [
+        "多元函数极值",
+        "二次型"
+      ],
+      "first_action": "先令 \\(S=x^2+y^2\\)，把求 \\(u\\) 的最值转成求 \\(S\\) 的最值",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先把根号目标平方化并识别二次型约束最值结构",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold",
+        "identity_group": "B27-ID-01",
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "duplicate_identity_hold",
+          "severity": "high",
+          "finding": "GS-393 与 GS-424 的题图 SHA-256 完全相同，题面、目标、约束与答案一致。",
+          "resolution_status": "active_identity_hold"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-394",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-393",
+            "GS-394"
+          ],
+          "reason": "GS-393 属于同题身份冻结组，且二次型约束最值与隐函数条件极值判断不构成强边。"
+        },
+        {
+          "target_card_id": "GS-395",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-393",
+            "GS-395"
+          ],
+          "reason": "GS-393 属于同题身份冻结组；二次型 Rayleigh 商与实际问题建模没有共同首动作。"
+        },
+        {
+          "target_card_id": "GS-424",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-424"
+          ],
+          "reason": "两卡为同题身份候选，稳定 ID 保留但普通 related 必须清空，不能把身份重复当强关系或复发。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-394",
+      "card_path": "错题知识网络/错题卡/GS-394_强化例题13.29.md",
+      "pre_review_card_sha256": "53088698d902a1a54ca3a0399237e2f048c2b8ce96540a2fa62b081f45fc8c2a",
+      "card_sha256": "51986969445ae6ca04ae47d49f5dc28fbd636ad3169bfd90f21dbf68d036047c",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-394_强化例题13.29.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "9dde549dce33cdf38bcaea305da8f7664e226d902da75b6f9432566a7b066f54"
+      ],
+      "reviewed_detail_sha256": [
+        "9dde549dce33cdf38bcaea305da8f7664e226d902da75b6f9432566a7b066f54"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-394/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-394/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "45dca442c7bc13d5349836575c55b3a9a7bfcb09a8c3d536d3db52289ebfc1d4",
+        "5f5a4c0af18116138684ccf2d61708af40293b4dff12e138e150b2628fa8e534"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 \\(f(x,y)\\) 与 \\(G(x,y)\\) 可微，且 \\(G_y'(x,y)\\ne0\\)。已知 \\((x_0,y_0)\\) 是 \\(f(x,y)\\) 在约束 \\(G(x,y)=0\\) 下的一个极值点，判断哪项必正确。",
+      "asked_output": "约束极值必要条件",
+      "answer": "D。若 f_x'(x0,y0) 不等于 0，则 f_y'(x0,y0) 不等于 0。",
+      "solution_outline": [
+        "用隐函数消元或梯度平行条件处理约束极值",
+        "第一动作：先把 \\(G_y\\ne0\\) 转成局部可写 \\(y=y(x)\\)",
+        "核对结果：D。若 f_x'(x0,y0) 不等于 0，则 f_y'(x0,y0) 不等于 0。"
+      ],
+      "knowledge_nodes": [
+        "多元函数极值",
+        "多元函数偏导",
+        "隐函数求导"
+      ],
+      "first_action": "先把 \\(G_y\\ne0\\) 转成局部可写 \\(y=y(x)\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有利用 \\(G_y\\ne0\\) 这个隐函数条件，容易误当无条件驻点处理",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-393",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-393",
+            "GS-394"
+          ],
+          "reason": "GS-393 属于同题身份冻结组，且二次型约束最值与隐函数条件极值判断不构成强边。"
+        },
+        {
+          "target_card_id": "GS-395",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-394",
+            "GS-395"
+          ],
+          "reason": "约束极值必要条件的逻辑判断与物理量建模求最小值只属同章相似。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-395",
+      "card_path": "错题知识网络/错题卡/GS-395_2018年第19题.md",
+      "pre_review_card_sha256": "864c0aef8ba2ef6d4c3c0a4537aae96838b66efedf154c5d342a0b548e4536e5",
+      "card_sha256": "945aa0108a074fee961326f439e2da12b5ed2c2e9b8f00cb70a81c1770ce03e2",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-395_2018年第19题.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "f4e89f27c5a359d17c0faa9716976bd7b735725f791fafc843c3fc0b1f92c576"
+      ],
+      "reviewed_detail_sha256": [
+        "f4e89f27c5a359d17c0faa9716976bd7b735725f791fafc843c3fc0b1f92c576"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-395/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-395/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "05393104b6f7457d603a00df4fedbb799609c9bea1348525df700be713e20c2b",
+        "26bab7fd9b5eeffd1dd3e7fe573c9e5e69cead2bdacd304ed3de4707ebe65fb8"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "将长为 \\(2\\text{m}\\) 的铁丝分成三段，分别围成圆、正方形、正三角形，判断三个图形面积之和是否存在最小值；若存在，求最小值。",
+      "asked_output": "实际问题条件最值建模",
+      "answer": "面积和存在最小值，最小值为 1/(pi+4+3sqrt(3))。",
+      "solution_outline": [
+        "先设变量建立目标函数和约束，再用条件极值或闭区域最值流程",
+        "第一动作：先设三段周长为 \\(x,y,z\\)，写出 \\(x+y+z=2\\) 和面积函数",
+        "核对结果：面积和存在最小值，最小值为 1/(pi+4+3sqrt(3))。"
+      ],
+      "knowledge_nodes": [
+        "多元函数极值",
+        "多元函数偏导",
+        "最值定理"
+      ],
+      "first_action": "先设三段周长为 \\(x,y,z\\)，写出 \\(x+y+z=2\\) 和面积函数",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先完成变量、目标函数、约束和边界的建模清单",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-396",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-395",
+            "GS-396"
+          ],
+          "reason": "两题都需先列目标、约束和边界，再闭合内部候选与边界候选比较。"
+        },
+        {
+          "target_card_id": "GS-393",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-393",
+            "GS-395"
+          ],
+          "reason": "GS-393 属于同题身份冻结组；二次型 Rayleigh 商与实际问题建模没有共同首动作。"
+        },
+        {
+          "target_card_id": "GS-394",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-394",
+            "GS-395"
+          ],
+          "reason": "约束极值必要条件的逻辑判断与物理量建模求最小值只属同章相似。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-396",
+      "card_path": "错题知识网络/错题卡/GS-396_强化例题13.31.md",
+      "pre_review_card_sha256": "e9deffa2ed93d3966495e01fd2a32e43b4f33ba02d3451a645746107af090af9",
+      "card_sha256": "28f3041ab78fd4c5507d30241feaed89d626c612ee3578fecd4a1105be3acc3a",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-396_强化例题13.31.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "3d4a27885fc1b04ad64730d4e46187279087bfe1b8bb2dc4a7e9081ac2087ed5"
+      ],
+      "reviewed_detail_sha256": [
+        "3d4a27885fc1b04ad64730d4e46187279087bfe1b8bb2dc4a7e9081ac2087ed5"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-396/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "1087fa95727220aa61e5f40a3b838cc69a64ec0ba2396aacf228cb2c4f4e8f8f"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "求函数 \\(f(x,y)=3(x^2+y^2)-x^3\\) 在有界闭区域 \\(D=\\{(x,y)\\mid x^2+y^2\\le16\\}\\) 上的最大值和最小值。",
+      "asked_output": "闭区域最大最小值",
+      "answer": "最大值为 112，取于 (-4,0)；最小值为 -16，取于 (4,0)。",
+      "solution_outline": [
+        "闭区域最值按内部驻点、边界候选、统一比较三步闭环",
+        "第一动作：先列内部驻点候选，再把边界化成单变量问题",
+        "核对结果：最大值为 112，取于 (-4,0)；最小值为 -16，取于 (4,0)。"
+      ],
+      "knowledge_nodes": [
+        "多元函数极值",
+        "多元函数偏导",
+        "最值定理"
+      ],
+      "first_action": "先列内部驻点候选，再把边界化成单变量问题",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有把内部候选和边界候选都列齐后统一比较函数值",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-390",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-390",
+            "GS-396"
+          ],
+          "reason": "同一函数在全平面与闭圆盘上的最值对照，形成内部驻点到边界候选的递进链。"
+        },
+        {
+          "target_card_id": "GS-391",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-391",
+            "GS-396"
+          ],
+          "reason": "闭区域全局最值都需把内部局部判别与边界候选分开处理。"
+        },
+        {
+          "target_card_id": "GS-395",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-395",
+            "GS-396"
+          ],
+          "reason": "两题都需先列目标、约束和边界，再闭合内部候选与边界候选比较。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-397",
+      "card_path": "错题知识网络/错题卡/GS-397_强化例题14.1.md",
+      "pre_review_card_sha256": "b56a90114fa5fccf596e5fed36187ed9f8cdac56f4d65856f4ff42cd94905e15",
+      "card_sha256": "d8c66eee8a3c4bd9d8adaab75c69345f93c1bb0a3ea2631729d8313a877c1fab",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-397_强化例题14.1.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "845408d1faed016d3626d7a9fb0aef4b62de1324d674623beb9b517e3d5fe0e5"
+      ],
+      "reviewed_detail_sha256": [
+        "845408d1faed016d3626d7a9fb0aef4b62de1324d674623beb9b517e3d5fe0e5"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-397/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "660caf6f5d9679245d5cbc0a0670bad2df56bc1ac554e9cdbf6b72d578735b64"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "求极限 \\[ \\lim_{n\\to\\infty}\\sum_{i=1}^n\\sum_{j=1}^n \\frac{i}{(n+i)(n^2+j^2)}. \\] 把求和项拆成 \\[ \\frac1{n^2}\\cdot \\frac{i/n}{(1+i/n)(1+(j/n)^2)} \\] 后，识别为 \\([0,1]\\times[0,1]\\) 上的 Riemann 和。",
+      "asked_output": "Riemann和化二重积分",
+      "answer": "\\((1-\\ln 2)\\frac{\\pi}{4}\\)",
+      "solution_outline": [
+        "把双重和式整理成二重积分定义中的 Riemann 和",
+        "第一动作：先提出 \\(\\frac1{n^2}\\)，写成 \\(\\frac1{n^2}f(i/n,j/n)\\)",
+        "核对结果：\\((1-\\ln 2)\\frac{\\pi}{4}\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分定义",
+        "黎曼和",
+        "定积分性质",
+        "定积分"
+      ],
+      "first_action": "先提出 \\(\\frac1{n^2}\\)，写成 \\(\\frac1{n^2}f(i/n,j/n)\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先露出面积微元 \\(\\Delta x\\Delta y\\) 和两个取样变量",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-702",
+          "decision": "add",
+          "declaration_owners": [
+            "GS-397",
+            "GS-702"
+          ],
+          "reason": "都从离散双指标或含参和式中识别面积微元、采样点与真实积分区间。"
+        },
+        {
+          "target_card_id": "GS-406",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-397",
+            "GS-406"
+          ],
+          "reason": "Riemann 和识别与参数曲线二重积分没有共同具体触发或第一动作。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-398",
+      "card_path": "错题知识网络/错题卡/GS-398_2021年第14题.md",
+      "pre_review_card_sha256": "331ed497d94b8892ca5de4918b5ebff0e813c492fdde25b6c9546c7f2ec09eac",
+      "card_sha256": "aeb225f0596ae958bf1baf8fdc9ba76041bc94e4963d466824ab068a16d3a3d0",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-398_2021年第14题.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "97990a4c3b7512a6525c56e337943a316436bd82204bce7eb2ec749cd4d6c65f"
+      ],
+      "reviewed_detail_sha256": [
+        "97990a4c3b7512a6525c56e337943a316436bd82204bce7eb2ec749cd4d6c65f"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-398/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-398/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "11448a0bc5849c940ebda5c87aed22305cc162dc6c886d30adf5aa8e6eb49cb6",
+        "caf591b167f1071a797b9f58e584227efb386a3505ec83ec17546c2c6eb8a2b0"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知 \\[ f(t)=\\int_1^{t^2}dx\\int_{\\sqrt{x}}^t\\sin\\frac{x}{y}\\,dy, \\] 求 \\(f'(\\frac{\\pi}{2})\\)。原积分次序下内层不易直接求，先换序为 \\[ 1\\le y\\le t,\\qquad 1\\le x\\le y^2. \\]",
+      "asked_output": "二重积分交换积分次序",
+      "answer": "\\(\\frac{\\pi}{2}\\cos\\frac{2}{\\pi}\\)",
+      "solution_outline": [
+        "先画积分区域并交换积分次序，再对变上限函数求导",
+        "第一动作：先把 \\(\\sqrt{x}\\le y\\le t,\\ 1\\le x\\le t^2\\) 改写为 \\(1\\le y\\le t,\\ 1\\le x\\le y^2\\)",
+        "核对结果：\\(\\frac{\\pi}{2}\\cos\\frac{2}{\\pi}\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分换序",
+        "变上限积分"
+      ],
+      "first_action": "先把 \\(\\sqrt{x}\\le y\\le t,\\ 1\\le x\\le t^2\\) 改写为 \\(1\\le y\\le t,\\ 1\\le x\\le y^2\\)",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先画区域换序，容易直接对难积的原次序求导",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-404",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-398",
+            "GS-404"
+          ],
+          "reason": "两题均先翻译积分区域，再按被积函数结构选择换序或坐标路线。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-399",
+      "card_path": "错题知识网络/错题卡/GS-399_强化例题14.4.md",
+      "pre_review_card_sha256": "7c5fe4a2ccd78d74920a1d494249aa4d56696781b83b5228b59e6a5c3e266ab3",
+      "card_sha256": "2b7a9949cb22db4b3d1105dd16efad0e68dde40aab3ac9c9dc84f6684beb7994",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-399_强化例题14.4.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "01d7e941062a7f8299b75615f8b7ebf39656ae70a2fd1f82258d83596c1d5ee5"
+      ],
+      "reviewed_detail_sha256": [
+        "01d7e941062a7f8299b75615f8b7ebf39656ae70a2fd1f82258d83596c1d5ee5"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-399/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-399/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "86d8f0294b29cfc70cf6ebbb09ec0b517347bafc7d93e63818b1c92c2dbad1c1",
+        "b60c3cfc2c768c75a0b0fcdbbbe80540f7aa6760b3924c0d3d6ea1a2860b0647"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "确定积分区域 \\(D\\)，使 \\[ I=\\iint_D\\left(1-x^2-\\frac{y^2}{2}\\right)\\,dxdy \\] 达到最大值。",
+      "asked_output": "二重积分区域选择",
+      "answer": "\\(D=\\{(x,y)\\mid x^2+\\frac{y^2}{2}\\le1\\}\\)",
+      "solution_outline": [
+        "用积分保号性判断被积函数非负区域",
+        "第一动作：先令被积函数大于等于零，画出非负区域",
+        "核对结果：\\(D=\\{(x,y)\\mid x^2+\\frac{y^2}{2}\\le1\\}\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "积分保号"
+      ],
+      "first_action": "先令被积函数大于等于零，画出非负区域",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先用被积函数正负决定区域取舍",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-400",
+      "card_path": "错题知识网络/错题卡/GS-400_2025年真题20题.md",
+      "pre_review_card_sha256": "ef99789ed7335cb021543c5f1ac899352be618f72f7ad702deef56472ab864d0",
+      "card_sha256": "056bc432e6efade582b08a5175fe4219ea2a14e2ec9e2f5a988703c903eca1b9",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-400_2025年真题20题.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "358d6883bc0659141625f2fa9ff2d1df094ec061ebfc5bedbb61f777ede97c8e"
+      ],
+      "reviewed_detail_sha256": [
+        "358d6883bc0659141625f2fa9ff2d1df094ec061ebfc5bedbb61f777ede97c8e"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-400/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "5e02ee0aa1f029fc1a6436b5e0338e735357220a549c1b97dac148da1fd8b597"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "区域 \\[ D=\\{(x,y)\\mid x^2+y^2\\le4x,\\ x^2+y^2\\le4y\\}, \\] 求 \\[ \\iint_D (x-y)^2\\,dxdy. \\] 两个圆域交集位于第一象限，极坐标下 \\[ 0\\le r\\le\\min(4\\cos\\theta,4\\sin\\theta). \\]",
+      "asked_output": "二重积分计算",
+      "answer": "\\(12\\pi-\\frac{112}{3}\\)",
+      "solution_outline": [
+        "用极坐标描述交叠圆域，并利用对称性减半计算",
+        "第一动作：先写出 r 小于两个半径上界的较小者，并找出角度分界线",
+        "核对结果：\\(12\\pi-\\frac{112}{3}\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分极坐标法",
+        "二重积分对称性"
+      ],
+      "first_action": "先写出 r 小于两个半径上界的较小者，并找出角度分界线",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先确定两圆交集的角域和半径上界",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-413",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-400",
+            "GS-413"
+          ],
+          "reason": "都需把平移圆域和附加半平面条件同步转为极坐标边界，不能只换被积函数。"
+        },
+        {
+          "target_card_id": "GS-667",
+          "decision": "add",
+          "declaration_owners": [
+            "GS-400",
+            "GS-667"
+          ],
+          "reason": "都含偏心圆盘的极坐标边界，且必须区分固定圆半径与极径变量。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-402",
+      "card_path": "错题知识网络/错题卡/GS-402_2018年第6题.md",
+      "pre_review_card_sha256": "f797d62ba9279c092294c781b99eba8f401218735d0623e4d03ec3e519f521e2",
+      "card_sha256": "e26ddf9fb803def32322789aa97311b5f919743da1f1f2ad007159c2f1994d58",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-402_2018年第6题.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "1f0c60a18923e20fc6dc691f8b6ed9358f0884ef49b6fcced2fe9b65d2817a7f"
+      ],
+      "reviewed_detail_sha256": [
+        "1f0c60a18923e20fc6dc691f8b6ed9358f0884ef49b6fcced2fe9b65d2817a7f"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-402/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-402/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "0b120ad94487fd297de79ceff94a2649bfe8c9dabc8035c5423de6c58a05f28e",
+        "a3ad5ced5338820575963856113f44a3dd8abd3b44828bb5c4e8f3a7e81b0bf7"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "计算两个累次积分之和： \\[ \\int_{-1}^{0}dx\\int_{-x}^{2-x^2}(1-xy)\\,dy +\\int_{0}^{1}dx\\int_{x}^{2-x^2}(1-xy)\\,dy. \\] 两部分区域可合并为关于 \\(y\\) 轴对称的区域 \\(D\\)。",
+      "asked_output": "二重积分对称性",
+      "answer": "\\(\\frac{7}{3}\\)",
+      "solution_outline": [
+        "先合并积分区域，再利用合并区域的对称性处理奇偶项",
+        "第一动作：先画出 D1 和 D2，并合并成关于 y 轴对称的总区域",
+        "核对结果：\\(\\frac{7}{3}\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分对称性"
+      ],
+      "first_action": "先画出 D1 和 D2，并合并成关于 y 轴对称的总区域",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先合并区域就直接按两个积分分别计算",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-404",
+      "card_path": "错题知识网络/错题卡/GS-404_强化例题14.6.md",
+      "pre_review_card_sha256": "0602a762b2969e518860af4b12cd425818366605f9830782208c8c1eaf1bdf31",
+      "card_sha256": "b6cdbb0513ea76cec21458ebce1d29006c7e8d0aab5cf0d1b6460ebd9f022529",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-404_强化例题14.6.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "bd64b013f0b53afb96be3a04c0a5ef5a0c8e786af3f042397ddd2c74bda3f902"
+      ],
+      "reviewed_detail_sha256": [
+        "bd64b013f0b53afb96be3a04c0a5ef5a0c8e786af3f042397ddd2c74bda3f902"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-404/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "27a1bcc0569bcf7b09a1bc086a054d1d1bcdac21c9d59737511c8ab9610b5c93"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "区域由极坐标给出： \\[ D=\\{(r,\\theta)\\mid 0\\le\\theta\\le\\frac{\\pi}{4},\\ 0\\le r\\le\\sec\\theta\\}. \\] 先转为直角坐标区域 \\[ 0\\le y\\le x\\le1, \\] 再计算 \\[ \\iint_D\\sqrt{1-(x-y)^2}\\,d\\sigma. \\]",
+      "asked_output": "二重积分计算",
+      "answer": "\\(\\frac{\\pi}{4}-\\frac13\\)",
+      "solution_outline": [
+        "比较区域和被积函数的复杂度，先把区域转回直角坐标，再做换元换序",
+        "第一动作：先把极坐标区域转成直角坐标三角形 0≤y≤x≤1",
+        "核对结果：\\(\\frac{\\pi}{4}-\\frac13\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分换序",
+        "二重积分极坐标法"
+      ],
+      "first_action": "先把极坐标区域转成直角坐标三角形 0≤y≤x≤1",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先判断极坐标只是描述区域，而非必须用极坐标积分",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-398",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-398",
+            "GS-404"
+          ],
+          "reason": "两题均先翻译积分区域，再按被积函数结构选择换序或坐标路线。"
+        },
+        {
+          "target_card_id": "GS-593",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-404",
+            "GS-593"
+          ],
+          "reason": "都把曲线或极坐标条件翻译成三角形型直角坐标区域，再决定积分次序。"
+        },
+        {
+          "target_card_id": "GS-411",
+          "decision": "add",
+          "declaration_owners": [
+            "GS-404",
+            "GS-411"
+          ],
+          "reason": "同为第一象限楔形区域，需准确翻译射线与 x=c 边界后再选直角坐标或极坐标。"
+        },
+        {
+          "target_card_id": "GS-406",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-406"
+          ],
+          "reason": "三角形区域转换与参数曲线外层换元仅共享二重积分章节。"
+        },
+        {
+          "target_card_id": "GS-413",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-413"
+          ],
+          "reason": "虽都涉及区域变换，但前者核心是极坐标区域转直角坐标，后者是平移圆心与半平面同步换元。"
+        }
+      ],
+      "batch36_lineage_revalidation": {
+        "batch_number": 36,
+        "date": "2026-07-24",
+        "prior_card_sha256": "1687b64f85f0c058f5b600543126fddd45f95522615de89ddf8ca0d745c50d9e",
+        "current_card_sha256": "b6cdbb0513ea76cec21458ebce1d29006c7e8d0aab5cf0d1b6460ebd9f022529",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-398",
+          "GS-411"
+        ],
+        "removed_edges": [
+          "GS-404--GS-593"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第36批重绑 GS-404 的关系导航哈希；第27批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-406",
+      "card_path": "错题知识网络/错题卡/GS-406_2018年第17题.md",
+      "pre_review_card_sha256": "671a21d551f1eced993219b4166326ad13b976557f4b7978a4cd1268178c4530",
+      "card_sha256": "559241d8f26e5a9879f181301ba0b14891fba12caeba2fb9f5cde93e4d096b7a",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-406_2018年第17题.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "947e90c40ca5338c0a018a9fc3d53107f545039ed66b4cc1968c7da2cf120244"
+      ],
+      "reviewed_detail_sha256": [
+        "947e90c40ca5338c0a018a9fc3d53107f545039ed66b4cc1968c7da2cf120244"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-406/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-406/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "247d2b00bb795cb87e8ba196f737a4bd6cefb24684cf4b6a2f33ab5bd387e202",
+        "db60dc24e7156bd6689e927cd170f763211c4a3042d0b4c4a86048411fda0f65"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "平面区域 \\(D\\) 由参数曲线 \\[ x=t-\\sin t,\\qquad y=1-\\cos t,\\qquad 0\\le t\\le2\\pi \\] 与 \\(x\\) 轴围成，求 \\[ \\iint_D (x+2y)\\,d\\sigma. \\]",
+      "asked_output": "二重积分参数曲线区域计算",
+      "answer": "\\(3\\pi^2+5\\pi\\)",
+      "solution_outline": [
+        "先按直角坐标做内层积分，再利用参数方程处理外层换元",
+        "第一动作：先写出 0≤y≤y(x)，并完成对 y 的内层积分",
+        "核对结果：\\(3\\pi^2+5\\pi\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "参数方程求导"
+      ],
+      "first_action": "先写出 0≤y≤y(x)，并完成对 y 的内层积分",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先消去内层变量，就急于显式解参数曲线",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-397",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-397",
+            "GS-406"
+          ],
+          "reason": "Riemann 和识别与参数曲线二重积分没有共同具体触发或第一动作。"
+        },
+        {
+          "target_card_id": "GS-404",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-406"
+          ],
+          "reason": "三角形区域转换与参数曲线外层换元仅共享二重积分章节。"
+        },
+        {
+          "target_card_id": "GS-409",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-406"
+          ],
+          "reason": "参数曲线换元与极坐标分块不共享具体边界翻译模板。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-407",
+      "card_path": "错题知识网络/错题卡/GS-407_强化例题14.7.md",
+      "pre_review_card_sha256": "a8605882fdd1e019a4c6a787369928fe0ea212ec388c879c3dc68afceb75e5c2",
+      "card_sha256": "7c146aa6e993dbdd332094596cbbce236b36f5a6cddbf05c800ce37dc06c9da2",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-407_强化例题14.7.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "4886802cb2ff45444f4290f7e1e03eb9a6676e1ff795498d1ab1537c51ad3cd1"
+      ],
+      "reviewed_detail_sha256": [
+        "4886802cb2ff45444f4290f7e1e03eb9a6676e1ff795498d1ab1537c51ad3cd1"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-407/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "0492635bc830695181043b43fe5eacad92caa90a7c347970d6fff4cf9eac13c1"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "区域在第一象限，由 \\(x^2+y^2-xy=1,2\\)、\\(y=0\\)、\\(y=\\sqrt3x\\) 围成，计算 \\[ \\iint_D \\frac{1}{3x^2+y^2}\\,dx\\,dy. \\] 核心是将 \\(x^2+y^2-xy=c\\) 写成极坐标边界，再先积半径变量。",
+      "asked_output": "二重积分极坐标计算",
+      "answer": "\\(\\frac{\\pi\\ln2}{8\\sqrt3}\\)",
+      "solution_outline": [
+        "用极坐标把二次型边界写成 r 关于 θ 的函数，并先处理径向积分",
+        "第一动作：先令 x=r cosθ、y=r sinθ，写出 x²+y²-xy 的极坐标形式",
+        "核对结果：\\(\\frac{\\pi\\ln2}{8\\sqrt3}\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分极坐标法"
+      ],
+      "first_action": "先令 x=r cosθ、y=r sinθ，写出 x²+y²-xy 的极坐标形式",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先把二次型边界转成 r(θ) 并比较上下半径",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-409",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-407",
+            "GS-409"
+          ],
+          "reason": "二次型曲线配射线边界时，都先极坐标化边界并分清径向上下界。"
+        },
+        {
+          "target_card_id": "GS-410",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-407",
+            "GS-410"
+          ],
+          "reason": "都先把二次曲线化为 r 与角度的关系，再由非负条件锁定合法角域。"
+        },
+        {
+          "target_card_id": "GS-411",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-407"
+          ],
+          "reason": "旧边来自 GS-411 的错位正文；恢复后的楔形齐次积分与二次型环带题不构成强边。"
+        },
+        {
+          "target_card_id": "GS-413",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-413"
+          ],
+          "reason": "二次型环带极坐标与平移半圆换元只有宽泛坐标法共同点。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-410",
+      "card_path": "错题知识网络/错题卡/GS-410_2021年真题第21题.md",
+      "pre_review_card_sha256": "08b1bfa4a5787b71e4eb7db999794377d3b1b221132523878b8481cc4867f5cb",
+      "card_sha256": "3d7cb67ca4e7bb08592d4dba56843b5591d1e8606ced140a479ed2ba8edddb9f",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-410_2021年真题第21题.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "004837ff3b520f56d92351c36842f5b0a877b094d37bc370dffb173c48a38cf6"
+      ],
+      "reviewed_detail_sha256": [
+        "004837ff3b520f56d92351c36842f5b0a877b094d37bc370dffb173c48a38cf6"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-410/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-410/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "e0dbc90dde4288a7cafa20eb8d6db740a806055da0979beb46552b18cf97d757",
+        "b43cce3d7250fca467a8240f6bad65038de3edd45becb9223c6e44c84ee9f118"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "区域 \\(D\\) 由曲线 \\[ (x^2+y^2)^2=x^2-y^2,\\qquad x\\ge0,\\ y\\ge0 \\] 与 \\(x\\) 轴围成，求 \\[ \\iint_D xy\\,dxdy. \\]",
+      "asked_output": "二重积分极坐标计算",
+      "answer": "\\(\\frac{1}{48}\\)",
+      "solution_outline": [
+        "用极坐标化曲线边界，并先由非负性和象限确定角域",
+        "第一动作：先写出 r²=cos2θ，并由 cos2θ≥0 与第一象限限制角度范围",
+        "核对结果：\\(\\frac{1}{48}\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分极坐标法"
+      ],
+      "first_action": "先写出 r²=cos2θ，并由 cos2θ≥0 与第一象限限制角度范围",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先检查极坐标边界非负条件和角域",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-407",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-407",
+            "GS-410"
+          ],
+          "reason": "都先把二次曲线化为 r 与角度的关系，再由非负条件锁定合法角域。"
+        },
+        {
+          "target_card_id": "GS-409",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-409",
+            "GS-410"
+          ],
+          "reason": "两题共享极坐标分块、角域合法性和径向边界比较的完整流程。"
+        },
+        {
+          "target_card_id": "GS-680",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-410",
+            "GS-680"
+          ],
+          "reason": "题面使用同一双纽线方程，首动作均为写出 r^2=cos2θ 并检查第一象限角域。"
+        },
+        {
+          "target_card_id": "GS-411",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-410",
+            "GS-411"
+          ],
+          "reason": "旧边来自 GS-411 的错位正文；双纽线角域与 x=c 楔形边界不构成强关系。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-413",
+      "card_path": "错题知识网络/错题卡/GS-413_强化例题14.8.md",
+      "pre_review_card_sha256": "102e61a320f37f7be0415c1c2d79f6a4944f53012047fd9336640dd7103c01a4",
+      "card_sha256": "937221ddd56bfe516d1cf5624866211b78b83641feeb6ac3a4d43b37e919720a",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-413_强化例题14.8.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "c604148db84e1cbbe6c7980ac53a3757b83b1a1fc03f0014abdcb14f4503e4bb"
+      ],
+      "reviewed_detail_sha256": [
+        "c604148db84e1cbbe6c7980ac53a3757b83b1a1fc03f0014abdcb14f4503e4bb"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-413/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "5dc02297e4034a8f005edc69c4c7fd9bca6886001f76447d5a1ce41e0ca6e309"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "计算 \\[ I=\\iint_D(x-y)\\,dx\\,dy,\\qquad D=\\{(x,y)\\mid (x-1)^2+(y-1)^2\\le2,\\ y\\ge x\\}. \\] 核心是先平移圆心，再在 \\((u,v)\\) 平面使用极坐标，并严格记录雅可比。",
+      "asked_output": "二重积分计算",
+      "answer": "\\(-\\frac{8}{3}\\)",
+      "solution_outline": [
+        "平移换元后用极坐标，并同步替换函数、区域和雅可比",
+        "第一动作：先令 u=x-1, v=y-1，把圆域和 v>=u 同时改写",
+        "核对结果：\\(-\\frac{8}{3}\\)"
+      ],
+      "knowledge_nodes": [
+        "二重积分",
+        "二重积分极坐标法",
+        "行列式"
+      ],
+      "first_action": "先令 u=x-1, v=y-1，把圆域和 v>=u 同时改写",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先完成平移变量、区域条件和微元的同步转换",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-400",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-400",
+            "GS-413"
+          ],
+          "reason": "都需把平移圆域和附加半平面条件同步转为极坐标边界，不能只换被积函数。"
+        },
+        {
+          "target_card_id": "GS-404",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-413"
+          ],
+          "reason": "虽都涉及区域变换，但前者核心是极坐标区域转直角坐标，后者是平移圆心与半平面同步换元。"
+        },
+        {
+          "target_card_id": "GS-407",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-413"
+          ],
+          "reason": "二次型环带极坐标与平移半圆换元只有宽泛坐标法共同点。"
+        }
+      ]
+    },
+    {
+      "card_id": "GS-415",
+      "card_path": "错题知识网络/错题卡/GS-415_强化例题12.1.md",
+      "pre_review_card_sha256": "27a7ad6b6f22cab45a2bf1e6eed046197db414b35219a052ef26eb63f9c3abdc",
+      "card_sha256": "ca3d13641acd5f0fe18bd42de8c45ffec828e9f15ff0d3c151c0a3b36fbafaea",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-415_强化例题12.1.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "00197d5ba50176c107278253675d5513b2f2bb9637f3081832dbb3c9fcd96157"
+      ],
+      "reviewed_detail_sha256": [
+        "00197d5ba50176c107278253675d5513b2f2bb9637f3081832dbb3c9fcd96157"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-415/question_01.png"
+        ],
+        "solution": [
+          "错题知识网络/assets/visual_wrong_questions/GS-415/solution_01.png"
+        ],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "3c126a60b8bd1ccc77b89becbcdf0818051521ba620e6055978a26ac6748d4ab",
+        "d0c5a3b4671c9e9d5038f82e600859f4d1bcbf7e591eb9f80bcae348fd45fbc9"
+      ],
+      "physical_asset_path_count": 2,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 1,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "井深为 \\(a\\) 米，每米绳重 \\(5\\text{ N}\\)，挂斗重 \\(400\\text{ N}\\)，污泥重 \\(1500\\text{ N}\\)。把挂斗从井底提到井口共做功 \\(59250\\text{ J}\\)，求 \\(a\\)。",
+      "asked_output": "定积分物理应用：变力做功",
+      "answer": "\\boxed{30}",
+      "solution_outline": [
+        "用微元法把每一部分拉力写成位置函数并积分做功",
+        "第一动作：先设提升距离 x，并写出桶、污泥、剩余绳长对应的总拉力",
+        "核对结果：\\boxed{30}"
+      ],
+      "knowledge_nodes": [
+        "定积分",
+        "变力做功积分"
+      ],
+      "first_action": "先设提升距离 x，并写出桶、污泥、剩余绳长对应的总拉力",
+      "personal_error": {
+        "evidence_status": "pending_user_confirmation",
+        "evidence_origin": "pending_user_confirmation",
+        "first_breakpoint": "缺少用户作答过程；低置信推断可能没有先把物理量翻译成随位置变化的力",
+        "repeat_count": 1,
+        "repeat_count_source": "试点阶段估计，未全局统计",
+        "confidence": "low",
+        "need_user_confirmation": true
+      },
+      "consistency": {
+        "question_identity": "unique_question_identity",
+        "identity_group": null,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "asset_hash_drift": false
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [],
+      "relation_decisions": [
+        {
+          "target_card_id": "GS-418",
+          "decision": "keep",
+          "declaration_owners": [
+            "GS-415",
+            "GS-418"
+          ],
+          "reason": "定积分物理应用中都需先选微元位置，再同时写随位置变化的力和位移距离。"
+        },
+        {
+          "target_card_id": "GS-420",
+          "decision": "remove",
+          "removed_declaration_owners": [
+            "GS-415"
+          ],
+          "reason": "井绳提升做功与另一物理积分只共享宽泛定积分应用标签，微元对象和检查链不同。"
+        }
+      ]
+    }
+  ],
+  "campaign_progress": {
+    "batch_number": 27,
+    "batch_reviewed_cards": 20,
+    "cumulative_reviewed_cards": 540,
+    "remaining_cards": 291,
+    "cumulative_physical_asset_paths_reviewed": 920,
+    "cumulative_unique_asset_count": 750,
+    "cumulative_unique_asset_role_counts": {
+      "question": 487,
+      "solution": 261,
+      "reference": 2
+    },
+    "unique_asset_increment_note": "本批32个物理资产在批内均为唯一内容；GS-393 与批外 GS-424 的题图同哈希，身份冻结不改变本批资产增量。"
+  },
+  "validation": {
+    "json_parse": "passed",
+    "wrongnet_read_cards_in_memory": "passed_831_cards",
+    "all_selected_cards_resolved": "passed_20_of_20",
+    "all_final_relation_targets_exist": "passed",
+    "all_final_edges_bidirectional": "passed_21_edges_42_owner_declarations",
+    "identity_blocked_selected_incoming_edges": "passed_0",
+    "identity_blocked_selected_outgoing_edges": "passed_0",
+    "frozen_asset_hash_drift_count": 0,
+    "embedded_freeze_snapshot_parity": "passed",
+    "source_write_hash_parity": "passed_35_of_35",
+    "historical_lineage_hash_parity": "passed_5_reviews_5_closeouts",
+    "build_graph_in_memory_precheck": "passed_831_cards_27_batches_540_current_540_verified_0_stale_291_remaining",
+    "rendered_outputs_in_memory_precheck": "passed_30_expected_outputs_all_stale_before_single_formal_build",
+    "git_diff_check": "passed",
+    "wrongnet_rebuild": "pending_exactly_one",
+    "derived_graph_build": "pending_exactly_one",
+    "targeted_tests": "pending",
+    "full_test_suite": "pending",
+    "formal_closeout": "pending"
+  }
+}

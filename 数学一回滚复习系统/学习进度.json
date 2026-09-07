@@ -1,0 +1,33 @@
+{
+  "exam_date": "2026-12-20",
+  "default_count": 5,
+  "active_gap_days": 7,
+  "exclude_recent_days": 7,
+  "stage_windows": {
+    "unstable": [1, 2],
+    "first_independent_correct": [5, 10],
+    "second_independent_correct": [18, 35],
+    "third_independent_correct": [40, 75],
+    "long_term_maintenance": [75, 120]
+  },
+  "same_item_repair_window": [1, 2],
+  "progress_note": "当前错题库内容均视为已学范围；高等数学、线性代数、概率论与数理统计均纳入每日回滚。后续若学习进度变化，再更新本文件。",
+  "date_missing_policy": "日期缺失题视为已学历史整合题，可按知识点参与回滚；不保证每一道都曾亲自做过。",
+  "modules": {
+    "高等数学": {
+      "enabled": true,
+      "knowledge_allowlist": [],
+      "knowledge_denylist": []
+    },
+    "线性代数": {
+      "enabled": true,
+      "knowledge_allowlist": [],
+      "knowledge_denylist": []
+    },
+    "概率论与数理统计": {
+      "enabled": true,
+      "knowledge_allowlist": [],
+      "knowledge_denylist": []
+    }
+  }
+}

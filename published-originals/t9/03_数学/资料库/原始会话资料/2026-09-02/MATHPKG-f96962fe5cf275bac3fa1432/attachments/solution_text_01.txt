@@ -1,0 +1,36 @@
+卷面写法
+
+由泰勒公式，
+
+$$
+\begin{aligned}
+u_n
+&=e^{(\ln a)/n}-\left(1+\frac1n\right)^{1/2}\\
+&=\frac{\ln a-\frac12}{n}
++\frac{\frac{(\ln a)^2}{2}+\frac18}{n^2}
++o\!\left(\frac1{n^2}\right).
+\end{aligned}
+$$
+
+当 \(\ln a\ne\frac12\) 时，通项最终同号，且
+
+$$
+\lim_{n\to\infty}\frac{|u_n|}{1/n}
+=\left|\ln a-\frac12\right|>0.
+$$
+
+由极限比较判别法及调和级数发散，原级数发散。
+
+当 \(\ln a=\frac12\) 时，
+
+$$
+u_n=\frac1{4n^2}+o\!\left(\frac1{n^2}\right),
+\qquad
+\lim_{n\to\infty}\frac{|u_n|}{1/n^2}=\frac14.
+$$
+
+由极限比较判别法，原级数绝对收敛。故
+
+$$
+\boxed{a=\sqrt e\text{ 时收敛；其余 }a>0\text{ 时发散。}}
+$$

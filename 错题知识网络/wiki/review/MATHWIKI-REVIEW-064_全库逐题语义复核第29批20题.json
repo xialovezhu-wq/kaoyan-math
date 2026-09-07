@@ -1,0 +1,5460 @@
+{
+  "schema_version": "math_target_semantic_review_batch_v1",
+  "wiki_id": "MATHWIKI-REVIEW-064",
+  "review_id": "MATH-TARGET-SEMANTIC-REVIEW-20260724-B29",
+  "title": "全库逐题语义复核第29批20题",
+  "reviewed_on": "2026-07-24",
+  "batch_number": 29,
+  "campaign_formal_card_count": 831,
+  "scope": {
+    "card_count": 20,
+    "physical_asset_path_count": 20,
+    "unique_visual_content_sha256_count": 20,
+    "canonical_detail_count": 20,
+    "reviewed_detail_file_count": 20,
+    "physical_asset_role_path_counts": {
+      "question": 20,
+      "solution": 0,
+      "reference": 0
+    },
+    "unique_visual_content_role_counts": {
+      "question": 20,
+      "solution": 0,
+      "reference": 0
+    },
+    "selected_card_files_written": 20,
+    "selected_visual_detail_files_written": 5,
+    "external_card_files_written": 39,
+    "source_summary_files_written": 59,
+    "semantic_review_receipt_files_written": 19,
+    "formal_source_files_written_before_review_receipt": 123,
+    "historical_review_snapshots_revalidated": 9,
+    "historical_review_cards_revalidated": 16,
+    "final_strong_logical_edges": 22,
+    "final_strong_edge_owner_declarations": 44,
+    "removed_logical_edges": 54,
+    "removed_owner_declarations": 66
+  },
+  "frozen_source_state_sha256": "7b1943197c9772ada092c9a883cdac9a6e8566c11a3d22892620f02d8135e9f6",
+  "source_freeze": {
+    "storage": "embedded_snapshot_only",
+    "sha256": "ce55fec77b9493e970f4e940963199b236bf589bdcb87c99e1bc0618ddc95831",
+    "snapshot": {
+      "schema_version": "math_target_semantic_freeze_v1",
+      "batch_number": 29,
+      "frozen_on": "2026-07-24",
+      "selected_card_ids": [
+        "GS-439",
+        "GS-440",
+        "GS-441",
+        "GS-442",
+        "GS-443",
+        "GS-444",
+        "GS-445",
+        "GS-446",
+        "GS-447",
+        "GS-448",
+        "GS-449",
+        "GS-450",
+        "GS-451",
+        "GS-452",
+        "GS-453",
+        "GS-454",
+        "GS-455",
+        "GS-456",
+        "GS-457",
+        "GS-458"
+      ],
+      "selection_order_sha256": "9ea2f49f190cf986ff0d8ddaab0bbd718943ec5fd15b7a573a38dd610d86124e",
+      "selection_compact_json_sha256": "58cec11e7c8f282c23bd28712c201eaa0d28a7b231f90e47616b3bc6cf9b68df",
+      "frozen_source_state_sha256": "7b1943197c9772ada092c9a883cdac9a6e8566c11a3d22892620f02d8135e9f6",
+      "canonical_snapshot_sha256": "0d1979a70d57ec7b310339413dcad154f61e309c7db75ea894d73f98598bda7c",
+      "canonical_snapshot_algorithm": "sha256 of sort_keys compact JSON for the 20 pre-review build_graph card records",
+      "record_write_manifest_sha256": "de67d772fc2635237ad25140d8db6887d08791c86703d550c7b193b3949cdf33",
+      "prior_closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-063_全库逐题语义复核第28批正式收口.json",
+      "prior_closeout_sha256": "e48339ad37c9e7861eae4db58622c3e4abdb0341f21bded1d0e1ab580c19bc12",
+      "scope": {
+        "card_count": 20,
+        "detail_path_count": 20,
+        "physical_asset_path_count": 20,
+        "unique_asset_sha256_count": 20,
+        "physical_asset_role_path_counts": {
+          "question": 20,
+          "solution": 0,
+          "reference": 0
+        },
+        "unique_asset_role_counts": {
+          "question": 20,
+          "solution": 0,
+          "reference": 0
+        }
+      },
+      "records": [
+        {
+          "card_id": "GS-439",
+          "card_path": "错题知识网络/错题卡/GS-439_1706532026.5.10.md",
+          "card_sha256": "db1182eba85b7eb8acc5139a8dfc08fd773b6655766f70ae2f6efd9d57c021ba",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-439_170653-2026.5.10.md",
+              "sha256": "b7274a98e2e168991b7faa298b0ffe1938824ef2982d706c0d77c904e1008ee1"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-439/question_01.png",
+              "sha256": "3df8f695eba3e765303378272def76e449e0868d0712510e86f6fc0d14632959"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-440",
+          "card_path": "错题知识网络/错题卡/GS-440_1706582026.5.11.md",
+          "card_sha256": "ce420983f9030fe7182cde3bd5e9bf77d0c3eb9f7f9b342bd48a97557aec6176",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-440_170658-2026.5.11.md",
+              "sha256": "5c238a8c2a890cc8d48cb153f377a69706390e2ae05692e7fdc17500197d49cf"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-440/question_01.png",
+              "sha256": "203950d849e00fc3339d4eba17ce0a7e1f4102a8fd5e1ecf5809564af521325c"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-441",
+          "card_path": "错题知识网络/错题卡/GS-441_577852026.5.11.md",
+          "card_sha256": "3c537613357893e4dc2f2fc59fcd1a413d14f2347c5132e0b5c0a7ada721a30d",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-441_57785-2026.5.11.md",
+              "sha256": "6dbc553f9472b6371e6bbd5d14a244f167a14b32a3792a4b24f7f098f5043782"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-441/question_01.png",
+              "sha256": "e6ee7eac6618063d9c13262966d2635c923dbdfe867ef9acb95950b8cac68528"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-442",
+          "card_path": "错题知识网络/错题卡/GS-442_577972026.5.11.md",
+          "card_sha256": "b7d50745e75102e18c570925e4ad446ed5d54a24b6a7b5b5866407554b9ce10c",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-442_57797-2026.5.11.md",
+              "sha256": "ccfa52691f3aa05488eed704ff0b0fdd75ff56d9128e918fe144b022c5ff958d"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-442/question_01.png",
+              "sha256": "7fe1e17e754949be5cceb21c6593c06842e632475c2f8cecda1a26edd18aabb2"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-443",
+          "card_path": "错题知识网络/错题卡/GS-443_578082026.5.11.md",
+          "card_sha256": "43ef055d925c9036b53bb0b9f6332b057732a7ffc5139cfa44459702dc1ff812",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-443_57808-2026.5.11.md",
+              "sha256": "091bb5035367c87d52f3bd6e80da54dd678edb1e448c91c4a6e8e0df00054a13"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-443/question_01.png",
+              "sha256": "fe3460532d4a11667b20877833af9a43cd7772a09c7affdfc60490e63ab02e5e"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-444",
+          "card_path": "错题知识网络/错题卡/GS-444_1706842026.5.11.md",
+          "card_sha256": "f2e54174ad6eb753d44806e55cc570c9762ddd3e4a4a884647f902ef68b5d6c4",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-444_170684-2026.5.11.md",
+              "sha256": "a37c60bdc129d838990218432d2735c89b48263446e01fcc3dcd423107af17a1"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-444/question_01.png",
+              "sha256": "a54865efc9addd5d2fc791b71d55c6c90d617802d30bcf7c389700b87e90879a"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-445",
+          "card_path": "错题知识网络/错题卡/GS-445_57880调和和式积分估计.md",
+          "card_sha256": "efbd1bced58d75da5c0da24ad916e9fca1fa4e4d846ec046cd17e0ad71bf1713",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-445_57880-2026.5.13.md",
+              "sha256": "f25ecb068a799ff2ee50bda6e7432ce10dadee8f5c81c7aa12cf649559275f68"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-445/question_01.png",
+              "sha256": "91f24795ab7cda6949e43485594f5bc73faea49f4e050ade0690824fd5c6fec8"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-446",
+          "card_path": "错题知识网络/错题卡/GS-446_170721递推数列单调有界.md",
+          "card_sha256": "bb608648e4b2094ba2b4311dc2f35b0aa22d6ed3c5627937214f6e619efc7c1d",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-446_170721-2026.5.13.md",
+              "sha256": "78db6acbf2c5ce643a8e6d4989bf2a71ed4aeae30facc0167dac7ca8d0950b58"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-446/question_01.png",
+              "sha256": "f8ac0d6b81e07168b0ffe5befcd36ab88971bb70d04652172066fc17dbbef10d"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-447",
+          "card_path": "错题知识网络/错题卡/GS-447_58000零点可导性判定.md",
+          "card_sha256": "b17fc8d431ddde06777f8951a6604cf91a68393a206da5667b496fdb75bfb618",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-447_58000-2026.5.13.md",
+              "sha256": "de50ea16032cc64965df8864771b20f6f3cc90edb1311ff2effca787defbad43"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-447/question_01.png",
+              "sha256": "4ef0e171c2405fd2bc0437ae7db69056047d06f6919a1b23d3d10a7dcb5dc1bb"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-448",
+          "card_path": "错题知识网络/错题卡/GS-448_170717分段函数可导参数.md",
+          "card_sha256": "11615ee2a487e06937fbb125c7b25bc3a22f1e8fa583b320145e425026a04336",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-448_170717-2026.5.13.md",
+              "sha256": "30092848ed0278929e82f1cef6f881770bbd7c2cdc25b8a45ef401b139663fc0"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-448/question_01.png",
+              "sha256": "9602a667cc047d075d639bc833b9da5d63bb7798483acdd893445e700b4463cc"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-449",
+          "card_path": "错题知识网络/错题卡/GS-449_58062奇函数导数符号.md",
+          "card_sha256": "aef56efc75138d6145b62b1d58f0560d55a7394f21c1ea89f77db41dbedcf87b",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-449_58062-2026.5.15.md",
+              "sha256": "a5b62d70820fa921b8fb35231363a1bb568a40a2b9870c2912946517a89c2be1"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-449/question_01.png",
+              "sha256": "6f1161db0478ceef5300c03708cbe470722d9ece2ca28e1c66bf5b54b59eb25d"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-450",
+          "card_path": "错题知识网络/错题卡/GS-450_81283泰勒余项积分放缩.md",
+          "card_sha256": "780c3c304853b2599aeb84a0e2ea6e43ef232dcf682d377cec513e78b7e77d04",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-450_81283-2026.5.13.md",
+              "sha256": "1e514ffc9ef33dfe4fadcc38059fb9ec75f5a0cc042c2105379d64cfe37aa029"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-450/question_01.png",
+              "sha256": "cead141c60c3d2cc35781d86da161c8019d13beb8def4599a13fd3d562e68141"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-451",
+          "card_path": "错题知识网络/错题卡/GS-451_58115拐点三阶导判别.md",
+          "card_sha256": "0dc214c74c68b3dcfec6afcabe9a3f9426a8ff4cb357831f7ed137a72a9da7ba",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-451_58115-2026.5.15.md",
+              "sha256": "5ca0df53473f5d44bb449fd5ec71d6ddf33b7fffb9b68eac3e4950b80de2a525"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-451/question_01.png",
+              "sha256": "e462b430a48e0f13b89a27e33a438d7d41f07a79131694162db1673fd0e06a43"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-452",
+          "card_path": "错题知识网络/错题卡/GS-452_57798一点导数正.md",
+          "card_sha256": "75565672861b051564ea63e2c833848849a4e68c8ecf17efd6a1088789884c12",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-452_57798-2026.5.15.md",
+              "sha256": "71f64c3e8d752f1e6e7175ddb1ca475488f4b727af63dc0044a2b88a22e92483"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-452/question_01.png",
+              "sha256": "7404684e3c2abae11ba9622584a68cdb9f43d034fbe59e7d8e6044911fd16a78"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-453",
+          "card_path": "错题知识网络/错题卡/GS-453_57928数列极限凑导数.md",
+          "card_sha256": "9f20f2033d5d2af4ca0dfa91a2cc04c870d68d0a768b00f4c3c89702443ee4a9",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-453_57928-2026.5.15.md",
+              "sha256": "ecb6b62a280127707154fac6cff3e95c1c4d440ec121fd22aebde82ae91f3401"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-453/question_01.png",
+              "sha256": "9fc493bbca79b7c6d07a8cb7176d2892a65332aab666ec5a9d077769abebf287"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-454",
+          "card_path": "错题知识网络/错题卡/GS-454_57976极限反推展开系数.md",
+          "card_sha256": "38eed9e3809c7879b0594496604e9d878562d123af2ecd0378cc75c0ec80e6a2",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-454_57976-2026.5.15.md",
+              "sha256": "58918f21cad4ebdd3bc105f89409f1ef1426062ec23a6b750d2ddd93b16387c5"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-454/question_01.png",
+              "sha256": "f83ae40067a58b379d1080b8e1bb95f9067725172e12c6103bd96fe750b7bb61"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-455",
+          "card_path": "错题知识网络/错题卡/GS-455_58099对数展开符号.md",
+          "card_sha256": "3e0417c9fecaf89f8ff51b8bc6fde566e50c7367b86b010bc34a5c2ea29a52f0",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-455_58099-2026.5.16.md",
+              "sha256": "dcee40f78ae751a52c9eea0f6b8cf2be3b5a691e8ac223be4099b9f4884fa3a9"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-455/question_01.png",
+              "sha256": "f120ca4f0417714717e6a5bb940eaeeff4b9a76167ae7a3e0562d4d6b43f663f"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-456",
+          "card_path": "错题知识网络/错题卡/GS-456_57764导数定义参数方程.md",
+          "card_sha256": "7d5ba9a993c95bdc02b286bbd5cca19ff850ded8484b0da3455a71b609558f11",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-456_57764-2026.5.17.md",
+              "sha256": "bef72ca0703fafc09e2166ca1b2428a5f4164754d26c77b22bf83a5607b5b3fb"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-456/question_01.png",
+              "sha256": "a774efc1619330527a681ff8df0df0305941afad6e3bc34c880e9d019a949bcb"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-457",
+          "card_path": "错题知识网络/错题卡/GS-457_170662高阶导数麦克劳林.md",
+          "card_sha256": "d4b03e78865d92248b1713d1786f82af1b9785fb66ae466792146d2f0ca55c82",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-457_170662-2026.5.17.md",
+              "sha256": "1af3b39ba221c37ab350d9aec758fa7c1606c34ae26dcf507c9adc13917f8c7e"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-457/question_01.png",
+              "sha256": "4d63898ac9903a67fd4a9a5a2b1f205155283916b9540484354da84899268520"
+            }
+          ]
+        },
+        {
+          "card_id": "GS-458",
+          "card_path": "错题知识网络/错题卡/GS-458_170703导数定义拆差商.md",
+          "card_sha256": "3a46bf3c17ea35a929086e315483f2a3031abfd75d5158a592b9e1a901ce6bbb",
+          "details": [
+            {
+              "path": "错题知识网络/可视化错题详情/高等数学/GS-458_170703-2026.5.17.md",
+              "sha256": "67f0a1aff88e7f87e593e40fb9b40b67aa8cf226add5b00118005afd5a7d7327"
+            }
+          ],
+          "assets": [
+            {
+              "role": "question",
+              "path": "错题知识网络/assets/visual_wrong_questions/GS-458/question_01.png",
+              "sha256": "057d4747c7de1e24eb656509cde9fce7907d5eafd85152423f3408b8da7ef66f"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "asset_boundary": {
+    "physical_asset_records": [
+      {
+        "card_id": "GS-439",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-439/question_01.png",
+        "sha256": "3df8f695eba3e765303378272def76e449e0868d0712510e86f6fc0d14632959"
+      },
+      {
+        "card_id": "GS-440",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-440/question_01.png",
+        "sha256": "203950d849e00fc3339d4eba17ce0a7e1f4102a8fd5e1ecf5809564af521325c"
+      },
+      {
+        "card_id": "GS-441",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-441/question_01.png",
+        "sha256": "e6ee7eac6618063d9c13262966d2635c923dbdfe867ef9acb95950b8cac68528"
+      },
+      {
+        "card_id": "GS-442",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-442/question_01.png",
+        "sha256": "7fe1e17e754949be5cceb21c6593c06842e632475c2f8cecda1a26edd18aabb2"
+      },
+      {
+        "card_id": "GS-443",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-443/question_01.png",
+        "sha256": "fe3460532d4a11667b20877833af9a43cd7772a09c7affdfc60490e63ab02e5e"
+      },
+      {
+        "card_id": "GS-444",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-444/question_01.png",
+        "sha256": "a54865efc9addd5d2fc791b71d55c6c90d617802d30bcf7c389700b87e90879a"
+      },
+      {
+        "card_id": "GS-445",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-445/question_01.png",
+        "sha256": "91f24795ab7cda6949e43485594f5bc73faea49f4e050ade0690824fd5c6fec8"
+      },
+      {
+        "card_id": "GS-446",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-446/question_01.png",
+        "sha256": "f8ac0d6b81e07168b0ffe5befcd36ab88971bb70d04652172066fc17dbbef10d"
+      },
+      {
+        "card_id": "GS-447",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-447/question_01.png",
+        "sha256": "4ef0e171c2405fd2bc0437ae7db69056047d06f6919a1b23d3d10a7dcb5dc1bb"
+      },
+      {
+        "card_id": "GS-448",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-448/question_01.png",
+        "sha256": "9602a667cc047d075d639bc833b9da5d63bb7798483acdd893445e700b4463cc"
+      },
+      {
+        "card_id": "GS-449",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-449/question_01.png",
+        "sha256": "6f1161db0478ceef5300c03708cbe470722d9ece2ca28e1c66bf5b54b59eb25d"
+      },
+      {
+        "card_id": "GS-450",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-450/question_01.png",
+        "sha256": "cead141c60c3d2cc35781d86da161c8019d13beb8def4599a13fd3d562e68141"
+      },
+      {
+        "card_id": "GS-451",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-451/question_01.png",
+        "sha256": "e462b430a48e0f13b89a27e33a438d7d41f07a79131694162db1673fd0e06a43"
+      },
+      {
+        "card_id": "GS-452",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-452/question_01.png",
+        "sha256": "7404684e3c2abae11ba9622584a68cdb9f43d034fbe59e7d8e6044911fd16a78"
+      },
+      {
+        "card_id": "GS-453",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-453/question_01.png",
+        "sha256": "9fc493bbca79b7c6d07a8cb7176d2892a65332aab666ec5a9d077769abebf287"
+      },
+      {
+        "card_id": "GS-454",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-454/question_01.png",
+        "sha256": "f83ae40067a58b379d1080b8e1bb95f9067725172e12c6103bd96fe750b7bb61"
+      },
+      {
+        "card_id": "GS-455",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-455/question_01.png",
+        "sha256": "f120ca4f0417714717e6a5bb940eaeeff4b9a76167ae7a3e0562d4d6b43f663f"
+      },
+      {
+        "card_id": "GS-456",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-456/question_01.png",
+        "sha256": "a774efc1619330527a681ff8df0df0305941afad6e3bc34c880e9d019a949bcb"
+      },
+      {
+        "card_id": "GS-457",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-457/question_01.png",
+        "sha256": "4d63898ac9903a67fd4a9a5a2b1f205155283916b9540484354da84899268520"
+      },
+      {
+        "card_id": "GS-458",
+        "role": "question",
+        "path": "错题知识网络/assets/visual_wrong_questions/GS-458/question_01.png",
+        "sha256": "057d4747c7de1e24eb656509cde9fce7907d5eafd85152423f3408b8da7ef66f"
+      }
+    ],
+    "physical_asset_path_count": 20,
+    "unique_asset_sha256_count": 20,
+    "solution_image_card_ids": [],
+    "reference_image_card_ids": [],
+    "question_only_card_ids": [
+      "GS-439",
+      "GS-440",
+      "GS-441",
+      "GS-442",
+      "GS-443",
+      "GS-444",
+      "GS-445",
+      "GS-446",
+      "GS-447",
+      "GS-448",
+      "GS-449",
+      "GS-450",
+      "GS-451",
+      "GS-452",
+      "GS-453",
+      "GS-454",
+      "GS-455",
+      "GS-456",
+      "GS-457",
+      "GS-458"
+    ],
+    "formal_question_evidence_excluded_card_ids": [],
+    "visual_gap_card_ids": [],
+    "identity_blocked_selected_card_ids": [
+      "GS-441"
+    ],
+    "aggregate_blocked_selected_card_ids": [
+      "GS-441"
+    ],
+    "same_card_alias_groups": [],
+    "identity_hold_groups": [
+      {
+        "group_id": "B12-ID-02",
+        "member_ids": [
+          "GS-023",
+          "GS-068",
+          "GS-441"
+        ],
+        "selected_card_ids": [
+          "GS-441"
+        ],
+        "evidence": "GS-023_and_GS-068_byte_identical;_GS-441_equivalent_log_exponent_transform",
+        "selected_question_asset_sha256": "e6ee7eac6618063d9c13262966d2635c923dbdfe867ef9acb95950b8cac68528",
+        "decision": "stable_ids_retained_ordinary_edges_blocked_no_recurrence_increment"
+      }
+    ],
+    "duplicate_question_asset_groups": []
+  },
+  "campaign_progress": {
+    "batch_number": 29,
+    "batch_reviewed_cards": 20,
+    "cumulative_reviewed_cards": 580,
+    "remaining_cards": 251,
+    "cumulative_physical_asset_paths_reviewed": 961,
+    "cumulative_unique_asset_count": 790,
+    "cumulative_unique_asset_role_counts": {
+      "question": 522,
+      "solution": 266,
+      "reference": 2
+    },
+    "unique_asset_increment_note": "本批20个题图资产在批内及此前全局哈希中均为唯一内容；GS-441 与 GS-023、GS-068 是语义同题但不是同哈希资产，因此全局唯一资产净增20。"
+  },
+  "evidence_distribution": {
+    "user_confirmed": 20,
+    "pending_user_confirmation": 0,
+    "not_assessable_missing_question_surface": 0,
+    "legacy_unclassified": 0
+  },
+  "evidence_card_ids": {
+    "user_confirmed": [
+      "GS-439",
+      "GS-440",
+      "GS-441",
+      "GS-442",
+      "GS-443",
+      "GS-444",
+      "GS-445",
+      "GS-446",
+      "GS-447",
+      "GS-448",
+      "GS-449",
+      "GS-450",
+      "GS-451",
+      "GS-452",
+      "GS-453",
+      "GS-454",
+      "GS-455",
+      "GS-456",
+      "GS-457",
+      "GS-458"
+    ],
+    "pending_user_confirmation": [],
+    "not_assessable_missing_question_surface": [],
+    "legacy_unclassified": []
+  },
+  "repeat_count_vector": [
+    {
+      "card_id": "GS-439",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-440",
+      "repeat_count": 2
+    },
+    {
+      "card_id": "GS-441",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-442",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-443",
+      "repeat_count": 2
+    },
+    {
+      "card_id": "GS-444",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-445",
+      "repeat_count": 2
+    },
+    {
+      "card_id": "GS-446",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-447",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-448",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-449",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-450",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-451",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-452",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-453",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-454",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-455",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-456",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-457",
+      "repeat_count": 1
+    },
+    {
+      "card_id": "GS-458",
+      "repeat_count": 1
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "GS-439",
+      "card_path": "错题知识网络/错题卡/GS-439_1706532026.5.10.md",
+      "pre_review_card_sha256": "db1182eba85b7eb8acc5139a8dfc08fd773b6655766f70ae2f6efd9d57c021ba",
+      "card_sha256": "a25125cb343254b55171e7edbbec73a09cb94982993845515f8678bb484a1314",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-439_170653-2026.5.10.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "b7274a98e2e168991b7faa298b0ffe1938824ef2982d706c0d77c904e1008ee1"
+      ],
+      "reviewed_detail_sha256": [
+        "b7274a98e2e168991b7faa298b0ffe1938824ef2982d706c0d77c904e1008ee1"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-439/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "3df8f695eba3e765303378272def76e449e0868d0712510e86f6fc0d14632959"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "计算\n$$\n\\lim_{n\\to\\infty}\n\\frac{\nn\\left(\\sqrt[n]{n+1}-\\sqrt[n+1]{n}\\right)\n}{\n\\left(\\sqrt[n]{e}-1\\right)\\ln n\n}.\n$$\n核心是先把 $n$ 次根指数化，再用等价无穷小处理指数差。",
+      "asked_output": "含 n 次根的数列极限",
+      "answer": "$\\boxed{1}$。",
+      "solution_outline": [
+        "根式指数化",
+        "等价变形",
+        "中值定理",
+        "夹逼",
+        "拆项处理"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "极限与连续",
+        "等价无穷小",
+        "拉格朗日中值定理",
+        "夹逼准则",
+        "幂指极限"
+      ],
+      "first_action": "先把 \\(\\sqrt[n]{n+1}\\) 与 \\(\\sqrt[n+1]{n}\\) 分别写成 \\(e^{\\frac{\\ln(n+1)}n}\\) 和 \\(e^{\\frac{\\ln n}{n+1}}\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有先把 n 次根差值指数化并剥离趋于 1 的因子，导致没有聚焦相邻点函数差",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "relation_and_evidence_projection_normalized",
+          "severity": "low",
+          "finding": "逐题核对题面、答案、个人历史与强边后，关系仅保留与 GS-438 的具体方法链。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-438",
+          "target_card_id": "GS-438",
+          "decision": "keep",
+          "evidence": "两题都先把相邻幂指表达式化到同一指数函数差，再分离稳定因子并处理真实指数增量。",
+          "reason": "两题都先把相邻幂指表达式化到同一指数函数差，再分离稳定因子并处理真实指数增量。",
+          "declaration_owners": [
+            "GS-438",
+            "GS-439"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-440",
+      "card_path": "错题知识网络/错题卡/GS-440_1706582026.5.11.md",
+      "pre_review_card_sha256": "ce420983f9030fe7182cde3bd5e9bf77d0c3eb9f7f9b342bd48a97557aec6176",
+      "card_sha256": "96fa25dfcb16fd95830f8119e5e6122f013fb61bc53cff46f708c32a438e533d",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-440_170658-2026.5.11.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "5c238a8c2a890cc8d48cb153f377a69706390e2ae05692e7fdc17500197d49cf"
+      ],
+      "reviewed_detail_sha256": [
+        "7bbe79dbca9a5cfefe678f842d238f42ef0a7bdd2d3daa8131d02842d20bdb7a"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-440/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "203950d849e00fc3339d4eba17ce0a7e1f4102a8fd5e1ecf5809564af521325c"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "若\n$$\n\\lim_{x\\to+\\infty}\\frac1x\\int_0^x\\left[\\frac{a t^{1+t}}{(1+t)^t}-t\\right]dt=b\n$$\n存在，且 $a>0$，求 $a,b$。",
+      "asked_output": "变上限积分型极限",
+      "answer": "$a=e,\\quad b=\\frac12$",
+      "solution_outline": [
+        "先判型",
+        "洛必达",
+        "洛必达消积分号",
+        "端点函数识别",
+        "等价变形",
+        "公共因子提取",
+        "指数型化归",
+        "取对数"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "变上限积分",
+        "变上限积分平均型极限",
+        "洛必达法则",
+        "幂指极限",
+        "等价无穷小",
+        "定积分",
+        "无穷远极限"
+      ],
+      "first_action": "先把原式写成 \\(\\frac{\\int_0^xF(t)\\,dt}{x}\\)，再用洛必达法则把变上限积分化为端点函数 \\(F(x)\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "洛必达后端点函数识别错误；没有稳定凑出 \\(x[\\frac{a}{(1+\\frac1x)^x}-1]\\)；没有规范处理 \\(\\infty\\cdot0\\) 未定式",
+        "repeat_count": 2,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "lhopital_direction_repaired",
+          "severity": "high",
+          "finding": "原详情存在由端点函数有限直接反推平均积分商有限的逆向洛必达论证；已改为先排除 a 不等于 e，再正向使用洛必达。",
+          "resolution_status": "resolved_formal_closeout"
+        },
+        {
+          "code": "neutral_solution_steps_not_personalized",
+          "severity": "medium",
+          "finding": "解析中的中性推导步骤不再被写成用户第二、第三类错误。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-003",
+          "target_card_id": "GS-003",
+          "decision": "remove",
+          "evidence": "只共享变上限积分与洛必达标签；GS-003 先拆无穷差，GS-440 先处理平均型积分并反推参数。",
+          "reason": "只共享变上限积分与洛必达标签；GS-003 先拆无穷差，GS-440 先处理平均型积分并反推参数。",
+          "declaration_owners": [
+            "GS-003"
+          ]
+        },
+        {
+          "other_card_id": "GS-042",
+          "target_card_id": "GS-042",
+          "decision": "keep",
+          "evidence": "两题都先把 x^x/(1+x)^x 化成 (1+1/x)^(-x)，再围绕 e^(-1) 提取一阶修正。",
+          "reason": "两题都先把 x^x/(1+x)^x 化成 (1+1/x)^(-x)，再围绕 e^(-1) 提取一阶修正。",
+          "declaration_owners": [
+            "GS-042",
+            "GS-440"
+          ]
+        },
+        {
+          "other_card_id": "GS-436",
+          "target_card_id": "GS-436",
+          "decision": "keep",
+          "evidence": "两题都先用洛必达消去变上限积分，再提出稳定主量并检查指数型小量中的常数因子。",
+          "reason": "两题都先用洛必达消去变上限积分，再提出稳定主量并检查指数型小量中的常数因子。",
+          "declaration_owners": [
+            "GS-436",
+            "GS-440"
+          ]
+        },
+        {
+          "other_card_id": "GS-689",
+          "target_card_id": "GS-689",
+          "decision": "remove",
+          "evidence": "平均型变上限积分参数极限与反常尾积分下限求导不是同一对象或第一动作。",
+          "reason": "平均型变上限积分参数极限与反常尾积分下限求导不是同一对象或第一动作。",
+          "declaration_owners": [
+            "GS-689"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-441",
+      "card_path": "错题知识网络/错题卡/GS-441_577852026.5.11.md",
+      "pre_review_card_sha256": "3c537613357893e4dc2f2fc59fcd1a413d14f2347c5132e0b5c0a7ada721a30d",
+      "card_sha256": "021c3a16f28bb81dfe414f23aa94f9b59466499335f7eb28e6e3653606a105c5",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-441_57785-2026.5.11.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "6dbc553f9472b6371e6bbd5d14a244f167a14b32a3792a4b24f7f098f5043782"
+      ],
+      "reviewed_detail_sha256": [
+        "f5828402e18d586adf7cb4698ad1d7b85f9e958ed3f70235451bb0117949b79b"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-441/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "e6ee7eac6618063d9c13262966d2635c923dbdfe867ef9acb95950b8cac68528"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 $x_1>0$，数列满足\n$$\nx_{n+1}=\\ln(e^{x_n}-1)-\\ln x_n.\n$$\n证明 $\\lim_{n\\to\\infty}x_n$ 存在并求其值。",
+      "asked_output": "递推数列极限",
+      "answer": "$\\displaystyle \\lim_{n\\to\\infty}x_n=0$。",
+      "solution_outline": [
+        "先判型",
+        "等价变形",
+        "指数化",
+        "数学归纳法",
+        "中值定理",
+        "单调有界",
+        "条件转化",
+        "单调有界准则"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "极限与连续",
+        "拉格朗日中值定理",
+        "中值定理",
+        "单调有界准则"
+      ],
+      "first_action": "先用 \\(\\ln A-\\ln B=\\ln\\frac AB\\) 合并递推式，并写出 \\(e^{x_{n+1}}=\\frac{e^{x_n}-1}{x_n}\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有先把对数递推指数化成差商结构，导致没有用中值定理证明 \\(x_{n+1}<x_n\\)",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "duplicate_identity_hold",
+        "identity_group": "B12-ID-02",
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs",
+        "identity_members": [
+          "GS-023",
+          "GS-068",
+          "GS-441"
+        ]
+      },
+      "aggregate_edge_policy": "block_until_relinked",
+      "quality_findings": [
+        {
+          "code": "duplicate_identity_hold_preserved",
+          "severity": "high",
+          "finding": "GS-441 与 GS-023、GS-068 是同一递推问题的不同登记；沿用 B12-ID-02，保留稳定 ID 并阻断普通关系聚合。",
+          "resolution_status": "active_identity_hold"
+        },
+        {
+          "code": "source_date_and_attribution_repaired",
+          "severity": "medium",
+          "finding": "正式日期纠正为 2026-05-11；2026-05-22 仅保留为掌握记录，解析步骤不再冒充个人错因。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-442",
+      "card_path": "错题知识网络/错题卡/GS-442_577972026.5.11.md",
+      "pre_review_card_sha256": "b7d50745e75102e18c570925e4ad446ed5d54a24b6a7b5b5866407554b9ce10c",
+      "card_sha256": "732960383b1f1dcf1fb83d37deadddace4164fa6cf8c422c34aaa8ffcb05af49",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-442_57797-2026.5.11.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "ccfa52691f3aa05488eed704ff0b0fdd75ff56d9128e918fe144b022c5ff958d"
+      ],
+      "reviewed_detail_sha256": [
+        "c6ae9d7b60d9eac3a3eebcd8580378349e2401372bead1d2664bf0df38415ced"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-442/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "7fe1e17e754949be5cceb21c6593c06842e632475c2f8cecda1a26edd18aabb2"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "三问连乘型极限：\n\n1. $|x|<1$ 时，求 $(1+x)(1+x^2)(1+x^4)\\cdots(1+x^{2^n})$ 的极限。\n2. $x\\ne0$ 时，求 $\\cos\\frac{x}{2}\\cos\\frac{x}{4}\\cdots\\cos\\frac{x}{2^n}$ 的极限。\n3. 求 $x\\to\\frac{\\pi}{2}$ 时，根式连乘\n$$\n\\frac{(1-\\sqrt{\\sin x})(1-\\sqrt[3]{\\sin x})\\cdots(1-\\sqrt[n]{\\sin x})}{(1-\\sin x)^{n-1}}\n$$\n的极限。",
+      "asked_output": "连乘型极限",
+      "answer": "$(1)\\ \\frac{1}{1-x}$；$(2)\\ \\frac{\\sin x}{x}$；$(3)\\ \\frac{1}{n!}$。",
+      "solution_outline": [
+        "先判型",
+        "补因子",
+        "等价变形",
+        "三角恒等变形",
+        "等价无穷小",
+        "条件转化"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "等价无穷小",
+        "重要极限",
+        "三角函数极限",
+        "连乘型极限"
+      ],
+      "first_action": "先检查每个连乘是否能补因子或用倍角公式形成望远镜式消项",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有先检查平方差、倍角公式或逐项等价量能否形成可消结构",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "no_division_product_identity_repaired",
+          "severity": "high",
+          "finding": "三角连乘先用无除法倍角恒等式，固定非零 x 后仅在充分大的 n 上相除；第三问补明固定整数 n 不小于 2。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": []
+    },
+    {
+      "card_id": "GS-443",
+      "card_path": "错题知识网络/错题卡/GS-443_578082026.5.11.md",
+      "pre_review_card_sha256": "43ef055d925c9036b53bb0b9f6332b057732a7ffc5139cfa44459702dc1ff812",
+      "card_sha256": "dc0433bdf3bf5b3d5130a12a0b4bf81f030dc9981cc51c2f1fed76606bcbe677",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-443_57808-2026.5.11.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "091bb5035367c87d52f3bd6e80da54dd678edb1e448c91c4a6e8e0df00054a13"
+      ],
+      "reviewed_detail_sha256": [
+        "091bb5035367c87d52f3bd6e80da54dd678edb1e448c91c4a6e8e0df00054a13"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-443/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "fe3460532d4a11667b20877833af9a43cd7772a09c7affdfc60490e63ab02e5e"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 $f(x)$ 是三次多项式，且\n$$\n\\lim_{x\\to2a}\\frac{f(x)}{x-2a}\n=\n\\lim_{x\\to4a}\\frac{f(x)}{x-4a}\n=1,\\qquad a\\ne0.\n$$\n求\n$$\n\\lim_{x\\to3a}\\frac{f(x)}{x-3a}.\n$$",
+      "asked_output": "多项式零点型函数极限",
+      "answer": "$\\displaystyle -\\frac12$。",
+      "solution_outline": [
+        "先判型",
+        "条件转化",
+        "分子趋零",
+        "因式分解",
+        "零点结构构造",
+        "因式定理构造",
+        "最一般一次因式",
+        "首项系数保留"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "函数极限",
+        "多项式零点",
+        "多项式零点结构",
+        "因式定理",
+        "三次多项式构造",
+        "有限非零极限"
+      ],
+      "first_action": "先由两个有限非零极限写出 \\(f(2a)=0,\\ f(4a)=0\\)，再构造 \\(f(x)=A(x-2a)(x-4a)(x-B)\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有把剩余一次因式写成最一般形式 \\(A(x-B)\\)，而是写成 \\(ax\\)，默认第三个零点为 0",
+        "repeat_count": 2,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "relation_projection_normalized",
+          "severity": "low",
+          "finding": "只保留与 GS-095 共享二重根、因式提取和最一般剩余因式的强边。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-095",
+          "target_card_id": "GS-095",
+          "decision": "keep",
+          "evidence": "两题都把有限极限或整除条件先翻译成已知零点与因式，再保留剩余因式的最一般形式。",
+          "reason": "两题都把有限极限或整除条件先翻译成已知零点与因式，再保留剩余因式的最一般形式。",
+          "declaration_owners": [
+            "GS-095",
+            "GS-443"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-444",
+      "card_path": "错题知识网络/错题卡/GS-444_1706842026.5.11.md",
+      "pre_review_card_sha256": "f2e54174ad6eb753d44806e55cc570c9762ddd3e4a4a884647f902ef68b5d6c4",
+      "card_sha256": "22e7071fccab4a08df0827e3c94320e0bc5b6ebad26a8c9f7f24174ced483067",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-444_170684-2026.5.11.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "a37c60bdc129d838990218432d2735c89b48263446e01fcc3dcd423107af17a1"
+      ],
+      "reviewed_detail_sha256": [
+        "a37c60bdc129d838990218432d2735c89b48263446e01fcc3dcd423107af17a1"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-444/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "a54865efc9addd5d2fc791b71d55c6c90d617802d30bcf7c389700b87e90879a"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 $x_1\\in(0,\\frac{\\pi}{4})$，数列满足\n$$\nx_n=\\frac12(x_{n+1}+\\tan x_n).\n$$\n证明 $\\lim x_n$ 存在并求值；再求\n$$\n\\lim_{n\\to\\infty}\\left(\\frac{x_{n+1}}{x_n}\\right)^{1/x_n^2}.\n$$",
+      "asked_output": "递推数列极限",
+      "answer": "$\\displaystyle \\lim_{n\\to\\infty}x_n=0$；$\\displaystyle \\lim_{n\\to\\infty}\\left(\\frac{x_{n+1}}{x_n}\\right)^{1/x_n^2}=e^{-1/3}$。",
+      "solution_outline": [
+        "先判型",
+        "作差法",
+        "数学归纳法",
+        "单调有界",
+        "单调有界准则",
+        "对数化",
+        "泰勒展开",
+        "条件转化"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "递推数列",
+        "极限与连续",
+        "单调有界准则",
+        "泰勒展开",
+        "幂指极限"
+      ],
+      "first_action": "先把递推式改写成 \\(x_{n+1}=2x_n-\\tan x_n\\)，并写出 \\(x_{n+1}-x_n=x_n-\\tan x_n\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有先把单调性转化为比较 \\(x_{n+1}-x_n\\)，而是只研究递推函数导数",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "relation_projection_normalized",
+          "severity": "low",
+          "finding": "保留同一正切递推和相邻差判单调的两条强边，并清理宽标签关系。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-067",
+          "target_card_id": "GS-067",
+          "decision": "keep",
+          "evidence": "两题是同一正切递推对象，第一动作都是先建立区间不变性，再由相邻差判单调并用三阶展开收尾。",
+          "reason": "两题是同一正切递推对象，第一动作都是先建立区间不变性，再由相邻差判单调并用三阶展开收尾。",
+          "declaration_owners": [
+            "GS-067",
+            "GS-444"
+          ]
+        },
+        {
+          "other_card_id": "GS-446",
+          "target_card_id": "GS-446",
+          "decision": "keep",
+          "evidence": "两题都先把递推式改写成 x_(n+1)-x_n 的显式符号问题，完成单调有界后才允许取极限。",
+          "reason": "两题都先把递推式改写成 x_(n+1)-x_n 的显式符号问题，完成单调有界后才允许取极限。",
+          "declaration_owners": [
+            "GS-444",
+            "GS-446"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-445",
+      "card_path": "错题知识网络/错题卡/GS-445_57880调和和式积分估计.md",
+      "pre_review_card_sha256": "efbd1bced58d75da5c0da24ad916e9fca1fa4e4d846ec046cd17e0ad71bf1713",
+      "card_sha256": "164cc34f38cf7524d662a2854bc1d0268964b54754541fb57ed5b34107e46b68",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-445_57880-2026.5.13.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "f25ecb068a799ff2ee50bda6e7432ce10dadee8f5c81c7aa12cf649559275f68"
+      ],
+      "reviewed_detail_sha256": [
+        "13fbd60b4c79baacc4e99ebe6e47f22d8ddac1c5a438ea76c6e7933f40e9fc80"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-445/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "91f24795ab7cda6949e43485594f5bc73faea49f4e050ade0690824fd5c6fec8"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "单调递减函数在 \\([k,k+1]\\) 上证明积分夹逼；再取 \\(f(x)=1/x\\)，用调和和式与 \\(\\int 1/x\\,dx=\\ln x\\) 的比较求极限。",
+      "asked_output": "单调函数积分估计",
+      "answer": "\\(\\ln(n+1)<1+\\frac12+\\cdots+\\frac1n\\le1+\\ln n\\)，且 \\(\\lim_{n\\to\\infty}\\frac{1+\\frac12+\\cdots+\\frac1n}{\\ln n}=1\\)。",
+      "solution_outline": [
+        "先判型",
+        "条件转化",
+        "夹逼准则",
+        "夹逼",
+        "函数值比较",
+        "求和转积分",
+        "积分夹逼",
+        "求和与积分比较"
+      ],
+      "knowledge_nodes": [
+        "定积分",
+        "定积分性质",
+        "数列极限",
+        "夹逼准则",
+        "调和级数",
+        "调和级数比较",
+        "函数单调性"
+      ],
+      "first_action": "先写 \\(f(x)=\\frac1x\\)，再由第一问得到 \\(\\frac1{k+1}\\le\\int_k^{k+1}\\frac{dx}{x}\\le\\frac1k\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "第一问会做，但第二问没有把调和和式触发到 \\(1/x\\) 的对数积分，也没有根据目标分别累加到 \\(\\int_1^{n+1}\\frac{dx}{x}\\) 和 \\(\\int_1^n\\frac{dx}{x}\\)",
+        "repeat_count": 2,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "strict_harmonic_bound_and_complete_answer_repaired",
+          "severity": "high",
+          "finding": "恢复严格下界 ln(n+1)<H_n，并把第一问不等式与第二问极限一并写入正式答案。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-184",
+          "target_card_id": "GS-184",
+          "decision": "remove",
+          "evidence": "定积分端点估值与调和和式按单位区间累加只共享积分不等式大类，不共享求和对象。",
+          "reason": "定积分端点估值与调和和式按单位区间累加只共享积分不等式大类，不共享求和对象。",
+          "declaration_owners": [
+            "GS-184",
+            "GS-445"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-446",
+      "card_path": "错题知识网络/错题卡/GS-446_170721递推数列单调有界.md",
+      "pre_review_card_sha256": "bb608648e4b2094ba2b4311dc2f35b0aa22d6ed3c5627937214f6e619efc7c1d",
+      "card_sha256": "dd1921fdd26608f1a9046f1122745871db2c25654a9ed4bec7d23b432769ad82",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-446_170721-2026.5.13.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "78db6acbf2c5ce643a8e6d4989bf2a71ed4aeae30facc0167dac7ca8d0950b58"
+      ],
+      "reviewed_detail_sha256": [
+        "78db6acbf2c5ce643a8e6d4989bf2a71ed4aeae30facc0167dac7ca8d0950b58"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-446/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "f8ac0d6b81e07168b0ffe5befcd36ab88971bb70d04652172066fc17dbbef10d"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "\\(f\\) 在 \\([0,1]\\) 上二阶可导，且 \\(f'(x)>0,\\ f''(x)>0,\\ f(0)=0\\)。取 \\(x_1\\in(0,1)\\)，数列满足\n\\[\n(x_{n+1}-x_n)f'(x_n)+f(x_n)=0.\n\\]\n证明 \\(\\lim x_n\\) 存在并求值。",
+      "asked_output": "函数性质递推数列极限",
+      "answer": "\\(\\lim_{n\\to\\infty}x_n=0\\)",
+      "solution_outline": [
+        "先判型",
+        "作差法",
+        "单调有界",
+        "单调有界准则",
+        "条件转化",
+        "导数判单调",
+        "极限代入"
+      ],
+      "knowledge_nodes": [
+        "数列极限",
+        "递推数列",
+        "单调有界准则",
+        "一元函数微分学应用"
+      ],
+      "first_action": "先由递推式解出 \\(x_{n+1}-x_n=-\\frac{f(x_n)}{f'(x_n)}\\)，并判断该相邻差符号",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有先抓住递推式中已经出现的相邻差，导致误走压缩映射固定点模板",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "relation_projection_normalized",
+          "severity": "low",
+          "finding": "递推数列关系仅保留共享相邻差、单调有界与取极限顺序的具体强边。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-433",
+          "target_card_id": "GS-433",
+          "decision": "keep",
+          "evidence": "两题都是递推数列收敛证明，必须先建立区间不变性、单调性与有界性，再允许取极限。",
+          "reason": "两题都是递推数列收敛证明，必须先建立区间不变性、单调性与有界性，再允许取极限。",
+          "declaration_owners": [
+            "GS-433",
+            "GS-446"
+          ]
+        },
+        {
+          "other_card_id": "GS-444",
+          "target_card_id": "GS-444",
+          "decision": "keep",
+          "evidence": "两题都先把递推式改写成 x_(n+1)-x_n 的显式符号问题，完成单调有界后才允许取极限。",
+          "reason": "两题都先把递推式改写成 x_(n+1)-x_n 的显式符号问题，完成单调有界后才允许取极限。",
+          "declaration_owners": [
+            "GS-444",
+            "GS-446"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-447",
+      "card_path": "错题知识网络/错题卡/GS-447_58000零点可导性判定.md",
+      "pre_review_card_sha256": "b17fc8d431ddde06777f8951a6604cf91a68393a206da5667b496fdb75bfb618",
+      "card_sha256": "82a1d6812efbda34201c9f9d530b13c58cdf7099046b22608f16011a9927c06a",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-447_58000-2026.5.13.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "de50ea16032cc64965df8864771b20f6f3cc90edb1311ff2effca787defbad43"
+      ],
+      "reviewed_detail_sha256": [
+        "de50ea16032cc64965df8864771b20f6f3cc90edb1311ff2effca787defbad43"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-447/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "4ef0e171c2405fd2bc0437ae7db69056047d06f6919a1b23d3d10a7dcb5dc1bb"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "判断下列函数中哪一个在 \\(x=0\\) 处不可导：\n\\[\n|x|\\sin|x|,\\quad |x|\\sin\\sqrt{|x|},\\quad \\cos|x|,\\quad \\cos\\sqrt{|x|}.\n\\]",
+      "asked_output": "可导性判定",
+      "answer": "D",
+      "solution_outline": [
+        "先判型",
+        "分类讨论",
+        "等价变形",
+        "导数定义",
+        "特殊值检验"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "极限与连续",
+        "等价无穷小",
+        "绝对值分类"
+      ],
+      "first_action": "先对每个选项写出 \\(x=0\\) 处的导数定义差商 \\(\\frac{f(x)-f(0)}x\\)，再用等价无穷小判断左右极限",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "过早根据 \\(\\frac{|x|}{x}\\) 判断不可导，没有继续用导数定义逐项检查",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "medium",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "broad_differentiability_edges_removed",
+          "severity": "medium",
+          "finding": "删除只共享可导性或绝对值标签的关系，仅保留绝对值零点尖点消除的具体强边。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-035",
+          "target_card_id": "GS-035",
+          "decision": "remove",
+          "evidence": "绝对值尖点左右导数与有界因子乘无穷小的导数定义判定不是同一首动作。",
+          "reason": "绝对值尖点左右导数与有界因子乘无穷小的导数定义判定不是同一首动作。",
+          "declaration_owners": [
+            "GS-035",
+            "GS-447"
+          ]
+        },
+        {
+          "other_card_id": "GS-106",
+          "target_card_id": "GS-106",
+          "decision": "keep",
+          "evidence": "两题都在绝对值零点处回到导数定义，并检查外部小量是否消去尖点。",
+          "reason": "两题都在绝对值零点处回到导数定义，并检查外部小量是否消去尖点。",
+          "declaration_owners": [
+            "GS-106",
+            "GS-447"
+          ]
+        },
+        {
+          "other_card_id": "GS-448",
+          "target_card_id": "GS-448",
+          "decision": "remove",
+          "evidence": "选项逐一写零点差商与分段连接点联立连续可导条件，只共享可导性标签。",
+          "reason": "选项逐一写零点差商与分段连接点联立连续可导条件，只共享可导性标签。",
+          "declaration_owners": [
+            "GS-448"
+          ]
+        },
+        {
+          "other_card_id": "GS-456",
+          "target_card_id": "GS-456",
+          "decision": "remove",
+          "evidence": "绝对值零点可导性与数列差商配导数定义的具体对象、增量和断点不同。",
+          "reason": "绝对值零点可导性与数列差商配导数定义的具体对象、增量和断点不同。",
+          "declaration_owners": [
+            "GS-456"
+          ]
+        },
+        {
+          "other_card_id": "GS-461",
+          "target_card_id": "GS-461",
+          "decision": "remove",
+          "evidence": "一阶可导选项判定与最高可导阶数逐阶比较左右导数不是同一方法链。",
+          "reason": "一阶可导选项判定与最高可导阶数逐阶比较左右导数不是同一方法链。",
+          "declaration_owners": [
+            "GS-461"
+          ]
+        },
+        {
+          "other_card_id": "GS-466",
+          "target_card_id": "GS-466",
+          "decision": "remove",
+          "evidence": "零点导数定义判定与非零点处绝对值复合函数链式求导只共享绝对值标签。",
+          "reason": "零点导数定义判定与非零点处绝对值复合函数链式求导只共享绝对值标签。",
+          "declaration_owners": [
+            "GS-466"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-448",
+      "card_path": "错题知识网络/错题卡/GS-448_170717分段函数可导参数.md",
+      "pre_review_card_sha256": "11615ee2a487e06937fbb125c7b25bc3a22f1e8fa583b320145e425026a04336",
+      "card_sha256": "82a7994550ddd4a2d7513c6f4d6e0b7e7d51d9823096cdcf1bf7cf9e96235ac8",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-448_170717-2026.5.13.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "30092848ed0278929e82f1cef6f881770bbd7c2cdc25b8a45ef401b139663fc0"
+      ],
+      "reviewed_detail_sha256": [
+        "30092848ed0278929e82f1cef6f881770bbd7c2cdc25b8a45ef401b139663fc0"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-448/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "9602a667cc047d075d639bc833b9da5d63bb7798483acdd893445e700b4463cc"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "\\[\nf(x)=\n\\begin{cases}\na\\sqrt x, & 0\\le x\\le b,\\\\\n\\ln x, & x>b.\n\\end{cases}\n\\]\n已知 \\(f\\) 在 \\((0,+\\infty)\\) 内可导，且在 \\(x=0\\) 处右连续，求 \\(a,b\\)。",
+      "asked_output": "分段函数连续可导求参数",
+      "answer": "A，\\(a=\\frac2e,\\ b=e^2\\)",
+      "solution_outline": [
+        "先判型",
+        "分类讨论",
+        "条件转化",
+        "导数定义",
+        "左右导数"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "极限与连续",
+        "分段函数连续可导"
+      ],
+      "first_action": "先检查 \\(b=0\\) 是否满足 \\(x=0\\) 处右连续，排除 \\(b=0\\) 并确定分界点 \\(b>0\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有先用 \\(x=0\\) 处右连续确定 \\(b>0\\)，导致没有明确 \\(x=b\\) 是需要连续且可导的内点",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "broad_piecewise_edges_removed",
+          "severity": "medium",
+          "finding": "连接点连续可导求参没有足够同首动作强边，普通 related 置为无强边。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-035",
+          "target_card_id": "GS-035",
+          "decision": "remove",
+          "evidence": "固定尖点左右导数与含参分段连接点的连续方程、导数方程联立不同。",
+          "reason": "固定尖点左右导数与含参分段连接点的连续方程、导数方程联立不同。",
+          "declaration_owners": [
+            "GS-035",
+            "GS-448"
+          ]
+        },
+        {
+          "other_card_id": "GS-109",
+          "target_card_id": "GS-109",
+          "decision": "remove",
+          "evidence": "参数方程含绝对值的多层可导性与显式分段函数连接点求参不是同一对象或断点。",
+          "reason": "参数方程含绝对值的多层可导性与显式分段函数连接点求参不是同一对象或断点。",
+          "declaration_owners": [
+            "GS-109",
+            "GS-448"
+          ]
+        },
+        {
+          "other_card_id": "GS-447",
+          "target_card_id": "GS-447",
+          "decision": "remove",
+          "evidence": "选项逐一写零点差商与分段连接点联立连续可导条件，只共享可导性标签。",
+          "reason": "选项逐一写零点差商与分段连接点联立连续可导条件，只共享可导性标签。",
+          "declaration_owners": [
+            "GS-448"
+          ]
+        },
+        {
+          "other_card_id": "GS-456",
+          "target_card_id": "GS-456",
+          "decision": "remove",
+          "evidence": "分段点求参需先确定连接点，导数定义型数列极限需先补基点值；只共享导数标签。",
+          "reason": "分段点求参需先确定连接点，导数定义型数列极限需先补基点值；只共享导数标签。",
+          "declaration_owners": [
+            "GS-456"
+          ]
+        },
+        {
+          "other_card_id": "GS-470",
+          "target_card_id": "GS-470",
+          "decision": "remove",
+          "evidence": "连接点连续可导求参与振荡因子临界指数逐案检查不是同一触发或第一动作。",
+          "reason": "连接点连续可导求参与振荡因子临界指数逐案检查不是同一触发或第一动作。",
+          "declaration_owners": [
+            "GS-470"
+          ]
+        },
+        {
+          "other_card_id": "GS-498",
+          "target_card_id": "GS-498",
+          "decision": "remove",
+          "evidence": "含参分段连接点求参和不连续分段点的极值定义判断只共享分段函数标签。",
+          "reason": "含参分段连接点求参和不连续分段点的极值定义判断只共享分段函数标签。",
+          "declaration_owners": [
+            "GS-498"
+          ]
+        },
+        {
+          "other_card_id": "GS-574",
+          "target_card_id": "GS-574",
+          "decision": "remove",
+          "evidence": "分段函数可导求参与分段原函数常数匹配的具体条件和第一动作不同。",
+          "reason": "分段函数可导求参与分段原函数常数匹配的具体条件和第一动作不同。",
+          "declaration_owners": [
+            "GS-574"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-449",
+      "card_path": "错题知识网络/错题卡/GS-449_58062奇函数导数符号.md",
+      "pre_review_card_sha256": "aef56efc75138d6145b62b1d58f0560d55a7394f21c1ea89f77db41dbedcf87b",
+      "card_sha256": "08cb001d13262f3f2c1d0f758df0a95b536983053ee49b0ea28921fa62bb8220",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-449_58062-2026.5.15.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "a5b62d70820fa921b8fb35231363a1bb568a40a2b9870c2912946517a89c2be1"
+      ],
+      "reviewed_detail_sha256": [
+        "a5b62d70820fa921b8fb35231363a1bb568a40a2b9870c2912946517a89c2be1"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-449/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "6f1161db0478ceef5300c03708cbe470722d9ece2ca28e1c66bf5b54b59eb25d"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知 \\(f(-x)=-f(x)\\)，且在 \\((0,+\\infty)\\) 内 \\(f'(x)>0,\\ f''(x)>0\\)，判断 \\(f(x)\\) 在 \\((-\\infty,0)\\) 内的一阶导和二阶导符号。",
+      "asked_output": "奇偶性与导数符号判断",
+      "answer": "C，\\(x<0\\) 时 \\(f'(x)>0,\\ f''(x)<0\\)。",
+      "solution_outline": [
+        "先判型",
+        "条件转化",
+        "分类讨论",
+        "导数奇偶性"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "函数奇偶性与导数性质",
+        "二阶导数"
+      ],
+      "first_action": "先对 \\(f(-x)=-f(x)\\) 关于 \\(x\\) 求导，推出 \\(f'(-x)=f'(x)\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有先推导导数的奇偶性，而把奇函数本身的对称性误套到 \\(f'\\) 的符号上",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "medium",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "second_derivative_tag_repaired",
+          "severity": "medium",
+          "finding": "正文标签由导数定义纠正为二阶导数，与题目对象及 YAML 知识点一致。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-094",
+          "target_card_id": "GS-094",
+          "decision": "keep",
+          "evidence": "两题都先由函数奇偶性推出导函数的奇偶性，再把负点导数信息转到正点判断。",
+          "reason": "两题都先由函数奇偶性推出导函数的奇偶性，再把负点导数信息转到正点判断。",
+          "declaration_owners": [
+            "GS-094",
+            "GS-449"
+          ]
+        },
+        {
+          "other_card_id": "GS-121",
+          "target_card_id": "GS-121",
+          "decision": "remove",
+          "evidence": "零点高阶导数由奇函数判零与负半轴一二阶导数符号迁移不是同一所问或断点。",
+          "reason": "零点高阶导数由奇函数判零与负半轴一二阶导数符号迁移不是同一所问或断点。",
+          "declaration_owners": [
+            "GS-121",
+            "GS-449"
+          ]
+        },
+        {
+          "other_card_id": "GS-572",
+          "target_card_id": "GS-572",
+          "decision": "remove",
+          "evidence": "函数导数奇偶性与原函数加常数后的奇偶、周期、单调判断只共享奇偶性标签。",
+          "reason": "函数导数奇偶性与原函数加常数后的奇偶、周期、单调判断只共享奇偶性标签。",
+          "declaration_owners": [
+            "GS-572"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-450",
+      "card_path": "错题知识网络/错题卡/GS-450_81283泰勒余项积分放缩.md",
+      "pre_review_card_sha256": "780c3c304853b2599aeb84a0e2ea6e43ef232dcf682d377cec513e78b7e77d04",
+      "card_sha256": "9697e56176f23c894f3444b1b5591868494323e4474900b17978b0ffc73aa233",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-450_81283-2026.5.13.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "1e514ffc9ef33dfe4fadcc38059fb9ec75f5a0cc042c2105379d64cfe37aa029"
+      ],
+      "reviewed_detail_sha256": [
+        "1e514ffc9ef33dfe4fadcc38059fb9ec75f5a0cc042c2105379d64cfe37aa029"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-450/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "cead141c60c3d2cc35781d86da161c8019d13beb8def4599a13fd3d562e68141"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "\\(f\\) 在 \\([-1,1]\\) 上二阶可导，且 \\(f''(x)>0\\)，\\(\\int_{-1}^{1}f(x)\\,dx=2\\)，判断 \\(f(0)\\) 的必然范围。",
+      "asked_output": "泰勒余项放缩与积分估计",
+      "answer": "C；严格数学结论为 \\(f(0)<1\\)，因此选项 C 的弱结论 \\(f(0)\\le1\\) 成立。",
+      "solution_outline": [
+        "先判型",
+        "泰勒展开",
+        "放缩",
+        "积分保序",
+        "条件转化",
+        "对称区间积分"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "泰勒展开",
+        "凹凸性与拐点",
+        "定积分",
+        "定积分性质"
+      ],
+      "first_action": "先在 0 点写 \\(f(x)=f(0)+xf'(0)+\\frac12 f''(\\xi_x)x^2\\)，并由 \\(f''>0\\) 得到 \\(f(x)\\ge f(0)+xf'(0)\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有把 \\(f''>0\\) 转成二阶泰勒余项非负并对切线下界积分",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent_option_is_weaker_than_strict_derived_conclusion",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "strict_convex_conclusion_repaired",
+          "severity": "high",
+          "finding": "由 f''>0 得到的严格结论是 f(0)<1；正式答案说明选项 C 的 f(0)不大于1只是较弱但为真。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-228",
+          "target_card_id": "GS-228",
+          "decision": "keep",
+          "evidence": "两题共享凸函数切线下界与 Taylor 余项定号机制，第一动作都是先写切线不等式。",
+          "reason": "两题共享凸函数切线下界与 Taylor 余项定号机制，第一动作都是先写切线不等式。",
+          "declaration_owners": [
+            "GS-228",
+            "GS-450"
+          ]
+        },
+        {
+          "other_card_id": "GS-457",
+          "target_card_id": "GS-457",
+          "decision": "remove",
+          "evidence": "Taylor 余项定号后积分放缩与零点高阶导数读系数不是同一第一动作。",
+          "reason": "Taylor 余项定号后积分放缩与零点高阶导数读系数不是同一第一动作。",
+          "declaration_owners": [
+            "GS-457"
+          ]
+        },
+        {
+          "other_card_id": "GS-508",
+          "target_card_id": "GS-508",
+          "decision": "remove",
+          "evidence": "二阶余项给切线下界与最低非零四阶项判极值虽都用 Taylor，但目标与断点不同。",
+          "reason": "二阶余项给切线下界与最低非零四阶项判极值虽都用 Taylor，但目标与断点不同。",
+          "declaration_owners": [
+            "GS-508"
+          ]
+        },
+        {
+          "other_card_id": "GS-535",
+          "target_card_id": "GS-535",
+          "decision": "remove",
+          "evidence": "凸函数切线下界积分与在任意中心写余项后两点相减估导数不是同一方法链。",
+          "reason": "凸函数切线下界积分与在任意中心写余项后两点相减估导数不是同一方法链。",
+          "declaration_owners": [
+            "GS-535"
+          ]
+        },
+        {
+          "other_card_id": "GS-578",
+          "target_card_id": "GS-578",
+          "decision": "remove",
+          "evidence": "Taylor 余项定号和凹函数定义加换元比较只共享函数不等式结果，不共享首动作。",
+          "reason": "Taylor 余项定号和凹函数定义加换元比较只共享函数不等式结果，不共享首动作。",
+          "declaration_owners": [
+            "GS-578"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-451",
+      "card_path": "错题知识网络/错题卡/GS-451_58115拐点三阶导判别.md",
+      "pre_review_card_sha256": "0dc214c74c68b3dcfec6afcabe9a3f9426a8ff4cb357831f7ed137a72a9da7ba",
+      "card_sha256": "83c21d9c9036fe6a12c66ed33b5a0b23729a8497756e48b42f60de8bd9f55b25",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-451_58115-2026.5.15.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "5ca0df53473f5d44bb449fd5ec71d6ddf33b7fffb9b68eac3e4950b80de2a525"
+      ],
+      "reviewed_detail_sha256": [
+        "5ca0df53473f5d44bb449fd5ec71d6ddf33b7fffb9b68eac3e4950b80de2a525"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-451/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "e462b430a48e0f13b89a27e33a438d7d41f07a79131694162db1673fd0e06a43"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "求曲线 \\(y=(x-1)^2(x-3)^2\\) 的拐点个数。函数为多项式，处处三阶可导。",
+      "asked_output": "拐点个数判断",
+      "answer": "C，拐点个数为 2。",
+      "solution_outline": [
+        "先判型",
+        "导数判单调",
+        "三阶导判别",
+        "条件转化"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "凹凸性与拐点"
+      ],
+      "first_action": "先求 \\(y''\\) 并解 \\(y''=0\\)，把这些点列为拐点候选",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有先把 \\(y''=0\\) 的点作为候选并用 \\(y'''\\ne0\\) 快速确认",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "broad_inflection_edges_removed",
+          "severity": "medium",
+          "finding": "三阶导充分判拐点与完整二阶导变号、参数曲线凹凸等题不再以宽标签连线。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-140",
+          "target_card_id": "GS-140",
+          "decision": "remove",
+          "evidence": "完整求二阶导分区间验变号与用三阶导非零快速判拐点是不同的首动作与断点。",
+          "reason": "完整求二阶导分区间验变号与用三阶导非零快速判拐点是不同的首动作与断点。",
+          "declaration_owners": [
+            "GS-140",
+            "GS-451"
+          ]
+        },
+        {
+          "other_card_id": "GS-499",
+          "target_card_id": "GS-499",
+          "decision": "remove",
+          "evidence": "多项式三阶导判拐点与参数曲线二阶导换元判凹凸不共享对象或第一动作。",
+          "reason": "多项式三阶导判拐点与参数曲线二阶导换元判凹凸不共享对象或第一动作。",
+          "declaration_owners": [
+            "GS-499"
+          ]
+        },
+        {
+          "other_card_id": "GS-508",
+          "target_card_id": "GS-508",
+          "decision": "remove",
+          "evidence": "三阶导充分判拐点与四阶最低非零项判极大值只共享高阶导数标签。",
+          "reason": "三阶导充分判拐点与四阶最低非零项判极大值只共享高阶导数标签。",
+          "declaration_owners": [
+            "GS-508"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-452",
+      "card_path": "错题知识网络/错题卡/GS-452_57798一点导数正.md",
+      "pre_review_card_sha256": "75565672861b051564ea63e2c833848849a4e68c8ecf17efd6a1088789884c12",
+      "card_sha256": "9de183245ced2211fbf7cdf5a74d841add4691b7694c09c6c77bbf1ae6599e8d",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-452_57798-2026.5.15.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "71f64c3e8d752f1e6e7175ddb1ca475488f4b727af63dc0044a2b88a22e92483"
+      ],
+      "reviewed_detail_sha256": [
+        "71f64c3e8d752f1e6e7175ddb1ca475488f4b727af63dc0044a2b88a22e92483"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-452/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "7404684e3c2abae11ba9622584a68cdb9f43d034fbe59e7d8e6044911fd16a78"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "已知 \\(f(x)\\) 连续，且 \\(f'(x_0)>0\\)，判断能推出的邻域性质。关键是只给一点导数，不是给区间上 \\(f'(x)>0\\)。",
+      "asked_output": "导数定义与局部保号",
+      "answer": "B，存在 \\(\\delta>0\\)，使任意 \\(x\\in(x_0,x_0+\\delta)\\) 都有 \\(f(x)>f(x_0)\\)。",
+      "solution_outline": [
+        "先判型",
+        "导数定义",
+        "极限保号性",
+        "条件转化",
+        "分类讨论"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "极限保号性",
+        "函数极限"
+      ],
+      "first_action": "先写 \\(f'(x_0)=\\lim_{x\\to x_0}\\frac{f(x)-f(x_0)}{x-x_0}>0\\)，再用极限保号性判断右侧差商为正",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "把一点导数正误当成区间上导数为正或函数单调递增",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "medium",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "local_sign_edge_normalized",
+          "severity": "low",
+          "finding": "仅保留一点正导数经差商局部保号推出右侧函数值比较的同断点强边。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-104",
+          "target_card_id": "GS-104",
+          "decision": "keep",
+          "evidence": "两题都把一点导数为正转成导数定义差商的局部保号，而不是误推邻域单调。",
+          "reason": "两题都把一点导数为正转成导数定义差商的局部保号，而不是误推邻域单调。",
+          "declaration_owners": [
+            "GS-104",
+            "GS-452"
+          ]
+        },
+        {
+          "other_card_id": "GS-142",
+          "target_card_id": "GS-142",
+          "decision": "remove",
+          "evidence": "多选项辨析点态与邻域性质和由一点正导数推出右侧函数值比较不是同一所问。",
+          "reason": "多选项辨析点态与邻域性质和由一点正导数推出右侧函数值比较不是同一所问。",
+          "declaration_owners": [
+            "GS-142",
+            "GS-452"
+          ]
+        },
+        {
+          "other_card_id": "GS-225",
+          "target_card_id": "GS-225",
+          "decision": "remove",
+          "evidence": "Hölder 条件除以增量推出处处导数为零，与一点差商极限保号不共享具体条件或断点。",
+          "reason": "Hölder 条件除以增量推出处处导数为零，与一点差商极限保号不共享具体条件或断点。",
+          "declaration_owners": [
+            "GS-225",
+            "GS-452"
+          ]
+        },
+        {
+          "other_card_id": "GS-571",
+          "target_card_id": "GS-571",
+          "decision": "remove",
+          "evidence": "一点导数局部保号与拆区间积分中值定理构造存在性只共享保号性标签。",
+          "reason": "一点导数局部保号与拆区间积分中值定理构造存在性只共享保号性标签。",
+          "declaration_owners": [
+            "GS-571"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-453",
+      "card_path": "错题知识网络/错题卡/GS-453_57928数列极限凑导数.md",
+      "pre_review_card_sha256": "9f20f2033d5d2af4ca0dfa91a2cc04c870d68d0a768b00f4c3c89702443ee4a9",
+      "card_sha256": "02d7328c91a296e752af1f7fb64b551e3b6f647e9295df93bd2b88eb61cd0c2b",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-453_57928-2026.5.15.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "ecb6b62a280127707154fac6cff3e95c1c4d440ec121fd22aebde82ae91f3401"
+      ],
+      "reviewed_detail_sha256": [
+        "ecb6b62a280127707154fac6cff3e95c1c4d440ec121fd22aebde82ae91f3401"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-453/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "9fc493bbca79b7c6d07a8cb7176d2892a65332aab666ec5a9d077769abebf287"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "由方程\n\\[\nx=\\int_1^{y-x}\\sin^2\\left(\\frac{\\pi t}{4}\\right)\\,dt\n\\]\n确定 \\(y=f(x)\\)，求\n\\[\n\\lim_{n\\to\\infty}n\\left[f\\left(\\frac1n\\right)-1\\right].\n\\]",
+      "asked_output": "数列极限凑导数定义与隐函数求导",
+      "answer": "\\(\\displaystyle 3\\)。",
+      "solution_outline": [
+        "导数定义",
+        "条件转化",
+        "隐函数求导",
+        "变上限积分求导"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "数列极限",
+        "变上限积分",
+        "隐函数求导"
+      ],
+      "first_action": "先由隐式方程代 \\(x=0\\) 得 \\(f(0)=1\\)，再把 \\(n[f(1/n)-1]\\) 写成 \\(\\frac{f(1/n)-f(0)}{1/n}\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有先确认 \\(f(0)=1\\)，也没有把数列极限改写成 \\(f'(0)\\)",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "derivative_definition_edges_normalized",
+          "severity": "medium",
+          "finding": "仅保留先补基点值、把数列极限配成导数定义的具体强边。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-096",
+          "target_card_id": "GS-096",
+          "decision": "keep",
+          "evidence": "两题都是同类隐式变上限对象，先求零点函数值，再把数列极限改写成该点导数定义。",
+          "reason": "两题都是同类隐式变上限对象，先求零点函数值，再把数列极限改写成该点导数定义。",
+          "declaration_owners": [
+            "GS-096",
+            "GS-453"
+          ]
+        },
+        {
+          "other_card_id": "GS-454",
+          "target_card_id": "GS-454",
+          "decision": "remove",
+          "evidence": "数列凑导数并隐式求导与有限极限反推 Taylor 系数不是同一第一动作。",
+          "reason": "数列凑导数并隐式求导与有限极限反推 Taylor 系数不是同一第一动作。",
+          "declaration_owners": [
+            "GS-454"
+          ]
+        },
+        {
+          "other_card_id": "GS-456",
+          "target_card_id": "GS-456",
+          "decision": "keep",
+          "evidence": "两题都先补出基点函数值，再把 n[f(a+1/n)-f(a)] 直接配成导数定义。",
+          "reason": "两题都先补出基点函数值，再把 n[f(a+1/n)-f(a)] 直接配成导数定义。",
+          "declaration_owners": [
+            "GS-453",
+            "GS-456"
+          ]
+        },
+        {
+          "other_card_id": "GS-458",
+          "target_card_id": "GS-458",
+          "decision": "remove",
+          "evidence": "两题虽都含导数定义，GS-453 先补 f(0) 并求隐式导数，GS-458 先匹配复合自变量倍率。",
+          "reason": "两题虽都含导数定义，GS-453 先补 f(0) 并求隐式导数，GS-458 先匹配复合自变量倍率。",
+          "declaration_owners": [
+            "GS-458"
+          ]
+        },
+        {
+          "other_card_id": "GS-463",
+          "target_card_id": "GS-463",
+          "decision": "remove",
+          "evidence": "数列差商凑点导数与函数增量关系除以增量推出微分方程不是同一对象。",
+          "reason": "数列差商凑点导数与函数增量关系除以增量推出微分方程不是同一对象。",
+          "declaration_owners": [
+            "GS-463"
+          ]
+        },
+        {
+          "other_card_id": "GS-464",
+          "target_card_id": "GS-464",
+          "decision": "remove",
+          "evidence": "隐式变上限数列极限与隐函数求导后判极值只共享隐式求导大类。",
+          "reason": "隐式变上限数列极限与隐函数求导后判极值只共享隐式求导大类。",
+          "declaration_owners": [
+            "GS-464"
+          ]
+        },
+        {
+          "other_card_id": "GS-471",
+          "target_card_id": "GS-471",
+          "decision": "remove",
+          "evidence": "数列凑零点导数与乘法函数方程把任意点差商化到 1 点不是同一首动作。",
+          "reason": "数列凑零点导数与乘法函数方程把任意点差商化到 1 点不是同一首动作。",
+          "declaration_owners": [
+            "GS-471"
+          ]
+        },
+        {
+          "other_card_id": "GS-562",
+          "target_card_id": "GS-562",
+          "decision": "remove",
+          "evidence": "导数定义型数列极限与 Taylor 中间点局部有界放缩判级数收敛只共享零点信息。",
+          "reason": "导数定义型数列极限与 Taylor 中间点局部有界放缩判级数收敛只共享零点信息。",
+          "declaration_owners": [
+            "GS-562"
+          ]
+        },
+        {
+          "other_card_id": "GS-585",
+          "target_card_id": "GS-585",
+          "decision": "remove",
+          "evidence": "隐式变限积分求函数导数与嵌套变限积分洛必达链式求导不是同一方法链。",
+          "reason": "隐式变限积分求函数导数与嵌套变限积分洛必达链式求导不是同一方法链。",
+          "declaration_owners": [
+            "GS-585"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-454",
+      "card_path": "错题知识网络/错题卡/GS-454_57976极限反推展开系数.md",
+      "pre_review_card_sha256": "38eed9e3809c7879b0594496604e9d878562d123af2ecd0378cc75c0ec80e6a2",
+      "card_sha256": "064cce8c428757f43911a368f367db990008eb22edfb88af31b5390192a390b8",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-454_57976-2026.5.15.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "58918f21cad4ebdd3bc105f89409f1ef1426062ec23a6b750d2ddd93b16387c5"
+      ],
+      "reviewed_detail_sha256": [
+        "58918f21cad4ebdd3bc105f89409f1ef1426062ec23a6b750d2ddd93b16387c5"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-454/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "f83ae40067a58b379d1080b8e1bb95f9067725172e12c6103bd96fe750b7bb61"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 \\(f(x)\\) 有连续导数，且\n\\[\n\\lim_{x\\to0}\\left(\\frac{\\sin x}{x^2}+\\frac{f(x)}x\\right)=2,\n\\]\n求 \\(f(x)\\) 的一阶麦克劳林展开式。",
+      "asked_output": "极限反推麦克劳林展开系数",
+      "answer": "\\(f(x)=-1+2x+o(x)\\)。",
+      "solution_outline": [
+        "泰勒展开",
+        "通分",
+        "条件转化",
+        "待定系数",
+        "等价变形"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "泰勒展开",
+        "等价无穷小",
+        "导数定义"
+      ],
+      "first_action": "先通分成 \\(\\frac{\\sin x+xf(x)}{x^2}\\)，再设 \\(f(x)=f(0)+f'(0)x+o(x)\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有利用极限有限来强制低阶发散项抵消",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "expansion_edges_normalized",
+          "severity": "medium",
+          "finding": "仅保留由有限极限迫使低阶相消并反推未知函数展开系数的具体强边。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-025",
+          "target_card_id": "GS-025",
+          "decision": "remove",
+          "evidence": "积分定义函数的导数计算与极限反推低阶展开系数只共享导数标签。",
+          "reason": "积分定义函数的导数计算与极限反推低阶展开系数只共享导数标签。",
+          "declaration_owners": [
+            "GS-025",
+            "GS-454"
+          ]
+        },
+        {
+          "other_card_id": "GS-234",
+          "target_card_id": "GS-234",
+          "decision": "keep",
+          "evidence": "两题都由有限极限迫使低阶项相消，并逐阶匹配函数在零点的一次展开系数。",
+          "reason": "两题都由有限极限迫使低阶项相消，并逐阶匹配函数在零点的一次展开系数。",
+          "declaration_owners": [
+            "GS-234",
+            "GS-454"
+          ]
+        },
+        {
+          "other_card_id": "GS-453",
+          "target_card_id": "GS-453",
+          "decision": "remove",
+          "evidence": "数列凑导数并隐式求导与有限极限反推 Taylor 系数不是同一第一动作。",
+          "reason": "数列凑导数并隐式求导与有限极限反推 Taylor 系数不是同一第一动作。",
+          "declaration_owners": [
+            "GS-454"
+          ]
+        },
+        {
+          "other_card_id": "GS-455",
+          "target_card_id": "GS-455",
+          "decision": "remove",
+          "evidence": "未知函数系数反推与已知基本函数展开找首个非零项，题目对象和错误断点不同。",
+          "reason": "未知函数系数反推与已知基本函数展开找首个非零项，题目对象和错误断点不同。",
+          "declaration_owners": [
+            "GS-455"
+          ]
+        },
+        {
+          "other_card_id": "GS-457",
+          "target_card_id": "GS-457",
+          "decision": "remove",
+          "evidence": "有限极限反推未知函数一次展开与反三角函数零点五阶导数读系数不共享首动作。",
+          "reason": "有限极限反推未知函数一次展开与反三角函数零点五阶导数读系数不共享首动作。",
+          "declaration_owners": [
+            "GS-457"
+          ]
+        },
+        {
+          "other_card_id": "GS-533",
+          "target_card_id": "GS-533",
+          "decision": "remove",
+          "evidence": "反推一次系数与幂指函数二层 Taylor 展开只共享展开标签，不共享对象或断点。",
+          "reason": "反推一次系数与幂指函数二层 Taylor 展开只共享展开标签，不共享对象或断点。",
+          "declaration_owners": [
+            "GS-533"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-455",
+      "card_path": "错题知识网络/错题卡/GS-455_58099对数展开符号.md",
+      "pre_review_card_sha256": "3e0417c9fecaf89f8ff51b8bc6fde566e50c7367b86b010bc34a5c2ea29a52f0",
+      "card_sha256": "7d8d122c34d6a8849d421df31d7f297cfda85bc0321ffe18666ba9880ac12cd0",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-455_58099-2026.5.16.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "dcee40f78ae751a52c9eea0f6b8cf2be3b5a691e8ac223be4099b9f4884fa3a9"
+      ],
+      "reviewed_detail_sha256": [
+        "dcee40f78ae751a52c9eea0f6b8cf2be3b5a691e8ac223be4099b9f4884fa3a9"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-455/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "f120ca4f0417714717e6a5bb940eaeeff4b9a76167ae7a3e0562d4d6b43f663f"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "判断\n\\[\ne^x+\\ln(1-x)-1\n\\]\n与 \\(x^n\\) 同阶时的 \\(n\\)。",
+      "asked_output": "泰勒展开判断同阶无穷小",
+      "answer": "\\(n=3\\)，且 \\(e^x+\\ln(1-x)-1\\sim-\\frac{x^3}{6}\\)。",
+      "solution_outline": [
+        "泰勒展开",
+        "等价变形",
+        "逐阶比较"
+      ],
+      "knowledge_nodes": [
+        "极限与连续",
+        "泰勒展开",
+        "等价无穷小",
+        "重要极限"
+      ],
+      "first_action": "先分别写出 \\(e^x=1+x+\\frac{x^2}{2}+\\frac{x^3}{6}+o(x^3)\\) 和 \\(\\ln(1-x)=-x-\\frac{x^2}{2}-\\frac{x^3}{3}+o(x^3)\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "把 \\(\\ln(1-x)\\) 的二次项符号写错，并在低阶项抵消后没有继续看三次项",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "medium",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "logarithm_series_edge_added",
+          "severity": "medium",
+          "finding": "新增与 GS-561 的对数展开符号、阶数和首个非零项强边，清理只共享展开标签的关系。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-005",
+          "target_card_id": "GS-005",
+          "decision": "remove",
+          "evidence": "现有关系只由宽泛的等价无穷小标签支持，缺少相同基本展开对象与首个错步证据。",
+          "reason": "现有关系只由宽泛的等价无穷小标签支持，缺少相同基本展开对象与首个错步证据。",
+          "declaration_owners": [
+            "GS-455"
+          ]
+        },
+        {
+          "other_card_id": "GS-025",
+          "target_card_id": "GS-025",
+          "decision": "remove",
+          "evidence": "积分函数导数题与指数、对数展开符号题没有同一对象、第一动作或断点。",
+          "reason": "积分函数导数题与指数、对数展开符号题没有同一对象、第一动作或断点。",
+          "declaration_owners": [
+            "GS-025",
+            "GS-455"
+          ]
+        },
+        {
+          "other_card_id": "GS-113",
+          "target_card_id": "GS-113",
+          "decision": "keep",
+          "evidence": "两题都要把基本函数展开到目标阶，逐阶检查低阶系数相消并定位首个非零项。",
+          "reason": "两题都要把基本函数展开到目标阶，逐阶检查低阶系数相消并定位首个非零项。",
+          "declaration_owners": [
+            "GS-113",
+            "GS-455"
+          ]
+        },
+        {
+          "other_card_id": "GS-454",
+          "target_card_id": "GS-454",
+          "decision": "remove",
+          "evidence": "未知函数系数反推与已知基本函数展开找首个非零项，题目对象和错误断点不同。",
+          "reason": "未知函数系数反推与已知基本函数展开找首个非零项，题目对象和错误断点不同。",
+          "declaration_owners": [
+            "GS-455"
+          ]
+        },
+        {
+          "other_card_id": "GS-467",
+          "target_card_id": "GS-467",
+          "decision": "remove",
+          "evidence": "对数 Taylor 展开符号与对数性质化简后链式求导不是同一方法链。",
+          "reason": "对数 Taylor 展开符号与对数性质化简后链式求导不是同一方法链。",
+          "declaration_owners": [
+            "GS-467"
+          ]
+        },
+        {
+          "other_card_id": "GS-561",
+          "target_card_id": "GS-561",
+          "decision": "add",
+          "evidence": "两题都因对数展开的符号与所需阶数出错；第一动作都是把对数展开到外层尺度放大后仍足够的阶数，再找首个非零项。",
+          "reason": "两题都因对数展开的符号与所需阶数出错；第一动作都是把对数展开到外层尺度放大后仍足够的阶数，再找首个非零项。",
+          "declaration_owners": [
+            "GS-455",
+            "GS-561"
+          ]
+        }
+      ],
+      "batch35_lineage_revalidation": {
+        "batch_number": 35,
+        "date": "2026-07-24",
+        "prior_card_sha256": "c0d3089b40fe7f2e7624db9e2f62151c2b23e1987ea0f6c1736897ca03dc7268",
+        "current_card_sha256": "7d8d122c34d6a8849d421df31d7f297cfda85bc0321ffe18666ba9880ac12cd0",
+        "content_change_scope": "relation_metadata_and_navigation_reference_only",
+        "current_related": [
+          "GS-113"
+        ],
+        "removed_edges": [
+          "GS-455--GS-561"
+        ],
+        "added_edges": [],
+        "prior_lineage_fields_preserved": [],
+        "historical_semantic_payload_preserved": true,
+        "note": "第35批重绑 GS-455 的关系导航哈希；第29批原逐题语义载荷保持不变。"
+      }
+    },
+    {
+      "card_id": "GS-456",
+      "card_path": "错题知识网络/错题卡/GS-456_57764导数定义参数方程.md",
+      "pre_review_card_sha256": "7d5ba9a993c95bdc02b286bbd5cca19ff850ded8484b0da3455a71b609558f11",
+      "card_sha256": "30cb45224eb4d4c9f22cf4c11a895bb0389d7b9280a586c0c0c0ddc644f6fd3b",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-456_57764-2026.5.17.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "bef72ca0703fafc09e2166ca1b2428a5f4164754d26c77b22bf83a5607b5b3fb"
+      ],
+      "reviewed_detail_sha256": [
+        "bef72ca0703fafc09e2166ca1b2428a5f4164754d26c77b22bf83a5607b5b3fb"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-456/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "a774efc1619330527a681ff8df0df0305941afad6e3bc34c880e9d019a949bcb"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "参数方程 $x=t^2+1,\\ y=4t-t^2,\\ t\\ge0$ 确定函数 $y=f(x)$，求 $\\lim_{n\\to\\infty}n\\left[f\\left(\\frac{2n+1}{n}\\right)-3\\right]$。",
+      "asked_output": "导数定义型极限",
+      "answer": "$1$",
+      "solution_outline": [
+        "导数定义",
+        "参数方程求导",
+        "先判型",
+        "条件转化",
+        "等价变形",
+        "标准化计算流程"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "参数方程求导",
+        "极限与连续"
+      ],
+      "first_action": "先由 \\(x=t^2+1=2\\) 得 \\(t=1\\)，确认 \\(f(2)=3\\)，再把极限写成 \\(\\frac{f(2+1/n)-f(2)}{1/n}\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有把常数 \\(3\\) 写回 \\(f(2)\\)，也没有把外层 \\(n\\) 识别为导数定义",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "derivative_definition_edges_normalized",
+          "severity": "medium",
+          "finding": "只保留补基点值并匹配 1/n 真实增量的导数定义强边。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-447",
+          "target_card_id": "GS-447",
+          "decision": "remove",
+          "evidence": "绝对值零点可导性与数列差商配导数定义的具体对象、增量和断点不同。",
+          "reason": "绝对值零点可导性与数列差商配导数定义的具体对象、增量和断点不同。",
+          "declaration_owners": [
+            "GS-456"
+          ]
+        },
+        {
+          "other_card_id": "GS-448",
+          "target_card_id": "GS-448",
+          "decision": "remove",
+          "evidence": "分段点求参需先确定连接点，导数定义型数列极限需先补基点值；只共享导数标签。",
+          "reason": "分段点求参需先确定连接点，导数定义型数列极限需先补基点值；只共享导数标签。",
+          "declaration_owners": [
+            "GS-456"
+          ]
+        },
+        {
+          "other_card_id": "GS-453",
+          "target_card_id": "GS-453",
+          "decision": "keep",
+          "evidence": "两题都先补出基点函数值，再把 n[f(a+1/n)-f(a)] 直接配成导数定义。",
+          "reason": "两题都先补出基点函数值，再把 n[f(a+1/n)-f(a)] 直接配成导数定义。",
+          "declaration_owners": [
+            "GS-453",
+            "GS-456"
+          ]
+        },
+        {
+          "other_card_id": "GS-458",
+          "target_card_id": "GS-458",
+          "decision": "remove",
+          "evidence": "两题虽都配导数定义，GS-456 的基点与真实增量直接给出，GS-458 还需由条件反推导数并拆目标差商。",
+          "reason": "两题虽都配导数定义，GS-456 的基点与真实增量直接给出，GS-458 还需由条件反推导数并拆目标差商。",
+          "declaration_owners": [
+            "GS-458"
+          ]
+        },
+        {
+          "other_card_id": "GS-463",
+          "target_card_id": "GS-463",
+          "decision": "remove",
+          "evidence": "数列差商求一点导数与增量关系推出全局微分方程不是同一所问或首动作。",
+          "reason": "数列差商求一点导数与增量关系推出全局微分方程不是同一所问或首动作。",
+          "declaration_owners": [
+            "GS-463"
+          ]
+        },
+        {
+          "other_card_id": "GS-470",
+          "target_card_id": "GS-470",
+          "decision": "remove",
+          "evidence": "参数方程数列差商与振荡分段函数临界可导阶数只共享导数定义标签。",
+          "reason": "参数方程数列差商与振荡分段函数临界可导阶数只共享导数定义标签。",
+          "declaration_owners": [
+            "GS-470"
+          ]
+        },
+        {
+          "other_card_id": "GS-499",
+          "target_card_id": "GS-499",
+          "decision": "remove",
+          "evidence": "参数方程求一点导数与参数曲线二阶导、凹凸区间换元不是同一断点。",
+          "reason": "参数方程求一点导数与参数曲线二阶导、凹凸区间换元不是同一断点。",
+          "declaration_owners": [
+            "GS-499"
+          ]
+        },
+        {
+          "other_card_id": "GS-650",
+          "target_card_id": "GS-650",
+          "decision": "remove",
+          "evidence": "参数方程导数定义型极限与曲率公式中的参数二阶链式求导只共享参数方程标签。",
+          "reason": "参数方程导数定义型极限与曲率公式中的参数二阶链式求导只共享参数方程标签。",
+          "declaration_owners": [
+            "GS-650"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-457",
+      "card_path": "错题知识网络/错题卡/GS-457_170662高阶导数麦克劳林.md",
+      "pre_review_card_sha256": "d4b03e78865d92248b1713d1786f82af1b9785fb66ae466792146d2f0ca55c82",
+      "card_sha256": "36214113de063f83d3f150d4b4ce51bf66af317499451524e742f94faa5ff76f",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-457_170662-2026.5.17.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "1af3b39ba221c37ab350d9aec758fa7c1606c34ae26dcf507c9adc13917f8c7e"
+      ],
+      "reviewed_detail_sha256": [
+        "c06ee8739d5fde9d02b44255c7c129dd8b066bdbb040a961663f889be2fe33ef"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-457/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "4d63898ac9903a67fd4a9a5a2b1f205155283916b9540484354da84899268520"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 \\(f(x)=\\ln(\\sqrt{1+x^2}-x)\\)，求 \\(f^{(5)}(0)\\)。",
+      "asked_output": "零点高阶导数",
+      "answer": "\\(-9\\)",
+      "solution_outline": [
+        "先判型",
+        "泰勒展开",
+        "麦克劳林展开",
+        "二项式展开",
+        "导数降阶",
+        "系数比较"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "泰勒展开",
+        "高阶导数",
+        "函数奇偶性与导数性质"
+      ],
+      "first_action": "先求导降阶，得到 \\(f'(x)=-(1+x^2)^{-1/2}\\)，再展开到 \\(x^4\\) 项",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "注意力偏到奇函数性质，没有先求导降阶后展开 \\(f'(x)\\) 到 \\(x^4\\) 项",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "medium",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "specific_first_action_and_evidence_boundary_repaired",
+          "severity": "high",
+          "finding": "第一动作改为先求 f'(x)=-(1+x^2)^(-1/2)，展开到 x^4 后读五阶导；删除无独立证据的复习记忆不牢。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-120",
+          "target_card_id": "GS-120",
+          "decision": "add",
+          "evidence": "两题都是反三角复合函数的零点高阶导数，最稳第一动作都是先求一阶导降阶，再从幂级数系数读出目标高阶导数。",
+          "reason": "两题都是反三角复合函数的零点高阶导数，最稳第一动作都是先求一阶导降阶，再从幂级数系数读出目标高阶导数。",
+          "declaration_owners": [
+            "GS-120",
+            "GS-457"
+          ]
+        },
+        {
+          "other_card_id": "GS-450",
+          "target_card_id": "GS-450",
+          "decision": "remove",
+          "evidence": "Taylor 余项定号后积分放缩与零点高阶导数读系数不是同一第一动作。",
+          "reason": "Taylor 余项定号后积分放缩与零点高阶导数读系数不是同一第一动作。",
+          "declaration_owners": [
+            "GS-457"
+          ]
+        },
+        {
+          "other_card_id": "GS-454",
+          "target_card_id": "GS-454",
+          "decision": "remove",
+          "evidence": "有限极限反推未知函数一次展开与反三角函数零点五阶导数读系数不共享首动作。",
+          "reason": "有限极限反推未知函数一次展开与反三角函数零点五阶导数读系数不共享首动作。",
+          "declaration_owners": [
+            "GS-457"
+          ]
+        },
+        {
+          "other_card_id": "GS-472",
+          "target_card_id": "GS-472",
+          "decision": "remove",
+          "evidence": "普通解析函数展开读五阶系数与平坦函数在分段点按定义归纳各阶导数不同。",
+          "reason": "普通解析函数展开读五阶系数与平坦函数在分段点按定义归纳各阶导数不同。",
+          "declaration_owners": [
+            "GS-472"
+          ]
+        },
+        {
+          "other_card_id": "GS-526",
+          "target_card_id": "GS-526",
+          "decision": "remove",
+          "evidence": "直接函数高阶导数展开与反函数恒等式连续求导不是同一对象或第一动作。",
+          "reason": "直接函数高阶导数展开与反函数恒等式连续求导不是同一对象或第一动作。",
+          "declaration_owners": [
+            "GS-526"
+          ]
+        }
+      ]
+    },
+    {
+      "card_id": "GS-458",
+      "card_path": "错题知识网络/错题卡/GS-458_170703导数定义拆差商.md",
+      "pre_review_card_sha256": "3a46bf3c17ea35a929086e315483f2a3031abfd75d5158a592b9e1a901ce6bbb",
+      "card_sha256": "c0275216e8266ff1b84587fb00faec0eecae2097432df1fd26ffb4715f308c39",
+      "reviewed_detail_paths": [
+        "错题知识网络/可视化错题详情/高等数学/GS-458_170703-2026.5.17.md"
+      ],
+      "pre_reviewed_detail_sha256": [
+        "67f0a1aff88e7f87e593e40fb9b40b67aa8cf226add5b00118005afd5a7d7327"
+      ],
+      "reviewed_detail_sha256": [
+        "67f0a1aff88e7f87e593e40fb9b40b67aa8cf226add5b00118005afd5a7d7327"
+      ],
+      "reviewed_asset_paths_by_role": {
+        "question": [
+          "错题知识网络/assets/visual_wrong_questions/GS-458/question_01.png"
+        ],
+        "solution": [],
+        "reference": []
+      },
+      "reviewed_unique_asset_sha256": [
+        "057d4747c7de1e24eb656509cde9fce7907d5eafd85152423f3408b8da7ef66f"
+      ],
+      "physical_asset_path_count": 1,
+      "physical_asset_role_path_counts": {
+        "question": 1,
+        "solution": 0,
+        "reference": 0
+      },
+      "content_review_status": "verified",
+      "question_summary": "设 \\(f(x)\\) 连续，且 \\(\\lim_{x\\to1}\\frac{f(2x-1)}{x-1}=1\\)，求\n\\[\n\\lim_{t\\to0}\\frac{f((1+\\sin t)^2)-f(1+\\sin t)}{t}.\n\\]",
+      "asked_output": "导数定义型极限",
+      "answer": "\\(\\frac12\\)",
+      "solution_outline": [
+        "导数定义",
+        "导数定义拆差商",
+        "先判型",
+        "条件转化",
+        "换元",
+        "增量匹配",
+        "加减同项",
+        "基点回拉"
+      ],
+      "knowledge_nodes": [
+        "一元函数微分学应用",
+        "导数定义",
+        "导数定义型极限",
+        "复合自变量",
+        "自变量增量",
+        "极限条件反推导数",
+        "函数极限",
+        "极限与连续",
+        "等价无穷小"
+      ],
+      "first_action": "先求 \\(f(1)=0\\)，再把 \\(x-1\\) 改写为 \\(\\frac{2x-2}{2}\\)",
+      "personal_error": {
+        "evidence_status": "confirmed_personal",
+        "evidence_origin": "user_confirmed",
+        "first_breakpoint": "没有把导数定义的分母匹配成 \\((2x-1)-1=2x-2\\)",
+        "repeat_count": 1,
+        "repeat_count_source": "wrong_history",
+        "confidence": "high",
+        "need_user_confirmation": false
+      },
+      "consistency": {
+        "question_identity": "verified",
+        "identity_group": null,
+        "independent_solution_asset": false,
+        "question_solution": "consistent",
+        "formal_visual": "consistent_after_documented_repairs"
+      },
+      "aggregate_edge_policy": "allow",
+      "quality_findings": [
+        {
+          "code": "composite_increment_edges_normalized",
+          "severity": "medium",
+          "finding": "只保留共同基点、真实复合增量与倍率补偿都可逐题证明的导数定义强边。",
+          "resolution_status": "resolved_formal_closeout"
+        }
+      ],
+      "relation_decisions": [
+        {
+          "other_card_id": "GS-002",
+          "target_card_id": "GS-002",
+          "decision": "remove",
+          "evidence": "现有关系只共享极限与导数标签，缺少相同复合增量对象和同一首个断点。",
+          "reason": "现有关系只共享极限与导数标签，缺少相同复合增量对象和同一首个断点。",
+          "declaration_owners": [
+            "GS-002"
+          ]
+        },
+        {
+          "other_card_id": "GS-089",
+          "target_card_id": "GS-089",
+          "decision": "keep",
+          "evidence": "两题都先围绕共同基点加减函数值，把复合增量拆成两个标准导数差商并补真实增量比例。",
+          "reason": "两题都先围绕共同基点加减函数值，把复合增量拆成两个标准导数差商并补真实增量比例。",
+          "declaration_owners": [
+            "GS-089",
+            "GS-458"
+          ]
+        },
+        {
+          "other_card_id": "GS-090",
+          "target_card_id": "GS-090",
+          "decision": "keep",
+          "evidence": "两题的共同断点都是不能用外层变量增量硬套导数定义，必须补出复合自变量的真实增量与倍率。",
+          "reason": "两题的共同断点都是不能用外层变量增量硬套导数定义，必须补出复合自变量的真实增量与倍率。",
+          "declaration_owners": [
+            "GS-090",
+            "GS-458"
+          ]
+        },
+        {
+          "other_card_id": "GS-099",
+          "target_card_id": "GS-099",
+          "decision": "keep",
+          "evidence": "两题都先由极限有限推出基点函数值，再把复合自变量差商改写成标准导数定义。",
+          "reason": "两题都先由极限有限推出基点函数值，再把复合自变量差商改写成标准导数定义。",
+          "declaration_owners": [
+            "GS-099",
+            "GS-458"
+          ]
+        },
+        {
+          "other_card_id": "GS-105",
+          "target_card_id": "GS-105",
+          "decision": "keep",
+          "evidence": "两题都必须先换到真实基点增量，显式补上复合自变量带来的比例与符号。",
+          "reason": "两题都必须先换到真实基点增量，显式补上复合自变量带来的比例与符号。",
+          "declaration_owners": [
+            "GS-105",
+            "GS-458"
+          ]
+        },
+        {
+          "other_card_id": "GS-384",
+          "target_card_id": "GS-384",
+          "decision": "remove",
+          "evidence": "径向函数拉普拉斯方程换元与复合差商匹配导数定义完全不是同一方法链。",
+          "reason": "径向函数拉普拉斯方程换元与复合差商匹配导数定义完全不是同一方法链。",
+          "declaration_owners": [
+            "GS-384",
+            "GS-458"
+          ]
+        },
+        {
+          "other_card_id": "GS-453",
+          "target_card_id": "GS-453",
+          "decision": "remove",
+          "evidence": "两题虽都含导数定义，GS-453 先补 f(0) 并求隐式导数，GS-458 先匹配复合自变量倍率。",
+          "reason": "两题虽都含导数定义，GS-453 先补 f(0) 并求隐式导数，GS-458 先匹配复合自变量倍率。",
+          "declaration_owners": [
+            "GS-458"
+          ]
+        },
+        {
+          "other_card_id": "GS-456",
+          "target_card_id": "GS-456",
+          "decision": "remove",
+          "evidence": "两题虽都配导数定义，GS-456 的基点与真实增量直接给出，GS-458 还需由条件反推导数并拆目标差商。",
+          "reason": "两题虽都配导数定义，GS-456 的基点与真实增量直接给出，GS-458 还需由条件反推导数并拆目标差商。",
+          "declaration_owners": [
+            "GS-458"
+          ]
+        },
+        {
+          "other_card_id": "GS-463",
+          "target_card_id": "GS-463",
+          "decision": "remove",
+          "evidence": "复合自变量倍率补偿与增量关系除以增量推出微分方程只共享导数定义标签。",
+          "reason": "复合自变量倍率补偿与增量关系除以增量推出微分方程只共享导数定义标签。",
+          "declaration_owners": [
+            "GS-463"
+          ]
+        },
+        {
+          "other_card_id": "GS-470",
+          "target_card_id": "GS-470",
+          "decision": "remove",
+          "evidence": "导数定义型复合极限与振荡分段函数临界指数判定不是同一具体对象。",
+          "reason": "导数定义型复合极限与振荡分段函数临界指数判定不是同一具体对象。",
+          "declaration_owners": [
+            "GS-470"
+          ]
+        },
+        {
+          "other_card_id": "GS-471",
+          "target_card_id": "GS-471",
+          "decision": "remove",
+          "evidence": "复合增量极限反推一点导数与函数方程把任意点差商化到 1 点不是同一链。",
+          "reason": "复合增量极限反推一点导数与函数方程把任意点差商化到 1 点不是同一链。",
+          "declaration_owners": [
+            "GS-471"
+          ]
+        },
+        {
+          "other_card_id": "GS-530",
+          "target_card_id": "GS-530",
+          "decision": "remove",
+          "evidence": "周期函数条件求切线与双条件拆差商反求导数只共享导数定义结果，不共享首动作。",
+          "reason": "周期函数条件求切线与双条件拆差商反求导数只共享导数定义结果，不共享首动作。",
+          "declaration_owners": [
+            "GS-458",
+            "GS-530"
+          ]
+        },
+        {
+          "other_card_id": "GS-679",
+          "target_card_id": "GS-679",
+          "decision": "remove",
+          "evidence": "复合差商倍率补偿与幂指极限反推对数导数微分方程不是同一对象或收尾。",
+          "reason": "复合差商倍率补偿与幂指极限反推对数导数微分方程不是同一对象或收尾。",
+          "declaration_owners": [
+            "GS-679"
+          ]
+        },
+        {
+          "other_card_id": "GS-716",
+          "target_card_id": "GS-716",
+          "decision": "keep",
+          "evidence": "两题都围绕共同极限点加减函数值，将两个不同真实增量分别配成导数定义后再合并。",
+          "reason": "两题都围绕共同极限点加减函数值，将两个不同真实增量分别配成导数定义后再合并。",
+          "declaration_owners": [
+            "GS-458",
+            "GS-716"
+          ]
+        }
+      ]
+    }
+  ],
+  "relation_audit": {
+    "existing_verified": [
+      {
+        "decision": "keep",
+        "source_card_id": "GS-438",
+        "target_card_id": "GS-439",
+        "declaration_owners": [
+          "GS-438",
+          "GS-439"
+        ],
+        "reason": "两题都先把相邻幂指表达式化到同一指数函数差，再分离稳定因子并处理真实指数增量。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-042",
+        "target_card_id": "GS-440",
+        "declaration_owners": [
+          "GS-042",
+          "GS-440"
+        ],
+        "reason": "两题都先把 x^x/(1+x)^x 化成 (1+1/x)^(-x)，再围绕 e^(-1) 提取一阶修正。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-436",
+        "target_card_id": "GS-440",
+        "declaration_owners": [
+          "GS-436",
+          "GS-440"
+        ],
+        "reason": "两题都先用洛必达消去变上限积分，再提出稳定主量并检查指数型小量中的常数因子。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-095",
+        "target_card_id": "GS-443",
+        "declaration_owners": [
+          "GS-095",
+          "GS-443"
+        ],
+        "reason": "两题都把有限极限或整除条件先翻译成已知零点与因式，再保留剩余因式的最一般形式。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-067",
+        "target_card_id": "GS-444",
+        "declaration_owners": [
+          "GS-067",
+          "GS-444"
+        ],
+        "reason": "两题是同一正切递推对象，第一动作都是先建立区间不变性，再由相邻差判单调并用三阶展开收尾。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-444",
+        "target_card_id": "GS-446",
+        "declaration_owners": [
+          "GS-444",
+          "GS-446"
+        ],
+        "reason": "两题都先把递推式改写成 x_(n+1)-x_n 的显式符号问题，完成单调有界后才允许取极限。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-433",
+        "target_card_id": "GS-446",
+        "declaration_owners": [
+          "GS-433",
+          "GS-446"
+        ],
+        "reason": "两题都是递推数列收敛证明，必须先建立区间不变性、单调性与有界性，再允许取极限。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-106",
+        "target_card_id": "GS-447",
+        "declaration_owners": [
+          "GS-106",
+          "GS-447"
+        ],
+        "reason": "两题都在绝对值零点处回到导数定义，并检查外部小量是否消去尖点。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-094",
+        "target_card_id": "GS-449",
+        "declaration_owners": [
+          "GS-094",
+          "GS-449"
+        ],
+        "reason": "两题都先由函数奇偶性推出导函数的奇偶性，再把负点导数信息转到正点判断。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-228",
+        "target_card_id": "GS-450",
+        "declaration_owners": [
+          "GS-228",
+          "GS-450"
+        ],
+        "reason": "两题共享凸函数切线下界与 Taylor 余项定号机制，第一动作都是先写切线不等式。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-104",
+        "target_card_id": "GS-452",
+        "declaration_owners": [
+          "GS-104",
+          "GS-452"
+        ],
+        "reason": "两题都把一点导数为正转成导数定义差商的局部保号，而不是误推邻域单调。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-096",
+        "target_card_id": "GS-453",
+        "declaration_owners": [
+          "GS-096",
+          "GS-453"
+        ],
+        "reason": "两题都是同类隐式变上限对象，先求零点函数值，再把数列极限改写成该点导数定义。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-453",
+        "target_card_id": "GS-456",
+        "declaration_owners": [
+          "GS-453",
+          "GS-456"
+        ],
+        "reason": "两题都先补出基点函数值，再把 n[f(a+1/n)-f(a)] 直接配成导数定义。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-234",
+        "target_card_id": "GS-454",
+        "declaration_owners": [
+          "GS-234",
+          "GS-454"
+        ],
+        "reason": "两题都由有限极限迫使低阶项相消，并逐阶匹配函数在零点的一次展开系数。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-113",
+        "target_card_id": "GS-455",
+        "declaration_owners": [
+          "GS-113",
+          "GS-455"
+        ],
+        "reason": "两题都要把基本函数展开到目标阶，逐阶检查低阶系数相消并定位首个非零项。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-089",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-089",
+          "GS-458"
+        ],
+        "reason": "两题都先围绕共同基点加减函数值，把复合增量拆成两个标准导数差商并补真实增量比例。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-090",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-090",
+          "GS-458"
+        ],
+        "reason": "两题的共同断点都是不能用外层变量增量硬套导数定义，必须补出复合自变量的真实增量与倍率。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-099",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-099",
+          "GS-458"
+        ],
+        "reason": "两题都先由极限有限推出基点函数值，再把复合自变量差商改写成标准导数定义。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-105",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-105",
+          "GS-458"
+        ],
+        "reason": "两题都必须先换到真实基点增量，显式补上复合自变量带来的比例与符号。"
+      },
+      {
+        "decision": "keep",
+        "source_card_id": "GS-458",
+        "target_card_id": "GS-716",
+        "declaration_owners": [
+          "GS-458",
+          "GS-716"
+        ],
+        "reason": "两题都围绕共同极限点加减函数值，将两个不同真实增量分别配成导数定义后再合并。"
+      }
+    ],
+    "added": [
+      {
+        "decision": "add",
+        "source_card_id": "GS-455",
+        "target_card_id": "GS-561",
+        "declaration_owners": [
+          "GS-455",
+          "GS-561"
+        ],
+        "reason": "两题都因对数展开的符号与所需阶数出错；第一动作都是把对数展开到外层尺度放大后仍足够的阶数，再找首个非零项。"
+      },
+      {
+        "decision": "add",
+        "source_card_id": "GS-120",
+        "target_card_id": "GS-457",
+        "declaration_owners": [
+          "GS-120",
+          "GS-457"
+        ],
+        "reason": "两题都是反三角复合函数的零点高阶导数，最稳第一动作都是先求一阶导降阶，再从幂级数系数读出目标高阶导数。"
+      }
+    ],
+    "removed": [
+      {
+        "decision": "remove",
+        "source_card_id": "GS-003",
+        "target_card_id": "GS-440",
+        "declaration_owners": [
+          "GS-003"
+        ],
+        "reason": "只共享变上限积分与洛必达标签；GS-003 先拆无穷差，GS-440 先处理平均型积分并反推参数。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-440",
+        "target_card_id": "GS-689",
+        "declaration_owners": [
+          "GS-689"
+        ],
+        "reason": "平均型变上限积分参数极限与反常尾积分下限求导不是同一对象或第一动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-184",
+        "target_card_id": "GS-445",
+        "declaration_owners": [
+          "GS-184",
+          "GS-445"
+        ],
+        "reason": "定积分端点估值与调和和式按单位区间累加只共享积分不等式大类，不共享求和对象。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-035",
+        "target_card_id": "GS-447",
+        "declaration_owners": [
+          "GS-035",
+          "GS-447"
+        ],
+        "reason": "绝对值尖点左右导数与有界因子乘无穷小的导数定义判定不是同一首动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-447",
+        "target_card_id": "GS-448",
+        "declaration_owners": [
+          "GS-448"
+        ],
+        "reason": "选项逐一写零点差商与分段连接点联立连续可导条件，只共享可导性标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-447",
+        "target_card_id": "GS-456",
+        "declaration_owners": [
+          "GS-456"
+        ],
+        "reason": "绝对值零点可导性与数列差商配导数定义的具体对象、增量和断点不同。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-447",
+        "target_card_id": "GS-461",
+        "declaration_owners": [
+          "GS-461"
+        ],
+        "reason": "一阶可导选项判定与最高可导阶数逐阶比较左右导数不是同一方法链。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-447",
+        "target_card_id": "GS-466",
+        "declaration_owners": [
+          "GS-466"
+        ],
+        "reason": "零点导数定义判定与非零点处绝对值复合函数链式求导只共享绝对值标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-035",
+        "target_card_id": "GS-448",
+        "declaration_owners": [
+          "GS-035",
+          "GS-448"
+        ],
+        "reason": "固定尖点左右导数与含参分段连接点的连续方程、导数方程联立不同。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-109",
+        "target_card_id": "GS-448",
+        "declaration_owners": [
+          "GS-109",
+          "GS-448"
+        ],
+        "reason": "参数方程含绝对值的多层可导性与显式分段函数连接点求参不是同一对象或断点。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-448",
+        "target_card_id": "GS-456",
+        "declaration_owners": [
+          "GS-456"
+        ],
+        "reason": "分段点求参需先确定连接点，导数定义型数列极限需先补基点值；只共享导数标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-448",
+        "target_card_id": "GS-470",
+        "declaration_owners": [
+          "GS-470"
+        ],
+        "reason": "连接点连续可导求参与振荡因子临界指数逐案检查不是同一触发或第一动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-448",
+        "target_card_id": "GS-498",
+        "declaration_owners": [
+          "GS-498"
+        ],
+        "reason": "含参分段连接点求参和不连续分段点的极值定义判断只共享分段函数标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-448",
+        "target_card_id": "GS-574",
+        "declaration_owners": [
+          "GS-574"
+        ],
+        "reason": "分段函数可导求参与分段原函数常数匹配的具体条件和第一动作不同。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-121",
+        "target_card_id": "GS-449",
+        "declaration_owners": [
+          "GS-121",
+          "GS-449"
+        ],
+        "reason": "零点高阶导数由奇函数判零与负半轴一二阶导数符号迁移不是同一所问或断点。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-449",
+        "target_card_id": "GS-572",
+        "declaration_owners": [
+          "GS-572"
+        ],
+        "reason": "函数导数奇偶性与原函数加常数后的奇偶、周期、单调判断只共享奇偶性标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-450",
+        "target_card_id": "GS-457",
+        "declaration_owners": [
+          "GS-457"
+        ],
+        "reason": "Taylor 余项定号后积分放缩与零点高阶导数读系数不是同一第一动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-450",
+        "target_card_id": "GS-508",
+        "declaration_owners": [
+          "GS-508"
+        ],
+        "reason": "二阶余项给切线下界与最低非零四阶项判极值虽都用 Taylor，但目标与断点不同。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-450",
+        "target_card_id": "GS-535",
+        "declaration_owners": [
+          "GS-535"
+        ],
+        "reason": "凸函数切线下界积分与在任意中心写余项后两点相减估导数不是同一方法链。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-450",
+        "target_card_id": "GS-578",
+        "declaration_owners": [
+          "GS-578"
+        ],
+        "reason": "Taylor 余项定号和凹函数定义加换元比较只共享函数不等式结果，不共享首动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-140",
+        "target_card_id": "GS-451",
+        "declaration_owners": [
+          "GS-140",
+          "GS-451"
+        ],
+        "reason": "完整求二阶导分区间验变号与用三阶导非零快速判拐点是不同的首动作与断点。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-451",
+        "target_card_id": "GS-499",
+        "declaration_owners": [
+          "GS-499"
+        ],
+        "reason": "多项式三阶导判拐点与参数曲线二阶导换元判凹凸不共享对象或第一动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-451",
+        "target_card_id": "GS-508",
+        "declaration_owners": [
+          "GS-508"
+        ],
+        "reason": "三阶导充分判拐点与四阶最低非零项判极大值只共享高阶导数标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-142",
+        "target_card_id": "GS-452",
+        "declaration_owners": [
+          "GS-142",
+          "GS-452"
+        ],
+        "reason": "多选项辨析点态与邻域性质和由一点正导数推出右侧函数值比较不是同一所问。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-225",
+        "target_card_id": "GS-452",
+        "declaration_owners": [
+          "GS-225",
+          "GS-452"
+        ],
+        "reason": "Hölder 条件除以增量推出处处导数为零，与一点差商极限保号不共享具体条件或断点。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-452",
+        "target_card_id": "GS-571",
+        "declaration_owners": [
+          "GS-571"
+        ],
+        "reason": "一点导数局部保号与拆区间积分中值定理构造存在性只共享保号性标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-453",
+        "target_card_id": "GS-454",
+        "declaration_owners": [
+          "GS-454"
+        ],
+        "reason": "数列凑导数并隐式求导与有限极限反推 Taylor 系数不是同一第一动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-453",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-458"
+        ],
+        "reason": "两题虽都含导数定义，GS-453 先补 f(0) 并求隐式导数，GS-458 先匹配复合自变量倍率。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-453",
+        "target_card_id": "GS-463",
+        "declaration_owners": [
+          "GS-463"
+        ],
+        "reason": "数列差商凑点导数与函数增量关系除以增量推出微分方程不是同一对象。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-453",
+        "target_card_id": "GS-464",
+        "declaration_owners": [
+          "GS-464"
+        ],
+        "reason": "隐式变上限数列极限与隐函数求导后判极值只共享隐式求导大类。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-453",
+        "target_card_id": "GS-471",
+        "declaration_owners": [
+          "GS-471"
+        ],
+        "reason": "数列凑零点导数与乘法函数方程把任意点差商化到 1 点不是同一首动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-453",
+        "target_card_id": "GS-562",
+        "declaration_owners": [
+          "GS-562"
+        ],
+        "reason": "导数定义型数列极限与 Taylor 中间点局部有界放缩判级数收敛只共享零点信息。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-453",
+        "target_card_id": "GS-585",
+        "declaration_owners": [
+          "GS-585"
+        ],
+        "reason": "隐式变限积分求函数导数与嵌套变限积分洛必达链式求导不是同一方法链。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-025",
+        "target_card_id": "GS-454",
+        "declaration_owners": [
+          "GS-025",
+          "GS-454"
+        ],
+        "reason": "积分定义函数的导数计算与极限反推低阶展开系数只共享导数标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-454",
+        "target_card_id": "GS-455",
+        "declaration_owners": [
+          "GS-455"
+        ],
+        "reason": "未知函数系数反推与已知基本函数展开找首个非零项，题目对象和错误断点不同。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-454",
+        "target_card_id": "GS-457",
+        "declaration_owners": [
+          "GS-457"
+        ],
+        "reason": "有限极限反推未知函数一次展开与反三角函数零点五阶导数读系数不共享首动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-454",
+        "target_card_id": "GS-533",
+        "declaration_owners": [
+          "GS-533"
+        ],
+        "reason": "反推一次系数与幂指函数二层 Taylor 展开只共享展开标签，不共享对象或断点。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-005",
+        "target_card_id": "GS-455",
+        "declaration_owners": [
+          "GS-455"
+        ],
+        "reason": "现有关系只由宽泛的等价无穷小标签支持，缺少相同基本展开对象与首个错步证据。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-025",
+        "target_card_id": "GS-455",
+        "declaration_owners": [
+          "GS-025",
+          "GS-455"
+        ],
+        "reason": "积分函数导数题与指数、对数展开符号题没有同一对象、第一动作或断点。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-455",
+        "target_card_id": "GS-467",
+        "declaration_owners": [
+          "GS-467"
+        ],
+        "reason": "对数 Taylor 展开符号与对数性质化简后链式求导不是同一方法链。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-456",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-458"
+        ],
+        "reason": "两题虽都配导数定义，GS-456 的基点与真实增量直接给出，GS-458 还需由条件反推导数并拆目标差商。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-456",
+        "target_card_id": "GS-463",
+        "declaration_owners": [
+          "GS-463"
+        ],
+        "reason": "数列差商求一点导数与增量关系推出全局微分方程不是同一所问或首动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-456",
+        "target_card_id": "GS-470",
+        "declaration_owners": [
+          "GS-470"
+        ],
+        "reason": "参数方程数列差商与振荡分段函数临界可导阶数只共享导数定义标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-456",
+        "target_card_id": "GS-499",
+        "declaration_owners": [
+          "GS-499"
+        ],
+        "reason": "参数方程求一点导数与参数曲线二阶导、凹凸区间换元不是同一断点。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-456",
+        "target_card_id": "GS-650",
+        "declaration_owners": [
+          "GS-650"
+        ],
+        "reason": "参数方程导数定义型极限与曲率公式中的参数二阶链式求导只共享参数方程标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-457",
+        "target_card_id": "GS-472",
+        "declaration_owners": [
+          "GS-472"
+        ],
+        "reason": "普通解析函数展开读五阶系数与平坦函数在分段点按定义归纳各阶导数不同。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-457",
+        "target_card_id": "GS-526",
+        "declaration_owners": [
+          "GS-526"
+        ],
+        "reason": "直接函数高阶导数展开与反函数恒等式连续求导不是同一对象或第一动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-002",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-002"
+        ],
+        "reason": "现有关系只共享极限与导数标签，缺少相同复合增量对象和同一首个断点。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-384",
+        "target_card_id": "GS-458",
+        "declaration_owners": [
+          "GS-384",
+          "GS-458"
+        ],
+        "reason": "径向函数拉普拉斯方程换元与复合差商匹配导数定义完全不是同一方法链。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-458",
+        "target_card_id": "GS-463",
+        "declaration_owners": [
+          "GS-463"
+        ],
+        "reason": "复合自变量倍率补偿与增量关系除以增量推出微分方程只共享导数定义标签。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-458",
+        "target_card_id": "GS-470",
+        "declaration_owners": [
+          "GS-470"
+        ],
+        "reason": "导数定义型复合极限与振荡分段函数临界指数判定不是同一具体对象。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-458",
+        "target_card_id": "GS-471",
+        "declaration_owners": [
+          "GS-471"
+        ],
+        "reason": "复合增量极限反推一点导数与函数方程把任意点差商化到 1 点不是同一链。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-458",
+        "target_card_id": "GS-530",
+        "declaration_owners": [
+          "GS-458",
+          "GS-530"
+        ],
+        "reason": "周期函数条件求切线与双条件拆差商反求导数只共享导数定义结果，不共享首动作。"
+      },
+      {
+        "decision": "remove",
+        "source_card_id": "GS-458",
+        "target_card_id": "GS-679",
+        "declaration_owners": [
+          "GS-679"
+        ],
+        "reason": "复合差商倍率补偿与幂指极限反推对数导数微分方程不是同一对象或收尾。"
+      }
+    ],
+    "existing_strong_logical_edge_count": 20,
+    "existing_strong_owner_declaration_count": 40,
+    "added_count": 2,
+    "added_owner_count": 4,
+    "combined_strong_logical_edge_count": 22,
+    "combined_owner_declaration_count": 44,
+    "removed_count": 54,
+    "removed_owner_count": 66,
+    "bidirectional_owner_declarations_added": [
+      {
+        "owner_card_id": "GS-444",
+        "other_card_id": "GS-446"
+      },
+      {
+        "owner_card_id": "GS-453",
+        "other_card_id": "GS-456"
+      },
+      {
+        "owner_card_id": "GS-458",
+        "other_card_id": "GS-716"
+      },
+      {
+        "owner_card_id": "GS-455",
+        "other_card_id": "GS-561"
+      },
+      {
+        "owner_card_id": "GS-561",
+        "other_card_id": "GS-455"
+      },
+      {
+        "owner_card_id": "GS-120",
+        "other_card_id": "GS-457"
+      },
+      {
+        "owner_card_id": "GS-457",
+        "other_card_id": "GS-120"
+      }
+    ],
+    "all_final_edges_bidirectional": true,
+    "no_strong_edge_sentinel_card_ids": [
+      "GS-441",
+      "GS-442",
+      "GS-445",
+      "GS-448",
+      "GS-451"
+    ],
+    "aggregate_blocked_card_ids": [
+      "GS-441"
+    ]
+  },
+  "source_writes": [
+    {
+      "kind": "selected_card",
+      "card_id": "GS-439",
+      "path": "错题知识网络/错题卡/GS-439_1706532026.5.10.md",
+      "pre_sha256": "db1182eba85b7eb8acc5139a8dfc08fd773b6655766f70ae2f6efd9d57c021ba",
+      "post_sha256": "a25125cb343254b55171e7edbbec73a09cb94982993845515f8678bb484a1314",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-440",
+      "path": "错题知识网络/错题卡/GS-440_1706582026.5.11.md",
+      "pre_sha256": "ce420983f9030fe7182cde3bd5e9bf77d0c3eb9f7f9b342bd48a97557aec6176",
+      "post_sha256": "96fa25dfcb16fd95830f8119e5e6122f013fb61bc53cff46f708c32a438e533d",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-441",
+      "path": "错题知识网络/错题卡/GS-441_577852026.5.11.md",
+      "pre_sha256": "3c537613357893e4dc2f2fc59fcd1a413d14f2347c5132e0b5c0a7ada721a30d",
+      "post_sha256": "021c3a16f28bb81dfe414f23aa94f9b59466499335f7eb28e6e3653606a105c5",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-442",
+      "path": "错题知识网络/错题卡/GS-442_577972026.5.11.md",
+      "pre_sha256": "b7d50745e75102e18c570925e4ad446ed5d54a24b6a7b5b5866407554b9ce10c",
+      "post_sha256": "732960383b1f1dcf1fb83d37deadddace4164fa6cf8c422c34aaa8ffcb05af49",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-443",
+      "path": "错题知识网络/错题卡/GS-443_578082026.5.11.md",
+      "pre_sha256": "43ef055d925c9036b53bb0b9f6332b057732a7ffc5139cfa44459702dc1ff812",
+      "post_sha256": "dc0433bdf3bf5b3d5130a12a0b4bf81f030dc9981cc51c2f1fed76606bcbe677",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-444",
+      "path": "错题知识网络/错题卡/GS-444_1706842026.5.11.md",
+      "pre_sha256": "f2e54174ad6eb753d44806e55cc570c9762ddd3e4a4a884647f902ef68b5d6c4",
+      "post_sha256": "22e7071fccab4a08df0827e3c94320e0bc5b6ebad26a8c9f7f24174ced483067",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-445",
+      "path": "错题知识网络/错题卡/GS-445_57880调和和式积分估计.md",
+      "pre_sha256": "efbd1bced58d75da5c0da24ad916e9fca1fa4e4d846ec046cd17e0ad71bf1713",
+      "post_sha256": "164cc34f38cf7524d662a2854bc1d0268964b54754541fb57ed5b34107e46b68",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-446",
+      "path": "错题知识网络/错题卡/GS-446_170721递推数列单调有界.md",
+      "pre_sha256": "bb608648e4b2094ba2b4311dc2f35b0aa22d6ed3c5627937214f6e619efc7c1d",
+      "post_sha256": "dd1921fdd26608f1a9046f1122745871db2c25654a9ed4bec7d23b432769ad82",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-447",
+      "path": "错题知识网络/错题卡/GS-447_58000零点可导性判定.md",
+      "pre_sha256": "b17fc8d431ddde06777f8951a6604cf91a68393a206da5667b496fdb75bfb618",
+      "post_sha256": "82a1d6812efbda34201c9f9d530b13c58cdf7099046b22608f16011a9927c06a",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-448",
+      "path": "错题知识网络/错题卡/GS-448_170717分段函数可导参数.md",
+      "pre_sha256": "11615ee2a487e06937fbb125c7b25bc3a22f1e8fa583b320145e425026a04336",
+      "post_sha256": "82a7994550ddd4a2d7513c6f4d6e0b7e7d51d9823096cdcf1bf7cf9e96235ac8",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-449",
+      "path": "错题知识网络/错题卡/GS-449_58062奇函数导数符号.md",
+      "pre_sha256": "aef56efc75138d6145b62b1d58f0560d55a7394f21c1ea89f77db41dbedcf87b",
+      "post_sha256": "08cb001d13262f3f2c1d0f758df0a95b536983053ee49b0ea28921fa62bb8220",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-450",
+      "path": "错题知识网络/错题卡/GS-450_81283泰勒余项积分放缩.md",
+      "pre_sha256": "780c3c304853b2599aeb84a0e2ea6e43ef232dcf682d377cec513e78b7e77d04",
+      "post_sha256": "9697e56176f23c894f3444b1b5591868494323e4474900b17978b0ffc73aa233",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-451",
+      "path": "错题知识网络/错题卡/GS-451_58115拐点三阶导判别.md",
+      "pre_sha256": "0dc214c74c68b3dcfec6afcabe9a3f9426a8ff4cb357831f7ed137a72a9da7ba",
+      "post_sha256": "83c21d9c9036fe6a12c66ed33b5a0b23729a8497756e48b42f60de8bd9f55b25",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-452",
+      "path": "错题知识网络/错题卡/GS-452_57798一点导数正.md",
+      "pre_sha256": "75565672861b051564ea63e2c833848849a4e68c8ecf17efd6a1088789884c12",
+      "post_sha256": "9de183245ced2211fbf7cdf5a74d841add4691b7694c09c6c77bbf1ae6599e8d",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-453",
+      "path": "错题知识网络/错题卡/GS-453_57928数列极限凑导数.md",
+      "pre_sha256": "9f20f2033d5d2af4ca0dfa91a2cc04c870d68d0a768b00f4c3c89702443ee4a9",
+      "post_sha256": "02d7328c91a296e752af1f7fb64b551e3b6f647e9295df93bd2b88eb61cd0c2b",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-454",
+      "path": "错题知识网络/错题卡/GS-454_57976极限反推展开系数.md",
+      "pre_sha256": "38eed9e3809c7879b0594496604e9d878562d123af2ecd0378cc75c0ec80e6a2",
+      "post_sha256": "064cce8c428757f43911a368f367db990008eb22edfb88af31b5390192a390b8",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-455",
+      "path": "错题知识网络/错题卡/GS-455_58099对数展开符号.md",
+      "pre_sha256": "3e0417c9fecaf89f8ff51b8bc6fde566e50c7367b86b010bc34a5c2ea29a52f0",
+      "post_sha256": "c0d3089b40fe7f2e7624db9e2f62151c2b23e1987ea0f6c1736897ca03dc7268",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-456",
+      "path": "错题知识网络/错题卡/GS-456_57764导数定义参数方程.md",
+      "pre_sha256": "7d5ba9a993c95bdc02b286bbd5cca19ff850ded8484b0da3455a71b609558f11",
+      "post_sha256": "30cb45224eb4d4c9f22cf4c11a895bb0389d7b9280a586c0c0c0ddc644f6fd3b",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-457",
+      "path": "错题知识网络/错题卡/GS-457_170662高阶导数麦克劳林.md",
+      "pre_sha256": "d4b03e78865d92248b1713d1786f82af1b9785fb66ae466792146d2f0ca55c82",
+      "post_sha256": "36214113de063f83d3f150d4b4ce51bf66af317499451524e742f94faa5ff76f",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_card",
+      "card_id": "GS-458",
+      "path": "错题知识网络/错题卡/GS-458_170703导数定义拆差商.md",
+      "pre_sha256": "3a46bf3c17ea35a929086e315483f2a3031abfd75d5158a592b9e1a901ce6bbb",
+      "post_sha256": "c0275216e8266ff1b84587fb00faec0eecae2097432df1fd26ffb4715f308c39",
+      "reason": "batch29_content_evidence_identity_and_relation_review"
+    },
+    {
+      "kind": "selected_visual_detail",
+      "card_id": "GS-440",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-440_170658-2026.5.11.md",
+      "pre_sha256": "5c238a8c2a890cc8d48cb153f377a69706390e2ae05692e7fdc17500197d49cf",
+      "post_sha256": "7bbe79dbca9a5cfefe678f842d238f42ef0a7bdd2d3daa8131d02842d20bdb7a",
+      "reason": "batch29_solution_or_evidence_boundary_repair"
+    },
+    {
+      "kind": "selected_visual_detail",
+      "card_id": "GS-441",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-441_57785-2026.5.11.md",
+      "pre_sha256": "6dbc553f9472b6371e6bbd5d14a244f167a14b32a3792a4b24f7f098f5043782",
+      "post_sha256": "f5828402e18d586adf7cb4698ad1d7b85f9e958ed3f70235451bb0117949b79b",
+      "reason": "batch29_solution_or_evidence_boundary_repair"
+    },
+    {
+      "kind": "selected_visual_detail",
+      "card_id": "GS-442",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-442_57797-2026.5.11.md",
+      "pre_sha256": "ccfa52691f3aa05488eed704ff0b0fdd75ff56d9128e918fe144b022c5ff958d",
+      "post_sha256": "c6ae9d7b60d9eac3a3eebcd8580378349e2401372bead1d2664bf0df38415ced",
+      "reason": "batch29_solution_or_evidence_boundary_repair"
+    },
+    {
+      "kind": "selected_visual_detail",
+      "card_id": "GS-445",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-445_57880-2026.5.13.md",
+      "pre_sha256": "f25ecb068a799ff2ee50bda6e7432ce10dadee8f5c81c7aa12cf649559275f68",
+      "post_sha256": "13fbd60b4c79baacc4e99ebe6e47f22d8ddac1c5a438ea76c6e7933f40e9fc80",
+      "reason": "batch29_solution_or_evidence_boundary_repair"
+    },
+    {
+      "kind": "selected_visual_detail",
+      "card_id": "GS-457",
+      "path": "错题知识网络/可视化错题详情/高等数学/GS-457_170662-2026.5.17.md",
+      "pre_sha256": "1af3b39ba221c37ab350d9aec758fa7c1606c34ae26dcf507c9adc13917f8c7e",
+      "post_sha256": "c06ee8739d5fde9d02b44255c7c129dd8b066bdbb040a961663f889be2fe33ef",
+      "reason": "batch29_solution_or_evidence_boundary_repair"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-002",
+      "path": "错题知识网络/错题卡/GS-002_22026.3.11T2.md",
+      "pre_sha256": "8fe9419b81e23b5dea0d04c0213a9a71a38c9fd1fc9a2aaa1fe6ea49498c78d5",
+      "post_sha256": "ec2c9dbb96082132f6c918608d0e162bb8400210f5cbc1cec5cca67efdba4d90",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-003",
+      "path": "错题知识网络/错题卡/GS-003_22026.3.11T1-2.md",
+      "pre_sha256": "72c3c7a218b5344e1e79e9c06837012c14a63e6a6fcf1feb5de4a93d9a2d3e87",
+      "post_sha256": "6f2639e32b2f154180a058685f2af905b4d577d9e506973e20318000ae75b7e5",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-023",
+      "path": "错题知识网络/错题卡/GS-023_2018年第21题788612026.4.18.md",
+      "pre_sha256": "5aedca336dcf74839986455d5b30d9359aea7e42da3a8ff22718deadbc1beb81",
+      "post_sha256": "1c44d7928a45a5c6f3880f0b3422ade588c7e38df96aba25036b3bacdf2c955b",
+      "reason": "batch29_duplicate_identity_metadata_and_peer_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-025",
+      "path": "错题知识网络/错题卡/GS-025_2020年第15题2026.4.1.md",
+      "pre_sha256": "3648541cdf1445c74bf2a23703e3fc518315bc165965d19f095ffa878f285736",
+      "post_sha256": "799d44871a8975c08bc74320ebb9b60b37c13b466cb8022ed28dd722a77c3620",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-035",
+      "path": "错题知识网络/错题卡/GS-035_103059根号平方可导性.md",
+      "pre_sha256": "101a46e54aaaa023b8402c13a5f5f4ad120ed52bef90f1bf7c872fe26351461c",
+      "post_sha256": "982a99f9af1f2bda71efe5a0fa2352a8f6e3dc41c2fc08a555b667188d17bad9",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-068",
+      "path": "错题知识网络/错题卡/GS-068_2018年第21题788612026.4.18-2.md",
+      "pre_sha256": "6c140e766f40ffc0bc9bd6df28a0fcdce30b6d7f1685a7f8134a67cc2f608e7f",
+      "post_sha256": "fd2bd443e41c679a7eeeb98a36ef732f469c235adb0f87ff2af8828e72bdf769",
+      "reason": "batch29_duplicate_identity_metadata_and_peer_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-109",
+      "path": "错题知识网络/错题卡/GS-109_2023年真题第五题.md",
+      "pre_sha256": "81cccbb39aea31b668cf7acbcab7d594ec50a7099c1bef45f2ae13a1b7f6a2ee",
+      "post_sha256": "9ce5da74d4fa64b691b7a757f14a1bb52fe018bdbea4e0f4bb8b9bdc7499ae4c",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-120",
+      "path": "错题知识网络/错题卡/GS-120_105760反三角高阶导.md",
+      "pre_sha256": "26e7cf5cde5fb47cb4c6c9b6d422719d5ca2cecdb0b1b627b3bfb29929aa270e",
+      "post_sha256": "6edc7b98d75ec17d4b7d7ef378ea8b5545b32e51aa8c1f78ff8d281921c6e1f0",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-121",
+      "path": "错题知识网络/错题卡/GS-121_强化例题4.6.md",
+      "pre_sha256": "829220973dbf465ea2ea22d4179a425a606d23b45ad8862821051a993389c2ec",
+      "post_sha256": "5d8a5bd78c88e61c413efdb04d0a8f9b3cd49703d8ebc6a7d96e387b681bacba",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-140",
+      "path": "错题知识网络/错题卡/GS-140_1000题B组5.26.md",
+      "pre_sha256": "d29c5f857736f883fbac7cb7e318bc01ce177ce4a448fc5503d7c1ba3c7a1e2d",
+      "post_sha256": "da87ae715066d7720983c91f114fb02e6513627caaf9ba8899f3326c57c4e381",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-142",
+      "path": "错题知识网络/错题卡/GS-142_强化例题5.4（2022年数2第三题）.md",
+      "pre_sha256": "3507fe65b6176c0e16edd6eefeae94d90ed8bf711ac77895f4b97624293b3858",
+      "post_sha256": "cf71159179eb2c179ec5b5d20cf3e69857d65eae197f9cf6252076bf7f622803",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-184",
+      "path": "错题知识网络/错题卡/GS-184_1000题A组6.15.md",
+      "pre_sha256": "5918ba1f8672d70e3bb837267089950828ced6ed06cf5ad33f4252ce94da3153",
+      "post_sha256": "3dfa86e61e37367c297b6dbff00b393713ee16f3a0bff90b639cbaf0f9d280c6",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-225",
+      "path": "错题知识网络/错题卡/GS-225_强化例题6.10.md",
+      "pre_sha256": "db0fd42930e753c32962ed1ec5a13204d8e99ee492ee222deb454d2e3f989442",
+      "post_sha256": "5b109f0a7bfed1c4125f091fc0933bfcbbb812b8e987df9562c21488479e3e8e",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-384",
+      "path": "错题知识网络/错题卡/GS-384_强化例题13.23.md",
+      "pre_sha256": "05f258b7bc8fc891811dcf88df1e0a11312ed91bfc21d44f2b5eed3540dae250",
+      "post_sha256": "0a841195171d57525dbc2c719779e14c495df5781e1dd761a4d73a3b602fdeac",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-461",
+      "path": "错题知识网络/错题卡/GS-461_57830绝对值最高可导阶数.md",
+      "pre_sha256": "99733fb2cd639a54b9b9a9b4add6944543d7baa5dd3f727348f5da9b74e6aa59",
+      "post_sha256": "8bebe9931b8e0c95c368aa8600ae77a94898f17a6ffb7f15cdf48e646f28a53b",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-463",
+      "path": "错题知识网络/错题卡/GS-463_170685增量关系导数定义微分方程.md",
+      "pre_sha256": "2a664014650a8215624a00f37dea52f0b3564c3634a1258528bf0bfa38c7d6c9",
+      "post_sha256": "f0c935aa4b480763b8c35cbb7c968c10749eaa57618ab389346f25e8c2d51c3a",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-464",
+      "path": "错题知识网络/错题卡/GS-464_170693隐函数求导极值.md",
+      "pre_sha256": "b03550bf6ec81bd7fb26dfdd96717b696a24499e73ad6534ce22decfaa51d77f",
+      "post_sha256": "b0567677e3e230e883badea2582c871018f682c67670d34eb3992984d1233f37",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-466",
+      "path": "错题知识网络/错题卡/GS-466_171499绝对值指数函数求导.md",
+      "pre_sha256": "9434dddbd5bc906a5adeeb4d199d4a3f97ce962452f0b1e558773bf09d3005db",
+      "post_sha256": "cb743c3efa3c3fa21ca9e87f76cd4073e1091da3d4f7dfd229648f09a310ef58",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-467",
+      "path": "错题知识网络/错题卡/GS-467_171502对数化简复合求导.md",
+      "pre_sha256": "05bcbe25abb4cd1433df3cec4d04d139b042941e29ba2a1fff1486ffe93bbd30",
+      "post_sha256": "6e0f792c8512cb74978386f9262444c55d1ffe0b117af3254d7d70c214f4f47c",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-470",
+      "path": "错题知识网络/错题卡/GS-470_58074振荡因子可导性.md",
+      "pre_sha256": "3c876717e285d25b27c8b6c869276d90a75beb028b99bc842b10617ba6e29985",
+      "post_sha256": "e60c91e2b467f21e23f559092de5aab6aeef0a55d53bc39b236dd5d35358bf62",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-471",
+      "path": "错题知识网络/错题卡/GS-471_58100乘法方程凑导数.md",
+      "pre_sha256": "22d8f92a108329fd8e3e0bcd21da82a57599c420b052e78c768f29b65d0eee8f",
+      "post_sha256": "1aad0cee6ba2125d6e80ba07369a11570bd82e2d2ada3ab03b36de30ec7e2be5",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-472",
+      "path": "错题知识网络/错题卡/GS-472_58124指数平坦函数高阶导.md",
+      "pre_sha256": "1666d437ee97324c7dd1751a3fa77f6aa48c0d9ea1dd2e38c9278a71a85c0eb7",
+      "post_sha256": "597a23315ec61bf49b988ad3f9539f0c094d5b4a07b8de25d5869bc5fc555f8a",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-498",
+      "path": "错题知识网络/错题卡/GS-498_57903分段点极值单调.md",
+      "pre_sha256": "801c9ae593abc727cc2cc934eb57607b92539c92467599d3b16ea8a07e792491",
+      "post_sha256": "549ca244c628c38d92b80e87b5c4260cdfb49cda0ca5314523bd5757f63f7e76",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-499",
+      "path": "错题知识网络/错题卡/GS-499_57905参数二阶导凹凸.md",
+      "pre_sha256": "36c2655c331f87963d34f8fba58c51567634e69667cca39f18800aa8a50b154d",
+      "post_sha256": "808ab7cc4a62cc2bb81bc5767d55c8836ee66d08161e14126b43a96c61dcb3d2",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-508",
+      "path": "错题知识网络/错题卡/GS-508_58023四阶导泰勒判极大.md",
+      "pre_sha256": "daa1bd89f39ba0eefef21cbb4ff0d9611eff9a13386c7eeab7e6c1db3a52489b",
+      "post_sha256": "bf0f31892ba727c58374e0ddbef5013bc64058afede50fb3f2865ffc61b32b99",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-526",
+      "path": "错题知识网络/错题卡/GS-526_58063反函数高阶导数.md",
+      "pre_sha256": "e412c4fa782a137965dd1764c2f74bbd8dc74913977eb1f6aef3b2497e48c889",
+      "post_sha256": "85d87da9a3b87ec0f17a7b672397ec465a14161bfc99a9554c51d94f6f3b5ce4",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-530",
+      "path": "错题知识网络/错题卡/GS-530_57930周期函数导数定义切线.md",
+      "pre_sha256": "afc6a8bb8b4e51de020fda1cfa45b0e4f4a67ccd9fe775f82dcf95c8e3dd4ab3",
+      "post_sha256": "0b2ade534557b5976c8fb4551aa97fe06955e6f644c2bcf4b9e2657364dce198",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-533",
+      "path": "错题知识网络/错题卡/GS-533_62180幂指泰勒展开.md",
+      "pre_sha256": "5f46a9b4f59593031f8681d20a5d460d9699695a8e4fd726623a79ea094d9fb8",
+      "post_sha256": "a5a80f8178adab792209e91f1fe8d94f7f20a295ab5b0a49894b4c1999a33680",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-535",
+      "path": "错题知识网络/错题卡/GS-535_57779泰勒余项放缩.md",
+      "pre_sha256": "a07f138940f757e40a689fe176591f2151e57d78b63b03dba8c97f7f0be4e357",
+      "post_sha256": "10f8d0d586e20186a04805a2465c207b810f074337b32375830e7f77e8476089",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-561",
+      "path": "错题知识网络/错题卡/GS-561_138659对数展开阶数判敛.md",
+      "pre_sha256": "fe179edd87918281e19a1849a36a574c9258e323e72a3f1bf893ad853a50f676",
+      "post_sha256": "3b0961e5f04f23ec439dfd31ac5a9357956940292da4d1ef10a2bf4157051a9f",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-562",
+      "path": "错题知识网络/错题卡/GS-562_138670泰勒中间点放缩判敛.md",
+      "pre_sha256": "ebb6e272832e8f4aa2d5f1dea9f801b4f75bfa6da2a144b58a63d41685eff9c9",
+      "post_sha256": "e0d428cacba102bdb9ec02cf38a56361669014324609ab27aeab87efeb819f00",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-571",
+      "path": "错题知识网络/错题卡/GS-571_193321拆区间积分中值保号.md",
+      "pre_sha256": "3fac61a0f5498f1531df4998d20e93ec367f44bc93827a9ae48018734ca00f4b",
+      "post_sha256": "60ce19050bb2f7c1764bf192201412f62a76a234d8207bba083a8a262885919c",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-572",
+      "path": "错题知识网络/错题卡/GS-572_57845原函数奇偶周期单调判断.md",
+      "pre_sha256": "d7a166bbd95ffbcb2683fea15c1e5f2de34511e11f7ddac37c381925b5687173",
+      "post_sha256": "fb0f04b70304decae8653d21ac0137481d45e521206d5728906cb204c7be6073",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-574",
+      "path": "错题知识网络/错题卡/GS-574_112855分段函数原函数常数匹配.md",
+      "pre_sha256": "a4662d415a7f652e0bf3d48ef0fee73fe1bb7deb347c39d670545b63d41cd684",
+      "post_sha256": "a219115d0948d9f2e5003af9cc1196204b309ea36438be9a5560c8dce2b970bf",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-578",
+      "path": "错题知识网络/错题卡/GS-578_193277凹函数定义定积分换元比较.md",
+      "pre_sha256": "4e5dbfa520f078bbaaded2b10131a1988c440a75861bfa1e0856d3cea7af6f13",
+      "post_sha256": "6582836f9529d5f332a253efa2dd1a02eb8dec24ce21587f8ef078eee55c43c9",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-585",
+      "path": "错题知识网络/错题卡/GS-585_122590嵌套变限积分洛必达漏链式.md",
+      "pre_sha256": "5a306e7f191dac299fc2ab4fe77ebe2bb54f9438981eab1777e958505909e2ee",
+      "post_sha256": "7de39971bf4e5cd260ffe086989c14c4cd81afcdb9eb17ea8e28796e96c59286",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-650",
+      "path": "错题知识网络/错题卡/GS-650_57838参数曲线曲率链式求导.md",
+      "pre_sha256": "bb3f5282ccc2f5a6b7cbab89c5c85d68c85fa829bc11f64b9364866fd0aa14a4",
+      "post_sha256": "ee26de20397ff64f1486d30691e7437af4511271ccbb5f8fb0f203cc0aadbe31",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-679",
+      "path": "错题知识网络/错题卡/GS-679_193323对数导数微分方程.md",
+      "pre_sha256": "3ce5dfb1bfc7be79ede3d85b30da4eadea694a24f49b2c539dd183960450465f",
+      "post_sha256": "68461939d17eaae7bd37594047cdaea11c2d7deb8f9823c915017f5f16237e50",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "external_card",
+      "card_id": "GS-689",
+      "path": "错题知识网络/错题卡/GS-689_193306反常尾积分洛必达.md",
+      "pre_sha256": "01c0216133246a7655b9cf340359f1c143ca9a4c6b80c3225fbecccc175bd797",
+      "post_sha256": "f0480f8e0c93cf8c8aa5693ff6a0d4f2d2f23c3cf1fca0d3701abf1eb3cbc49b",
+      "reason": "batch29_bidirectional_relation_owner_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-439",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-439.md",
+      "pre_sha256": "ffd632f0b2f050c6fb3b710faee3583bc619f6bb517f42138cdf3d1ec43aa11e",
+      "post_sha256": "50e60bb3809d37ae1272598b02d5040c3b400c4157230bc373a1f4ef291602ff",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-440",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-440.md",
+      "pre_sha256": "8d4260379916db326be8dc73e8602c4dde238a2df83b958e62c727f4bd602ab2",
+      "post_sha256": "4d378aed2d3bb30a359b22650f6601baec11b4ff71fcce4fadb9c71499b94c86",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-441",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-441.md",
+      "pre_sha256": "df2aba158a73a83ccd801e9f53ceae0d288907d8865cd15014bbaf7b12bcbaf2",
+      "post_sha256": "4674d214af39f40a2b1c7dcfdcd4177cafe45da927af54ce4d6652eacb96bd4a",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-442",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-442.md",
+      "pre_sha256": "f07785c173d163cd0b11298d7158164b794842d01a69bddbf8673043c5ab105c",
+      "post_sha256": "7ab7744522e56fb00eaee7089bbfc72df126e458542d6f6ae39095554e409a79",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-443",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-443.md",
+      "pre_sha256": "dd649c4a6f2a3b8fdcaa5098b7dc25d0bf289c5fd9d736fc24698b4a88ba8b57",
+      "post_sha256": "4bcb838d81f3325531dfdac0b73cc1bb4114b64d38d39b21e8d28b1652ba5c11",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-444",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-444.md",
+      "pre_sha256": "41844aca0a1403212ad422088727b11d398c24da1887c36ca5962058f66672fb",
+      "post_sha256": "6a3cd6e93f169f62ce890d3a21577677e479652938655530b61fa996d6646f00",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-445",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-445.md",
+      "pre_sha256": "e87b5128720530058204a2c5b155b8cdd7c6926dc2a6499a7efb6b4f60a15fe3",
+      "post_sha256": "ec31a7a36c852a3dcc93f8a5858976e27b2c867db83048450ffa1d3376f07c53",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-446",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-446.md",
+      "pre_sha256": "9b4d342ebf840787ac58d9c0e18f0f2fc099d375215809c4dd17079aef40acc6",
+      "post_sha256": "2441c2e10c96a2b96e7935c16ebbad2216c36e4195c0e6dbe0296a1d902c460e",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-447",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-447.md",
+      "pre_sha256": "94c2e6c05cb9233855e343033bb384f868b625556d22025ab94f8acf162dc745",
+      "post_sha256": "e7dca6fe84cc0ac79116515430e09a0d608f52fe4dbda07323b54ce262100ec0",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-448",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-448.md",
+      "pre_sha256": "d6001860061da7a62109efb82b0457baf7b445abe4e38401f7d3ebad809ecb85",
+      "post_sha256": "f34bee3252a4384d5f2cf9c48705669508baf81517a642647fe1786cea87edbb",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-449",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-449.md",
+      "pre_sha256": "c94debc1c8a09518865b7d0721950735df966172bac65536c05479e2764f9f79",
+      "post_sha256": "261b7f9f6a7303194065f7e73500107b1607484f70fa1322adbb911c93919bc5",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-450",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-450.md",
+      "pre_sha256": "cac2c00bb131b744c569668b980546ba8b3ab7bb9da396be5b08ed7184b441af",
+      "post_sha256": "b662c2d46e8f3e3fc6c6afabb827db9e2515ff515c68619493b7616f46c9ff3c",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-451",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-451.md",
+      "pre_sha256": "be3701a493f3e47b009a02c65e24a2fb63902847a7b69f7b8adedea67dcd3361",
+      "post_sha256": "225be5dd30f8227e84930f41c86135e0a5ddb2781b395dd4df0c87914bf57329",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-452",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-452.md",
+      "pre_sha256": "6d9380af63db264c6059d7a0f5b885a162acf9e09e599d59b19be1dc42267980",
+      "post_sha256": "1188f28c6f1a15e31d54189b69882868e86ed6038fa8058310541a4f30afb774",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-453",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-453.md",
+      "pre_sha256": "bf5a5e3587d34fc6ba67bb58b1b69d89212c2f921c56158d33fca336185de176",
+      "post_sha256": "e9adafafd1e317a0647182747463a099c92cfc11bf2d21f14c31198c73b3b612",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-454",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-454.md",
+      "pre_sha256": "5d5dc9a0ce824117457380ee5e06c24c7e324f08c3a2be465f269d53bd9ee5b4",
+      "post_sha256": "29bf287babb68b3f95a1531ae9378876b2cbd1cccabb0bf2728fa34a7656b167",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-455",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-455.md",
+      "pre_sha256": "a3c8d36cb0b51fb699a537f7bc04cb395fe879c9445c08cf0f677321d742f068",
+      "post_sha256": "4a8886620d855c8d4bee8a95558e481a4bb1a8201bfa304010cfda10c045863d",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-456",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-456.md",
+      "pre_sha256": "56d5e26e7b53f0b04b164ab95da4ac686f496056a3dd5547e39c8b18fa3d6664",
+      "post_sha256": "5d5320d6185f6036d6d815b58823ee061e43bcdd7ac5df02e6aaa8a7b428704b",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-457",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-457.md",
+      "pre_sha256": "ddec72a93103174f363607b9a4ed7d80211a1d578ccea2e7dfbe248e005a83ee",
+      "post_sha256": "3fd1c755eb2a96da4934ea75e3f12ae22e9a05d78d8f2e1120eab67f1d998c6b",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "selected_source_summary",
+      "card_id": "GS-458",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-458.md",
+      "pre_sha256": "beb6f4d284e050c32f034f44190f169f92dc19d9b93b538ad0abc6a208b21d42",
+      "post_sha256": "7b27942de04a8e1670bf63934e1179870532c64bde7c22a39aa1d18e415c3dff",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-002",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-002.md",
+      "pre_sha256": "07d7c1f5ca75ac6ab10c5c1267ba165f670f301ead371a0e2d4c57b2832ce434",
+      "post_sha256": "a7c3d6f94e1d832a3d18eb893f5a9065a5250111070a0093f531986427541d7d",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-003",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-003.md",
+      "pre_sha256": "f73e3db5fb106c287505cd698d9d162d66bda500df1854eba13bca6a640906c1",
+      "post_sha256": "ec32d81ee204f678288cd9de98c5b2a6c00b6a92f726372c60a29b2c82bd8cf9",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-023",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-023.md",
+      "pre_sha256": "c6b9cea4a52ebc0cd6084156576e9a3370cab7207fc852a7ee557f22998f5488",
+      "post_sha256": "85efd589dbd686768980f2dcaab8de444c4ae3345d118b9716ff168807d78800",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-025",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-025.md",
+      "pre_sha256": "c035837ab6e428244a96754ca8fa598c782029b557bd88af7b574a624d246db2",
+      "post_sha256": "9ea890403d73153e73bfa079213c23ba3911b8e56d9c2f83dfc50bd9bc48ac8e",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-035",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-035.md",
+      "pre_sha256": "539cdca879deb9b0b28eaebf5e15285d72fd5c006239eb19e9741f3b2df12800",
+      "post_sha256": "e489e2cde2dcd368f0ef6099ad38cafd74f8f8f06b0381fcad6a11cabe6d6276",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-068",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-068.md",
+      "pre_sha256": "53fc9e58a6922c79297612ea1faa99e2adb8f0211bffd9be23b1e1f1344d8677",
+      "post_sha256": "8365fe258e97728b50785b33f7f9c72f71c232596215c42aec1971340aaa2221",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-109",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-109.md",
+      "pre_sha256": "a4010d46d08f0ecb7f4d452b28cb1a88d5429dbedc50b0167d99c88020c6f54c",
+      "post_sha256": "15864657dc8492d822c78d6fc8dbde96cbf669cb17a094511a6d2f15a95e2052",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-120",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-120.md",
+      "pre_sha256": "1a39ed843a123b838f1861e4d5396ffbde20d6955fcae9a148c40dee6f66503b",
+      "post_sha256": "2ec8a1a32575961ab271807191e0f0f5d277cbc8f1dc2bdce8716032a667887f",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-121",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-121.md",
+      "pre_sha256": "52b98f3bf4b9319314a09f03134bbb57e5a383d78a1a9d0ab7446d8d9975f499",
+      "post_sha256": "fd011be98dbcdfa3c925bb823eeca134e8cfa2c1456c8ae410342b4f0a9753d7",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-140",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-140.md",
+      "pre_sha256": "1f2becd6f413154d3e1f1359ec3415d178cd834f677925e0d48fc1c5cbcf1ba8",
+      "post_sha256": "f094ac50d5a37401c2e5492a3f9c91314949dedb4aa280aac47f3a19373a6553",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-142",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-142.md",
+      "pre_sha256": "dbfde52c1b8c91a2d3aa22167c16e8acaf5c1a819ebe15c33039a4d13847029d",
+      "post_sha256": "81a7dd44421792b298f03c13f9c6f167d0f010874fc96586115602936c2096b4",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-184",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-184.md",
+      "pre_sha256": "2eda0598c9b02f36b776f254b190a09bc73ee3da57ce71e0d53c9101bcd49bdd",
+      "post_sha256": "8c097e1a39f61694d3a9227089f3478648df3e508cb4bd6b875d27d2e53a6cb5",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-225",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-225.md",
+      "pre_sha256": "d2efc57aae19d0c7cfa9096794ea0fa28588aa5aa7d79ee928853d6c31002c60",
+      "post_sha256": "e32749edc9a033eabc856e12ae0c09a52c89a5eefa9ad72ccb9af0f5704bfac5",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-384",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-384.md",
+      "pre_sha256": "7e7b9c1839e88101d09b44448b55c9c3de27a36bffa747e46cd1bb9774e23b47",
+      "post_sha256": "0d1ac7d78d9dd8b2f9c18c5edbc764347527a3223bebc6ebe8385f18e75c74b3",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-461",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-461.md",
+      "pre_sha256": "1c64a0e63d43fc895db2b64c017da19891a811bbac367330627281d02e147dc7",
+      "post_sha256": "089baa719f345bd6173860db89bd99e698212800f3a6821dd185c715063ef8c2",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-463",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-463.md",
+      "pre_sha256": "4c0660c9547a4a97d2b52dc4e9e5da619b9b04d766f6a3a760bd19e3b918a085",
+      "post_sha256": "ad0cc62a1400b68d90ab9ab2fb51de02c4a491f28feb934502290ba90be22105",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-464",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-464.md",
+      "pre_sha256": "f421d3ace776c910e39d30156e59424414df9d9efc9f1332f96bb45f207d6034",
+      "post_sha256": "cbc21e4859dc8c581e534e6b9582cdc225debb0e50df1029dbac2c9a505858a8",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-466",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-466.md",
+      "pre_sha256": "824a345ae1fbea416e9e53d969d01fb92055bc6ba0fe3c2cc7ea7de709cec41d",
+      "post_sha256": "b9c6d63ae08ad78bf22c81f4d50e7efd88943bf3276ce78bb8e3c331b0573fee",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-467",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-467.md",
+      "pre_sha256": "1fec4894c9c17ce8d2d6f4dc5f1cfb715206f354b329ad3d59f571489f0482ab",
+      "post_sha256": "23ad166e5f73688667696e99925c087c3fb6206d5a334567992f555007b10d1a",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-470",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-470.md",
+      "pre_sha256": "530f1362898e8fcc26022ece5b3bc157e3fba12ce4771d091f674119238ae476",
+      "post_sha256": "c7e7754868fe5ae1fcd3e471ed5e8129b8a19aaa452658892f7a98b3d76f8a13",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-471",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-471.md",
+      "pre_sha256": "6a3ae7a1d3984f2bdeb6c08cfca2424bac1626a92c8e908afff0d9a84e1baeb4",
+      "post_sha256": "0bce108d096754d023c2019cb38a9ee2f3df205e78cc6e234f4c11033690afab",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-472",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-472.md",
+      "pre_sha256": "dd92b25a114246ec1edbfe4fe618113b75ee08fd2fa0b92ffcd51aedf138bd1d",
+      "post_sha256": "10e7fc45a0f07f526f0bb022ca5a278c7e86a52b60e0292bfcfe524a831c9e89",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-498",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-498.md",
+      "pre_sha256": "74abcfaaa690568eeebbcb8f8de44965aa025b74c198960815b63701a978734e",
+      "post_sha256": "08237c2888c2b51a81e20aeb472949a079d67b563f5c494023c0e367579fd00f",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-499",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-499.md",
+      "pre_sha256": "d6ea94d2fcef94585f81e2f8be13a0cc07b4f41b1287b0afcfa057502703677c",
+      "post_sha256": "fe3e16a8a84b9a64a47f777337d30aedbfcc66cdb5ee1ff6b8c1df6d6ff34dcb",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-508",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-508.md",
+      "pre_sha256": "36eae00bac75913fb9ef46013305f5336077254b22baca6a62fbd7b5172379e6",
+      "post_sha256": "88c0c7f52ed07fa879d961544624e01d227b51eaacd493f042004b42aa4b224a",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-526",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-526.md",
+      "pre_sha256": "61eb21022cff9c8faf81fb0e1f5668ce3efbe545e94f3ee4f8c3f47df0cfa5b2",
+      "post_sha256": "1538d81b077382390ae79dfde70690b61416520759d3f4891764c31d292f6e9f",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-530",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-530.md",
+      "pre_sha256": "22ff59b1220dfd7c3d2de7d3e9c88d68f571225255b1b52ad212eb9efdf49a70",
+      "post_sha256": "285db9cd1db4cb9ede886b0376026e98b7d885bd1fa6c44377d36464bc0f91e7",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-533",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-533.md",
+      "pre_sha256": "a8a9b56a1b73f3674f815fb7464b06e71622f4ddfe5de1d75b2bb4b33c7fdeb9",
+      "post_sha256": "16a2b2750536c5755bde327de0c53831f44cd38a897838b65c08dbd6f421fff9",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-535",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-535.md",
+      "pre_sha256": "6523b09eea137a377a436de2dc937f060061bd0b9c4c62cab344ad06ab038c92",
+      "post_sha256": "2933eea37a222e1e2a3d53736070e810457b41c69a802da93fc389d6d8dc72c5",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-561",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-561.md",
+      "pre_sha256": "0498760026d55067d5b2c1e2d288dd4f2b0d8d6e65c38949dc36299f7063ff4d",
+      "post_sha256": "df07fd119bc775feda15af751560e4a3acc2a490e9c9986e18bf7278bd349da3",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-562",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-562.md",
+      "pre_sha256": "32b60edc237860ebbe8dc52810874b1e1a7676131b3128c88e1d5008f6826209",
+      "post_sha256": "d339e877a0aee130d11f903e5aaf8b61911b71f5b9851f657aaba8779952397e",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-571",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-571.md",
+      "pre_sha256": "3442b660ad5ca6a33fb355992fb83d1c57f64196adba916931511723f00e6552",
+      "post_sha256": "6af34a58596d77fd569c69674d2633a4ed0ede66890a95d0bfc19b409b9a28ad",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-572",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-572.md",
+      "pre_sha256": "6d5b3bc639b10b46d8ba2e2ee8377881ee20e8b808cdcecbebcddefb793de623",
+      "post_sha256": "05ec3cd8acecf8c1f80f79ac5495dff8c2d9b1c55627150b2999f955084979dd",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-574",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-574.md",
+      "pre_sha256": "56868b9e39de5b314001342edc517ae5b565823b6e480165d380200350fb79d5",
+      "post_sha256": "5bd82813d9e45e8f58b4347b72a69caefa681727036deb6a8f0ac11520afdac2",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-578",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-578.md",
+      "pre_sha256": "59de6a5bad295eecc568d55e8dfbcd4df73f1b7b3952d43ae0684c73086a4653",
+      "post_sha256": "29848598507ebcdb858b00d1aff4d5557d14a7acb631a78808fa272a8ebd48eb",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-585",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-585.md",
+      "pre_sha256": "fcea1de0c79df014e8c2452f9d60bc597438697517d83d88606dbd60b89f7b4d",
+      "post_sha256": "f5728ba83523956be84be8a21cb32140a3247698215cecf070aaa702071db550",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-650",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-650.md",
+      "pre_sha256": "aa7a7d4bd9bae02a78db2e647743954614b92d5bb20307d2f2590c04a04d5e00",
+      "post_sha256": "92ffd78fc678d1db772563d43dcc92e320ef71dcd516f8bb789afa59575a5cf2",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-679",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-679.md",
+      "pre_sha256": "875634b9c967789ac819710aeb9bc60d67a0cd26ad8c561a711f58ed06009ac7",
+      "post_sha256": "f7a4a198355cd71a36cc1fcb719fd9f1883e1863c15610d8b3b7ff222dabb765",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    },
+    {
+      "kind": "external_source_summary",
+      "card_id": "GS-689",
+      "path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-689.md",
+      "pre_sha256": "f22f043db85334c250a670243ebc7e7d2999d8e69409c2bc31c3405f5787679d",
+      "post_sha256": "748fcb062e6b283aed49a09ddb70773299016347046901361762883b85e16028",
+      "reason": "batch29_formal_visual_evidence_and_relation_projection_sync"
+    }
+  ],
+  "content_repairs": [
+    {
+      "card_id": "GS-439",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-440",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-441",
+      "status": "duplicate_identity_hold_and_content_repaired"
+    },
+    {
+      "card_id": "GS-442",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-443",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-444",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-445",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-446",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-447",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-448",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-449",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-450",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-451",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-452",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-453",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-454",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-455",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-456",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-457",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-458",
+      "status": "content_evidence_and_relation_reviewed"
+    },
+    {
+      "card_id": "GS-002",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-003",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-023",
+      "status": "external_duplicate_identity_metadata_and_peer_synced"
+    },
+    {
+      "card_id": "GS-025",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-035",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-068",
+      "status": "external_duplicate_identity_metadata_and_peer_synced"
+    },
+    {
+      "card_id": "GS-109",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-120",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-121",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-140",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-142",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-184",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-225",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-384",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-461",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-463",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-464",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-466",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-467",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-470",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-471",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-472",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-498",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-499",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-508",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-526",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-530",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-533",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-535",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-561",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-562",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-571",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-572",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-574",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-578",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-585",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-650",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-679",
+      "status": "external_relation_owner_projection_synced"
+    },
+    {
+      "card_id": "GS-689",
+      "status": "external_relation_owner_projection_synced"
+    }
+  ],
+  "guardrails": {
+    "formal_related_write": true,
+    "formal_card_write": true,
+    "formal_visual_write": true,
+    "mode": "authorized_full_library_semantic_review",
+    "review_origin_mode": "question_solution_visual_and_formal_card_semantic_review",
+    "formal_closeout_ref": "pending_MATH-TARGET-SEMANTIC-CLOSEOUT-20260724-B29",
+    "closeout_receipt_created_in_this_task": false,
+    "personal_error_requires_explicit_evidence": true,
+    "duplicate_physical_assets_reviewed_once_per_sha256": true,
+    "identity_blocked_cards_participate_in_aggregate_edges": false,
+    "bidirectional_owner_declarations_required": true,
+    "stable_id_merge_or_delete": false,
+    "wrongnet_rebuild_policy": "exactly_one_after_source_review_freeze",
+    "generated_output_write": false,
+    "tests_run": false
+  },
+  "validation": {
+    "json_parse": "passed",
+    "wrongnet_read_cards_in_memory": "passed_831_cards",
+    "all_selected_cards_resolved": "passed_20_of_20",
+    "all_final_relation_targets_exist": "passed",
+    "all_final_edges_bidirectional": "passed_22_edges_44_owner_declarations",
+    "all_removed_declarations_absent": "passed_54_edges_66_owner_declarations",
+    "identity_blocked_selected_incoming_edges": "passed_0",
+    "identity_blocked_selected_outgoing_edges": "passed_0",
+    "frozen_asset_hash_drift_count": 0,
+    "embedded_freeze_snapshot_parity": "passed",
+    "source_write_hash_parity": "passed_123_of_123",
+    "source_summary_projection_parity": "passed_59_of_59",
+    "historical_lineage_revalidation": "passed_9_review_closeout_pairs_16_cards",
+    "build_graph_in_memory_precheck": "passed_831_cards_29_batches_580_current_580_verified_0_stale_251_remaining_961_physical_790_unique",
+    "rendered_outputs_in_memory_precheck": "passed_32_expected_outputs_all_stale_before_single_formal_build",
+    "git_diff_check": "passed",
+    "wrongnet_rebuild": "pending_exactly_one",
+    "derived_graph_build": "pending_exactly_one",
+    "targeted_tests": "pending",
+    "full_test_suite": "pending",
+    "formal_closeout": "pending"
+  },
+  "historical_lineage_revalidation": [
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-022_全库逐题语义复核第8批20题.json",
+      "review_pre_sha256": "0cefaa99f04d09e2f2535b55f6bdd88b5b35447ae2d24e853bc03d6d283f8639",
+      "review_post_sha256": "d924d42662155369a592dc1734279bb3f586557fce674407ff69ffe42dbfbed3",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-023_全库逐题语义复核第8批正式收口.json",
+      "closeout_pre_sha256": "a7ff60c89d6a160d6969b064485e5fe464f34630906910787c10faa07d4b42b0",
+      "closeout_post_sha256": "68c40122a507ce045a070516988e0a3719899a0734c0c1e4a4c70d535307198e",
+      "affected_card_ids": [
+        "GS-679"
+      ],
+      "removed_edges": [
+        "GS-458--GS-679"
+      ],
+      "added_edges": [],
+      "reason": "第29批删除 GS-679 对 GS-458 的旧关系声明，并以当前卡哈希重绑第8批谱系；历史题解与证据判断保持不变。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-024_全库逐题语义复核第9批20题.json",
+      "review_pre_sha256": "6497404da4e981a88e5cdbc7379a2804a2f8da384a27c32881ca49e43dc45d4e",
+      "review_post_sha256": "1ed7ae46abbf8dcfb943618cb79152d5a81c78bb4e2486fd467e6ed014f4e477",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-025_全库逐题语义复核第9批正式收口.json",
+      "closeout_pre_sha256": "cc8031094e37c96c744be7092cee89096f0901b3de68dda3f17b983fbddac659",
+      "closeout_post_sha256": "c80016e0f99cd7f1d7df8b8a54eb594e58bf4ddcc80fd1910b0ced5c98688896",
+      "affected_card_ids": [
+        "GS-002",
+        "GS-003",
+        "GS-689"
+      ],
+      "removed_edges": [
+        "GS-002--GS-458",
+        "GS-003--GS-440",
+        "GS-440--GS-689"
+      ],
+      "added_edges": [],
+      "reason": "第29批删除三张外部所有者卡的旧弱边，并以当前卡哈希重绑第9批谱系；历史题解与证据判断保持不变。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-026_全库逐题语义复核第10批20题.json",
+      "review_pre_sha256": "d84a34f274d0c26ed004bb4176c6d58d1bf9b763ce42408521d35a29a06624b0",
+      "review_post_sha256": "8830c82df8f735b36e4dd174d6ea2d15b7cc8ee97b2ff8708db5436e274c9ec8",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-027_全库逐题语义复核第10批正式收口.json",
+      "closeout_pre_sha256": "46ebe0e1cd000b1eebca6289c0beaebb1996275d223ebcae5487943eadde9bfe",
+      "closeout_post_sha256": "ac89ef217efd4fac187b262a2cc707f8ae2d8ebc470a108faf8c8625b6d961ad",
+      "affected_card_ids": [
+        "GS-023",
+        "GS-025",
+        "GS-035"
+      ],
+      "removed_edges": [
+        "GS-025--GS-454",
+        "GS-025--GS-455",
+        "GS-035--GS-447",
+        "GS-035--GS-448"
+      ],
+      "added_edges": [],
+      "reason": "第29批同步 GS-023 的身份组元数据，并删除 GS-025、GS-035 的旧弱边；第10批历史语义载荷保持不变。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-030_全库逐题语义复核第12批20题.json",
+      "review_pre_sha256": "0862be2c62dad51b3e24cbac92c601fcb2dbb71d1b4462a41d1bceaaae7075a4",
+      "review_post_sha256": "2e2eda12e983bbd6b1187b4320c3e569f171c302ee7df29c57bd6e8e82a4a654",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-031_全库逐题语义复核第12批正式收口.json",
+      "closeout_pre_sha256": "e79e650673c26a280735cf4dced7102dd6b25f09cb032ebc59f6d98f05bcf54a",
+      "closeout_post_sha256": "cc9ef3d8a3f81536f6af32d00842cb514f6acecf486d8396da1f8412fce8648b",
+      "affected_card_ids": [
+        "GS-068"
+      ],
+      "removed_edges": [],
+      "added_edges": [],
+      "reason": "第29批把 GS-068 对齐至 B12-ID-02 身份组并保持聚合阻断；第12批历史语义载荷保持不变。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-034_全库逐题语义复核第14批20题.json",
+      "review_pre_sha256": "1c6dd0c5bd960c6fee1929314fc2e85406b80c0152258a441462045573de502d",
+      "review_post_sha256": "fe0a5744ae99883a80fcef3bb767f90e354d8eea4d59a741da36b53df037e0ed",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-035_全库逐题语义复核第14批正式收口.json",
+      "closeout_pre_sha256": "4c0bdfea0ff63e69647601a0efebf99afbc8f92e42c0b58835d8d9292de87101",
+      "closeout_post_sha256": "d57cf07f343709cdcda3eeda775f584fcf29ba386ce938a775b66a9505f1c1b2",
+      "affected_card_ids": [
+        "GS-109",
+        "GS-120",
+        "GS-121"
+      ],
+      "removed_edges": [
+        "GS-109--GS-448",
+        "GS-121--GS-449"
+      ],
+      "added_edges": [
+        "GS-120--GS-457"
+      ],
+      "reason": "第29批删除两条旧弱边并新增 GS-120--GS-457 强边，以当前卡哈希重绑第14批谱系。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-036_全库逐题语义复核第15批20题.json",
+      "review_pre_sha256": "32cbcfc48bb0d1b1077bb35093d2a885bcf16e1eaefba724ca254623422bec92",
+      "review_post_sha256": "d7fb01f63da48270ad4320dfd7bf50fd6a39cc0cee6ca684df1aff3496ff8090",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-037_全库逐题语义复核第15批正式收口.json",
+      "closeout_pre_sha256": "c6dd221689e7314c1bda9c0ed8e348a5388536710dad2545e889696af6303d80",
+      "closeout_post_sha256": "949a9d814e113ec685abeef7d69641e32b44a60e3ceaff005a15d42f1e3db4c3",
+      "affected_card_ids": [
+        "GS-140",
+        "GS-142"
+      ],
+      "removed_edges": [
+        "GS-140--GS-451",
+        "GS-142--GS-452"
+      ],
+      "added_edges": [],
+      "reason": "第29批删除 GS-140、GS-142 的旧弱边并重绑第15批谱系；既有第17批后继记录保持原样。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-040_全库逐题语义复核第17批20题.json",
+      "review_pre_sha256": "8aba77e5ecb6d5422f17ccfe5f93ebdec3d9e379ca6f9733453e2f62f7beb084",
+      "review_post_sha256": "8fb11d8f07b0ba283beba404df0bb452f31c40cd8d950bd73950151d285ef7dc",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-041_全库逐题语义复核第17批正式收口.json",
+      "closeout_pre_sha256": "29788b8ba7871b38eb621976e613b22acd1723b2ff2c25db8bd7b23235a88578",
+      "closeout_post_sha256": "e5b197c73e9904c766148545a0e4f6bedebc8ab674799cdf99244ad64bc29eeb",
+      "affected_card_ids": [
+        "GS-184"
+      ],
+      "removed_edges": [
+        "GS-184--GS-445"
+      ],
+      "added_edges": [],
+      "reason": "第29批删除 GS-184--GS-445 旧弱边并重绑第17批谱系；历史题解与证据判断保持不变。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-044_全库逐题语义复核第19批20题.json",
+      "review_pre_sha256": "7a822ba18159a5dc20e46f2d1eedb4084093d32871532bf734279f64226fa1f4",
+      "review_post_sha256": "293fc187faf4a7a2ea88cf41cef33362ac7cbc715c11b0c808d5074fe4a28726",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-045_全库逐题语义复核第19批正式收口.json",
+      "closeout_pre_sha256": "7c119e74912d3234d6c87a0d7b928ec1966c372a081e8545bdd87994c7643dfd",
+      "closeout_post_sha256": "5686d8916233b34b48e949d8d43f9c12b19880b2731eaabc589e774ff3949322",
+      "affected_card_ids": [
+        "GS-225"
+      ],
+      "removed_edges": [
+        "GS-225--GS-452"
+      ],
+      "added_edges": [],
+      "reason": "第29批删除 GS-225--GS-452 旧弱边并重绑第19批谱系；历史题解与证据判断保持不变。"
+    },
+    {
+      "review_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-058_全库逐题语义复核第26批20题.json",
+      "review_pre_sha256": "7382bbbe8a071fd781b190c0caeed4127bb33c6c10616f233954ce22eba12a6b",
+      "review_post_sha256": "6208f30736a90706e1aa5b4e94df8ae64bc767581ab1687f25b04cc3b3da91d0",
+      "closeout_path": "错题知识网络/wiki/review/MATHWIKI-REVIEW-059_全库逐题语义复核第26批正式收口.json",
+      "closeout_pre_sha256": "a526f73156218831fe9b9f1045495f7b38e684e7be26d27ef8f19a5cceef73f5",
+      "closeout_post_sha256": "5e45cfb9dcfe46ccb490f7048331cd9cc2efcfa130c9c9a6f65f60402ec3982a",
+      "affected_card_ids": [
+        "GS-384"
+      ],
+      "removed_edges": [
+        "GS-384--GS-458"
+      ],
+      "added_edges": [],
+      "reason": "第29批删除 GS-384--GS-458 旧弱边并重绑第26批谱系；原事务写入与验证结果保持不变。"
+    }
+  ]
+}

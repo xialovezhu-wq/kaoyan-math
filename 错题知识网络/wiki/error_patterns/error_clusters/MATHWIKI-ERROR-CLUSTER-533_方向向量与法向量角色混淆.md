@@ -1,0 +1,41 @@
+---
+wiki_id: MATHWIKI-ERROR-CLUSTER-533
+type: error_cluster
+title: "方向向量与法向量角色混淆"
+subject: "高等数学"
+source_refs:
+  - 错题知识网络/错题卡/
+wiki_refs:
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
+status: active
+last_updated: "2026-07-27"
+---
+
+# 方向向量与法向量角色混淆
+
+## 定位
+
+本页是本次夜间增量编译维护的错因簇页面，用于把同标签正式错题接入 LLM Wiki。它只列轻量元数据，不复制完整题干或长解析。
+
+## 覆盖统计
+
+- 相关错题数：1
+- 涉及科目：高等数学
+- 代表错题：GS-646
+
+## 错题清单
+
+| id | source summary | subject | chapter | knowledge | status | formal card |
+|---|---|---|---|---|---|---|
+| GS-646 | [[SRC-WQ-GS-646]] | 高等数学 | 向量代数与空间解析几何 | 向量代数与空间解析几何；空间曲线切线与法平面；空间直线与平面；方向向量；参数方程求导 | 待复做 | `错题知识网络/错题卡/GS-646_102465参数曲线切线方程.md` |
+
+## 后续编译动作
+
+- 若本标签形成稳定第一动作或反复错因，再升级为深度概念、方法、错因或触发页。
+- 缺少个人作答证据时只保留索引关系，不反推用户错因。
+
+## 入口
+
+- [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
+- [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]

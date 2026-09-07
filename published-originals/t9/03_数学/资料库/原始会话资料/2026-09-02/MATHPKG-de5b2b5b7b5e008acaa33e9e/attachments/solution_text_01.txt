@@ -1,0 +1,42 @@
+卷面写法
+
+设 \(M\) 为物体质量，取球面坐标
+
+$$
+x=r\sin\varphi\cos\theta,\qquad
+y=r\sin\varphi\sin\theta,\qquad
+z=r\cos\varphi.
+$$
+
+由区域在球内、圆锥上方，
+
+$$
+r^2\le a^2,\qquad r\cos\varphi\ge r\sin\varphi,
+$$
+
+故积分区域为
+
+$$
+0\le r\le a,\qquad
+0\le\varphi\le\frac{\pi}{4},\qquad
+0\le\theta\le2\pi.
+$$
+
+密度与体积微元分别为
+
+$$
+\rho=r,\qquad
+dV=r^2\sin\varphi\,dr\,d\varphi\,d\theta.
+$$
+
+因此
+
+$$
+\begin{aligned}
+M
+&=\int_0^{2\pi}\int_0^{\pi/4}\int_0^a
+r^3\sin\varphi\,dr\,d\varphi\,d\theta\\
+&=2\pi\cdot\left(1-\frac{\sqrt2}{2}\right)\cdot\frac{a^4}{4}\\
+&=\boxed{\frac{\pi a^4(2-\sqrt2)}{4}}.
+\end{aligned}
+$$
