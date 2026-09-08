@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+<rect width="600" height="360" fill="white"/>
+<g font-family="Arial, PingFang SC, sans-serif" fill="#243247">
+<text x="22" y="30" font-size="19">固定 z：先选 x，再看竖线内的 y 能走多远</text>
+<polygon points="100,280 400,280 100,70" fill="#e1eff8" stroke="#2775ab" stroke-width="2"/>
+<path d="M75 280H460 M100 300V48" stroke="#243247" stroke-width="2" fill="none"/>
+<path d="M460 280l-9 -5v10z M100 48l-5 9h10z"/>
+<path d="M220 280V196" stroke="#dd6b24" stroke-width="5"/>
+<path d="M100 196H220" stroke="#68788b" stroke-dasharray="5 4" fill="none"/>
+<circle cx="220" cy="196" r="4" fill="#dd6b24"/>
+<text x="468" y="286" font-size="18">x</text><text x="79" y="49" font-size="18">y</text>
+<text x="78" y="302" font-size="16">O</text><text x="206" y="307" font-size="16">x₀</text>
+<text x="360" y="307" font-size="16">1−z</text><text x="36" y="75" font-size="16">1−z</text>
+<text x="240" y="130" font-size="17">斜边：x+y=1−z</text>
+<text x="240" y="201" font-size="17" fill="#b85217">顶端 y=1−z−x₀</text>
+<text x="240" y="266" font-size="17" fill="#b85217">底端 y=0</text>
+<text x="115" y="340" font-size="17">x 从左端 0 扫到右端 1−z</text>
+</g></svg>

@@ -5,8 +5,8 @@
   "branch": "main",
   "publication_target": "local",
   "github_backup_required": false,
-  "local_version": "eeb831c6f633ef9fb300e4b39d959ff184d5f65e9f2244496e975629e1b7b250",
-  "event_id": "MATH-DERIVED-5a5c5151e33572e16fe4a7fb1a74f1e7c6f7d3b1b93b9dbe2ab7bd091f1b95cb",
+  "local_version": "e17fec8d750f19a8c67f2e76a718f88501c8eb2a54aae93dd650ad0beac06615",
+  "event_id": "MATH-DERIVED-02a3d293278a78e875d7b2b97d7b15fe97f5129a889ca19cf3880ef68e7e5239",
   "history_index": "错题知识网络/生成/wrong_questions.json",
   "entrypoints": {
     "formal_cards": "错题知识网络/错题卡/",
@@ -17,16 +17,16 @@
     "personalization": "personalization/math/manifest.json"
   },
   "counts": {
-    "files": 13270,
-    "bytes": 2842940432,
-    "current_files": 13262,
-    "retained_files": 8,
+    "files": 13319,
+    "bytes": 2843861197,
+    "current_files": 13306,
+    "retained_files": 13,
     "lfs_files": 3
   },
   "source_counts": {
     "formal_cards": 909,
-    "source_files": 13262,
-    "archive_receipts": 229,
+    "source_files": 13306,
+    "archive_receipts": 234,
     "question_image_declaration_missing": 23
   },
   "saved_materials_status": "ALL_DECLARED_EXISTING_FILES_INCLUDED",
@@ -5339,6 +5339,126 @@
       "archive_receipt_id": "MATH-ARCHIVE-0d882c3b2837bb158c8efada"
     },
     {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/conversation.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/conversation.json",
+      "archive_receipt_id": "MATH-ARCHIVE-7cc87eb417a26ef213084d99"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/source.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/source.json",
+      "archive_receipt_id": "MATH-ARCHIVE-7cc87eb417a26ef213084d99"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/attachments/other_attachment_01.png",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/attachments/other_attachment_01.png",
+      "archive_receipt_id": "MATH-ARCHIVE-7cc87eb417a26ef213084d99"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/attachments/question_image_01.png",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/attachments/question_image_01.png",
+      "archive_receipt_id": "MATH-ARCHIVE-7cc87eb417a26ef213084d99"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/attachments/solution_text_01.txt",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-fd59eb092a5ecc461e48eaff/attachments/solution_text_01.txt",
+      "archive_receipt_id": "MATH-ARCHIVE-7cc87eb417a26ef213084d99"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-c0b2106078eb175a2b58a4bb/conversation.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-c0b2106078eb175a2b58a4bb/conversation.json",
+      "archive_receipt_id": "MATH-ARCHIVE-889c5c4762e762ec8e3ba5cb"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-c0b2106078eb175a2b58a4bb/source.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-c0b2106078eb175a2b58a4bb/source.json",
+      "archive_receipt_id": "MATH-ARCHIVE-889c5c4762e762ec8e3ba5cb"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-c0b2106078eb175a2b58a4bb/attachments/question_image_01.png",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-c0b2106078eb175a2b58a4bb/attachments/question_image_01.png",
+      "archive_receipt_id": "MATH-ARCHIVE-889c5c4762e762ec8e3ba5cb"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-c0b2106078eb175a2b58a4bb/attachments/solution_text_01.txt",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-c0b2106078eb175a2b58a4bb/attachments/solution_text_01.txt",
+      "archive_receipt_id": "MATH-ARCHIVE-889c5c4762e762ec8e3ba5cb"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-9abbb695142258e80ce96ce7/conversation.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-9abbb695142258e80ce96ce7/conversation.json",
+      "archive_receipt_id": "MATH-ARCHIVE-46a41c92fc0e78bd65007eca"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-9abbb695142258e80ce96ce7/source.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-9abbb695142258e80ce96ce7/source.json",
+      "archive_receipt_id": "MATH-ARCHIVE-46a41c92fc0e78bd65007eca"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-9abbb695142258e80ce96ce7/attachments/question_image_01.png",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-9abbb695142258e80ce96ce7/attachments/question_image_01.png",
+      "archive_receipt_id": "MATH-ARCHIVE-46a41c92fc0e78bd65007eca"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-9abbb695142258e80ce96ce7/attachments/solution_text_01.txt",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-9abbb695142258e80ce96ce7/attachments/solution_text_01.txt",
+      "archive_receipt_id": "MATH-ARCHIVE-46a41c92fc0e78bd65007eca"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/conversation.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/conversation.json",
+      "archive_receipt_id": "MATH-ARCHIVE-bea4330dcbb6e16301a55f1e"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/source.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/source.json",
+      "archive_receipt_id": "MATH-ARCHIVE-bea4330dcbb6e16301a55f1e"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/explanation_image_01.png",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/explanation_image_01.png",
+      "archive_receipt_id": "MATH-ARCHIVE-bea4330dcbb6e16301a55f1e"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/explanation_image_02.png",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/explanation_image_02.png",
+      "archive_receipt_id": "MATH-ARCHIVE-bea4330dcbb6e16301a55f1e"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/question_image_01.png",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/question_image_01.png",
+      "archive_receipt_id": "MATH-ARCHIVE-bea4330dcbb6e16301a55f1e"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/solution_text_01.txt",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/solution_text_01.txt",
+      "archive_receipt_id": "MATH-ARCHIVE-bea4330dcbb6e16301a55f1e"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/solution_text_02.txt",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/solution_text_02.txt",
+      "archive_receipt_id": "MATH-ARCHIVE-bea4330dcbb6e16301a55f1e"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/solution_text_03.txt",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-455529bd9f8f968c6fe6b264/attachments/solution_text_03.txt",
+      "archive_receipt_id": "MATH-ARCHIVE-bea4330dcbb6e16301a55f1e"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-3d285d0159fd4612397adafe/conversation.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-3d285d0159fd4612397adafe/conversation.json",
+      "archive_receipt_id": "MATH-ARCHIVE-902b0ec8992c812622c27d79"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-3d285d0159fd4612397adafe/source.json",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-3d285d0159fd4612397adafe/source.json",
+      "archive_receipt_id": "MATH-ARCHIVE-902b0ec8992c812622c27d79"
+    },
+    {
+      "original_reference": "数学一回滚复习系统/快速入库来源/2026-09-08/MATHPKG-3d285d0159fd4612397adafe/attachments/question_image_01.png",
+      "publish_path": "published-originals/t9/03_数学/资料库/原始会话资料/2026-09-08/MATHPKG-3d285d0159fd4612397adafe/attachments/question_image_01.png",
+      "archive_receipt_id": "MATH-ARCHIVE-902b0ec8992c812622c27d79"
+    },
+    {
       "original_reference": "/Users/xiazhibin/.codex/visualizations/2026/09/02/01a05ffa-764c-76e3-ad15-9857c63ff7c4/gs750-region.svg",
       "publish_path": "published-originals/external/148a3579ebd844f5cf64/gs750-region.svg"
     },
@@ -5365,7 +5485,7 @@
     ]
   },
   "personalization": {
-    "version": "5dbd35565513eb3194ab4236f912b6c6524cc5fb81ec3c9ceffe618c82c36845",
+    "version": "e02b01de88bd171880220049a9ee437185a41b0fd6f4ed9fcc4ddc1eb30d0970",
     "formal_version": "9ceb9c75c1f0f6f098d11b1162efa8e9c16159f85280c08459545f827dfbfdf1",
     "entrypoint": "personalization/math/manifest.json"
   },
@@ -5385,16 +5505,16 @@
     },
     {
       "path": "published-inventory/fc0e1b7a7a08-001.jsonl",
-      "sha256": "8f5feeb22efdb0858afebaab776279b1e48200e6d592de1f41ea7187e5dcab16",
+      "sha256": "ca340a72b0b77517fc4fa24630002c1f3320a1cbe22ddb04e6a7e3aa8e3b008f",
       "count": 913,
-      "bytes": 524091,
+      "bytes": 524216,
       "source_directory": "personalization"
     },
     {
       "path": "published-inventory/fc0e1b7a7a08-002.jsonl",
-      "sha256": "aa75f965b4ac6ccbc1ce9104a9c45e8f87d42f328d11b3202f04cf11499f3d10",
-      "count": 841,
-      "bytes": 483710,
+      "sha256": "599c22816b1c1105f8457c241045d6829986b620f800120649a2a6ba2d14f2c3",
+      "count": 846,
+      "bytes": 486665,
       "source_directory": "personalization"
     },
     {
@@ -5406,16 +5526,16 @@
     },
     {
       "path": "published-inventory/5f41382f4ae2-002.jsonl",
-      "sha256": "8251fbca5ed47d69cfacbdac3d8751fbf84fec0a3c57e45dd0f28d8f64504241",
-      "count": 178,
-      "bytes": 99669,
+      "sha256": "ded04009d115545e7bf6f0a67e00d94b6d1037aff0054adef02384b670985c27",
+      "count": 212,
+      "bytes": 118405,
       "source_directory": "published-originals"
     },
     {
       "path": "published-inventory/800cf57613ee-001.jsonl",
-      "sha256": "2db7d764a4074d40206d710d8c66f1278c1cac23e5347bd8eca114f3e4d1a656",
-      "count": 1184,
-      "bytes": 513330,
+      "sha256": "89e3f1603c1cc2a7d3d261df47989436931f5a3fbc0a6fc1a5f372fa28f5ac22",
+      "count": 1189,
+      "bytes": 518127,
       "source_directory": "数学一回滚复习系统"
     },
     {
@@ -5455,30 +5575,30 @@
     },
     {
       "path": "published-inventory/8d5d399c139e-004.jsonl",
-      "sha256": "cdd8023b09da1f62b6a54cc7bed2cf17c782eea7f2ee0e82bda24e0c1e7a0ec3",
+      "sha256": "30f744534e00bebf88b6980656a8d428261c22f8fa911d368c68ecf661155015",
       "count": 1612,
-      "bytes": 524265,
+      "bytes": 524111,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-005.jsonl",
-      "sha256": "0c5ff2b31cfa97dc763b0160806959780692417d594293dfdec15b2544246ff9",
-      "count": 1434,
-      "bytes": 524096,
+      "sha256": "b1e2e2712a57e4cd93bdfc7720e52b9064e983e82bb5811168ff98fbeb431aea",
+      "count": 1435,
+      "bytes": 524220,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-006.jsonl",
-      "sha256": "29d0f018e72ad087d4c56ee9972bcc3bffe9d045833e1a3549dbe5be9f08489b",
-      "count": 1412,
-      "bytes": 524054,
+      "sha256": "499dbcc920e050b470d4b809ccbddd12ba6eeda450b59a3732f1ccae7445b239",
+      "count": 1411,
+      "bytes": 524036,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-007.jsonl",
-      "sha256": "a05211a7f71c06706a447feb7ef69cffb3cb91de601e3a034fbd7f5cea913942",
-      "count": 259,
-      "bytes": 86610,
+      "sha256": "720be2486eb9e0151a94fd7ef1c7b541a82dba5387f10c163a09b1edc0503b5d",
+      "count": 264,
+      "bytes": 88308,
       "source_directory": "错题知识网络"
     },
     {

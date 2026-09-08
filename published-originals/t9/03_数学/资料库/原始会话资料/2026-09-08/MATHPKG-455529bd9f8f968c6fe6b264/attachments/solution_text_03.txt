@@ -1,0 +1,31 @@
+这里再区分准确一点：\(x+y=1-z\) 是斜边所在的直线；连同 \(x\ge0、y\ge0\)，不等式 \(x+y\le1-z\) 描述的是整个三角形区域。
+
+卷面写法
+
+记 \(\Omega\) 为题设四面体区域。由轮换对称性，
+
+$$
+I=\iiint_\Omega(x+2y+3z)\,dV
+=6\iiint_\Omega z\,dV.
+$$
+
+固定 \(z\) 后，截面为
+
+$$
+D_z=\{(x,y)\mid x\ge0,\ y\ge0,\ x+y\le1-z\},
+\qquad 0\le z\le1.
+$$
+
+其面积为 \(S(z)=\frac12(1-z)^2\)，因此
+
+$$
+\begin{aligned}
+I
+&=6\int_0^1 zS(z)\,dz\\
+&=3\int_0^1 z(1-z)^2\,dz\\
+&=3\left(\frac12-\frac23+\frac14\right)
+=\frac14.
+\end{aligned}
+$$
+
+我会连同完整讨论保存；其中对称化由你独立完成，区域、截面与微元的衔接依赖讲解。
