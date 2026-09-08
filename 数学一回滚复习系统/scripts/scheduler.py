@@ -20,6 +20,9 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
+SCHEDULER_SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(SCHEDULER_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCHEDULER_SCRIPTS_DIR))
 UNITS_PATH = ROOT / "复习单元.json"
 LOG_PATH = ROOT / "复习记录.jsonl"
 PROGRESS_PATH = ROOT / "学习进度.json"
@@ -46,9 +49,11 @@ DELAYED_SUCCESS_INTERVALS = [3, 7, 14, 30, 45]
 MASTERED_STATUSES = {"已掌握", "复做正确", "已做对"}
 INDEPENDENT_CORRECT_SCORE_MINIMUM = 4
 WARMUP_SCHEMA_VERSION = "prestudy-warmup-v4"
+SEMANTIC_WARMUP_SCHEMA_VERSION = "prestudy-warmup-v5"
 SUPPORTED_WARMUP_SCHEMA_VERSIONS = {
     "prestudy-warmup-v3",
     WARMUP_SCHEMA_VERSION,
+    SEMANTIC_WARMUP_SCHEMA_VERSION,
 }
 PLACEHOLDERS = {"", "待补充", "无", "未知", "none", "null", "-"}
 CARD_ID_PATTERN = re.compile(r"^(GS|LA|PR)-\d{3,}$")
@@ -1104,7 +1109,12 @@ def quick_intake_mastery_confirmed_card_ids(
     for closeout_id, closeout in state.get("closeouts", {}).items():
         if closeout_id in invalidated:
             continue
-        if closeout.get("closeout_schema_version") != quick_intake.CLOSEOUT_SCHEMA:
+        supported_closeout_schemas = getattr(
+            quick_intake,
+            "SUPPORTED_CLOSEOUT_SCHEMAS",
+            {quick_intake.CLOSEOUT_SCHEMA},
+        )
+        if closeout.get("closeout_schema_version") not in supported_closeout_schemas:
             raise RollbackSyncError("正式 closeout 缺少受支持的事务版本")
         study_date = safe_parse_date(closeout.get("study_date"))
         if study_date is None:
@@ -1163,7 +1173,7 @@ def quick_intake_mastery_confirmed_card_ids(
                 amendment.get("event_id") for amendment in amendments
             ]:
                 raise RollbackSyncError("mastery freeze 未绑定完整 amendment 链")
-            evidence = amendments[-1].get("evidence") if amendments else capture.get("evidence")
+            evidence = quick_intake.effective_capture_facts(capture, amendments)
             target = quick_intake.effective_target(capture, amendments)
             if (
                 not isinstance(evidence, dict)
@@ -1891,6 +1901,14 @@ def default_progress_config() -> dict[str, Any]:
         "default_count": 5,
         "active_gap_days": 7,
         "exclude_recent_days": 7,
+        "stage_windows": {
+            "unstable": [1, 2],
+            "first_independent_correct": [5, 10],
+            "second_independent_correct": [18, 35],
+            "third_independent_correct": [40, 75],
+            "long_term_maintenance": [75, 120],
+        },
+        "same_item_repair_window": [1, 2],
         "progress_note": "当前错题库内容均视为已学范围；后续学习进度变化时再更新本文件。",
         "date_missing_policy": "日期缺失题视为已学历史整合题，可按知识点参与回滚；不保证每一道都曾亲自做过。",
         "modules": {
@@ -1915,6 +1933,8 @@ def load_progress_config() -> dict[str, Any]:
         "default_count",
         "active_gap_days",
         "exclude_recent_days",
+        "stage_windows",
+        "same_item_repair_window",
         "progress_note",
         "date_missing_policy",
     ):
@@ -2473,7 +2493,20 @@ def independently_correct_scored_card_ids(
     )
     result: set[str] = set()
     for event in events:
-        if to_int(event.get("score"), -1) < INDEPENDENT_CORRECT_SCORE_MINIMUM:
+        outcome = event.get("review_outcome")
+        explicit_independent = False
+        if isinstance(outcome, dict):
+            import math_learning_state
+            if event.get("review_outcome_sha256") != math_learning_state.digest(outcome):
+                raise RollbackSyncError("正式复盘作答证据哈希不一致，拒绝推断独立掌握")
+            explicit_independent = (
+                outcome.get("independent_correct") is True
+                and outcome.get("hint_dependency") == "none"
+                and outcome.get("evidence_origin") in {"user_observed", "user_confirmed"}
+                and outcome.get("formal_id") == event.get("delivered_card_id")
+                and bool(str(outcome.get("user_answer_text") or "").strip())
+            )
+        if to_int(event.get("score"), -1) < INDEPENDENT_CORRECT_SCORE_MINIMUM and not explicit_independent:
             continue
         event_date = safe_parse_date(event.get("date"))
         if event_date is None:
@@ -3027,10 +3060,22 @@ def existing_warmup_request(
         and to_int(item.get("requested_count"), -1) == count
     ]
     if len(matches) > 1:
-        raise RollbackSyncError(
-            f"同一日期和数量存在多个学习前队列："
-            f"{current_date.isoformat()} / {count}"
-        )
+        superseded_ids = {
+            str(item.get("supersedes_queue_id") or "").strip()
+            for item in matches
+            if str(item.get("supersedes_queue_id") or "").strip()
+        }
+        active = [
+            item
+            for item in matches
+            if str(item.get("queue_id") or "").strip() not in superseded_ids
+        ]
+        if len(active) != 1:
+            raise RollbackSyncError(
+                f"同一日期和数量的学习前队列 successor 图不唯一："
+                f"{current_date.isoformat()} / {count}"
+            )
+        return active[0]
     return matches[0] if matches else None
 
 
@@ -3042,10 +3087,31 @@ def validate_existing_warmup_request(
     queue_id = str(log_entry.get("queue_id") or "").strip()
     if not re.fullmatch(r"WQ-[0-9a-f]{24}", queue_id):
         raise RollbackSyncError("已记录学习前队列的 queue_id 无效")
-    output_path = warmup_public_output_path(current_date, count)
-    internal_path = warmup_internal_output_path(current_date, count)
+    public_relative = str(log_entry.get("public_path") or "").strip()
+    internal_relative = str(log_entry.get("internal_path") or "").strip()
+    output_path = (
+        (REPO_ROOT / public_relative).resolve()
+        if public_relative
+        else warmup_public_output_path(current_date, count).resolve()
+    )
+    internal_path = (
+        (REPO_ROOT / internal_relative).resolve()
+        if internal_relative
+        else warmup_internal_output_path(current_date, count).resolve()
+    )
+    for path in (output_path, internal_path):
+        try:
+            path.relative_to(REPO_ROOT.resolve())
+        except ValueError as exc:
+            raise RollbackSyncError("已记录队列输出路径越出仓库") from exc
     if not output_path.exists() or not internal_path.exists():
         raise RollbackSyncError("已记录队列缺少输出文件，拒绝伪装为完成")
+    expected_public_sha = str(log_entry.get("public_sha256") or "").strip()
+    expected_internal_sha = str(log_entry.get("internal_sha256") or "").strip()
+    if expected_public_sha and hashlib.sha256(output_path.read_bytes()).hexdigest() != expected_public_sha:
+        raise RollbackSyncError("已记录队列公开文件哈希漂移")
+    if expected_internal_sha and hashlib.sha256(internal_path.read_bytes()).hexdigest() != expected_internal_sha:
+        raise RollbackSyncError("已记录队列内部文件哈希漂移")
     try:
         manifest = json.loads(internal_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
@@ -3397,6 +3463,35 @@ def cmd_warmup(args: argparse.Namespace) -> None:
     print(f"已生成：{output_path}（{queue_id}）")
 
 
+def warmup_v5_runtime() -> dict[str, Any]:
+    """Expose the live, possibly test-patched scheduler runtime to warmup_v5.
+
+    The semantic module owns the new two-phase protocol, while this mapping
+    keeps every ledger/path/function binding identical to the canonical
+    scheduler instance.  It contains no model shim and performs no delegation.
+    """
+
+    return globals()
+
+
+def cmd_warmup_candidates(args: argparse.Namespace) -> None:
+    import warmup_v5
+
+    warmup_v5.cmd_candidates(args, warmup_v5_runtime())
+
+
+def cmd_same_item_repair(args: argparse.Namespace) -> None:
+    import warmup_v5
+
+    warmup_v5.cmd_same_item_repair(args, warmup_v5_runtime())
+
+
+def cmd_warmup_successor(args: argparse.Namespace) -> None:
+    import warmup_v5
+
+    warmup_v5.cmd_successor(args, warmup_v5_runtime())
+
+
 def find_warmup_queue_item(
     queue_id: str,
     queue_item_id: str,
@@ -3412,7 +3507,7 @@ def find_warmup_queue_item(
     queue = queues[0]
     queue_schema_version = str(queue.get("schema_version") or "")
     if queue_schema_version not in SUPPORTED_WARMUP_SCHEMA_VERSIONS:
-        raise RollbackSyncError("只有 v3/v4 学习前队列可以使用 score-warmup")
+        raise RollbackSyncError("只有 v3/v4/v5 学习前队列可以使用 score-warmup")
     if queue.get("date") != current_date.isoformat():
         raise RollbackSyncError("队列日期与评分日期不一致")
     requested_count = to_int(queue.get("requested_count"), 0)
@@ -3431,9 +3526,20 @@ def find_warmup_queue_item(
             f"队列项身份必须唯一：{queue_item_id}（实际 {len(logged_matches)} 条）"
         )
 
-    internal_path = warmup_internal_output_path(current_date, requested_count)
+    internal_relative = str(queue.get("internal_path") or "").strip()
+    if internal_relative:
+        internal_path = (REPO_ROOT / internal_relative).resolve()
+        try:
+            internal_path.relative_to(REPO_ROOT.resolve())
+        except ValueError as exc:
+            raise RollbackSyncError("学习前队列 internal_path 越出仓库") from exc
+    else:
+        internal_path = warmup_internal_output_path(current_date, requested_count)
     if not internal_path.exists():
         raise RollbackSyncError("学习前队列缺少内部溯源包，拒绝评分")
+    expected_internal_sha256 = str(queue.get("internal_sha256") or "").strip()
+    if expected_internal_sha256 and hashlib.sha256(internal_path.read_bytes()).hexdigest() != expected_internal_sha256:
+        raise RollbackSyncError("学习前队列内部溯源包哈希与日志不一致")
     try:
         manifest = json.loads(internal_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
@@ -3480,6 +3586,14 @@ def find_warmup_queue_item(
         "anchor_unit_source_version",
         "anchor_evidence_source_version",
     )
+    if queue_schema_version == SEMANTIC_WARMUP_SCHEMA_VERSION:
+        identity_fields = (
+            *identity_fields,
+            *(("selection_anchor",) if item.get("selection_anchor") else ()),
+            "semantic_selection_v5",
+            "semantic_match_level",
+            "reader_query_id" if manifest.get("request_version") == "native-reader-semantic-v2" else "luna_query_id",
+        )
     for field in identity_fields:
         if field not in logged_item or logged_item.get(field) != item.get(field):
             raise RollbackSyncError(f"学习前队列日志字段与内部溯源不一致：{field}")
@@ -3679,6 +3793,17 @@ def validate_warmup_score_context(
 ) -> None:
     import training_evidence
 
+    selection_anchor = warmup_context.get("selection_anchor")
+    if selection_anchor:
+        if selection_anchor.get("anchor_kind") != "concept_review" or not re.fullmatch(r"MATH-CONCEPT-[0-9a-f]{24}", str(selection_anchor.get("anchor_id", ""))):
+            raise RollbackSyncError("知识点选题来源身份无效")
+        for ref in selection_anchor.get("source_refs", []):
+            path = (REPO_ROOT / ref["path"]).resolve()
+            if not path.is_relative_to(REPO_ROOT.resolve()) or not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != ref["sha256"]:
+                raise RollbackSyncError("知识点选题来源已变化")
+        if not selection_anchor.get("source_refs"):
+            raise RollbackSyncError("知识点选题缺少正式来源")
+
     if warmup_context.get("anchor_unit_id") != unit.get("复习单元ID"):
         raise RollbackSyncError("队列 anchor 与评分目标单元不一致")
     anchor_id = str(warmup_context.get("anchor_id") or "").strip()
@@ -3731,19 +3856,21 @@ def validate_warmup_score_context(
         raise RollbackSyncError("anchor 证据快照与正式卡不一致")
 
     match_mode = warmup_context.get("match_mode")
-    exact_score, _ = training_evidence.exact_evidence_match(
-        anchor_evidence,
-        delivered_evidence,
-    )
-    shared_knowledge = training_evidence.shared_knowledge(
-        anchor_evidence,
-        delivered_evidence,
-    )
-    if match_mode == "exact_gap" and exact_score <= 0:
-        raise RollbackSyncError("队列 exact_gap 关系已无法验证")
-    if match_mode == "knowledge_fallback":
-        if exact_score > 0 or not shared_knowledge:
-            raise RollbackSyncError("队列 knowledge_fallback 关系已无法验证")
+    semantic_selection_v5 = warmup_context.get("semantic_selection_v5") is True
+    if not semantic_selection_v5:
+        exact_score, _ = training_evidence.exact_evidence_match(
+            anchor_evidence,
+            delivered_evidence,
+        )
+        shared_knowledge = training_evidence.shared_knowledge(
+            anchor_evidence,
+            delivered_evidence,
+        )
+        if match_mode == "exact_gap" and exact_score <= 0:
+            raise RollbackSyncError("队列 exact_gap 关系已无法验证")
+        if match_mode == "knowledge_fallback":
+            if exact_score > 0 or not shared_knowledge:
+                raise RollbackSyncError("队列 knowledge_fallback 关系已无法验证")
     if match_mode == "direct_due" and (
         anchor_id != delivered_card_id
         or warmup_context.get("delivered_unit_id") != unit.get("复习单元ID")
@@ -3765,17 +3892,18 @@ def validate_warmup_score_context(
             "anchor_gap_occurrence_id"
         ):
             raise RollbackSyncError("队列 active occurrence 已变化，请重新生成")
-        selection_mode = str(warmup_context.get("selection_mode") or "")
-        resolution = active_gap_resolution_event(
-            current_occurrence,
-            {},
-            {},
-            today_from_arg(warmup_context.get("queue_date")),
-            score_marker_events(load_units()),
-            respect_schedule_origin=not selection_mode.startswith("recent_gap_"),
-        )
-        if resolution:
-            raise RollbackSyncError("队列 anchor 已被较新的正确证据覆盖，请重新生成")
+        if not semantic_selection_v5:
+            selection_mode = str(warmup_context.get("selection_mode") or "")
+            resolution = active_gap_resolution_event(
+                current_occurrence,
+                {},
+                {},
+                today_from_arg(warmup_context.get("queue_date")),
+                score_marker_events(load_units()),
+                respect_schedule_origin=not selection_mode.startswith("recent_gap_"),
+            )
+            if resolution:
+                raise RollbackSyncError("队列 anchor 已被较新的正确证据覆盖，请重新生成")
 
 
 def score_evidence_context_from_unit(unit: dict[str, Any]) -> dict[str, Any]:
@@ -3804,7 +3932,7 @@ def score_evidence_context_from_unit(unit: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def cmd_score(args: argparse.Namespace) -> None:
+def _cmd_score(args: argparse.Namespace) -> None:
     current_date = today_from_arg(args.date)
     score = int(args.score)
     if score < 0 or score > 5:
@@ -3896,6 +4024,10 @@ def cmd_score(args: argparse.Namespace) -> None:
             print(f"已恢复缺失的评分日志，未重复推进单元：{event_id}")
             return
 
+        review_basis = getattr(args, "review_source_context", None)
+        if review_basis is not None:
+            import math_review
+            math_review.validate_current_basis(LOG_PATH.parent.parent, review_basis)
         if warmup_context is not None:
             try:
                 validate_warmup_score_context(warmup_context, unit)
@@ -3955,6 +4087,11 @@ def cmd_score(args: argparse.Namespace) -> None:
                 event_context = score_evidence_context_from_unit(unit)
             except RollbackSyncError as exc:
                 raise SystemExit(str(exc)) from exc
+        review_outcome = getattr(args, "review_outcome", None)
+        if review_outcome is not None:
+            event_context["review_outcome"] = deepcopy(review_outcome)
+            event_context["review_outcome_sha256"] = args.review_outcome_sha256
+            event_context["delivered_card_id"] = review_outcome["formal_id"]
 
         if attempt_type == "knowledge_fallback_check":
             # A broad knowledge fallback can prove that this rolling seven-day
@@ -4013,32 +4150,21 @@ def cmd_score(args: argparse.Namespace) -> None:
         unstable = score <= 3
 
         if targeted:
-            current_stage = infer_delayed_stage(unit)
-            current_successes = to_int(unit.get("连续延迟成功次数"), current_stage)
-            remaining = (exam_date - current_date).days
-            if score <= 2:
-                proposed_interval = 1
-                new_stage = 0
-                new_successes = 0
-                unit["调度优先级"] = "高"
-            elif score == 3:
-                proposed_interval = 3
-                new_stage = current_stage
-                new_successes = current_successes
-                unit["调度优先级"] = "高"
-            else:
-                new_successes = current_successes + 1
-                if remaining <= 14:
-                    new_stage = current_stage
-                    proposed_interval = current_interval
-                else:
-                    new_stage = min(len(DELAYED_SUCCESS_INTERVALS), current_stage + 1)
-                    proposed_interval = DELAYED_SUCCESS_INTERVALS[max(0, new_stage - 1)]
-                unit["调度优先级"] = (
-                    "普通" if new_successes >= 2 else unit.get("调度优先级", "高")
-                )
-            unit["延迟复习阶段"] = new_stage
-            unit["连续延迟成功次数"] = new_successes
+            import warmup_v5
+
+            schedule = warmup_v5.stage_schedule_after_score(
+                score=score,
+                unit=unit,
+                config=load_progress_config(),
+                current_date=current_date,
+                exam_date=exam_date,
+            )
+            proposed_interval = schedule["interval_days"]
+            unit["延迟复习阶段"] = schedule["stage_index"]
+            unit["连续延迟成功次数"] = schedule["independent_successes"]
+            unit["证据阶段"] = schedule["stage_name"]
+            unit["阶段窗口"] = schedule["window_days"]
+            unit["调度优先级"] = schedule["scheduling_priority"]
         else:
             proposed_interval = next_interval_days(score, current_interval)
 
@@ -4118,6 +4244,23 @@ def cmd_score(args: argparse.Namespace) -> None:
             f"已更新 {args.unit_id}：正式延迟复习 {score} 分，"
             f"下次复习 {unit.get('下次复习日期')}，间隔 {interval} 天（{event_id}）。"
         )
+
+
+def cmd_score(args: argparse.Namespace) -> None:
+    _cmd_score(args)
+    if getattr(args, "dry_run", False):
+        return
+    # _cmd_score has released its score lock. A successful noop or recovered
+    # log is also a recovery opportunity for the missing postcommit work.
+    _attempt, event_id = score_attempt_identity(args.unit_id, today_from_arg(args.date), getattr(args, "attempt_id", None))
+    import math_postcommit
+    try:
+        result = math_postcommit.run_after_commit(LOG_PATH.parent.parent, event_id)
+    except (OSError, ValueError) as exc:
+        print(f"正式评分已保存，后续刷新待恢复：{exc}", file=sys.stderr)
+        return
+    if result["publication"]["status"] in {"PENDING", "FAILED"}:
+        print("本地评分已保存，云端待同步。", file=sys.stderr)
 
 
 def split_csv(value: str | None) -> list[str]:
@@ -4286,9 +4429,59 @@ def cmd_week(args: argparse.Namespace) -> None:
     print(f"已生成：{output_path}")
 
 
+def cmd_import_review_source(args: argparse.Namespace) -> None:
+    import math_review
+    try:
+        document = json.loads(Path(args.manifest_file).read_text(encoding="utf-8"))
+        if not isinstance(document, dict):
+            raise ValueError("manifest_must_be_object")
+        result = math_review.import_source(REPO_ROOT, document, sys.modules[__name__])
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        print(json.dumps({"status": "invalid", "reason": str(exc), "learning_events_written": 0}, ensure_ascii=False))
+        raise SystemExit(2) from exc
+    print(json.dumps(result, ensure_ascii=False, sort_keys=True))
+
+
+def cmd_record_review_outcome(args: argparse.Namespace) -> None:
+    import contextlib
+    import io
+    import math_review
+    try:
+        document = json.loads(Path(args.payload_file).read_text(encoding="utf-8"))
+        if not isinstance(document, dict):
+            raise ValueError("outcome_must_be_object")
+        with contextlib.redirect_stdout(io.StringIO()):
+            result = math_review.record_outcome(REPO_ROOT, document, sys.modules[__name__])
+    except (OSError, ValueError, KeyError, TypeError, SystemExit) as exc:
+        print(json.dumps({"status": "invalid", "reason": str(exc)}, ensure_ascii=False))
+        raise SystemExit(2) from exc
+    print(json.dumps(result, ensure_ascii=False, sort_keys=True))
+
+
+def cmd_show_review_source(args: argparse.Namespace) -> None:
+    import math_review
+    try:
+        result = math_review.show_source(REPO_ROOT, args.run_id, sys.modules[__name__], today_from_arg(args.date))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        print(json.dumps({"status": "invalid", "reason": str(exc), "learning_events_written": 0}, ensure_ascii=False))
+        raise SystemExit(2) from exc
+    print(json.dumps(result, ensure_ascii=False, sort_keys=True))
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="数学一回滚复习调度系统")
     subparsers = parser.add_subparsers(dest="command", required=True)
+
+    imported = subparsers.add_parser("import-review-source", help="注册已发布版本对应的B/C原始文档；不记录作答")
+    imported.add_argument("--manifest-file", required=True, help="math-review-source-v1/v2 JSON；C 知识点选题使用 v2")
+    imported.set_defaults(func=cmd_import_review_source)
+    shown = subparsers.add_parser("show-review-source", help="生成C已验证原题展示并记录一次交付；不展示答案或评分")
+    shown.add_argument("--run-id", required=True)
+    shown.add_argument("--date")
+    shown.set_defaults(func=cmd_show_review_source)
+    outcome = subparsers.add_parser("record-review-outcome", help="记录真实B/C作答并复用评分与postcommit；不生成作答")
+    outcome.add_argument("--payload-file", required=True, help="math-review-outcome-v1 JSON")
+    outcome.set_defaults(func=cmd_record_review_outcome)
 
     today_parser = subparsers.add_parser("today", help="生成今日到期复习队列")
     today_parser.add_argument("--date", help="指定日期 YYYY-MM-DD")
@@ -4338,9 +4531,37 @@ def build_parser() -> argparse.ArgumentParser:
     warmup_parser.add_argument("--dry-run", action="store_true", help="只预览，不写入生成文件和推荐记录")
     warmup_parser.set_defaults(func=cmd_warmup)
 
+    warmup_candidates_parser = subparsers.add_parser(
+        "warmup-candidates",
+        help="只读冻结阶段到期 anchor、Day 0-7 排除和正式旧卡候选；语义排序必须由原生 Luna 完成",
+    )
+    warmup_candidates_parser.add_argument("--date", help="指定日期 YYYY-MM-DD")
+    warmup_candidates_parser.add_argument("--count", type=int, help="目标题数，默认读取学习进度配置")
+    warmup_candidates_parser.add_argument("--output", help="可选 JSON 输出路径；省略时写标准输出")
+    warmup_candidates_parser.set_defaults(func=cmd_warmup_candidates)
+
+    same_item_parser = subparsers.add_parser(
+        "same-item-repair",
+        help="只读列出做错后 1-2 天的同题修复通道；不占每日五题",
+    )
+    same_item_parser.add_argument("--date", help="指定日期 YYYY-MM-DD")
+    same_item_parser.add_argument("--output", help="可选 JSON 输出路径；省略时写标准输出")
+    same_item_parser.set_defaults(func=cmd_same_item_repair)
+
+    warmup_successor_parser = subparsers.add_parser(
+        "warmup-successor",
+        help="验证原生 Luna 语义计划并 append-only 生成 v5 successor 队列",
+    )
+    warmup_successor_parser.add_argument("--date", required=True, help="队列日期 YYYY-MM-DD")
+    warmup_successor_parser.add_argument("--count", required=True, type=int, help="请求题数")
+    warmup_successor_parser.add_argument("--candidate-bundle", required=True, help="warmup-candidates 生成的冻结 JSON")
+    warmup_successor_parser.add_argument("--semantic-plan", required=True, help="原生读取计划（v1/v2）与父代理同字节复核 JSON")
+    warmup_successor_parser.add_argument("--supersedes-queue-id", default="", help="替换已有队列时必填；当天首次队列省略，不创建占位交付")
+    warmup_successor_parser.set_defaults(func=cmd_warmup_successor)
+
     warmup_score_parser = subparsers.add_parser(
         "score-warmup",
-        help="记录 v3/v4 队列作答；精确检查可推进 anchor，知识点补位只消除活跃 occurrence",
+        help="记录 v3/v4/v5 队列作答；精确检查可推进 anchor，知识点补位只消除活跃 occurrence",
     )
     warmup_score_parser.add_argument("queue_id")
     warmup_score_parser.add_argument("queue_item_id")

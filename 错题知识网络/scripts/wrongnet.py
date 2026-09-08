@@ -1621,7 +1621,8 @@ def safe_filename(text: str) -> str:
 def new_card(args: argparse.Namespace) -> int:
     print(
         "wrongnet.py new 不用于当前轻量单题入库。\n"
-        "请按录入模板直接创建错题卡，编号取当前科目最大值加 1，然后运行 wrongnet.py rebuild。\n"
+        "请使用 kaoyan-math-wrong-intake 保存完整会话包与 Capture v3；"
+        "明确正式入库后再由 kaoyan-math-nightly-qa 冻结、裁决并串行完成正式层。\n"
         "此命令本身不分配 ID、不创建错题卡。",
         file=sys.stderr,
     )

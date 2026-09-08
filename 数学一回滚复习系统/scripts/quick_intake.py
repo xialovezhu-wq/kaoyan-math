@@ -12,35 +12,11 @@ import shutil
 import sys
 import tempfile
 import time
-import unicodedata
 from contextlib import contextmanager
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
-
-try:
-    from producer_binding_attestation import (
-        ProducerBindingError,
-        build_descriptor,
-        publish_attestation,
-        write_descriptor,
-    )
-except ModuleNotFoundError:
-    _producer_binding_spec = importlib.util.spec_from_file_location(
-        "math_producer_binding_attestation",
-        Path(__file__).with_name("producer_binding_attestation.py"),
-    )
-    if _producer_binding_spec is None or _producer_binding_spec.loader is None:
-        raise
-    _producer_binding_module = importlib.util.module_from_spec(
-        _producer_binding_spec
-    )
-    _producer_binding_spec.loader.exec_module(_producer_binding_module)
-    ProducerBindingError = _producer_binding_module.ProducerBindingError
-    build_descriptor = _producer_binding_module.build_descriptor
-    publish_attestation = _producer_binding_module.publish_attestation
-    write_descriptor = _producer_binding_module.write_descriptor
-
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = ROOT.parent
@@ -55,20 +31,41 @@ CARDS_DIR = REPO_ROOT / "错题知识网络" / "错题卡"
 WRONGNET_SNAPSHOT_PATH = REPO_ROOT / "错题知识网络" / "生成" / "wrong_questions.json"
 WIKI_ROOT = REPO_ROOT / "错题知识网络" / "wiki"
 WRONGNET_TOOL_PATH = REPO_ROOT / "错题知识网络" / "scripts" / "wrongnet.py"
-PRODUCER_BINDING_DESCRIPTOR_PATH = ROOT / "schema" / "producer-binding-v1.json"
-PRODUCER_BINDING_DESCRIPTOR_ENV = "KAOYAN_MATH_PRODUCER_BINDING_DESCRIPTOR"
-
 CAPTURE_SCHEMA = "math-fast-intake-capture-v1"
 CAPTURE_SCHEMA_V2 = "math-fast-intake-capture-v2"
-CAPTURE_AUTHORIZATION_SCHEMA = "math-capture-authorization-v1"
-CAPTURE_TRIGGER_PHRASE = "快速入库"
+CAPTURE_SCHEMA_V3 = "math-fast-intake-capture-v3"
+DIRECT_FORMAL_PENDING_STATE = "awaiting_sol_formalization"
+LEGACY_PENDING_STATE = "pending_nightly"
 AMENDMENT_SCHEMA = "math-fast-intake-amendment-v1"
 SOURCE_STAGE_SCHEMA = "math-fast-intake-source-stage-v1"
+SOURCE_STAGE_SCHEMA_V2 = "math-conversation-package-stage-v1"
 SOURCE_BUNDLE_SCHEMA = "math-fast-intake-source-bundle-v1"
+CONVERSATION_PACKAGE_SCHEMA = "math-conversation-package-v1"
+CONVERSATION_SCHEMA = "math-conversation-v1"
+SOURCE_FACTS_SCHEMA = "math-source-facts-v1"
+PACKAGE_RECEIPT_SCHEMA = "math-conversation-package-receipt-v1"
 FREEZE_SCHEMA = "math-fast-intake-freeze-v1"
-CLOSEOUT_SCHEMA = "math-fast-intake-closeout-v2"
+CLOSEOUT_SCHEMA_V2 = "math-fast-intake-closeout-v2"
+CLOSEOUT_SCHEMA = "math-fast-intake-closeout-v3"
+SUPPORTED_CLOSEOUT_SCHEMAS = {CLOSEOUT_SCHEMA_V2, CLOSEOUT_SCHEMA}
+TEACHING_CONTEXT_SCHEMA = "math-teaching-context-v1"
+TEACHING_CONTEXT_POINTER_SCHEMA = "math-teaching-context-pointer-v1"
 LEDGER_SCHEMA = "math-fast-intake-ledger-v1"
 STATUS_SCHEMA = "math-fast-intake-status-v1"
+BACKLOG_PLAN_SCHEMA = "math-formal-backlog-through-date-plan-v1"
+BACKLOG_RESPONSE_SCHEMA = "math-formal-backlog-through-date-response-v1"
+ARCHIVE_POINTER_SCHEMA = "math-conversation-package-archive-pointer-v1"
+ARCHIVE_RECEIPT_SCHEMA = "math-conversation-package-archive-receipt-v1"
+ARCHIVE_POINTER_SCHEMA_V2 = "math-conversation-package-archive-pointer-v2"
+ARCHIVE_RECEIPT_SCHEMA_V2 = "math-conversation-package-archive-receipt-v2"
+LEGACY_ARCHIVE_PACKAGE_SCHEMA = "math-legacy-evidence-archive-package-v1"
+LEGACY_ARCHIVE_POINTER_SCHEMA = "math-legacy-evidence-archive-pointer-v1"
+LEGACY_ARCHIVE_RECEIPT_SCHEMA = "math-legacy-evidence-archive-receipt-v1"
+LEGACY_ARCHIVE_POINTER_SCHEMA_V2 = "math-legacy-evidence-archive-pointer-v2"
+LEGACY_ARCHIVE_RECEIPT_SCHEMA_V2 = "math-legacy-evidence-archive-receipt-v2"
+LEGACY_ARCHIVE_POINTER_FILENAME = "legacy-archive-pointer.json"
+LEGACY_ARCHIVE_POINTER_DIRECTORY = "legacy-archive-pointers"
+MATH_ARCHIVE_SUBJECT_ROOT = Path("03_数学/资料库/原始会话资料")
 
 CARD_ID_PATTERN = re.compile(r"^(GS|LA|PR)-\d{3,}$")
 ATTEMPT_ID_PATTERN = re.compile(r"^[A-Za-z0-9._:/-]{1,240}$")
@@ -106,6 +103,15 @@ ALLOWED_BREAK_KINDS = {
 }
 HISTORY_KINDS = {"wrong", "recurrence", "mastery", "representation", "none"}
 SOURCE_ROLES = {"question", "solution", "solution_text", "user_work", "reference"}
+CONVERSATION_ATTACHMENT_ROLES = {
+    "question_image",
+    "solution_image",
+    "explanation_image",
+    "user_work_image",
+    "source_article_image",
+    "other_attachment",
+    "solution_text",
+}
 TEACHING_SPEAKERS = {"user", "assistant"}
 TEACHING_KINDS = {
     "reasoning", "hint", "correction", "explanation", "restatement", "answer"
@@ -117,6 +123,7 @@ SOURCE_MEDIA = {
     ".jpeg": ("image/jpeg", b"\xff\xd8\xff"),
     ".webp": ("image/webp", None),
     ".pdf": ("application/pdf", b"%PDF-"),
+    ".svg": ("image/svg+xml", None),
 }
 SOLUTION_TEXT_MEDIA = {
     ".txt": "text/plain; charset=utf-8",
@@ -134,6 +141,21 @@ LOCAL_PATH_MARKERS = (
 MAX_SOURCE_ARTIFACTS = 8
 MAX_SOURCE_ARTIFACT_BYTES = 25 * 1024 * 1024
 MAX_SOURCE_BUNDLE_BYTES = 100 * 1024 * 1024
+ARCHIVE_ROOT = Path("/Volumes/T9-Data")
+ARCHIVE_SENTINEL_PATH = ARCHIVE_ROOT / "00_迁移管理/状态/volume-sentinel.json"
+ARCHIVE_SENTINEL_SHA256 = "f086b32b29b2b38f1a28dffb8fde4fa850078332d8a23ae269cc8e857a6bd2ca"
+ARCHIVE_VOLUME_UUID = "DC0D9415-AFA3-4C7E-89FD-6575EE7A4C10"
+FORBIDDEN_CAPTURE_FIELD_MARKERS = (
+    "release",
+    "activation",
+    "dispatcher",
+    "mcp_authority",
+    "consumer",
+    "adoption",
+    "analysis_package",
+    "terra",
+    "background_handoff",
+)
 
 
 class QuickIntakeError(ValueError):
@@ -204,6 +226,32 @@ def reject_local_absolute_paths(value: Any, field: str) -> None:
     if isinstance(value, list):
         for index, nested in enumerate(value):
             reject_local_absolute_paths(nested, f"{field}[{index}]")
+
+
+def reject_background_authority_fields(value: Any, field: str) -> None:
+    if isinstance(value, dict):
+        for key, nested in value.items():
+            normalized_key = str(key).lower().replace("-", "_")
+            if any(marker in normalized_key for marker in FORBIDDEN_CAPTURE_FIELD_MARKERS):
+                raise QuickIntakeError(f"{field}.{key} 不得携带后台、发布或消费权威字段")
+            reject_background_authority_fields(nested, f"{field}.{key}")
+        return
+    if isinstance(value, list):
+        for index, nested in enumerate(value):
+            reject_background_authority_fields(nested, f"{field}[{index}]")
+
+
+def require_raw_text(value: Any, field: str) -> str:
+    if not isinstance(value, str):
+        raise QuickIntakeError(f"{field} 必须是字符串")
+    return value
+
+
+def validate_timezone(value: Any) -> str:
+    timezone = require_text(value, "timezone", max_length=80)
+    if timezone != "Asia/Shanghai":
+        raise QuickIntakeError("timezone 当前必须是 Asia/Shanghai")
+    return timezone
 
 
 def canonical_solution_text(value: Any, field: str) -> str:
@@ -507,9 +555,20 @@ def validate_source_media(
     suffix = path.suffix.lower()
     if suffix not in SOURCE_MEDIA:
         raise QuickIntakeError(
-            f"{field} 只允许 PNG、JPEG、WebP 或 PDF 来源文件"
+            f"{field} 只允许 PNG、JPEG、WebP、SVG 或 PDF 来源文件"
         )
     media_type, signature = SOURCE_MEDIA[suffix]
+    if suffix == ".svg":
+        # Validate the document type only; archive exact bytes, never render or execute it here.
+        import xml.etree.ElementTree as ET
+        try:
+            if b'<!DOCTYPE' in data.upper() or b'<!ENTITY' in data.upper():
+                raise ValueError('SVG entity declarations are unsupported')
+            tag = ET.fromstring(data).tag
+            if tag not in {'svg', '{http://www.w3.org/2000/svg}svg'}:
+                raise ValueError('not SVG')
+        except (ET.ParseError, ValueError) as exc:
+            raise QuickIntakeError(f"{field} 不是有效的 SVG 文档") from exc
     if signature is not None and not data.startswith(signature):
         raise QuickIntakeError(f"{field} 的文件内容与扩展名不一致")
     if suffix == ".webp" and not (
@@ -527,6 +586,7 @@ def normalize_source_artifact_bytes(
     field: str,
     *,
     require_canonical: bool = False,
+    preserve_raw: bool = False,
 ) -> tuple[str, str, bytes]:
     if role != "solution_text":
         media_type, suffix = validate_source_media(path, data, field)
@@ -539,6 +599,10 @@ def normalize_source_artifact_bytes(
         decoded = data.decode("utf-8")
     except UnicodeError as exc:
         raise QuickIntakeError(f"{field} 的 solution_text 必须是 UTF-8") from exc
+    if preserve_raw:
+        # Conversation-package attachments are original evidence, including
+        # CRLF, leading/trailing whitespace and drive-like LaTeX fragments.
+        return media_type, suffix, data
     canonical = canonical_solution_text_bytes(decoded, field)
     if require_canonical and canonical != data:
         raise QuickIntakeError(f"{field} 的 solution_text 字节不是规范形式")
@@ -630,6 +694,170 @@ def normalize_source_stage(value: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def conversation_package_id(study_date: str, package_key: str, source_locator: str) -> str:
+    suffix = sha256_value(
+        {
+            "subject": "math",
+            "study_date": study_date,
+            "package_key": package_key,
+            "source_locator": source_locator,
+        }
+    )[:24]
+    return f"MATHPKG-{suffix}"
+
+
+def normalize_conversation_turns(value: Any) -> list[dict[str, Any]]:
+    if not isinstance(value, list) or not value:
+        raise QuickIntakeError("conversation 必须是包含当前题完整会话的非空数组")
+    turns: list[dict[str, Any]] = []
+    for index, row in enumerate(value):
+        field = f"conversation[{index}]"
+        if not isinstance(row, dict) or set(row) != {"role", "text"}:
+            raise QuickIntakeError(f"{field} 必须只含 role 和 text")
+        role = row.get("role")
+        if role not in TEACHING_SPEAKERS:
+            raise QuickIntakeError(f"{field}.role 必须是 user 或 assistant")
+        turns.append(
+            {
+                "sequence": index + 1,
+                "role": role,
+                "text": require_raw_text(row.get("text"), f"{field}.text"),
+            }
+        )
+    return turns
+
+
+def normalize_conversation_package_stage(value: dict[str, Any]) -> dict[str, Any]:
+    required = {
+        "schema_version",
+        "package_key",
+        "study_date",
+        "timezone",
+        "source",
+        "conversation",
+        "artifacts",
+        "missing_fields",
+    }
+    missing = sorted(required - set(value))
+    unexpected = sorted(set(value) - required)
+    if missing:
+        raise QuickIntakeError(f"会话包输入缺少字段：{', '.join(missing)}")
+    if unexpected:
+        raise QuickIntakeError(f"会话包输入含未知字段：{', '.join(unexpected)}")
+    if value.get("schema_version") != SOURCE_STAGE_SCHEMA_V2:
+        raise QuickIntakeError(f"schema_version 必须是 {SOURCE_STAGE_SCHEMA_V2}")
+    package_key = value.get("package_key")
+    if not isinstance(package_key, str) or not ATTEMPT_ID_PATTERN.fullmatch(package_key):
+        raise QuickIntakeError("package_key 必须是稳定的当前题尝试身份")
+    study_date = validate_date(value.get("study_date"))
+    timezone = validate_timezone(value.get("timezone"))
+    source = value.get("source")
+    if not isinstance(source, dict):
+        raise QuickIntakeError("source 必须是保存题目、session、item 与 capture 身份的对象")
+    capture_identity = source.get("capture_identity")
+    if not isinstance(capture_identity, str) or not ATTEMPT_ID_PATTERN.fullmatch(capture_identity):
+        raise QuickIntakeError("source.capture_identity 必须是稳定的当前题尝试身份")
+    supplement = source.get("supplements_capture_id")
+    if supplement is not None:
+        if not isinstance(supplement, str) or not re.fullmatch(r"MFI-CAP-[0-9a-f]{24}", supplement):
+            raise QuickIntakeError("source.supplements_capture_id 必须是原 Capture ID")
+        if package_key == capture_identity:
+            raise QuickIntakeError("补充包必须使用新的 package_key，保留原 capture_identity")
+    elif package_key != capture_identity:
+        raise QuickIntakeError("package_key 必须与 source.capture_identity 一致")
+    source_locator = require_text(
+        source.get("source_locator"), "source.source_locator", max_length=1000
+    )
+    reject_local_absolute_paths(source, "source")
+    reject_background_authority_fields(source, "source")
+    if len(canonical_json(source).encode("utf-8")) > 256 * 1024:
+        raise QuickIntakeError("source 身份与元数据超过 256 KiB")
+    conversation = normalize_conversation_turns(value.get("conversation"))
+    # Conversation turns are immutable raw evidence.  A user may legitimately
+    # paste a local path, and LaTeX such as ``S:\\quad`` resembles a Windows
+    # drive prefix.  Keep those bytes exact; apply the local-path ban only to
+    # structured identities above and to durable Capture metadata.
+    reject_background_authority_fields(conversation, "conversation")
+
+    raw_missing = value.get("missing_fields")
+    if not isinstance(raw_missing, list) or not all(
+        isinstance(item, str) and item.strip() for item in raw_missing
+    ):
+        raise QuickIntakeError("missing_fields 必须是文本数组")
+    missing_fields = sorted(set(item.strip() for item in raw_missing))
+
+    raw_artifacts = value.get("artifacts")
+    if not isinstance(raw_artifacts, list):
+        raise QuickIntakeError("artifacts 必须是数组")
+    if len(raw_artifacts) > MAX_SOURCE_ARTIFACTS:
+        raise QuickIntakeError(f"artifacts 最多允许 {MAX_SOURCE_ARTIFACTS} 个文件")
+    artifacts: list[dict[str, Any]] = []
+    seen_paths: set[Path] = set()
+    seen_hashes: set[str] = set()
+    total_size = 0
+    for index, item in enumerate(raw_artifacts):
+        field = f"artifacts[{index}]"
+        if not isinstance(item, dict) or set(item) != {"role", "path"}:
+            raise QuickIntakeError(f"{field} 必须只含 role 和 path")
+        role = item.get("role")
+        if role not in CONVERSATION_ATTACHMENT_ROLES:
+            raise QuickIntakeError(f"{field}.role 无效：{role}")
+        path_text = require_text(item.get("path"), f"{field}.path", max_length=2000)
+        source_path = Path(path_text).expanduser()
+        if source_path.is_symlink():
+            raise QuickIntakeError(f"{field}.path 不得是符号链接")
+        try:
+            resolved = source_path.resolve(strict=True)
+        except OSError as exc:
+            raise QuickIntakeError(f"{field}.path 指向的文件不存在：{path_text}") from exc
+        if not resolved.is_file() or resolved in seen_paths:
+            raise QuickIntakeError(f"{field}.path 必须是未重复引用的普通文件")
+        seen_paths.add(resolved)
+        data = resolved.read_bytes()
+        if not data:
+            raise QuickIntakeError(f"{field}.path 不得为空文件")
+        media_type, suffix, normalized_data = normalize_source_artifact_bytes(
+            role, resolved, data, f"{field}.path", preserve_raw=True
+        )
+        size = len(normalized_data)
+        if size > MAX_SOURCE_ARTIFACT_BYTES:
+            raise QuickIntakeError(f"{field}.path 超过单文件大小上限")
+        total_size += size
+        if total_size > MAX_SOURCE_BUNDLE_BYTES:
+            raise QuickIntakeError("会话包附件总大小超过上限")
+        digest = hashlib.sha256(normalized_data).hexdigest()
+        if digest in seen_hashes:
+            raise QuickIntakeError("artifacts 包含内容完全相同的重复文件")
+        seen_hashes.add(digest)
+        artifacts.append(
+            {
+                "role": role,
+                "data": normalized_data,
+                "sha256": digest,
+                "size": size,
+                "media_type": media_type,
+                "suffix": suffix,
+            }
+        )
+    artifacts.sort(key=lambda item: (item["role"], item["sha256"]))
+    roles = {item["role"] for item in artifacts}
+    if "question_image" not in roles:
+        missing_fields = sorted(set([*missing_fields, "question_image"]))
+    if "solution_text" not in roles:
+        missing_fields = sorted(set([*missing_fields, "solution_text"]))
+    return {
+        "package_key": package_key,
+        "package_id": conversation_package_id(study_date, package_key, source_locator),
+        "study_date": study_date,
+        "timezone": timezone,
+        "source_locator": source_locator,
+        "source": source,
+        "conversation": conversation,
+        "artifacts": artifacts,
+        "missing_fields": missing_fields,
+    }
+
+
 def source_manifest_document(payload: dict[str, Any]) -> dict[str, Any]:
     bundle_dir = SOURCE_STAGING_ROOT / payload["study_date"] / payload["bundle_id"]
     role_counts: dict[str, int] = {}
@@ -657,6 +885,100 @@ def source_manifest_document(payload: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def conversation_package_documents(
+    payload: dict[str, Any],
+) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any], dict[str, Any]]:
+    package_dir = SOURCE_STAGING_ROOT / payload["study_date"] / payload["package_id"]
+    conversation = {
+        "schema_version": CONVERSATION_SCHEMA,
+        "package_id": payload["package_id"],
+        "subject": "math",
+        "turns": payload["conversation"],
+    }
+    source = {
+        "schema_version": SOURCE_FACTS_SCHEMA,
+        "package_id": payload["package_id"],
+        "subject": "math",
+        "study_date": payload["study_date"],
+        "source": payload["source"],
+        "missing_fields": payload["missing_fields"],
+    }
+    conversation_bytes = canonical_json_bytes(conversation)
+    source_bytes = canonical_json_bytes(source)
+    role_counts: dict[str, int] = {}
+    artifacts: list[dict[str, Any]] = []
+    for item in payload["artifacts"]:
+        role = item["role"]
+        role_counts[role] = role_counts.get(role, 0) + 1
+        filename = f"{role}_{role_counts[role]:02d}{item['suffix']}"
+        destination = package_dir / "attachments" / filename
+        artifacts.append(
+            {
+                "role": role,
+                "path": str(destination.relative_to(REPO_ROOT)),
+                "sha256": item["sha256"],
+                "size": item["size"],
+                "media_type": item["media_type"],
+            }
+        )
+    file_bindings = {
+        "conversation": {
+            "path": str((package_dir / "conversation.json").relative_to(REPO_ROOT)),
+            "sha256": hashlib.sha256(conversation_bytes).hexdigest(),
+            "size": len(conversation_bytes),
+            "media_type": "application/json; charset=utf-8",
+        },
+        "source": {
+            "path": str((package_dir / "source.json").relative_to(REPO_ROOT)),
+            "sha256": hashlib.sha256(source_bytes).hexdigest(),
+            "size": len(source_bytes),
+            "media_type": "application/json; charset=utf-8",
+        },
+    }
+    package_canonical_sha256 = sha256_value(
+        {
+            "schema_version": CONVERSATION_PACKAGE_SCHEMA,
+            "package_id": payload["package_id"],
+            "subject": "math",
+            "study_date": payload["study_date"],
+            "timezone": payload["timezone"],
+            "source_locator": payload["source_locator"],
+            "files": file_bindings,
+            "artifacts": artifacts,
+            "missing_fields": payload["missing_fields"],
+            "formal_write_count": 0,
+            "background_processing": "none",
+        }
+    )
+    manifest = {
+        "schema_version": CONVERSATION_PACKAGE_SCHEMA,
+        "package_id": payload["package_id"],
+        "subject": "math",
+        "study_date": payload["study_date"],
+        "timezone": payload["timezone"],
+        "source_locator": payload["source_locator"],
+        "source_identity": payload["source"],
+        "files": file_bindings,
+        "artifacts": artifacts,
+        "missing_fields": payload["missing_fields"],
+        "canonical_sha256": package_canonical_sha256,
+        "formal_write_count": 0,
+        "background_processing": "none",
+    }
+    receipt = {
+        "schema_version": PACKAGE_RECEIPT_SCHEMA,
+        "package_id": payload["package_id"],
+        "subject": "math",
+        "study_date": payload["study_date"],
+        "canonical_sha256": package_canonical_sha256,
+        "formal_write_count": 0,
+        "background_processing": "none",
+        "model_call_count": 0,
+        "mcp_call_count": 0,
+    }
+    return manifest, conversation, source, receipt
+
+
 def canonical_json_bytes(value: Any) -> bytes:
     return (canonical_json(value) + "\n").encode("utf-8")
 
@@ -667,6 +989,779 @@ def fsync_directory(path: Path) -> None:
         os.fsync(descriptor)
     finally:
         os.close(descriptor)
+
+
+def archived_package_directory(manifest_path: Path, document: dict[str, Any]) -> Path | None:
+    pointer_path = manifest_path.parent / "archive-pointer.json"
+    if not pointer_path.exists():
+        return None
+    try:
+        pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise QuickIntakeError("archive-pointer.json 无效") from exc
+    expected_pointer_fields = {
+        "schema_version",
+        "package_id",
+        "archive_volume",
+        "raw_archive_relpath",
+        "raw_archive_manifest_sha256",
+        "raw_archive_package_sha256",
+        "archive_receipt_id",
+        "archive_intent_id",
+        "obsidian_locator_path",
+        "obsidian_locator_sha256",
+        "archive_status",
+        "cleanup_intent",
+    }
+    display_fields = {
+        "display_closure_receipt_id",
+        "display_closure_receipt_path",
+        "display_closure_receipt_sha256",
+        "formal_reference_scan_sha256",
+        "stable_asset_count",
+        "no_display_proof",
+        "pending_component",
+    }
+    schema = pointer.get("schema_version") if isinstance(pointer, dict) else None
+    expected_fields = (
+        expected_pointer_fields
+        if schema == ARCHIVE_POINTER_SCHEMA
+        else expected_pointer_fields | display_fields
+    )
+    if not isinstance(pointer, dict) or set(pointer) != expected_fields:
+        raise QuickIntakeError("archive-pointer.json 字段不完整")
+    if (
+        schema not in {ARCHIVE_POINTER_SCHEMA, ARCHIVE_POINTER_SCHEMA_V2}
+        or pointer.get("package_id") != document.get("package_id")
+        or pointer.get("archive_volume") != "T9-Data"
+        or pointer.get("archive_status") != "verified"
+        or pointer.get("cleanup_intent")
+        not in {
+            "remove_local_attachments_after_verified_archive_and_locator_receipt",
+            "remove_local_attachments_after_verified_display_archive_locator_receipt",
+        }
+        or pointer.get("raw_archive_manifest_sha256") != file_sha256(manifest_path)
+        or pointer.get("raw_archive_package_sha256") != document.get("canonical_sha256")
+    ):
+        raise QuickIntakeError("archive-pointer.json 与本地 manifest 不一致")
+    if schema == ARCHIVE_POINTER_SCHEMA_V2:
+        if (
+            pointer.get("pending_component") is not None
+            or not isinstance(pointer.get("display_closure_receipt_id"), str)
+            or not isinstance(pointer.get("display_closure_receipt_sha256"), str)
+            or not isinstance(pointer.get("formal_reference_scan_sha256"), str)
+            or not isinstance(pointer.get("stable_asset_count"), int)
+            or not isinstance(pointer.get("no_display_proof"), bool)
+        ):
+            raise QuickIntakeError("archive-pointer.json 展示闭环字段无效")
+        closure_relative = Path(
+            require_text(
+                pointer.get("display_closure_receipt_path"),
+                "archive-pointer.display_closure_receipt_path",
+            )
+        )
+        if closure_relative.is_absolute() or ".." in closure_relative.parts:
+            raise QuickIntakeError("archive-pointer 展示闭环路径不安全")
+        closure_path = REPO_ROOT / closure_relative
+        if (
+            closure_path.is_symlink()
+            or not closure_path.is_file()
+            or file_sha256(closure_path) != pointer.get("display_closure_receipt_sha256")
+        ):
+            raise QuickIntakeError("archive-pointer 展示闭环回执不匹配")
+    if Path("/Volumes/T9-Data 1").exists():
+        raise QuickIntakeError("检测到 /Volumes/T9-Data 1，拒绝读取归档")
+    try:
+        sentinel = json.loads(ARCHIVE_SENTINEL_PATH.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise QuickIntakeError("T9 volume sentinel 不可用") from exc
+    if (
+        file_sha256(ARCHIVE_SENTINEL_PATH) != ARCHIVE_SENTINEL_SHA256
+        or sentinel.get("volume_name") != "T9-Data"
+        or sentinel.get("volume_uuid") != ARCHIVE_VOLUME_UUID
+    ):
+        raise QuickIntakeError("T9 volume sentinel 身份不匹配")
+    relative = Path(require_text(pointer.get("raw_archive_relpath"), "archive-pointer.raw_archive_relpath"))
+    if relative.is_absolute() or ".." in relative.parts:
+        raise QuickIntakeError("archive-pointer.raw_archive_relpath 必须是安全相对路径")
+    archive_dir = (ARCHIVE_ROOT / relative).resolve(strict=True)
+    if ARCHIVE_ROOT.resolve(strict=True) not in archive_dir.parents:
+        raise QuickIntakeError("archive-pointer 路径越出 T9-Data")
+    archived_manifest = archive_dir / "manifest.json"
+    if not archived_manifest.is_file() or file_sha256(archived_manifest) != file_sha256(manifest_path):
+        raise QuickIntakeError("归档 manifest 与本地 manifest 不一致")
+    return archive_dir
+
+
+def legacy_archive_pointer_path_for_manifest(
+    manifest_path: Path, capture_id: str | None = None
+) -> Path:
+    single = manifest_path.parent / LEGACY_ARCHIVE_POINTER_FILENAME
+    if capture_id is None:
+        return single
+    capture_specific = (
+        manifest_path.parent
+        / LEGACY_ARCHIVE_POINTER_DIRECTORY
+        / f"{capture_id}.json"
+    )
+    if capture_specific.exists():
+        return capture_specific
+    if not single.exists():
+        return single
+    try:
+        value = json.loads(single.read_text(encoding="utf-8"))
+        owner = value.get("capture_event_id") if isinstance(value, dict) else None
+    except (OSError, UnicodeError, json.JSONDecodeError):
+        owner = None
+    return single if owner == capture_id else capture_specific
+
+
+def legacy_archive_pointer_path(
+    capture: dict[str, Any],
+    amendments: list[dict[str, Any]],
+) -> Path:
+    bundle = effective_source_bundle(capture, amendments)
+    if isinstance(bundle, dict) and isinstance(bundle.get("manifest_path"), str):
+        return legacy_archive_pointer_path_for_manifest(
+            REPO_ROOT / bundle["manifest_path"], capture["event_id"]
+        )
+    return ROOT / "历史证据归档指针" / f"{capture['event_id']}.json"
+
+
+def _legacy_archive_tree_inventory(root: Path) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for child in sorted(root.rglob("*"), key=lambda item: item.as_posix()):
+        if child.is_symlink():
+            raise QuickIntakeError("legacy archive 包含符号链接")
+        if child.is_file():
+            rows.append(
+                {
+                    "path": child.relative_to(root).as_posix(),
+                    "size": child.stat().st_size,
+                    "sha256": file_sha256(child),
+                }
+            )
+    return rows
+
+
+def _archived_legacy_source_artifacts_from_pointer(
+    manifest_path: Path,
+    document: dict[str, Any],
+    pointer_path: Path,
+) -> dict[str, Path] | None:
+    """Resolve cleaned legacy source bytes only through a fully bound T9 pointer."""
+    if pointer_path.is_symlink() or not pointer_path.is_file():
+        raise QuickIntakeError("legacy archive pointer 必须是普通文件")
+    try:
+        pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise QuickIntakeError("legacy-archive-pointer.json 无效") from exc
+    expected_pointer_fields = {
+        "schema_version",
+        "legacy_package_id",
+        "capture_event_id",
+        "freeze_id",
+        "closeout_id",
+        "formal_ids",
+        "terminal_outcome",
+        "evidence_mode",
+        "conversation_complete",
+        "canonical_package",
+        "archive_volume",
+        "raw_archive_relpath",
+        "raw_archive_manifest_sha256",
+        "raw_archive_package_sha256",
+        "archive_tree_sha256",
+        "archive_receipt_id",
+        "archive_intent_id",
+        "obsidian_locator_path",
+        "obsidian_locator_sha256",
+        "source_bundle_manifest_path",
+        "source_bundle_manifest_sha256",
+        "cleanup_proof",
+        "archive_status",
+        "cleanup_intent",
+        "authorization",
+    }
+    local_manifest_relative = manifest_path.relative_to(REPO_ROOT.resolve()).as_posix()
+    accepted_pointer_fields = {
+        frozenset(expected_pointer_fields),
+        frozenset(expected_pointer_fields | {"local_pointer_path"}),
+        frozenset(
+            expected_pointer_fields
+            | {
+                "local_pointer_path",
+                "display_closure_receipt_id",
+                "display_closure_receipt_path",
+                "display_closure_receipt_sha256",
+                "formal_reference_scan_sha256",
+                "stable_asset_count",
+                "no_display_proof",
+                "pending_component",
+            }
+        ),
+    }
+    if (
+        not isinstance(pointer, dict)
+        or frozenset(pointer) not in accepted_pointer_fields
+    ):
+        raise QuickIntakeError("legacy-archive-pointer.json 字段不完整")
+    pointer_relative = pointer_path.relative_to(REPO_ROOT.resolve()).as_posix()
+    if (
+        "local_pointer_path" in pointer
+        and pointer.get("local_pointer_path") != pointer_relative
+    ):
+        raise QuickIntakeError("legacy archive pointer 本地路径绑定不一致")
+    if (
+        pointer_path.parent.name == LEGACY_ARCHIVE_POINTER_DIRECTORY
+        and pointer.get("local_pointer_path") != pointer_relative
+    ):
+        raise QuickIntakeError("Capture 专属 legacy pointer 缺少路径绑定")
+    if (
+        pointer.get("schema_version")
+        not in {LEGACY_ARCHIVE_POINTER_SCHEMA, LEGACY_ARCHIVE_POINTER_SCHEMA_V2}
+        or pointer.get("evidence_mode") != "source_bundle"
+        or pointer.get("conversation_complete") is not False
+        or pointer.get("canonical_package") is not False
+        or pointer.get("archive_volume") != "T9-Data"
+        or pointer.get("archive_status") != "verified"
+        or pointer.get("source_bundle_manifest_path") != local_manifest_relative
+        or pointer.get("source_bundle_manifest_sha256") != file_sha256(manifest_path)
+        or pointer.get("cleanup_intent")
+        != "remove_local_source_artifacts_after_verified_legacy_archive_locator_receipt"
+    ):
+        raise QuickIntakeError("legacy-archive-pointer.json 与 source bundle 不一致")
+    cleanup_proof = pointer.get("cleanup_proof")
+    expected_cleanup_fields = {
+        "schema_version",
+        "target_capture_event_id",
+        "source_bundle_manifest_path",
+        "source_bundle_manifest_sha256",
+        "reference_capture_ids",
+        "reference_count",
+        "unprovable_capture_ids",
+        "overall_decision",
+        "items",
+    }
+    if (
+        not isinstance(cleanup_proof, dict)
+        or set(cleanup_proof) != expected_cleanup_fields
+        or cleanup_proof.get("schema_version")
+        != "math-legacy-source-cleanup-proof-v1"
+        or cleanup_proof.get("target_capture_event_id")
+        != pointer.get("capture_event_id")
+        or cleanup_proof.get("source_bundle_manifest_path")
+        != local_manifest_relative
+        or cleanup_proof.get("source_bundle_manifest_sha256")
+        != file_sha256(manifest_path)
+        or not isinstance(cleanup_proof.get("reference_capture_ids"), list)
+        or cleanup_proof.get("reference_count")
+        != len(cleanup_proof.get("reference_capture_ids", []))
+        or not isinstance(cleanup_proof.get("unprovable_capture_ids"), list)
+        or not isinstance(cleanup_proof.get("items"), list)
+    ):
+        raise QuickIntakeError("legacy archive cleanup proof 无效")
+
+    receipt_index, receipt_error = load_archive_receipt_index()
+    if receipt_error is not None:
+        raise QuickIntakeError(receipt_error)
+    receipt = receipt_index.get(pointer.get("archive_receipt_id"))
+    if (
+        not isinstance(receipt, dict)
+        or receipt.get("schema_version")
+        not in {LEGACY_ARCHIVE_RECEIPT_SCHEMA, LEGACY_ARCHIVE_RECEIPT_SCHEMA_V2}
+        or receipt.get("legacy_package_id") != pointer.get("legacy_package_id")
+        or receipt.get("capture_event_id") != pointer.get("capture_event_id")
+        or receipt.get("closeout_id") != pointer.get("closeout_id")
+        or receipt.get("raw_archive_relpath") != pointer.get("raw_archive_relpath")
+        or receipt.get("raw_archive_manifest_sha256")
+        != pointer.get("raw_archive_manifest_sha256")
+        or receipt.get("raw_archive_package_sha256")
+        != pointer.get("raw_archive_package_sha256")
+        or receipt.get("archive_tree_sha256") != pointer.get("archive_tree_sha256")
+        or receipt.get("cleanup_proof") != pointer.get("cleanup_proof")
+        or (
+            receipt.get("local_pointer_path") is not None
+            and receipt.get("local_pointer_path") != pointer_relative
+        )
+        or receipt.get("archive_status") != "verified"
+        or receipt.get("obsidian_path_status") != "verified"
+    ):
+        raise QuickIntakeError("legacy archive pointer receipt 绑定无效")
+    if pointer.get("schema_version") == LEGACY_ARCHIVE_POINTER_SCHEMA_V2:
+        closure_keys = {
+            "display_closure_receipt_id",
+            "display_closure_receipt_path",
+            "display_closure_receipt_sha256",
+            "formal_reference_scan_sha256",
+            "stable_asset_count",
+            "no_display_proof",
+        }
+        if (
+            receipt.get("schema_version") != LEGACY_ARCHIVE_RECEIPT_SCHEMA_V2
+            or pointer.get("pending_component") is not None
+            or receipt.get("pending_component") is not None
+            or any(pointer.get(key) != receipt.get(key) for key in closure_keys)
+        ):
+            raise QuickIntakeError("legacy archive 展示闭环绑定无效")
+        closure_relative = Path(
+            require_text(
+                pointer.get("display_closure_receipt_path"),
+                "legacy pointer display_closure_receipt_path",
+            )
+        )
+        if closure_relative.is_absolute() or ".." in closure_relative.parts:
+            raise QuickIntakeError("legacy archive 展示闭环路径不安全")
+        closure_path = REPO_ROOT / closure_relative
+        if (
+            closure_path.is_symlink()
+            or not closure_path.is_file()
+            or file_sha256(closure_path)
+            != pointer.get("display_closure_receipt_sha256")
+        ):
+            raise QuickIntakeError("legacy archive 展示闭环回执不匹配")
+    locator_value = pointer.get("obsidian_locator_path")
+    locator_hash = pointer.get("obsidian_locator_sha256")
+    if not isinstance(locator_value, str) or not isinstance(locator_hash, str):
+        raise QuickIntakeError("legacy archive locator 绑定缺失")
+    locator = REPO_ROOT / locator_value
+    if not locator.is_file() or file_sha256(locator) != locator_hash:
+        raise QuickIntakeError("legacy archive locator 哈希不一致")
+
+    ambiguous_roots = {Path("/Volumes/T9-Data 1")}
+    if ARCHIVE_ROOT.name:
+        ambiguous_roots.add(ARCHIVE_ROOT.with_name(f"{ARCHIVE_ROOT.name} 1"))
+    if any(path.exists() for path in ambiguous_roots):
+        raise QuickIntakeError("检测到 T9-Data 1，拒绝读取 legacy archive")
+    try:
+        archive_root = ARCHIVE_ROOT.resolve(strict=True)
+        sentinel = json.loads(ARCHIVE_SENTINEL_PATH.read_text(encoding="utf-8"))
+        expected_mount = Path(str(sentinel.get("expected_mount_point"))).resolve(
+            strict=True
+        )
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise QuickIntakeError("T9 volume sentinel 不可用") from exc
+    if (
+        archive_root.name != "T9-Data"
+        or file_sha256(ARCHIVE_SENTINEL_PATH) != ARCHIVE_SENTINEL_SHA256
+        or sentinel.get("volume_name") != "T9-Data"
+        or sentinel.get("volume_uuid") != ARCHIVE_VOLUME_UUID
+        or expected_mount != archive_root
+    ):
+        raise QuickIntakeError("T9 volume sentinel 身份不匹配")
+    relative = Path(require_text(pointer.get("raw_archive_relpath"), "legacy pointer relpath"))
+    subject_parts = MATH_ARCHIVE_SUBJECT_ROOT.parts
+    if (
+        relative.is_absolute()
+        or ".." in relative.parts
+        or relative.parts[: len(subject_parts)] != subject_parts
+    ):
+        raise QuickIntakeError("legacy archive 相对路径无效")
+    package_dir = (archive_root / relative).resolve(strict=True)
+    if archive_root not in package_dir.parents or not package_dir.is_dir():
+        raise QuickIntakeError("legacy archive 路径越出 T9-Data")
+    archived_manifest = package_dir / "manifest.json"
+    if (
+        not archived_manifest.is_file()
+        or file_sha256(archived_manifest) != pointer.get("raw_archive_manifest_sha256")
+    ):
+        raise QuickIntakeError("legacy archive manifest 哈希不一致")
+    try:
+        archive_document = json.loads(archived_manifest.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise QuickIntakeError("legacy archive manifest 无效") from exc
+    if (
+        not isinstance(archive_document, dict)
+        or archive_document.get("schema_version") != LEGACY_ARCHIVE_PACKAGE_SCHEMA
+        or archive_document.get("legacy_package_id") != pointer.get("legacy_package_id")
+        or archive_document.get("evidence_mode") != "source_bundle"
+        or archive_document.get("conversation_complete") is not False
+        or archive_document.get("canonical_package") is not False
+        or archive_document.get("canonical_sha256")
+        != pointer.get("raw_archive_package_sha256")
+        or sha256_value(
+            {key: value for key, value in archive_document.items() if key != "canonical_sha256"}
+        )
+        != archive_document.get("canonical_sha256")
+    ):
+        raise QuickIntakeError("legacy archive manifest 身份不一致")
+    inventory = _legacy_archive_tree_inventory(package_dir)
+    if sha256_value(inventory) != pointer.get("archive_tree_sha256"):
+        raise QuickIntakeError("legacy archive tree 哈希不一致")
+
+    payload_files = archive_document.get("payload_files")
+    if not isinstance(payload_files, list):
+        raise QuickIntakeError("legacy archive payload_files 无效")
+    source_manifest_rows = [
+        row
+        for row in payload_files
+        if isinstance(row, dict) and row.get("kind") == "source_bundle_manifest"
+    ]
+    if len(source_manifest_rows) != 1:
+        raise QuickIntakeError("legacy archive 缺少唯一 source bundle manifest")
+    source_manifest_row = source_manifest_rows[0]
+    source_manifest_archive = package_dir / str(source_manifest_row.get("archive_path"))
+    if (
+        source_manifest_row.get("original_path") != local_manifest_relative
+        or not source_manifest_archive.is_file()
+        or file_sha256(source_manifest_archive) != file_sha256(manifest_path)
+        or source_manifest_archive.read_bytes() != manifest_path.read_bytes()
+    ):
+        raise QuickIntakeError("legacy archive source bundle manifest 不一致")
+    artifact_map: dict[str, Path] = {}
+    for row in payload_files:
+        if not isinstance(row, dict) or row.get("kind") != "source_artifact":
+            continue
+        original_path = row.get("original_path")
+        archive_path = row.get("archive_path")
+        if not isinstance(original_path, str) or not isinstance(archive_path, str):
+            raise QuickIntakeError("legacy archive source artifact 映射无效")
+        child = (package_dir / archive_path).resolve(strict=True)
+        if package_dir not in child.parents or not child.is_file():
+            raise QuickIntakeError("legacy archive source artifact 路径无效")
+        if (
+            child.stat().st_size != row.get("size")
+            or file_sha256(child) != row.get("sha256")
+        ):
+            raise QuickIntakeError("legacy archive source artifact 哈希不一致")
+        if original_path in artifact_map:
+            raise QuickIntakeError("legacy archive source artifact 重复映射")
+        artifact_map[original_path] = child
+    expected_original_paths = {
+        row.get("path") for row in document.get("artifacts", []) if isinstance(row, dict)
+    }
+    if set(artifact_map) != expected_original_paths:
+        raise QuickIntakeError("legacy archive source artifact 映射不完整")
+    proof_by_path: dict[str, dict[str, Any]] = {}
+    for item in cleanup_proof["items"]:
+        expected_item_fields = {
+            "path",
+            "size",
+            "sha256",
+            "reference_capture_ids",
+            "reference_count",
+            "unprovable_capture_ids",
+            "decision",
+            "verified_pointer_coverage_required",
+        }
+        if (
+            not isinstance(item, dict)
+            or set(item) != expected_item_fields
+            or item.get("path") in proof_by_path
+            or item.get("reference_capture_ids")
+            != cleanup_proof["reference_capture_ids"]
+            or item.get("reference_count") != cleanup_proof["reference_count"]
+            or item.get("unprovable_capture_ids")
+            != cleanup_proof["unprovable_capture_ids"]
+            or item.get("decision")
+            not in {
+                "delete_exclusive_reference",
+                "retain_shared_reference",
+                "retain_unprovable_reference",
+            }
+            or item.get("verified_pointer_coverage_required") is not True
+        ):
+            raise QuickIntakeError("legacy archive cleanup proof item 无效")
+        proof_by_path[item["path"]] = item
+    if set(proof_by_path) != expected_original_paths:
+        raise QuickIntakeError("legacy archive cleanup proof 覆盖不完整")
+    artifact_descriptors = {
+        item["path"]: item for item in document["artifacts"] if isinstance(item, dict)
+    }
+    for original_path, proof_item in proof_by_path.items():
+        descriptor = artifact_descriptors[original_path]
+        if (
+            proof_item.get("size") != descriptor.get("size")
+            or proof_item.get("sha256") != descriptor.get("sha256")
+        ):
+            raise QuickIntakeError("legacy archive cleanup proof artifact 绑定不一致")
+        local_path = REPO_ROOT / original_path
+        if (
+            not local_path.exists()
+            and proof_item.get("decision") != "delete_exclusive_reference"
+        ):
+            raise QuickIntakeError("共享或不可证明 artifact 不得缺失")
+    return artifact_map
+
+
+def archived_legacy_source_artifacts(
+    manifest_path: Path,
+    document: dict[str, Any],
+) -> dict[str, Path] | None:
+    single = legacy_archive_pointer_path_for_manifest(manifest_path)
+    pointer_directory = manifest_path.parent / LEGACY_ARCHIVE_POINTER_DIRECTORY
+    if pointer_directory.is_symlink():
+        raise QuickIntakeError("legacy archive pointer 目录不得是符号链接")
+    candidates = ([single] if single.exists() else []) + (
+        sorted(pointer_directory.glob("*.json"), key=lambda item: item.name)
+        if pointer_directory.is_dir()
+        else []
+    )
+    if not candidates:
+        return None
+    errors: list[str] = []
+    for pointer_path in candidates:
+        try:
+            return _archived_legacy_source_artifacts_from_pointer(
+                manifest_path, document, pointer_path
+            )
+        except (QuickIntakeError, OSError) as exc:
+            errors.append(f"{pointer_path.name}:{exc}")
+    raise QuickIntakeError("没有可验证的 legacy archive pointer：" + " | ".join(errors))
+
+
+def validate_conversation_package_manifest(
+    document: dict[str, Any],
+    manifest_path: Path,
+    field: str,
+    *,
+    expected_hash: str | None = None,
+    expected_date: str | None = None,
+    expected_locator: str | None = None,
+    require_question: bool = False,
+    require_question_image: bool = False,
+    required_roles: set[str] | None = None,
+) -> tuple[dict[str, Any], Path, list[Path]]:
+    expected_fields = {
+        "schema_version",
+        "package_id",
+        "subject",
+        "study_date",
+        "timezone",
+        "source_locator",
+        "source_identity",
+        "files",
+        "artifacts",
+        "missing_fields",
+        "canonical_sha256",
+        "formal_write_count",
+        "background_processing",
+    }
+    if set(document) != expected_fields:
+        raise QuickIntakeError(f"{field} 会话包 manifest 字段不完整")
+    if document.get("subject") != "math":
+        raise QuickIntakeError(f"{field}.subject 必须是 math")
+    study_date = validate_date(document.get("study_date"), f"{field}.study_date")
+    validate_timezone(document.get("timezone"))
+    locator = require_text(
+        document.get("source_locator"), f"{field}.source_locator", max_length=1000
+    )
+    reject_local_absolute_paths(document.get("source_identity"), f"{field}.source_identity")
+    reject_background_authority_fields(
+        document.get("source_identity"), f"{field}.source_identity"
+    )
+    if expected_hash is not None and file_sha256(manifest_path) != expected_hash:
+        raise QuickIntakeError(f"{field} 当前清单哈希与绑定不一致")
+    if expected_date is not None and study_date != expected_date:
+        raise QuickIntakeError(f"{field}.study_date 与 capture 不一致")
+    if expected_locator is not None and locator != expected_locator:
+        raise QuickIntakeError(f"{field}.source_locator 与 capture 不一致")
+    package_id = document.get("package_id")
+    if not isinstance(package_id, str) or not re.fullmatch(r"MATHPKG-[0-9a-f]{24}", package_id):
+        raise QuickIntakeError(f"{field}.package_id 无效")
+    expected_manifest = SOURCE_STAGING_ROOT / study_date / package_id / "manifest.json"
+    if manifest_path != expected_manifest.resolve(strict=True):
+        raise QuickIntakeError(f"{field} 所在目录与会话包身份不一致")
+    archive_dir = archived_package_directory(manifest_path, document)
+    if document.get("formal_write_count") != 0 or document.get("background_processing") != "none":
+        raise QuickIntakeError(f"{field} 会话包不得包含正式写入或后台处理")
+    raw_missing = document.get("missing_fields")
+    if not isinstance(raw_missing, list) or not all(isinstance(item, str) for item in raw_missing):
+        raise QuickIntakeError(f"{field}.missing_fields 无效")
+
+    files = document.get("files")
+    if not isinstance(files, dict) or set(files) != {"conversation", "source"}:
+        raise QuickIntakeError(f"{field}.files 必须绑定 conversation 与 source")
+    child_paths: list[Path] = []
+    file_documents: dict[str, dict[str, Any]] = {}
+    for name, expected_name in (("conversation", "conversation.json"), ("source", "source.json")):
+        descriptor = files.get(name)
+        item_field = f"{field}.files.{name}"
+        if not isinstance(descriptor, dict) or set(descriptor) != {
+            "path", "sha256", "size", "media_type"
+        }:
+            raise QuickIntakeError(f"{item_field} 字段不完整")
+        child = resolve_repo_artifact(descriptor.get("path"), f"{item_field}.path")
+        if child.parent != manifest_path.parent or child.name != expected_name:
+            raise QuickIntakeError(f"{item_field}.path 必须指向同一包内的 {expected_name}")
+        expected_child_hash = validate_hash(descriptor.get("sha256"), f"{item_field}.sha256")
+        if file_sha256(child) != expected_child_hash or child.stat().st_size != descriptor.get("size"):
+            raise QuickIntakeError(f"{item_field} 哈希或字节数不一致")
+        if descriptor.get("media_type") != "application/json; charset=utf-8":
+            raise QuickIntakeError(f"{item_field}.media_type 无效")
+        try:
+            value = json.loads(child.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            raise QuickIntakeError(f"{item_field} 不是有效 UTF-8 JSON") from exc
+        if not isinstance(value, dict):
+            raise QuickIntakeError(f"{item_field} 顶层必须是对象")
+        file_documents[name] = value
+        child_paths.append(child)
+
+    conversation = file_documents["conversation"]
+    if set(conversation) != {"schema_version", "package_id", "subject", "turns"}:
+        raise QuickIntakeError(f"{field} conversation.json 字段不完整")
+    if (
+        conversation.get("schema_version") != CONVERSATION_SCHEMA
+        or conversation.get("package_id") != package_id
+        or conversation.get("subject") != "math"
+    ):
+        raise QuickIntakeError(f"{field} conversation.json 身份不一致")
+    turns = conversation.get("turns")
+    if not isinstance(turns, list) or not turns:
+        raise QuickIntakeError(f"{field} conversation.json 缺少完整 turns")
+    for index, turn in enumerate(turns):
+        if (
+            not isinstance(turn, dict)
+            or set(turn) != {"sequence", "role", "text"}
+            or turn.get("sequence") != index + 1
+            or turn.get("role") not in TEACHING_SPEAKERS
+            or not isinstance(turn.get("text"), str)
+        ):
+            raise QuickIntakeError(f"{field} conversation.json turns 顺序或字段无效")
+
+    source = file_documents["source"]
+    if set(source) != {
+        "schema_version", "package_id", "subject", "study_date", "source", "missing_fields"
+    }:
+        raise QuickIntakeError(f"{field} source.json 字段不完整")
+    if (
+        source.get("schema_version") != SOURCE_FACTS_SCHEMA
+        or source.get("package_id") != package_id
+        or source.get("subject") != "math"
+        or source.get("study_date") != study_date
+        or source.get("source") != document.get("source_identity")
+        or source.get("missing_fields") != raw_missing
+        or not isinstance(source.get("source"), dict)
+        or source["source"].get("source_locator") != locator
+    ):
+        raise QuickIntakeError(f"{field} source.json 身份或缺项不一致")
+
+    raw_artifacts = document.get("artifacts")
+    if not isinstance(raw_artifacts, list) or len(raw_artifacts) > MAX_SOURCE_ARTIFACTS:
+        raise QuickIntakeError(f"{field}.artifacts 无效")
+    roles: set[str] = set()
+    listed_paths: set[Path] = set()
+    total_size = 0
+    for index, item in enumerate(raw_artifacts):
+        item_field = f"{field}.artifacts[{index}]"
+        if not isinstance(item, dict) or set(item) != {
+            "role", "path", "sha256", "size", "media_type"
+        }:
+            raise QuickIntakeError(f"{item_field} 字段不完整")
+        role = item.get("role")
+        if role not in CONVERSATION_ATTACHMENT_ROLES:
+            raise QuickIntakeError(f"{item_field}.role 无效")
+        roles.add(role)
+        artifact_text = require_text(item.get("path"), f"{item_field}.path", max_length=2000)
+        artifact_relative = Path(artifact_text)
+        expected_local = (REPO_ROOT / artifact_relative).resolve()
+        if expected_local.parent != manifest_path.parent / "attachments":
+            raise QuickIntakeError(f"{item_field}.path 不在当前包 attachments")
+        child = expected_local
+        if not child.is_file() and archive_dir is not None:
+            child = archive_dir / "attachments" / artifact_relative.name
+        if not child.is_file() or child in listed_paths:
+            raise QuickIntakeError(f"{item_field}.path 不在当前包 attachments 或重复")
+        listed_paths.add(child)
+        expected_child_hash = validate_hash(item.get("sha256"), f"{item_field}.sha256")
+        size = item.get("size")
+        if isinstance(size, bool) or not isinstance(size, int) or size <= 0:
+            raise QuickIntakeError(f"{item_field}.size 无效")
+        data = child.read_bytes()
+        media_type, _, canonical_data = normalize_source_artifact_bytes(
+            role, child, data, f"{item_field}.path", preserve_raw=True
+        )
+        if (
+            hashlib.sha256(data).hexdigest() != expected_child_hash
+            or len(data) != size
+            or canonical_data != data
+            or item.get("media_type") != media_type
+        ):
+            raise QuickIntakeError(f"{item_field} 字节、哈希或 MIME 不一致")
+        total_size += size
+        if total_size > MAX_SOURCE_BUNDLE_BYTES:
+            raise QuickIntakeError(f"{field} 附件总大小超过上限")
+        child_paths.append(child)
+    alias_roles = {
+        "question_image": "question",
+        "solution_image": "solution",
+        "explanation_image": "solution",
+        "user_work_image": "user_work",
+        "source_article_image": "reference",
+        "other_attachment": "reference",
+        "solution_text": "solution_text",
+    }
+    legacy_roles = {alias_roles[role] for role in roles}
+    if require_question and "question" not in legacy_roles:
+        raise QuickIntakeError(f"{field} 对新题至少需要一个 question_image")
+    if require_question_image and "question_image" not in roles:
+        raise QuickIntakeError(f"{field} 至少需要一张真实 question_image")
+    if required_roles is not None and not required_roles.issubset(legacy_roles):
+        raise QuickIntakeError(f"{field} 缺少必须的来源角色")
+
+    canonical_core = {
+        "schema_version": CONVERSATION_PACKAGE_SCHEMA,
+        "package_id": package_id,
+        "subject": "math",
+        "study_date": study_date,
+        "timezone": document["timezone"],
+        "source_locator": locator,
+        "files": files,
+        "artifacts": raw_artifacts,
+        "missing_fields": raw_missing,
+        "formal_write_count": 0,
+        "background_processing": "none",
+    }
+    expected_canonical = validate_hash(
+        document.get("canonical_sha256"), f"{field}.canonical_sha256"
+    )
+    if sha256_value(canonical_core) != expected_canonical:
+        raise QuickIntakeError(f"{field}.canonical_sha256 与包内容不一致")
+    receipt_path = manifest_path.parent / "receipt.json"
+    try:
+        receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise QuickIntakeError(f"{field} receipt.json 缺失或无效") from exc
+    if receipt != {
+        "schema_version": PACKAGE_RECEIPT_SCHEMA,
+        "package_id": package_id,
+        "subject": "math",
+        "study_date": study_date,
+        "canonical_sha256": expected_canonical,
+        "formal_write_count": 0,
+        "background_processing": "none",
+        "model_call_count": 0,
+        "mcp_call_count": 0,
+    }:
+        raise QuickIntakeError(f"{field} receipt.json 与会话包不一致")
+    child_paths.append(receipt_path.resolve(strict=True))
+    actual_local_files = {
+        path.resolve() for path in manifest_path.parent.rglob("*") if path.is_file()
+    }
+    if archive_dir is None:
+        expected_files = {manifest_path, *child_paths}
+        if actual_local_files != expected_files:
+            raise QuickIntakeError(f"{field} 会话包包含未声明文件或缺失文件")
+    else:
+        required_local_files = {
+            manifest_path,
+            manifest_path.parent / "conversation.json",
+            manifest_path.parent / "source.json",
+            manifest_path.parent / "receipt.json",
+            manifest_path.parent / "archive-pointer.json",
+        }
+        declared_local_artifacts = {
+            (REPO_ROOT / Path(item["path"])).resolve() for item in raw_artifacts
+        }
+        if (
+            not required_local_files.issubset(actual_local_files)
+            or not actual_local_files.issubset(
+                required_local_files | declared_local_artifacts
+            )
+        ):
+            raise QuickIntakeError(f"{field} 已归档本地包清理状态无效")
+    return document, manifest_path, child_paths
 
 
 def validate_source_bundle_manifest(
@@ -702,6 +1797,18 @@ def validate_source_bundle_manifest(
         document = json.loads(manifest_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise QuickIntakeError(f"{field} 不是有效来源清单") from exc
+    if isinstance(document, dict) and document.get("schema_version") == CONVERSATION_PACKAGE_SCHEMA:
+        return validate_conversation_package_manifest(
+            document,
+            manifest_path,
+            field,
+            expected_hash=expected_hash,
+            expected_date=expected_date,
+            expected_locator=expected_locator,
+            require_question=require_question,
+            require_question_image=require_question_image,
+            required_roles=required_roles,
+        )
     expected_fields = {
         "schema_version",
         "bundle_id",
@@ -736,6 +1843,7 @@ def validate_source_bundle_manifest(
         raise QuickIntakeError(f"{field}.artifacts 必须是非空数组")
     if len(raw_artifacts) > MAX_SOURCE_ARTIFACTS:
         raise QuickIntakeError(f"{field}.artifacts 数量超过上限")
+    archived_artifacts = archived_legacy_source_artifacts(manifest_path, document)
     child_paths: list[Path] = []
     listed_names: set[str] = set()
     listed_hashes: set[str] = set()
@@ -762,11 +1870,18 @@ def validate_source_bundle_manifest(
         if artifact_relative.is_absolute():
             raise QuickIntakeError(f"{item_field}.path 必须是仓库相对路径")
         artifact_candidate = REPO_ROOT / artifact_relative
-        if artifact_candidate.is_symlink():
-            raise QuickIntakeError(f"{item_field}.path 不得是符号链接")
-        artifact = resolve_repo_artifact(artifact_text, f"{item_field}.path")
-        if artifact.parent != manifest_path.parent:
+        if artifact_relative.parent != manifest_path.relative_to(REPO_ROOT.resolve()).parent:
             raise QuickIntakeError(f"{item_field}.path 必须与清单位于同一来源包")
+        if artifact_candidate.exists():
+            if artifact_candidate.is_symlink():
+                raise QuickIntakeError(f"{item_field}.path 不得是符号链接")
+            artifact = resolve_repo_artifact(artifact_text, f"{item_field}.path")
+            if artifact.parent != manifest_path.parent:
+                raise QuickIntakeError(f"{item_field}.path 必须与清单位于同一来源包")
+        else:
+            artifact = (archived_artifacts or {}).get(artifact_text)
+            if artifact is None:
+                raise QuickIntakeError(f"{item_field}.path 缺失且无验证归档指针")
         if artifact.name in listed_names:
             raise QuickIntakeError(f"{field}.artifacts 重复引用文件")
         listed_names.add(artifact.name)
@@ -821,8 +1936,21 @@ def validate_source_bundle_manifest(
                 f"{field} 的 solution_text artifact 与 episode_evidence.solution_text 不一致"
             )
     actual_names = {entry.name for entry in manifest_path.parent.iterdir()}
-    if actual_names != listed_names | {"manifest.json"}:
-        raise QuickIntakeError(f"{field} 来源包含未声明文件或缺失文件")
+    expected_local_names = listed_names | {"manifest.json"}
+    if archived_artifacts is None:
+        if actual_names != expected_local_names:
+            raise QuickIntakeError(f"{field} 来源包含未声明文件或缺失文件")
+    else:
+        allowed_local_names = expected_local_names | {
+            LEGACY_ARCHIVE_POINTER_FILENAME,
+            LEGACY_ARCHIVE_POINTER_DIRECTORY,
+        }
+        if (
+            "manifest.json" not in actual_names
+            or LEGACY_ARCHIVE_POINTER_FILENAME not in actual_names
+            or not actual_names.issubset(allowed_local_names)
+        ):
+            raise QuickIntakeError(f"{field} 已归档来源本地清理状态无效")
     return document, manifest_path, child_paths
 
 
@@ -859,6 +1987,80 @@ def normalize_source_bundle_reference(
         "source_locator": document["source_locator"],
         "study_date": document["study_date"],
     }
+
+
+def validate_conversation_capture_identity(
+    document: dict[str, Any], attempt_id: str, target: dict[str, Any],
+    *, require_identity: bool = True, check_attempt: bool = True,
+) -> None:
+    source = document["source_identity"]
+    identity = source.get("capture_identity")
+    # Existing packages without this metadata stay verifiable, but cannot be
+    # newly attached to an attempt without a complete immutable replacement.
+    if check_attempt and (identity is not None or require_identity):
+        if identity != attempt_id:
+            raise QuickIntakeError("会话包 source.capture_identity 与 Capture attempt_id 不一致")
+    for field in ("formal_id", "question_id"):
+        formal_id = source.get(field)
+        if formal_id is None:
+            continue
+        if field == "question_id" and (
+            not isinstance(formal_id, str) or not CARD_ID_PATTERN.fullmatch(formal_id)
+        ):
+            continue
+        if not isinstance(formal_id, str) or not CARD_ID_PATTERN.fullmatch(formal_id):
+            raise QuickIntakeError(f"会话包 source.{field} 不是有效正式题 ID")
+        if formal_id != target.get("formal_id"):
+            raise QuickIntakeError(f"会话包 source.{field} 与 Capture target.formal_id 不一致")
+
+
+def normalize_conversation_package_reference(
+    value: Any,
+    field: str,
+    *,
+    expected_date: str,
+    expected_locator: str | None,
+    expected_attempt_id: str,
+    expected_target: dict[str, Any],
+) -> dict[str, str]:
+    if not isinstance(value, dict) or set(value) != {
+        "manifest_path", "manifest_hash", "package_sha256"
+    }:
+        raise QuickIntakeError(
+            f"{field} 必须只含 manifest_path、manifest_hash 和 package_sha256"
+        )
+    manifest_hash = validate_hash(value.get("manifest_hash"), f"{field}.manifest_hash")
+    package_sha256 = validate_hash(
+        value.get("package_sha256"), f"{field}.package_sha256"
+    )
+    document, manifest_path, _ = validate_source_bundle_manifest(
+        value.get("manifest_path"),
+        f"{field}.manifest_path",
+        expected_hash=manifest_hash,
+        expected_date=expected_date,
+        expected_locator=expected_locator,
+    )
+    if document.get("schema_version") != CONVERSATION_PACKAGE_SCHEMA:
+        raise QuickIntakeError(f"{field} 必须绑定完整会话包，不得绑定旧 source bundle")
+    if document.get("canonical_sha256") != package_sha256:
+        raise QuickIntakeError(f"{field}.package_sha256 与 manifest 不一致")
+    validate_conversation_capture_identity(document, expected_attempt_id, expected_target)
+    reference = {
+        "manifest_path": str(manifest_path.relative_to(REPO_ROOT.resolve())),
+        "manifest_hash": manifest_hash,
+        "package_sha256": package_sha256,
+        "package_id": document["package_id"],
+        "source_locator": document["source_locator"],
+        "study_date": document["study_date"],
+        "conversation_sha256": document["files"]["conversation"]["sha256"],
+        "source_sha256": document["files"]["source"]["sha256"],
+    }
+    supplement = document["source_identity"].get("supplements_capture_id")
+    if supplement is not None:
+        if not isinstance(supplement, str) or not re.fullmatch(r"MFI-CAP-[0-9a-f]{24}", supplement):
+            raise QuickIntakeError("source.supplements_capture_id 必须是原 Capture ID")
+        reference["supplements_capture_id"] = supplement
+    return reference
 
 
 def source_bundle_binding(reference: dict[str, str]) -> dict[str, str]:
@@ -972,6 +2174,73 @@ def stage_source_bundle(payload: dict[str, Any]) -> tuple[str, dict[str, Any], P
     return "recorded", document, manifest_path
 
 
+def stage_conversation_package(
+    payload: dict[str, Any],
+) -> tuple[str, dict[str, Any], Path]:
+    manifest, conversation, source, receipt = conversation_package_documents(payload)
+    manifest_bytes = canonical_json_bytes(manifest)
+    package_dir = SOURCE_STAGING_ROOT / payload["study_date"] / payload["package_id"]
+    manifest_path = package_dir / "manifest.json"
+    SOURCE_STAGING_ROOT.mkdir(parents=True, exist_ok=True)
+    if SOURCE_STAGING_ROOT.is_symlink():
+        raise QuickIntakeError("来源固化根目录不得是符号链接")
+    day_dir = package_dir.parent
+    if day_dir.is_symlink():
+        raise QuickIntakeError("来源固化日期目录不得是符号链接")
+    day_dir.mkdir(parents=True, exist_ok=True)
+    if package_dir.exists():
+        if not package_dir.is_dir() or not manifest_path.is_file():
+            raise QuickIntakeError("同一会话包身份已有不完整目录，拒绝覆盖")
+        validate_source_bundle_manifest(
+            str(manifest_path.relative_to(REPO_ROOT)),
+            "已有会话包清单",
+            expected_date=payload["study_date"],
+            expected_locator=payload["source_locator"],
+        )
+        if manifest_path.read_bytes() != manifest_bytes:
+            raise QuickIntakeError("同一会话包身份出现不同事实或附件，拒绝覆盖")
+        return "noop", manifest, manifest_path
+
+    temp_dir = Path(tempfile.mkdtemp(prefix=f".{payload['package_id']}.", dir=day_dir))
+    try:
+        attachments_dir = temp_dir / "attachments"
+        attachments_dir.mkdir()
+        payload_by_hash = {item["sha256"]: item for item in payload["artifacts"]}
+        for artifact in manifest["artifacts"]:
+            item = payload_by_hash[artifact["sha256"]]
+            destination = attachments_dir / Path(artifact["path"]).name
+            with destination.open("xb") as handle:
+                handle.write(item["data"])
+                handle.flush()
+                os.fsync(handle.fileno())
+        for name, document in (
+            ("conversation.json", conversation),
+            ("source.json", source),
+            ("receipt.json", receipt),
+            ("manifest.json", manifest),
+        ):
+            with (temp_dir / name).open("xb") as handle:
+                handle.write(canonical_json_bytes(document))
+                handle.flush()
+                os.fsync(handle.fileno())
+        fsync_directory(attachments_dir)
+        fsync_directory(temp_dir)
+        os.replace(temp_dir, package_dir)
+        fsync_directory(day_dir)
+    except Exception:
+        if temp_dir.exists():
+            shutil.rmtree(temp_dir)
+        raise
+    validate_source_bundle_manifest(
+        str(manifest_path.relative_to(REPO_ROOT)),
+        "新会话包清单",
+        expected_hash=file_sha256(manifest_path),
+        expected_date=payload["study_date"],
+        expected_locator=payload["source_locator"],
+    )
+    return "recorded", manifest, manifest_path
+
+
 def cmd_stage_source(args: argparse.Namespace) -> None:
     started = time.perf_counter()
     consumable_path = (
@@ -979,18 +2248,34 @@ def cmd_stage_source(args: argparse.Namespace) -> None:
         if getattr(args, "consume_payload_file", False)
         else None
     )
-    payload = normalize_source_stage(read_json_document(args.payload_file))
+    raw_payload = read_json_document(args.payload_file)
+    is_conversation_package = raw_payload.get("schema_version") == SOURCE_STAGE_SCHEMA_V2
+    payload = (
+        normalize_conversation_package_stage(raw_payload)
+        if is_conversation_package
+        else normalize_source_stage(raw_payload)
+    )
     with exclusive_lock(SOURCE_LOCK_PATH):
-        status, document, manifest_path = stage_source_bundle(payload)
+        status, document, manifest_path = (
+            stage_conversation_package(payload)
+            if is_conversation_package
+            else stage_source_bundle(payload)
+        )
     response = {
         "status": status,
-        "state": "source_staged",
-        "bundle_id": document["bundle_id"],
+        "state": "conversation_package_staged" if is_conversation_package else "source_staged",
+        "bundle_id": document.get("bundle_id"),
+        "package_id": document.get("package_id"),
         "study_date": document["study_date"],
         "source_locator": document["source_locator"],
         "manifest_path": str(manifest_path.relative_to(REPO_ROOT)),
         "manifest_hash": file_sha256(manifest_path),
+        "package_sha256": document.get("canonical_sha256"),
         "artifacts": document["artifacts"],
+        "formal_write_count": 0,
+        "background_processing": "none",
+        "model_call_count": 0,
+        "mcp_call_count": 0,
         "elapsed_ms": round((time.perf_counter() - started) * 1000, 3),
         "payload_file_consumed": consume_payload_file(consumable_path),
     }
@@ -1139,7 +2424,7 @@ def normalize_target(value: Any, score_ref: dict[str, Any] | None) -> dict[str, 
     }
 
 
-def normalize_capture(value: dict[str, Any]) -> dict[str, Any]:
+def normalize_capture_v2(value: dict[str, Any]) -> dict[str, Any]:
     schema_version = value.get("schema_version")
     if schema_version != CAPTURE_SCHEMA_V2:
         raise QuickIntakeError(f"fresh Capture 必须使用 {CAPTURE_SCHEMA_V2}")
@@ -1156,7 +2441,7 @@ def normalize_capture(value: dict[str, Any]) -> dict[str, Any]:
         "evidence",
     }
     missing = sorted(required - set(value))
-    unexpected = sorted(set(value) - required - {"capture_authorization"})
+    unexpected = sorted(set(value) - required)
     if missing:
         raise QuickIntakeError(f"捕获输入缺少字段：{', '.join(missing)}")
     if unexpected:
@@ -1204,9 +2489,6 @@ def normalize_capture(value: dict[str, Any]) -> dict[str, Any]:
     evidence = normalize_evidence(value.get("evidence"))
     if score_ref is not None and evidence["mastery_score"] != score_ref["score"]:
         raise QuickIntakeError("evidence.mastery_score 与评分事件分数不一致")
-    authorization = normalize_capture_authorization(
-        value.get("capture_authorization")
-    )
     normalized = {
         "schema_version": schema_version,
         "attempt_id": attempt_id,
@@ -1215,7 +2497,6 @@ def normalize_capture(value: dict[str, Any]) -> dict[str, Any]:
         "score_ref": score_ref,
         "requested_action": action,
         "thread_ref": thread_ref,
-        "capture_authorization": authorization,
         "source_bundle": source_bundle,
         "evidence": evidence,
     }
@@ -1224,33 +2505,99 @@ def normalize_capture(value: dict[str, Any]) -> dict[str, Any]:
     return normalized
 
 
-def normalize_capture_authorization(value: Any) -> dict[str, str]:
-    if not isinstance(value, dict) or set(value) != {"current_user_message"}:
-        raise QuickIntakeError(
-            "fresh Capture 需要当前用户消息中的连续短语“快速入库”授权"
-        )
-    message = value.get("current_user_message")
-    if not isinstance(message, str) or not message or len(message) > 32768:
-        raise QuickIntakeError("capture authorization 当前用户消息无效")
-    normalized_message = unicodedata.normalize("NFKC", message)
-    if CAPTURE_TRIGGER_PHRASE not in normalized_message:
-        raise QuickIntakeError(
-            "当前用户消息没有连续短语“快速入库”，Capture 未获授权"
-        )
-    return {
-        "schema_version": CAPTURE_AUTHORIZATION_SCHEMA,
-        "source": "current_user_message",
-        "trigger_phrase": CAPTURE_TRIGGER_PHRASE,
-        "normalized_message_sha256": hashlib.sha256(
-            normalized_message.encode("utf-8")
-        ).hexdigest(),
+def normalize_capture_v3(value: dict[str, Any]) -> dict[str, Any]:
+    required = {
+        "schema_version",
+        "attempt_id",
+        "study_date",
+        "target",
+        "score_event_id",
+        "requested_action",
+        "thread_ref",
+        "conversation_package",
     }
+    missing = sorted(required - set(value))
+    unexpected = sorted(set(value) - required)
+    if missing:
+        raise QuickIntakeError(f"捕获输入缺少字段：{', '.join(missing)}")
+    if unexpected:
+        raise QuickIntakeError(f"捕获输入含未知字段：{', '.join(unexpected)}")
+    attempt_id = value.get("attempt_id")
+    if not isinstance(attempt_id, str) or not ATTEMPT_ID_PATTERN.fullmatch(attempt_id):
+        raise QuickIntakeError("attempt_id 只能含字母、数字、点、下划线、冒号、斜杠和连字符")
+    study_date = validate_date(value.get("study_date"))
+    score_ref = score_reference(value.get("score_event_id"))
+    if score_ref is not None:
+        if score_ref["attempt_id"] != attempt_id or score_ref["study_date"] != study_date:
+            raise QuickIntakeError("attempt_id 或 study_date 与评分事件不一致")
+    action = value.get("requested_action")
+    if action not in ALLOWED_ACTIONS:
+        raise QuickIntakeError(f"requested_action 无效：{action}")
+    thread_ref = value.get("thread_ref")
+    if thread_ref is not None:
+        thread_ref = require_text(thread_ref, "thread_ref", max_length=500)
+    target = normalize_target(value.get("target"), score_ref)
+    package = normalize_conversation_package_reference(
+        value.get("conversation_package"),
+        "conversation_package",
+        expected_date=study_date,
+        expected_locator=(target["source_locator"] if target["kind"] == "new_source" else None),
+        expected_attempt_id=attempt_id,
+        expected_target=target,
+    )
+    if package.get("supplements_capture_id") and action != "update_representation":
+        raise QuickIntakeError("同 episode 补充包只能请求 update_representation，不得登记新复发")
+    if target["kind"] == "new_source":
+        if target["source_hash_before"] not in (None, package["manifest_hash"]):
+            raise QuickIntakeError("target.source_hash_before 与会话包 manifest 哈希冲突")
+        target["source_hash_before"] = package["manifest_hash"]
+        target["identity_state"] = "source_backed"
+    normalized = {
+        "schema_version": CAPTURE_SCHEMA_V3,
+        "attempt_id": attempt_id,
+        "study_date": study_date,
+        "target": target,
+        "score_ref": score_ref,
+        "requested_action": action,
+        "thread_ref": thread_ref,
+        "conversation_package": package,
+        "capture_facts": {
+            "schema_version": "math-conversation-capture-facts-v1",
+            "package_id": package["package_id"],
+            "package_sha256": package["package_sha256"],
+            "conversation_sha256": package["conversation_sha256"],
+            "source_sha256": package["source_sha256"],
+            "formal_write_count": 0,
+            "background_processing": "none",
+        },
+    }
+    reject_local_absolute_paths(normalized, "capture")
+    reject_background_authority_fields(normalized, "capture")
+    return normalized
+
+
+def normalize_capture(value: dict[str, Any]) -> dict[str, Any]:
+    schema_version = value.get("schema_version")
+    if schema_version == CAPTURE_SCHEMA_V3:
+        return normalize_capture_v3(value)
+    if schema_version == CAPTURE_SCHEMA_V2:
+        return normalize_capture_v2(value)
+    raise QuickIntakeError(
+        f"fresh Capture 必须使用 {CAPTURE_SCHEMA_V3}；{CAPTURE_SCHEMA_V2} 仅保留兼容"
+    )
 
 
 def with_content_hash(event: dict[str, Any]) -> dict[str, Any]:
     result = dict(event)
     result["content_hash"] = sha256_value(result)
     return result
+
+
+def capture_pending_state(capture: dict[str, Any]) -> str:
+    """Expose the direct-Sol state for v3 without rewriting legacy ledgers."""
+    if capture.get("capture_schema_version") == CAPTURE_SCHEMA_V3:
+        return DIRECT_FORMAL_PENDING_STATE
+    return LEGACY_PENDING_STATE
 
 
 def replay(events: list[dict[str, Any]]) -> dict[str, Any]:
@@ -1273,6 +2620,8 @@ def replay(events: list[dict[str, Any]]) -> dict[str, Any]:
         seen_ids.add(event_id)
         event_type = event.get("event_type")
         if event_type == "capture":
+            if event.get("supplements_capture_id") is not None:
+                validate_supplement_parent(event, captures, event["supplements_capture_id"])
             captures[event_id] = event
             amendments[event_id] = []
             continue
@@ -1407,42 +2756,21 @@ def replay(events: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
-def _producer_binding_attestation(event: dict[str, Any]) -> dict[str, Any]:
-    configured = os.environ.get(PRODUCER_BINDING_DESCRIPTOR_ENV)
-    descriptor_path = (
-        Path(configured).expanduser()
-        if configured is not None
-        else PRODUCER_BINDING_DESCRIPTOR_PATH
-    )
-    if configured is not None and not descriptor_path.is_absolute():
-        raise QuickIntakeError("Producer binding descriptor 环境绑定必须是绝对路径")
-    try:
-        return publish_attestation(
-            descriptor_path=descriptor_path,
-            repo_root=REPO_ROOT,
-            subject="math",
-            capture_id=str(event["event_id"]),
-            capture_content_sha256=str(event["content_hash"]),
-            recorded_at=str(event["recorded_at"]),
-        )
-    except (OSError, ValueError, json.JSONDecodeError, ProducerBindingError) as exc:
-        raise QuickIntakeError("快速事件 Producer binding attestation 失败") from exc
-
-
 def capture_response(
     event: dict[str, Any],
     status: str,
     elapsed_ms: float,
-    producer_binding: dict[str, Any],
 ) -> dict[str, Any]:
     target = event["target"]
     score_ref = event.get("score_ref")
     source_bundle = event.get("source_bundle")
     return {
+        "subject": "math",
         "status": status,
-        "state": "pending_nightly",
+        "state": capture_pending_state(event),
         "formal_write_count": 0,
         "event_id": event["event_id"],
+        "capture_id": event["event_id"],
         "capture_schema_version": event.get(
             "capture_schema_version", CAPTURE_SCHEMA
         ),
@@ -1458,16 +2786,19 @@ def capture_response(
             if isinstance(source_bundle, dict)
             else None
         ),
+        "package_id": (
+            source_bundle.get("package_id") if isinstance(source_bundle, dict) else None
+        ),
+        "package_sha256": (
+            source_bundle.get("package_sha256") if isinstance(source_bundle, dict) else None
+        ),
         "score_event_id": score_ref.get("event_id") if isinstance(score_ref, dict) else None,
         "content_hash": event["content_hash"],
+        "capture_content_sha256": event["content_hash"],
         "recorded_at": event["recorded_at"],
-        "producer_binding_status": producer_binding["status"],
-        "producer_binding_attestation_path": producer_binding[
-            "attestation_path"
-        ],
-        "producer_binding_attestation_sha256": producer_binding[
-            "attestation_sha256"
-        ],
+        "background_processing": "none",
+        "model_call_count": 0,
+        "mcp_call_count": 0,
         "elapsed_ms": round(elapsed_ms, 3),
     }
 
@@ -1485,11 +2816,20 @@ def cmd_record(args: argparse.Namespace) -> None:
         "attempt_id": payload["attempt_id"],
         "target_identity": target_identity,
     }
+    package = payload.get("conversation_package") or {}
+    supplement = package.get("supplements_capture_id")
+    if supplement is not None:
+        idempotency.update({
+            "supplements_capture_id": supplement,
+            "package_id": package["package_id"],
+        })
     event_id = stable_event_id("MFI-CAP", idempotency)
     payload_hash = sha256_value(payload)
     with exclusive_lock(LOCK_PATH):
         events = load_jsonl(EVENTS_PATH)
         state = replay(events)
+        if supplement is not None:
+            validate_supplement_parent(payload, state["captures"], supplement)
         existing = state["captures"].get(event_id)
         if existing is not None:
             if existing.get("payload_hash") != payload_hash:
@@ -1500,7 +2840,6 @@ def cmd_record(args: argparse.Namespace) -> None:
                 existing,
                 "noop",
                 (time.perf_counter() - started) * 1000,
-                _producer_binding_attestation(existing),
             )
             response["payload_file_consumed"] = consume_payload_file(consumable_path)
             print(json.dumps(response, ensure_ascii=False, sort_keys=True))
@@ -1518,30 +2857,62 @@ def cmd_record(args: argparse.Namespace) -> None:
             "score_ref": payload["score_ref"],
             "requested_action": payload["requested_action"],
             "thread_ref": payload["thread_ref"],
-            "source_bundle": payload["source_bundle"],
-            "evidence": payload["evidence"],
-            "initial_state": "pending_nightly",
+            "source_bundle": (
+                payload.get("conversation_package") or payload.get("source_bundle")
+            ),
+            "initial_state": (
+                DIRECT_FORMAL_PENDING_STATE
+                if payload["schema_version"] == CAPTURE_SCHEMA_V3
+                else LEGACY_PENDING_STATE
+            ),
         }
+        if payload["schema_version"] == CAPTURE_SCHEMA_V3:
+            event_body["capture_schema_version"] = CAPTURE_SCHEMA_V3
+            event_body["package_identity_version"] = 1
+            event_body["conversation_package"] = payload["conversation_package"]
+            event_body["capture_facts"] = payload["capture_facts"]
+            if supplement is not None:
+                event_body["supplements_capture_id"] = supplement
+        else:
+            event_body["evidence"] = payload["evidence"]
         if payload["schema_version"] == CAPTURE_SCHEMA_V2:
             event_body["capture_schema_version"] = CAPTURE_SCHEMA_V2
-            event_body["capture_authorization"] = payload[
-                "capture_authorization"
-            ]
             event_body["episode_evidence"] = payload["episode_evidence"]
         event = with_content_hash(event_body)
         append_jsonl(EVENTS_PATH, event)
         verified = replay(load_jsonl(EVENTS_PATH))["captures"].get(event_id)
         if verified is None or verified.get("content_hash") != event["content_hash"]:
             raise QuickIntakeError("快速事件写入后固定校验失败")
-        producer_binding = _producer_binding_attestation(event)
     response = capture_response(
         event,
         "recorded",
         (time.perf_counter() - started) * 1000,
-        producer_binding,
     )
     response["payload_file_consumed"] = consume_payload_file(consumable_path)
     print(json.dumps(response, ensure_ascii=False, sort_keys=True))
+
+
+def validate_supplement_parent(
+    capture: dict[str, Any], captures: dict[str, dict[str, Any]], parent_id: str,
+) -> None:
+    parent = captures.get(parent_id)
+    target = capture["target"]
+    if parent is None or parent.get("capture_schema_version") != CAPTURE_SCHEMA_V3:
+        raise QuickIntakeError("补充包必须引用已有 v3 Capture")
+    parent_target = parent["target"]
+    identity_field = "formal_id" if target["kind"] == "formal_card" else "source_locator"
+    if (
+        parent.get("supplements_capture_id") is not None
+        or parent["attempt_id"] != capture["attempt_id"]
+        or parent["study_date"] != capture["study_date"]
+        or parent_target["kind"] != target["kind"]
+        or parent_target.get(identity_field) != target.get(identity_field)
+        or parent.get("score_ref") != capture.get("score_ref")
+        or capture["requested_action"] != "update_representation"
+        or parent["conversation_package"]["package_id"]
+        == capture["conversation_package"]["package_id"]
+    ):
+        raise QuickIntakeError("补充包必须保留原 Capture 的 attempt、日期、目标和评分，仅补充同 episode")
 
 
 def normalize_amendment(value: dict[str, Any]) -> dict[str, Any]:
@@ -1604,10 +2975,10 @@ def cmd_amend(args: argparse.Namespace) -> None:
         capture_id = payload["capture_event_id"]
         if capture_id not in state["captures"]:
             raise QuickIntakeError(f"修订引用未知 capture：{capture_id}")
+        capture = state["captures"][capture_id]
         if capture_id in state["closed_by"]:
-            raise QuickIntakeError(f"已夜间关闭的 capture 不得修订：{capture_id}")
+            raise QuickIntakeError(f"已正式关闭的 capture 不得修订：{capture_id}")
         if payload["target_patch"] is not None:
-            capture = state["captures"][capture_id]
             capture_target = capture["target"]
             patch = payload["target_patch"]
             source_bundle = patch.get("source_bundle")
@@ -1637,10 +3008,8 @@ def cmd_amend(args: argparse.Namespace) -> None:
                         "formal_card target_patch 的 reason.origin 必须是 source_verified"
                     )
                 amendments = state["amendments"][capture_id]
-                current_evidence = (
-                    amendments[-1]["evidence"]
-                    if amendments
-                    else state["captures"][capture_id]["evidence"]
+                current_evidence = effective_capture_facts(
+                    state["captures"][capture_id], amendments
                 )
                 if sha256_value(payload["evidence"]) != sha256_value(current_evidence):
                     raise QuickIntakeError(
@@ -1689,7 +3058,7 @@ def cmd_amend(args: argparse.Namespace) -> None:
         json.dumps(
             {
                 "status": status,
-                "state": "pending_nightly",
+                "state": capture_pending_state(capture),
                 "event_id": event_id,
                 "capture_event_id": payload["capture_event_id"],
                 "content_hash": event["content_hash"],
@@ -1729,11 +3098,26 @@ def effective_source_bundle(
     return source_bundle if isinstance(source_bundle, dict) else None
 
 
+def effective_capture_facts(
+    capture: dict[str, Any],
+    amendments: list[dict[str, Any]],
+) -> dict[str, Any]:
+    if amendments:
+        return amendments[-1]["evidence"]
+    evidence = capture.get("evidence")
+    if isinstance(evidence, dict):
+        return evidence
+    facts = capture.get("capture_facts")
+    if isinstance(facts, dict):
+        return facts
+    raise QuickIntakeError(f"capture 缺少可冻结事实：{capture.get('event_id')}")
+
+
 def pending_item(
     capture: dict[str, Any],
     amendments: list[dict[str, Any]],
 ) -> dict[str, Any]:
-    effective_evidence = amendments[-1]["evidence"] if amendments else capture["evidence"]
+    effective_evidence = effective_capture_facts(capture, amendments)
     target = effective_target(capture, amendments)
     source_bundle = effective_source_bundle(capture, amendments)
     return {
@@ -1748,7 +3132,7 @@ def pending_item(
         "source_hash_before": target.get("source_hash_before"),
         "identity_state": target.get("identity_state"),
         "source_bundle": source_bundle,
-        "capture_authorization": capture.get("capture_authorization"),
+        "conversation_package": capture.get("conversation_package"),
         "episode_evidence": capture.get("episode_evidence"),
         "episode_evidence_hash": (
             sha256_value(capture["episode_evidence"])
@@ -1756,6 +3140,8 @@ def pending_item(
             else None
         ),
         "requested_action": capture.get("requested_action"),
+        "attempt_id": capture.get("attempt_id"),
+        "supplements_capture_id": capture.get("supplements_capture_id"),
         "score_ref": capture.get("score_ref"),
         "original_content_hash": capture["content_hash"],
         "amendment_count": len(amendments),
@@ -1846,6 +3232,725 @@ def cmd_pending(args: argparse.Namespace) -> None:
         events = load_jsonl(EVENTS_PATH)
         snapshot_hash = ledger_hash()
     document = status_document(events, study_date, snapshot_hash=snapshot_hash)
+    print(json.dumps(document, ensure_ascii=False, indent=2, sort_keys=True))
+
+
+def shanghai_today() -> str:
+    """Return the formal-intake cutoff date, independent of host timezone."""
+    return datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+
+
+def capture_package_id(
+    capture: dict[str, Any],
+    amendments: list[dict[str, Any]],
+) -> str | None:
+    bundle = effective_source_bundle(capture, amendments)
+    if not isinstance(bundle, dict):
+        return None
+    package_id = bundle.get("package_id")
+    return package_id if isinstance(package_id, str) and package_id else None
+
+
+def load_archive_receipt_index() -> tuple[dict[str, dict[str, Any]], str | None]:
+    path = REPO_ROOT / "数学一回滚复习系统/原始会话归档回执.jsonl"
+    if not path.exists():
+        return {}, None
+    result: dict[str, dict[str, Any]] = {}
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except OSError as exc:
+        return {}, f"archive_receipt_ledger_unreadable:{exc.__class__.__name__}"
+    for line_number, line in enumerate(lines, start=1):
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            return {}, f"archive_receipt_ledger_invalid_json:{line_number}"
+        if not isinstance(row, dict):
+            return {}, f"archive_receipt_ledger_invalid_row:{line_number}"
+        receipt_id = row.get("receipt_id")
+        if (
+            row.get("schema_version")
+            not in {
+                ARCHIVE_RECEIPT_SCHEMA,
+                ARCHIVE_RECEIPT_SCHEMA_V2,
+                LEGACY_ARCHIVE_RECEIPT_SCHEMA,
+                LEGACY_ARCHIVE_RECEIPT_SCHEMA_V2,
+            }
+            or not isinstance(receipt_id, str)
+            or not receipt_id
+        ):
+            return {}, f"archive_receipt_ledger_invalid_schema:{line_number}"
+        existing = result.get(receipt_id)
+        if existing is not None and existing != row:
+            return {}, f"archive_receipt_ledger_conflict:{receipt_id}"
+        result[receipt_id] = row
+    return result, None
+
+
+def source_bundle_binding_error(
+    capture: dict[str, Any], amendments: list[dict[str, Any]]
+) -> str | None:
+    declared: list[Any] = []
+    if capture.get("source_bundle") is not None:
+        declared.append(capture.get("source_bundle"))
+    for amendment in amendments:
+        patch = amendment.get("target_patch")
+        if isinstance(patch, dict) and patch.get("source_bundle") is not None:
+            declared.append(patch.get("source_bundle"))
+    for value in declared:
+        if not isinstance(value, dict) or not value:
+            return "source_bundle_present_but_invalid"
+        if (
+            not isinstance(value.get("manifest_path"), str)
+            or not value.get("manifest_path")
+            or not isinstance(value.get("manifest_hash"), str)
+            or not HASH_PATTERN.fullmatch(value.get("manifest_hash", ""))
+        ):
+            return "source_bundle_binding_incomplete"
+    if declared and effective_source_bundle(capture, amendments) is None:
+        return "source_bundle_present_but_unresolved"
+    return None
+
+
+def pending_package_health(
+    capture: dict[str, Any],
+    amendments: list[dict[str, Any]],
+) -> tuple[str, str | None]:
+    """Classify source evidence without mutating or inventing missing facts."""
+    target = effective_target(capture, amendments)
+    binding_error = source_bundle_binding_error(capture, amendments)
+    if binding_error is not None:
+        return "failed", binding_error
+    bundle = effective_source_bundle(capture, amendments)
+    if bundle is None:
+        if target.get("kind") == "new_source" or target.get("identity_state") == "needs_user":
+            return "needs_user", "source_bundle_missing"
+        return "ready", None
+    try:
+        document, _, _ = validate_source_bundle_manifest(
+            bundle["manifest_path"],
+            f"backlog.capture[{capture['event_id']}].source_bundle",
+            expected_hash=bundle["manifest_hash"],
+            expected_date=capture["study_date"],
+            expected_locator=(
+                target.get("source_locator")
+                if target.get("kind") == "new_source"
+                else None
+            ),
+            require_question=False,
+        )
+    except (KeyError, QuickIntakeError, OSError) as exc:
+        return "failed", f"package_damaged:{exc}"
+    if target.get("kind") == "new_source":
+        roles = {
+            row.get("role")
+            for row in document.get("artifacts", [])
+            if isinstance(row, dict)
+        }
+        question_roles = {"question", "question_image"}
+        if target.get("identity_state") == "needs_user" or not roles.intersection(
+            question_roles
+        ):
+            return "needs_user", "new_source_question_evidence_missing"
+    return "ready", None
+
+
+def derived_archive_terminal_facts(
+    closeout: dict[str, Any], capture_id: str
+) -> tuple[list[str], str]:
+    relevant_results = [
+        row
+        for row in closeout.get("capture_results", [])
+        if isinstance(row, dict) and row.get("capture_event_id") == capture_id
+    ]
+    if len(relevant_results) != 1:
+        raise QuickIntakeError("closeout capture_results 必须唯一绑定 capture")
+    result = relevant_results[0]
+    formal_id = result.get("formal_id")
+    formal_ids = [formal_id] if isinstance(formal_id, str) and formal_id else []
+    if any(not CARD_ID_PATTERN.fullmatch(item) for item in formal_ids):
+        raise QuickIntakeError("closeout formal_id 无效")
+    raw_outcome = result.get("terminal_outcome", result.get("outcome"))
+    if raw_outcome in {"needs_user", "failed"}:
+        raise QuickIntakeError("closeout outcome 不可归档")
+    archivable = {
+        "curated",
+        "created",
+        "updated",
+        "already_current",
+        "skip",
+        "noop",
+        "duplicate",
+    }
+    if raw_outcome in archivable:
+        return formal_ids, str(raw_outcome)
+    formal_results = {
+        row.get("formal_id"): row
+        for row in closeout.get("formal_results", [])
+        if isinstance(row, dict) and isinstance(row.get("formal_id"), str)
+    }
+    operations = [
+        formal_results[item].get("operation")
+        for item in formal_ids
+        if item in formal_results
+    ]
+    if operations and len(operations) != len(formal_ids):
+        raise QuickIntakeError("closeout formal_results 不完整")
+    if operations and set(operations) == {"created"}:
+        terminal_outcome = "created"
+    elif operations and set(operations) == {"updated"}:
+        terminal_outcome = "updated"
+    elif operations and set(operations) == {"unchanged"}:
+        terminal_outcome = (
+            "already_current"
+            if raw_outcome == "representation_already_current"
+            else "curated"
+        )
+    else:
+        terminal_outcome = "curated"
+    return formal_ids, terminal_outcome
+
+
+def verify_legacy_archive_strict(capture_id: str) -> dict[str, Any]:
+    path = REPO_ROOT / "数学一回滚复习系统/scripts/archive_legacy_evidence.py"
+    spec = importlib.util.spec_from_file_location(
+        "math_quick_intake_legacy_archive_verifier", path
+    )
+    if spec is None or spec.loader is None:
+        raise QuickIntakeError("legacy archive verifier 不可加载")
+    module = importlib.util.module_from_spec(spec)
+    previous = sys.dont_write_bytecode
+    try:
+        sys.dont_write_bytecode = True
+        spec.loader.exec_module(module)
+    finally:
+        sys.dont_write_bytecode = previous
+    module.DEFAULT_ARCHIVE_ROOT = ARCHIVE_ROOT
+    module.SENTINEL_SHA256 = ARCHIVE_SENTINEL_SHA256
+    module.EXPECTED_VOLUME_UUID = ARCHIVE_VOLUME_UUID
+    try:
+        return module.verify_completed_legacy_archive(
+            repo=REPO_ROOT,
+            capture_id=capture_id,
+            archive_root=ARCHIVE_ROOT,
+            subject_relative_root=module.DEFAULT_SUBJECT_RELATIVE_ROOT,
+        )
+    except (OSError, ValueError) as exc:
+        raise QuickIntakeError(f"legacy archive strict verification failed:{exc}") from exc
+
+
+def trusted_archive_state(
+    capture: dict[str, Any],
+    amendments: list[dict[str, Any]],
+    closeout_id: str,
+    closeout: dict[str, Any],
+    receipt_index: dict[str, dict[str, Any]],
+    receipt_ledger_error: str | None,
+) -> tuple[str, str | None]:
+    binding_error = source_bundle_binding_error(capture, amendments)
+    if binding_error is not None:
+        return "damaged", binding_error
+    bundle = effective_source_bundle(capture, amendments)
+    package_id = capture_package_id(capture, amendments)
+    if not isinstance(bundle, dict) or package_id is None:
+        pointer_path = legacy_archive_pointer_path(capture, amendments)
+        if not pointer_path.exists():
+            return "legacy_pending", None
+        if receipt_ledger_error is not None:
+            return "damaged", receipt_ledger_error
+        try:
+            verified = verify_legacy_archive_strict(capture["event_id"])
+        except QuickIntakeError as exc:
+            return "damaged", str(exc)
+        if (
+            verified.get("status") != "verified"
+            or verified.get("capture_event_id") != capture["event_id"]
+        ):
+            return "damaged", "legacy_archive_strict_verifier_result_invalid"
+        return "legacy_verified", None
+    manifest_path_value = bundle.get("manifest_path")
+    if not isinstance(manifest_path_value, str):
+        return "damaged", "package_manifest_path_missing"
+    manifest_path = REPO_ROOT / manifest_path_value
+    pointer_path = manifest_path.parent / "archive-pointer.json"
+    if not pointer_path.exists():
+        return "pending", None
+    if receipt_ledger_error is not None:
+        return "damaged", receipt_ledger_error
+    try:
+        pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return "damaged", f"archive_pointer_invalid:{exc.__class__.__name__}"
+    pointer_schema = pointer.get("schema_version") if isinstance(pointer, dict) else None
+    if pointer_schema not in {ARCHIVE_POINTER_SCHEMA, ARCHIVE_POINTER_SCHEMA_V2}:
+        return "damaged", "archive_pointer_schema_invalid"
+    expected_manifest_hash = bundle.get("manifest_hash")
+    expected_package_hash = bundle.get("package_sha256")
+    receipt_id = pointer.get("archive_receipt_id")
+    if (
+        pointer.get("package_id") != package_id
+        or pointer.get("archive_status") != "verified"
+        or pointer.get("raw_archive_manifest_sha256") != expected_manifest_hash
+        or (
+            expected_package_hash is not None
+            and pointer.get("raw_archive_package_sha256") != expected_package_hash
+        )
+        or not isinstance(receipt_id, str)
+    ):
+        return "damaged", "archive_pointer_binding_mismatch"
+    receipt = receipt_index.get(receipt_id)
+    if receipt is None:
+        return "damaged", "archive_pointer_receipt_missing"
+    capture_ids = receipt.get("capture_ids")
+    if (
+        receipt.get("package_id") != package_id
+        or receipt.get("closeout_id") != closeout_id
+        or receipt.get("archive_status") != "verified"
+        or receipt.get("obsidian_path_status") != "verified"
+        or receipt.get("raw_archive_manifest_sha256") != expected_manifest_hash
+        or (
+            expected_package_hash is not None
+            and receipt.get("raw_archive_package_sha256") != expected_package_hash
+        )
+        or not isinstance(capture_ids, list)
+        or capture["event_id"] not in capture_ids
+    ):
+        return "damaged", "archive_receipt_binding_mismatch"
+    if pointer_schema == ARCHIVE_POINTER_SCHEMA_V2:
+        closure_keys = (
+            "display_closure_receipt_id",
+            "display_closure_receipt_path",
+            "display_closure_receipt_sha256",
+            "formal_reference_scan_sha256",
+            "stable_asset_count",
+            "no_display_proof",
+        )
+        if (
+            receipt.get("schema_version") != ARCHIVE_RECEIPT_SCHEMA_V2
+            or pointer.get("pending_component") is not None
+            or receipt.get("pending_component") is not None
+            or any(pointer.get(key) != receipt.get(key) for key in closure_keys)
+        ):
+            return "damaged", "archive_display_closure_binding_mismatch"
+        closure_value = pointer.get("display_closure_receipt_path")
+        closure_hash = pointer.get("display_closure_receipt_sha256")
+        if not isinstance(closure_value, str) or not isinstance(closure_hash, str):
+            return "damaged", "archive_display_closure_path_missing"
+        closure_relative = Path(closure_value)
+        if closure_relative.is_absolute() or ".." in closure_relative.parts:
+            return "damaged", "archive_display_closure_path_unsafe"
+        closure_path = REPO_ROOT / closure_relative
+        try:
+            if (
+                closure_path.is_symlink()
+                or not closure_path.is_file()
+                or file_sha256(closure_path) != closure_hash
+            ):
+                return "damaged", "archive_display_closure_hash_mismatch"
+        except OSError:
+            return "damaged", "archive_display_closure_unreadable"
+    locator_value = receipt.get("obsidian_locator_path")
+    locator_hash = receipt.get("obsidian_locator_sha256")
+    if not isinstance(locator_value, str) or not isinstance(locator_hash, str):
+        return "damaged", "archive_locator_binding_missing"
+    locator = REPO_ROOT / locator_value
+    try:
+        if not locator.is_file() or file_sha256(locator) != locator_hash:
+            return "damaged", "archive_locator_hash_mismatch"
+    except OSError:
+        return "damaged", "archive_locator_unreadable"
+    return "verified", None
+
+
+def active_freezes_for_capture(
+    state: dict[str, Any], capture_id: str
+) -> list[dict[str, Any]]:
+    return sorted(
+        (
+            freeze
+            for freeze_id, freeze in state["freezes"].items()
+            if freeze_id not in state["used_freezes"]
+            and freeze_id not in state["aborted_freezes"]
+            and capture_id in freeze.get("capture_event_ids", [])
+        ),
+        key=lambda row: row["event_id"],
+    )
+
+
+def active_prepare_for_freeze(
+    state: dict[str, Any], freeze_id: str
+) -> dict[str, Any] | None:
+    matches = sorted(
+        (
+            prepare
+            for prepare_id, prepare in state["prepares"].items()
+            if prepare.get("freeze_id") == freeze_id
+            and prepare_id not in state["invalidated_prepares"]
+            and prepare_id not in state["committed_prepares"]
+        ),
+        key=lambda row: row["event_id"],
+    )
+    if len(matches) > 1:
+        raise QuickIntakeError(f"freeze 存在多个未提交 prepare：{freeze_id}")
+    return matches[0] if matches else None
+
+
+def backlog_item(
+    capture: dict[str, Any],
+    state: dict[str, Any],
+    receipt_index: dict[str, dict[str, Any]],
+    receipt_ledger_error: str | None,
+) -> dict[str, Any]:
+    capture_id = capture["event_id"]
+    amendments = state["amendments"][capture_id]
+    target = effective_target(capture, amendments)
+    package_id = capture_package_id(capture, amendments)
+    base = {
+        "capture_event_id": capture_id,
+        "study_date": capture["study_date"],
+        "recorded_at": capture.get("recorded_at"),
+        "package_id": package_id,
+        "formal_id": target.get("formal_id"),
+        "source_locator": target.get("source_locator"),
+        "active_freeze_ids": [],
+        "closeout_id": state["closed_by"].get(capture_id),
+        "reason": None,
+    }
+    closeout_id = base["closeout_id"]
+    if isinstance(closeout_id, str):
+        archive_state, reason = trusted_archive_state(
+            capture,
+            amendments,
+            closeout_id,
+            state["closeouts"][closeout_id],
+            receipt_index,
+            receipt_ledger_error,
+        )
+        if archive_state in {"verified", "legacy_verified"}:
+            return {
+                **base,
+                "status": "already_consumed",
+                "resume_phase": None,
+                "writer_apply_policy": "forbidden",
+                "archive_status": archive_state,
+            }
+        if archive_state == "legacy_pending":
+            return {
+                **base,
+                "status": "legacy_archive_pending",
+                "resume_phase": "legacy_archive_only",
+                "writer_apply_policy": "forbidden",
+                "archive_status": "pending",
+            }
+        if archive_state == "pending":
+            return {
+                **base,
+                "status": "archive_pending",
+                "resume_phase": "archive_only",
+                "writer_apply_policy": "forbidden",
+                "archive_status": "pending",
+            }
+        return {
+            **base,
+            "status": "failed",
+            "resume_phase": "archive_repair",
+            "writer_apply_policy": "forbidden",
+            "archive_status": "damaged",
+            "reason": reason,
+        }
+
+    health, reason = pending_package_health(capture, amendments)
+    if health in {"needs_user", "failed"}:
+        return {
+            **base,
+            "status": health,
+            "resume_phase": None,
+            "writer_apply_policy": "forbidden",
+            "archive_status": "not_started",
+            "reason": reason,
+        }
+    active = active_freezes_for_capture(state, capture_id)
+    base["active_freeze_ids"] = [row["event_id"] for row in active]
+    if active:
+        if len(active) != 1:
+            return {
+                **base,
+                "status": "failed",
+                "resume_phase": "freeze_conflict_repair",
+                "writer_apply_policy": "forbidden",
+                "archive_status": "not_started",
+                "reason": "multiple_active_freezes",
+            }
+        freeze = active[0]
+        prepare = active_prepare_for_freeze(state, freeze["event_id"])
+        if prepare is not None:
+            return {
+                **base,
+                "status": "resume",
+                "resume_phase": "closeout_commit",
+                "writer_apply_policy": "forbidden",
+                "archive_status": "not_started",
+                "prepare_id": prepare["event_id"],
+            }
+        try:
+            changed = freeze_formal_state_changed(freeze)
+        except (QuickIntakeError, OSError) as exc:
+            return {
+                **base,
+                "status": "failed",
+                "resume_phase": "formal_state_repair",
+                "writer_apply_policy": "forbidden",
+                "archive_status": "not_started",
+                "reason": f"formal_state_unreadable:{exc}",
+            }
+        return {
+            **base,
+            "status": "resume",
+            "resume_phase": (
+                "partial_formal_closeout" if changed else "frozen_formal_processing"
+            ),
+            "writer_apply_policy": (
+                "forbidden" if changed else "allowed_once_after_revalidation"
+            ),
+            "archive_status": "not_started",
+        }
+    return {
+        **base,
+        "status": "pending",
+        "resume_phase": None,
+        "writer_apply_policy": "allowed_once_after_freeze",
+        "archive_status": "not_started",
+    }
+
+
+def validate_backlog_baseline(value: dict[str, Any]) -> dict[str, Any]:
+    if value.get("schema_version") != BACKLOG_RESPONSE_SCHEMA:
+        raise QuickIntakeError("baseline plan schema_version 无效")
+    plan = value.get("plan")
+    digest = value.get("plan_sha256")
+    if not isinstance(plan, dict) or plan.get("schema_version") != BACKLOG_PLAN_SCHEMA:
+        raise QuickIntakeError("baseline plan 结构无效")
+    if not isinstance(digest, str) or sha256_value(plan) != digest:
+        raise QuickIntakeError("baseline plan SHA-256 不一致")
+    return plan
+
+
+def build_backlog_plan(
+    events: list[dict[str, Any]],
+    cutoff_date: str,
+    *,
+    only_today: bool = False,
+    exact_capture_ids: list[str] | None = None,
+    exact_package_ids: list[str] | None = None,
+    snapshot_hash: str | None = None,
+    baseline_plan: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    cutoff_date = validate_date(cutoff_date, "cutoff_date")
+    state = replay(events)
+    exact_capture_ids = sorted(set(exact_capture_ids or []))
+    exact_package_ids = sorted(set(exact_package_ids or []))
+    if baseline_plan is not None:
+        if baseline_plan.get("cutoff_date") != cutoff_date:
+            raise QuickIntakeError("baseline plan 与 cutoff_date 不一致")
+        exact_capture_ids = list(baseline_plan.get("selection_capture_event_ids", []))
+        exact_package_ids = []
+        only_today = bool(baseline_plan.get("only_today"))
+
+    all_captures = state["captures"]
+    unknown_capture_ids = sorted(set(exact_capture_ids) - set(all_captures))
+    if unknown_capture_ids:
+        raise QuickIntakeError("exact capture 不存在：" + ", ".join(unknown_capture_ids))
+    package_by_capture = {
+        capture_id: capture_package_id(capture, state["amendments"][capture_id])
+        for capture_id, capture in all_captures.items()
+    }
+    known_package_ids = {item for item in package_by_capture.values() if item is not None}
+    unknown_package_ids = sorted(set(exact_package_ids) - known_package_ids)
+    if unknown_package_ids:
+        raise QuickIntakeError("exact package 不存在：" + ", ".join(unknown_package_ids))
+
+    exact_subset = bool(exact_capture_ids or exact_package_ids)
+    capture_filter = set(exact_capture_ids)
+    package_filter = set(exact_package_ids)
+    selected: list[dict[str, Any]] = []
+    excluded_future: list[str] = []
+    for capture_id, capture in all_captures.items():
+        study_date = capture.get("study_date")
+        if not isinstance(study_date, str):
+            continue
+        exact_match = (
+            not exact_subset
+            or capture_id in capture_filter
+            or package_by_capture[capture_id] in package_filter
+        )
+        if not exact_match:
+            continue
+        if study_date > cutoff_date:
+            excluded_future.append(capture_id)
+            continue
+        if only_today and study_date != cutoff_date:
+            continue
+        selected.append(capture)
+    selected.sort(
+        key=lambda row: (row["study_date"], row.get("recorded_at", ""), row["event_id"])
+    )
+
+    receipt_index, receipt_error = load_archive_receipt_index()
+    current_items = [
+        backlog_item(capture, state, receipt_index, receipt_error)
+        for capture in selected
+    ]
+    baseline_status = {
+        item.get("capture_event_id"): item.get("status")
+        for group in (baseline_plan or {}).get("date_groups", [])
+        if isinstance(group, dict)
+        for item in group.get("items", [])
+        if isinstance(item, dict)
+    }
+    for item in current_items:
+        item["baseline_status"] = baseline_status.get(
+            item["capture_event_id"], item["status"]
+        )
+
+    date_groups = []
+    for study_date in sorted({item["study_date"] for item in current_items}):
+        items = [item for item in current_items if item["study_date"] == study_date]
+        residual_items = [item for item in items if item["status"] != "already_consumed"]
+        if not residual_items:
+            continue
+        date_groups.append(
+            {
+                "study_date": study_date,
+                "execution_order": len(date_groups) + 1,
+                "freeze_scope": "explicit_subset" if exact_subset else "all_pending_for_date",
+                "replay_before_date": True,
+                "cross_date_transaction": False,
+                "items": residual_items,
+            }
+        )
+
+    completed = sorted(
+        item["capture_event_id"]
+        for item in current_items
+        if item["status"] == "already_consumed"
+        and item["baseline_status"] != "already_consumed"
+    )
+    already_consumed = sorted(
+        item["capture_event_id"]
+        for item in current_items
+        if item["status"] == "already_consumed"
+        and item["baseline_status"] == "already_consumed"
+    )
+    global_gate = {
+        "completed": completed,
+        "already_consumed": already_consumed,
+        "needs_user": sorted(
+            item["capture_event_id"] for item in current_items if item["status"] == "needs_user"
+        ),
+        "failed": sorted(
+            item["capture_event_id"] for item in current_items if item["status"] == "failed"
+        ),
+        "archive_pending": sorted(
+            item["capture_event_id"]
+            for item in current_items
+            if item["status"] == "archive_pending"
+        ),
+        "legacy_archive_pending": sorted(
+            item["capture_event_id"]
+            for item in current_items
+            if item["status"] == "legacy_archive_pending"
+        ),
+        "residual": [
+            {
+                "capture_event_id": item["capture_event_id"],
+                "study_date": item["study_date"],
+                "status": item["status"],
+                "resume_phase": item.get("resume_phase"),
+                "writer_apply_policy": item["writer_apply_policy"],
+                "reason": item.get("reason"),
+            }
+            for item in current_items
+            if item["status"] != "already_consumed"
+        ],
+    }
+    plan = {
+        "schema_version": BACKLOG_PLAN_SCHEMA,
+        "subject": "math",
+        "timezone": "Asia/Shanghai",
+        "cutoff_date": cutoff_date,
+        "only_today": only_today,
+        "selection_mode": (
+            "baseline_recheck"
+            if baseline_plan is not None
+            else "exact_subset"
+            if exact_subset
+            else "backlog_through_date"
+        ),
+        "exact_capture_ids": exact_capture_ids if baseline_plan is None else [],
+        "exact_package_ids": exact_package_ids,
+        "selection_capture_event_ids": [item["capture_event_id"] for item in current_items],
+        "work_capture_event_ids": [
+            item["capture_event_id"]
+            for item in current_items
+            if item["status"] != "already_consumed"
+        ],
+        "excluded_future_capture_event_ids": sorted(excluded_future),
+        "ledger_sha256": snapshot_hash or sha256_value(
+            [
+                {"event_id": event["event_id"], "content_hash": event["content_hash"]}
+                for event in events
+            ]
+        ),
+        "execution_contract": {
+            "date_order": "study_date_ascending",
+            "preserve_original_study_date": True,
+            "replay_before_each_date": True,
+            "reuse_subject_local_freeze_writer_closeout": True,
+            "cross_date_formal_transaction": False,
+            "continue_after_item_residual": [
+                "needs_user",
+                "failed",
+                "archive_pending",
+                "legacy_archive_pending",
+            ],
+            "never_repeat_apply_for": [
+                "partial_formal_closeout",
+                "closeout_commit",
+                "archive_only",
+                "legacy_archive_only",
+            ],
+        },
+        "date_groups": date_groups,
+        "global_gate": global_gate,
+    }
+    return {
+        "schema_version": BACKLOG_RESPONSE_SCHEMA,
+        "plan": plan,
+        "plan_sha256": sha256_value(plan),
+    }
+
+
+def cmd_backlog_through_date(args: argparse.Namespace) -> None:
+    cutoff_date = validate_date(args.cutoff_date, "cutoff_date")
+    baseline_plan = None
+    if args.baseline_plan_file:
+        baseline_plan = validate_backlog_baseline(
+            read_json_document(args.baseline_plan_file)
+        )
+    with exclusive_lock(LOCK_PATH):
+        events = load_jsonl(EVENTS_PATH)
+        snapshot_hash = ledger_hash()
+    document = build_backlog_plan(
+        events,
+        cutoff_date,
+        only_today=args.only_today,
+        exact_capture_ids=args.capture_id,
+        exact_package_ids=args.package_id,
+        snapshot_hash=snapshot_hash,
+        baseline_plan=baseline_plan,
+    )
     print(json.dumps(document, ensure_ascii=False, indent=2, sort_keys=True))
 
 
@@ -2174,7 +4279,7 @@ def normalize_freeze(value: dict[str, Any], events: list[dict[str, Any]]) -> dic
         capture, amendments = selected[capture_id]
         target = effective_target(capture, amendments)
         source_bundle = effective_source_bundle(capture, amendments)
-        evidence = amendments[-1]["evidence"] if amendments else capture["evidence"]
+        evidence = effective_capture_facts(capture, amendments)
         snapshots.append(
             {
                 "capture_event_id": capture_id,
@@ -2354,15 +4459,7 @@ def formal_frontmatter_state(path: Path) -> tuple[str, set[str], set[str]]:
 _SCHEDULER_COMPAT_MODULE: Any | None = None
 
 
-def scheduler_source_version_for_card(formal_id: str, card_path: Path) -> str:
-    """Recompute the targeted scheduler's canonical source version for one card.
-
-    The rollback scheduler historically used a semantic canonical hash while the
-    closeout writer used the raw Markdown hash.  Both hashes remain independently
-    protected: the formal layer verifies raw bytes, and this helper verifies that
-    a semantic rollback source version was produced from those same final bytes.
-    """
-
+def scheduler_compat_module() -> Any:
     global _SCHEDULER_COMPAT_MODULE
     if _SCHEDULER_COMPAT_MODULE is None:
         scheduler_path = Path(__file__).with_name("scheduler.py")
@@ -2375,7 +4472,19 @@ def scheduler_source_version_for_card(formal_id: str, card_path: Path) -> str:
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         _SCHEDULER_COMPAT_MODULE = module
-    scheduler = _SCHEDULER_COMPAT_MODULE
+    return _SCHEDULER_COMPAT_MODULE
+
+
+def scheduler_source_version_for_card(formal_id: str, card_path: Path) -> str:
+    """Recompute the targeted scheduler's canonical source version for one card.
+
+    The rollback scheduler historically used a semantic canonical hash while the
+    closeout writer used the raw Markdown hash.  Both hashes remain independently
+    protected: the formal layer verifies raw bytes, and this helper verifies that
+    a semantic rollback source version was produced from those same final bytes.
+    """
+
+    scheduler = scheduler_compat_module()
     data = scheduler.parse_card_frontmatter(card_path)
     if not data:
         raise QuickIntakeError(f"正式卡缺少可解析 frontmatter：{formal_id}")
@@ -2388,6 +4497,24 @@ def scheduler_source_version_for_card(formal_id: str, card_path: Path) -> str:
         metadata,
         events,
         method_fingerprint,
+    )
+
+
+def formal_evidence_source_version_for_card(formal_id: str, card_path: Path) -> str:
+    """Recompute training_evidence.source_version from the final formal card."""
+
+    scheduler = scheduler_compat_module()
+    data = scheduler.parse_card_frontmatter(card_path)
+    if not data:
+        raise QuickIntakeError(f"正式卡缺少可解析 frontmatter：{formal_id}")
+    try:
+        import training_evidence
+    except ImportError as exc:  # pragma: no cover - deployment closure guard
+        raise QuickIntakeError("无法加载正式错题证据规范化器") from exc
+    evidence = training_evidence.extract_error_evidence(data, formal_id)
+    return validate_hash(
+        evidence.get("source_version"),
+        f"正式卡教学证据源版本：{formal_id}",
     )
 
 
@@ -2570,7 +4697,7 @@ def verify_freeze_current(freeze: dict[str, Any], state: dict[str, Any]) -> None
         if capture is None or capture_id in state["closed_by"]:
             raise QuickIntakeError(f"冻结 capture 已不存在或已关闭：{capture_id}")
         amendments = state["amendments"][capture_id]
-        evidence = amendments[-1]["evidence"] if amendments else capture["evidence"]
+        evidence = effective_capture_facts(capture, amendments)
         target = effective_target(capture, amendments)
         source_bundle = effective_source_bundle(capture, amendments)
         if capture["content_hash"] != snapshot["capture_content_hash"]:
@@ -2852,6 +4979,24 @@ def verify_rollback_batch(
             raise QuickIntakeError(f"复发事件不是 freeze 后新增：{formal_id}")
 
 
+def verify_new_source_wrong_rejection(
+    formal: dict[str, Any], frozen_target: dict[str, Any], unit_index: dict[str, dict[str, Any]],
+) -> None:
+    """A raw request is not a verdict: preserve a new source without inventing failure."""
+    formal_id = formal["formal_id"]
+    if (frozen_target["identity_mode"] != "new_source_created"
+            or formal["operation"] != "created"
+            or frozen_target.get("rollback_before") is not None
+            or formal_id in unit_index):
+        raise QuickIntakeError("wrong_rejected 仅适用于无回滚变更的新来源")
+    scheduler = scheduler_compat_module()
+    card = REPO_ROOT / formal["card_path_after"]
+    data = scheduler.parse_card_frontmatter(card)
+    if (str(data.get("mistake_count")) != "0"
+            or scheduler.extract_explicit_wrong_events(formal_id, data)):
+        raise QuickIntakeError("wrong_rejected 不得同时记录做错次数或做错事件")
+
+
 def normalize_capture_results(
     value: Any,
     freeze: dict[str, Any],
@@ -2870,7 +5015,7 @@ def normalize_capture_results(
         for capture_id in target["capture_event_ids"]
     }
     allowed_outcomes = {
-        "record_wrong": {"wrong_recorded"},
+        "record_wrong": {"wrong_recorded", "wrong_rejected"},
         "record_recurrence": {"recurrence_recorded"},
         "update_representation": {"representation_updated", "representation_already_current"},
         "mastery_candidate": {"mastery_confirmed", "mastery_rejected"},
@@ -2901,6 +5046,9 @@ def normalize_capture_results(
         durable = item.get("durable_record")
         if not isinstance(durable, dict):
             raise QuickIntakeError(f"{field}.durable_record 必须是对象")
+        if outcome == "wrong_rejected":
+            frozen_target = next(t for t in freeze["targets"] if t["formal_id"] == formal_id)
+            verify_new_source_wrong_rejection(formal, frozen_target, unit_index)
         if outcome in {"wrong_recorded", "recurrence_recorded"}:
             durable = verify_rollback_record(
                 durable,
@@ -3310,6 +5458,291 @@ def verify_visual_receipts(
     return [receipts[key] for key in sorted(receipts)]
 
 
+def teaching_context_capture_bindings(
+    freeze: dict[str, Any],
+    formal_id: str,
+) -> list[dict[str, Any]]:
+    targets = [
+        target
+        for target in freeze.get("targets", [])
+        if isinstance(target, dict) and target.get("formal_id") == formal_id
+    ]
+    if len(targets) != 1:
+        raise QuickIntakeError(f"教学切片目标未唯一绑定 freeze：{formal_id}")
+    capture_ids = targets[0].get("capture_event_ids")
+    if not isinstance(capture_ids, list) or not capture_ids:
+        raise QuickIntakeError(f"教学切片目标缺少 capture 绑定：{formal_id}")
+    snapshots: dict[str, dict[str, Any]] = {}
+    for snapshot in freeze.get("capture_snapshots", []):
+        if not isinstance(snapshot, dict):
+            continue
+        capture_id = snapshot.get("capture_event_id")
+        if not isinstance(capture_id, str) or capture_id in snapshots:
+            raise QuickIntakeError("freeze capture_snapshots 身份无效或重复")
+        snapshots[capture_id] = snapshot
+    bindings: list[dict[str, Any]] = []
+    for capture_id in sorted(capture_ids):
+        snapshot = snapshots.get(capture_id)
+        if snapshot is None:
+            raise QuickIntakeError(f"教学切片缺少 freeze snapshot：{capture_id}")
+        amendment_ids = snapshot.get("amendment_event_ids")
+        if not isinstance(amendment_ids, list) or not all(
+            isinstance(item, str) for item in amendment_ids
+        ):
+            raise QuickIntakeError(f"教学切片 amendment 绑定无效：{capture_id}")
+        bindings.append(
+            {
+                "capture_event_id": capture_id,
+                "capture_content_hash": validate_hash(
+                    snapshot.get("capture_content_hash"),
+                    f"freeze.capture[{capture_id}].capture_content_hash",
+                ),
+                "amendment_event_ids": amendment_ids,
+                "effective_evidence_hash": validate_hash(
+                    snapshot.get("effective_evidence_hash"),
+                    f"freeze.capture[{capture_id}].effective_evidence_hash",
+                ),
+                "effective_target_hash": validate_hash(
+                    snapshot.get("effective_target_hash"),
+                    f"freeze.capture[{capture_id}].effective_target_hash",
+                ),
+            }
+        )
+    return bindings
+
+
+def teaching_context_capture_evidence_source_version(
+    freeze: dict[str, Any],
+    formal_id: str,
+) -> str:
+    """Canonical hash binding one context to the frozen learning evidence."""
+
+    return sha256_value(
+        {
+            "freeze_id": freeze["event_id"],
+            "formal_id": formal_id,
+            "capture_bindings": teaching_context_capture_bindings(freeze, formal_id),
+        }
+    )
+
+
+def _safe_repo_relative_text(path_value: Any, field: str) -> str:
+    value = require_text(path_value, field, max_length=1000)
+    path = Path(value)
+    if path.is_absolute() or any(part in {"", ".", ".."} for part in path.parts):
+        raise QuickIntakeError(f"{field} 必须是规范的仓库相对路径")
+    return path.as_posix()
+
+
+def _read_repo_json(path_value: Any, field: str) -> tuple[Path, dict[str, Any]]:
+    relative = _safe_repo_relative_text(path_value, field)
+    candidate = REPO_ROOT.resolve()
+    for part in Path(relative).parts:
+        candidate = candidate / part
+        if candidate.is_symlink():
+            raise QuickIntakeError(f"{field} 不得经过符号链接")
+    path = resolve_repo_artifact(relative, field)
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise QuickIntakeError(f"{field} 不是可验证 JSON") from exc
+    if not isinstance(value, dict):
+        raise QuickIntakeError(f"{field} JSON 顶层必须是对象")
+    return path, value
+
+
+def verify_teaching_context_receipts(
+    value: Any,
+    freeze: dict[str, Any],
+    formal_by_id: dict[str, dict[str, Any]],
+    verified: dict[str, str],
+) -> list[dict[str, Any]]:
+    if not isinstance(value, list):
+        raise QuickIntakeError("batch_receipts.teaching_contexts 必须是数组")
+    receipts: dict[str, dict[str, Any]] = {}
+    for index, item in enumerate(value):
+        field = f"batch_receipts.teaching_contexts[{index}]"
+        required = {
+            "formal_id",
+            "context_path",
+            "context_sha256",
+            "pointer_path",
+            "pointer_sha256",
+        }
+        optional = {"schema_version", "status", "source_bindings"}
+        if (
+            not isinstance(item, dict)
+            or not required.issubset(item)
+            or set(item) - required - optional
+        ):
+            raise QuickIntakeError(f"{field} 字段不完整")
+        formal_id = item.get("formal_id")
+        formal = formal_by_id.get(formal_id)
+        if formal is None or formal_id in receipts:
+            raise QuickIntakeError(f"{field}.formal_id 不在正式目标或重复")
+        if "schema_version" in item and item.get("schema_version") not in {
+            "math-teaching-context-materialize-receipt-v1",
+            TEACHING_CONTEXT_SCHEMA,
+        }:
+            raise QuickIntakeError(f"{field}.schema_version 无效")
+        if "status" in item and item.get("status") not in {"created", "already_current"}:
+            raise QuickIntakeError(f"{field}.status 无效")
+
+        context_relative = _safe_repo_relative_text(
+            item.get("context_path"), f"{field}.context_path"
+        )
+        context_hash = validate_hash(
+            item.get("context_sha256"), f"{field}.context_sha256"
+        )
+        expected_context_parent = (
+            Path("错题知识网络") / "教学投影" / formal_id / "versions"
+        )
+        context_rel_path = Path(context_relative)
+        if (
+            context_rel_path.parent != expected_context_parent
+            or context_rel_path.name != f"{context_hash}.json"
+        ):
+            raise QuickIntakeError(
+                f"{field}.context_path 不是该目标的内容寻址版本路径"
+            )
+        context_path, context = _read_repo_json(
+            context_relative, f"{field}.context_path"
+        )
+        if file_sha256(context_path) != context_hash:
+            raise QuickIntakeError(f"{field}.context_sha256 与当前文件不一致")
+        if context.get("schema_version") != TEACHING_CONTEXT_SCHEMA:
+            raise QuickIntakeError(f"{field} context schema_version 无效")
+        if context.get("formal_id") != formal_id:
+            raise QuickIntakeError(f"{field} context formal_id 不一致")
+
+        source_bindings = context.get("source_bindings")
+        required_bindings = {
+            "formal_card_path",
+            "formal_card_sha256",
+            "freeze_id",
+            "capture_event_ids",
+            "capture_bindings",
+            "formal_evidence_source_version",
+            "capture_evidence_source_version",
+        }
+        if (
+            not isinstance(source_bindings, dict)
+            or not required_bindings.issubset(source_bindings)
+        ):
+            raise QuickIntakeError(f"{field} context.source_bindings 字段不完整")
+        if "source_bindings" in item and item.get("source_bindings") != source_bindings:
+            raise QuickIntakeError(f"{field}.source_bindings 与 context 不一致")
+        if source_bindings.get("formal_card_path") != formal["card_path_after"]:
+            raise QuickIntakeError(f"{field} context 绑定了旧正式卡路径")
+        if source_bindings.get("formal_card_sha256") != formal["card_hash_after"]:
+            raise QuickIntakeError(f"{field} context 绑定了旧正式卡哈希")
+        if source_bindings.get("freeze_id") != freeze["event_id"]:
+            raise QuickIntakeError(f"{field} context freeze_id 不一致")
+
+        expected_capture_bindings = teaching_context_capture_bindings(freeze, formal_id)
+        expected_capture_ids = [entry["capture_event_id"] for entry in expected_capture_bindings]
+        if source_bindings.get("capture_event_ids") != expected_capture_ids:
+            raise QuickIntakeError(
+                f"{field} context capture_event_ids 与 freeze 不一致"
+            )
+        if source_bindings.get("capture_bindings") != expected_capture_bindings:
+            raise QuickIntakeError(
+                f"{field} context capture_bindings 与 freeze 快照不一致"
+            )
+        capture_version = teaching_context_capture_evidence_source_version(
+            freeze, formal_id
+        )
+        if source_bindings.get("capture_evidence_source_version") != capture_version:
+            raise QuickIntakeError(
+                f"{field} context capture_evidence_source_version 不一致"
+            )
+        card_path = resolve_repo_artifact(
+            formal["card_path_after"], f"{field}.formal_card_path"
+        )
+        formal_version = formal_evidence_source_version_for_card(formal_id, card_path)
+        if source_bindings.get("formal_evidence_source_version") != formal_version:
+            raise QuickIntakeError(
+                f"{field} context formal_evidence_source_version 不一致"
+            )
+
+        pointer_relative = _safe_repo_relative_text(
+            item.get("pointer_path"), f"{field}.pointer_path"
+        )
+        expected_pointer = (
+            Path("错题知识网络") / "教学投影" / formal_id / "current.json"
+        ).as_posix()
+        if pointer_relative != expected_pointer:
+            raise QuickIntakeError(
+                f"{field}.pointer_path 不是该目标的 current pointer"
+            )
+        pointer_hash = validate_hash(
+            item.get("pointer_sha256"), f"{field}.pointer_sha256"
+        )
+        pointer_path, pointer = _read_repo_json(
+            pointer_relative, f"{field}.pointer_path"
+        )
+        if file_sha256(pointer_path) != pointer_hash:
+            raise QuickIntakeError(
+                f"{field}.pointer_sha256 与当前 pointer 不一致"
+            )
+        expected_pointer_fields = {
+            "schema_version": TEACHING_CONTEXT_POINTER_SCHEMA,
+            "formal_id": formal_id,
+            "context_path": context_relative,
+            "context_sha256": context_hash,
+            "formal_card_path": formal["card_path_after"],
+            "formal_card_sha256": formal["card_hash_after"],
+            "formal_evidence_source_version": formal_version,
+            "capture_evidence_source_version": capture_version,
+        }
+        if any(
+            pointer.get(key) != expected
+            for key, expected in expected_pointer_fields.items()
+        ):
+            raise QuickIntakeError(
+                f"{field} current pointer 未指向已验证教学切片"
+            )
+
+        add_verified_artifact(verified, context_path)
+        receipts[formal_id] = {
+            "formal_id": formal_id,
+            "context_path": context_relative,
+            "context_sha256": context_hash,
+            "pointer_path": pointer_relative,
+            "pointer_sha256": pointer_hash,
+        }
+    if set(receipts) != set(formal_by_id):
+        raise QuickIntakeError("teaching_contexts 必须与正式目标一一对应")
+    return [receipts[key] for key in sorted(receipts)]
+
+
+def reverify_teaching_context_pointers(receipts: Any) -> None:
+    if not isinstance(receipts, list):
+        raise QuickIntakeError("closeout 缺少可复验 teaching_contexts")
+    for index, item in enumerate(receipts):
+        field = f"batch_receipts.teaching_contexts[{index}]"
+        pointer = resolve_repo_artifact(
+            item.get("pointer_path"), f"{field}.pointer_path"
+        )
+        if file_sha256(pointer) != item.get("pointer_sha256"):
+            raise QuickIntakeError(
+                f"close 前教学切片 pointer 发生并发变化：{item.get('pointer_path')}"
+            )
+        try:
+            value = json.loads(pointer.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            raise QuickIntakeError(
+                f"close 前教学切片 pointer 无法复验：{item.get('pointer_path')}"
+            ) from exc
+        if not isinstance(value, dict) or (
+            value.get("context_path") != item.get("context_path")
+            or value.get("context_sha256") != item.get("context_sha256")
+        ):
+            raise QuickIntakeError(
+                f"close 前教学切片 pointer 指向发生变化：{item.get('pointer_path')}"
+            )
+
+
 def normalize_closeout(value: dict[str, Any], state: dict[str, Any]) -> dict[str, Any]:
     required = {
         "schema_version",
@@ -3320,7 +5753,7 @@ def normalize_closeout(value: dict[str, Any], state: dict[str, Any]) -> dict[str
         "batch_receipts",
     }
     missing = sorted(required - set(value))
-    unexpected = sorted(set(value) - required)
+    unexpected = sorted(set(value) - required - {"concept_observations"})
     if missing:
         raise QuickIntakeError(f"夜间回执缺少字段：{', '.join(missing)}")
     if unexpected:
@@ -3347,8 +5780,16 @@ def normalize_closeout(value: dict[str, Any], state: dict[str, Any]) -> dict[str
         value.get("capture_results"), freeze, state, formal_by_id, verified
     )
     batch = value.get("batch_receipts")
-    if not isinstance(batch, dict) or set(batch) != {"wrongnet", "relationships", "wiki", "visuals"}:
-        raise QuickIntakeError("batch_receipts 必须完整包含 wrongnet、relationships、wiki、visuals")
+    if not isinstance(batch, dict) or set(batch) != {
+        "wrongnet",
+        "relationships",
+        "wiki",
+        "visuals",
+        "teaching_contexts",
+    }:
+        raise QuickIntakeError(
+            "batch_receipts 必须完整包含 wrongnet、relationships、wiki、visuals、teaching_contexts"
+        )
     wrongnet, target_projections, artifact_date = verify_wrongnet_receipt(
         batch.get("wrongnet"), formal_by_id, verified
     )
@@ -3368,7 +5809,24 @@ def normalize_closeout(value: dict[str, Any], state: dict[str, Any]) -> dict[str
         verified,
     )
     visuals = verify_visual_receipts(batch.get("visuals"), formal_by_id, verified)
+    teaching_contexts = verify_teaching_context_receipts(
+        batch.get("teaching_contexts"), freeze, formal_by_id, verified
+    )
+    concept_extension = {}
+    if "concept_observations" in value:
+        module_path = str(Path(__file__).resolve().parents[2] / "错题知识网络/scripts")
+        sys.path.insert(0, module_path)
+        try:
+            import math_formal_observations
+            concept_extension["concept_observations"] = math_formal_observations.normalize(
+                value["concept_observations"], freeze, state, formal_by_id, verified,
+                sys.modules[__name__] if __name__ in sys.modules else __import__("types").SimpleNamespace(**globals()))
+        except ValueError as exc:
+            raise QuickIntakeError(str(exc)) from exc
+        finally:
+            sys.path.remove(module_path)
     return {
+        **concept_extension,
         "closeout_schema_version": CLOSEOUT_SCHEMA,
         "freeze_id": freeze_id,
         "study_date": freeze["study_date"],
@@ -3381,6 +5839,7 @@ def normalize_closeout(value: dict[str, Any], state: dict[str, Any]) -> dict[str
             "relationships": relationships,
             "wiki": wiki,
             "visuals": visuals,
+            "teaching_contexts": teaching_contexts,
             "target_parity": "verified_builtin_fields_refs_membership_v2",
             "target_lint": "verified_builtin_required_fields_and_control_chars_v2",
         },
@@ -3396,6 +5855,13 @@ def reverify_artifacts(artifacts: list[dict[str, str]]) -> None:
         path = resolve_repo_artifact(item["path"], "verified_artifacts.path")
         if file_sha256(path) != item["sha256"]:
             raise QuickIntakeError(f"close 前文件发生并发变化：{item['path']}")
+
+
+def reverify_closeout_payload(payload: dict[str, Any]) -> None:
+    reverify_artifacts(payload["verified_artifacts"])
+    reverify_teaching_context_pointers(
+        payload["batch_receipts"].get("teaching_contexts")
+    )
 
 
 def make_prepare_invalidation(prepare: dict[str, Any], reason: str) -> dict[str, Any]:
@@ -3495,7 +5961,7 @@ def cmd_close(args: argparse.Namespace) -> None:
                             "generation": generation,
                         },
                     )
-                    reverify_artifacts(payload["verified_artifacts"])
+                    reverify_closeout_payload(payload)
                     prepare = with_content_hash(
                         {
                             **payload,
@@ -3518,7 +5984,7 @@ def cmd_close(args: argparse.Namespace) -> None:
                     generation = prepare["generation"]
 
                 try:
-                    reverify_artifacts(payload["verified_artifacts"])
+                    reverify_closeout_payload(payload)
                 except QuickIntakeError as exc:
                     invalidation = make_prepare_invalidation(prepare, str(exc))
                     replay([*events, invalidation])
@@ -3552,9 +6018,15 @@ def cmd_close(args: argparse.Namespace) -> None:
                 append_jsonl(EVENTS_PATH, event)
                 replay(load_jsonl(EVENTS_PATH))
                 status = "recorded"
+    import math_postcommit
+    try:
+        postcommit = math_postcommit.run_after_commit(EVENTS_PATH.parent.parent, event_id)
+    except (OSError, ValueError) as exc:
+        postcommit = {"status": "local_refresh_pending", "reason": str(exc)}
     response = {
         "status": status,
         "state": "nightly_closed",
+        "postcommit": postcommit,
         "closeout_id": event_id,
         "freeze_id": event["freeze_id"],
         "study_date": event["study_date"],
@@ -3582,10 +6054,6 @@ def cmd_verify(args: argparse.Namespace) -> None:
         target = effective_target(capture, amendments)
         source_bundle = effective_source_bundle(capture, amendments)
         if source_bundle is None:
-            if capture.get("capture_schema_version") == CAPTURE_SCHEMA_V2:
-                raise QuickIntakeError(
-                    f"v2 Capture 缺少 source_bundle：{capture_id}"
-                )
             continue
         document, _, children = validate_source_bundle_manifest(
             source_bundle["manifest_path"],
@@ -3599,6 +6067,12 @@ def cmd_verify(args: argparse.Namespace) -> None:
             ),
             require_question=target.get("kind") == "new_source",
         )
+        if document.get("schema_version") == CONVERSATION_PACKAGE_SCHEMA:
+            validate_conversation_capture_identity(
+                document, capture["attempt_id"], capture["target"],
+                require_identity=capture.get("package_identity_version") == 1,
+                check_attempt=capture.get("package_identity_version") == 1,
+            )
         source_bundle_count += 1
         source_artifact_count += len(document["artifacts"])
     document = status_document(events, study_date, snapshot_hash=snapshot_hash)
@@ -3618,6 +6092,59 @@ def cmd_verify(args: argparse.Namespace) -> None:
             sort_keys=True,
         )
     )
+
+
+def verify_formal_package(manifest_relative: str, expected_manifest_hash: str | None = None) -> dict[str, Any]:
+    """Read the exact package lineage; do not apply or resume a transaction."""
+    document, _manifest, _children = validate_source_bundle_manifest(
+        manifest_relative, "bridge.formal_package", expected_hash=expected_manifest_hash
+    )
+    events = load_jsonl(EVENTS_PATH)
+    current = replay(events)
+    captures = []
+    for capture in current["captures"].values():
+        reference = capture.get("conversation_package") or capture.get("source_bundle")
+        if isinstance(reference, dict) and reference.get("manifest_path") == manifest_relative:
+            captures.append(capture)
+    if not captures:
+        raise QuickIntakeError("manifest 没有对应的 canonical Capture")
+    rows = []
+    for capture in captures:
+        capture_id = capture["event_id"]
+        closeout_id = current["closed_by"].get(capture_id)
+        closeout = current["closeouts"].get(closeout_id) if closeout_id else None
+        outcomes = [row for row in (closeout or {}).get("capture_results", []) if row.get("capture_event_id") == capture_id]
+        rows.append({"capture_id": capture_id, "closeout_id": closeout_id,
+                     "formal_committed": closeout is not None and len(outcomes) == 1,
+                     "capture_result": outcomes[0] if len(outcomes) == 1 else None})
+    complete = all(row["formal_committed"] for row in rows)
+    closeouts = sorted({row["closeout_id"] for row in rows if row["closeout_id"]})
+    return {"schema_version": "math-formal-package-verification-v1", "subject": "math",
+            "status": "FORMAL_COMMITTED" if complete else "AWAITING_LOCAL_DECISION",
+            "package_id": document.get("package_id") or document.get("bundle_id"),
+            "manifest_path": manifest_relative, "manifest_sha256": file_sha256(_manifest),
+            "captures": rows, "closeout_ids": closeouts, "publication_event_ids": closeouts,
+            "external_advice_item_decisions": "not_recorded_by_legacy_native_contract",
+            "formal_write_count": 0, "model_call_count": 0}
+
+
+def cmd_verify_formal_package(args: argparse.Namespace) -> None:
+    result = verify_formal_package(args.manifest, args.manifest_sha256)
+    print(json.dumps(result, ensure_ascii=False, sort_keys=True))
+
+
+def cmd_web_advice_decision(args: argparse.Namespace) -> None:
+    import math_review
+    try:
+        if args.command == "record-advice-decision":
+            payload = read_json_document(args.payload_file)
+            result = math_review.record_advice_decision(REPO_ROOT, payload, sys.modules[__name__])
+        else:
+            result = math_review.verify_advice_decision(REPO_ROOT, args.run_id, sys.modules[__name__])
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        print(json.dumps({"status": "AWAITING_LOCAL_DECISION", "reason": str(exc), "learning_events_written": 0}, ensure_ascii=False))
+        raise SystemExit(2) from exc
+    print(json.dumps(result, ensure_ascii=False, sort_keys=True))
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -3664,6 +6191,38 @@ def build_parser() -> argparse.ArgumentParser:
     pending_parser.add_argument("--date", help="只查看 YYYY-MM-DD 当日事件")
     pending_parser.set_defaults(func=cmd_pending)
 
+    backlog_parser = subparsers.add_parser(
+        "backlog-through-date",
+        help="只读规划 cutoff 日期及之前未形成可信终态的数学正式入库 backlog",
+    )
+    backlog_parser.add_argument(
+        "--cutoff-date",
+        default=shanghai_today(),
+        help="Asia/Shanghai 截止日期，默认为当地今日",
+    )
+    backlog_parser.add_argument(
+        "--only-today",
+        action="store_true",
+        help="显式缩小到 cutoff-date 当日",
+    )
+    backlog_parser.add_argument(
+        "--capture-id",
+        action="append",
+        default=[],
+        help="显式缩小到精确 capture，可重复",
+    )
+    backlog_parser.add_argument(
+        "--package-id",
+        action="append",
+        default=[],
+        help="显式缩小到精确 package，可重复",
+    )
+    backlog_parser.add_argument(
+        "--baseline-plan-file",
+        help="可选：重开之前的 canonical plan 并生成最终全局 gate",
+    )
+    backlog_parser.set_defaults(func=cmd_backlog_through_date)
+
     freeze_parser = subparsers.add_parser(
         "freeze",
         help="夜间正式写入前冻结 capture、amendment、来源身份与正式卡前哈希",
@@ -3699,6 +6258,16 @@ def build_parser() -> argparse.ArgumentParser:
     verify_parser = subparsers.add_parser("verify", help="校验账本完整性与 pending 状态")
     verify_parser.add_argument("--date", help="只汇总 YYYY-MM-DD 当日事件")
     verify_parser.set_defaults(func=cmd_verify)
+    package_verify = subparsers.add_parser("verify-formal-package", help="只读核对单个原包的真实Capture/closeout，不执行裁决")
+    package_verify.add_argument("--manifest", required=True, help="数学仓库相对manifest.json路径")
+    package_verify.add_argument("--manifest-sha256")
+    package_verify.set_defaults(func=cmd_verify_formal_package)
+    advice_record = subparsers.add_parser("record-advice-decision", help="记录本次A建议逐条本地裁决；不执行正式writer或复习评分")
+    advice_record.add_argument("--payload-file", required=True, help="math-web-advice-decision-v1 JSON")
+    advice_record.set_defaults(func=cmd_web_advice_decision)
+    advice_verify = subparsers.add_parser("verify-advice-decision", help="只读核对本次A run/advice/package与实际裁决凭据")
+    advice_verify.add_argument("--run-id", required=True)
+    advice_verify.set_defaults(func=cmd_web_advice_decision)
     return parser
 
 
