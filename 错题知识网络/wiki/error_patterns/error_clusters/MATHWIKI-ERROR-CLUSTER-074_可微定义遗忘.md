@@ -1,17 +1,16 @@
 ---
 wiki_id: MATHWIKI-ERROR-CLUSTER-074
 type: error_cluster
-title: "可微定义遗忘"
-subject: "高等数学"
+title: 可微定义遗忘
+subject: 高等数学
 source_refs:
-  - "错题知识网络/错题卡/"
+  - 错题知识网络/错题卡/
 wiki_refs:
-  - "SRC-WRONGCARDS-INDEX"
-  - "MATHWIKI-COVERAGE-MATRIX"
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: 2026-07-15
+last_updated: '2026-09-08'
 ---
-
 # 可微定义遗忘
 
 ## 定位
@@ -20,15 +19,14 @@ last_updated: 2026-07-15
 
 ## 覆盖统计
 
-- 相关错题数：2
+- 相关错题数：1
 - 涉及科目：高等数学
-- 代表错题：GS-350；GS-626
+- 代表错题：GS-626
 
 ## 错题清单
 
 | id | source summary | subject | chapter | knowledge | status | formal card |
 |---|---|---|---|---|---|---|
-| GS-350 | [[SRC-WQ-GS-350]] | 高等数学 | 多元函数微分学 | 多元函数微分学；多元函数连续可微；多元函数偏导；可微定义；一阶线性主部；极限与连续 | 待复做 | `错题知识网络/错题卡/GS-350_强化例题13.10-2.md` |
 | GS-626 | [[SRC-WQ-GS-626]] | 高等数学 | 多元函数微分学 | 多元函数偏导；全微分；多元函数连续可微；可微定义；一阶线性主部；空间曲面切平面与法线 | 待复做 | `错题知识网络/错题卡/GS-626_102369可微定义线性主部.md` |
 
 ## 后续编译动作

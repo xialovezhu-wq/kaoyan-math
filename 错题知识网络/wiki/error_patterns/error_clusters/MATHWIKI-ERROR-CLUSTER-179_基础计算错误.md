@@ -2,14 +2,14 @@
 wiki_id: MATHWIKI-ERROR-CLUSTER-179
 type: error_cluster
 title: 基础计算错误
-subject: "高等数学"
+subject: 高等数学
 source_refs:
-- 错题知识网络/错题卡/
+  - 错题知识网络/错题卡/
 wiki_refs:
-- SRC-WRONGCARDS-INDEX
-- MATHWIKI-COVERAGE-MATRIX
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: "2026-07-28"
+last_updated: '2026-09-08'
 ---
 # 基础计算错误
 
@@ -27,7 +27,6 @@ last_updated: "2026-07-28"
 
 | id | source summary | subject | chapter | knowledge | status | formal card |
 |---|---|---|---|---|---|---|
-| GS-668 | [[SRC-WQ-GS-668]] | 高等数学 | 多元函数积分学 | 多元函数积分学；三重积分；三重积分对称性；球面坐标；定积分 | 待复做 | `错题知识网络/错题卡/GS-668_102610球体截面球面坐标.md` |
 | GS-669 | [[SRC-WQ-GS-669]] | 高等数学 | 多元函数积分学 | 多元函数积分学；三重积分；球面坐标；二次曲面；向量代数与空间解析几何 | 待复做 | `错题知识网络/错题卡/GS-669_102438圆锥面球面坐标.md` |
 
 ## 后续编译动作
@@ -39,3 +38,4 @@ last_updated: "2026-07-28"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]
+| GS-668 | [[SRC-WQ-GS-668]] | 高等数学 | 多元函数积分学 | 空间几何图像断点; 方法论调取失败; 动作链断裂; 运算路径不稳; 基础计算错误; 符号代入错误; 概念混淆 | 三重积分换序; 先二后一截面法; 截面面积法; 三重积分对称性; 球面坐标; 定积分计算 | 自报独立正确（过程未核验） | `错题知识网络/错题卡/GS-668_102610球体截面球面坐标.md` |

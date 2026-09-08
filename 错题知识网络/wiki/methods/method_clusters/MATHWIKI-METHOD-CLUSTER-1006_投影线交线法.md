@@ -1,17 +1,16 @@
 ---
 wiki_id: MATHWIKI-METHOD-CLUSTER-1006
 type: method_cluster
-title: "投影线交线法"
-subject: "高等数学"
+title: 投影线交线法
+subject: 高等数学
 source_refs:
-  - "错题知识网络/错题卡/"
+  - 错题知识网络/错题卡/
 wiki_refs:
-  - "SRC-WRONGCARDS-INDEX"
-  - "MATHWIKI-COVERAGE-MATRIX"
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: "2026-07-28"
+last_updated: '2026-09-08'
 ---
-
 # 投影线交线法
 
 ## 定位
@@ -28,7 +27,6 @@ last_updated: "2026-07-28"
 
 | id | source summary | subject | chapter | knowledge | status | formal card |
 |---|---|---|---|---|---|---|
-| GS-628 | [[SRC-WQ-GS-628]] | 高等数学 | 向量代数与空间解析几何 | 向量代数与空间解析几何；空间直线与平面；空间直线投影；两平面交线；平面束方程；辅助平面；法向量 | 待复做 | `错题知识网络/错题卡/GS-628_102423直线投影辅助平面.md` |
 
 ## 后续编译动作
 
@@ -39,3 +37,4 @@ last_updated: "2026-07-28"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]
+| GS-628 | [[SRC-WQ-GS-628]] | 高等数学 | 向量代数与空间解析几何 | 空间几何图像断点; 投影过程对象化断点; 平面束触发不足; 辅助平面关系混淆; 法向量点积对象混淆; 方法论调取失败 | 平面束方程; 辅助平面法; 平面垂直法向量点积; 投影线交线法; 条件转化 | 已掌握 | `错题知识网络/错题卡/GS-628_102423直线投影辅助平面.md` |

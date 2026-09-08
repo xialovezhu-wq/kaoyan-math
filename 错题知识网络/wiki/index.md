@@ -1301,3 +1301,8 @@
 | SRC-WQ-GS-794 | source_summary | 57681距离定义与轨迹曲面 | 错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-794.md | 高等数学 | 空间距离；点到平面距离；点到坐标轴距离；二次曲面 | GS-794 | 错题知识网络/错题卡/GS-794_57681距离定义与轨迹曲面.md | indexed | 2026-09-08 |
 | SRC-WQ-GS-795 | source_summary | 58104旋转半径对应点 | 错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-795.md | 高等数学 | 旋转曲面；直线参数方程；点到坐标轴距离；参数消元 | GS-795 | 错题知识网络/错题卡/GS-795_58104旋转半径对应点.md | indexed | 2026-09-08 |
 | SRC-WQ-GS-796 | source_summary | 58128平移旋转轴与距离 | 错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-796.md | 高等数学 | 旋转曲面；空间直线与平面；点到空间直线距离；参数消元 | GS-796 | 错题知识网络/错题卡/GS-796_58128平移旋转轴与距离.md | indexed | 2026-09-08 |
+
+
+### 2026-09-08 晨间复盘更新
+
+[[SRC-WQ-GS-350]]、[[SRC-WQ-GS-627]]、[[SRC-WQ-GS-628]]、[[SRC-WQ-GS-666]]、[[SRC-WQ-GS-668]]。原日期和提示依赖保留，详见各题当前摘要。

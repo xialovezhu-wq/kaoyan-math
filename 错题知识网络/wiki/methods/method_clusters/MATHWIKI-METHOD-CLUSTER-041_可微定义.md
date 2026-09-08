@@ -1,17 +1,16 @@
 ---
 wiki_id: MATHWIKI-METHOD-CLUSTER-041
 type: method_cluster
-title: "可微定义"
-subject: "高等数学"
+title: 可微定义
+subject: 高等数学
 source_refs:
-  - "错题知识网络/错题卡/"
+  - 错题知识网络/错题卡/
 wiki_refs:
-  - "SRC-WRONGCARDS-INDEX"
-  - "MATHWIKI-COVERAGE-MATRIX"
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: 2026-07-15
+last_updated: '2026-09-08'
 ---
-
 # 可微定义
 
 ## 定位
@@ -29,7 +28,6 @@ last_updated: 2026-07-15
 | id | source summary | subject | chapter | knowledge | status | formal card |
 |---|---|---|---|---|---|---|
 | GS-047 | [[SRC-WQ-GS-047]] | 高等数学 | 多元函数微分学 | 多元函数极限；多元函数连续可微；可微定义；多元函数偏导 | 待复做 | `错题知识网络/错题卡/GS-047_强化例题13.10.md` |
-| GS-350 | [[SRC-WQ-GS-350]] | 高等数学 | 多元函数微分学 | 多元函数微分学；多元函数连续可微；多元函数偏导；可微定义；一阶线性主部；极限与连续 | 待复做 | `错题知识网络/错题卡/GS-350_强化例题13.10-2.md` |
 | GS-351 | [[SRC-WQ-GS-351]] | 高等数学 | 多元函数微分学 | 多元函数微分学；多元函数偏导；多元函数连续可微；可微定义；极限与连续 | 待复做 | `错题知识网络/错题卡/GS-351_强化例题13.12.md` |
 | GS-358 | [[SRC-WQ-GS-358]] | 高等数学 | 多元函数微分学 | 多元函数微分学；多元函数偏导；多元函数连续可微；可微定义；极限与连续 | 待复做 | `错题知识网络/错题卡/GS-358_强化例题13.12-2.md` |
 | GS-359 | [[SRC-WQ-GS-359]] | 高等数学 | 多元函数微分学 | 多元函数微分学；多元函数连续可微；极限与连续；可微定义；多元函数偏导 | 待复做 | `错题知识网络/错题卡/GS-359_2024年真题选择题第五题.md` |
@@ -49,3 +47,4 @@ last_updated: 2026-07-15
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]
+| GS-350 | [[SRC-WQ-GS-350]] | 高等数学 | 多元函数微分学 | 连续性定义启动不足; 绝对值放缩衔接不足; 根式符号边界遗漏 | 取绝对值; 有界性放缩; 偏导定义; 可微定义; 一阶线性主部; 凑Δz-dz; 小o误差项; 特殊路径 | 待复做 | `错题知识网络/错题卡/GS-350_强化例题13.10-2.md` |

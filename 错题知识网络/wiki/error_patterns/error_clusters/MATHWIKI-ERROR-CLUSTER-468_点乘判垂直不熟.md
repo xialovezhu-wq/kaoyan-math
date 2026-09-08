@@ -4,12 +4,12 @@ type: error_cluster
 title: 点乘判垂直不熟
 subject: 高等数学
 source_refs:
-- 错题知识网络/错题卡/
+  - 错题知识网络/错题卡/
 wiki_refs:
-- SRC-WRONGCARDS-INDEX
-- MATHWIKI-COVERAGE-MATRIX
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: '2026-07-17'
+last_updated: '2026-09-08'
 ---
 # 点乘判垂直不熟
 
@@ -19,15 +19,14 @@ last_updated: '2026-07-17'
 
 ## 覆盖统计
 
-- 相关错题数：1
+- 相关错题数：0
 - 涉及科目：高等数学
-- 代表错题：GS-627
+- 代表错题：
 
 ## 错题清单
 
 | id | source summary | subject | chapter | knowledge | status | formal card |
 |---|---|---|---|---|---|---|
-| GS-627 | [[SRC-WQ-GS-627]] | 高等数学 | 向量代数与空间解析几何 | 向量代数与空间解析几何；空间直线与平面；空间平面方程；方向向量；法向量；叉乘；行列式；代数余子式 | 待复做 | `错题知识网络/错题卡/GS-627_77447两直线平行平面.md` |
 
 ## 后续编译动作
 

@@ -1,17 +1,16 @@
 ---
 wiki_id: MATHWIKI-METHOD-CLUSTER-299
 type: method_cluster
-title: "凑Δz-dz"
-subject: "高等数学"
+title: 凑Δz-dz
+subject: 高等数学
 source_refs:
-  - "错题知识网络/错题卡/"
+  - 错题知识网络/错题卡/
 wiki_refs:
-  - "SRC-WRONGCARDS-INDEX"
-  - "MATHWIKI-COVERAGE-MATRIX"
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: 2026-07-15
+last_updated: '2026-09-08'
 ---
-
 # 凑Δz-dz
 
 ## 定位
@@ -28,7 +27,6 @@ last_updated: 2026-07-15
 
 | id | source summary | subject | chapter | knowledge | status | formal card |
 |---|---|---|---|---|---|---|
-| GS-350 | [[SRC-WQ-GS-350]] | 高等数学 | 多元函数微分学 | 多元函数微分学；多元函数连续可微；多元函数偏导；可微定义；一阶线性主部；极限与连续 | 待复做 | `错题知识网络/错题卡/GS-350_强化例题13.10-2.md` |
 | GS-626 | [[SRC-WQ-GS-626]] | 高等数学 | 多元函数微分学 | 多元函数偏导；全微分；多元函数连续可微；可微定义；一阶线性主部；空间曲面切平面与法线 | 待复做 | `错题知识网络/错题卡/GS-626_102369可微定义线性主部.md` |
 
 ## 后续编译动作
@@ -40,3 +38,4 @@ last_updated: 2026-07-15
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]
+| GS-350 | [[SRC-WQ-GS-350]] | 高等数学 | 多元函数微分学 | 连续性定义启动不足; 绝对值放缩衔接不足; 根式符号边界遗漏 | 取绝对值; 有界性放缩; 偏导定义; 可微定义; 一阶线性主部; 凑Δz-dz; 小o误差项; 特殊路径 | 待复做 | `错题知识网络/错题卡/GS-350_强化例题13.10-2.md` |

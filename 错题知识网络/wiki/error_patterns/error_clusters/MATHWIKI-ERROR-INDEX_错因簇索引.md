@@ -655,3 +655,23 @@ last_updated: "2026-08-13"
 | [[MATHWIKI-ERROR-CLUSTER-629_目标对象识别错误]] | 目标对象识别错误 | 2 | 高等数学 | GS-782 |
 | [[MATHWIKI-ERROR-CLUSTER-630_公式或定义遗忘]] | 公式或定义遗忘 | 3 | 高等数学 | GS-792 |
 | [[MATHWIKI-ERROR-CLUSTER-631_未记录个人错因]] | 未记录个人错因 | 1 | 高等数学 | GS-794 |
+
+- [[MATHWIKI-ERROR-CLUSTER-632|内外积分限层次混淆]]
+
+- [[MATHWIKI-ERROR-CLUSTER-633|已知点条件提取遗漏]]
+
+- [[MATHWIKI-ERROR-CLUSTER-634|平面与球体区域混淆]]
+
+- [[MATHWIKI-ERROR-CLUSTER-635|根式符号边界遗漏]]
+
+- [[MATHWIKI-ERROR-CLUSTER-636|绝对值放缩衔接不足]]
+
+- [[MATHWIKI-ERROR-CLUSTER-637|被积函数权重与薄层厚度混淆]]
+
+- [[MATHWIKI-ERROR-CLUSTER-638|边界等式与区域不等式混淆]]
+
+- [[MATHWIKI-ERROR-CLUSTER-639|连续性定义启动不足]]
+
+- [[MATHWIKI-ERROR-CLUSTER-640|非负与耦合区域条件遗漏]]
+
+- [[MATHWIKI-ERROR-CLUSTER-641|题干位置信息遗漏]]

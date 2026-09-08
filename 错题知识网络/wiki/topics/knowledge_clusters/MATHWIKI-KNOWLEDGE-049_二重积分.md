@@ -2,14 +2,14 @@
 wiki_id: MATHWIKI-KNOWLEDGE-049
 type: knowledge_cluster
 title: 二重积分
-subject: "高等数学"
+subject: 高等数学
 source_refs:
-- 错题知识网络/错题卡/
+  - 错题知识网络/错题卡/
 wiki_refs:
-- SRC-WRONGCARDS-INDEX
-- MATHWIKI-COVERAGE-001
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-001
 status: active
-last_updated: "2026-08-01"
+last_updated: '2026-09-08'
 ---
 # 二重积分
 
@@ -19,9 +19,9 @@ last_updated: "2026-08-01"
 
 ## 覆盖统计
 
-- 相关错题数：19
+- 相关错题数：20
 - 涉及科目：高等数学
-- 代表错题：GS-397；GS-398；GS-399；GS-400；GS-401；GS-403；GS-404；GS-405；GS-407；GS-409；GS-410；GS-411；…
+- 代表错题：GS-397；GS-398；GS-399；GS-400；GS-401；GS-403；GS-404；GS-405；GS-406；GS-407；GS-409；GS-410
 
 ## 错题清单
 
@@ -60,3 +60,4 @@ last_updated: "2026-08-01"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-001_错题卡全量覆盖索引]]
+| GS-666 | [[SRC-WQ-GS-666]] | 高等数学 | 多元函数积分学 | 平面与球体区域混淆; 非负与耦合区域条件遗漏; 内外积分限层次混淆; 被积函数权重与薄层厚度混淆; 边界等式与区域不等式混淆 | 三重积分轮换对称性; 三重积分换序; 先二后一截面法; 截面面积法; 对称性化简 | 待复做 | `错题知识网络/错题卡/GS-666_78292轮换对称截面法.md` |

@@ -2,14 +2,14 @@
 wiki_id: MATHWIKI-METHOD-CLUSTER-170
 type: method_cluster
 title: 直线方程模板
-subject: "高等数学"
+subject: 高等数学
 source_refs:
-- 错题知识网络/错题卡/
+  - 错题知识网络/错题卡/
 wiki_refs:
-- SRC-WRONGCARDS-INDEX
-- MATHWIKI-COVERAGE-MATRIX
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: "2026-07-27"
+last_updated: '2026-09-08'
 ---
 # 直线方程模板
 
@@ -28,7 +28,6 @@ last_updated: "2026-07-27"
 | id | source summary | subject | chapter | knowledge | status | formal card |
 |---|---|---|---|---|---|---|
 | GS-128 | [[SRC-WQ-GS-128]] | 高等数学 | 一元函数微分学应用 | 隐函数求导；法线方程 | 待复做 | `错题知识网络/错题卡/GS-128_2023年真题第14题.md` |
-| GS-627 | [[SRC-WQ-GS-627]] | 高等数学 | 向量代数与空间解析几何 | 向量代数与空间解析几何；空间直线与平面；空间平面方程；方向向量；法向量；叉乘；行列式；代数余子式 | 待复做 | `错题知识网络/错题卡/GS-627_77447两直线平行平面.md` |
 | GS-645 | [[SRC-WQ-GS-645]] | 高等数学 | 向量代数与空间解析几何 | 向量代数与空间解析几何；空间直线与平面；方向向量；空间曲线投影；坐标面投影；两曲面交线；旋转曲面；二次曲面 | 待复做 | `错题知识网络/错题卡/GS-645_84328旋转曲面投影.md` |
 | GS-646 | [[SRC-WQ-GS-646]] | 高等数学 | 向量代数与空间解析几何 | 向量代数与空间解析几何；空间曲线切线与法平面；空间直线与平面；方向向量；参数方程求导 | 待复做 | `错题知识网络/错题卡/GS-646_102465参数曲线切线方程.md` |
 
@@ -41,3 +40,4 @@ last_updated: "2026-07-27"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]
+| GS-627 | [[SRC-WQ-GS-627]] | 高等数学 | 向量代数与空间解析几何 | 题干位置信息遗漏; 已知点条件提取遗漏 | 直线方程模板; 平面点法式; 方向向量提取; 法向量构造; 叉乘求法向量; 条件转化; 平面一般式; 点乘判垂直; 叉乘行列式展开; 代数余子式符号检查 | 待复做 | `错题知识网络/错题卡/GS-627_77447两直线平行平面.md` |

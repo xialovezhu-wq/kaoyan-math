@@ -553,3 +553,7 @@ last_updated: "2026-08-13"
 | [[MATHWIKI-KNOWLEDGE-525_充分条件与必要条件]] | 充分条件与必要条件 | 1 | 高等数学 | GS-792 |
 | [[MATHWIKI-KNOWLEDGE-526_根式化简]] | 根式化简 | 1 | 高等数学 | GS-793 |
 | [[MATHWIKI-KNOWLEDGE-527_参数消元]] | 参数消元 | 2 | 高等数学 | GS-796 |
+
+- [[MATHWIKI-KNOWLEDGE-528|截面法]]
+
+- [[MATHWIKI-KNOWLEDGE-529|累次积分限]]

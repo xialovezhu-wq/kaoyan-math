@@ -4,14 +4,13 @@ type: error_cluster
 title: 区域条件漏写
 subject: 高等数学
 source_refs:
-- 错题知识网络/错题卡/
+  - 错题知识网络/错题卡/
 wiki_refs:
-- SRC-WRONGCARDS-INDEX
-- MATHWIKI-COVERAGE-MATRIX
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: '2026-07-18'
+last_updated: '2026-09-08'
 ---
-
 # 区域条件漏写
 
 ## 定位
@@ -20,15 +19,14 @@ last_updated: '2026-07-18'
 
 ## 覆盖统计
 
-- 相关错题数：1
+- 相关错题数：0
 - 涉及科目：高等数学
-- 代表错题：GS-666
+- 代表错题：
 
 ## 错题清单
 
 | id | source summary | subject | chapter | knowledge | status | formal card |
 |---|---|---|---|---|---|---|
-| GS-666 | [[SRC-WQ-GS-666]] | 高等数学 | 多元函数积分学 | 多元函数积分学；三重积分；三重积分对称性 | 待复做 | `错题知识网络/错题卡/GS-666_78292轮换对称截面法.md` |
 
 ## 后续编译动作
 

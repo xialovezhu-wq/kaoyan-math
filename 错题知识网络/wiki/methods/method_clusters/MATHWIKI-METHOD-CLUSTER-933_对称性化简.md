@@ -1,17 +1,16 @@
 ---
 wiki_id: MATHWIKI-METHOD-CLUSTER-933
 type: method_cluster
-title: "对称性化简"
-subject: "高等数学"
+title: 对称性化简
+subject: 高等数学
 source_refs:
-  - "错题知识网络/错题卡/"
+  - 错题知识网络/错题卡/
 wiki_refs:
-  - "SRC-WRONGCARDS-INDEX"
-  - "MATHWIKI-COVERAGE-MATRIX"
+  - SRC-WRONGCARDS-INDEX
+  - MATHWIKI-COVERAGE-MATRIX
 status: active
-last_updated: 2026-07-18
+last_updated: '2026-09-08'
 ---
-
 # 对称性化简
 
 ## 定位
@@ -28,7 +27,6 @@ last_updated: 2026-07-18
 
 | id | source summary | subject | chapter | knowledge | status | formal card |
 |---|---|---|---|---|---|---|
-| GS-666 | [[SRC-WQ-GS-666]] | 高等数学 | 多元函数积分学 | 多元函数积分学；三重积分；三重积分对称性 | 待复做 | `错题知识网络/错题卡/GS-666_78292轮换对称截面法.md` |
 
 ## 后续编译动作
 
@@ -39,3 +37,4 @@ last_updated: 2026-07-18
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[MATHWIKI-COVERAGE-MATRIX_错题卡多维编译矩阵]]
+| GS-666 | [[SRC-WQ-GS-666]] | 高等数学 | 多元函数积分学 | 平面与球体区域混淆; 非负与耦合区域条件遗漏; 内外积分限层次混淆; 被积函数权重与薄层厚度混淆; 边界等式与区域不等式混淆 | 三重积分轮换对称性; 三重积分换序; 先二后一截面法; 截面面积法; 对称性化简 | 待复做 | `错题知识网络/错题卡/GS-666_78292轮换对称截面法.md` |
