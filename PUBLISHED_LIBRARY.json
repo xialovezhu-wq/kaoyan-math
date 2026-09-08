@@ -5,8 +5,8 @@
   "branch": "main",
   "publication_target": "local",
   "github_backup_required": false,
-  "local_version": "dc06257b13fe902be0eaa9d727d0709ae7b79dce7d14d9d3095f1fe0ed0331ee",
-  "event_id": "MATH-DERIVED-761b6bbc716931f1994d94b2d82aa7e9621fe8c46726b088c10c4ec06fed1c2b",
+  "local_version": "27533ba2cc45e3c20c0688b881b1d629cd38552b1689998d16a5aae5ff564940",
+  "event_id": "MATH-DERIVED-0b56febd27ff6b2f307d1c17cd6a3f3718ca493694d901e6dea2852b504a9e59",
   "history_index": "错题知识网络/生成/wrong_questions.json",
   "entrypoints": {
     "formal_cards": "错题知识网络/错题卡/",
@@ -17,15 +17,15 @@
     "personalization": "personalization/math/manifest.json"
   },
   "counts": {
-    "files": 13196,
-    "bytes": 2841826641,
-    "current_files": 13196,
+    "files": 13202,
+    "bytes": 2841928357,
+    "current_files": 13202,
     "retained_files": 0,
     "lfs_files": 3
   },
   "source_counts": {
     "formal_cards": 909,
-    "source_files": 13196,
+    "source_files": 13202,
     "archive_receipts": 229,
     "question_image_declaration_missing": 23
   },
@@ -5365,7 +5365,7 @@
     ]
   },
   "personalization": {
-    "version": "93d69740874795f01188d4353bf31b04e18bb3edd4eb9a7753134f9166473154",
+    "version": "adca2f57f64b3497a861d8410323cffb46c8c555475ed1de87437ae777cf67a8",
     "formal_version": "0b55ba59a18911ab87ce0eb526480dea69571bc4150636e9d590ba6555409cee",
     "entrypoint": "personalization/math/manifest.json"
   },
@@ -5385,7 +5385,7 @@
     },
     {
       "path": "published-inventory/fc0e1b7a7a08-001.jsonl",
-      "sha256": "25f948ec5262979def046693b233697f4c75782cc1a3f4873754c168dedf5c73",
+      "sha256": "b99e423dede670bd40145e31e2eb619b472c3b4855f4247eebb57e0df11fe9ef",
       "count": 913,
       "bytes": 524072,
       "source_directory": "personalization"
@@ -5413,9 +5413,9 @@
     },
     {
       "path": "published-inventory/800cf57613ee-001.jsonl",
-      "sha256": "23fbfb4a6cbf79d94d81a1f88d3a4125c5cf08c80d2f3c567401b759510c00e5",
-      "count": 1157,
-      "bytes": 503439,
+      "sha256": "04726dfe0c00005940c076c8cb307c9cc0bd88637ffb50d7813313f68e207e0f",
+      "count": 1163,
+      "bytes": 505626,
       "source_directory": "数学一回滚复习系统"
     },
     {
@@ -5469,7 +5469,7 @@
     },
     {
       "path": "published-inventory/8d5d399c139e-006.jsonl",
-      "sha256": "d9074270a50af0cdcdf1379b25a7017fc890ab5d67752eebf517bbff42af07af",
+      "sha256": "b32be56cc3bdd246e913c7e3b14f10a012ad42a45b72d6111402f5d81b4cb6cf",
       "count": 1416,
       "bytes": 524152,
       "source_directory": "错题知识网络"
