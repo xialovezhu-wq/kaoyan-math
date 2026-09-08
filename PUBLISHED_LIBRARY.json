@@ -5,8 +5,8 @@
   "branch": "main",
   "publication_target": "local",
   "github_backup_required": false,
-  "local_version": "e3f0361e75aeffa6ca57e97f64f895755b88cd808e84d360b7b268c32ee6e675",
-  "event_id": "LOCAL-MCP-20260908-01",
+  "local_version": "22c00ab5a06f1d9ceb8b7efc03daf12b95b26a1f3399d8db96827a0787923754",
+  "event_id": "SCORE-beef44d265edfe5cedc6d471",
   "history_index": "错题知识网络/生成/wrong_questions.json",
   "entrypoints": {
     "formal_cards": "错题知识网络/错题卡/",
@@ -17,7 +17,7 @@
   },
   "counts": {
     "files": 11456,
-    "bytes": 2825995751,
+    "bytes": 2826010009,
     "current_files": 11456,
     "retained_files": 0,
     "lfs_files": 3
@@ -5393,7 +5393,7 @@
     },
     {
       "path": "published-inventory/800cf57613ee-001.jsonl",
-      "sha256": "a6f77cccb1064d42cb7bde762754d37f2887eb9e0ba64568a37aec39e57e4505",
+      "sha256": "9fc5852e30d017ed21afec6c44197760a64ee3a6459e2d24c7d57f40699e60b6",
       "count": 1150,
       "bytes": 500870,
       "source_directory": "数学一回滚复习系统"
@@ -5449,7 +5449,7 @@
     },
     {
       "path": "published-inventory/8d5d399c139e-006.jsonl",
-      "sha256": "e71d3e1d092d908d8e717816b9167d50232bc2aea8a1194c4393f3447c264432",
+      "sha256": "1c1d8af7005ad4bb3c56c2722a244c7d279968e89a6a5e43825bd04af212c7c1",
       "count": 1416,
       "bytes": 524152,
       "source_directory": "错题知识网络"
