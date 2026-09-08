@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-781/versions/df101e393be0116a4504788e49e9bca9e0a8059c22c2ffc3f0f52492706c31be.json",
+  "context_sha256": "df101e393be0116a4504788e49e9bca9e0a8059c22c2ffc3f0f52492706c31be",
+  "formal_id": "GS-781",
+  "pointer_path": "错题知识网络/教学投影/GS-781/current.json",
+  "pointer_sha256": "fa082fa4736fbe6d34a86be9822e634a3cbaa494d7277a0e2f833f3d5a27fb0d",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "a02fee7579abc45d4e2356ab5ef5b03946d94659baba29b91321ea1a943745a7",
+        "capture_event_id": "MFI-CAP-79016ebe22111f0c8889d83d",
+        "effective_evidence_hash": "377e0d927aeeebf2e01b462a3f9413aaa6d1dcf8de24a40e8f6137a97800c2d1",
+        "effective_target_hash": "5f8ce921710aa3a1232fac125894b5a3a334acb527ba6c8ed504250c1d6a7fc3"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-79016ebe22111f0c8889d83d"
+    ],
+    "capture_evidence_source_version": "da450ec3675bb55322a6e193e7a7cb96aa58a4f65c633d80d7181c176b6b5a54",
+    "formal_card_path": "错题知识网络/错题卡/GS-781_58118椭圆旋转不变量.md",
+    "formal_card_sha256": "1a6e1f4a912d2b4988d53aad6a9d82c3067a239039db814aca4b4af4bcac42ce",
+    "formal_evidence_id": "EV-3e583532754f049a",
+    "formal_evidence_source_version": "3e583532754f049aefb01119eaf13862c631034edce608df513b8e97cbe7e577",
+    "freeze_id": "MFI-FREEZE-9e3c52c2f287c1a6f44d8f2a",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-79016ebe22111f0c8889d83d",
+        "package_id": "MATHPKG-175d30a5d5d55c342051a566",
+        "package_sha256": "4eb5eb333b8e00294cc507b637ecdc1fff5a1e7fc7dc448eb5c9a4a047ae51b4"
+      }
+    ]
+  },
+  "status": "valid"
+}

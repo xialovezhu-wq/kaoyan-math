@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-787/versions/4c78d96fb2b806bdf10b5b4e60889b83a0c9c93a4611e627161f279e38b8bf56.json",
+  "context_sha256": "4c78d96fb2b806bdf10b5b4e60889b83a0c9c93a4611e627161f279e38b8bf56",
+  "formal_id": "GS-787",
+  "pointer_path": "错题知识网络/教学投影/GS-787/current.json",
+  "pointer_sha256": "4af5f498f27b291c3c5d1c91dfabc3995508d26abe932d782f57d9d66c3d0153",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "bc83c7ce918796870f41d63d5a50e117d7c203d171a22d36e0c5a197b07a23d9",
+        "capture_event_id": "MFI-CAP-6b6a52e3a4a1638d8e206258",
+        "effective_evidence_hash": "16cad08857994c0b68c579affc5ad606bdc206231be8c801bf0ff58dc7cdf0ef",
+        "effective_target_hash": "293a19cc4d30bf1e7e35025acf9cbb8c43e371df87e8bb624130a329edc8b56f"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-6b6a52e3a4a1638d8e206258"
+    ],
+    "capture_evidence_source_version": "4b58e41618b6ec1049ef4ea9a911972b07ff45280b9a171524ce1e892858e545",
+    "formal_card_path": "错题知识网络/错题卡/GS-787_57969点面距离公式遗忘.md",
+    "formal_card_sha256": "4077c84c13d1bd972547e718b241e9705b6a9b347a5d8181c6fb9732c1267525",
+    "formal_evidence_id": "EV-5a17cd14902a1ae0",
+    "formal_evidence_source_version": "5a17cd14902a1ae0fcabfe5d2722ad16fedd656d5acb3eb1fe58a6a40cd09f84",
+    "freeze_id": "MFI-FREEZE-9e3c52c2f287c1a6f44d8f2a",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-6b6a52e3a4a1638d8e206258",
+        "package_id": "MATHPKG-fcbc40674353854ea3c3c5e9",
+        "package_sha256": "ba458706d903f1de8a850a406bc224fbaa70d450b96916d7147c0823a202caa8"
+      }
+    ]
+  },
+  "status": "valid"
+}

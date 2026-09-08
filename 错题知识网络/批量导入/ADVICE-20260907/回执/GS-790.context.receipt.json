@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-790/versions/50886f12afb8d0682c376feb2c63eab1dd9e96f4cff8516d546550110627dbd4.json",
+  "context_sha256": "50886f12afb8d0682c376feb2c63eab1dd9e96f4cff8516d546550110627dbd4",
+  "formal_id": "GS-790",
+  "pointer_path": "错题知识网络/教学投影/GS-790/current.json",
+  "pointer_sha256": "e449cc9d825137d7a242031c0876076db881e9e52aaa73bfc800af393a79f5e3",
+  "schema_version": "math-teaching-context-materialize-receipt-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "72328c1b10d86fb6775d306584dd7f78ef12ccb0838590f1b86145044de222e0",
+        "capture_event_id": "MFI-CAP-9624b8d0257c4451695f9bb9",
+        "effective_evidence_hash": "d4e3bd5477f6be2539618460e5bf94da57cab63a41839146fe79874379f67c87",
+        "effective_target_hash": "841741a2a617754b78caddd9829ca163a1a5a67ccdf3f75b2d5b078cbec4d87a"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-9624b8d0257c4451695f9bb9"
+    ],
+    "capture_evidence_source_version": "be040e1fdf357f6a9c1863c145f7db7297b46996fabfe5c12e95bdcd192386e0",
+    "formal_card_path": "错题知识网络/错题卡/GS-790_57687偏导定义与连续性.md",
+    "formal_card_sha256": "b7137ce61073ea0f68b54777745fa218f7f1fe02324cea52259ab1e72cb38996",
+    "formal_evidence_id": "EV-d2380018e6c36ab4",
+    "formal_evidence_source_version": "d2380018e6c36ab4e65d885f63e524a9e8c43c3887c19abc75dc99295a6bb8b5",
+    "freeze_id": "MFI-FREEZE-bc8cc92e78250ffd960ec4c9",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-9624b8d0257c4451695f9bb9",
+        "package_id": "MATHPKG-fdf29d38934caa5efb80c477",
+        "package_sha256": "c2554be40c51804763a130cb0bdcc2f9b38ee1945a7b22c7862b6805530cf153"
+      }
+    ]
+  },
+  "status": "created"
+}

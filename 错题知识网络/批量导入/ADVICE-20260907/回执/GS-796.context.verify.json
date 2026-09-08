@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-796/versions/d4106e903f06577346c57a3e0e410a816e2f6b906876152167580c0feb894c06.json",
+  "context_sha256": "d4106e903f06577346c57a3e0e410a816e2f6b906876152167580c0feb894c06",
+  "formal_id": "GS-796",
+  "pointer_path": "错题知识网络/教学投影/GS-796/current.json",
+  "pointer_sha256": "26ec9f65ac8a16d2150410df734366f039a6c100d4e6f852cf3a8a641862a6ea",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "4fc4f74e37ced8643cef8ac5d7d0594d62b686dc8381550a8addd181824bb0bc",
+        "capture_event_id": "MFI-CAP-fe520f55165be06126a1a72f",
+        "effective_evidence_hash": "0436c253c1c3c2b41c855285c1391fbd1a5a6b40f0c5b7248e26b9cfe4568d03",
+        "effective_target_hash": "05cf10bd4a5e3a2fc99692ff1fdacca94e9516221b41f19b34a5e7e74745cdef"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-fe520f55165be06126a1a72f"
+    ],
+    "capture_evidence_source_version": "c679bca3e6598eddd742cd2a35e36de563f0f4cf718eb0b5a8cc80c48b2e3d95",
+    "formal_card_path": "错题知识网络/错题卡/GS-796_58128平移旋转轴与距离.md",
+    "formal_card_sha256": "360c8feb336d9be47bdcafe952210d864d7fd95f99ff59cec0a76c26ba1f513b",
+    "formal_evidence_id": "EV-37b2cb1952753b33",
+    "formal_evidence_source_version": "37b2cb1952753b332ff5a13bcd2460ee6b74220f8ff3240d425ba839d7b143cd",
+    "freeze_id": "MFI-FREEZE-bc8cc92e78250ffd960ec4c9",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-fe520f55165be06126a1a72f",
+        "package_id": "MATHPKG-39e0c1b5ac6c3ae053b24efc",
+        "package_sha256": "5d0a018034ad775138d2f3ed8b9ad49ed4ae5122cefc12626ee8585c8c02675a"
+      }
+    ]
+  },
+  "status": "valid"
+}

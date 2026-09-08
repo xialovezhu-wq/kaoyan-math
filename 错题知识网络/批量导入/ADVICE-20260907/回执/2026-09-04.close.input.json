@@ -1,0 +1,395 @@
+{
+  "schema_version": "math-fast-intake-closeout-v3",
+  "freeze_id": "MFI-FREEZE-d6d1954f14ad10f046ecc7a1",
+  "model": "unknown",
+  "formal_results": [
+    {
+      "formal_id": "GS-629",
+      "operation": "updated",
+      "card_path_after": "错题知识网络/错题卡/GS-629_76651两直线夹角方向向量.md",
+      "card_hash_after": "f7f424d24e42bfbbd5164f41bbae9884ab4e404b98a42a94db760a6640c9610b",
+      "changed_fields": [
+        "source",
+        "fast_intake_refs",
+        "fast_intake_source_refs",
+        "wrong_point",
+        "wrong_history",
+        "mastery_history",
+        "method_gap",
+        "lecture_refs"
+      ]
+    },
+    {
+      "formal_id": "GS-771",
+      "operation": "created",
+      "card_path_after": "错题知识网络/错题卡/GS-771_57697叉乘约束与模长最值.md",
+      "card_hash_after": "8a8b1fb46b3d8f6db7cdef52ca8896ac1c3264c36b3d270f7fb955b8cb1302a6",
+      "changed_fields": [
+        "source",
+        "fast_intake_refs",
+        "fast_intake_source_refs",
+        "wrong_point",
+        "wrong_history",
+        "mastery_history",
+        "method_gap",
+        "lecture_refs"
+      ]
+    },
+    {
+      "formal_id": "GS-772",
+      "operation": "created",
+      "card_path_after": "错题知识网络/错题卡/GS-772_57858共同垂直与数量投影.md",
+      "card_hash_after": "bcaef23e34a65dd2f677c1e9071c738caffbf75450b95dc1e0ef87a9c093751e",
+      "changed_fields": [
+        "source",
+        "fast_intake_refs",
+        "fast_intake_source_refs",
+        "wrong_point",
+        "wrong_history",
+        "mastery_history",
+        "method_gap",
+        "lecture_refs"
+      ]
+    },
+    {
+      "formal_id": "GS-773",
+      "operation": "created",
+      "card_path_after": "错题知识网络/错题卡/GS-773_57911直线平面位置关系.md",
+      "card_hash_after": "182340f2482e84a5d69c8d27348d6bf75edf0966640fe4237029dc3530c2ac27",
+      "changed_fields": [
+        "source",
+        "fast_intake_refs",
+        "fast_intake_source_refs",
+        "wrong_point",
+        "wrong_history",
+        "mastery_history",
+        "method_gap",
+        "lecture_refs"
+      ]
+    },
+    {
+      "formal_id": "LA-120",
+      "operation": "created",
+      "card_path_after": "错题知识网络/错题卡/LA-120_三维向量共面与行列式.md",
+      "card_hash_after": "ec0c888c8b6483559214f4eef168dc51f3133987a126aa67d4ef947a60d771ce",
+      "changed_fields": [
+        "source",
+        "fast_intake_refs",
+        "fast_intake_source_refs",
+        "wrong_point",
+        "wrong_history",
+        "mastery_history",
+        "method_gap",
+        "lecture_refs"
+      ]
+    }
+  ],
+  "capture_results": [
+    {
+      "capture_event_id": "MFI-CAP-3154d4825b1287fc4fc9b61a",
+      "outcome": "wrong_recorded",
+      "formal_id": "GS-629",
+      "durable_record": {
+        "store": "rollback_unit",
+        "record_id": "GS-629|2026-09-04|4",
+        "record_hash": "c9d2b32f49a9ff86293963fa583962da11079aff6401d3ba8564132a7c8ee70d"
+      }
+    },
+    {
+      "capture_event_id": "MFI-CAP-03eeb366ef68cf108dc59556",
+      "outcome": "wrong_recorded",
+      "formal_id": "GS-771",
+      "durable_record": {
+        "store": "rollback_unit",
+        "record_id": "GS-771|2026-09-04|1",
+        "record_hash": "db4658c1cb3bad8497e412085be68038c9d5de790b82dd7654638f4aeb7f3c20"
+      }
+    },
+    {
+      "capture_event_id": "MFI-CAP-1d0e9b92945ef946498832bc",
+      "outcome": "wrong_recorded",
+      "formal_id": "GS-772",
+      "durable_record": {
+        "store": "rollback_unit",
+        "record_id": "GS-772|2026-09-04|1",
+        "record_hash": "8fec38ab86bd4b43d4304235c71077a2170923c97286a6151591ef381ffb49e5"
+      }
+    },
+    {
+      "capture_event_id": "MFI-CAP-f8c2e45046b5755f7822de0b",
+      "outcome": "wrong_recorded",
+      "formal_id": "GS-773",
+      "durable_record": {
+        "store": "rollback_unit",
+        "record_id": "GS-773|2026-09-04|1",
+        "record_hash": "d038270df594338868d49352ad0b0bac0251a91b044387f54ad332f5be22004f"
+      }
+    },
+    {
+      "capture_event_id": "MFI-CAP-9b302e99e936748fc909f183",
+      "outcome": "wrong_recorded",
+      "formal_id": "LA-120",
+      "durable_record": {
+        "store": "rollback_unit",
+        "record_id": "LA-120|2026-09-04|1",
+        "record_hash": "d9ee4a962971c810acf803e6ee7c3a777aa14a3b67a5d9265388d7f352557be0"
+      }
+    }
+  ],
+  "batch_receipts": {
+    "wrongnet": {
+      "rebuild_count": 1,
+      "artifacts": [
+        {
+          "path": "错题知识网络/生成/wrong_questions.json",
+          "sha256": "dc8d11c3f691777c79665b3d30373638fd2fb0e6b03372d449fd16f3010df2e1"
+        },
+        {
+          "path": "错题知识网络/生成/错题索引.md",
+          "sha256": "336a42e3ce4777d5810095e0c79305f7d37f600699f7a3563bd0c20abbc8ab55"
+        },
+        {
+          "path": "错题知识网络/生成/相似题清单.md",
+          "sha256": "3b3f622021486021014031dc9a1dc8ded9599b0d1c4ae9f45e7de320348ff2b7"
+        },
+        {
+          "path": "错题知识网络/生成/强关联清单.md",
+          "sha256": "123e2eece44aaaed91b179ade38094ca9f4e2c076332ccedb110345a37f561c9"
+        },
+        {
+          "path": "错题知识网络/生成/弱边审计清单.md",
+          "sha256": "95b2a466778587041d70a1ca81ef3dacc8455091141b7806099f875a69ee1cfe"
+        },
+        {
+          "path": "错题知识网络/生成/专题链关联清单.md",
+          "sha256": "57c5c0fea25aa3fd43a01e7fe5024c8e814b7b08c901baae569f6d00cf5919ed"
+        },
+        {
+          "path": "错题知识网络/生成/错题网络概览.md",
+          "sha256": "68162f90fabd36e77f96cf87f371bed695a8f103d62bb9181d8829de52376e52"
+        },
+        {
+          "path": "错题知识网络/生成/按知识点复做清单.md",
+          "sha256": "9f160a3bb641718be52d0dfacfd670abde71d0a144aa33903c600e300d564372"
+        },
+        {
+          "path": "错题知识网络/生成/知识网络图.mmd",
+          "sha256": "acf3b755c2bc6d1d1871067a85e5b1864b287931e7f1f0158cb80dc0ff56a3af"
+        }
+      ],
+      "target_projection_hashes": {
+        "GS-629": "49c2dbfb28644a1bb6855342e0d279f0c8c62d8d4213550da13171d9c1e3c3e3",
+        "GS-771": "f97649584dba66eafadff295c8ea8d212b363153a17879a376c4ba6881870909",
+        "GS-772": "a6373b1636a065e49c3858e4b86aaa217246955c047c7cb482e802089798bd73",
+        "GS-773": "4ea7460f6b082e4ae35137b985bba0227088051e8bd8e49e3443ded3f91a3e64",
+        "LA-120": "7c631474271ce99833d245f42a61781f41bcb4b5bcf286a72fb84d48499938cd"
+      }
+    },
+    "relationships": {
+      "state": "proposal_only",
+      "proposals": [
+        {
+          "formal_id": "GS-629",
+          "decision": "保留提案",
+          "evidence": "仅保留已有边；本次按原题和实际作答归纳概念/方法，不把同章节或题型相似自动写成新强边。"
+        },
+        {
+          "formal_id": "GS-771",
+          "decision": "保留提案",
+          "evidence": "仅保留已有边；本次按原题和实际作答归纳概念/方法，不把同章节或题型相似自动写成新强边。"
+        },
+        {
+          "formal_id": "GS-772",
+          "decision": "保留提案",
+          "evidence": "仅保留已有边；本次按原题和实际作答归纳概念/方法，不把同章节或题型相似自动写成新强边。"
+        },
+        {
+          "formal_id": "GS-773",
+          "decision": "保留提案",
+          "evidence": "仅保留已有边；本次按原题和实际作答归纳概念/方法，不把同章节或题型相似自动写成新强边。"
+        },
+        {
+          "formal_id": "LA-120",
+          "decision": "保留提案",
+          "evidence": "仅保留已有边；本次按原题和实际作答归纳概念/方法，不把同章节或题型相似自动写成新强边。"
+        }
+      ]
+    },
+    "wiki": [
+      {
+        "formal_id": "GS-629",
+        "summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-629.md",
+        "summary_hash": "6688f0dd6452597fbd87280d1709727941e60038388ac6138194a986c9ee5e25"
+      },
+      {
+        "formal_id": "GS-771",
+        "summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-771.md",
+        "summary_hash": "db94e0e8619abcdf272df2d4cf5726078c55cdc1280a883fd8f2a82109c3fecb"
+      },
+      {
+        "formal_id": "GS-772",
+        "summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-772.md",
+        "summary_hash": "efefdbb69425cc51f72d0b1dcfde318565e0fc750659c7d98068bcb62ce7f299"
+      },
+      {
+        "formal_id": "GS-773",
+        "summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-GS-773.md",
+        "summary_hash": "89b78e0ee7d38b0a43216b8080802e33525dd6111166310c76d5aa91c16b65f0"
+      },
+      {
+        "formal_id": "LA-120",
+        "summary_path": "错题知识网络/wiki/sources/wrong_cards/SRC-WQ-LA-120.md",
+        "summary_hash": "e7e20414aa1bd3fbdf601a3a763bb4d4fcd8d90a2255a31f53388f5a711f584c"
+      }
+    ],
+    "visuals": [
+      {
+        "formal_id": "GS-629",
+        "state": "passed",
+        "artifacts": [
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-629/explanation_01.png",
+            "sha256": "3444108e990fc375097f72c2f97a3ba6e8ede415bc7f2884c7e06161228fcec0"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-629/question_01.png",
+            "sha256": "33ac2fc7f94747710a1752b454da5684f64b2afb955f337cc15e255c9bff8194"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-629/question_02.png",
+            "sha256": "5da0ddcef77bf8e1dff2a84d356d72358526ddcf66cece66e09fa2d10308678b"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-629/question_03.png",
+            "sha256": "d5b6910727181989fc1e3b2c6e1a31bb79366b0d7dc5cf38158bc45ad21105aa"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-629/solution_01.png",
+            "sha256": "c6bd2684e712e182240d3c1572c2b1fe115eed33eed355d930b87ec47179a99f"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-629/solution_02.png",
+            "sha256": "112a7bed1548397e366bcecaac8682d82b28c47df44aa812524b927426071b8d"
+          },
+          {
+            "path": "错题知识网络/可视化错题详情/高等数学/GS-629_76651.md",
+            "sha256": "850eaa42d4973de2a06d8aa1d36c48f5964f7ae190375a83e8868a0a33ac4349"
+          }
+        ]
+      },
+      {
+        "formal_id": "GS-771",
+        "state": "passed",
+        "artifacts": [
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-771/explanation_01.png",
+            "sha256": "bb00bb028a156410c0d0e2cba7d918fc2c5a357d1d9952d401522e8659358ae8"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-771/question_01.png",
+            "sha256": "88808c492305a2823d88b7497fef606495cde6a20fc7951927f15951ed4f0ce9"
+          },
+          {
+            "path": "错题知识网络/可视化错题详情/高等数学/GS-771_57697叉乘约束与模长最值.md",
+            "sha256": "55296033758a20894e70bf1e2b9de6bfd2394aa16b59981cad55162f01ba435c"
+          }
+        ]
+      },
+      {
+        "formal_id": "GS-772",
+        "state": "passed",
+        "artifacts": [
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-772/explanation_01.png",
+            "sha256": "4347876fe836b5928f1b5cc60c61be76f12ef65b9c754b3c7cbca4fdb96ba1a8"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-772/explanation_02.png",
+            "sha256": "ee09b21cb8faf616b2a7046fbdede1a20b0886cc049a59d03fdebaba51c59704"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-772/question_01.png",
+            "sha256": "7c0b5179fe433829e2fc14421a52b403f332b873bbd0fef02d08158b93545e92"
+          },
+          {
+            "path": "错题知识网络/可视化错题详情/高等数学/GS-772_57858共同垂直与数量投影.md",
+            "sha256": "4fc2fa97f9b7e60d2bfe91ce67990fadac2565812d0ccc1e9dc15f7ccbca88ea"
+          }
+        ]
+      },
+      {
+        "formal_id": "GS-773",
+        "state": "passed",
+        "artifacts": [
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-773/explanation_01.png",
+            "sha256": "5088c057028c24e5a3de87f2684a735ab2128c04e6c82fc8ad20fed07591ca28"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/GS-773/question_01.png",
+            "sha256": "f7b249aafd7ef364d134f9482bfe9672b0674519d1e76f0b634d6461ac2225e4"
+          },
+          {
+            "path": "错题知识网络/可视化错题详情/高等数学/GS-773_57911直线平面位置关系.md",
+            "sha256": "86349e3fa21826b4b607576bb517f0c6a7b55318d46aa5925e5559d0f5c5407a"
+          }
+        ]
+      },
+      {
+        "formal_id": "LA-120",
+        "state": "passed",
+        "artifacts": [
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/LA-120/explanation_01.png",
+            "sha256": "667993bbc938117272bba30caf9d1538af4fb8a35e6bd56b65eb08564b8010e4"
+          },
+          {
+            "path": "错题知识网络/assets/visual_wrong_questions/LA-120/question_01.png",
+            "sha256": "a889956fc9a1706d0544302d1740f0cdbac670d02bbccafb2a428bd2e92ed1dd"
+          },
+          {
+            "path": "错题知识网络/可视化错题详情/线性代数/LA-120_三维向量共面与行列式.md",
+            "sha256": "055930943bd0eea2e39c1d55823aad34ecd09fb3271f4d6d3c9745971e102809"
+          }
+        ]
+      }
+    ],
+    "teaching_contexts": [
+      {
+        "formal_id": "GS-629",
+        "context_path": "错题知识网络/教学投影/GS-629/versions/477dd277abdd6dcaf3f0744c65c4aea29b515db5c84426cc1d15232243970ba1.json",
+        "context_sha256": "477dd277abdd6dcaf3f0744c65c4aea29b515db5c84426cc1d15232243970ba1",
+        "pointer_path": "错题知识网络/教学投影/GS-629/current.json",
+        "pointer_sha256": "f45cfddf51e37eb1979dabde0d7ba69840060c43f492e4ce60b0d39199bf2cd0"
+      },
+      {
+        "formal_id": "GS-771",
+        "context_path": "错题知识网络/教学投影/GS-771/versions/8bad832c809cc553c8aa96f5d507987d659d0b56d97bfef0796dcfb4c1479c50.json",
+        "context_sha256": "8bad832c809cc553c8aa96f5d507987d659d0b56d97bfef0796dcfb4c1479c50",
+        "pointer_path": "错题知识网络/教学投影/GS-771/current.json",
+        "pointer_sha256": "497a9936aa9ba4d7830945471fe32cc9e40dbf7fd6e6b524579c88a0feb9a619"
+      },
+      {
+        "formal_id": "GS-772",
+        "context_path": "错题知识网络/教学投影/GS-772/versions/57f56e88533cadfb91e6d0fcf4c7518381eceaa4eecf048cab6c6a2403753dba.json",
+        "context_sha256": "57f56e88533cadfb91e6d0fcf4c7518381eceaa4eecf048cab6c6a2403753dba",
+        "pointer_path": "错题知识网络/教学投影/GS-772/current.json",
+        "pointer_sha256": "333b09e64467cb090cb8395e453ea809fffc2f9c6a0e32cb411da6c19b04c771"
+      },
+      {
+        "formal_id": "GS-773",
+        "context_path": "错题知识网络/教学投影/GS-773/versions/8f38205011299a5139c59a7c2ed65c789fa7a8604848b032252eae3a416cf687.json",
+        "context_sha256": "8f38205011299a5139c59a7c2ed65c789fa7a8604848b032252eae3a416cf687",
+        "pointer_path": "错题知识网络/教学投影/GS-773/current.json",
+        "pointer_sha256": "ad8af468457034078fc281314ec76172885aa9ba5b5ab92e6ef80ad4e64a3576"
+      },
+      {
+        "formal_id": "LA-120",
+        "context_path": "错题知识网络/教学投影/LA-120/versions/5b667880846f1be385cac75e1d20d9e27adddd39979dcf0e1d3c90a719f39cf3.json",
+        "context_sha256": "5b667880846f1be385cac75e1d20d9e27adddd39979dcf0e1d3c90a719f39cf3",
+        "pointer_path": "错题知识网络/教学投影/LA-120/current.json",
+        "pointer_sha256": "1a9089f012088c0b65f78558e78a1ef9f99ea214730332e532c2169101a70467"
+      }
+    ]
+  }
+}

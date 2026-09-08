@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-775/versions/1bfac9e75475a4288dcea9b7cb63ef88d17d355df7765a69565bc841bc372996.json",
+  "context_sha256": "1bfac9e75475a4288dcea9b7cb63ef88d17d355df7765a69565bc841bc372996",
+  "formal_id": "GS-775",
+  "pointer_path": "错题知识网络/教学投影/GS-775/current.json",
+  "pointer_sha256": "19cc8e1d5478366be31889fdb6649137168cab5d087ac4db158f046287d902d3",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "e7f512ea2f5eb4728a5ebcc9b1e67bf940213c042566566ece6e4670825f755c",
+        "capture_event_id": "MFI-CAP-75b869732e473043159670be",
+        "effective_evidence_hash": "e2192ccef7ff2c636a862cdd106499d5003a7f9a0bd4f14424f51f5ae6007ddb",
+        "effective_target_hash": "80e1a9894121e5fb6a206083556109f37ec25d30fb6455d0314e42077dca632a"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-75b869732e473043159670be"
+    ],
+    "capture_evidence_source_version": "2dde14a6053e41f0bc58bddbf744ce4041f3e46830cae7ab745b8508b1382ae2",
+    "formal_card_path": "错题知识网络/错题卡/GS-775_57761向量模长差极限.md",
+    "formal_card_sha256": "0e70f1005c2c0963ce862f911bd2d748ae6aa96ec8ae40bd3472cc6cb9952bdb",
+    "formal_evidence_id": "EV-5891eb3fef69e930",
+    "formal_evidence_source_version": "5891eb3fef69e930aa74e2b596ed983068ba0bd5613178ddc240154f77c76ad9",
+    "freeze_id": "MFI-FREEZE-9e3c52c2f287c1a6f44d8f2a",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-75b869732e473043159670be",
+        "package_id": "MATHPKG-70ba4f3afa32abe9d161f245",
+        "package_sha256": "7dd1a657c3e6f17375818ca5cd37c4178cb7a4eee4fc85035ced1cfdaf9b25ba"
+      }
+    ]
+  },
+  "status": "valid"
+}

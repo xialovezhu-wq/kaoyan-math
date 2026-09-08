@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-786/versions/91a1ab6c10294827c08adb683660bebd7927038c0e0228419fe293bb5efa9eed.json",
+  "context_sha256": "91a1ab6c10294827c08adb683660bebd7927038c0e0228419fe293bb5efa9eed",
+  "formal_id": "GS-786",
+  "pointer_path": "错题知识网络/教学投影/GS-786/current.json",
+  "pointer_sha256": "f9cc348e32c15ce5d6d3bb2cf09a4db787efdac2e210ed5295eaeaaff6b35120",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "1bae5e606fb052ee20fa11fa06a8674d5f817b2ff559508aa1b638a7d4454e8b",
+        "capture_event_id": "MFI-CAP-4cee4ffe68365e93346566a5",
+        "effective_evidence_hash": "0df1d543ade7b69ccdcb214ffaa477b8486c956276e73d0882891614ab981dc8",
+        "effective_target_hash": "2f24bef976e5253e43b07e8a42e8190c328520f6f0e8dc752c38829084c08eb9"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-4cee4ffe68365e93346566a5"
+    ],
+    "capture_evidence_source_version": "9eb27c09422d2ee469fa87a6653956d14ac58aff2dc73b39bb27186227055054",
+    "formal_card_path": "错题知识网络/错题卡/GS-786_57921法向量接平面点法式.md",
+    "formal_card_sha256": "d77a09706a3504c27ca38f0a72e9f4296a8a1ce6cdb55e88dece93f2ec8b1c70",
+    "formal_evidence_id": "EV-efb4490d75aaeb33",
+    "formal_evidence_source_version": "efb4490d75aaeb33df591c9eb65ea962b4c8cd31a44d4c1eb5f8788592b6378c",
+    "freeze_id": "MFI-FREEZE-9e3c52c2f287c1a6f44d8f2a",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-4cee4ffe68365e93346566a5",
+        "package_id": "MATHPKG-4253b1fcd1bda17b8f627b92",
+        "package_sha256": "1e193372d4bc68c9d99c37fbfd55587c501bd0a49357f40879be54b9a6e99cd6"
+      }
+    ]
+  },
+  "status": "valid"
+}

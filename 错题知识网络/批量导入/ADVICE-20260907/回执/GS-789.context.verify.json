@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-789/versions/39e7f5d505a8ef251c5b0a9937784b916c21cd916683090ef576817e3a6dfd1a.json",
+  "context_sha256": "39e7f5d505a8ef251c5b0a9937784b916c21cd916683090ef576817e3a6dfd1a",
+  "formal_id": "GS-789",
+  "pointer_path": "错题知识网络/教学投影/GS-789/current.json",
+  "pointer_sha256": "ebabe0ce0d51faa6e125cf902c46b08dd92619220cb7a7b066324cd3a80aa91d",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "dccc02dd1a4bebe5cbbd5a5d8d759fd6c817d5469bc7a1a5284567e5f9639e97",
+        "capture_event_id": "MFI-CAP-7c0b92fd6dc985626a3e040e",
+        "effective_evidence_hash": "631e298ed56fb6429bae580c7d104e6c7d500804bf6696386b39ae0cd7374ccd",
+        "effective_target_hash": "dd1e4111a5ffc118baf8be00fbd4c62f3f8352bdbc9d0ca054b998eb5ed85574"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-7c0b92fd6dc985626a3e040e"
+    ],
+    "capture_evidence_source_version": "69f15cbc5f058905a31928e8a746ffbcd2dc2cc9a1ea0df433ebf52a7346ced3",
+    "formal_card_path": "错题知识网络/错题卡/GS-789_19334特殊点复合函数求导.md",
+    "formal_card_sha256": "a4a32bad456439d903cde0dd11a8dc428f1e6f9001657fab2e09115d9522fd35",
+    "formal_evidence_id": "EV-0b690e92719fefd8",
+    "formal_evidence_source_version": "0b690e92719fefd8c4beeb1a6d0412fe8b66ffdc3c7392bc456e16a636397a6c",
+    "freeze_id": "MFI-FREEZE-bc8cc92e78250ffd960ec4c9",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-7c0b92fd6dc985626a3e040e",
+        "package_id": "MATHPKG-3021ba255dcaf8f6bc65f9bf",
+        "package_sha256": "02526ab8e3f242d405d91400a12d1b1abdb585cf4f3020b2167b6005b10e504f"
+      }
+    ]
+  },
+  "status": "valid"
+}

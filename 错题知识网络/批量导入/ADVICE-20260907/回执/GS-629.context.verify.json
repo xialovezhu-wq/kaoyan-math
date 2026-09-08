@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-629/versions/477dd277abdd6dcaf3f0744c65c4aea29b515db5c84426cc1d15232243970ba1.json",
+  "context_sha256": "477dd277abdd6dcaf3f0744c65c4aea29b515db5c84426cc1d15232243970ba1",
+  "formal_id": "GS-629",
+  "pointer_path": "错题知识网络/教学投影/GS-629/current.json",
+  "pointer_sha256": "f45cfddf51e37eb1979dabde0d7ba69840060c43f492e4ce60b0d39199bf2cd0",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "681b835f22da6ca077f71fd1772a2f5b9f62e0fe50bec2b767d51a42eea2c3c0",
+        "capture_event_id": "MFI-CAP-3154d4825b1287fc4fc9b61a",
+        "effective_evidence_hash": "98b6f5d505b07fac1607207ed2f2218125a48974567d10814bbf76961450cf1c",
+        "effective_target_hash": "fa342d9eafd5b9853ba3c347795c53050dfb002b847aea856a87e5497bc15b08"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-3154d4825b1287fc4fc9b61a"
+    ],
+    "capture_evidence_source_version": "a465754d656e5e38e35467504b5bca7ea915eaa6aaefcd7a9f11d0ff23124035",
+    "formal_card_path": "错题知识网络/错题卡/GS-629_76651两直线夹角方向向量.md",
+    "formal_card_sha256": "f7f424d24e42bfbbd5164f41bbae9884ab4e404b98a42a94db760a6640c9610b",
+    "formal_evidence_id": "EV-1726dd9c3e90d220",
+    "formal_evidence_source_version": "1726dd9c3e90d220cd3eadabf11eb7e60a89ea3c8b3254fee6657ab2cc09e7aa",
+    "freeze_id": "MFI-FREEZE-d6d1954f14ad10f046ecc7a1",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-3154d4825b1287fc4fc9b61a",
+        "package_id": "MATHPKG-50ca9fa4cb11603c30e9e856",
+        "package_sha256": "1308081c7851db0d864e4f2779f220a7e2b9ee60d66108d0dfa7cd46a0cfc118"
+      }
+    ]
+  },
+  "status": "valid"
+}

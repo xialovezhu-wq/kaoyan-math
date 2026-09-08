@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-779/versions/6b088acd1a0c95eb810d2260d31c778b566b1b86efb29e69e9ebc704e43ec1b9.json",
+  "context_sha256": "6b088acd1a0c95eb810d2260d31c778b566b1b86efb29e69e9ebc704e43ec1b9",
+  "formal_id": "GS-779",
+  "pointer_path": "错题知识网络/教学投影/GS-779/current.json",
+  "pointer_sha256": "e3f617e0271d8ea746d2c3f8bdba238cc82d603ee8b6dfef79e8bac78af42849",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "10a0472fae3143ae0440d82e975a32770d70e7eafa5ecc6dedf37937d5febfec",
+        "capture_event_id": "MFI-CAP-278b88d09a9bb2b7af4efe26",
+        "effective_evidence_hash": "9770cd78c1a2bc9a68cc1282d3a69452bb8b30648ebe1f5941bc7b5a9a04fec1",
+        "effective_target_hash": "20114e808e3442e4a286c7acbbb509f8bf4ed5de10d8d5b77ef4ea02d67dd084"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-278b88d09a9bb2b7af4efe26"
+    ],
+    "capture_evidence_source_version": "4b051bc1c74d400048714a57f73551bdcfb21ff2dc8c586bca5b941e46258163",
+    "formal_card_path": "错题知识网络/错题卡/GS-779_58066水平面上的直线投影.md",
+    "formal_card_sha256": "1bf5cf8832d5abc0c83ff4c50d384972020866e808b1483703d90c2e33aad543",
+    "formal_evidence_id": "EV-20b8153939ca4303",
+    "formal_evidence_source_version": "20b8153939ca430319f287cba017bac22934a1170f32af7be9511a71712d2285",
+    "freeze_id": "MFI-FREEZE-9e3c52c2f287c1a6f44d8f2a",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-278b88d09a9bb2b7af4efe26",
+        "package_id": "MATHPKG-4d93caf0f186bfa13895dbc9",
+        "package_sha256": "5c83ccd35f977b70967a3936cf82313adad836a0511a36cfe0840f800fedadfa"
+      }
+    ]
+  },
+  "status": "valid"
+}

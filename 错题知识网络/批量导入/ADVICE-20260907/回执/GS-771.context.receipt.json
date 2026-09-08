@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-771/versions/8bad832c809cc553c8aa96f5d507987d659d0b56d97bfef0796dcfb4c1479c50.json",
+  "context_sha256": "8bad832c809cc553c8aa96f5d507987d659d0b56d97bfef0796dcfb4c1479c50",
+  "formal_id": "GS-771",
+  "pointer_path": "错题知识网络/教学投影/GS-771/current.json",
+  "pointer_sha256": "497a9936aa9ba4d7830945471fe32cc9e40dbf7fd6e6b524579c88a0feb9a619",
+  "schema_version": "math-teaching-context-materialize-receipt-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "76da8dd1a480f6ff36608e88cf524b0d5c96dbbe3f52ac7ab230c312c2d7a9c6",
+        "capture_event_id": "MFI-CAP-03eeb366ef68cf108dc59556",
+        "effective_evidence_hash": "2242d4878796184bc7cd53b8c67ae080124ef872d96186127b2f628c3b8cf60c",
+        "effective_target_hash": "4f770a20f3cc51a4bbff960efdeed86e083200114b34cc583892a87bcc56f53f"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-03eeb366ef68cf108dc59556"
+    ],
+    "capture_evidence_source_version": "c8f5da3783762ffae5150a214591394d4120242a3517ce68a156425c6017f7e3",
+    "formal_card_path": "错题知识网络/错题卡/GS-771_57697叉乘约束与模长最值.md",
+    "formal_card_sha256": "8a8b1fb46b3d8f6db7cdef52ca8896ac1c3264c36b3d270f7fb955b8cb1302a6",
+    "formal_evidence_id": "EV-45be46f931fc3300",
+    "formal_evidence_source_version": "45be46f931fc33004202650d2dbb5aadab2ad4a4fef6ea8ef05cf7423bab0fea",
+    "freeze_id": "MFI-FREEZE-d6d1954f14ad10f046ecc7a1",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-03eeb366ef68cf108dc59556",
+        "package_id": "MATHPKG-5fb93c192834baa0751f3382",
+        "package_sha256": "d51ae9f19334852f3223cc2c0cb45a459809e491c97fd81cc48ef33312a44316"
+      }
+    ]
+  },
+  "status": "created"
+}

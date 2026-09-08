@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-794/versions/a59a1abfdabdb3cbbe2cf95165e1bb0ebb0b5104f1e2cc3228ae22efff0706a8.json",
+  "context_sha256": "a59a1abfdabdb3cbbe2cf95165e1bb0ebb0b5104f1e2cc3228ae22efff0706a8",
+  "formal_id": "GS-794",
+  "pointer_path": "错题知识网络/教学投影/GS-794/current.json",
+  "pointer_sha256": "8f34e7d8d51e0826a784aebd3894cda7f9f3e42db9a09029ef3835ca70ca58ca",
+  "schema_version": "math-teaching-context-materialize-receipt-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "da222db31e01943a65ba54071d314ff6168efb25950e84d971ba49656d5b699e",
+        "capture_event_id": "MFI-CAP-b21475b1044afc69dc5fe25a",
+        "effective_evidence_hash": "452acc43a06ab5a5d4f2218b2a9bd70a6135eedbb9da7827292ecf829be013cb",
+        "effective_target_hash": "d80b8ffe5474751f84a179aa0960a661918e956e86d50bf19f1bce37745e94ad"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-b21475b1044afc69dc5fe25a"
+    ],
+    "capture_evidence_source_version": "cc73e1396cbc417d4a0b6cc5b10f4ae315b9d075dddf7badb33a8ace78ca0370",
+    "formal_card_path": "错题知识网络/错题卡/GS-794_57681距离定义与轨迹曲面.md",
+    "formal_card_sha256": "5ca118dd57ca6032864f5dae46526c3dd53508342aea6fe4887cd8c95695a73b",
+    "formal_evidence_id": "EV-2abcba8a539880f2",
+    "formal_evidence_source_version": "2abcba8a539880f2b3f2d67a85536b170192fb26c1ad8f0324e8a449ef4e6b6a",
+    "freeze_id": "MFI-FREEZE-bc8cc92e78250ffd960ec4c9",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-b21475b1044afc69dc5fe25a",
+        "package_id": "MATHPKG-b088d59fe1bdf8a90cc46438",
+        "package_sha256": "e8af91efd965bb05ca84a734449e51aac1408447e69b3a68b04d2a05bbcf825a"
+      }
+    ]
+  },
+  "status": "created"
+}

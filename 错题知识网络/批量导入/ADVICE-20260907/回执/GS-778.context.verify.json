@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-778/versions/38a52110118125c58d591bb5e42c4bd016db016510a04d5a79d8a966e29a9649.json",
+  "context_sha256": "38a52110118125c58d591bb5e42c4bd016db016510a04d5a79d8a966e29a9649",
+  "formal_id": "GS-778",
+  "pointer_path": "错题知识网络/教学投影/GS-778/current.json",
+  "pointer_sha256": "92badee84ea0bd995c7a5fee658cc48779ae3044fae0cad856b8f86357fd7e4c",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "51e4f6f70cddbbf5b7e5b133d40f7b7f1af866c43975b4209b5056f11cab54c7",
+        "capture_event_id": "MFI-CAP-cacb68092eaba9b32cbf31cc",
+        "effective_evidence_hash": "aa469b3d793eb337d060e4e16f23f1e8e21e680d0694c12771e829c1ddb98058",
+        "effective_target_hash": "414947822c0574d37ee442517bcc58c7949897e415d6d5271b782bbbe19754c8"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-cacb68092eaba9b32cbf31cc"
+    ],
+    "capture_evidence_source_version": "53463fe64b8f91b83eeafa718a17cf6059909e627dd0a11ffb07307bf155115d",
+    "formal_card_path": "错题知识网络/错题卡/GS-778_57744叉积模与面积.md",
+    "formal_card_sha256": "cbd3c977407782cb7885285eadae70ede402462fef1d3d35a361d668d333a289",
+    "formal_evidence_id": "EV-375da8678bc0cfc7",
+    "formal_evidence_source_version": "375da8678bc0cfc7b64ee720944946906b0d3b0c6c9289e716583272a5264f2a",
+    "freeze_id": "MFI-FREEZE-9e3c52c2f287c1a6f44d8f2a",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-cacb68092eaba9b32cbf31cc",
+        "package_id": "MATHPKG-2ec78183bedf3dbfc94e1603",
+        "package_sha256": "a56784f93ba3a85b005e13865dc17423c3d8848fc64ad81a4da444f47ce9e341"
+      }
+    ]
+  },
+  "status": "valid"
+}

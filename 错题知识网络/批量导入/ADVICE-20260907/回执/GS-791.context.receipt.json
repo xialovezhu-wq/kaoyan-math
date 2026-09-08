@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-791/versions/89a165643fafd8513664580b1afaacd3a0aa4eab0472002912ec0fe34945ae13.json",
+  "context_sha256": "89a165643fafd8513664580b1afaacd3a0aa4eab0472002912ec0fe34945ae13",
+  "formal_id": "GS-791",
+  "pointer_path": "错题知识网络/教学投影/GS-791/current.json",
+  "pointer_sha256": "3dfab068896f0ed7091f715abe6f9f0ab35c8495502b41575f2f231714f833cf",
+  "schema_version": "math-teaching-context-materialize-receipt-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "595a759644ae1f4a9ef1b200a2dec1ad16bd7fc562433cc30a19ac57b63f0ece",
+        "capture_event_id": "MFI-CAP-a1b6bae95f480caed54aa8f9",
+        "effective_evidence_hash": "3973b101daaca0cc1e216544ab85c0b102d4c6acb2c1194ba210e94749d57c93",
+        "effective_target_hash": "223b5fcb978cf1e6e54a75e2d6b332649032a511ca09cb91cea00a05a5fb1cdd"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-a1b6bae95f480caed54aa8f9"
+    ],
+    "capture_evidence_source_version": "dd6de9241d62805b56f35cc18b9f77af7ab05682deafc30ffc15d8fe8aba888f",
+    "formal_card_path": "错题知识网络/错题卡/GS-791_57849偏导存在的推论.md",
+    "formal_card_sha256": "b8074b98375191dc34882e434697db88a356aca595d3890835cfdd9fb37ae8c1",
+    "formal_evidence_id": "EV-3530e999abcf5c0b",
+    "formal_evidence_source_version": "3530e999abcf5c0bdc7d2c92d56f8338c89bd67937216bc15665f827aeb8bce4",
+    "freeze_id": "MFI-FREEZE-bc8cc92e78250ffd960ec4c9",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-a1b6bae95f480caed54aa8f9",
+        "package_id": "MATHPKG-72e6d2ce9128d836fadc939e",
+        "package_sha256": "be3f4a7bfa66b57583753ead3c860d7ef4e2321f5a44fe4204a41909b2c1f493"
+      }
+    ]
+  },
+  "status": "created"
+}

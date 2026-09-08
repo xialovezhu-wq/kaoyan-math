@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-782/versions/accbcd6dc7841ac0ed7790552c564cd14da050c48a43b14dc5b24e00420e6f80.json",
+  "context_sha256": "accbcd6dc7841ac0ed7790552c564cd14da050c48a43b14dc5b24e00420e6f80",
+  "formal_id": "GS-782",
+  "pointer_path": "错题知识网络/教学投影/GS-782/current.json",
+  "pointer_sha256": "a807205c06573a5f4d0e0774023c2d42d1f1720215c23cc4c645baac2550e069",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "2ea5f30e12157432fcc1b33fba68bd9bdd9e67991ddb530beb219cf5c7f167e0",
+        "capture_event_id": "MFI-CAP-335862410da602ac683607cd",
+        "effective_evidence_hash": "c5313e5183eed6dea00d4c23bba69d9dbf29a2d3cfbe8ea16b4b72c612c866af",
+        "effective_target_hash": "a904f7b21b2cc06937a2c2db24c125f98510e1be6e7b354138ffeca5264c609b"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-335862410da602ac683607cd"
+    ],
+    "capture_evidence_source_version": "3387ae2e832faa54a8b72877c10ad64ade992e973f53144586ec3cdaa1d57f54",
+    "formal_card_path": "错题知识网络/错题卡/GS-782_57981投影直线与辅助平面.md",
+    "formal_card_sha256": "3a42530d5d12fa2a58506aa72a37677a28e7095fe1fe7d659b98d4fe703c5c58",
+    "formal_evidence_id": "EV-82359974e659f5a1",
+    "formal_evidence_source_version": "82359974e659f5a19b340e3ac66bae0505d7e9fe593406e8b3bd67681f6085ec",
+    "freeze_id": "MFI-FREEZE-9e3c52c2f287c1a6f44d8f2a",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-335862410da602ac683607cd",
+        "package_id": "MATHPKG-62587d01b5099ff426e1418b",
+        "package_sha256": "93f74e7dd3458d5c0daf48df3d88825dd3625079be5b9d8bd77208f53121fb4a"
+      }
+    ]
+  },
+  "status": "valid"
+}

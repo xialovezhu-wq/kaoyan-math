@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-788/versions/a359f43b0336365916df977fcdab521672a6ec24c7ece9ddf9c50d8cf27db0e0.json",
+  "context_sha256": "a359f43b0336365916df977fcdab521672a6ec24c7ece9ddf9c50d8cf27db0e0",
+  "formal_id": "GS-788",
+  "pointer_path": "错题知识网络/教学投影/GS-788/current.json",
+  "pointer_sha256": "b46dfed2b5bd982540e73d5bd4ad2f52a498ed0d2d1585b6da4b8cd1b2071972",
+  "schema_version": "math-teaching-context-materialize-receipt-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "e6b5316f60c327af57d6ee5fb7d80d470119fe3cbbd2fba70a35f475b9030f18",
+        "capture_event_id": "MFI-CAP-7c047f4096ab9e2f3dff4701",
+        "effective_evidence_hash": "984bae7cd3e4a706758c54050c44d01b6af321c6286571cdabfff55042618f98",
+        "effective_target_hash": "d3e5b678fb86445411775d325131cf42b6d64a3cc9720408e6564e46efd6bc2f"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-7c047f4096ab9e2f3dff4701"
+    ],
+    "capture_evidence_source_version": "a744812146cdf4d9838e8b21b10c10b3b648f633890144cf8c274062f2b8172b",
+    "formal_card_path": "错题知识网络/错题卡/GS-788_58004空间点线距离最小值.md",
+    "formal_card_sha256": "eef30b319d54676d4aaf27c04b2809fc3609377f8dc2500a75d10fb5eef4d7d5",
+    "formal_evidence_id": "EV-ba412e77955b4faa",
+    "formal_evidence_source_version": "ba412e77955b4faae4535ed41ded86bfe799670adfcf7e3f73387167778ca861",
+    "freeze_id": "MFI-FREEZE-9e3c52c2f287c1a6f44d8f2a",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-7c047f4096ab9e2f3dff4701",
+        "package_id": "MATHPKG-ebd779a8046098191d84b46d",
+        "package_sha256": "a330e10da0c2318a29c56118bae68a7d01c6dc038a1b03c2333f57ace101c500"
+      }
+    ]
+  },
+  "status": "created"
+}

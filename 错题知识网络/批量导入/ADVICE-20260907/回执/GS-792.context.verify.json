@@ -1,0 +1,36 @@
+{
+  "context_path": "错题知识网络/教学投影/GS-792/versions/83b1927328f578f9d812654ebc9c34d8bac6f28080337b0682eb6950c507de34.json",
+  "context_sha256": "83b1927328f578f9d812654ebc9c34d8bac6f28080337b0682eb6950c507de34",
+  "formal_id": "GS-792",
+  "pointer_path": "错题知识网络/教学投影/GS-792/current.json",
+  "pointer_sha256": "c326d24df9f9f164d6cf99f4c3ead0c3179432b31b4d4717d651523ba391fedf",
+  "schema_version": "math-teaching-context-verify-result-v1",
+  "source_bindings": {
+    "capture_bindings": [
+      {
+        "amendment_event_ids": [],
+        "capture_content_hash": "442d007ec10f80474b5e226bb52efbfc1f064a7338c4df65c58b41f7cb842816",
+        "capture_event_id": "MFI-CAP-8f0939d9946cd80ed5ec54fc",
+        "effective_evidence_hash": "7b89b53d6d8e43e2a7d5d303476eaee14cfc3f31e0e2ca43cd9423a4ae944a13",
+        "effective_target_hash": "6bcc447b3bade0441ecfc767f58323b58f908cf1b8958a2eef60a5e8d290b129"
+      }
+    ],
+    "capture_event_ids": [
+      "MFI-CAP-8f0939d9946cd80ed5ec54fc"
+    ],
+    "capture_evidence_source_version": "69c9f1a36d8c94a0a170ec7281d0add1e42aa569cbb9b3a078a1fdb427d735eb",
+    "formal_card_path": "错题知识网络/错题卡/GS-792_57912隐函数局部存在判定.md",
+    "formal_card_sha256": "5c39f8c314ee76fe6b8217564322a8dd244545102fec6d7f0296d333429bcf8a",
+    "formal_evidence_id": "EV-64d0f20562bf3d49",
+    "formal_evidence_source_version": "64d0f20562bf3d4924a5d8113176427b16dffab570d64aba0492e80ba895831b",
+    "freeze_id": "MFI-FREEZE-bc8cc92e78250ffd960ec4c9",
+    "package_bindings": [
+      {
+        "capture_event_id": "MFI-CAP-8f0939d9946cd80ed5ec54fc",
+        "package_id": "MATHPKG-2e3ecb007ba34a1ceee9a5c8",
+        "package_sha256": "196b53a5ae151250525e0a5e3a7b2399c071b50215bb462fcc8768dc5ec059a8"
+      }
+    ]
+  },
+  "status": "valid"
+}
