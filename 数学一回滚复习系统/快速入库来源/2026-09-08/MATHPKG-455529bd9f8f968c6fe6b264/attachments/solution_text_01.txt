@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="310" viewBox="0 0 560 310">
+<rect width="560" height="310" fill="white"/>
+<g font-family="Arial, PingFang SC, sans-serif" fill="#243247">
+<text x="25" y="31" font-size="19">固定高度 z 后：截面是直角三角形</text>
+<polygon points="100,250 345,250 100,65" fill="#dceefa" stroke="#2775ab" stroke-width="2"/>
+<path d="M75 250H430 M100 272V48" stroke="#243247" stroke-width="2" fill="none"/>
+<path d="M430 250l-9 -5v10z M100 48l-5 9h10z" fill="#243247"/>
+<text x="437" y="257" font-size="18">x</text><text x="85" y="49" font-size="18">y</text>
+<text x="82" y="271" font-size="16">O</text>
+<text x="317" y="278" font-size="16">(1−z, 0)</text>
+<text x="18" y="74" font-size="16">(0, 1−z)</text>
+<text x="235" y="133" font-size="18">x+y=1−z</text>
+<text x="139" y="218" font-size="16">x+y≤1−z</text>
+<text x="380" y="85" font-size="16">0≤z&lt;1</text>
+</g></svg>

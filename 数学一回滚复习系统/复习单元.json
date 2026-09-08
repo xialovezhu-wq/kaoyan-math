@@ -36028,7 +36028,109 @@
       "当前方法断点指纹": "b3990e40ddc18da9a47d345d533ad6cc4d0b289645b87dd45e3bce71fc320452"
     },
     "已掌握": false,
-    "掌握状态": "复发待复做"
+    "掌握状态": "复发待复做",
+    "评分事件历史": [
+      {
+        "event_id": "SCORE-863a388eef2c5b641e295bea",
+        "attempt_id": "warmup:WQ-38c05b9cbe729cdccbb16562:QI-a287f5d2df21f96f8466",
+        "date": "2026-09-08",
+        "unit_id": "MATH1-GS-WQ-GS750",
+        "score": 5,
+        "attempt_type": "knowledge_fallback_check",
+        "coverage_resolves_active_gap": true,
+        "advances_long_term": false,
+        "long_term_success_increment": 0,
+        "old": {
+          "掌握度": 3,
+          "当前间隔天数": 1,
+          "下次复习日期": "2026-09-03",
+          "错误次数": 2,
+          "延迟复习阶段": 0,
+          "连续延迟成功次数": 0,
+          "调度优先级": "高",
+          "复习状态": "复发待延迟复做"
+        },
+        "new": {
+          "掌握度": 3,
+          "当前间隔天数": 1,
+          "下次复习日期": "2026-09-03",
+          "错误次数": 2,
+          "延迟复习阶段": 0,
+          "连续延迟成功次数": 0,
+          "调度优先级": "高",
+          "复习状态": "复发待延迟复做"
+        },
+        "queue_id": "WQ-38c05b9cbe729cdccbb16562",
+        "queue_item_id": "QI-a287f5d2df21f96f8466",
+        "anchor_card_id": "GS-750",
+        "anchor_gap_occurrence_id": "GAPO-152eea678198f917fa39ed1a",
+        "anchor_evidence_source_version": "62632e02b101aaee53ffac4452c6bda6f526d0c52e2590d678ade8fa9361538b",
+        "anchor_card_source_version": "fe9b64ccaa0afc8d99e8fe53c4e1e37cc89909a928cda196d11a3cb2f3598746",
+        "delivered_card_id": "GS-668",
+        "delivered_card_source_version": "0575784818fa693c50c0271b27939c9216857544b6367f148db822aeef1041d2",
+        "delivered_evidence_source_version": "fe8c2d20d68fc551a53316957b74be54ab6fb83d962eacd983b28c5ca7511222",
+        "delivered_evidence_snapshot": {
+          "card_id": "GS-668",
+          "evidence_id": "EV-fe8c2d20d68fc551",
+          "gap_key": "GAP-9af0958b10ac3078a3b8",
+          "source_version": "fe8c2d20d68fc551a53316957b74be54ab6fb83d962eacd983b28c5ca7511222",
+          "source_hash": "fe8c2d20d68fc551a53316957b74be54ab6fb83d962eacd983b28c5ca7511222",
+          "origin": "user_confirmed",
+          "origin_declared": true,
+          "declared_origin": "user_confirmed",
+          "origin_label": "用户确认错因",
+          "model_derived": false,
+          "needs_confirmation": false,
+          "personal_confirmed": true,
+          "structured_targetable": true,
+          "selection_value": 5,
+          "knowledge": [
+            "多元函数积分学",
+            "三重积分",
+            "三重积分对称性",
+            "球面坐标",
+            "定积分"
+          ],
+          "wrong_point": "当前复做已会选择球面坐标，但用单个坐标条件 $z\\le1$ 代替了完整区域条件 $x^2+y^2+z^2\\le1$。前者只是单位球内点必然满足的必要条件，不能反过来描述整个球体；径向范围必须直接由 $r^2=x^2+y^2+z^2\\le1$ 得到 $0\\le r\\le1$。",
+          "method_gap": {
+            "enabled": true,
+            "evidence_origin": "user_confirmed",
+            "knowledge_gap_or_method_gap": "A+B混合",
+            "method_trigger": "题目给出完整单位球区域 $x^2+y^2+z^2\\le1$，球面坐标的径向范围应由完整区域边界确定，而不能由单个坐标的必要条件代替。",
+            "expected_method": "先把完整区域条件翻译为 $r^2\\le1$，直接得到 $0\\le r\\le1$；再把 $z^2$ 写成 $r^2\\cos^2\\varphi$，连同体积元设置球面坐标积分。",
+            "expected_first_action": "写出 $r^2=x^2+y^2+z^2\\le1$，因此 $0\\le r\\le1$，并检查这个范围是否同时覆盖所有方向。",
+            "missed_action": "只取了单位球条件推出的必要条件 $z\\le1$，再反向当成充分条件确定 $r$ 的上界；没有检查 $r\\le1/\\cos\\varphi$ 会包含球外点，也没有处理 $\\cos\\varphi\\le0$ 时不等式方向与意义的变化。",
+            "action_gap_type": "B5-CHECK",
+            "related_method_card_id": "H18-005",
+            "confidence": "high",
+            "need_user_confirmation": false
+          },
+          "raw_method_gap": {
+            "action_gap_type": "B5-CHECK",
+            "confidence": "high",
+            "enabled": true,
+            "evidence_origin": "user_confirmed",
+            "expected_first_action": "写出 $r^2=x^2+y^2+z^2\\le1$，因此 $0\\le r\\le1$，并检查这个范围是否同时覆盖所有方向。",
+            "expected_method": "先把完整区域条件翻译为 $r^2\\le1$，直接得到 $0\\le r\\le1$；再把 $z^2$ 写成 $r^2\\cos^2\\varphi$，连同体积元设置球面坐标积分。",
+            "knowledge_gap_or_method_gap": "A+B混合",
+            "method_trigger": "题目给出完整单位球区域 $x^2+y^2+z^2\\le1$，球面坐标的径向范围应由完整区域边界确定，而不能由单个坐标的必要条件代替。",
+            "missed_action": "只取了单位球条件推出的必要条件 $z\\le1$，再反向当成充分条件确定 $r$ 的上界；没有检查 $r\\le1/\\cos\\varphi$ 会包含球外点，也没有处理 $\\cos\\varphi\\le0$ 时不等式方向与意义的变化。",
+            "need_user_confirmation": false,
+            "related_method_card_id": "H18-005"
+          },
+          "has_any_evidence": true,
+          "has_specific_evidence": true,
+          "has_observed_failure": true,
+          "specific_fields": {
+            "wrong_point": true,
+            "missed_action": true,
+            "expected_first_action": true,
+            "method_trigger": true
+          }
+        },
+        "match_mode": "knowledge_fallback"
+      }
+    ]
   },
   {
     "复习单元ID": "MATH1-GS-WQ-GS751",
