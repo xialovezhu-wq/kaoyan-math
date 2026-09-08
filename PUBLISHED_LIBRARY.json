@@ -5,8 +5,8 @@
   "branch": "main",
   "publication_target": "local",
   "github_backup_required": false,
-  "local_version": "4a17f44a7ae3ce4f1c290c7f28c612668f6ef1a177220e04a6e5e7ac1526b7eb",
-  "event_id": "MCP-PERSONALIZATION-20260908-01",
+  "local_version": "dc06257b13fe902be0eaa9d727d0709ae7b79dce7d14d9d3095f1fe0ed0331ee",
+  "event_id": "MATH-DERIVED-761b6bbc716931f1994d94b2d82aa7e9621fe8c46726b088c10c4ec06fed1c2b",
   "history_index": "错题知识网络/生成/wrong_questions.json",
   "entrypoints": {
     "formal_cards": "错题知识网络/错题卡/",
@@ -18,7 +18,7 @@
   },
   "counts": {
     "files": 13196,
-    "bytes": 2841799984,
+    "bytes": 2841826641,
     "current_files": 13196,
     "retained_files": 0,
     "lfs_files": 3
@@ -5365,7 +5365,7 @@
     ]
   },
   "personalization": {
-    "version": "be8f1113e993066a5db3b5efeb528f087b412ed21e83550dd3d7689d15c9a494",
+    "version": "93d69740874795f01188d4353bf31b04e18bb3edd4eb9a7753134f9166473154",
     "formal_version": "0b55ba59a18911ab87ce0eb526480dea69571bc4150636e9d590ba6555409cee",
     "entrypoint": "personalization/math/manifest.json"
   },
@@ -5385,7 +5385,7 @@
     },
     {
       "path": "published-inventory/fc0e1b7a7a08-001.jsonl",
-      "sha256": "0e4c72ed465fbbb157d8415e9419a8a190d5ffdebabc47bbcc2177c3aca72da5",
+      "sha256": "25f948ec5262979def046693b233697f4c75782cc1a3f4873754c168dedf5c73",
       "count": 913,
       "bytes": 524072,
       "source_directory": "personalization"
@@ -5413,7 +5413,7 @@
     },
     {
       "path": "published-inventory/800cf57613ee-001.jsonl",
-      "sha256": "1ae5f42344b23061a76adef4875c0acd5991fbee4ef568a1994b40fa02ce2187",
+      "sha256": "23fbfb4a6cbf79d94d81a1f88d3a4125c5cf08c80d2f3c567401b759510c00e5",
       "count": 1157,
       "bytes": 503439,
       "source_directory": "数学一回滚复习系统"
@@ -5469,7 +5469,7 @@
     },
     {
       "path": "published-inventory/8d5d399c139e-006.jsonl",
-      "sha256": "1c1d8af7005ad4bb3c56c2722a244c7d279968e89a6a5e43825bd04af212c7c1",
+      "sha256": "d9074270a50af0cdcdf1379b25a7017fc890ab5d67752eebf517bbff42af07af",
       "count": 1416,
       "bytes": 524152,
       "source_directory": "错题知识网络"

@@ -39013,15 +39013,15 @@
     "内容名称": "GS-786 57921法向量接平面点法式：57921法向量接平面点法式",
     "类型": "错题",
     "首次学习日期": "2026-09-05",
-    "上次复习日期": null,
-    "下次复习日期": "2026-09-06",
+    "上次复习日期": "2026-09-08",
+    "下次复习日期": "2026-09-09",
     "当前间隔天数": 1,
     "掌握度": 3,
     "错误次数": 1,
     "重要程度": 5,
     "难度等级": "C困难",
     "复习方式": "第二天独立闭卷重做：先辨认题型与方法入口，再完成关键步骤；当天即时纠错不计长期成功。",
-    "备注": "自报已求出法向量，但不知道怎样由法向量和平面上一点写平面方程。",
+    "备注": "自报已求出法向量，但不知道怎样由法向量和平面上一点写平面方程。 评分 3，未推进长期阶段，下次只小幅增加间隔。",
     "关联错题ID": "GS-786",
     "知识点": [
       "空间平面方程",
@@ -39037,7 +39037,7 @@
     "最近复发日期": "2026-09-05",
     "调度策略版本": "wrongnet-targeted-v1",
     "调度优先级": "高",
-    "复习状态": "待首次延迟复做",
+    "复习状态": "不稳定短周期",
     "延迟复习阶段": 0,
     "连续延迟成功次数": 0,
     "复发次数": 0,
@@ -39050,7 +39050,117 @@
         "GS-786|2026-09-05|1"
       ],
       "当前方法断点指纹": "37c9eba55143f93b9a27455fb3932a2baadcda4b53cf29a2f1e35fb912f47eae"
-    }
+    },
+    "证据阶段": "unstable",
+    "阶段窗口": [
+      1,
+      2
+    ],
+    "评分事件历史": [
+      {
+        "event_id": "SCORE-0b79158b00d8194a12b4c052",
+        "attempt_id": "warmup:WQ-38c05b9cbe729cdccbb16562:QI-23757148947e0753f833",
+        "date": "2026-09-08",
+        "unit_id": "MATH1-GS-WQ-GS786",
+        "score": 3,
+        "attempt_type": "delayed",
+        "coverage_resolves_active_gap": false,
+        "advances_long_term": false,
+        "long_term_success_increment": 0,
+        "old": {
+          "掌握度": 3,
+          "当前间隔天数": 1,
+          "下次复习日期": "2026-09-06",
+          "错误次数": 1,
+          "延迟复习阶段": 0,
+          "连续延迟成功次数": 0,
+          "调度优先级": "高",
+          "复习状态": "待首次延迟复做"
+        },
+        "new": {
+          "掌握度": 3,
+          "当前间隔天数": 1,
+          "下次复习日期": "2026-09-09",
+          "错误次数": 1,
+          "延迟复习阶段": 0,
+          "连续延迟成功次数": 0,
+          "调度优先级": "高",
+          "复习状态": "不稳定短周期"
+        },
+        "queue_id": "WQ-38c05b9cbe729cdccbb16562",
+        "queue_item_id": "QI-23757148947e0753f833",
+        "anchor_card_id": "GS-786",
+        "anchor_gap_occurrence_id": "GAPO-36b89b0506eff0f69a5129a5",
+        "anchor_evidence_source_version": "efb4490d75aaeb33df591c9eb65ea962b4c8cd31a44d4c1eb5f8788592b6378c",
+        "anchor_card_source_version": "d77a09706a3504c27ca38f0a72e9f4296a8a1ce6cdb55e88dece93f2ec8b1c70",
+        "delivered_card_id": "GS-627",
+        "delivered_card_source_version": "1b1b9b663c20657acb11b21032c19a9c6b5ad63001fcf9881307555cce362639",
+        "delivered_evidence_source_version": "d5de6cd21d2dc2ba404382e018baf3d8263026a05e69899a15d666737939c91a",
+        "delivered_evidence_snapshot": {
+          "card_id": "GS-627",
+          "evidence_id": "EV-d5de6cd21d2dc2ba",
+          "gap_key": "GAP-1908bdd8865b6496198e",
+          "source_version": "d5de6cd21d2dc2ba404382e018baf3d8263026a05e69899a15d666737939c91a",
+          "source_hash": "d5de6cd21d2dc2ba404382e018baf3d8263026a05e69899a15d666737939c91a",
+          "origin": "user_confirmed",
+          "origin_declared": true,
+          "declared_origin": "user_confirmed",
+          "origin_label": "用户确认错因",
+          "model_derived": false,
+          "needs_confirmation": false,
+          "personal_confirmed": true,
+          "structured_targetable": true,
+          "selection_value": 5,
+          "knowledge": [
+            "向量代数与空间解析几何",
+            "空间直线与平面",
+            "空间平面方程",
+            "方向向量",
+            "法向量",
+            "叉乘",
+            "行列式",
+            "代数余子式"
+          ],
+          "wrong_point": "当前已能提取 \\(s_1=(0,1,1)\\)、\\(s_2=(1,2,1)\\) 并叉乘得到法向量，但仍混淆“直线方向向量—平面法向量”的角色，也没有在得到法向量后立即调用平面点法式；题设“过原点”已经给出已知点 \\((0,0,0)\\)，不需要另求点，更不能套直线对称式。",
+          "method_gap": {
+            "enabled": true,
+            "evidence_origin": "user_confirmed",
+            "knowledge_gap_or_method_gap": "A+B混合",
+            "method_trigger": "题目给出“平面过原点且与两条空间直线都平行”，要求写平面方程；提取方向向量后，需要构造同时垂直于两个方向的平面法向量。",
+            "expected_method": "先写平面一般式并由过原点得到 D=0；再把“两直线平行于平面”翻译为法向量分别与两个方向向量点乘为 0，用叉乘求法向量；按行列式第一行展开时检查正负正，再写过原点的平面方程并回代检验。",
+            "expected_first_action": "先明确平面需要“已知点 + 法向量”；由过原点固定已知点，再从两条直线提取两个平面内方向，准备叉乘构造法向量。",
+            "missed_action": "起初不知道平面一般式、法向量与平面内方向的垂直关系及点乘为 0 的含义，误把“都平行于同一平面”理解为“两直线彼此平行”，也不熟悉点乘和叉乘计算；经讲解后展开叉乘行列式时又漏掉 j 项代数余子式的负号。",
+            "action_gap_type": "B4-CHAIN",
+            "related_method_card_id": "H00-007",
+            "confidence": "high",
+            "need_user_confirmation": false
+          },
+          "raw_method_gap": {
+            "action_gap_type": "B4-CHAIN",
+            "confidence": "high",
+            "enabled": true,
+            "evidence_origin": "user_confirmed",
+            "expected_first_action": "先明确平面需要“已知点 + 法向量”；由过原点固定已知点，再从两条直线提取两个平面内方向，准备叉乘构造法向量。",
+            "expected_method": "先写平面一般式并由过原点得到 D=0；再把“两直线平行于平面”翻译为法向量分别与两个方向向量点乘为 0，用叉乘求法向量；按行列式第一行展开时检查正负正，再写过原点的平面方程并回代检验。",
+            "knowledge_gap_or_method_gap": "A+B混合",
+            "method_trigger": "题目给出“平面过原点且与两条空间直线都平行”，要求写平面方程；提取方向向量后，需要构造同时垂直于两个方向的平面法向量。",
+            "missed_action": "起初不知道平面一般式、法向量与平面内方向的垂直关系及点乘为 0 的含义，误把“都平行于同一平面”理解为“两直线彼此平行”，也不熟悉点乘和叉乘计算；经讲解后展开叉乘行列式时又漏掉 j 项代数余子式的负号。",
+            "need_user_confirmation": false,
+            "related_method_card_id": "H00-007"
+          },
+          "has_any_evidence": true,
+          "has_specific_evidence": true,
+          "has_observed_failure": true,
+          "specific_fields": {
+            "wrong_point": true,
+            "missed_action": true,
+            "expected_first_action": true,
+            "method_trigger": true
+          }
+        },
+        "match_mode": "exact_gap"
+      }
+    ]
   },
   {
     "复习单元ID": "MATH1-GS-WQ-GS787",
