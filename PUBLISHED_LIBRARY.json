@@ -5,8 +5,8 @@
   "branch": "main",
   "publication_target": "local",
   "github_backup_required": false,
-  "local_version": "4711330eef42fe9170adfbcd7a7192bf284b301ededee3522ada62c2723a0420",
-  "event_id": "MATH-DERIVED-b20dd9c4b153b6a85f55f739d612d9df23783b5989363d36329601a02668b38f",
+  "local_version": "d0685bd9cee7b8cc1b85bf6d1fec4772c7f2bd83c7938ce95588f2de76d017ab",
+  "event_id": "MATH-C-SURFACE-20260909-ff0519b579725f26c515f85a",
   "history_index": "错题知识网络/生成/wrong_questions.json",
   "entrypoints": {
     "formal_cards": "错题知识网络/错题卡/",
@@ -17,15 +17,15 @@
     "personalization": "personalization/math/manifest.json"
   },
   "counts": {
-    "files": 15188,
-    "bytes": 2856636259,
-    "current_files": 15167,
+    "files": 15194,
+    "bytes": 2856649222,
+    "current_files": 15173,
     "retained_files": 21,
     "lfs_files": 3
   },
   "source_counts": {
     "formal_cards": 911,
-    "source_files": 15167,
+    "source_files": 15173,
     "archive_receipts": 241,
     "question_image_declaration_missing": 23
   },
@@ -5635,15 +5635,15 @@
     ]
   },
   "personalization": {
-    "version": "893e0836bdeceddb39dfc97316e82f0e04ef212292c2a1e515e488cd85b1756e",
+    "version": "c045953dedfc66c708d30e182a81ab8e3c2cce9567549602821194c9bc4d2552",
     "formal_version": "e6ad6a80471fd883dfc4a26fe3d6dee8eeb969e188693ce574939dd776641d72",
     "entrypoint": "personalization/math/manifest.json"
   },
   "native_math_workflow": {
     "schema": "native-math-workflow-bindings-v1",
-    "version": "aa15a5deb7336371902d015a9629b03b37051193f14a05e5aa583def3e21ae1e",
+    "version": "a5a1b6a12c9200625440c351ebb09dfc49d754c46f43fd0ad9b15aab8d707fd1",
     "path": "support/cmath/manifest.json",
-    "sha256": "b3bc4d986c55a8dcf0cb0610b8031112a3ba0c0cfbe1d0f931faba93db199bb3"
+    "sha256": "b2affc05848bf7115b99a790b43b6e2c64fe734dd50db162e6d986b33f5d88c8"
   },
   "web_read": {
     "schema": "study-mcp-local-read-v1",
@@ -5661,16 +5661,16 @@
     },
     {
       "path": "published-inventory/fc0e1b7a7a08-001.jsonl",
-      "sha256": "c59fa98a6abb9d6fb0b8582d0a0701ab8a1fef3be84eaeb263924c152517f69d",
+      "sha256": "75cbe9ed6a438d5b14e4059276888afd37e10b376af995e971e3afc63330658a",
       "count": 912,
-      "bytes": 523946,
+      "bytes": 523947,
       "source_directory": "personalization"
     },
     {
       "path": "published-inventory/fc0e1b7a7a08-002.jsonl",
-      "sha256": "da60d2f4c23445aa00d79c5bbfe9ec1afa9061b4b541fb8785ece9bcd0f855ed",
-      "count": 873,
-      "bytes": 502294,
+      "sha256": "95a4d2187d2453e00148b2c317f9cb88e2a6e5677a2f3c3994f461c613d19fa3",
+      "count": 875,
+      "bytes": 503442,
       "source_directory": "personalization"
     },
     {
@@ -5689,7 +5689,7 @@
     },
     {
       "path": "published-inventory/a18603086e5b-001.jsonl",
-      "sha256": "1aba7e0f0f66a1964a72ff65d76971396f67398d69a816e4bbe1ee11fa3a95b5",
+      "sha256": "bc6d723f0511d95b99a366ef1996989cf1bb4fb048a0cfca56e33c0feb552d71",
       "count": 1,
       "bytes": 292,
       "source_directory": "support"
@@ -5724,58 +5724,58 @@
     },
     {
       "path": "published-inventory/8d5d399c139e-001.jsonl",
-      "sha256": "55d21fd97f9ed65d054127817eaf30ccea81c8e5af0267a9b1d75e24f33c68a7",
+      "sha256": "c5e62489b41a464ae2a55dd10dc7e9c329fa631f001fdf18d895f535e34fda48",
       "count": 1446,
-      "bytes": 524262,
+      "bytes": 524192,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-002.jsonl",
-      "sha256": "88c0b80a0f79cf18d4fa893dc76d777a8f6ecd2f0e2dfdf3a70b9b60e5a4896e",
+      "sha256": "a5b84504a9086713c87e1c6b8644f283937ef1463b77c529bb609c88c02e27e8",
       "count": 1445,
-      "bytes": 524153,
+      "bytes": 524217,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-003.jsonl",
-      "sha256": "c9b6a6d722256f15c02ee74ca909daf169cacd8f5cc9093066d91ac05aa9a396",
+      "sha256": "7b9784e2a885a2c5e64036a028e66e0fd944304b962c62687f2ba4e1e345c2ab",
       "count": 1513,
-      "bytes": 524064,
+      "bytes": 524082,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-004.jsonl",
-      "sha256": "90cc0be86090e29d5e7675b1c09c4cc387fd61a85aca186198512471160363a4",
-      "count": 1611,
-      "bytes": 523948,
+      "sha256": "9c6d5ed35ccbdf4bd5cbfb58477b151ba663423ae1a15976c89a3db0d7e1e213",
+      "count": 1612,
+      "bytes": 524234,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-005.jsonl",
-      "sha256": "c39efeca96a7f2ee9b54d7963eba11f270d9bab9e7d9a434256e38f5a3e8bede",
+      "sha256": "20d86536b94fba3db29dcf0bf4762b91dfa04fe50474bfa02ffcf99684651a6c",
       "count": 1371,
-      "bytes": 523982,
+      "bytes": 523983,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-006.jsonl",
-      "sha256": "9551869082878f9ebdd57ffd538b05b1884ccc60013ad8eb7565d65716dddfbf",
+      "sha256": "65f5d58ae686c9ba2bb968b3b5d2342a7c48be52366db61578045838cc2c6cdf",
       "count": 1462,
-      "bytes": 523992,
+      "bytes": 524160,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-007.jsonl",
-      "sha256": "34b98b9c36de986f08689d675706912d48d2b1e7373564bae83cb4a805ffe5c5",
+      "sha256": "6e8c8ed93d4dd5d206e8ac6d15031454cb33a51a791dc6a2c7ff9953f67f7a28",
       "count": 1337,
-      "bytes": 524126,
+      "bytes": 524136,
       "source_directory": "错题知识网络"
     },
     {
       "path": "published-inventory/8d5d399c139e-008.jsonl",
-      "sha256": "5139ea217b74beeb2e4fe0b8d2a4c9adad0c7f4f8b09aa5456a9e92b653259c6",
-      "count": 675,
-      "bytes": 225288,
+      "sha256": "7f0687a55cf14d55ee168050fcca9abc1a8d3a7202d26e4878b2f2864c3f12fe",
+      "count": 678,
+      "bytes": 226256,
       "source_directory": "错题知识网络"
     },
     {
