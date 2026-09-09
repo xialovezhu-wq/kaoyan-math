@@ -1,0 +1,232 @@
+你选的路线是对的：先固定 \(z\)，算出横截面面积，再沿 \(z\) 积分。卡住的地方是横截面不是以原点为圆心，而是以 \((0,z)\) 为圆心。
+
+看到什么
+
+圆锥面是
+
+$$
+x^2+(y-z)^2=(1-z)^2.
+$$
+
+它在高度 \(z\) 处的横截面是圆盘
+
+$$
+x^2+(y-z)^2\le (1-z)^2.
+$$
+
+圆心是 \((0,z)\)，半径是
+
+$$
+R(z)=1-z.
+$$
+
+所以横截面面积是
+
+$$
+A(z)=\pi(1-z)^2.
+$$
+
+体积
+
+$$
+V=\int_0^1 A(z)\,dz
+=\int_0^1 \pi(1-z)^2\,dz
+=\frac{\pi}{3}.
+$$
+
+你提到的坐标变换
+
+固定 \(z\) 时，令
+
+$$
+x=r\cos\theta,\qquad y-z=r\sin\theta.
+$$
+
+也就是
+
+$$
+x=r\cos\theta,\qquad y=z+r\sin\theta.
+$$
+
+因为 \(z\) 在这个二重积分中是常数，所以
+
+$$
+dx\,dy=r\,dr\,d\theta.
+$$
+
+横截面半径从 \(0\) 到 \(1-z\)，因此
+
+$$
+0\le r\le 1-z,\qquad 0\le\theta\le2\pi.
+$$
+
+整个区域可以写成
+
+$$
+0\le z\le1,\qquad
+0\le r\le1-z,\qquad
+0\le\theta\le2\pi.
+$$
+
+体积微元是
+
+$$
+dV=dx\,dy\,dz=r\,dr\,d\theta\,dz.
+$$
+
+形心坐标
+
+均匀立体的形心公式是
+
+$$
+\bar x=\frac{\iiint_\Omega x\,dV}{V},
+$$
+
+$$
+\bar y=\frac{\iiint_\Omega y\,dV}{V},
+$$
+
+$$
+\bar z=\frac{\iiint_\Omega z\,dV}{V}.
+$$
+
+由区域关于平面 \(x=0\) 对称，得到
+
+$$
+\bar x=0.
+$$
+
+计算 \(\bar y\)
+
+固定 \(z\) 时，圆盘的圆心纵坐标是 \(y=z\)，所以圆盘上 \(y\) 的平均值是 \(z\)。因此
+
+$$
+\iint_{D_z} y\,dx\,dy
+=
+z\cdot A(z)
+=
+z\pi(1-z)^2.
+$$
+
+于是
+
+$$
+\iiint_\Omega y\,dV
+=
+\pi\int_0^1 z(1-z)^2\,dz
+=
+\frac{\pi}{12}.
+$$
+
+所以
+
+$$
+\bar y
+=
+\frac{\pi/12}{\pi/3}
+=
+\frac14.
+$$
+
+计算 \(\bar z\)
+
+$$
+\iiint_\Omega z\,dV
+=
+\int_0^1 zA(z)\,dz
+=
+\pi\int_0^1 z(1-z)^2\,dz
+=
+\frac{\pi}{12}.
+$$
+
+所以
+
+$$
+\bar z
+=
+\frac{\pi/12}{\pi/3}
+=
+\frac14.
+$$
+
+因此形心坐标是
+
+$$
+(\bar x,\bar y,\bar z)
+=
+\left(0,\frac14,\frac14\right).
+$$
+
+用横截面理解：
+
+```text
+z = 1：顶点，半径 0
+z = z：圆盘中心 (0,z)，半径 1-z
+z = 0：底面圆盘中心 (0,0)，半径 1
+```
+
+这个结果也符合圆锥的几何特征：形心在圆锥轴上，距底面高度的四分之一处。
+
+卷面写法
+
+$$
+\Omega:\quad
+0\le z\le1,\qquad
+x^2+(y-z)^2\le(1-z)^2.
+$$
+
+固定 \(z\) 时，横截面面积
+
+$$
+A(z)=\pi(1-z)^2.
+$$
+
+故
+
+$$
+V=\int_0^1\pi(1-z)^2\,dz=\frac{\pi}{3}.
+$$
+
+由对称性，
+
+$$
+\bar x=0.
+$$
+
+又
+
+$$
+\iint_{D_z} y\,dx\,dy=z\pi(1-z)^2,
+$$
+
+所以
+
+$$
+\iiint_\Omega y\,dV
+=\pi\int_0^1 z(1-z)^2\,dz
+=\frac{\pi}{12}.
+$$
+
+同理
+
+$$
+\iiint_\Omega z\,dV
+=\frac{\pi}{12}.
+$$
+
+故
+
+$$
+\bar y=\frac{\pi/12}{\pi/3}=\frac14,
+\qquad
+\bar z=\frac{\pi/12}{\pi/3}=\frac14.
+$$
+
+因此
+
+$$
+(\bar x,\bar y,\bar z)
+=
+\left(0,\frac14,\frac14\right).
+$$

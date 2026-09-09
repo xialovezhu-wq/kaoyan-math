@@ -19,29 +19,33 @@ knowledge:
 error_causes:
   - "知识点挂载噪声"
   - "方法入口未沉淀"
+  - "单路径证明误用"
+  - "偏导定义调用失败"
+  - "可微与偏导存在概念混淆"
 methods:
   - "夹逼"
+  - "全邻域夹逼"
   - "极坐标"
   - "偏导定义"
   - "左右极限"
 wiki_refs:
-  - "MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表"
-  - "MATHWIKI-ACTION-GAP-005_A-CONCEPT"
-  - "MATHWIKI-ERROR-CLUSTER-012_方法入口未沉淀"
-  - "MATHWIKI-ERROR-CLUSTER-059_知识点挂载噪声"
-  - "MATHWIKI-KNOWLEDGE-003_极限与连续"
-  - "MATHWIKI-KNOWLEDGE-012_多元函数偏导"
-  - "MATHWIKI-KNOWLEDGE-019_多元函数微分学"
-  - "MATHWIKI-KNOWLEDGE-037_多元函数连续可微"
-  - "MATHWIKI-KNOWLEDGE-067_多元函数极限"
-  - "MATHWIKI-METHOD-CLUSTER-024_夹逼"
-  - "MATHWIKI-METHOD-CLUSTER-029_偏导定义"
-  - "MATHWIKI-METHOD-CLUSTER-1109_极坐标"
-  - "MATHWIKI-METHOD-CLUSTER-224_左右极限"
-  - "MATHWIKI-GS-METHOD-050_二元函数性质定义判别链"
-  - "MATHWIKI-GS-TOPIC-010_多元函数与二重积分错题总线"
+  - MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表
+  - MATHWIKI-ACTION-GAP-005
+  - MATHWIKI-ERROR-CLUSTER-012
+  - MATHWIKI-ERROR-CLUSTER-059
+  - MATHWIKI-KNOWLEDGE-003
+  - MATHWIKI-KNOWLEDGE-012
+  - MATHWIKI-KNOWLEDGE-019
+  - MATHWIKI-KNOWLEDGE-037
+  - MATHWIKI-KNOWLEDGE-067
+  - MATHWIKI-METHOD-CLUSTER-024
+  - MATHWIKI-METHOD-CLUSTER-029
+  - MATHWIKI-METHOD-CLUSTER-1109
+  - MATHWIKI-METHOD-CLUSTER-224
 status: indexed
-last_updated: 2026-07-15
+last_updated: "2026-09-09"
+formal_projection_sha256: "0003c926b8bc55d6ec6bea48f6986ab88ef69d30cfcc9b0b2e912a45d411e5aa"
+
 ---
 
 # GS-372 强化例题13.9
@@ -156,3 +160,7 @@ last_updated: 2026-07-15
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[SRC-WRONGNET_正式错题卡源数据]]
+
+## 2026-09-09 正式入库更新
+
+- 单路径证明二重极限与原点偏导定义边界；提示后左右差商正确。

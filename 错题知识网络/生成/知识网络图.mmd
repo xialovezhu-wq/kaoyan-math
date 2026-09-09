@@ -6155,6 +6155,15 @@ graph LR
   q_782ba9194d --> e_bcb3af6f82
   class e_0c97487678 error;
   q_782ba9194d --> e_0c97487678
+  e_79a5abda67["错因：单路径证明误用"]
+  class e_79a5abda67 error;
+  q_782ba9194d --> e_79a5abda67
+  e_974e29adc8["错因：偏导定义调用失败"]
+  class e_974e29adc8 error;
+  q_782ba9194d --> e_974e29adc8
+  e_6533681cca["错因：可微与偏导存在概念混淆"]
+  class e_6533681cca error;
+  q_782ba9194d --> e_6533681cca
   q_5bf1f68ed9["GS-373<br/>强化例题13.11-2"]
   class q_5bf1f68ed9 question;
   class k_ad0d51c840 knowledge;
@@ -12329,6 +12338,9 @@ graph LR
   e_b97a893171["错因：方向向量与法向量角色混淆"]
   class e_b97a893171 error;
   q_73e29eac10 --> e_b97a893171
+  e_441ac69582["错因：切线方程模板调取失败"]
+  class e_441ac69582 error;
+  q_73e29eac10 --> e_441ac69582
   q_4220737481["GS-647<br/>84298 曲线法平面方程"]
   class q_4220737481 question;
   class k_fffc9022a0 knowledge;
@@ -12854,6 +12866,12 @@ graph LR
   q_5b1e695a50 --> e_8a54453834
   class e_98c46967df error;
   q_5b1e695a50 --> e_98c46967df
+  e_ed03842add["错因：偏移圆盘与原点圆盘身份混淆"]
+  class e_ed03842add error;
+  q_5b1e695a50 --> e_ed03842add
+  e_cd139ed9ae["错因：极坐标角域未由圆方程推出"]
+  class e_cd139ed9ae error;
+  q_5b1e695a50 --> e_cd139ed9ae
   q_86585d0456["GS-668<br/>102610 球体截面球面坐标"]
   class q_86585d0456 question;
   class k_d930635bc6 knowledge;
@@ -14367,6 +14385,12 @@ graph LR
   q_30e35a33b0 --> e_17f1132808
   class e_b5f2cb46a3 error;
   q_30e35a33b0 --> e_b5f2cb46a3
+  e_99ba73fd09["错因：闭曲面分块与侧面积分身份混淆"]
+  class e_99ba73fd09 error;
+  q_30e35a33b0 --> e_99ba73fd09
+  e_3506eac554["错因：盖子含权积分误用面积"]
+  class e_3506eac554 error;
+  q_30e35a33b0 --> e_3506eac554
   q_d6c0a41734["GS-727<br/>165360 锥面正向单位法向量"]
   class q_d6c0a41734 question;
   class k_fffc9022a0 knowledge;
@@ -15003,6 +15027,12 @@ graph LR
   e_603abda18e["错因：平移截面对称性误判"]
   class e_603abda18e error;
   q_38771768c0 --> e_603abda18e
+  e_70f4540fca["错因：方向向量坐标差错误"]
+  class e_70f4540fca error;
+  q_38771768c0 --> e_70f4540fca
+  e_f5ff6909be["错因：平方和消元入口未触发"]
+  class e_f5ff6909be error;
+  q_38771768c0 --> e_f5ff6909be
   q_690705a74b["GS-749<br/>138818 旋转抛物面柱面坐标"]
   class q_690705a74b question;
   class k_d930635bc6 knowledge;
@@ -15872,6 +15902,39 @@ graph LR
   q_699decd9a8 --> k_6548dd7aaa
   class e_98c46967df error;
   q_699decd9a8 --> e_98c46967df
+  q_97771340e1["GS-797<br/>57961 二元函数极值必要条件"]
+  class q_97771340e1 question;
+  class k_fcacff90a1 knowledge;
+  q_97771340e1 --> k_fcacff90a1
+  class k_cd3926de6c knowledge;
+  q_97771340e1 --> k_cd3926de6c
+  e_ed61e90b55["错因：必要条件调取失败"]
+  class e_ed61e90b55 error;
+  q_97771340e1 --> e_ed61e90b55
+  e_242facad21["错因：一元切片入口未触发"]
+  class e_242facad21 error;
+  q_97771340e1 --> e_242facad21
+  e_d07523dd41["错因：知识迁移未完成"]
+  class e_d07523dd41 error;
+  q_97771340e1 --> e_d07523dd41
+  q_e6b40fdff3["GS-798<br/>57996 二元函数极值二阶判别"]
+  class q_e6b40fdff3 question;
+  class k_fcacff90a1 knowledge;
+  q_e6b40fdff3 --> k_fcacff90a1
+  class k_cd3926de6c knowledge;
+  q_e6b40fdff3 --> k_cd3926de6c
+  e_989eeba6e4["错因：必要条件与充分条件方向混淆"]
+  class e_989eeba6e4 error;
+  q_e6b40fdff3 --> e_989eeba6e4
+  e_4eb8b9fe6e["错因：驻点代入计算错误"]
+  class e_4eb8b9fe6e error;
+  q_e6b40fdff3 --> e_4eb8b9fe6e
+  e_762314adc0["错因：二阶判别条件调取失败"]
+  class e_762314adc0 error;
+  q_e6b40fdff3 --> e_762314adc0
+  e_29f78b809d["错因：混合偏导适用条件未主动核验"]
+  class e_29f78b809d error;
+  q_e6b40fdff3 --> e_29f78b809d
   q_af6e256edc["LA-001<br/>线代1000题A组1.7"]
   class q_af6e256edc question;
   class k_56a75ad63a knowledge;
@@ -17474,7 +17537,6 @@ graph LR
   q_0496b9b0cb -. "0.77" .- q_43fb7a2758
   q_787ac7f705 -. "0.77" .- q_4c49c04e56
   q_787ac7f705 -. "0.77" .- q_aad3278571
-  q_4d7bb1a595 -. "0.77" .- q_782ba9194d
   q_d5068d2c10 -. "0.77" .- q_4c49c04e56
   q_a2c5a07d8c -. "0.77" .- q_4c49c04e56
   q_d5068d2c10 -. "0.77" .- q_aad3278571
@@ -17489,6 +17551,7 @@ graph LR
   q_bf6ac32887 -. "0.77" .- q_c4f7127319
   q_e90d372a7c -. "0.77" .- q_c4f7127319
   q_0496b9b0cb -. "0.76" .- q_720c396da2
+  q_4d7bb1a595 -. "0.76" .- q_782ba9194d
   q_5dc74011af -. "0.76" .- q_68d9cf6bf1
   q_b130953fa9 -. "0.76" .- q_f2de07d353
   q_95c5c7f36f -. "0.76" .- q_8ba8654f67
@@ -17639,10 +17702,8 @@ graph LR
   q_c1fa197cef -. "0.55" .- q_945f064b5b
   q_cbd06fd1c4 -. "0.55" .- q_b9d48923b8
   q_2bbda3a8a9 -. "0.55" .- q_cbd06fd1c4
-  q_4c49c04e56 -. "0.55" .- q_782ba9194d
   q_2bde2f8f89 -. "0.55" .- q_b317b11232
   q_2bbda3a8a9 -. "0.55" .- q_5128bb4931
-  q_aad3278571 -. "0.55" .- q_782ba9194d
   q_2bde2f8f89 -. "0.55" .- q_b44b205711
   q_987f6211d9 -. "0.55" .- q_b5bdac05e1
   q_ce852387bc -. "0.55" .- q_b9d48923b8
@@ -17673,8 +17734,10 @@ graph LR
   q_09a0415bcb -. "0.53" .- q_38c78b4b2f
   q_d097d4dd31 -. "0.53" .- q_2f9883eea5
   q_70b67e920b -. "0.53" .- q_5f10e31500
+  q_4c49c04e56 -. "0.53" .- q_5bf1f68ed9
   q_822a7c7914 -. "0.53" .- q_3f62725657
   q_39000ddeaf -. "0.53" .- q_5e57a11274
+  q_aad3278571 -. "0.53" .- q_5bf1f68ed9
   q_c009c02c9a -. "0.53" .- q_b9d48923b8
   q_bc609912bb -. "0.53" .- q_ce852387bc
   q_de44f5b8f7 -. "0.53" .- q_4402a747c4
@@ -18011,8 +18074,8 @@ graph LR
   q_44e0b0f86c -. "0.46" .- q_5fdcc1e529
   q_86585d0456 -. "0.46" .- q_966c50dd89
   q_86eb4cba53 -. "0.46" .- q_75dde28ff4
-  q_5b1e695a50 -. "0.46" .- q_838bd3151a
   q_8b866fde5d -. "0.46" .- q_e40da17360
+  q_5b1e695a50 -. "0.46" .- q_838bd3151a
   q_20a018f3a7 -. "0.46" .- q_7ad440e61a
   q_029c56f3e1 -. "0.46" .- q_5f10e31500
   q_99d5336a35 -. "0.46" .- q_5b8d1ac840
@@ -18819,13 +18882,11 @@ graph LR
   q_2358b6822f -. "0.46" .- q_7fe9a90f1b
   q_2358b6822f -. "0.46" .- q_3d2661dab0
   q_2358b6822f -. "0.46" .- q_782ba9194d
-  q_2358b6822f -. "0.46" .- q_5bf1f68ed9
   q_6b758ad327 -. "0.46" .- q_67a11a52c6
   q_6b758ad327 -. "0.46" .- q_5d53c1879e
   q_7fe9a90f1b -. "0.46" .- q_67a11a52c6
   q_7fe9a90f1b -. "0.46" .- q_782ba9194d
   q_67a11a52c6 -. "0.46" .- q_782ba9194d
-  q_67a11a52c6 -. "0.46" .- q_5bf1f68ed9
   q_1f9085aa9f -. "0.46" .- q_265f0dbb13
   q_1f9085aa9f -. "0.46" .- q_5e9678174a
   q_d0dacbd717 -. "0.46" .- q_fad82cfe20
@@ -19545,8 +19606,11 @@ graph LR
   q_a5f20cc0d7 -. "0.46" .- q_0d68946f39
   q_a5f20cc0d7 -. "0.46" .- q_bcc4f04433
   q_31e0e352a6 -. "0.42" .- q_5dc74011af
+  q_fa7dcf3e9a -. "0.42" .- q_e6b40fdff3
   q_7af218625f -. "0.41" .- q_1b91a7ca12
   q_31e0e352a6 -. "0.40" .- q_68d9cf6bf1
+  q_97771340e1 -. "0.40" .- q_e6b40fdff3
+  q_fa7dcf3e9a -. "0.40" .- q_97771340e1
   q_b6aa276bd9 -. "0.39" .- q_c0008e0f24
   q_a510260c02 -. "0.39" .- q_b6aa276bd9
   q_b5bdac05e1 -. "0.38" .- q_c1fa197cef
@@ -19606,6 +19670,7 @@ graph LR
   q_6d4a4ab14b -. "0.34" .- q_3637458de9
   q_6d4a4ab14b -. "0.34" .- q_a0904592d9
   q_12899cd8f9 -. "0.34" .- q_c035137656
+  q_fd109c1d54 -. "0.34" .- q_2358b6822f
   q_fd109c1d54 -. "0.34" .- q_0ed21d1552
   q_fd109c1d54 -. "0.34" .- q_67a11a52c6
   q_fd109c1d54 -. "0.34" .- q_8893cf9f42
@@ -19714,8 +19779,8 @@ graph LR
   q_725f716bc9 -. "0.34" .- q_2b06fdefc3
   q_895d6762ee -. "0.34" .- q_c035137656
   q_6b758ad327 -. "0.34" .- q_265f0dbb13
+  q_0ed21d1552 -. "0.34" .- q_67a11a52c6
   q_4d7bb1a595 -. "0.34" .- q_d1db8014b6
-  q_782ba9194d -. "0.34" .- q_d1db8014b6
   q_905527759c -. "0.34" .- q_3cf4118c74
   q_6ef85da806 -. "0.34" .- q_bc609912bb
   q_bc609912bb -. "0.34" .- q_7ab647b0f7
@@ -20005,9 +20070,12 @@ graph LR
   q_8e7c6dbc64 -. "0.30" .- q_6ef85da806
   q_c26c721917 -. "0.30" .- q_07d4f745a6
   q_83536ca95c -. "0.30" .- q_557b4e3b6f
+  q_895d6762ee -. "0.30" .- q_782ba9194d
   q_c035137656 -. "0.30" .- q_fd70a7d55c
   q_c035137656 -. "0.30" .- q_6b758ad327
+  q_c035137656 -. "0.30" .- q_782ba9194d
   q_c035137656 -. "0.30" .- q_5d53c1879e
+  q_0ed21d1552 -. "0.30" .- q_782ba9194d
   q_0ed21d1552 -. "0.30" .- q_d1db8014b6
   q_0ed21d1552 -. "0.30" .- q_557b4e3b6f
   q_1f9085aa9f -. "0.30" .- q_4220737481
@@ -20026,12 +20094,12 @@ graph LR
   q_dd2ec8f528 -. "0.30" .- q_e4e55abeb8
   q_dd2ec8f528 -. "0.30" .- q_caca2e2703
   q_fa7dcf3e9a -. "0.30" .- q_2a0dbe029d
+  q_a968b72188 -. "0.30" .- q_97771340e1
+  q_a968b72188 -. "0.30" .- q_e6b40fdff3
   q_a968b72188 -. "0.30" .- q_738a738f91
   q_a968b72188 -. "0.30" .- q_1cd13f5d2f
   q_a968b72188 -. "0.30" .- q_76db74e37d
   q_a968b72188 -. "0.30" .- q_d62942e9f1
-  q_a968b72188 -. "0.30" .- q_f22928ba06
-  q_a968b72188 -. "0.30" .- q_0210af9eb0
   q_6ef85da806 -. "0.30" .- q_7ab647b0f7
   q_6ef85da806 -. "0.30" .- q_322e290b11
   q_6ef85da806 -. "0.30" .- q_704ea795e8
@@ -20046,8 +20114,8 @@ graph LR
   q_a891d2a807 -. "0.30" .- q_744f1e2a06
   q_4559cbd9d8 -. "0.30" .- q_b57bf24a30
   q_d95f764645 -. "0.30" .- q_744f1e2a06
-  q_2a0dbe029d -. "0.30" .- q_bf1707771f
-  q_2a0dbe029d -. "0.30" .- q_4ae6b0d5dd
+  q_2a0dbe029d -. "0.30" .- q_97771340e1
+  q_2a0dbe029d -. "0.30" .- q_e6b40fdff3
   q_bf6ac32887 -. "0.30" .- q_410da87e5d
   q_bf6ac32887 -. "0.30" .- q_ac11f65d96
   q_bf6ac32887 -. "0.30" .- q_387283bd01
@@ -20312,6 +20380,7 @@ graph LR
   q_f7ae79b3b1 -. "0.30" .- q_557b4e3b6f
   q_f7ae79b3b1 -. "0.30" .- q_fed2420b0f
   q_d1db8014b6 -. "0.30" .- q_557b4e3b6f
+  q_d1db8014b6 -. "0.30" .- q_fed2420b0f
   q_557b4e3b6f -. "0.30" .- q_ef04f018d2
   q_fed2420b0f -. "0.30" .- q_ef04f018d2
   q_067c6a18cc -. "0.30" .- q_936d48fa51
@@ -20327,6 +20396,7 @@ graph LR
   q_b87f54bd08 -. "0.30" .- q_94957d6b1e
   q_bf1707771f -. "0.30" .- q_ed2cf3646e
   q_bf1707771f -. "0.30" .- q_b6232815c7
+  q_bf1707771f -. "0.30" .- q_9a7472a2b1
   q_61d40c0689 -. "0.30" .- q_cdde2ef794
   q_ed2cf3646e -. "0.30" .- q_363e847620
   q_ed2cf3646e -. "0.30" .- q_9a7472a2b1
@@ -20334,21 +20404,21 @@ graph LR
   q_ed2cf3646e -. "0.30" .- q_d3b1a3dc7a
   q_4ff863f8e2 -. "0.30" .- q_4ae6b0d5dd
   q_b6232815c7 -. "0.30" .- q_363e847620
-  q_b6232815c7 -. "0.30" .- q_9a7472a2b1
   q_b6232815c7 -. "0.30" .- q_4ae6b0d5dd
+  q_b6232815c7 -. "0.30" .- q_7a268af8d4
   q_9a7472a2b1 -. "0.30" .- q_329c1b3f6c
   q_9a7472a2b1 -. "0.30" .- q_a9b04264e0
   q_4ae6b0d5dd -. "0.30" .- q_7a268af8d4
   q_4ae6b0d5dd -. "0.30" .- q_738a738f91
+  q_4ae6b0d5dd -. "0.30" .- q_d62942e9f1
   q_7a268af8d4 -. "0.30" .- q_329c1b3f6c
   q_7a268af8d4 -. "0.30" .- q_d3b1a3dc7a
-  q_7a268af8d4 -. "0.30" .- q_92bf71412d
   q_738a738f91 -. "0.30" .- q_1cd13f5d2f
-  q_738a738f91 -. "0.30" .- q_d62942e9f1
   q_738a738f91 -. "0.30" .- q_f22928ba06
   q_738a738f91 -. "0.30" .- q_0210af9eb0
   q_738a738f91 -. "0.30" .- q_9854bbd8ae
   q_738a738f91 -. "0.30" .- q_d3b1a3dc7a
+  q_738a738f91 -. "0.30" .- q_7c51d76048
   q_1cd13f5d2f -. "0.30" .- q_f22928ba06
   q_1cd13f5d2f -. "0.30" .- q_0210af9eb0
   q_1cd13f5d2f -. "0.30" .- q_d3b1a3dc7a
@@ -20356,6 +20426,7 @@ graph LR
   q_f22928ba06 -. "0.30" .- q_0210af9eb0
   q_0210af9eb0 -. "0.30" .- q_69acbc40cd
   q_0210af9eb0 -. "0.30" .- q_31e0e352a6
+  q_0210af9eb0 -. "0.30" .- q_932f18995d
   q_329c1b3f6c -. "0.30" .- q_92bf71412d
   q_329c1b3f6c -. "0.30" .- q_a99d6cffaf
   q_329c1b3f6c -. "0.30" .- q_b26f969816
@@ -20379,10 +20450,10 @@ graph LR
   q_c921d1237c -. "0.30" .- q_95c5c7f36f
   q_c921d1237c -. "0.30" .- q_8ba8654f67
   q_4cb751463d -. "0.30" .- q_6d086acbe8
-  q_69acbc40cd -. "0.30" .- q_932f18995d
   q_69acbc40cd -. "0.30" .- q_5520b5842a
   q_69acbc40cd -. "0.30" .- q_4307328be8
   q_69acbc40cd -. "0.30" .- q_94957d6b1e
+  q_69acbc40cd -. "0.30" .- q_7fce47a699
   q_31e0e352a6 -. "0.30" .- q_5520b5842a
   q_10e030a4c7 -. "0.30" .- q_94957d6b1e
   q_10e030a4c7 -. "0.30" .- q_7fce47a699
@@ -20393,7 +20464,6 @@ graph LR
   q_4307328be8 -. "0.30" .- q_a9b04264e0
   q_7fce47a699 -. "0.30" .- q_3ced5e9da1
   q_7fce47a699 -. "0.30" .- q_a9b04264e0
-  q_7fce47a699 -. "0.30" .- q_2ca79cce37
   q_3ced5e9da1 -. "0.30" .- q_a9b04264e0
   q_3ced5e9da1 -. "0.30" .- q_7c51d76048
   q_a9b04264e0 -. "0.30" .- q_2ca79cce37
@@ -20402,9 +20472,9 @@ graph LR
   q_a9b04264e0 -. "0.30" .- q_19ee4c6fe0
   q_2ca79cce37 -. "0.30" .- q_7c51d76048
   q_2ca79cce37 -. "0.30" .- q_ac950366f2
+  q_2ca79cce37 -. "0.30" .- q_35d57b0692
   q_7c51d76048 -. "0.30" .- q_19ee4c6fe0
   q_7c51d76048 -. "0.30" .- q_ac950366f2
-  q_7c51d76048 -. "0.30" .- q_35d57b0692
   q_ac950366f2 -. "0.30" .- q_b6e5227db2
   q_ac950366f2 -. "0.30" .- q_e56f595c87
   q_ac950366f2 -. "0.30" .- q_0d68946f39

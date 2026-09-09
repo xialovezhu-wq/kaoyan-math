@@ -40,6 +40,8 @@ error_causes:
   - "参数角色混淆"
   - "截面边界与圆盘内部混淆"
   - "平移截面对称性误判"
+  - "方向向量坐标差错误"
+  - "平方和消元入口未触发"
 methods:
   - "空间两点式"
   - "锥面母线消元"
@@ -50,17 +52,17 @@ methods:
   - "固定z截面圆盘"
   - "圆锥体积公式"
 wiki_refs:
-  - "MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表"
-  - "MATHWIKI-ACTION-GAP-010"
-  - "MATHWIKI-KNOWLEDGE-089"
+  - MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表
+  - MATHWIKI-ACTION-GAP-010
+  - MATHWIKI-KNOWLEDGE-089
 chapter: "向量代数与空间解析几何"
 question_type: "空间直线、锥面方程与形心"
 card_status: "待复做"
 priority: "A"
 evidence_status: "user_confirmed"
 status: indexed
-last_updated: "2026-08-29"
-formal_projection_sha256: "b8e4e4840fb8c26774ca595c3681b741b2dad3c09207835b1bd948ba368b60e6"
+last_updated: "2026-09-09"
+formal_projection_sha256: "f1865f6ae55b7602e2f097d583d905c3eb08a86fddf9d518dc29810ba94a9364"
 ---
 
 # GS-748 84306 锥面母线消元与形心
@@ -110,3 +112,7 @@ formal_projection_sha256: "b8e4e4840fb8c26774ca595c3681b741b2dad3c09207835b1bd94
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[SRC-WRONGNET_正式错题卡源数据]]
+
+## 2026-09-09 正式入库更新
+
+- 一般点与准线点角色已区分；方向向量坐标差与平方和消元仍需提示。

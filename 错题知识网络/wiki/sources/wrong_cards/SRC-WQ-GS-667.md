@@ -34,6 +34,8 @@ error_causes:
   - "运算路径不稳"
   - "复习记忆不牢"
   - "概念混淆"
+  - "偏移圆盘与原点圆盘身份混淆"
+  - "极坐标角域未由圆方程推出"
 methods:
   - "三重积分换序"
   - "柱面坐标"
@@ -41,25 +43,24 @@ methods:
   - "极坐标换元"
   - "华里士公式"
 wiki_refs:
-  - "MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表"
-  - "MATHWIKI-ACTION-GAP-003"
-  - "MATHWIKI-ERROR-CLUSTER-004"
-  - "MATHWIKI-ERROR-CLUSTER-006"
-  - "MATHWIKI-ERROR-CLUSTER-007"
-  - "MATHWIKI-ERROR-CLUSTER-017"
-  - "MATHWIKI-ERROR-CLUSTER-028"
-  - "MATHWIKI-ERROR-CLUSTER-038"
-  - "MATHWIKI-ERROR-CLUSTER-043"
-  - "MATHWIKI-KNOWLEDGE-070"
-  - "MATHWIKI-KNOWLEDGE-073"
-  - "MATHWIKI-KNOWLEDGE-106"
-  - "MATHWIKI-KNOWLEDGE-392"
-  - "MATHWIKI-METHOD-CLUSTER-047"
-  - "MATHWIKI-METHOD-CLUSTER-110"
-  - "MATHWIKI-METHOD-CLUSTER-1132"
-  - "MATHWIKI-METHOD-CLUSTER-186"
-  - "MATHWIKI-METHOD-CLUSTER-398"
-  - "MATHWIKI-GS-TOPIC-015_三重积分坐标与空间几何入口"
+  - MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表
+  - MATHWIKI-ACTION-GAP-003
+  - MATHWIKI-ERROR-CLUSTER-004
+  - MATHWIKI-ERROR-CLUSTER-006
+  - MATHWIKI-ERROR-CLUSTER-007
+  - MATHWIKI-ERROR-CLUSTER-017
+  - MATHWIKI-ERROR-CLUSTER-028
+  - MATHWIKI-ERROR-CLUSTER-038
+  - MATHWIKI-ERROR-CLUSTER-043
+  - MATHWIKI-KNOWLEDGE-070
+  - MATHWIKI-KNOWLEDGE-073
+  - MATHWIKI-KNOWLEDGE-106
+  - MATHWIKI-KNOWLEDGE-392
+  - MATHWIKI-METHOD-CLUSTER-047
+  - MATHWIKI-METHOD-CLUSTER-110
+  - MATHWIKI-METHOD-CLUSTER-1132
+  - MATHWIKI-METHOD-CLUSTER-186
+  - MATHWIKI-METHOD-CLUSTER-398
 chapter: "多元函数积分学"
 question_type: "三重积分柱面区域与极坐标计算"
 card_status: "待复做"
@@ -67,8 +68,8 @@ priority: "A"
 evidence_status: user_confirmed
 personal_diagnosis_status: user_confirmed
 status: indexed
-formal_projection_sha256: b71a9eee90139667e9224d31743e65bd5b8089e97370a8d94067a08bfead17bb
-last_updated: "2026-07-30"
+formal_projection_sha256: "e477d6ea96db8cec05c9684dfb85b684bef1b43626f530423ced92a8ec441368"
+last_updated: "2026-09-09"
 ---
 
 # GS-667 102412 圆柱抛物面极坐标
@@ -127,3 +128,7 @@ last_updated: "2026-07-30"
 
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
 - [[SRC-WRONGNET_正式错题卡源数据]]
+
+## 2026-09-09 正式入库更新
+
+- 逐点高度已保留；偏移圆盘径向与角域经提示修正。

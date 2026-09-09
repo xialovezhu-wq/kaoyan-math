@@ -11,7 +11,7 @@ wiki_refs:
 - SRC-WRONGNET
 - MATHWIKI-OVERVIEW-001
 status: active
-last_updated: "2026-09-08"
+last_updated: "2026-09-09"
 ---
 # 全量错题卡覆盖索引
 
@@ -21,10 +21,10 @@ last_updated: "2026-09-08"
 
 ## 覆盖统计
 
-- 正式错题卡总数：882
-- 已生成 source summary：882
-- 已进入科目覆盖表：882
-- 已连接至少一个稳定索引型簇页（含 action_gap）：882
+- 正式错题卡总数：911
+- 已生成 source summary：911
+- 已进入科目覆盖表：911
+- 已连接至少一个稳定索引型簇页（含 action_gap）：911
 - 已进一步编译到概念/方法/专题/错因/触发/综合页：821
 - 已有 source summary 和索引型簇页覆盖、待继续深度编译：38
 - 全库视觉总数：本批不重算；本批正式卡直接核验 6 道，历史全局视觉登记不在本批扩展处理
@@ -32,9 +32,9 @@ last_updated: "2026-09-08"
 
 ## 科目分布
 
-- 线性代数: 117
-- 高等数学: 761
-- 概率论与数理统计: 4
+- 线性代数: 120
+- 高等数学: 790
+- 概率论与数理统计: 1
 ## 使用方式
 
 - 查单题：打开 `SRC-WQ-{ID}`。
@@ -957,3 +957,11 @@ last_updated: "2026-09-08"
 | GS-794 | [[SRC-WQ-GS-794]] | [[错题知识网络/可视化错题详情/高等数学/GS-794_57681距离定义与轨迹曲面|VIS-GS-794]] | `错题知识网络/错题卡/GS-794_57681距离定义与轨迹曲面.md` | 高等数学 | 向量代数与空间解析几何 | 空间距离；点到平面距离；点到坐标轴距离；二次曲面 | 待复做 | [[MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表]] | [[MATHWIKI-ERROR-CLUSTER-631_未记录个人错因]]<br>[[MATHWIKI-KNOWLEDGE-132_二次曲面]]<br>[[MATHWIKI-KNOWLEDGE-504_点到平面距离]]<br>[[MATHWIKI-KNOWLEDGE-511_点到坐标轴距离]]<br>[[MATHWIKI-KNOWLEDGE-516_空间距离]]<br>[[MATHWIKI-METHOD-CLUSTER-1603_目标集合上最小化距离]]<br>[[MATHWIKI-METHOD-CLUSTER-1604_按距离条件列轨迹]] | 本轮索引编译 |
 | GS-795 | [[SRC-WQ-GS-795]] | [[错题知识网络/可视化错题详情/高等数学/GS-795_58104旋转半径对应点|VIS-GS-795]] | `错题知识网络/错题卡/GS-795_58104旋转半径对应点.md` | 高等数学 | 向量代数与空间解析几何 | 旋转曲面；直线参数方程；点到坐标轴距离；参数消元 | 待复做 | [[MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表]] | [[MATHWIKI-ACTION-GAP-005_A-CONCEPT]]<br>[[MATHWIKI-ERROR-CLUSTER-006_概念混淆]]<br>[[MATHWIKI-KNOWLEDGE-379_旋转曲面]]<br>[[MATHWIKI-KNOWLEDGE-511_点到坐标轴距离]]<br>[[MATHWIKI-KNOWLEDGE-514_直线参数方程]]<br>[[MATHWIKI-KNOWLEDGE-527_参数消元]]<br>[[MATHWIKI-METHOD-CLUSTER-1605_对应点旋转不变量]]<br>[[MATHWIKI-METHOD-CLUSTER-1606_高度消参数]] | 本轮索引编译 |
 | GS-796 | [[SRC-WQ-GS-796]] | [[错题知识网络/可视化错题详情/高等数学/GS-796_58128平移旋转轴与距离|VIS-GS-796]] | `错题知识网络/错题卡/GS-796_58128平移旋转轴与距离.md` | 高等数学 | 向量代数与空间解析几何 | 旋转曲面；空间直线与平面；点到空间直线距离；参数消元 | 待复做 | [[MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表]] | [[MATHWIKI-ACTION-GAP-005_A-CONCEPT]]<br>[[MATHWIKI-ERROR-CLUSTER-006_概念混淆]]<br>[[MATHWIKI-KNOWLEDGE-127_空间直线与平面]]<br>[[MATHWIKI-KNOWLEDGE-379_旋转曲面]]<br>[[MATHWIKI-KNOWLEDGE-517_点到空间直线距离]]<br>[[MATHWIKI-KNOWLEDGE-527_参数消元]]<br>[[MATHWIKI-METHOD-CLUSTER-1607_平移坐标轴]]<br>[[MATHWIKI-METHOD-CLUSTER-1608_对应点高度与半径不变量]] | 本轮索引编译 |
+
+## 2026-09-09 增量
+
+| GS-797 | [[SRC-WQ-GS-797]] | [[错题知识网络/可视化错题详情/高等数学/GS-797_57961二元极值必要条件|VIS-GS-797]] | `错题知识网络/错题卡/GS-797_57961二元极值必要条件.md` | 高等数学 | 多元函数微分学 | 多元函数微分学；多元函数极值 | 待复做 | [[MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表]] | [[MATHWIKI-ACTION-GAP-001_B3-METHOD]]<br>[[MATHWIKI-KNOWLEDGE-055_多元函数极值]] | 本轮索引编译 |
+
+## 2026-09-09 增量
+
+| GS-798 | [[SRC-WQ-GS-798]] | [[错题知识网络/可视化错题详情/高等数学/GS-798_57996二元极值二阶判别|VIS-GS-798]] | `错题知识网络/错题卡/GS-798_57996二元极值二阶判别.md` | 高等数学 | 多元函数微分学 | 多元函数微分学；多元函数极值 | 待复做 | [[MATHWIKI-COVERAGE-GS_高等数学错题卡覆盖表]] | [[MATHWIKI-ACTION-GAP-005_A-CONCEPT]]<br>[[MATHWIKI-KNOWLEDGE-055_多元函数极值]] | 本轮索引编译 |

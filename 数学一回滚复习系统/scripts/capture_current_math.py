@@ -6,6 +6,7 @@ import argparse
 import contextlib
 import hashlib
 import io
+import importlib.util
 import json
 from pathlib import Path
 import re
@@ -27,8 +28,11 @@ def parser():
         'can be resolved. Unmapped local images use other_attachment. Text blocks are concatenated '
         'without inserted separators; block lengths retain the original boundaries. '
         'Repeat the identical command after failure; existing immutable stages and captures noop.'))
-    for name in ('rollout', 'session-id', 'formal-id', 'date', 'attempt-id'):
+    for name in ('rollout', 'session-id', 'date', 'attempt-id'):
         p.add_argument('--' + name, required=True)
+    p.add_argument('--formal-id', help='Known canonical GS/LA/PR ID; validated before staging')
+    p.add_argument('--source-question-id', help='Exact ID printed on the source question; resolve before staging')
+    p.add_argument('--source-locator', help='Stable source identity, required for a new question without a printed ID')
     p.add_argument('--start-line', required=True, type=int)
     p.add_argument('--end-user-line', '--end-line', dest='end_user_line', required=True, type=int)
     p.add_argument('--end-assistant-line', type=int,
@@ -40,7 +44,7 @@ def parser():
     p.add_argument('--item-id')
     p.add_argument('--score-event-id')
     p.add_argument('--score', type=int, choices=range(6), help='Validate an already recorded score; never create one')
-    p.add_argument('--requested-action', choices=sorted(qi.ALLOWED_ACTIONS), default='record_recurrence')
+    p.add_argument('--requested-action', choices=sorted(qi.ALLOWED_ACTIONS))
     return p
 
 
@@ -195,10 +199,72 @@ def configure_repo(root):
             setattr(qi, name, root / value.relative_to(old_root))
 
 
+def resolve_identity(args):
+    """Read canonical source metadata once, before extracting or staging evidence."""
+    question_id = args.source_question_id
+    formal_id = args.formal_id
+    if question_id is not None:
+        question_id = qi.require_text(question_id, 'source-question-id', max_length=200)
+        qi.reject_local_absolute_paths(question_id, 'source-question-id')
+        if not qi.CARDS_DIR.is_dir():
+            fail('Canonical card directory unavailable; cannot classify the source ID')
+        spec = importlib.util.spec_from_file_location('capture_identity_wrongnet', qi.WRONGNET_TOOL_PATH)
+        if spec is None or spec.loader is None:
+            fail('Canonical source metadata parser unavailable')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        matches = []
+        for path in sorted(qi.CARDS_DIR.glob('*.md')):
+            if not qi.CARD_ID_PATTERN.fullmatch(path.stem.split('_', 1)[0]):
+                continue
+            # Parse only front matter. Body examples and related questions are not identity.
+            with path.open(encoding='utf-8') as handle:
+                first = handle.readline()
+                if first.strip() != '---':
+                    fail(f'Canonical card lacks front matter: {path.name}')
+                header = [first]
+                for line in handle:
+                    header.append(line)
+                    if line.strip() == '---':
+                        break
+                else:
+                    fail(f'Canonical card has unclosed front matter: {path.name}')
+            meta, _ = module.split_front_matter(''.join(header))
+            exact = any(str(meta.get(key, '')) == question_id
+                        for key in ('source_question_id', 'question_id', 'source_id'))
+            source = str(meta.get('source') or '')
+            # Legacy source fields mix book labels/dates with 5+ digit printed IDs.
+            numeric = re.fullmatch(r'[0-9]{5,}', question_id) and re.search(
+                r'(?<![A-Za-z0-9])' + re.escape(question_id) + r'(?![A-Za-z0-9])', source)
+            labelled = re.search(r'(?i)(?<![A-Za-z0-9])ID\s*[:：]\s*' + re.escape(question_id)
+                                + r'(?![A-Za-z0-9_-])', source)
+            if exact or numeric or labelled:
+                card_id = str(meta.get('id', ''))
+                if not qi.CARD_ID_PATTERN.fullmatch(card_id):
+                    fail(f'Matched source has invalid formal ID: {path.name}')
+                matches.append(card_id)
+        if len(matches) > 1:
+            fail('Source question ID matches multiple formal cards: ' + ', '.join(matches))
+        if matches:
+            if formal_id and formal_id != matches[0]:
+                fail('Source question ID conflicts with supplied formal-id')
+            formal_id = matches[0]
+    if not formal_id and not question_id and not args.source_locator:
+        fail('Supply formal-id, source-question-id, or a stable source-locator')
+    locator = args.source_locator or f'codex:{args.session_id}:math:{formal_id or "new_source:" + question_id}:{args.attempt_id}'
+    qi.reject_local_absolute_paths(locator, 'source-locator')
+    target = ({'kind': 'formal_card', 'formal_id': formal_id} if formal_id else
+              {'kind': 'new_source', 'source_locator': locator})
+    qi.normalize_target(target, None)
+    return target, locator, question_id
+
+
 def capture(args):
     if args.repo is not None:
         configure_repo(args.repo)
     started = time.perf_counter()
+    target, locator, question_id = resolve_identity(args)
+    args.formal_id = target.get('formal_id')
     turns, provenance, artifacts, missing, solution, slice_hash = extract(args)
     qi.validate_date(args.date)
     score = qi.score_reference(args.score_event_id)
@@ -211,7 +277,6 @@ def capture(args):
         expected.update({k: v for k, v in [('queue_id', args.queue_id), ('queue_item_id', args.item_id), ('score', args.score)] if v is not None})
         if any(score[k] != v for k, v in expected.items()):
             fail('Requested identity/queue/item/score conflicts with recorded score')
-    target = {'kind': 'formal_card', 'formal_id': args.formal_id}
     qi.normalize_target(target, score)  # Reject identity errors before any stage write.
     if not qi.ATTEMPT_ID_PATTERN.fullmatch(args.attempt_id):
         fail('Invalid attempt-id')
@@ -227,13 +292,15 @@ def capture(args):
         stage_payload = {
             'schema_version': qi.SOURCE_STAGE_SCHEMA_V2, 'package_key': args.attempt_id,
             'study_date': args.date, 'timezone': 'Asia/Shanghai',
-            'source': {'source_locator': f'codex:{args.session_id}:math:{args.formal_id}:{args.attempt_id}',
+            'source': {'source_locator': locator,
                        'session_id': args.session_id, 'formal_id': args.formal_id,
                        'capture_identity': args.attempt_id, 'queue_id': args.queue_id,
                        'item_id': args.item_id, 'score_event_id': args.score_event_id,
                        'rollout_slice_sha256': slice_hash, 'message_boundaries': provenance},
             'conversation': turns, 'artifacts': artifacts, 'missing_fields': missing,
         }
+        if question_id is not None:
+            stage_payload['source']['question_id'] = question_id
         stage_start = time.perf_counter()
         stage = invoke('stage-source', stage_payload, directory)
         stage_ms = (time.perf_counter() - stage_start) * 1000
@@ -241,13 +308,14 @@ def capture(args):
         record = invoke('record', {
             'schema_version': qi.CAPTURE_SCHEMA_V3, 'attempt_id': args.attempt_id,
             'study_date': args.date, 'target': target, 'score_event_id': args.score_event_id,
-            'requested_action': args.requested_action, 'thread_ref': args.session_id,
+            'requested_action': args.requested_action or ('record_wrong' if target['kind'] == 'new_source' else 'record_recurrence'), 'thread_ref': args.session_id,
             'conversation_package': {k: stage[k] for k in ('manifest_path', 'manifest_hash', 'package_sha256')},
         }, directory)
         record_ms = (time.perf_counter() - record_start) * 1000
     return {'stage_status': stage['status'], 'record_status': record['status'],
             'capture_event_id': record.get('capture_event_id') or record.get('event_id'),
             'package_id': stage['package_id'], 'manifest_path': stage['manifest_path'],
+            'target_kind': target['kind'], 'formal_id': args.formal_id, 'source_question_id': question_id,
             'manifest_hash': stage['manifest_hash'], 'package_sha256': stage['package_sha256'],
             'rollout_slice_sha256': slice_hash, 'turn_count': len(turns),
             'elapsed_ms': {k: round(v, 3) for k, v in [('prepare', prepare_ms), ('stage', stage_ms),

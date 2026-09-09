@@ -13,37 +13,35 @@ visual_ids:
 wrongnet_refs:
   - GS-646
 knowledge:
-  - 向量代数与空间解析几何
-  - 空间曲线切线与法平面
-  - 空间直线与平面
-  - 方向向量
-  - 参数方程求导
+  - "向量代数与空间解析几何"
+  - "空间曲线切线与法平面"
+  - "空间直线与平面"
+  - "方向向量"
+  - "参数方程求导"
 error_causes:
-  - 题型识别断点
-  - 方法论调取失败
-  - 触发信息遗漏
-  - 动作链断裂
-  - 计算失误
-  - 概念边界混淆
-  - 表达式不熟
-  - 方向向量与法向量角色混淆
+  - "题型识别断点"
+  - "方法论调取失败"
+  - "触发信息遗漏"
+  - "动作链断裂"
+  - "计算失误"
+  - "概念边界混淆"
+  - "表达式不熟"
+  - "方向向量与法向量角色混淆"
+  - "切线方程模板调取失败"
 methods:
-  - 先判型
-  - 参数方程求导
-  - 方向向量提取
-  - 直线方程模板
-  - 空间直线参数式
-  - 空间直线点向式
-  - 标准化计算流程
+  - "先判型"
+  - "参数方程求导"
+  - "方向向量提取"
+  - "直线方程模板"
+  - "空间直线参数式"
+  - "空间直线点向式"
+  - "标准化计算流程"
 wiki_refs:
   - MATHWIKI-COVERAGE-GS
   - MATHWIKI-ACTION-GAP-001
-  - MATHWIKI-GS-METHOD-017
-  - MATHWIKI-GS-METHOD-045
-  - MATHWIKI-GS-TOPIC-012
 status: indexed
-last_updated: 2026-08-04
-formal_projection_sha256: 61defd952ee38cedc0dcec1b44518abd9b47c93c26abf2457b19a61769b648a4
+last_updated: "2026-09-09"
+formal_projection_sha256: "479b95d3948e1b89da238bf203e1d4042aaff0eb8ce01f8725db860f1f63f2ff"
 ---
 
 # GS-646 102465 参数曲线切线方程
@@ -70,3 +68,7 @@ formal_projection_sha256: 61defd952ee38cedc0dcec1b44518abd9b47c93c26abf2457b19a6
 - [[MATHWIKI-GS-METHOD-017_参数曲线切线点向式]]
 - [[MATHWIKI-GS-METHOD-045_空间解析几何对象判别链]]
 - [[SRC-WRONGCARDS-INDEX_全量错题卡覆盖索引]]
+
+## 2026-09-09 正式入库更新
+
+- 三坐标求导与切向量独立正确；切线点向式仍需提示调取。
