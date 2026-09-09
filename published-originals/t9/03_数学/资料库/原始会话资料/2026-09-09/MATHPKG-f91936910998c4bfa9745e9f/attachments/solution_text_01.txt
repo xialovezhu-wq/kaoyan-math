@@ -1,0 +1,44 @@
+:codex-annotation{index="1"}
+
+你的判断已经对。更严格地说，\(\theta\) 不是从圆心 \((0,1)\) 出发量出来的角，而是从极点 \(O=(0,0)\) 出发的射线方向角。圆盘 \(x^2+(y-1)^2\le1\) 完全位于 \(y\ge0\)，且与原点相切。
+
+固定一条射线，只有当 \(0\le r\le2\sin\theta\) 能取到正长度时，这条射线才真正进入圆盘，所以必须有 \(\sin\theta\ge0\)。在 \(0\le\theta<2\pi\) 中，\(\sin\theta\ge0\) 的范围正好是
+
+$$
+0\le\theta\le\pi.
+$$
+
+当 \(\theta\in(\pi,2\pi)\) 时，射线落在 \(y<0\) 一侧，除原点外与圆盘不相交，因此不能算入积分。\(\theta=0\) 和 \(\theta=\pi\) 时射线只碰到原点，属于边界，不影响积分结果。
+
+卷面写法
+
+$$
+D:\ x^2+(y-1)^2\le1,\qquad
+0\le z\le\frac{x^2+y^2}{8}.
+$$
+
+$$
+I=\frac18\iint_D(x^2+y^2)^{3/2}\,dx\,dy.
+$$
+
+由
+
+$$
+x^2+(y-1)^2\le1
+\quad\Longleftrightarrow\quad
+r^2-2r\sin\theta\le0,
+$$
+
+得
+
+$$
+0\le\theta\le\pi,\qquad 0\le r\le2\sin\theta.
+$$
+
+故
+
+$$
+I=\frac18\int_0^\pi\int_0^{2\sin\theta}r^4\,dr\,d\theta
+=\frac45\int_0^\pi\sin^5\theta\,d\theta
+=\frac{64}{75}.
+$$
