@@ -15,6 +15,50 @@ import math_concept_index as native
 SCHEMA = "study-personalization-math-v1"
 ENTRYPOINT = "personalization/math/manifest.json"
 EXPORT_ROOT = Path("错题知识网络/个人知识点索引/发布快照")
+# A knowledge-point query should read its own points, not the whole library.
+# Concepts and memberships live in one shard per point; records stay shared
+# because a single record belongs to many points, and are bucketed so that a
+# query parses only the buckets its points reference.
+LAYOUT = "math-sharded-v1"
+INDEX_FILE = "native-index.json"
+POINT_DIR = "points"
+RECORD_DIR = "records"
+BUCKET_COUNT = 256
+
+
+def _bucket_name(record_id, count: int = BUCKET_COUNT) -> str:
+    return "%03d.json" % (int(hashlib.sha256(str(record_id).encode("utf-8")).hexdigest()[:8], 16) % count)
+
+
+def _read_verified_json(path: Path, expected_sha256: str, message: str) -> dict:
+    if path.is_symlink():
+        raise ValueError("snapshot_symlink_forbidden")
+    data = path.read_bytes()
+    if hashlib.sha256(data).hexdigest() != expected_sha256:
+        raise ValueError(message)
+    return json.loads(data)
+
+
+def _resolve_keys(meta: dict, lookup: list, queries: list[str], weak_queries=()) -> tuple[set, set, list, list]:
+    """Map query names to canonical keys. Ambiguity and unknown stay explicit."""
+    names = {}
+    for name, key in lookup:
+        names.setdefault(name, set()).add(key)
+    bad = {native.normalize(p["alias"]): p for p in meta.get("alias_problems", [])}
+    weak = set(weak_queries)
+    keys, weak_keys, unknown, ambiguous = set(), set(), [], []
+    for query in queries:
+        norm = native.normalize(query)
+        if norm in bad:
+            ambiguous.append({"query": query, **bad[norm]})
+            continue
+        found = names.get(norm, set())
+        if not found:
+            unknown.append(query)
+        keys.update(found)
+        if query in weak:
+            weak_keys.update(found)
+    return keys, weak_keys, unknown, ambiguous
 
 
 def _read_meta(conn):
@@ -78,14 +122,13 @@ def export_snapshot(repo_root: Path, output_dir: Path) -> dict:
         # Publication is maintenance, so verify all indexed source stamps here.
         if any(native._stamp(root / p) != json.loads(stamp) for p, stamp, _ in source_rows if native._hot_source(p)):
             raise ValueError("math_personalization_index_stale")
-        payload = {"schema": SCHEMA, "version": identity["version"], "formal_version": identity["formal_version"],
-                   "meta": {k: meta[k] for k in ("schema", "coverage", "alias_problems", "scope_notes", "require_scope_check") if k in meta},
-                   "coverage": meta.get("receipt", {}).get("coverage", meta["coverage"]),
-                   "concepts": {k: json.loads(v) for k, v in conn.execute("SELECT key,payload FROM concepts ORDER BY key")},
-                   "lookup": list(conn.execute("SELECT name,key FROM lookup ORDER BY name,key")),
-                   "records": {k: json.loads(v) for k, v in conn.execute("SELECT id,payload FROM records ORDER BY id")},
-                   "membership": list(conn.execute("SELECT key,record_id FROM membership ORDER BY key,record_id")),
-                   "sources": [{"path": p, "sha256": sha} for p, _, sha in source_rows]}
+        header = {"schema": SCHEMA, "version": identity["version"], "formal_version": identity["formal_version"],
+                  "meta": {k: meta[k] for k in ("schema", "coverage", "alias_problems", "scope_notes", "require_scope_check") if k in meta},
+                  "coverage": meta.get("receipt", {}).get("coverage", meta["coverage"])}
+        concepts = {k: json.loads(v) for k, v in conn.execute("SELECT key,payload FROM concepts ORDER BY key")}
+        lookup = [[name, key] for name, key in conn.execute("SELECT name,key FROM lookup ORDER BY name,key")]
+        records = {k: json.loads(v) for k, v in conn.execute("SELECT id,payload FROM records ORDER BY id")}
+        membership = [[key, rid] for key, rid in conn.execute("SELECT key,record_id FROM membership ORDER BY key,record_id")]
         # Native raw-user evidence can have a complete turn file behind the
         # selected excerpt. Export the exact referenced caches as evidence too.
         cache_prefix = "错题知识网络/个人知识点索引/source_cache/"
@@ -101,7 +144,7 @@ def export_snapshot(repo_root: Path, output_dir: Path) -> dict:
             elif isinstance(value, list):
                 for child in value:
                     collect_cache_refs(child)
-        collect_cache_refs(payload["records"])
+        collect_cache_refs(records)
         evidence = []
         for reference, sha in sorted(evidence_refs.items()):
             source = root / reference
@@ -115,15 +158,41 @@ def export_snapshot(repo_root: Path, output_dir: Path) -> dict:
         if _identity(root, conn, meta) != identity:
             raise ValueError("math_personalization_source_changed_during_export")
     directory = Path(output_dir).resolve()
-    data_path = directory / "native-index.json"
+    data_path = directory / INDEX_FILE
     manifest_path = directory / "manifest.json"
-    data = native.canonical(payload).encode()
+    members_by_key = {}
+    for key, rid in membership:
+        members_by_key.setdefault(key, []).append(rid)
+    shard_files = {}
+    for key, concept in concepts.items():
+        relative = f"{POINT_DIR}/{key}.json"
+        body = native.canonical({"key": key, "label": concept.get("label"), "concept": concept,
+                                 "record_ids": members_by_key.get(key, [])}).encode()
+        _write(directory / relative, body)
+        shard_files[relative] = hashlib.sha256(body).hexdigest()
+    buckets = {}
+    for rid, payload in records.items():
+        buckets.setdefault(_bucket_name(rid), {})[rid] = payload
+    # Every bucket exists in every generation, so a query never has to guess
+    # whether a missing file means "empty" or "not published".
+    for number in range(BUCKET_COUNT):
+        name = "%03d.json" % number
+        relative = f"{RECORD_DIR}/{name}"
+        body = native.canonical({"records": buckets.get(name, {})}).encode()
+        _write(directory / relative, body)
+        shard_files[relative] = hashlib.sha256(body).hexdigest()
+    index_body = native.canonical({**header, "point_shard_dir": POINT_DIR, "record_bucket_dir": RECORD_DIR,
+                                   "record_bucket_count": BUCKET_COUNT, "lookup": lookup,
+                                   "files": shard_files}).encode()
+    _write(data_path, index_body)
     manifest = {"schema": SCHEMA, "subject": "math", "status": "ready", "version": identity["version"],
                 "formal_version": identity["formal_version"], "entrypoint": ENTRYPOINT,
                 "native_schema": native.SCHEMA, "native_implementation": native.IMPLEMENTATION,
-                "coverage": payload["coverage"], "data_file": "native-index.json",
-                "data_sha256": hashlib.sha256(data).hexdigest(), "source": "native_read_transaction_export",
-                "views": ["protected", "after_attempt", "direct"]}
+                "coverage": header["coverage"], "data_file": INDEX_FILE,
+                "data_sha256": hashlib.sha256(index_body).hexdigest(), "source": "native_read_transaction_export",
+                "views": ["protected", "after_attempt", "direct"], "layout": LAYOUT,
+                "point_shard_dir": POINT_DIR, "record_bucket_dir": RECORD_DIR,
+                "query_required": sorted([INDEX_FILE] + [f"{RECORD_DIR}/%03d.json" % n for n in range(BUCKET_COUNT)])}
     extra_files = []
     for reference, sha, raw in evidence:
         relative = "sources/" + sha + "/" + Path(reference).name
@@ -132,13 +201,68 @@ def export_snapshot(repo_root: Path, output_dir: Path) -> dict:
         extra_files.append({"source_path": str(target), "publish_path": "personalization/math/" + relative,
                             "kind": "personalization_source_evidence", "original_reference": reference,
                             "expected_sha256": sha})
+    shard_rows = [{"source_path": str(directory / relative), "publish_path": "personalization/math/" + relative,
+                   "kind": "personalization_shard", "expected_sha256": sha}
+                  for relative, sha in sorted(shard_files.items())]
     manifest["source_mappings"] = [{k: v for k, v in row.items() if k != "source_path"} for row in extra_files]
-    _write(data_path, payload)
-    _write(manifest_path, manifest)
+    _write(manifest_path, native.canonical(manifest).encode())
     return {**identity, "manifest_path": str(manifest_path), "entrypoint": ENTRYPOINT,
-            "files": [{"source_path": str(p), "publish_path": "personalization/math/" + p.name,
-                       "kind": "personalization_manifest" if p == manifest_path else "personalization_native_index"}
-                      for p in (manifest_path, data_path)] + extra_files}
+            "files": [{"source_path": str(manifest_path), "publish_path": ENTRYPOINT,
+                       "kind": "personalization_manifest"},
+                      {"source_path": str(data_path), "publish_path": "personalization/math/" + INDEX_FILE,
+                       "kind": "personalization_native_index"}] + shard_rows + extra_files}
+
+
+def _sharded_reader(path: Path, manifest: dict):
+    """Read the slim index now and each shard only when a query reaches it."""
+    index = _read_verified_json(path.parent / manifest["data_file"], manifest["data_sha256"],
+                                "math_personalization_snapshot_hash_mismatch")
+    files = index["files"]
+    cache = {}
+
+    def shard(relative: str) -> dict:
+        if relative not in files:
+            raise ValueError("math_personalization_shard_not_declared")
+        if relative not in cache:
+            cache[relative] = _read_verified_json(path.parent / relative, files[relative],
+                                                  "math_personalization_shard_hash_mismatch")
+        return cache[relative]
+
+    def concept_row(key: str) -> dict:
+        row = shard(f'{index["point_shard_dir"]}/{key}.json')
+        if row.get("key") != key:
+            raise ValueError("math_personalization_shard_key_mismatch")
+        return row
+
+    def records_for(ids) -> dict:
+        grouped = {}
+        for rid in ids:
+            grouped.setdefault(_bucket_name(rid, index["record_bucket_count"]), []).append(rid)
+        loaded = {}
+        for name, wanted in grouped.items():
+            rows = shard(f'{index["record_bucket_dir"]}/{name}')["records"]
+            for rid in wanted:
+                if rid not in rows:
+                    raise ValueError("math_personalization_record_missing")
+                loaded[rid] = rows[rid]
+        return loaded
+
+    return index, concept_row, records_for
+
+
+def plan_snapshot(manifest_path: Path, knowledge_points: list[str], weak_knowledge_points: list[str]) -> dict:
+    """Name the published shards one knowledge-point query will actually read."""
+    path = Path(manifest_path).resolve()
+    manifest = json.loads(path.read_text())
+    if manifest.get("schema") != SCHEMA or manifest.get("layout") != LAYOUT:
+        return {"layout": manifest.get("layout") or "legacy", "files": []}
+    index = _read_verified_json(path.parent / manifest["data_file"], manifest["data_sha256"],
+                                "math_personalization_snapshot_hash_mismatch")
+    base = manifest["entrypoint"].rsplit("/", 1)[0] + "/"
+    queries = list(dict.fromkeys(list(knowledge_points) + list(weak_knowledge_points)))
+    keys, _, _, _ = _resolve_keys(index["meta"], index["lookup"], queries)
+    return {"layout": LAYOUT,
+            "files": [f'{base}{index["point_shard_dir"]}/{key}.json' for key in sorted(keys)]}
 
 
 def query_snapshot(manifest_path: Path, knowledge_points: list[str], weak_knowledge_points: list[str],
@@ -151,17 +275,34 @@ def query_snapshot(manifest_path: Path, knowledge_points: list[str], weak_knowle
         raise ValueError("knowledge points must be string arrays")
     path = Path(manifest_path).resolve()
     manifest = json.loads(path.read_text())
-    if manifest.get("schema") != SCHEMA or manifest.get("data_file") != "native-index.json":
+    if manifest.get("schema") != SCHEMA or manifest.get("data_file") != INDEX_FILE:
         raise ValueError("invalid_math_personalization_manifest")
-    data_path = path.parent / "native-index.json"
-    if data_path.is_symlink():
-        raise ValueError("snapshot_symlink_forbidden")
-    data = data_path.read_bytes()
-    if hashlib.sha256(data).hexdigest() != manifest["data_sha256"]:
-        raise ValueError("math_personalization_snapshot_hash_mismatch")
-    snapshot = json.loads(data)
-    if any(snapshot[k] != manifest[k] for k in ("version", "formal_version", "schema")):
-        raise ValueError("math_personalization_snapshot_version_mismatch")
+    if manifest.get("layout") == LAYOUT:
+        index, concept_row, records_for = _sharded_reader(path, manifest)
+        meta, lookup, coverage = index["meta"], index["lookup"], index["coverage"]
+        if any(index[k] != manifest[k] for k in ("version", "formal_version", "schema")):
+            raise ValueError("math_personalization_snapshot_version_mismatch")
+    else:
+        # Generation-1 snapshots keep their single-file contract readable.
+        data_path = path.parent / manifest["data_file"]
+        if data_path.is_symlink():
+            raise ValueError("snapshot_symlink_forbidden")
+        data = data_path.read_bytes()
+        if hashlib.sha256(data).hexdigest() != manifest["data_sha256"]:
+            raise ValueError("math_personalization_snapshot_hash_mismatch")
+        snapshot = json.loads(data)
+        if any(snapshot[k] != manifest[k] for k in ("version", "formal_version", "schema")):
+            raise ValueError("math_personalization_snapshot_version_mismatch")
+        meta, lookup, coverage = snapshot["meta"], snapshot["lookup"], snapshot["coverage"]
+        members = {}
+        for key, rid in snapshot["membership"]:
+            members.setdefault(key, []).append(rid)
+
+        def concept_row(key):
+            return {"key": key, "concept": snapshot["concepts"][key], "record_ids": members.get(key, [])}
+
+        def records_for(ids):
+            return {rid: snapshot["records"][rid] for rid in ids}
     queries = list(dict.fromkeys(knowledge_points + weak_knowledge_points))
     query_hash = native.digest([knowledge_points, weak_knowledge_points, view])
     offset = 0
@@ -175,46 +316,30 @@ def query_snapshot(manifest_path: Path, knowledge_points: list[str], weak_knowle
         offset = state.get("offset")
         if type(offset) is not int or offset < 0:
             raise ValueError("invalid_cursor_offset")
-    meta = snapshot["meta"]
-    names = {}
-    for name, key in snapshot["lookup"]:
-        names.setdefault(name, set()).add(key)
-    bad = {native.normalize(p["alias"]): p for p in meta["alias_problems"]}
-    keys, weak_keys, unknown, ambiguous = set(), set(), [], []
-    for query in queries:
-        norm = native.normalize(query)
-        if norm in bad:
-            ambiguous.append({"query": query, **bad[norm]})
-            continue
-        found = names.get(norm, set())
-        if not found:
-            unknown.append(query)
-        keys.update(found)
-        if query in weak_knowledge_points:
-            weak_keys.update(found)
-    resolved, all_ids = [], set()
+    keys, weak_keys, unknown, ambiguous = _resolve_keys(meta, lookup, queries, weak_knowledge_points)
+    resolved, all_ids, memberships = [], set(), {}
     for key in sorted(keys):
-        concept = snapshot["concepts"][key]
+        row = concept_row(key)
+        concept = row["concept"]
         all_ids.update(concept["formal_ids"])
         resolved.append({k: v for k, v in concept.items() if k not in {"formal_ids", "source_refs"}} |
                         {"formal_count": len(concept["formal_ids"])})
-    memberships = {}
-    for key, rid in snapshot["membership"]:
-        if key in keys:
+        for rid in row["record_ids"]:
             memberships.setdefault(rid, set()).add(key)
+    records = records_for(sorted(memberships))
+
     def ranking(rid):
-        record = snapshot["records"][rid]
+        record = records[rid]
         priority = record.get("retrieval_priority", {})
         day = priority.get("latest_explicit_learning_date")
         return (not native.is_personal_record(record), not bool(memberships[rid] & weak_keys),
                 -int(bool(priority.get("explicit_personal_or_actual_delivery"))),
                 -int(day.replace("-", "")) if day else 0, rid)
-    ordered = [native._view(snapshot["records"][rid], view, resolved) for rid in sorted(memberships, key=ranking)]
+    ordered = [native._view(records[rid], view, resolved) for rid in sorted(memberships, key=ranking)]
     if offset > len(ordered):
         raise ValueError("invalid_cursor_offset")
     scope = {native.normalize(k): v for k, v in meta.get("scope_notes", {}).items()}
     checks = {native.normalize(k) for k in meta.get("require_scope_check", [])}
-    coverage = snapshot["coverage"]
     result = {"schema": SCHEMA, "status": "ambiguous_concept" if ambiguous else "unknown_concept" if not keys else "available",
               "version": manifest["version"], "formal_version": manifest["formal_version"], "view": view,
               "source": "published_native_snapshot", "source_entrypoint": ENTRYPOINT,
