@@ -1,0 +1,1246 @@
+{
+  "actual_count": 5,
+  "candidate_bundle_sha256": "92c7169d824e7a6a833ef002f36697998c49f10f323ef80c8463bd09890d007e",
+  "date": "2026-09-10",
+  "exam_date": "2026-12-20",
+  "mode": "prestudy",
+  "queue_id": "WQ-19bccd2aba670da669468094",
+  "reader_execution": {
+    "agent_id": "/root/anchor1_limits",
+    "execution_kind": "native_subagent",
+    "model": "opencode-go/deepseek-flash",
+    "note": "五个原生子代理各自实读其锚点的候选错题卡与题图后返回排序；父代理重开全部引用字节并复核哈希。",
+    "read_only": true,
+    "reader_agent_ids": [
+      "/root/anchor1_limits",
+      "/root/anchor2_extrema",
+      "/root/anchor3_space",
+      "/root/anchor4_polar",
+      "/root/anchor5_surface"
+    ],
+    "semantic_read_performed": true,
+    "status": "completed"
+  },
+  "request_version": "native-reader-semantic-v2",
+  "requested_count": 5,
+  "schema_version": "prestudy-warmup-v5",
+  "selected": [
+    {
+      "anchor_card_source_version": "b82c0f339c72a034a5a42581754884726e3c64705bafef48d17845f71a85d3b3",
+      "anchor_due_date": "2026-05-08",
+      "anchor_evidence": {
+        "card_id": "GS-354",
+        "declared_origin": "pending_user_confirmation",
+        "evidence_id": "EV-76e84776812c4a2c",
+        "gap_key": "GAP-e67812813398c721e999",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数极限",
+          "多元函数偏导",
+          "偏导定义",
+          "混合偏导存在性",
+          "二重极限",
+          "累次极限"
+        ],
+        "method_gap": {
+          "action_gap_type": "B1-GOAL",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先列出偏导、混合偏导、二重极限和累次极限各自的定义入口",
+          "expected_method": "按定义逐项判定多元函数性质",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "看到分段二元函数在原点同时判断偏导、混合偏导、二重极限和累次极限",
+          "missed_action": "用户作答过程未记录；不得据题图或解析认定用户曾混淆四类定义",
+          "need_user_confirmation": true,
+          "related_method_card_id": "H13-005"
+        },
+        "model_derived": false,
+        "needs_confirmation": true,
+        "origin": "pending_user_confirmation",
+        "origin_declared": true,
+        "origin_label": "待用户确认错因",
+        "personal_confirmed": false,
+        "raw_method_gap": {
+          "action_gap_type": "B1-GOAL",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先列出偏导、混合偏导、二重极限和累次极限各自的定义入口",
+          "expected_method": "按定义逐项判定多元函数性质",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "看到分段二元函数在原点同时判断偏导、混合偏导、二重极限和累次极限",
+          "missed_action": "用户作答过程未记录；不得据题图或解析认定用户曾混淆四类定义",
+          "need_user_confirmation": true,
+          "next_reminder": "看到分段二元函数性质判断，先拆清题目问偏导、混合偏导、二重极限还是累次极限，再分别回定义。",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "H13-005",
+          "repeat_count": 0,
+          "repeat_count_source": "无已验证的独立复发事件",
+          "review_priority": 3
+        },
+        "selection_value": 0,
+        "source_hash": "76e84776812c4a2c6f09c87f759cb8e771699b94a65a088deef7e1d64d563e4a",
+        "source_version": "76e84776812c4a2c6f09c87f759cb8e771699b94a65a088deef7e1d64d563e4a",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": false
+        },
+        "structured_targetable": false,
+        "wrong_point": "暂无明确个人错因；复做入口是区分偏导、混合偏导、二重极限与累次极限四类定义。"
+      },
+      "anchor_evidence_source_version": "76e84776812c4a2c6f09c87f759cb8e771699b94a65a088deef7e1d64d563e4a",
+      "anchor_failure_date": "2026-05-07",
+      "anchor_gap_occurrence_id": "GAPO-d3ebdc9a28bf919e4b59786e",
+      "anchor_id": "GS-354",
+      "anchor_unit_id": "MATH1-GS-WQ-GS354",
+      "anchor_unit_source_version": "8026c236fb8ad2a52219a9766c1bbc669a18ea39da492d95a91004efc350896d",
+      "anchor_wrong_event_id": "GS-354:2026-05-07",
+      "candidate_bundle_sha256": "92c7169d824e7a6a833ef002f36697998c49f10f323ef80c8463bd09890d007e",
+      "card_source_version": "b82c0f339c72a034a5a42581754884726e3c64705bafef48d17845f71a85d3b3",
+      "delivered_card_id": "GS-354",
+      "delivered_due_date": "2026-05-08",
+      "delivered_unit_id": "MATH1-GS-WQ-GS354",
+      "delivered_unit_source_version": "8026c236fb8ad2a52219a9766c1bbc669a18ea39da492d95a91004efc350896d",
+      "due_date": "2026-05-08",
+      "dynamic_priority": 383,
+      "evidence": {
+        "card_id": "GS-354",
+        "declared_origin": "pending_user_confirmation",
+        "evidence_id": "EV-76e84776812c4a2c",
+        "gap_key": "GAP-e67812813398c721e999",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数极限",
+          "多元函数偏导",
+          "偏导定义",
+          "混合偏导存在性",
+          "二重极限",
+          "累次极限"
+        ],
+        "method_gap": {
+          "action_gap_type": "B1-GOAL",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先列出偏导、混合偏导、二重极限和累次极限各自的定义入口",
+          "expected_method": "按定义逐项判定多元函数性质",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "看到分段二元函数在原点同时判断偏导、混合偏导、二重极限和累次极限",
+          "missed_action": "用户作答过程未记录；不得据题图或解析认定用户曾混淆四类定义",
+          "need_user_confirmation": true,
+          "related_method_card_id": "H13-005"
+        },
+        "model_derived": false,
+        "needs_confirmation": true,
+        "origin": "pending_user_confirmation",
+        "origin_declared": true,
+        "origin_label": "待用户确认错因",
+        "personal_confirmed": false,
+        "raw_method_gap": {
+          "action_gap_type": "B1-GOAL",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先列出偏导、混合偏导、二重极限和累次极限各自的定义入口",
+          "expected_method": "按定义逐项判定多元函数性质",
+          "knowledge_gap_or_method_gap": "方法调取失败",
+          "method_trigger": "看到分段二元函数在原点同时判断偏导、混合偏导、二重极限和累次极限",
+          "missed_action": "用户作答过程未记录；不得据题图或解析认定用户曾混淆四类定义",
+          "need_user_confirmation": true,
+          "next_reminder": "看到分段二元函数性质判断，先拆清题目问偏导、混合偏导、二重极限还是累次极限，再分别回定义。",
+          "opd_tag": [
+            "O目标",
+            "P思路"
+          ],
+          "related_method_card_id": "H13-005",
+          "repeat_count": 0,
+          "repeat_count_source": "无已验证的独立复发事件",
+          "review_priority": 3
+        },
+        "selection_value": 0,
+        "source_hash": "76e84776812c4a2c6f09c87f759cb8e771699b94a65a088deef7e1d64d563e4a",
+        "source_version": "76e84776812c4a2c6f09c87f759cb8e771699b94a65a088deef7e1d64d563e4a",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": false
+        },
+        "structured_targetable": false,
+        "wrong_point": "暂无明确个人错因；复做入口是区分偏导、混合偏导、二重极限与累次极限四类定义。"
+      },
+      "evidence_source_version": "76e84776812c4a2c6f09c87f759cb8e771699b94a65a088deef7e1d64d563e4a",
+      "formal_card_path": "错题知识网络/错题卡/GS-354_2020年第五题.md",
+      "id": "GS-354",
+      "mastery": 3,
+      "match_mode": "direct_due",
+      "match_reasons": [
+        "七天外原题本身正式到期"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 125,
+      "queue_item_id": "QI-0f17371b63cbe7e10d80",
+      "reader_query_id": "/root/anchor1_limits",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS354",
+      "selection_anchor": {
+        "anchor_due": true,
+        "anchor_id": "MATH-CONCEPT-dce6fcc0cc6dd9e8dd6b1614",
+        "anchor_kind": "concept_review",
+        "chosen_interval_days": 1,
+        "concept_key": "MATH-CONCEPT-dce6fcc0cc6dd9e8dd6b1614",
+        "deterministic_priority": 1,
+        "effective_due_date": "2026-09-10",
+        "independent_successes": 0,
+        "interval_reason": "高风险取窗口下界",
+        "label": "多元函数极限",
+        "last_real_activity_date": "2026-09-09",
+        "point_source_version": "3eecbc1eeda21d32ea248c508230eaad4cc0c60bcd54b299c1d2c9e1cfc488ca",
+        "real_activity_evidence": [
+          {
+            "date": "2026-09-09",
+            "evidence_id": "MFI-CLOSE-1b2d345b69db8327ebd0b627",
+            "kind": "wrong_or_unverified"
+          }
+        ],
+        "related_formal_ids": [
+          "GS-352",
+          "GS-353",
+          "GS-354",
+          "GS-355",
+          "GS-356",
+          "GS-357",
+          "GS-363",
+          "GS-370",
+          "GS-371",
+          "GS-372",
+          "GS-656"
+        ],
+        "source_refs": [
+          {
+            "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+            "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+          }
+        ],
+        "stage_name": "unstable",
+        "stage_window_days": [
+          1,
+          2
+        ]
+      },
+      "selection_mode": "native_concept_exact_gap",
+      "selection_reason": "七天外原题正式到期 2026-05-08；动态优先级 383",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+          "role": "anchor",
+          "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-354_2020年第五题.md",
+          "role": "candidate",
+          "sha256": "b82c0f339c72a034a5a42581754884726e3c64705bafef48d17845f71a85d3b3"
+        }
+      ],
+      "semantic_match_level": "exact_gap",
+      "semantic_plan_sha256": "d8b2ea8024d0983eab4e443d7f792e09be6fb57397e8b24b5dcca9f32f0fa1f7",
+      "semantic_private_reason": "分段二元函数在原点把偏导、混合偏导、二重极限、累次极限拆成四种对象分别回定义判定；与来源题 GS-371 的『连续性看全部路径、偏导只沿坐标轴』属同一具体断点。候选日期 2026-05-07 为该锚点全部候选中最早一组。",
+      "semantic_public_value_reason": "用一道间隔四个月的正式旧题，检验分段点处分性质回定义的判定流程是否稳定。",
+      "semantic_selection_v5": true,
+      "source": "考研数学错题预处理_结构化表.xlsx / 2020年第五题",
+      "unit_id": "MATH1-GS-WQ-GS354",
+      "unit_source_version": "8026c236fb8ad2a52219a9766c1bbc669a18ea39da492d95a91004efc350896d"
+    },
+    {
+      "anchor_card_source_version": "44b6e08afcc6b2c42cc616274a774e87389e00e882d993f313de184c5caaf1e0",
+      "anchor_due_date": "2026-05-08",
+      "anchor_evidence": {
+        "card_id": "GS-389",
+        "declared_origin": "pending_user_confirmation",
+        "evidence_id": "EV-c8820a4780c10816",
+        "gap_key": "GAP-f82ce903180f519ad05b",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数极值",
+          "多元函数偏导"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先联立一阶偏导为零求全体驻点",
+          "expected_method": "按多元极值流程求驻点、Hessian 判别并代回函数值",
+          "knowledge_gap_or_method_gap": "动作链断裂",
+          "method_trigger": "看到无条件二元函数极值，且驻点不止一个",
+          "missed_action": "缺少用户作答过程；低置信推断可能没有把驻点求解、二阶判别和代回函数值连成闭环",
+          "need_user_confirmation": true,
+          "related_method_card_id": "H13-012"
+        },
+        "model_derived": false,
+        "needs_confirmation": true,
+        "origin": "pending_user_confirmation",
+        "origin_declared": true,
+        "origin_label": "待用户确认错因",
+        "personal_confirmed": false,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先联立一阶偏导为零求全体驻点",
+          "expected_method": "按多元极值流程求驻点、Hessian 判别并代回函数值",
+          "knowledge_gap_or_method_gap": "动作链断裂",
+          "method_trigger": "看到无条件二元函数极值，且驻点不止一个",
+          "missed_action": "缺少用户作答过程；低置信推断可能没有把驻点求解、二阶判别和代回函数值连成闭环",
+          "need_user_confirmation": true,
+          "next_reminder": "看到无条件二元极值，先求全驻点，再逐点 Hessian 判别并代回函数值。",
+          "opd_tag": [
+            "D细节"
+          ],
+          "related_method_card_id": "H13-012",
+          "repeat_count": 1,
+          "repeat_count_source": "试点阶段估计，未全局统计",
+          "review_priority": 3
+        },
+        "selection_value": 0,
+        "source_hash": "c8820a4780c10816edfa00da6a8719cec2022b0908f792f77d8cd5d1e154776d",
+        "source_version": "c8820a4780c10816edfa00da6a8719cec2022b0908f792f77d8cd5d1e154776d",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": false
+        },
+        "structured_targetable": false,
+        "wrong_point": "暂无明确个人错因；复做入口是按无条件多元极值标准流程求驻点、算 Hessian 判别并代回函数值。"
+      },
+      "anchor_evidence_source_version": "c8820a4780c10816edfa00da6a8719cec2022b0908f792f77d8cd5d1e154776d",
+      "anchor_failure_date": "2026-05-07",
+      "anchor_gap_occurrence_id": "GAPO-697a77aeb015e787d5067502",
+      "anchor_id": "GS-389",
+      "anchor_unit_id": "MATH1-GS-WQ-GS389",
+      "anchor_unit_source_version": "e6a9e7f75fca5cabe3074259c73649c030921c2ef7bfe44e7df940090a6ebf2b",
+      "anchor_wrong_event_id": "GS-389:2026-05-07",
+      "candidate_bundle_sha256": "92c7169d824e7a6a833ef002f36697998c49f10f323ef80c8463bd09890d007e",
+      "card_source_version": "44b6e08afcc6b2c42cc616274a774e87389e00e882d993f313de184c5caaf1e0",
+      "delivered_card_id": "GS-389",
+      "delivered_due_date": "2026-05-08",
+      "delivered_unit_id": "MATH1-GS-WQ-GS389",
+      "delivered_unit_source_version": "e6a9e7f75fca5cabe3074259c73649c030921c2ef7bfe44e7df940090a6ebf2b",
+      "due_date": "2026-05-08",
+      "dynamic_priority": 383,
+      "evidence": {
+        "card_id": "GS-389",
+        "declared_origin": "pending_user_confirmation",
+        "evidence_id": "EV-c8820a4780c10816",
+        "gap_key": "GAP-f82ce903180f519ad05b",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数极值",
+          "多元函数偏导"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先联立一阶偏导为零求全体驻点",
+          "expected_method": "按多元极值流程求驻点、Hessian 判别并代回函数值",
+          "knowledge_gap_or_method_gap": "动作链断裂",
+          "method_trigger": "看到无条件二元函数极值，且驻点不止一个",
+          "missed_action": "缺少用户作答过程；低置信推断可能没有把驻点求解、二阶判别和代回函数值连成闭环",
+          "need_user_confirmation": true,
+          "related_method_card_id": "H13-012"
+        },
+        "model_derived": false,
+        "needs_confirmation": true,
+        "origin": "pending_user_confirmation",
+        "origin_declared": true,
+        "origin_label": "待用户确认错因",
+        "personal_confirmed": false,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先联立一阶偏导为零求全体驻点",
+          "expected_method": "按多元极值流程求驻点、Hessian 判别并代回函数值",
+          "knowledge_gap_or_method_gap": "动作链断裂",
+          "method_trigger": "看到无条件二元函数极值，且驻点不止一个",
+          "missed_action": "缺少用户作答过程；低置信推断可能没有把驻点求解、二阶判别和代回函数值连成闭环",
+          "need_user_confirmation": true,
+          "next_reminder": "看到无条件二元极值，先求全驻点，再逐点 Hessian 判别并代回函数值。",
+          "opd_tag": [
+            "D细节"
+          ],
+          "related_method_card_id": "H13-012",
+          "repeat_count": 1,
+          "repeat_count_source": "试点阶段估计，未全局统计",
+          "review_priority": 3
+        },
+        "selection_value": 0,
+        "source_hash": "c8820a4780c10816edfa00da6a8719cec2022b0908f792f77d8cd5d1e154776d",
+        "source_version": "c8820a4780c10816edfa00da6a8719cec2022b0908f792f77d8cd5d1e154776d",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": false
+        },
+        "structured_targetable": false,
+        "wrong_point": "暂无明确个人错因；复做入口是按无条件多元极值标准流程求驻点、算 Hessian 判别并代回函数值。"
+      },
+      "evidence_source_version": "c8820a4780c10816edfa00da6a8719cec2022b0908f792f77d8cd5d1e154776d",
+      "formal_card_path": "错题知识网络/错题卡/GS-389_2020年第17题.md",
+      "id": "GS-389",
+      "mastery": 3,
+      "match_mode": "direct_due",
+      "match_reasons": [
+        "七天外原题本身正式到期"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 125,
+      "queue_item_id": "QI-95562aa77f34aa56ae31",
+      "reader_query_id": "/root/anchor1_limits",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS389",
+      "selection_anchor": {
+        "anchor_due": true,
+        "anchor_id": "MATH-CONCEPT-c2fa69f9256338c086b9b4a1",
+        "anchor_kind": "concept_review",
+        "chosen_interval_days": 1,
+        "concept_key": "MATH-CONCEPT-c2fa69f9256338c086b9b4a1",
+        "deterministic_priority": 1,
+        "effective_due_date": "2026-09-10",
+        "independent_successes": 0,
+        "interval_reason": "高风险取窗口下界",
+        "label": "多元函数极值",
+        "last_real_activity_date": "2026-09-09",
+        "point_source_version": "e997f25c393b7972f6e8d816fcb03df7e6c4834de7c3173f75d4b6d5d2a573b7",
+        "real_activity_evidence": [
+          {
+            "date": "2026-09-09",
+            "evidence_id": "MFI-CLOSE-1b2d345b69db8327ebd0b627",
+            "kind": "wrong_or_unverified"
+          },
+          {
+            "date": "2026-09-09",
+            "evidence_id": "MFI-CLOSE-1b2d345b69db8327ebd0b627",
+            "kind": "wrong_or_unverified"
+          }
+        ],
+        "related_formal_ids": [
+          "GS-374",
+          "GS-382",
+          "GS-386",
+          "GS-387",
+          "GS-388",
+          "GS-389",
+          "GS-390",
+          "GS-391",
+          "GS-392",
+          "GS-393",
+          "GS-394",
+          "GS-395",
+          "GS-396",
+          "GS-424",
+          "GS-797",
+          "GS-798"
+        ],
+        "source_refs": [
+          {
+            "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+            "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+          }
+        ],
+        "stage_name": "unstable",
+        "stage_window_days": [
+          1,
+          2
+        ]
+      },
+      "selection_mode": "native_concept_exact_gap",
+      "selection_reason": "七天外原题正式到期 2026-05-08；动态优先级 383",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+          "role": "anchor",
+          "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-389_2020年第17题.md",
+          "role": "candidate",
+          "sha256": "44b6e08afcc6b2c42cc616274a774e87389e00e882d993f313de184c5caaf1e0"
+        }
+      ],
+      "semantic_match_level": "exact_gap",
+      "semantic_plan_sha256": "d8b2ea8024d0983eab4e443d7f792e09be6fb57397e8b24b5dcca9f32f0fa1f7",
+      "semantic_private_reason": "无条件多元极值标准流程：求全部驻点、逐点二阶判别区分极值与鞍点、代回函数值；与来源题 GS-390 断掉的动作链同型。候选日期 2026-05-07 为该锚点最早一组。",
+      "semantic_public_value_reason": "用另一组函数结构不同的旧题，检验多元极值完整流程能否独立走完。",
+      "semantic_selection_v5": true,
+      "source": "考研数学错题预处理_结构化表.xlsx / 2020年第17题",
+      "unit_id": "MATH1-GS-WQ-GS389",
+      "unit_source_version": "e6a9e7f75fca5cabe3074259c73649c030921c2ef7bfe44e7df940090a6ebf2b"
+    },
+    {
+      "anchor_card_source_version": "8a02ffce74f2f130259dd6f397bdf429741089527cf3e2460513a61717deabb1",
+      "anchor_due_date": "2026-07-17",
+      "anchor_evidence": {
+        "card_id": "GS-469",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-024513309d6d815a",
+        "gap_key": "GAP-fe6eeacea6f59883eee7",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "一元函数微分学应用",
+          "极坐标",
+          "参数方程",
+          "参数方程求导",
+          "切线方程",
+          "导数几何意义"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "写出参数方程并求出切点后，立即分别计算 \\(dx/d\\theta\\) 与 \\(dy/d\\theta\\)，不要另找曲线点。",
+          "expected_method": "先转成以 \\(\\theta\\) 为参数的参数方程并求切点，再计算 \\(dx/d\\theta\\) 与 \\(dy/d\\theta\\)；若 \\(dx/d\\theta\\ne0\\)，用两者之比求斜率，若 \\(dx/d\\theta=0,\\ dy/d\\theta\\ne0\\)，判为竖直切线 \\(x=x_0\\)。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "看到极坐标曲线 \\(r=r(\\theta)\\) 要求指定 \\(\\theta\\) 处切线",
+          "missed_action": "本次在求出切点 \\((0,1)\\) 和截距后，没有用参数导数求切线方向，反而想找第二个曲线点求 \\(k\\)；同时不知道分母为零而分子非零时应写竖直切线 \\(x=x_0\\)。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "待匹配"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "写出参数方程并求出切点后，立即分别计算 \\(dx/d\\theta\\) 与 \\(dy/d\\theta\\)，不要另找曲线点。",
+          "expected_method": "先转成以 \\(\\theta\\) 为参数的参数方程并求切点，再计算 \\(dx/d\\theta\\) 与 \\(dy/d\\theta\\)；若 \\(dx/d\\theta\\ne0\\)，用两者之比求斜率，若 \\(dx/d\\theta=0,\\ dy/d\\theta\\ne0\\)，判为竖直切线 \\(x=x_0\\)。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "看到极坐标曲线 \\(r=r(\\theta)\\) 要求指定 \\(\\theta\\) 处切线",
+          "missed_action": "本次在求出切点 \\((0,1)\\) 和截距后，没有用参数导数求切线方向，反而想找第二个曲线点求 \\(k\\)；同时不知道分母为零而分子非零时应写竖直切线 \\(x=x_0\\)。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到极坐标曲线求切线，先转参数方程、求切点，再求两个参数导数；第二个曲线点给的是割线，且 \\(dx/d\\theta=0,\\ dy/d\\theta\\ne0\\) 时直接写 \\(x=x_0\\)。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "待匹配",
+          "repeat_count": 2,
+          "repeat_count_source": "wrong_history",
+          "review_batch": "MATHWIKI-REVIEW-066",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "024513309d6d815a103ae88a17ad51a07a06ee3dd3ecdcd5d1399495b6706f28",
+        "source_version": "024513309d6d815a103ae88a17ad51a07a06ee3dd3ecdcd5d1399495b6706f28",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "首次错误是没有把极坐标曲线转成参数方程；本次已经能转化并求出切点，但写出 \\(y=kx+1\\) 后想另找一个曲线点求斜率，没有用 \\(dy/dx=(dy/d\\theta)/(dx/d\\theta)\\)，也未掌握 \\(dx/d\\theta=0,\\ dy/d\\theta\\ne0\\) 对应竖直切线 \\(x=x_0\\)。"
+      },
+      "anchor_evidence_source_version": "024513309d6d815a103ae88a17ad51a07a06ee3dd3ecdcd5d1399495b6706f28",
+      "anchor_failure_date": "2026-07-16",
+      "anchor_gap_occurrence_id": "GAPO-05344ed0867a08343717a171",
+      "anchor_id": "GS-469",
+      "anchor_unit_id": "MATH1-GS-WQ-GS469",
+      "anchor_unit_source_version": "2291b476fb4ea4112d8f0f49201359ef5381ea6f09f3abe2ec1ec1330bd70a46",
+      "anchor_wrong_event_id": "GS-469|2026-07-16|2",
+      "candidate_bundle_sha256": "92c7169d824e7a6a833ef002f36697998c49f10f323ef80c8463bd09890d007e",
+      "card_source_version": "8a02ffce74f2f130259dd6f397bdf429741089527cf3e2460513a61717deabb1",
+      "delivered_card_id": "GS-469",
+      "delivered_due_date": "2026-07-17",
+      "delivered_unit_id": "MATH1-GS-WQ-GS469",
+      "delivered_unit_source_version": "2291b476fb4ea4112d8f0f49201359ef5381ea6f09f3abe2ec1ec1330bd70a46",
+      "due_date": "2026-07-17",
+      "dynamic_priority": 208,
+      "evidence": {
+        "card_id": "GS-469",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-024513309d6d815a",
+        "gap_key": "GAP-fe6eeacea6f59883eee7",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "一元函数微分学应用",
+          "极坐标",
+          "参数方程",
+          "参数方程求导",
+          "切线方程",
+          "导数几何意义"
+        ],
+        "method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "写出参数方程并求出切点后，立即分别计算 \\(dx/d\\theta\\) 与 \\(dy/d\\theta\\)，不要另找曲线点。",
+          "expected_method": "先转成以 \\(\\theta\\) 为参数的参数方程并求切点，再计算 \\(dx/d\\theta\\) 与 \\(dy/d\\theta\\)；若 \\(dx/d\\theta\\ne0\\)，用两者之比求斜率，若 \\(dx/d\\theta=0,\\ dy/d\\theta\\ne0\\)，判为竖直切线 \\(x=x_0\\)。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "看到极坐标曲线 \\(r=r(\\theta)\\) 要求指定 \\(\\theta\\) 处切线",
+          "missed_action": "本次在求出切点 \\((0,1)\\) 和截距后，没有用参数导数求切线方向，反而想找第二个曲线点求 \\(k\\)；同时不知道分母为零而分子非零时应写竖直切线 \\(x=x_0\\)。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "待匹配"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "B4-CHAIN",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "写出参数方程并求出切点后，立即分别计算 \\(dx/d\\theta\\) 与 \\(dy/d\\theta\\)，不要另找曲线点。",
+          "expected_method": "先转成以 \\(\\theta\\) 为参数的参数方程并求切点，再计算 \\(dx/d\\theta\\) 与 \\(dy/d\\theta\\)；若 \\(dx/d\\theta\\ne0\\)，用两者之比求斜率，若 \\(dx/d\\theta=0,\\ dy/d\\theta\\ne0\\)，判为竖直切线 \\(x=x_0\\)。",
+          "knowledge_gap_or_method_gap": "A+B混合",
+          "method_trigger": "看到极坐标曲线 \\(r=r(\\theta)\\) 要求指定 \\(\\theta\\) 处切线",
+          "missed_action": "本次在求出切点 \\((0,1)\\) 和截距后，没有用参数导数求切线方向，反而想找第二个曲线点求 \\(k\\)；同时不知道分母为零而分子非零时应写竖直切线 \\(x=x_0\\)。",
+          "need_user_confirmation": false,
+          "next_reminder": "看到极坐标曲线求切线，先转参数方程、求切点，再求两个参数导数；第二个曲线点给的是割线，且 \\(dx/d\\theta=0,\\ dy/d\\theta\\ne0\\) 时直接写 \\(x=x_0\\)。",
+          "opd_tag": [
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "待匹配",
+          "repeat_count": 2,
+          "repeat_count_source": "wrong_history",
+          "review_batch": "MATHWIKI-REVIEW-066",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "024513309d6d815a103ae88a17ad51a07a06ee3dd3ecdcd5d1399495b6706f28",
+        "source_version": "024513309d6d815a103ae88a17ad51a07a06ee3dd3ecdcd5d1399495b6706f28",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "首次错误是没有把极坐标曲线转成参数方程；本次已经能转化并求出切点，但写出 \\(y=kx+1\\) 后想另找一个曲线点求斜率，没有用 \\(dy/dx=(dy/d\\theta)/(dx/d\\theta)\\)，也未掌握 \\(dx/d\\theta=0,\\ dy/d\\theta\\ne0\\) 对应竖直切线 \\(x=x_0\\)。"
+      },
+      "evidence_source_version": "024513309d6d815a103ae88a17ad51a07a06ee3dd3ecdcd5d1399495b6706f28",
+      "formal_card_path": "错题知识网络/错题卡/GS-469_58043极坐标曲线切线.md",
+      "id": "GS-469",
+      "mastery": 3,
+      "match_mode": "direct_due",
+      "match_reasons": [
+        "七天外原题本身正式到期"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 2,
+      "overdue_days": 55,
+      "queue_item_id": "QI-1a36703774b7fb68b4f0",
+      "reader_query_id": "/root/anchor1_limits",
+      "recurrence_count": 1,
+      "score_target_unit_id": "MATH1-GS-WQ-GS469",
+      "selection_anchor": {
+        "anchor_due": true,
+        "anchor_id": "MATH-CONCEPT-1f9d3b0a0dbc926a692b201d",
+        "anchor_kind": "concept_review",
+        "chosen_interval_days": 1,
+        "concept_key": "MATH-CONCEPT-1f9d3b0a0dbc926a692b201d",
+        "deterministic_priority": 1,
+        "effective_due_date": "2026-09-10",
+        "independent_successes": 0,
+        "interval_reason": "高风险取窗口下界",
+        "label": "空间直线与平面",
+        "last_real_activity_date": "2026-09-09",
+        "point_source_version": "edce95c12501a49703be36d0333f1da8f68e89639e170289c14b58b8dd86dbfc",
+        "real_activity_evidence": [
+          {
+            "date": "2026-09-09",
+            "evidence_id": "MFI-CLOSE-1b2d345b69db8327ebd0b627",
+            "kind": "wrong_or_unverified"
+          }
+        ],
+        "related_formal_ids": [
+          "GS-627",
+          "GS-628",
+          "GS-629",
+          "GS-645",
+          "GS-646",
+          "GS-647",
+          "GS-748",
+          "GS-773",
+          "GS-774",
+          "GS-776",
+          "GS-777",
+          "GS-783",
+          "GS-784",
+          "GS-796"
+        ],
+        "source_refs": [
+          {
+            "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+            "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+          }
+        ],
+        "stage_name": "unstable",
+        "stage_window_days": [
+          1,
+          2
+        ]
+      },
+      "selection_mode": "native_concept_confusable_boundary",
+      "selection_reason": "七天外原题正式到期 2026-07-17；动态优先级 208",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+          "role": "anchor",
+          "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-469_58043极坐标曲线切线.md",
+          "role": "candidate",
+          "sha256": "8a02ffce74f2f130259dd6f397bdf429741089527cf3e2460513a61717deabb1"
+        }
+      ],
+      "semantic_match_level": "confusable_boundary",
+      "semantic_plan_sha256": "d8b2ea8024d0983eab4e443d7f792e09be6fb57397e8b24b5dcca9f32f0fa1f7",
+      "semantic_private_reason": "该锚点（空间直线与平面）在当前门禁下没有任何可交付旧题：关联题 GS-647 今日已交付，其余全部在 Day 0-7 或已排除。只能退到同一来源题的相邻知识点『参数方程求导』，用平面参数曲线的切线方向替代，覆盖『先参数化求方向』这一步；不能覆盖切向量同时作法平面法向量的对象关系，属易混边界级别。",
+      "semantic_public_value_reason": "检验把曲线参数化后求导数作为方向量的动作是否稳定。",
+      "semantic_selection_v5": true,
+      "source": "58043 / 2026-05-17",
+      "unit_id": "MATH1-GS-WQ-GS469",
+      "unit_source_version": "2291b476fb4ea4112d8f0f49201359ef5381ea6f09f3abe2ec1ec1330bd70a46"
+    },
+    {
+      "anchor_card_source_version": "3d7cb67ca4e7bb08592d4dba56843b5591d1e8606ced140a479ed2ba8edddb9f",
+      "anchor_due_date": "2026-05-08",
+      "anchor_evidence": {
+        "card_id": "GS-410",
+        "declared_origin": "pending_user_confirmation",
+        "evidence_id": "EV-4e577f7a19e444d3",
+        "gap_key": "GAP-07ea948c08d242ed8edf",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "二重积分",
+          "二重积分极坐标法"
+        ],
+        "method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先写出 r²=cos2θ，并由 cos2θ≥0 与第一象限限制角度范围",
+          "expected_method": "用极坐标化曲线边界，并先由非负性和象限确定角域",
+          "knowledge_gap_or_method_gap": "条件检查遗漏",
+          "method_trigger": "看到含 (x²+y²)² 的曲线且区域在第一象限",
+          "missed_action": "缺少用户作答过程；低置信推断可能没有先检查极坐标边界非负条件和角域",
+          "need_user_confirmation": true,
+          "related_method_card_id": "H14-005"
+        },
+        "model_derived": false,
+        "needs_confirmation": true,
+        "origin": "pending_user_confirmation",
+        "origin_declared": true,
+        "origin_label": "待用户确认错因",
+        "personal_confirmed": false,
+        "raw_method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先写出 r²=cos2θ，并由 cos2θ≥0 与第一象限限制角度范围",
+          "expected_method": "用极坐标化曲线边界，并先由非负性和象限确定角域",
+          "knowledge_gap_or_method_gap": "条件检查遗漏",
+          "method_trigger": "看到含 (x²+y²)² 的曲线且区域在第一象限",
+          "missed_action": "缺少用户作答过程；低置信推断可能没有先检查极坐标边界非负条件和角域",
+          "need_user_confirmation": true,
+          "next_reminder": "看到 (x²+y²)² 型曲线，先极坐标化，再用非负性和象限确定角域。",
+          "opd_tag": [
+            "D细节"
+          ],
+          "related_method_card_id": "H14-005",
+          "repeat_count": 1,
+          "repeat_count_source": "试点阶段估计，未全局统计",
+          "review_priority": 3
+        },
+        "selection_value": 0,
+        "source_hash": "4e577f7a19e444d38e7aee102b8f969189a5310389f05a976cc285fa6712844d",
+        "source_version": "4e577f7a19e444d38e7aee102b8f969189a5310389f05a976cc285fa6712844d",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": false
+        },
+        "structured_targetable": false,
+        "wrong_point": "暂无明确个人错因；复做入口是把 \\((x^2+y^2)^2=x^2-y^2\\) 化成极坐标边界 \\(r=\\sqrt{\\cos2\\theta}\\)，再由第一象限限制角域。"
+      },
+      "anchor_evidence_source_version": "4e577f7a19e444d38e7aee102b8f969189a5310389f05a976cc285fa6712844d",
+      "anchor_failure_date": "2026-05-07",
+      "anchor_gap_occurrence_id": "GAPO-ccb1e8615637650d75a3b351",
+      "anchor_id": "GS-410",
+      "anchor_unit_id": "MATH1-GS-WQ-GS410",
+      "anchor_unit_source_version": "45459152c9a217ae85b1754cb6353e5ebb6c502d43edb852e4ba043ad410c8a7",
+      "anchor_wrong_event_id": "GS-410:2026-05-07",
+      "candidate_bundle_sha256": "92c7169d824e7a6a833ef002f36697998c49f10f323ef80c8463bd09890d007e",
+      "card_source_version": "3d7cb67ca4e7bb08592d4dba56843b5591d1e8606ced140a479ed2ba8edddb9f",
+      "delivered_card_id": "GS-410",
+      "delivered_due_date": "2026-05-08",
+      "delivered_unit_id": "MATH1-GS-WQ-GS410",
+      "delivered_unit_source_version": "45459152c9a217ae85b1754cb6353e5ebb6c502d43edb852e4ba043ad410c8a7",
+      "due_date": "2026-05-08",
+      "dynamic_priority": 383,
+      "evidence": {
+        "card_id": "GS-410",
+        "declared_origin": "pending_user_confirmation",
+        "evidence_id": "EV-4e577f7a19e444d3",
+        "gap_key": "GAP-07ea948c08d242ed8edf",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "二重积分",
+          "二重积分极坐标法"
+        ],
+        "method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先写出 r²=cos2θ，并由 cos2θ≥0 与第一象限限制角度范围",
+          "expected_method": "用极坐标化曲线边界，并先由非负性和象限确定角域",
+          "knowledge_gap_or_method_gap": "条件检查遗漏",
+          "method_trigger": "看到含 (x²+y²)² 的曲线且区域在第一象限",
+          "missed_action": "缺少用户作答过程；低置信推断可能没有先检查极坐标边界非负条件和角域",
+          "need_user_confirmation": true,
+          "related_method_card_id": "H14-005"
+        },
+        "model_derived": false,
+        "needs_confirmation": true,
+        "origin": "pending_user_confirmation",
+        "origin_declared": true,
+        "origin_label": "待用户确认错因",
+        "personal_confirmed": false,
+        "raw_method_gap": {
+          "action_gap_type": "B5-CHECK",
+          "confidence": "low",
+          "enabled": true,
+          "evidence_origin": "pending_user_confirmation",
+          "expected_first_action": "先写出 r²=cos2θ，并由 cos2θ≥0 与第一象限限制角度范围",
+          "expected_method": "用极坐标化曲线边界，并先由非负性和象限确定角域",
+          "knowledge_gap_or_method_gap": "条件检查遗漏",
+          "method_trigger": "看到含 (x²+y²)² 的曲线且区域在第一象限",
+          "missed_action": "缺少用户作答过程；低置信推断可能没有先检查极坐标边界非负条件和角域",
+          "need_user_confirmation": true,
+          "next_reminder": "看到 (x²+y²)² 型曲线，先极坐标化，再用非负性和象限确定角域。",
+          "opd_tag": [
+            "D细节"
+          ],
+          "related_method_card_id": "H14-005",
+          "repeat_count": 1,
+          "repeat_count_source": "试点阶段估计，未全局统计",
+          "review_priority": 3
+        },
+        "selection_value": 0,
+        "source_hash": "4e577f7a19e444d38e7aee102b8f969189a5310389f05a976cc285fa6712844d",
+        "source_version": "4e577f7a19e444d38e7aee102b8f969189a5310389f05a976cc285fa6712844d",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": false
+        },
+        "structured_targetable": false,
+        "wrong_point": "暂无明确个人错因；复做入口是把 \\((x^2+y^2)^2=x^2-y^2\\) 化成极坐标边界 \\(r=\\sqrt{\\cos2\\theta}\\)，再由第一象限限制角域。"
+      },
+      "evidence_source_version": "4e577f7a19e444d38e7aee102b8f969189a5310389f05a976cc285fa6712844d",
+      "formal_card_path": "错题知识网络/错题卡/GS-410_2021年真题第21题.md",
+      "id": "GS-410",
+      "mastery": 3,
+      "match_mode": "direct_due",
+      "match_reasons": [
+        "七天外原题本身正式到期"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 125,
+      "queue_item_id": "QI-93b8ff321ca80561ddd3",
+      "reader_query_id": "/root/anchor1_limits",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS410",
+      "selection_anchor": {
+        "anchor_due": true,
+        "anchor_id": "MATH-CONCEPT-cddd7d06c5afc27941ade0df",
+        "anchor_kind": "concept_review",
+        "chosen_interval_days": 1,
+        "concept_key": "MATH-CONCEPT-cddd7d06c5afc27941ade0df",
+        "deterministic_priority": 1,
+        "effective_due_date": "2026-09-10",
+        "independent_successes": 0,
+        "interval_reason": "高风险取窗口下界",
+        "label": "二重积分极坐标法",
+        "last_real_activity_date": "2026-09-09",
+        "point_source_version": "9172096a892c16bcefa662bd02c7d6db1af0db514f25590829cae6fb5a7163e4",
+        "real_activity_evidence": [
+          {
+            "date": "2026-09-09",
+            "evidence_id": "MFI-CLOSE-1b2d345b69db8327ebd0b627",
+            "kind": "wrong_or_unverified"
+          }
+        ],
+        "related_formal_ids": [
+          "GS-400",
+          "GS-401",
+          "GS-404",
+          "GS-407",
+          "GS-409",
+          "GS-410",
+          "GS-411",
+          "GS-412",
+          "GS-413",
+          "GS-667",
+          "GS-680",
+          "GS-700",
+          "GS-707"
+        ],
+        "source_refs": [
+          {
+            "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+            "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+          }
+        ],
+        "stage_name": "unstable",
+        "stage_window_days": [
+          1,
+          2
+        ]
+      },
+      "selection_mode": "native_concept_exact_gap",
+      "selection_reason": "七天外原题正式到期 2026-05-08；动态优先级 383",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+          "role": "anchor",
+          "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-410_2021年真题第21题.md",
+          "role": "candidate",
+          "sha256": "3d7cb67ca4e7bb08592d4dba56843b5591d1e8606ced140a479ed2ba8edddb9f"
+        }
+      ],
+      "semantic_match_level": "exact_gap",
+      "semantic_plan_sha256": "d8b2ea8024d0983eab4e443d7f792e09be6fb57397e8b24b5dcca9f32f0fa1f7",
+      "semantic_private_reason": "隐式曲线围成区域化成极坐标边界、由非负性与象限定角域、补雅可比因子；与来源题 GS-700 投影后设限那一段同型。候选日期 2026-07-02 为该锚点最早一组。",
+      "semantic_public_value_reason": "换一道平面区域旧题，检验极坐标设限与角域判定能否脱离原题情境。",
+      "semantic_selection_v5": true,
+      "source": "考研数学错题预处理_结构化表.xlsx / 2021年真题第21题",
+      "unit_id": "MATH1-GS-WQ-GS410",
+      "unit_source_version": "45459152c9a217ae85b1754cb6353e5ebb6c502d43edb852e4ba043ad410c8a7"
+    },
+    {
+      "anchor_card_source_version": "d48571261cd356897afbf4da54fdd2d08766335171077c676f9a1af863dc9ae2",
+      "anchor_due_date": "2026-08-15",
+      "anchor_evidence": {
+        "card_id": "GS-763",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-84fc51012a7fc1b4",
+        "gap_key": "GAP-ccc02e022b566e1f8a89",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "第二型曲面积分",
+          "高斯公式",
+          "三重积分",
+          "曲面定向",
+          "有向投影面积",
+          "柱面坐标",
+          "空间区域对称性"
+        ],
+        "method_gap": {
+          "action_gap_type": "A-KG",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先保留 |x|，写清 dxdy、dydz 的方向角色，再决定哪一部分可用 Gauss。",
+          "expected_method": "先按两个分量拆分，分别检查 Gauss 合法性，再使用有向投影和坐标反射。",
+          "knowledge_gap_or_method_gap": "二型曲面积分对象、条件与对称联动",
+          "method_trigger": "曲面边界含 |x| 且积分区域关于 yOz 对称",
+          "missed_action": "丢失绝对值，并把有向投影与对称条件当成普通无向积分处理。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-013"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "A-KG",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先保留 |x|，写清 dxdy、dydz 的方向角色，再决定哪一部分可用 Gauss。",
+          "expected_method": "先按两个分量拆分，分别检查 Gauss 合法性，再使用有向投影和坐标反射。",
+          "knowledge_gap_or_method_gap": "二型曲面积分对象、条件与对称联动",
+          "method_trigger": "曲面边界含 |x| 且积分区域关于 yOz 对称",
+          "missed_action": "丢失绝对值，并把有向投影与对称条件当成普通无向积分处理。",
+          "need_user_confirmation": false,
+          "next_reminder": "第二型曲面积分先辨认微分方向，再检查绝对值可微性与区域对称。",
+          "opd_tag": [
+            "O目标",
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H18-013",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-08-14 frozen wrong capture",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "84fc51012a7fc1b4a48c18264809a88fbe91d1f2501cc8d8f224028a2c57b0c1",
+        "source_version": "84fc51012a7fc1b4a48c18264809a88fbe91d1f2501cc8d8f224028a2c57b0c1",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "首个表达断点是把 |xy| 写成 x|y|，丢失 |x|；随后没有稳定检查绝对值带来的可微性、第二型曲面积分的有向投影以及关于 yOz 的对称抵消条件。"
+      },
+      "anchor_evidence_source_version": "84fc51012a7fc1b4a48c18264809a88fbe91d1f2501cc8d8f224028a2c57b0c1",
+      "anchor_failure_date": "2026-08-14",
+      "anchor_gap_occurrence_id": "GAPO-812bf1ee4a7dcbd6cf286965",
+      "anchor_id": "GS-763",
+      "anchor_unit_id": "MATH1-GS-WQ-GS763",
+      "anchor_unit_source_version": "17801e87932f19931aa1b19081c834e652c671070e5c88bb33a680d92bbadf68",
+      "anchor_wrong_event_id": "GS-763|2026-08-14|1",
+      "candidate_bundle_sha256": "92c7169d824e7a6a833ef002f36697998c49f10f323ef80c8463bd09890d007e",
+      "card_source_version": "d48571261cd356897afbf4da54fdd2d08766335171077c676f9a1af863dc9ae2",
+      "delivered_card_id": "GS-763",
+      "delivered_due_date": "2026-08-15",
+      "delivered_unit_id": "MATH1-GS-WQ-GS763",
+      "delivered_unit_source_version": "17801e87932f19931aa1b19081c834e652c671070e5c88bb33a680d92bbadf68",
+      "due_date": "2026-08-15",
+      "dynamic_priority": 119,
+      "evidence": {
+        "card_id": "GS-763",
+        "declared_origin": "user_confirmed",
+        "evidence_id": "EV-84fc51012a7fc1b4",
+        "gap_key": "GAP-ccc02e022b566e1f8a89",
+        "has_any_evidence": true,
+        "has_observed_failure": true,
+        "has_specific_evidence": true,
+        "knowledge": [
+          "多元函数积分学",
+          "第二型曲面积分",
+          "高斯公式",
+          "三重积分",
+          "曲面定向",
+          "有向投影面积",
+          "柱面坐标",
+          "空间区域对称性"
+        ],
+        "method_gap": {
+          "action_gap_type": "A-KG",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先保留 |x|，写清 dxdy、dydz 的方向角色，再决定哪一部分可用 Gauss。",
+          "expected_method": "先按两个分量拆分，分别检查 Gauss 合法性，再使用有向投影和坐标反射。",
+          "knowledge_gap_or_method_gap": "二型曲面积分对象、条件与对称联动",
+          "method_trigger": "曲面边界含 |x| 且积分区域关于 yOz 对称",
+          "missed_action": "丢失绝对值，并把有向投影与对称条件当成普通无向积分处理。",
+          "need_user_confirmation": false,
+          "related_method_card_id": "H18-013"
+        },
+        "model_derived": false,
+        "needs_confirmation": false,
+        "origin": "user_confirmed",
+        "origin_declared": true,
+        "origin_label": "用户确认错因",
+        "personal_confirmed": true,
+        "raw_method_gap": {
+          "action_gap_type": "A-KG",
+          "confidence": "high",
+          "enabled": true,
+          "evidence_origin": "user_confirmed",
+          "expected_first_action": "先保留 |x|，写清 dxdy、dydz 的方向角色，再决定哪一部分可用 Gauss。",
+          "expected_method": "先按两个分量拆分，分别检查 Gauss 合法性，再使用有向投影和坐标反射。",
+          "knowledge_gap_or_method_gap": "二型曲面积分对象、条件与对称联动",
+          "method_trigger": "曲面边界含 |x| 且积分区域关于 yOz 对称",
+          "missed_action": "丢失绝对值，并把有向投影与对称条件当成普通无向积分处理。",
+          "need_user_confirmation": false,
+          "next_reminder": "第二型曲面积分先辨认微分方向，再检查绝对值可微性与区域对称。",
+          "opd_tag": [
+            "O目标",
+            "P思路",
+            "D细节"
+          ],
+          "related_method_card_id": "H18-013",
+          "repeat_count": 1,
+          "repeat_count_source": "2026-08-14 frozen wrong capture",
+          "review_priority": 5
+        },
+        "selection_value": 5,
+        "source_hash": "84fc51012a7fc1b4a48c18264809a88fbe91d1f2501cc8d8f224028a2c57b0c1",
+        "source_version": "84fc51012a7fc1b4a48c18264809a88fbe91d1f2501cc8d8f224028a2c57b0c1",
+        "specific_fields": {
+          "expected_first_action": true,
+          "method_trigger": true,
+          "missed_action": true,
+          "wrong_point": true
+        },
+        "structured_targetable": true,
+        "wrong_point": "首个表达断点是把 |xy| 写成 x|y|，丢失 |x|；随后没有稳定检查绝对值带来的可微性、第二型曲面积分的有向投影以及关于 yOz 的对称抵消条件。"
+      },
+      "evidence_source_version": "84fc51012a7fc1b4a48c18264809a88fbe91d1f2501cc8d8f224028a2c57b0c1",
+      "formal_card_path": "错题知识网络/错题卡/GS-763_102394第二型曲面积分与对称化简.md",
+      "id": "GS-763",
+      "mastery": 3,
+      "match_mode": "direct_due",
+      "match_reasons": [
+        "七天外原题本身正式到期"
+      ],
+      "matched_knowledge": [],
+      "mistakes": 1,
+      "overdue_days": 26,
+      "queue_item_id": "QI-a9974d7955c3d8e79b98",
+      "reader_query_id": "/root/anchor1_limits",
+      "recurrence_count": 0,
+      "score_target_unit_id": "MATH1-GS-WQ-GS763",
+      "selection_anchor": {
+        "anchor_due": true,
+        "anchor_id": "MATH-CONCEPT-ca66fa94c9591e0060339320",
+        "anchor_kind": "concept_review",
+        "chosen_interval_days": 1,
+        "concept_key": "MATH-CONCEPT-ca66fa94c9591e0060339320",
+        "deterministic_priority": 1,
+        "effective_due_date": "2026-09-10",
+        "independent_successes": 0,
+        "interval_reason": "高风险取窗口下界",
+        "label": "第二型曲面积分",
+        "last_real_activity_date": "2026-09-09",
+        "point_source_version": "39860a6be3ab23b884f90148ea4b3e5593a89b411efca150450ac122bbd3df8e",
+        "real_activity_evidence": [
+          {
+            "date": "2026-09-09",
+            "evidence_id": "MFI-CLOSE-1b2d345b69db8327ebd0b627",
+            "kind": "wrong_or_unverified"
+          }
+        ],
+        "related_formal_ids": [
+          "GS-726",
+          "GS-735",
+          "GS-736",
+          "GS-737",
+          "GS-762",
+          "GS-763",
+          "GS-766"
+        ],
+        "source_refs": [
+          {
+            "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+            "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+          }
+        ],
+        "stage_name": "unstable",
+        "stage_window_days": [
+          1,
+          2
+        ]
+      },
+      "selection_mode": "native_concept_fine_knowledge",
+      "selection_reason": "七天外原题正式到期 2026-08-15；动态优先级 119",
+      "semantic_evidence": [
+        {
+          "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+          "role": "anchor",
+          "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+        },
+        {
+          "path": "错题知识网络/错题卡/GS-763_102394第二型曲面积分与对称化简.md",
+          "role": "candidate",
+          "sha256": "d48571261cd356897afbf4da54fdd2d08766335171077c676f9a1af863dc9ae2"
+        }
+      ],
+      "semantic_match_level": "fine_knowledge",
+      "semantic_plan_sha256": "d8b2ea8024d0983eab4e443d7f792e09be6fb57397e8b24b5dcca9f32f0fa1f7",
+      "semantic_private_reason": "第二型曲面积分的有向投影与曲面定向：闭曲面外侧取法，含绝对值的有向投影；与来源题 GS-735 的开放面上侧构成外侧与上侧的直接对照。该锚点全部候选均不早于 2026-08-14，日期已是本锚点下界。",
+      "semantic_public_value_reason": "复查第二型曲面积分的方向判断与有向投影符号是否稳定。",
+      "semantic_selection_v5": true,
+      "source": "题目标识 102394 / 用户题图、解析与对话 / 2026-08-14",
+      "unit_id": "MATH1-GS-WQ-GS763",
+      "unit_source_version": "17801e87932f19931aa1b19081c834e652c671070e5c88bb33a680d92bbadf68"
+    }
+  ],
+  "semantic_ordering_decided": true,
+  "semantic_plan_sha256": "d8b2ea8024d0983eab4e443d7f792e09be6fb57397e8b24b5dcca9f32f0fa1f7",
+  "sol_verification": {
+    "sol_reopened": true,
+    "verified_at": "2026-09-10T18:52:41+08:00",
+    "verified_evidence": [
+      {
+        "path": "错题知识网络/个人知识点索引/正式逐点观测/MFI-CLOSE-1b2d345b69db8327ebd0b627.json",
+        "sha256": "05ff2632468040e0f96acec84a88e8389dc454d3607d2d79ae4acfe8c918c2d2"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-354_2020年第五题.md",
+        "sha256": "b82c0f339c72a034a5a42581754884726e3c64705bafef48d17845f71a85d3b3"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-389_2020年第17题.md",
+        "sha256": "44b6e08afcc6b2c42cc616274a774e87389e00e882d993f313de184c5caaf1e0"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-469_58043极坐标曲线切线.md",
+        "sha256": "8a02ffce74f2f130259dd6f397bdf429741089527cf3e2460513a61717deabb1"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-410_2021年真题第21题.md",
+        "sha256": "3d7cb67ca4e7bb08592d4dba56843b5591d1e8606ced140a479ed2ba8edddb9f"
+      },
+      {
+        "path": "错题知识网络/错题卡/GS-763_102394第二型曲面积分与对称化简.md",
+        "sha256": "d48571261cd356897afbf4da54fdd2d08766335171077c676f9a1af863dc9ae2"
+      }
+    ]
+  },
+  "supersedes_queue_id": "WQ-1137d4d6ac58b22023ebb972"
+}
